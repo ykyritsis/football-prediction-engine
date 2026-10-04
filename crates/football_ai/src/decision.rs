@@ -14,7 +14,9 @@
 //!   formation-relative position.
 
 use crate::ball::CONTROL_RADIUS;
-use crate::eval::{base_xg, possession_value, pressure_at, risk_aversion, turnover_cost};
+use crate::eval::{
+    base_xg, goal_angle, possession_value, pressure_at, risk_aversion, turnover_cost,
+};
 use crate::marking::marking_position;
 use crate::math::{closest_point_on_segment, cmp_f32, logistic, Vec2};
 use crate::passing::{evaluate_passes, PassCandidate, PassKind};
@@ -24,7 +26,7 @@ use crate::pitch::{
 };
 use crate::plan::TeamPlan;
 use crate::pressing::{contain_position, cover_position, PressMode};
-use crate::state::{MatchState, Player, PlayerId};
+use crate::state::{MatchState, Player, PlayerId, RestartKind};
 use crate::support::SupportRun;
 use std::f32::consts::FRAC_1_SQRT_2;
 
@@ -83,6 +85,10 @@ pub enum Activity {
     Shooting,
     Clearing,
     Recovering,
+    /// Standing in the wall for an opponent's free kick.
+    Wall,
+    /// Sent off: takes no further part.
+    SentOff,
 }
 
 impl Activity {
@@ -105,6 +111,8 @@ impl Activity {
             Activity::Shooting => "shoot".into(),
             Activity::Clearing => "clear".into(),
             Activity::Recovering => "recovering".into(),
+            Activity::Wall => "wall".into(),
+            Activity::SentOff => "sent off".into(),
         }
     }
 }
@@ -173,6 +181,36 @@ const CARRY_DIRS: [(f32, f32); 9] = [
 ];
 const CARRY_DISTANCE: f32 = 6.0;
 
+/// Team-local aim point: the corner further from the keeper.
+fn aim_point(state: &MatchState, shooter: &Player) -> Vec2 {
+    let side = shooter.team;
+    let gk = side.to_local(state.goalkeeper(side.opponent()).pos);
+    let post = GOAL_HALF_WIDTH - 0.6;
+    let aim_y = if (gk.y - post).abs() >= (gk.y + post).abs() {
+        post
+    } else {
+        -post
+    };
+    Vec2::new(HALF_LENGTH + 0.5, aim_y)
+}
+
+/// Expected goals of a direct free kick from `shooter`'s position, or `None`
+/// when too far out to shoot.
+pub fn free_kick_xg(shooter: &Player) -> Option<f32> {
+    let local = shooter.team.to_local(shooter.pos);
+    let d = local.distance(Vec2::new(HALF_LENGTH, 0.0));
+    if d > 32.0 {
+        return None;
+    }
+    let angle = (goal_angle(local) / 0.35).clamp(0.3, 1.0);
+    Some(0.1 * (-(d - 17.0).max(0.0) / 6.0).exp() * (0.35 + 0.9 * shooter.attrs.set_pieces) * angle)
+}
+
+/// Expected goals of a penalty for `taker`.
+pub fn penalty_xg(taker: &Player) -> f32 {
+    0.68 + 0.14 * taker.attrs.finishing
+}
+
 /// Evaluate a shot for `shooter`. `None` if out of range.
 pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption> {
     let side = shooter.team;
@@ -187,16 +225,8 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
     if dist > 18.0 {
         xg *= 0.6 + 0.8 * a.kicking_power;
     }
-    // Pick the corner further from the keeper.
-    let gk = side.to_local(state.goalkeeper(side.opponent()).pos);
-    let aim_y = if (gk.y - (GOAL_HALF_WIDTH - 0.6)).abs() >= (gk.y + (GOAL_HALF_WIDTH - 0.6)).abs()
-    {
-        GOAL_HALF_WIDTH - 0.6
-    } else {
-        -(GOAL_HALF_WIDTH - 0.6)
-    };
-    let aim = Vec2::new(HALF_LENGTH + 0.5, aim_y);
-    for opp in state.team_players(side.opponent()) {
+    let aim = aim_point(state, shooter);
+    for opp in state.on_pitch(side.opponent()) {
         let o = side.to_local(opp.pos);
         let (c, t) = closest_point_on_segment(local, aim, o);
         let lateral = o.distance(c);
@@ -226,8 +256,7 @@ pub fn evaluate_dribbles(state: &MatchState, carrier: &Player) -> Vec<DribbleOpt
     let risk_av = risk_aversion(state, carrier);
     let b = &carrier.behaviour;
     let opps: Vec<Vec2> = state
-        .team_players(side.opponent())
-        .iter()
+        .on_pitch(side.opponent())
         .map(|p| side.to_local(p.pos))
         .collect();
     let mut out: Vec<DribbleOption> = CARRY_DIRS
@@ -361,7 +390,6 @@ fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
 }
 
 fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
-    let opts = evaluate_passes(state, p.id, plan.phase);
     let mut d = Decision {
         player: p.id,
         activity: Activity::TakeRestart,
@@ -369,7 +397,45 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
         target: p.pos,
         speed: MoveSpeed::Walk,
     };
-    if p.action_cooldown == 0 {
+    if p.action_cooldown > 0 {
+        return d;
+    }
+    let kind = state.restart.map(|r| r.kind);
+    if kind == Some(RestartKind::Penalty) {
+        // Pick a side: deterministic but not predictable from the position.
+        let left = (state.tick / 7 + p.id.0 as u32).is_multiple_of(2);
+        let y = if left {
+            GOAL_HALF_WIDTH - 0.8
+        } else {
+            -(GOAL_HALF_WIDTH - 0.8)
+        };
+        let xg = penalty_xg(p);
+        let target = p.team.to_world(Vec2::new(HALF_LENGTH + 0.5, y));
+        d.activity = Activity::Shooting;
+        d.action = Action::Shoot(ShotOption {
+            target,
+            xg,
+            score: xg,
+        });
+        return d;
+    }
+    let opts = evaluate_passes(state, p.id, plan.phase);
+    if kind == Some(RestartKind::FreeKick) {
+        if let Some(xg) = free_kick_xg(p) {
+            let best_pass = opts.first().map_or(-1.0, |c| c.score);
+            if xg >= 0.045 && xg >= best_pass - 0.02 {
+                let target = p.team.to_world(aim_point(state, p));
+                d.activity = Activity::Shooting;
+                d.action = Action::Shoot(ShotOption {
+                    target,
+                    xg,
+                    score: xg,
+                });
+                return d;
+            }
+        }
+    }
+    {
         if let Some(best) = opts
             .iter()
             .find(|c| c.kind != PassKind::Cross)
@@ -379,6 +445,17 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
         }
     }
     d
+}
+
+/// During a penalty everyone except the taker and the defending keeper waits
+/// outside the area and the arc.
+fn outside_penalty_area(target: Vec2, defending: crate::pitch::TeamSide, spot: Vec2) -> Vec2 {
+    let mut l = defending.to_local(target);
+    let edge = -HALF_LENGTH + crate::pitch::PENALTY_AREA_DEPTH + 1.0;
+    if l.x < edge && l.y.abs() < crate::pitch::PENALTY_AREA_HALF_WIDTH + 1.0 {
+        l.x = edge;
+    }
+    keep_distance(defending.to_world(l), spot)
 }
 
 fn keep_distance(target: Vec2, spot: Vec2) -> Vec2 {
@@ -399,6 +476,13 @@ fn keep_distance(target: Vec2, spot: Vec2) -> Vec2 {
 fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
     let mut target = plan.shape[p.id.slot()];
     let mut speed = MoveSpeed::Jog;
+    if state
+        .restart
+        .is_some_and(|r| r.kind == RestartKind::Penalty && r.team != p.team)
+    {
+        // On the line for a penalty.
+        target = p.team.own_goal() + Vec2::new(p.team.direction() * 0.3, 0.0);
+    }
     if let Some(shot) = state.ball.shot {
         if shot.shooter.team() != p.team {
             // Get across to the shot line.
@@ -417,8 +501,51 @@ fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decis
     }
 }
 
+/// Is it worth committing to a tackle? Defenders jockey and wait for a heavy
+/// touch, a carrier with his back turned or one who has stopped (staying on
+/// their feet in their own box unless he is static), and only dive in when
+/// their chance of winning the ball clears their aggression threshold.
+pub fn tackle_window(state: &MatchState, tackler: &Player, carrier: &Player) -> bool {
+    let settling = carrier.action_cooldown > 0 || state.seconds_since(state.ball.owner_since) < 0.5;
+    let to_tackler = (tackler.pos - carrier.pos).normalize_or_zero();
+    let back_turned = carrier.facing.dot(to_tackler) < -0.2;
+    let stationary = carrier.vel.length() < 1.5;
+    let exposed = if crate::rules::in_penalty_area(tackler.team, carrier.pos) {
+        stationary || (settling && back_turned)
+    } else {
+        settling || back_turned || stationary
+    };
+    // Commit only when the tackle is likely enough to succeed for this player.
+    exposed
+        && crate::rules::tackle_success(tackler, carrier, settling)
+            >= crate::rules::tackle_commit_threshold(tackler)
+}
+
 /// Decide what player `id` does this tick.
 pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
+    let p = state.player(id);
+    if p.sent_off {
+        return Decision {
+            player: id,
+            activity: Activity::SentOff,
+            action: Action::None,
+            target: p.pos,
+            speed: MoveSpeed::Walk,
+        };
+    }
+    let mut d = decide_on_pitch(state, plan, id);
+    // Penalty: clear the area (taker and defending keeper excepted).
+    if let Some(r) = state.restart.filter(|r| r.kind == RestartKind::Penalty) {
+        let taker = state.ball.owner == Some(id) || plan.restart_taker == Some(id);
+        let keeper = p.is_goalkeeper() && p.team != r.team;
+        if !taker && !keeper {
+            d.target = outside_penalty_area(d.target, r.team.opponent(), r.spot);
+        }
+    }
+    d
+}
+
+fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
     let p = state.player(id);
     debug_assert_eq!(p.team, plan.side);
     let slot = id.slot();
@@ -456,8 +583,18 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
         }
     }
 
-    // Opponent restart: everyone keeps their distance from the ball.
+    // Opponent restart: form the wall, everyone else keeps their distance.
     if let Some(r) = state.restart {
+        if let Some(w) = plan.wall_spot(id) {
+            let d = p.pos.distance(w);
+            return Decision {
+                player: id,
+                activity: Activity::Wall,
+                action: Action::None,
+                target: w,
+                speed: MoveSpeed::for_distance(d).max(MoveSpeed::Jog),
+            };
+        }
         if r.team != p.team {
             let t = keep_distance(shape_target, r.spot);
             let d = p.pos.distance(t);
@@ -538,7 +675,10 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
                         )
                     }
                 };
-            let action = if dist <= tackle_range && p.tackle_cooldown == 0 {
+            let action = if dist <= tackle_range
+                && p.tackle_cooldown == 0
+                && tackle_window(state, p, carrier)
+            {
                 Action::Tackle(carrier.id)
             } else {
                 Action::None

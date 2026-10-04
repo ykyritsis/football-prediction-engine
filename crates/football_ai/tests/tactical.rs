@@ -19,12 +19,11 @@ const HOME: TeamSide = TeamSide::Home;
 const AWAY: TeamSide = TeamSide::Away;
 
 fn sim(home: football_ai::TeamStyle, away: football_ai::TeamStyle) -> Simulation {
-    Simulation::new(SimConfig {
-        seed: 1,
-        dt: 1.0 / 30.0,
-        home: Squad::generated(home, 80),
-        away: Squad::generated(away, 80),
-    })
+    Simulation::new(SimConfig::new(
+        1,
+        Squad::generated(home, 80),
+        Squad::generated(away, 80),
+    ))
 }
 
 fn first(sim: &Simulation, side: TeamSide, role: Role) -> PlayerId {
@@ -243,8 +242,23 @@ fn presser_is_a_nearby_outfield_player_and_tackles_in_range() {
         .map(|p| p.pos.distance(carrier.pos))
         .fold(f32::MAX, f32::min);
     assert!(pp.pos.distance(carrier.pos) < nearest + 12.0);
-    // Put him right next to the carrier: he tackles.
+    // Right next to a carrier who faces him and is on the move, a weak
+    // tackler jockeys instead of diving in.
     s.place(primary, carrier.pos + Vec2::new(1.0, 0.0));
+    s.state.players[primary.index()].attrs.tackling = 0.3;
+    s.state.players[carrier.id.index()].facing = Vec2::new(1.0, 0.0);
+    s.set_velocity(carrier.id, Vec2::new(4.0, 0.0));
+    s.state.players[carrier.id.index()].action_cooldown = 0;
+    let plan = plan_team(&s.state, AWAY);
+    let d = decide(&s.state, &plan, primary);
+    assert!(
+        matches!(d.activity, Activity::Press(_) | Activity::Contain(_)),
+        "{d:?}"
+    );
+    assert_eq!(d.action, football_ai::Action::None, "{d:?}");
+    // A good tackler on a carrier still settling the ball commits.
+    s.state.players[primary.index()].attrs.tackling = 0.9;
+    s.state.players[carrier.id.index()].action_cooldown = 5;
     let plan = plan_team(&s.state, AWAY);
     let d = decide(&s.state, &plan, primary);
     assert!(

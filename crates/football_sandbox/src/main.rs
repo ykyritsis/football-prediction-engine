@@ -220,6 +220,19 @@ fn input(
         sb.away_style += 1;
         sb.rebuild();
     }
+    if keys.just_pressed(KeyCode::KeyF) {
+        // Whistle a foul on the carrier by the nearest opponent (to inspect set pieces).
+        if let Some(c) = sb.sim.state.carrier().cloned() {
+            if let Some(f) = sb
+                .sim
+                .state
+                .nearest_player(c.team.opponent(), c.pos, false)
+                .map(|p| p.id)
+            {
+                sb.sim.whistle_foul(f, c.id, false);
+            }
+        }
+    }
     if keys.just_pressed(KeyCode::KeyX) {
         sb.stars = !sb.stars;
         sb.rebuild();

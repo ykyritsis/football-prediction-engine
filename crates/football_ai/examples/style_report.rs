@@ -45,12 +45,11 @@ fn main() {
                 continue;
             }
             for seed in 0..seeds {
-                let cfg = SimConfig {
-                    seed: 1000 + seed * 31 + (i * 7 + j) as u64,
-                    dt: 1.0 / 30.0,
-                    home: Squad::generated(a.clone(), 80),
-                    away: Squad::generated(b.clone(), 80),
-                };
+                let cfg = SimConfig::new(
+                    1000 + seed * 31 + (i * 7 + j) as u64,
+                    Squad::generated(a.clone(), 80),
+                    Squad::generated(b.clone(), 80),
+                );
                 let mut sim = Simulation::new(cfg);
                 let ticks = (minutes * 60.0 / sim.state.dt) as u32;
                 let mut poss = [0f32; 2];
@@ -85,7 +84,7 @@ fn main() {
                                 agg[if from.team() == TeamSide::Home { i } else { j }].completed +=
                                     1.0
                             }
-                            MatchEvent::Shot { by, xg } => {
+                            MatchEvent::Shot { by, xg, .. } => {
                                 let g = &mut agg[if by.team() == TeamSide::Home { i } else { j }];
                                 g.shots += 1.0;
                                 g.xg += xg;

@@ -30,6 +30,8 @@ pub struct TeamPlan {
     pub ball_chaser: Option<(PlayerId, Vec2)>,
     /// Player taking a pending restart.
     pub restart_taker: Option<PlayerId>,
+    /// Defensive wall for an opponent's direct free kick: player and spot.
+    pub wall: Vec<(PlayerId, Vec2)>,
 }
 
 impl TeamPlan {
@@ -39,6 +41,10 @@ impl TeamPlan {
 
     pub fn support_for(&self, id: PlayerId) -> Option<&SupportAssignment> {
         self.support.iter().find(|s| s.player == id)
+    }
+
+    pub fn wall_spot(&self, id: PlayerId) -> Option<Vec2> {
+        self.wall.iter().find(|w| w.0 == id).map(|w| w.1)
     }
 }
 
@@ -64,7 +70,7 @@ fn choose_chaser(state: &MatchState, side: TeamSide) -> Option<(PlayerId, Vec2)>
         }
     }
     let mut best: Option<(f32, PlayerId, Vec2)> = None;
-    for p in state.team_players(side) {
+    for p in state.on_pitch(side) {
         if p.stun > 0 || p.action_cooldown > 0 && ball.last_touch == Some(p.id) {
             continue;
         }
@@ -101,12 +107,54 @@ pub fn restart_taker(
     if kind == RestartKind::GoalKick {
         return Some(state.goalkeeper(side).id);
     }
-    state
-        .team_players(side)
-        .iter()
-        .filter(|p| !p.is_goalkeeper())
+    let outfield = || state.on_pitch(side).filter(|p| !p.is_goalkeeper());
+    // Specialists take penalties, corners and free kicks within shooting range.
+    let near_goal = side
+        .to_local(spot)
+        .distance(Vec2::new(crate::pitch::HALF_LENGTH, 0.0))
+        < 35.0;
+    let specialist: Option<fn(&crate::state::Player) -> f32> = match kind {
+        RestartKind::Penalty => Some(|p| p.attrs.finishing + 0.3 * p.attrs.set_pieces),
+        RestartKind::Corner => Some(|p| p.attrs.set_pieces),
+        RestartKind::FreeKick if near_goal => Some(|p| p.attrs.set_pieces),
+        _ => None,
+    };
+    if let Some(score) = specialist {
+        return outfield()
+            .max_by(|a, b| cmp_f32(score(a), score(b)).then(b.id.cmp(&a.id)))
+            .map(|p| p.id);
+    }
+    outfield()
         .min_by(|a, b| cmp_f32(a.pos.distance(spot), b.pos.distance(spot)).then(a.id.cmp(&b.id)))
         .map(|p| p.id)
+}
+
+/// Wall for an opponent's direct free kick.
+fn plan_wall(state: &MatchState, side: TeamSide) -> Vec<(PlayerId, Vec2)> {
+    let Some(r) = state
+        .restart
+        .filter(|r| r.team != side && r.kind == RestartKind::FreeKick)
+    else {
+        return Vec::new();
+    };
+    let n = crate::rules::wall_size(r.spot, side);
+    if n == 0 {
+        return Vec::new();
+    }
+    let spots = crate::rules::wall_positions(r.spot, side, n);
+    let centre = spots[n / 2];
+    let mut cands: Vec<_> = state
+        .on_pitch(side)
+        .filter(|p| !p.is_goalkeeper())
+        .collect();
+    cands.sort_by(|a, b| {
+        cmp_f32(a.pos.distance(centre), b.pos.distance(centre)).then(a.id.cmp(&b.id))
+    });
+    cands
+        .into_iter()
+        .zip(spots)
+        .map(|(p, s)| (p.id, s))
+        .collect()
 }
 
 /// Compute the team plan for `side`.
@@ -137,5 +185,6 @@ pub fn plan_team(state: &MatchState, side: TeamSide) -> TeamPlan {
         support,
         ball_chaser,
         restart_taker,
+        wall: plan_wall(state, side),
     }
 }

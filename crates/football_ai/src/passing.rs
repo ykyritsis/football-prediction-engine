@@ -95,7 +95,7 @@ pub fn interception_risk(
     let mut survive = 1.0;
     // Lofted balls: probability that any defender reaches the drop first.
     let mut landing_free = 1.0;
-    for opp in state.team_players(passer_team.opponent()) {
+    for opp in state.on_pitch(passer_team.opponent()) {
         let (c, t) = closest_point_on_segment(origin, target, opp.pos);
         if lofted && t < LOFT_SAFE_FRACTION {
             // Ball is overhead for most of the flight: only the landing zone is contestable.
@@ -134,8 +134,7 @@ pub fn lines_broken(state: &MatchState, team: TeamSide, from: Vec2, to: Vec2) ->
         return 0;
     }
     state
-        .team_players(team.opponent())
-        .iter()
+        .on_pitch(team.opponent())
         .filter(|p| !p.is_goalkeeper())
         .filter(|p| {
             let x = team.to_local(p.pos).x;
@@ -184,7 +183,7 @@ pub fn evaluate_passes(
 
     let offside_applies = !state.restart.is_some_and(|r| r.kind.exempt_from_offside());
     let mut out = Vec::with_capacity(24);
-    for receiver in state.team_players(team) {
+    for receiver in state.on_pitch(team) {
         if receiver.id == carrier {
             continue;
         }

@@ -139,12 +139,11 @@ impl Preset {
     /// Build the scenario. `home`/`away` default to a gegenpress vs low-block
     /// matchup when `None`.
     pub fn build(self, seed: u64, home: Option<Squad>, away: Option<Squad>) -> Simulation {
-        let cfg = SimConfig {
+        let cfg = SimConfig::new(
             seed,
-            dt: 1.0 / 30.0,
-            home: home.unwrap_or_else(|| Squad::generated(presets::gegenpress(), 80)),
-            away: away.unwrap_or_else(|| Squad::generated(presets::park_the_bus(), 80)),
-        };
+            home.unwrap_or_else(|| Squad::generated(presets::gegenpress(), 80)),
+            away.unwrap_or_else(|| Squad::generated(presets::park_the_bus(), 80)),
+        );
         let mut sim = Simulation::new(cfg);
         let a = |slot| PlayerId::new(TeamSide::Away, slot);
         let first_of =

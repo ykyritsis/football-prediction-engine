@@ -88,12 +88,7 @@ fn on_ball_tendency(
     ball: Vec2,
 ) -> (f32, Option<f32>, f32) {
     let home = Squad::generated(presets::gegenpress(), 80).with_player(slot, profile);
-    let cfg = SimConfig {
-        seed: 1,
-        dt: 1.0 / 30.0,
-        home,
-        away: Squad::generated(presets::park_the_bus(), 80),
-    };
+    let cfg = SimConfig::new(1, home, Squad::generated(presets::park_the_bus(), 80));
     let mut sim = Simulation::new(cfg);
     let id = PlayerId::new(TeamSide::Home, slot);
     sim.arrange(id, ball);
@@ -158,12 +153,7 @@ fn dribbler_carries_the_ball_more_over_a_match() {
     let slot = 7;
     let run = |profile| {
         let home = Squad::generated(presets::gegenpress(), 80).with_player(slot, profile);
-        let cfg = SimConfig {
-            seed: 21,
-            dt: 1.0 / 30.0,
-            home,
-            away: Squad::generated(presets::counter_attack(), 80),
-        };
+        let cfg = SimConfig::new(21, home, Squad::generated(presets::counter_attack(), 80));
         let mut sim = Simulation::new(cfg);
         let (d, n) = count_activity(
             &mut sim,
@@ -198,12 +188,7 @@ fn play(
     seed: u64,
     minutes: f32,
 ) -> [TeamStats; 2] {
-    let cfg = SimConfig {
-        seed,
-        dt: 1.0 / 30.0,
-        home: Squad::generated(home, 80),
-        away: Squad::generated(away, 80),
-    };
+    let cfg = SimConfig::new(seed, Squad::generated(home, 80), Squad::generated(away, 80));
     let mut sim = Simulation::new(cfg);
     let mut out = [TeamStats::default(), TeamStats::default()];
     let ticks = (minutes * 60.0 * 30.0) as u32;

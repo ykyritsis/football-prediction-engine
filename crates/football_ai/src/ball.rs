@@ -163,6 +163,8 @@ mod tests {
             tackle_cooldown: 0,
             action_cooldown: 0,
             stun: 0,
+            yellow_cards: 0,
+            sent_off: false,
         }
     }
 

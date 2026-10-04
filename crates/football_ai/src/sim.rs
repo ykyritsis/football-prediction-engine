@@ -6,7 +6,10 @@
 //! 2. **Decide** – [`decide`] for all 22 players from the same snapshot.
 //! 3. **Act** – apply on-ball actions and tackles in player-id order.
 //! 4. **Move** – steer players towards their targets, integrate the ball.
-//! 5. **Resolve** – goals, out of play, restarts, ball control.
+//! 5. **Resolve** – goals, out of play, restarts, ball control, advantage,
+//!    the match clock.
+//!
+//! Fouls, cards, free kicks, penalties and time follow [`crate::rules`].
 //!
 //! Steps 1–2 are pure and order-independent; 3–5 consume random numbers from
 //! the single seeded [`SimRng`] in a fixed order. Two simulations built from
@@ -25,6 +28,7 @@ use crate::pitch::{
 use crate::plan::{plan_team, TeamPlan};
 use crate::rng::SimRng;
 use crate::role::Role;
+use crate::rules::{self, CardDecision, Challenge, MatchClock, Referee};
 use crate::state::*;
 
 /// Match configuration.
@@ -35,16 +39,31 @@ pub struct SimConfig {
     pub dt: f32,
     pub home: Squad,
     pub away: Squad,
+    pub referee: Referee,
+    pub clock: MatchClock,
+}
+
+impl SimConfig {
+    /// 30 Hz, default referee and 2 × 45 minutes.
+    pub fn new(seed: u64, home: Squad, away: Squad) -> Self {
+        Self {
+            seed,
+            dt: 1.0 / 30.0,
+            home,
+            away,
+            referee: Referee::default(),
+            clock: MatchClock::default(),
+        }
+    }
 }
 
 impl Default for SimConfig {
     fn default() -> Self {
-        Self {
-            seed: 1,
-            dt: 1.0 / 30.0,
-            home: Squad::generated(presets::gegenpress(), 78),
-            away: Squad::generated(presets::long_ball(), 78),
-        }
+        Self::new(
+            1,
+            Squad::generated(presets::gegenpress(), 78),
+            Squad::generated(presets::long_ball(), 78),
+        )
     }
 }
 
@@ -72,6 +91,7 @@ pub enum MatchEvent {
     Shot {
         by: PlayerId,
         xg: f32,
+        kind: ShotKind,
     },
     Save {
         by: PlayerId,
@@ -94,6 +114,31 @@ pub enum MatchEvent {
     PossessionChange {
         team: TeamSide,
     },
+    Foul {
+        by: PlayerId,
+        on: PlayerId,
+        spot: Vec2,
+    },
+    /// The referee lets play continue after a foul.
+    Advantage {
+        team: TeamSide,
+    },
+    /// Advantage did not accrue: play is brought back for the free kick.
+    AdvantageCalledBack {
+        team: TeamSide,
+    },
+    YellowCard {
+        player: PlayerId,
+    },
+    RedCard {
+        player: PlayerId,
+        second_yellow: bool,
+    },
+    PenaltyAwarded {
+        team: TeamSide,
+    },
+    HalfTime,
+    FullTime,
 }
 
 /// The simulation.
@@ -108,6 +153,8 @@ pub struct Simulation {
     pub decisions: Vec<Decision>,
     /// `(tick, event)` log.
     pub events: Vec<(u32, MatchEvent)>,
+    pub referee: Referee,
+    pub clock: MatchClock,
 }
 
 fn secs(state: &MatchState, s: f32) -> u16 {
@@ -121,6 +168,8 @@ impl Simulation {
             dt,
             home,
             away,
+            referee,
+            clock,
         } = config;
         let mut players = Vec::with_capacity(PLAYER_COUNT);
         let mut teams = Vec::with_capacity(2);
@@ -140,6 +189,8 @@ impl Simulation {
                     tackle_cooldown: 0,
                     action_cooldown: 0,
                     stun: 0,
+                    yellow_cards: 0,
+                    sent_off: false,
                 });
             }
             teams.push(TeamState {
@@ -174,6 +225,11 @@ impl Simulation {
             last_completed_pass: None,
             restart: None,
             score: [0, 0],
+            period: Period::FirstHalf,
+            period_start_tick: 0,
+            stoppage_secs: 0.0,
+            first_kick_off: TeamSide::Home,
+            advantage: None,
         };
         let mut sim = Simulation {
             state,
@@ -182,6 +238,8 @@ impl Simulation {
             plans: None,
             decisions: Vec::new(),
             events: Vec::new(),
+            referee,
+            clock,
         };
         sim.kick_off(TeamSide::Home);
         sim
@@ -206,6 +264,7 @@ impl Simulation {
         st.ball.air_distance = 0.0;
         st.possession = team;
         st.possession_since = st.tick;
+        st.advantage = None;
         for side in TeamSide::BOTH {
             let phase = if side == team {
                 TeamPhase::BuildUp
@@ -221,6 +280,9 @@ impl Simulation {
                     local = local.normalize_or_zero() * (CENTRE_CIRCLE_RADIUS + 0.5);
                 }
                 let p = &mut st.players[PlayerId::new(side, slot).index()];
+                if p.sent_off {
+                    continue;
+                }
                 p.pos = side.to_world(local);
                 p.vel = Vec2::ZERO;
                 p.facing = Vec2::new(side.direction(), 0.0);
@@ -231,8 +293,7 @@ impl Simulation {
         }
         // The most advanced player of the kicking team takes it.
         let taker = st
-            .team_players(team)
-            .iter()
+            .on_pitch(team)
             .filter(|p| p.role != Role::Goalkeeper)
             .max_by(|a, b| {
                 cmp_f32(team.to_local(a.pos).x, team.to_local(b.pos).x).then(b.id.cmp(&a.id))
@@ -253,6 +314,9 @@ impl Simulation {
 
     /// Advance one fixed timestep.
     pub fn step(&mut self) {
+        if self.state.period == Period::FullTime {
+            return;
+        }
         let plans = [
             plan_team(&self.state, TeamSide::Home),
             plan_team(&self.state, TeamSide::Away),
@@ -266,10 +330,62 @@ impl Simulation {
         self.move_ball();
         self.resolve_boundaries();
         self.resolve_control();
+        self.resolve_advantage();
         self.tick_cooldowns();
         self.state.tick += 1;
         self.plans = Some(plans);
         self.decisions = decisions;
+        self.update_clock();
+    }
+
+    /// Has the final whistle gone?
+    pub fn finished(&self) -> bool {
+        self.state.period == Period::FullTime
+    }
+
+    /// Match clock in seconds.
+    pub fn match_seconds(&self) -> f32 {
+        self.state.match_seconds(self.clock.half_seconds)
+    }
+
+    fn update_clock(&mut self) {
+        let length = self.clock.period_length(self.state.stoppage_secs);
+        if self.state.period_seconds() < length {
+            return;
+        }
+        match self.state.period {
+            Period::FirstHalf => {
+                self.event(MatchEvent::HalfTime);
+                self.state.period = Period::SecondHalf;
+                self.state.period_start_tick = self.state.tick;
+                self.state.stoppage_secs = 0.0;
+                self.state.restart = None;
+                let team = self.state.first_kick_off.opponent();
+                self.kick_off(team);
+            }
+            Period::SecondHalf => {
+                self.event(MatchEvent::FullTime);
+                let st = &mut self.state;
+                st.period = Period::FullTime;
+                st.ball.owner = None;
+                st.ball.vel = Vec2::ZERO;
+                st.ball.pass = None;
+                st.ball.shot = None;
+                st.restart = None;
+                st.advantage = None;
+            }
+            Period::FullTime => {}
+        }
+    }
+
+    /// Play until the final whistle (or `max_ticks`).
+    pub fn run_to_full_time(&mut self, max_ticks: u32) {
+        for _ in 0..max_ticks {
+            if self.finished() {
+                break;
+            }
+            self.step();
+        }
     }
 
     /// Run `n` steps.
@@ -353,9 +469,20 @@ impl Simulation {
             return;
         }
         let p = self.state.player(by).clone();
+        let kind = match self.state.restart.map(|r| r.kind) {
+            Some(RestartKind::Penalty) => ShotKind::Penalty,
+            Some(RestartKind::FreeKick) => ShotKind::FreeKick,
+            _ => ShotKind::OpenPlay,
+        };
         let dist = p.pos.distance(s.target);
-        let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
-        let spread = (1.0 - p.attrs.finishing) * dist * 0.06 + 0.25 + pressure * 1.5;
+        let spread = match kind {
+            ShotKind::Penalty => 0.2 + (1.0 - p.attrs.finishing) * 0.9,
+            ShotKind::FreeKick => 0.4 + (1.0 - p.attrs.set_pieces) * dist * 0.05,
+            ShotKind::OpenPlay => {
+                let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
+                (1.0 - p.attrs.finishing) * dist * 0.06 + 0.25 + pressure * 1.5
+            }
+        };
         let target = s.target + Vec2::new(0.0, self.rng.range(-spread, spread));
         let dir = (target - p.pos).normalize_or_zero();
         let speed = SHOT_SPEED * (0.85 + 0.15 * p.attrs.kicking_power);
@@ -363,16 +490,22 @@ impl Simulation {
         st.ball.vel = dir * speed;
         st.ball.pos = p.pos + dir * 0.4;
         st.ball.pass = None;
-        st.ball.air_distance = 0.0;
+        // A free kick is curled over the wall.
+        st.ball.air_distance = if kind == ShotKind::FreeKick {
+            10.0
+        } else {
+            0.0
+        };
         st.ball.shot = Some(ShotInFlight {
             shooter: by,
             target,
             kicked_tick: st.tick,
             xg: s.xg,
             keeper_attempted: false,
+            kind,
         });
         self.release(by);
-        self.event(MatchEvent::Shot { by, xg: s.xg });
+        self.event(MatchEvent::Shot { by, xg: s.xg, kind });
     }
 
     fn do_clear(&mut self, by: PlayerId, target: Vec2, speed: f32) {
@@ -397,17 +530,31 @@ impl Simulation {
         let (t, c) = (self.state.player(by).clone(), self.state.player(on).clone());
         if self.state.ball.owner != Some(on)
             || t.tackle_cooldown > 0
+            || t.sent_off
             || t.pos.distance(c.pos) > TACKLE_RANGE
         {
             return;
         }
-        let p_win = (0.22 + 0.5 * (t.attrs.tackling - 0.9 * c.attrs.dribbling)).clamp(0.12, 0.6);
+        let challenge = Challenge::new(&t, &c);
+        // Draw every random number up front so the stream does not depend on the outcome.
+        let foul = self
+            .rng
+            .chance(rules::foul_probability(&challenge, &self.referee));
+        let settling =
+            c.action_cooldown > 0 || self.state.seconds_since(self.state.ball.owner_since) < 0.5;
+        let p_win = rules::tackle_success(&t, &c, settling);
         let won = self.rng.chance(p_win);
         let keep = self.rng.chance(0.45);
         let angle = self.rng.range(-0.9, 0.9);
         let kick = self.rng.range(3.0, 7.0);
+        let card_roll = self.rng.next_f32();
+        self.state.players[by.index()].tackle_cooldown = (3.0 / dt) as u16;
+
+        if foul {
+            self.handle_foul(by, on, &challenge, !won, card_roll);
+            return;
+        }
         let st = &mut self.state;
-        st.players[by.index()].tackle_cooldown = (1.8 / dt) as u16;
         if won {
             st.players[on.index()].stun = (0.6 / dt) as u16;
             st.ball.last_touch = Some(by);
@@ -429,6 +576,132 @@ impl Simulation {
         }
     }
 
+    /// Referee's whistle: penalise a challenge by `by` on `on` right now
+    /// (scenarios, tests and the sandbox use this to set up set pieces).
+    /// `carrier_kept_ball` allows the referee to play advantage.
+    pub fn whistle_foul(&mut self, by: PlayerId, on: PlayerId, carrier_kept_ball: bool) {
+        let challenge = Challenge::new(self.state.player(by), self.state.player(on));
+        let roll = self.rng.next_f32();
+        self.handle_foul(by, on, &challenge, carrier_kept_ball, roll);
+    }
+
+    /// Show `player` a card directly (tests, sandbox).
+    pub fn caution(&mut self, player: PlayerId, card: CardDecision) {
+        self.apply_card(player, card);
+    }
+
+    /// A challenge was penalised. `carrier_kept_ball` tells whether the
+    /// fouled player still has the ball (advantage is possible).
+    fn handle_foul(
+        &mut self,
+        by: PlayerId,
+        on: PlayerId,
+        challenge: &Challenge,
+        carrier_kept_ball: bool,
+        card_roll: f32,
+    ) {
+        let spot = self.state.player(on).pos;
+        let fouled = on.team();
+        self.event(MatchEvent::Foul { by, on, spot });
+        self.state.stoppage_secs += self.clock.stoppage_per_foul;
+        let card = rules::card_for_foul(&self.state, by, on, challenge, &self.referee, card_roll);
+
+        if rules::should_play_advantage(&self.state, on, carrier_kept_ball, &self.referee) {
+            self.state.advantage = Some(Advantage {
+                team: fouled,
+                spot,
+                tick: self.state.tick,
+            });
+            self.event(MatchEvent::Advantage { team: fouled });
+        } else {
+            let dt = self.state.dt;
+            self.state.players[on.index()].stun = (0.8 / dt) as u16;
+            self.award_free_kick(fouled, spot);
+        }
+        self.apply_card(by, card);
+    }
+
+    /// Free kick (or penalty, inside the box) to `team` for a foul at `spot`.
+    fn award_free_kick(&mut self, team: TeamSide, spot: Vec2) {
+        if rules::in_penalty_area(team.opponent(), spot) {
+            self.event(MatchEvent::PenaltyAwarded { team });
+            self.set_restart(
+                RestartKind::Penalty,
+                team,
+                rules::penalty_spot(team.opponent()),
+            );
+        } else {
+            self.set_restart(RestartKind::FreeKick, team, clamp_to_pitch(spot, 0.5));
+        }
+    }
+
+    fn apply_card(&mut self, player: PlayerId, card: CardDecision) {
+        let p = &self.state.players[player.index()];
+        // No substitutions are modelled yet, so a goalkeeper cannot be
+        // replaced: dismissals of keepers are downgraded to a caution.
+        let card = if p.is_goalkeeper() && card == CardDecision::Red {
+            CardDecision::Yellow
+        } else {
+            card
+        };
+        match card {
+            CardDecision::None => return,
+            CardDecision::Yellow => {
+                self.state.players[player.index()].yellow_cards += 1;
+                self.event(MatchEvent::YellowCard { player });
+                let p = &self.state.players[player.index()];
+                if p.yellow_cards >= 2 && !p.is_goalkeeper() {
+                    self.event(MatchEvent::RedCard {
+                        player,
+                        second_yellow: true,
+                    });
+                    self.send_off(player);
+                }
+            }
+            CardDecision::Red => {
+                self.event(MatchEvent::RedCard {
+                    player,
+                    second_yellow: false,
+                });
+                self.send_off(player);
+            }
+        }
+        self.state.stoppage_secs += self.clock.stoppage_per_card;
+    }
+
+    fn send_off(&mut self, player: PlayerId) {
+        let p = &mut self.state.players[player.index()];
+        p.sent_off = true;
+        p.vel = Vec2::ZERO;
+        // Off to the touchline, away from play.
+        p.pos = Vec2::new(
+            -6.0 + player.slot() as f32 * 1.2 * player.team().direction(),
+            -(HALF_WIDTH + 4.0),
+        );
+        if self.state.ball.owner == Some(player) {
+            self.state.ball.owner = None;
+        }
+    }
+
+    /// Advantage: if the fouled team loses the ball within the window, bring
+    /// play back for the free kick; once the window passes, it has accrued.
+    fn resolve_advantage(&mut self) {
+        let Some(a) = self.state.advantage else {
+            return;
+        };
+        if self.state.restart.is_some() {
+            self.state.advantage = None;
+            return;
+        }
+        if self.state.seconds_since(a.tick) > self.referee.advantage_window {
+            self.state.advantage = None;
+        } else if self.state.possession != a.team {
+            self.state.advantage = None;
+            self.event(MatchEvent::AdvantageCalledBack { team: a.team });
+            self.award_free_kick(a.team, a.spot);
+        }
+    }
+
     // ----------------------------------------------------------- movement --
 
     fn move_players(&mut self, decisions: &[Decision]) {
@@ -438,6 +711,9 @@ impl Simulation {
         let restart_spot = self.state.restart.map(|r| r.spot);
         for (i, d) in decisions.iter().enumerate() {
             let p = &mut self.state.players[i];
+            if p.sent_off {
+                continue;
+            }
             let mut cap = p.attrs.top_speed * d.speed.factor();
             if owner == Some(p.id) {
                 cap *= 0.72 + 0.15 * p.attrs.dribbling;
@@ -543,6 +819,7 @@ impl Simulation {
             if cross_y.abs() < GOAL_HALF_WIDTH {
                 let scorer = self.state.ball.last_touch;
                 self.state.score[attacking.index()] += 1;
+                self.state.stoppage_secs += self.clock.stoppage_per_goal;
                 self.event(MatchEvent::Goal {
                     team: attacking,
                     scorer,
@@ -584,6 +861,7 @@ impl Simulation {
         st.ball.shot = None;
         st.ball.air_distance = 0.0;
         st.restart = Some(Restart { kind, team, spot });
+        st.advantage = None;
         if st.possession != team {
             st.possession = team;
             st.possession_since = st.tick;
@@ -630,7 +908,10 @@ impl Simulation {
         // Candidates: within reach, ordered intended receiver first, then by distance and id.
         let mut cands: Vec<(u8, f32, PlayerId)> = Vec::new();
         for p in &self.state.players {
-            if p.stun > 0 || (p.action_cooldown > 0 && self.state.ball.last_touch == Some(p.id)) {
+            if p.sent_off
+                || p.stun > 0
+                || (p.action_cooldown > 0 && self.state.ball.last_touch == Some(p.id))
+            {
                 continue;
             }
             if restart_team.is_some_and(|t| t != p.team) {
@@ -670,7 +951,10 @@ impl Simulation {
             // Goalkeeper facing a shot.
             if let Some(s) = shot.filter(|s| s.shooter.team() != p.team) {
                 if p.is_goalkeeper() {
-                    let save = (0.15 + 0.75 * p.attrs.goalkeeping - 0.5 * s.xg).clamp(0.05, 0.95);
+                    let save = match s.kind {
+                        ShotKind::Penalty => 0.1 + 0.25 * p.attrs.goalkeeping,
+                        _ => (0.15 + 0.75 * p.attrs.goalkeeping - 0.5 * s.xg).clamp(0.05, 0.95),
+                    };
                     let saved = self.rng.chance(save);
                     let held = self.rng.chance(0.55);
                     let deflect = self.rng.range(-1.0, 1.0);
@@ -720,7 +1004,7 @@ impl Simulation {
                 if pass.is_some_and(|ps| ps.to == id && ps.receiver_offside) {
                     self.event(MatchEvent::Offside { player: id });
                     let spot = clamp_to_pitch(p.pos, 1.0);
-                    self.set_restart(RestartKind::FreeKick, p.team.opponent(), spot);
+                    self.set_restart(RestartKind::IndirectFreeKick, p.team.opponent(), spot);
                     return;
                 }
                 let from_team = self.state.possession;

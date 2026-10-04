@@ -187,8 +187,7 @@ pub fn evaluate_triggers(
         set.insert(PressTrigger::NearTouchline);
     }
     let support = state
-        .team_players(attacking)
-        .iter()
+        .on_pitch(attacking)
         .filter(|p| p.id != carrier.id && p.pos.distance(carrier.pos) < 12.0)
         .count();
     if support == 0 {
@@ -247,8 +246,7 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
 
     // Rank candidates by time to reach the carrier, discounted by willingness.
     let mut ranked: Vec<(f32, PlayerId)> = state
-        .team_players(defending)
-        .iter()
+        .on_pitch(defending)
         .filter(|p| !p.is_goalkeeper() && p.stun == 0)
         .map(|p| {
             let t = p.pos.distance(carrier.pos) / p.attrs.top_speed;
@@ -270,8 +268,7 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
     if mode == PressMode::Press && intensity >= COVER_THRESHOLD && ranked.len() > 1 {
         // Block the lane to the carrier's most valuable short option.
         let target = state
-            .team_players(carrier.team)
-            .iter()
+            .on_pitch(carrier.team)
             .filter(|p| {
                 p.id != carrier.id && !p.is_goalkeeper() && p.pos.distance(carrier.pos) < 28.0
             })
@@ -285,8 +282,7 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
             // The cover player is the one (other than the primary) closest to that lane.
             let lane_mid = carrier.pos.lerp(state.player(t).pos, 0.4);
             let cover = state
-                .team_players(defending)
-                .iter()
+                .on_pitch(defending)
                 .filter(|p| !p.is_goalkeeper() && Some(p.id) != primary && p.stun == 0)
                 .min_by(|a, b| {
                     cmp_f32(a.pos.distance(lane_mid), b.pos.distance(lane_mid))

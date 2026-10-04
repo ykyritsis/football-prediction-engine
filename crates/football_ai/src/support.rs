@@ -108,6 +108,9 @@ pub fn plan_support(
     let mut taken = [false; TEAM_SIZE];
     taken[holder.slot()] = true;
     taken[0] = true; // goalkeeper never makes support runs
+    for (slot, p) in players.iter().enumerate() {
+        taken[slot] |= p.sent_off;
+    }
     let mut out = Vec::new();
     let local_shape: Vec<Vec2> = shape.iter().map(|&p| side.to_local(p)).collect();
     let push = |out: &mut Vec<SupportAssignment>,
@@ -353,8 +356,7 @@ fn best_pocket(
     avoid: &[Vec2],
 ) -> Vec2 {
     let opps: Vec<Vec2> = state
-        .team_players(side.opponent())
-        .iter()
+        .on_pitch(side.opponent())
         .map(|p| side.to_local(p.pos))
         .collect();
     let mut best = (f32::NEG_INFINITY, home);

@@ -6,12 +6,7 @@ use football_ai::state::RestartKind;
 use football_ai::{MatchEvent, SimConfig, Simulation};
 
 fn full_match(seed: u64, home: football_ai::TeamStyle, away: football_ai::TeamStyle) -> Simulation {
-    let cfg = SimConfig {
-        seed,
-        dt: 1.0 / 30.0,
-        home: Squad::generated(home, 80),
-        away: Squad::generated(away, 80),
-    };
+    let cfg = SimConfig::new(seed, Squad::generated(home, 80), Squad::generated(away, 80));
     let mut sim = Simulation::new(cfg);
     let mut idle = 0u32;
     let mut restart_ticks = 0u32;

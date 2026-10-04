@@ -30,17 +30,20 @@ fn main() {
     let home = style(args.get(3).map(String::as_str).unwrap_or("tiki-taka"));
     let away = style(args.get(4).map(String::as_str).unwrap_or("long-ball"));
 
-    let config = SimConfig {
-        seed,
-        dt: 1.0 / 30.0,
-        home: Squad::generated(home, 80),
-        away: Squad::generated(away, 80),
-    };
+    let config = SimConfig::new(seed, Squad::generated(home, 80), Squad::generated(away, 80));
     let mut sim = Simulation::new(config);
-    let ticks = (minutes * 60.0 / sim.state.dt) as u32;
+    // Play the requested minutes, or a full match with stoppage time for 90.
+    let ticks = if minutes >= 90.0 {
+        u32::MAX
+    } else {
+        (minutes * 60.0 / sim.state.dt) as u32
+    };
     let mut possession_ticks = [0u32; 2];
     let start = std::time::Instant::now();
     for _ in 0..ticks {
+        if sim.finished() {
+            break;
+        }
         sim.step();
         possession_ticks[sim.state.possession.index()] += 1;
     }
@@ -62,7 +65,7 @@ fn main() {
                 }
             }
             MatchEvent::PassCompleted { from, .. } => stats[from.team().index()][1] += 1,
-            MatchEvent::Shot { by, xg: x } => {
+            MatchEvent::Shot { by, xg: x, .. } => {
                 stats[by.team().index()][5] += 1;
                 xg[by.team().index()] += x;
             }
@@ -102,4 +105,14 @@ fn main() {
             s[7],
         );
     }
+    let count = |f: &dyn Fn(&MatchEvent) -> bool| sim.events.iter().filter(|(_, e)| f(e)).count();
+    println!(
+        "Discipline: fouls {}  yellows {}  reds {}  penalties {}  advantages {}   ({:.1} min played)",
+        count(&|e| matches!(e, MatchEvent::Foul { .. })),
+        count(&|e| matches!(e, MatchEvent::YellowCard { .. })),
+        count(&|e| matches!(e, MatchEvent::RedCard { .. })),
+        count(&|e| matches!(e, MatchEvent::PenaltyAwarded { .. })),
+        count(&|e| matches!(e, MatchEvent::Advantage { .. })),
+        sim.match_seconds() / 60.0,
+    );
 }

@@ -312,6 +312,8 @@ pub struct Attributes {
     pub finishing: f32,
     /// Shot power, affects long-range shooting.
     pub kicking_power: f32,
+    /// Dead-ball delivery: free kicks, corners, penalties placement.
+    pub set_pieces: f32,
     pub goalkeeping: f32,
 }
 
@@ -327,6 +329,7 @@ impl Attributes {
             tackling: 0.6,
             finishing: 0.5,
             kicking_power: 0.65,
+            set_pieces: 0.5,
             goalkeeping: 0.0,
         };
         match role {

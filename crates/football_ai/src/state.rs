@@ -70,6 +70,10 @@ pub struct Player {
     /// Ticks the player is recovering (e.g. after being tackled) and cannot
     /// control the ball.
     pub stun: u16,
+    /// Yellow cards received this match.
+    pub yellow_cards: u8,
+    /// Sent off: no longer takes part (kept in the array so ids stay stable).
+    pub sent_off: bool,
 }
 
 impl Player {
@@ -118,6 +122,15 @@ pub struct ShotInFlight {
     pub xg: f32,
     /// The goalkeeper has already tried to save this shot.
     pub keeper_attempted: bool,
+    pub kind: ShotKind,
+}
+
+/// How a shot was taken.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum ShotKind {
+    OpenPlay,
+    FreeKick,
+    Penalty,
 }
 
 /// Ball state. The ball is modelled on the ground plane.
@@ -145,7 +158,11 @@ pub enum RestartKind {
     ThrowIn,
     GoalKick,
     Corner,
+    /// Direct free kick: may be shot at goal.
     FreeKick,
+    /// Indirect free kick (offside, ...): must be passed.
+    IndirectFreeKick,
+    Penalty,
 }
 
 impl RestartKind {
@@ -165,6 +182,24 @@ pub struct Restart {
     pub kind: RestartKind,
     pub team: TeamSide,
     pub spot: Vec2,
+}
+
+/// Match period.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Period {
+    FirstHalf,
+    SecondHalf,
+    FullTime,
+}
+
+/// A foul on which the referee is playing advantage.
+#[derive(Debug, Clone, Copy, PartialEq)]
+pub struct Advantage {
+    /// The team that was fouled.
+    pub team: TeamSide,
+    /// Where the foul happened (free kick spot if advantage does not accrue).
+    pub spot: Vec2,
+    pub tick: u32,
 }
 
 /// Per-team state that persists between ticks.
@@ -194,6 +229,15 @@ pub struct MatchState {
     pub last_completed_pass: Option<PassRecord>,
     pub restart: Option<Restart>,
     pub score: [u16; 2],
+    pub period: Period,
+    /// Tick at which the current period started.
+    pub period_start_tick: u32,
+    /// Stoppage time accumulated in the current period (s).
+    pub stoppage_secs: f32,
+    /// Team that kicked off the first half (the other kicks off the second).
+    pub first_kick_off: TeamSide,
+    /// Advantage being played, if any.
+    pub advantage: Option<Advantage>,
 }
 
 impl MatchState {
@@ -212,6 +256,27 @@ impl MatchState {
     pub fn team_players(&self, side: TeamSide) -> &[Player] {
         let s = side.index() * TEAM_SIZE;
         &self.players[s..s + TEAM_SIZE]
+    }
+
+    /// Players of one team still on the pitch (not sent off), in slot order.
+    #[inline]
+    pub fn on_pitch(&self, side: TeamSide) -> impl Iterator<Item = &Player> + '_ {
+        self.team_players(side).iter().filter(|p| !p.sent_off)
+    }
+
+    /// Seconds played in the current period.
+    #[inline]
+    pub fn period_seconds(&self) -> f32 {
+        self.seconds_since(self.period_start_tick)
+    }
+
+    /// Match clock in seconds (second half continues from 45:00).
+    pub fn match_seconds(&self, half_seconds: f32) -> f32 {
+        match self.period {
+            Period::FirstHalf => self.period_seconds(),
+            Period::SecondHalf => half_seconds + self.period_seconds(),
+            Period::FullTime => 2.0 * half_seconds,
+        }
     }
 
     /// The ball carrier, if any.
@@ -234,8 +299,7 @@ impl MatchState {
 
     /// Nearest player of `side` to `p`, ties broken by id.
     pub fn nearest_player(&self, side: TeamSide, p: Vec2, include_gk: bool) -> Option<&Player> {
-        self.team_players(side)
-            .iter()
+        self.on_pitch(side)
             .filter(|pl| include_gk || !pl.is_goalkeeper())
             .min_by(|a, b| {
                 crate::math::cmp_f32(a.pos.distance_squared(p), b.pos.distance_squared(p))
@@ -245,8 +309,7 @@ impl MatchState {
 
     /// Distance from `p` to the nearest player of `side`.
     pub fn nearest_distance(&self, side: TeamSide, p: Vec2) -> f32 {
-        self.team_players(side)
-            .iter()
+        self.on_pitch(side)
             .map(|pl| pl.pos.distance(p))
             .fold(f32::INFINITY, f32::min)
     }
@@ -256,8 +319,7 @@ impl MatchState {
     /// halfway line or the ball.
     pub fn offside_line_local(&self, attacking: TeamSide) -> f32 {
         let mut xs: Vec<f32> = self
-            .team_players(attacking.opponent())
-            .iter()
+            .on_pitch(attacking.opponent())
             .map(|p| attacking.to_local(p.pos).x)
             .collect();
         xs.sort_by(|a, b| b.total_cmp(a));
@@ -285,6 +347,14 @@ impl MatchState {
             h.u32(p.tackle_cooldown as u32);
             h.u32(p.action_cooldown as u32);
             h.u32(p.stun as u32);
+            h.u32(p.yellow_cards as u32 | (p.sent_off as u32) << 8);
+        }
+        h.u32(self.period as u32);
+        h.u32(self.period_start_tick);
+        h.u32(self.stoppage_secs.to_bits());
+        if let Some(a) = self.advantage {
+            h.u32(a.tick);
+            h.vec(a.spot);
         }
         h.vec(self.ball.pos);
         h.vec(self.ball.vel);

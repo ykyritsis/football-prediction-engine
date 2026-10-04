@@ -115,7 +115,14 @@ pub fn sync_entities(
     for (l, mut tf, mut text) in &mut labels {
         let p = st.player(l.0);
         tf.translation = (to_screen(p.pos) + Vec2::new(0.0, 1.7 * SCALE)).extend(3.0);
-        let label = format!("{}{}", p.role.short_name(), p.id.0);
+        let cards = if p.sent_off {
+            " [R]"
+        } else if p.yellow_cards > 0 {
+            " [Y]"
+        } else {
+            ""
+        };
+        let label = format!("{}{}{}", p.role.short_name(), p.id.0, cards);
         if text.0 != label {
             text.0 = label;
         }
@@ -264,6 +271,7 @@ pub fn overlays(mut g: Gizmos, sb: Res<Sandbox>) {
         let (show, colour) = match d.activity {
             Activity::Press(_) | Activity::Contain(_) => (o.pressing, PRESS),
             Activity::Cover(_) => (o.pressing, COVER),
+            Activity::Wall => (o.pressing, COVER),
             Activity::Support(_) => (o.support, SUPPORT),
             Activity::ReceivePass | Activity::ChaseBall => (o.support || o.pressing, Color::WHITE),
             _ => (o.targets, Color::srgba(1.0, 1.0, 1.0, 0.4)),

@@ -146,6 +146,7 @@ impl Ratings {
             tackling: 0.6 * n(self.ball_winning) + 0.4 * n(self.defensive_awareness),
             finishing: n(self.finishing),
             kicking_power: n(self.kicking_power),
+            set_pieces: 0.6 * n(self.place_kicking) + 0.4 * n(self.curl),
             goalkeeping: (n(self.goalkeeping)
                 + n(self.catching)
                 + n(self.reflexes)

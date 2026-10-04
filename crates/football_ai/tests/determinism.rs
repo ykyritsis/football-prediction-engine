@@ -7,12 +7,11 @@ use football_ai::plan::plan_team;
 use football_ai::{SimConfig, Simulation};
 
 fn config(seed: u64) -> SimConfig {
-    SimConfig {
+    SimConfig::new(
         seed,
-        dt: 1.0 / 30.0,
-        home: Squad::generated(presets::tiki_taka(), 80),
-        away: Squad::generated(presets::counter_attack(), 78),
-    }
+        Squad::generated(presets::tiki_taka(), 80),
+        Squad::generated(presets::counter_attack(), 78),
+    )
 }
 
 #[test]

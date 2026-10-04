@@ -52,8 +52,7 @@ pub fn assign_marking(
     let carrier = state.ball.owner;
     let tactics = &state.team(defending).tactics;
     let attackers: Vec<(PlayerId, f32)> = state
-        .team_players(defending.opponent())
-        .iter()
+        .on_pitch(defending.opponent())
         .filter(|p| !p.is_goalkeeper() && Some(p.id) != carrier)
         .map(|p| (p.id, threat(state, defending, p.id)))
         .filter(|&(_, t)| t > 0.12)
@@ -61,7 +60,11 @@ pub fn assign_marking(
 
     let mut pairs: Vec<(f32, PlayerId, PlayerId, f32)> = Vec::new();
     for (slot, m) in state.team_players(defending).iter().enumerate() {
-        if m.is_goalkeeper() || busy.contains(&m.id) || m.behaviour.marking_radius <= 0.0 {
+        if m.sent_off
+            || m.is_goalkeeper()
+            || busy.contains(&m.id)
+            || m.behaviour.marking_radius <= 0.0
+        {
             continue;
         }
         let home = shape[slot];

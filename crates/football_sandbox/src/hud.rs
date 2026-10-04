@@ -29,7 +29,7 @@ pub fn setup(mut commands: Commands) {
     commands.spawn((
         HelpPanel,
         Text::new(
-            "Space pause | Right/. step | +/- speed | 1-6 presets | R reset | N new seed | H/A cycle home/away style | X star players\n\
+            "Space pause | Right/. step | +/- speed | 1-6 presets | R reset | N new seed | H/A cycle home/away style | X star players | F foul on carrier\n\
              Click/Tab select player, Esc clear | Overlays: T targets, S shape, M marking, P pressing, U support, C pass options, O offside",
         ),
         TextFont::from_font_size(12.0),
@@ -50,15 +50,21 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
     let sim = &sb.sim;
     let st = &sim.state;
     let mut s = String::new();
-    let secs = st.tick as f32 * st.dt;
+    let secs = sim.match_seconds();
+    let period = match st.period {
+        football_ai::state::Period::FirstHalf => "1st half",
+        football_ai::state::Period::SecondHalf => "2nd half",
+        football_ai::state::Period::FullTime => "FULL TIME",
+    };
     s += &format!(
-        "{}  {} - {}  {}\n{:02}:{:02}   speed x{}{}   seed {}\nPreset: {}\n\n",
+        "{}  {} - {}  {}\n{:02}:{:02} {}   speed x{}{}   seed {}\nPreset: {}\n\n",
         sim.squads[0].style.name,
         st.score[0],
         st.score[1],
         sim.squads[1].style.name,
         (secs / 60.0) as u32,
         (secs % 60.0) as u32,
+        period,
         sb.speed,
         if sb.paused { "  [PAUSED]" } else { "" },
         sb.seed,
@@ -162,7 +168,7 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
                 sim.name(by),
                 if won { "won" } else { "beaten" }
             ),
-            MatchEvent::Shot { by, xg } => format!("SHOT {} (xG {:.2})", sim.name(by), xg),
+            MatchEvent::Shot { by, xg, .. } => format!("SHOT {} (xG {:.2})", sim.name(by), xg),
             MatchEvent::Save { by, held } => format!(
                 "Save by {}{}",
                 sim.name(by),
@@ -181,6 +187,27 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::Offside { player } => format!("Offside: {}", sim.name(player)),
             MatchEvent::OutOfPlay { restart, team } => format!("{:?} to {:?}", restart, team),
             MatchEvent::PossessionChange { team } => format!("Possession -> {:?}", team),
+            MatchEvent::Foul { by, on, .. } => {
+                format!("Foul by {} on {}", sim.name(by), sim.name(on))
+            }
+            MatchEvent::Advantage { team } => format!("Advantage {:?}", team),
+            MatchEvent::AdvantageCalledBack { team } => {
+                format!("Advantage called back: free kick {:?}", team)
+            }
+            MatchEvent::YellowCard { player } => format!("YELLOW {}", sim.name(player)),
+            MatchEvent::RedCard {
+                player,
+                second_yellow,
+            } => {
+                format!(
+                    "RED {}{}",
+                    sim.name(player),
+                    if second_yellow { " (2nd yellow)" } else { "" }
+                )
+            }
+            MatchEvent::PenaltyAwarded { team } => format!("PENALTY to {:?}", team),
+            MatchEvent::HalfTime => "Half time".into(),
+            MatchEvent::FullTime => "Full time".into(),
         };
         s += &format!("  {:>5.1}s {}\n", t, line);
     }
