@@ -300,3 +300,18 @@ fn strict_referee_gives_more_fouls_than_lenient() {
     let (strict, lenient) = (run(Referee::strict()), run(Referee::lenient()));
     assert!(strict > lenient, "strict {strict} lenient {lenient}");
 }
+
+#[test]
+fn teams_change_ends_at_half_time() {
+    let mut cfg = SimConfig::default();
+    cfg.clock.half_seconds = 60.0;
+    let mut sim = Simulation::new(cfg);
+    assert!(!sim.state.ends_swapped);
+    let p = Vec2::new(30.0, -10.0);
+    assert_eq!(sim.state.display_pos(p), p);
+    while sim.state.period == Period::FirstHalf {
+        sim.step();
+    }
+    assert!(sim.state.ends_swapped);
+    assert_eq!(sim.state.display_pos(p), Vec2::new(-30.0, 10.0));
+}

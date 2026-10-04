@@ -24,8 +24,16 @@ pub const SCALE: f32 = 11.0;
 /// Pitch centre in screen space (leaves room for the HUD on the right).
 pub const PITCH_ORIGIN: Vec2 = Vec2::new(-200.0, 30.0);
 
+/// Teams changed ends at half-time: mirror the view (updated every frame).
+pub static ENDS_SWAPPED: std::sync::atomic::AtomicBool = std::sync::atomic::AtomicBool::new(false);
+
 /// Convert a simulation position (metres) to screen space.
 pub fn to_screen(p: football_ai::math::Vec2) -> Vec2 {
+    let p = if ENDS_SWAPPED.load(std::sync::atomic::Ordering::Relaxed) {
+        -p
+    } else {
+        p
+    };
     PITCH_ORIGIN + Vec2::new(p.x, p.y) * SCALE
 }
 
@@ -155,6 +163,10 @@ fn main() {
 
 /// Advance the simulation by real time × speed, in fixed steps.
 fn step_simulation(time: Res<Time>, mut sb: ResMut<Sandbox>) {
+    ENDS_SWAPPED.store(
+        sb.sim.state.ends_swapped,
+        std::sync::atomic::Ordering::Relaxed,
+    );
     if sb.paused {
         return;
     }

@@ -270,6 +270,10 @@ pub struct MatchState {
     pub period: Period,
     /// Substitutions made by each team.
     pub subs_used: [u8; 2],
+    /// Teams changed ends at half-time. The simulation always works with
+    /// Home attacking `+x` (the AI is symmetric); presentation layers mirror
+    /// the pitch with [`MatchState::display_pos`] when this is set.
+    pub ends_swapped: bool,
     /// Tick at which the current period started.
     pub period_start_tick: u32,
     /// Stoppage time accumulated in the current period (s).
@@ -296,6 +300,17 @@ impl MatchState {
     pub fn team_players(&self, side: TeamSide) -> &[Player] {
         let s = side.index() * TEAM_SIZE;
         &self.players[s..s + TEAM_SIZE]
+    }
+
+    /// Where to draw a simulation position on the real pitch, accounting
+    /// for the change of ends at half-time.
+    #[inline]
+    pub fn display_pos(&self, p: Vec2) -> Vec2 {
+        if self.ends_swapped {
+            -p
+        } else {
+            p
+        }
     }
 
     /// Players of one team still on the pitch (not sent off), in slot order.
@@ -391,7 +406,7 @@ impl MatchState {
             h.u32(p.energy.to_bits());
             h.u32(p.injured as u32);
         }
-        h.u32(self.period as u32);
+        h.u32(self.period as u32 | (self.ends_swapped as u32) << 4);
         h.u32(self.teams[0].mentality as u32 | (self.teams[1].mentality as u32) << 8);
         h.u32(self.subs_used[0] as u32 | (self.subs_used[1] as u32) << 8);
         h.u32(self.period_start_tick);

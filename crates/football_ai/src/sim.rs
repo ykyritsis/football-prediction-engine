@@ -243,6 +243,7 @@ impl Simulation {
             score: [0, 0],
             period: Period::FirstHalf,
             subs_used: [0, 0],
+            ends_swapped: false,
             period_start_tick: 0,
             stoppage_secs: 0.0,
             first_kick_off: TeamSide::Home,
@@ -383,6 +384,7 @@ impl Simulation {
                 self.state.period_start_tick = self.state.tick;
                 self.state.stoppage_secs = 0.0;
                 self.state.restart = None;
+                self.state.ends_swapped = !self.state.ends_swapped;
                 let team = self.state.first_kick_off.opponent();
                 self.kick_off(team);
                 self.consider_substitutions();

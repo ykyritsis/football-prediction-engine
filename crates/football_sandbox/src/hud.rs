@@ -38,9 +38,11 @@ pub fn setup(mut commands: Commands) {
     ));
 }
 
-fn side_name(side: TeamSide) -> &'static str {
+fn side_name(side: TeamSide, swapped: bool) -> &'static str {
     match side {
+        TeamSide::Home if swapped => "HOME (blue, attacks left)",
         TeamSide::Home => "HOME (blue, attacks right)",
+        TeamSide::Away if swapped => "AWAY (red, attacks right)",
         TeamSide::Away => "AWAY (red, attacks left)",
     }
 }
@@ -75,7 +77,7 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
         for plan in plans {
             s += &format!(
                 "{}: {} ({})\n",
-                side_name(plan.side),
+                side_name(plan.side, st.ends_swapped),
                 plan.phase.name(),
                 sim.squads[plan.side.index()].style.formation.name()
             );

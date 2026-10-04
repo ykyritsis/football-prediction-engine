@@ -14,7 +14,8 @@ use std::fmt::Write;
 const SCALE: f32 = 8.0;
 const MARGIN: f32 = 4.0;
 
-fn px(p: Vec2) -> (f32, f32) {
+fn px(flip: bool, p: Vec2) -> (f32, f32) {
+    let p = if flip { -p } else { p };
     (
         (p.x + HALF_LENGTH + MARGIN) * SCALE,
         (HALF_WIDTH - p.y + MARGIN) * SCALE,
@@ -28,6 +29,7 @@ pub fn render(
     decisions: &[Decision],
     caption: &str,
 ) -> String {
+    let flip = state.ends_swapped;
     let w = (PITCH_LENGTH + 2.0 * MARGIN) * SCALE;
     let h = (PITCH_WIDTH + 2.0 * MARGIN) * SCALE + 40.0;
     let mut s = String::new();
@@ -38,16 +40,16 @@ pub fn render(
     let _ = write!(s, r##"<rect width="{w}" height="{h}" fill="#2e7d32"/>"##);
     // Pitch markings.
     let line = |s: &mut String, a: Vec2, b: Vec2| {
-        let (x1, y1) = px(a);
-        let (x2, y2) = px(b);
+        let (x1, y1) = px(flip, a);
+        let (x2, y2) = px(flip, b);
         let _ = write!(
             s,
             r#"<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="white" stroke-width="2"/>"#
         );
     };
     let rect = |s: &mut String, a: Vec2, b: Vec2| {
-        let (x1, y1) = px(Vec2::new(a.x.min(b.x), a.y.max(b.y)));
-        let (x2, y2) = px(Vec2::new(a.x.max(b.x), a.y.min(b.y)));
+        let (x1, y1) = px(flip, Vec2::new(a.x.min(b.x), a.y.max(b.y)));
+        let (x2, y2) = px(flip, Vec2::new(a.x.max(b.x), a.y.min(b.y)));
         let _ = write!(
             s,
             r#"<rect x="{x1}" y="{y1}" width="{}" height="{}" fill="none" stroke="white" stroke-width="2"/>"#,
@@ -80,7 +82,7 @@ pub fn render(
             Vec2::new(sx * (HALF_LENGTH + 1.5), GOAL_HALF_WIDTH),
         );
     }
-    let (cx, cy) = px(Vec2::ZERO);
+    let (cx, cy) = px(flip, Vec2::ZERO);
     let _ = write!(
         s,
         r#"<circle cx="{cx}" cy="{cy}" r="{}" fill="none" stroke="white" stroke-width="2"/>"#,
@@ -91,8 +93,8 @@ pub fn render(
     if let Some(plans) = plans {
         for plan in plans {
             for m in &plan.marking {
-                let (x1, y1) = px(state.player(m.marker).pos);
-                let (x2, y2) = px(state.player(m.target).pos);
+                let (x1, y1) = px(flip, state.player(m.marker).pos);
+                let (x2, y2) = px(flip, state.player(m.target).pos);
                 let _ = write!(
                     s,
                     r##"<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#ffeb3b" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.8"/>"##
@@ -103,8 +105,8 @@ pub fn render(
     // Movement targets.
     for d in decisions {
         let p = state.player(d.player);
-        let (x1, y1) = px(p.pos);
-        let (x2, y2) = px(d.target);
+        let (x1, y1) = px(flip, p.pos);
+        let (x2, y2) = px(flip, d.target);
         let colour = match d.activity {
             Activity::Press(_) | Activity::Contain(_) => "#ff1744",
             Activity::Support(_) => "#00e5ff",
@@ -118,16 +120,16 @@ pub fn render(
     }
     // Ball path.
     if let Some(pass) = state.ball.pass {
-        let (x1, y1) = px(state.ball.pos);
-        let (x2, y2) = px(pass.target);
+        let (x1, y1) = px(flip, state.ball.pos);
+        let (x2, y2) = px(flip, pass.target);
         let _ = write!(
             s,
             r##"<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#e0e0e0" stroke-width="2" stroke-dasharray="6 4"/>"##
         );
     }
     if let Some(shot) = state.ball.shot {
-        let (x1, y1) = px(state.ball.pos);
-        let (x2, y2) = px(shot.target);
+        let (x1, y1) = px(flip, state.ball.pos);
+        let (x2, y2) = px(flip, shot.target);
         let _ = write!(
             s,
             r##"<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#ff5252" stroke-width="3"/>"##
@@ -135,7 +137,7 @@ pub fn render(
     }
     // Players.
     for p in &state.players {
-        let (x, y) = px(p.pos);
+        let (x, y) = px(flip, p.pos);
         let fill = match (p.team, p.is_goalkeeper()) {
             (TeamSide::Home, false) => "#1565c0",
             (TeamSide::Home, true) => "#4fc3f7",
@@ -151,7 +153,7 @@ pub fn render(
             s,
             r#"<circle cx="{x}" cy="{y}" r="9" fill="{fill}" stroke="{stroke}" stroke-width="2"/>"#
         );
-        let (fx, fy) = px(p.pos + p.facing * 1.6);
+        let (fx, fy) = px(flip, p.pos + p.facing * 1.6);
         let _ = write!(
             s,
             r#"<line x1="{x}" y1="{y}" x2="{fx}" y2="{fy}" stroke="black" stroke-width="2"/>"#
@@ -164,7 +166,7 @@ pub fn render(
             p.id.0
         );
     }
-    let (bx, by) = px(state.ball.pos);
+    let (bx, by) = px(flip, state.ball.pos);
     let _ = write!(
         s,
         r#"<circle cx="{bx}" cy="{by}" r="5" fill="white" stroke="black" stroke-width="1.5"/>"#

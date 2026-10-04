@@ -172,12 +172,15 @@ the most chances (about 30 shots); Park the Bus and Wing Play the fewest.
 `style_report`, `headless_match` and the SVG snapshot renderer
 (`football_ai::svg`) are the tuning tools.
 
-Not modelled yet: ends changing at half-time (the
-home side always attacks `+x`), handball, and ball height (lofted balls are
-approximated by an airborne distance).
+Teams change ends at half-time. Internally Home always attacks `+x` (the AI
+is symmetric); `MatchState::ends_swapped` and `display_pos()` tell the
+presentation layer to mirror the pitch, which the sandbox and SVG renderer do.
+
+Not modelled yet: handball, and ball height (lofted balls are approximated by
+an airborne distance).
 
 Next:
 
 1. Calibrate chance creation against PES 2018 match statistics.
 2. Fill identities from the extracted PES 2018 database.
-3. Changing ends at half-time; formation changes from the bench.
+3. Formation changes from the bench; player and team data import format.
