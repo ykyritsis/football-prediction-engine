@@ -156,10 +156,11 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             s += &format!("  doing: {}  {:?}\n", d.activity.label(), d.speed);
         }
         s += &format!(
-            "  energy {:.0}%  speed {:.1}/{:.1} m/s\n",
+            "  energy {:.0}%  speed {:.1}/{:.1} m/s  condition: {}\n",
             100.0 * p.energy,
             p.attrs.top_speed,
-            p.base_top_speed
+            p.base_top_speed,
+            football_ai::execution::condition_label(p.form)
         );
         let b = &p.behaviour;
         s += &format!(
@@ -228,6 +229,9 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::HalfTime => "Half time".into(),
             MatchEvent::FullTime => "Full time".into(),
             MatchEvent::Injury { player } => format!("INJURY {}", sim.name(player)),
+            MatchEvent::Dispossessed { by, on } => {
+                format!("{} dispossessed by {}", sim.name(on), sim.name(by))
+            }
             MatchEvent::MentalityChange { team, mentality } => {
                 format!("{:?} now {}", team, mentality.name())
             }

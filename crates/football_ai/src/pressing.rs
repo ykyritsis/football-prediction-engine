@@ -303,7 +303,12 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
     }
 
     // Counter-press swarm: extra bodies close the ball down immediately.
-    if phase == TeamPhase::DefensiveTransition && mode == PressMode::Press {
+    // Not in the own third, though: there the shape protects the box.
+    let carrier_local = defending.to_local(carrier.pos);
+    if phase == TeamPhase::DefensiveTransition
+        && mode == PressMode::Press
+        && carrier_local.x > -HALF_LENGTH / 3.0
+    {
         let tactics = &state.team(defending).tactics;
         let extra = if tactics.counter_press >= 0.85 {
             2
@@ -325,7 +330,9 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
         }
     }
     // Danger zone: double up, the second man protecting the goal.
-    if triggers.contains(PressTrigger::DangerZone) {
+    // Only when the carrier can actually shoot: a blocker pulled out to a wide
+    // carrier leaves the centre of the box empty.
+    if triggers.contains(PressTrigger::DangerZone) && carrier_local.y.abs() < 14.0 {
         let spot = blocking_position(defending, carrier.pos);
         plan.blocker = state
             .on_pitch(defending)

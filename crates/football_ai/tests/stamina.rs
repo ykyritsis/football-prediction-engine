@@ -204,6 +204,7 @@ fn injured_players_are_slowed_and_replaced_at_the_next_dead_ball() {
     sim.run(30 * 60 * 10);
     let id = PlayerId::new(TeamSide::Home, 6);
     let fresh = sim.state.player(id).attrs.top_speed;
+    let subs_before = sim.state.subs_used[0];
     sim.injure(id);
     sim.clear_restart();
     sim.step();
@@ -215,7 +216,7 @@ fn injured_players_are_slowed_and_replaced_at_the_next_dead_ball() {
     // First half, but injuries cannot wait.
     dead_ball(&mut sim);
     assert!(!sim.state.player(id).injured, "injured player still on");
-    assert_eq!(sim.state.subs_used[0], 1);
+    assert_eq!(sim.state.subs_used[0], subs_before + 1);
 }
 
 #[test]

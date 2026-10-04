@@ -139,8 +139,10 @@ impl Ratings {
     pub fn to_attributes(&self) -> Attributes {
         let n = norm;
         Attributes {
-            top_speed: 6.5 + 3.0 * n(self.speed),
-            acceleration: 4.0 + 4.0 * n(self.explosive_power),
+            // Real top speeds sit in a narrow band (~7.9–9.4 m/s); a wide
+            // mapping makes every race a foregone conclusion.
+            top_speed: 7.9 + 1.5 * n(self.speed),
+            acceleration: 5.0 + 2.5 * n(self.explosive_power),
             passing: n(self.low_pass),
             long_passing: n(self.lofted_pass),
             control: n(self.ball_control),
@@ -151,6 +153,11 @@ impl Ratings {
             set_pieces: 0.6 * n(self.place_kicking) + 0.4 * n(self.curl),
             stamina: n(self.stamina),
             injury_resistance: (self.injury_resistance.clamp(1, 3) - 1) as f32 / 2.0,
+            consistency: (self.form.clamp(1, 8) - 1) as f32 / 7.0,
+            aerial: (0.45 * n(self.header)
+                + 0.3 * n(self.jump)
+                + 0.15 * n(self.physical_contact)
+                + 0.1 * ((self.height_cm as f32 - 165.0) / 30.0).clamp(0.0, 1.0)),
             goalkeeping: (n(self.goalkeeping)
                 + n(self.catching)
                 + n(self.reflexes)
@@ -203,6 +210,6 @@ mod tests {
         slow.speed = 60;
         fast.speed = 95;
         assert!(fast.to_attributes().top_speed > slow.to_attributes().top_speed);
-        assert!(fast.to_attributes().top_speed <= 9.5);
+        assert!(fast.to_attributes().top_speed <= 9.5 && slow.to_attributes().top_speed >= 7.9);
     }
 }

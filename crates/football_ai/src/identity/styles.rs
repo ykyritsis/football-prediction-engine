@@ -492,6 +492,7 @@ impl Skill {
             }
             Skill::LowLoftedPass => a.long_passing = (a.long_passing + 0.02).min(1.0),
             Skill::Interception | Skill::ManMarking => a.tackling = (a.tackling + 0.015).min(1.0),
+            Skill::Heading => a.aerial = (a.aerial + 0.03).min(1.0),
             _ => {}
         }
     }

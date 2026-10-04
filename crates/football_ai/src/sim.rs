@@ -18,6 +18,7 @@
 
 use crate::ball::{apply_friction, CONTROL_RADIUS, SHOT_SPEED};
 use crate::decision::{decide_all, Action, Decision, TACKLE_RANGE};
+use crate::execution::{draw_form, exec, executing};
 use crate::formation::{team_shape, Formation};
 use crate::identity::presets::{self, Squad};
 use crate::math::{cmp_f32, Vec2};
@@ -144,6 +145,11 @@ pub enum MatchEvent {
         slot: u8,
         bench_index: u8,
     },
+    /// The carrier lost the ball in traffic.
+    Dispossessed {
+        by: PlayerId,
+        on: PlayerId,
+    },
     /// A player picked up an injury.
     Injury {
         player: PlayerId,
@@ -263,8 +269,38 @@ impl Simulation {
         for side in TeamSide::BOTH {
             sim.bench_used[side.index()] = vec![false; sim.squads[side.index()].bench.len()];
         }
+        sim.draw_match_day_form();
         sim.kick_off(TeamSide::Home);
         sim
+    }
+
+    /// Match-day form: a shared "team day" plus each player's own swing,
+    /// sized by his consistency; a captain on the pitch steadies everyone,
+    /// and Fighting Spirit players lift themselves when behind.
+    fn draw_match_day_form(&mut self) {
+        use crate::identity::Skill;
+        for side in TeamSide::BOTH {
+            let t = side.index();
+            let team_day = self.rng.range(-1.0, 1.0);
+            let captain = self.squads[t]
+                .players
+                .iter()
+                .any(|p| p.skills.contains(Skill::Captaincy));
+            for slot in 0..TEAM_SIZE {
+                let profile = &self.squads[t].players[slot];
+                let fighting = profile.skills.contains(Skill::FightingSpirit);
+                let has_captaincy = profile.skills.contains(Skill::Captaincy);
+                let idx = PlayerId::new(side, slot).index();
+                let consistency = self.state.players[idx].attrs.consistency;
+                let mut form = draw_form(&mut self.rng, consistency, team_day);
+                if captain && !has_captaincy {
+                    form += 0.1;
+                }
+                let p = &mut self.state.players[idx];
+                p.form = form.clamp(-1.0, 1.0);
+                p.fighting_spirit = fighting;
+            }
+        }
     }
 
     /// Display name of a player.
@@ -351,6 +387,7 @@ impl Simulation {
         self.move_players(&decisions);
         self.update_fatigue();
         self.resolve_duels();
+        self.resolve_crowd_pressure();
         self.move_ball();
         self.resolve_boundaries();
         self.resolve_control();
@@ -451,12 +488,21 @@ impl Simulation {
         }
         let p = self.state.player(by).clone();
         let lofted = c.kind.is_lofted();
-        let acc = if lofted {
-            p.attrs.long_passing
-        } else {
-            p.attrs.passing
-        };
-        let spread = (1.0 - acc) * c.distance * 0.07 + 0.15;
+        let acc = exec(
+            &self.state,
+            &p,
+            if lofted {
+                p.attrs.long_passing
+            } else {
+                p.attrs.passing
+            },
+        )
+        .min(1.0);
+        let mut spread = (1.0 - acc) * c.distance * 0.07 + 0.15;
+        if c.kind == crate::passing::PassKind::Cross {
+            // Whipped in at pace from a wide angle: delivery is hard to weight.
+            spread += 1.0 + (1.0 - acc) * 3.0;
+        }
         let along = (c.target - p.pos).normalize_or_zero();
         let err = along.perp() * self.rng.range(-spread, spread)
             + along * self.rng.range(-spread, spread) * 0.5;
@@ -501,12 +547,15 @@ impl Simulation {
             _ => ShotKind::OpenPlay,
         };
         let dist = p.pos.distance(s.target);
+        // Execution values: stars and players on a good day place it better.
+        let finishing = exec(&self.state, &p, p.attrs.finishing);
+        let set_pieces = exec(&self.state, &p, p.attrs.set_pieces);
         let spread = match kind {
-            ShotKind::Penalty => 0.2 + (1.0 - p.attrs.finishing) * 0.9,
-            ShotKind::FreeKick => 0.4 + (1.0 - p.attrs.set_pieces) * dist * 0.05,
+            ShotKind::Penalty => 0.2 + (1.0 - finishing).max(0.0) * 0.9,
+            ShotKind::FreeKick => 0.4 + (1.0 - set_pieces).max(0.0) * dist * 0.05,
             ShotKind::OpenPlay => {
                 let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
-                0.9 + (1.0 - p.attrs.finishing) * dist * 0.15 + pressure * 2.0
+                (0.9 + (1.0 - finishing) * dist * 0.15 + pressure * 2.0).max(0.4)
             }
         };
         let mut target = s.target + Vec2::new(0.0, self.rng.range(-spread, spread));
@@ -515,7 +564,7 @@ impl Simulation {
         let over = match kind {
             ShotKind::Penalty => 0.04,
             ShotKind::FreeKick => 0.25,
-            ShotKind::OpenPlay => 0.2 + 0.015 * dist * (1.2 - p.attrs.finishing),
+            ShotKind::OpenPlay => (0.2 + 0.015 * dist * (1.2 - finishing)).max(0.08),
         };
         if self.rng.chance(over) {
             let side = if target.y >= 0.0 { 1.0 } else { -1.0 };
@@ -579,7 +628,17 @@ impl Simulation {
             .chance(rules::foul_probability(&challenge, &self.referee));
         let settling =
             c.action_cooldown > 0 || self.state.seconds_since(self.state.ball.owner_since) < 0.5;
-        let p_win = rules::tackle_success(&t, &c, settling);
+        // Crowding: every other defender close to the carrier makes it harder
+        // to get through.
+        let crowd = self
+            .state
+            .on_pitch(t.team)
+            .filter(|d| d.id != by && !d.is_goalkeeper() && d.pos.distance(c.pos) < 3.0)
+            .count() as f32;
+        // Duels are decided by execution: a star dribbler on a good day beats
+        // defenders the model expects to stop him.
+        let (te, ce) = (executing(&self.state, &t), executing(&self.state, &c));
+        let p_win = (rules::tackle_success(&te, &ce, settling) + 0.12 * crowd).min(0.8);
         let won = self.rng.chance(p_win);
         let keep = self.rng.chance(0.45);
         let angle = self.rng.range(-0.9, 0.9);
@@ -605,7 +664,7 @@ impl Simulation {
             }
         } else {
             // Beaten: the tackler is off balance.
-            st.players[by.index()].stun = (0.45 / dt) as u16;
+            st.players[by.index()].stun = (0.3 / dt) as u16;
         }
         self.event(MatchEvent::Tackle { by, on, won });
         if won && keep {
@@ -642,7 +701,7 @@ impl Simulation {
         // Some fouls leave the victim with a knock.
         let resistance = self.state.player(on).attrs.injury_resistance;
         let p_injury =
-            (0.03 + if challenge.from_behind() { 0.05 } else { 0.0 }) * (1.3 - resistance);
+            (0.015 + if challenge.from_behind() { 0.03 } else { 0.0 }) * (1.3 - resistance);
         if self.rng.chance(p_injury) {
             self.injure(on);
         }
@@ -746,6 +805,61 @@ impl Simulation {
         }
     }
 
+    /// Traffic: defenders close to the carrier keep poking at the ball. The
+    /// hazard grows with their number, closeness and tackling and shrinks
+    /// with the carrier's dribbling *execution*, so an ordinary player loses
+    /// the ball in a crowd within seconds while a star on a good day can
+    /// slalom through.
+    fn resolve_crowd_pressure(&mut self) {
+        let Some(cid) = self.state.ball.owner else {
+            return;
+        };
+        if self.state.restart.is_some() {
+            return;
+        }
+        let c = self.state.player(cid).clone();
+        let dribbling = exec(&self.state, &c, c.attrs.dribbling);
+        let mut hazard = 0.0;
+        let mut nearest: Option<(f32, PlayerId)> = None;
+        for d in self.state.on_pitch(c.team.opponent()) {
+            if d.stun > 0 || d.is_goalkeeper() {
+                continue;
+            }
+            let dist = d.pos.distance(c.pos);
+            if dist >= 2.2 {
+                continue;
+            }
+            let closeness = (2.2 - dist) / 2.2;
+            let tackling = exec(&self.state, d, d.attrs.tackling);
+            hazard += 0.55 * closeness * (0.45 + tackling - dribbling).max(0.05);
+            if nearest.is_none_or(|n| dist < n.0) {
+                nearest = Some((dist, d.id));
+            }
+        }
+        // A single defender is the duel's job; traffic is about numbers.
+        let crowd = self
+            .state
+            .on_pitch(c.team.opponent())
+            .filter(|d| !d.is_goalkeeper() && d.pos.distance(c.pos) < 2.2)
+            .count();
+        if crowd < 2 {
+            return;
+        }
+        let dt = self.state.dt;
+        if let Some((_, by)) = nearest {
+            if self.rng.chance(hazard * dt) {
+                let away = (c.pos - self.state.player(by).pos).normalize_or_zero();
+                let jitter = self.rng.range(-0.8, 0.8);
+                let st = &mut self.state;
+                st.ball.owner = None;
+                st.ball.vel = (away + away.perp() * jitter).normalize_or_zero() * 4.0;
+                st.ball.last_touch = Some(by);
+                st.players[cid.index()].stun = (0.3 / dt) as u16;
+                self.event(MatchEvent::Dispossessed { by, on: cid });
+            }
+        }
+    }
+
     /// A carrier who runs into a defender standing in front of him has to get
     /// the ball past him: that contact is a duel whether or not the defender
     /// chose to dive in.
@@ -768,7 +882,7 @@ impl Simulation {
             .filter(|d| d.tackle_cooldown == 0 && d.stun == 0)
             .filter(|d| {
                 let off = d.pos - c.pos;
-                off.length() < 1.0 && off.normalize_or_zero().dot(dir) > 0.6
+                off.length() < 1.5 && off.normalize_or_zero().dot(dir) > 0.3
             })
             .map(|d| d.id)
             .min();
@@ -791,7 +905,7 @@ impl Simulation {
             }
             let mut cap = p.attrs.top_speed * d.speed.factor();
             if owner == Some(p.id) {
-                cap *= 0.72 + 0.15 * p.attrs.dribbling;
+                cap *= 0.65 + 0.15 * p.attrs.dribbling;
                 if restart_spot.is_some() {
                     cap = 0.0;
                 }
@@ -856,7 +970,7 @@ impl Simulation {
             .collect();
         for id in exhausted {
             let resistance = self.state.player(id).attrs.injury_resistance;
-            if self.rng.chance(0.0006 * (1.3 - resistance) * dt) {
+            if self.rng.chance(0.0003 * (1.3 - resistance) * dt) {
                 self.injure(id);
             }
         }
@@ -895,6 +1009,16 @@ impl Simulation {
         let old = self.state.player(id).clone();
         let role = old.role;
         let mut p = Player::new(id, role, incoming.attributes(), incoming.behaviour_in(role));
+        // Fresh legs: form drawn on the day, Super-subs are made for this.
+        let super_sub = if incoming.skills.contains(crate::identity::Skill::SuperSub) {
+            0.5
+        } else {
+            0.0
+        };
+        p.form = (draw_form(&mut self.rng, p.attrs.consistency, 0.0) + super_sub).clamp(-1.0, 1.0);
+        p.fighting_spirit = incoming
+            .skills
+            .contains(crate::identity::Skill::FightingSpirit);
         p.pos = old.pos;
         p.facing = old.facing;
         self.state.players[id.index()] = p;
@@ -1266,14 +1390,70 @@ impl Simulation {
         }
         cands.sort_by(|a, b| a.0.cmp(&b.0).then(cmp_f32(a.1, b.1)).then(a.2.cmp(&b.2)));
 
+        // A lofted ball dropping between the receiver and a defender is an
+        // aerial duel, not a free first touch.
+        if let Some(ps) = pass.filter(|ps| ps.lofted) {
+            let receiver = cands.iter().find(|c| c.2 == ps.to).map(|c| c.2);
+            let defender = cands
+                .iter()
+                .filter(|c| c.2.team() != ps.from.team())
+                .map(|c| c.2)
+                .next();
+            if let (Some(r), Some(d)) = (receiver, defender) {
+                let (rp, dp) = (self.state.player(r).clone(), self.state.player(d).clone());
+                let air = |p: &Player| {
+                    if p.is_goalkeeper() {
+                        // Hands beat heads.
+                        0.4 + 0.7 * p.attrs.goalkeeping
+                    } else {
+                        p.attrs.aerial
+                    }
+                };
+                let (ra, da) = (
+                    exec(&self.state, &rp, air(&rp)),
+                    exec(&self.state, &dp, air(&dp)),
+                );
+                // Defenders face the ball; attackers have to read its flight.
+                let home = if crate::pitch::in_own_box_local(dp.team.to_local(ball_pos)) {
+                    0.08
+                } else {
+                    0.0
+                };
+                let p_att = (0.5 + 0.7 * (ra - da) - home).clamp(0.12, 0.88);
+                if !self.rng.chance(p_att) {
+                    if dp.is_goalkeeper()
+                        && crate::pitch::in_own_box_local(dp.team.to_local(ball_pos))
+                    {
+                        Self::give_ball(&mut self.state, d);
+                        self.state.ball.pass = None;
+                        self.event(MatchEvent::PossessionChange { team: dp.team });
+                        self.after_control(d);
+                        return;
+                    }
+                    // Headed clear, away from goal.
+                    let away = (ball_pos - dp.team.own_goal()).normalize_or_zero();
+                    let dir = (away + away.perp() * self.rng.range(-0.7, 0.7)).normalize_or_zero();
+                    let st = &mut self.state;
+                    st.ball.vel = dir * 13.0;
+                    st.ball.air_distance = 9.0;
+                    st.ball.last_touch = Some(d);
+                    st.ball.pass = None;
+                    st.players[r.index()].action_cooldown = (0.3 / st.dt) as u16;
+                    self.event(MatchEvent::Clearance { by: d });
+                    return;
+                }
+            }
+        }
+
         for (_, _, id) in cands {
             let p = self.state.player(id).clone();
             // Goalkeeper facing a shot.
             if let Some(s) = shot.filter(|s| s.shooter.team() != p.team) {
                 if p.is_goalkeeper() {
+                    let gk = exec(&self.state, &p, p.attrs.goalkeeping);
                     let save = match s.kind {
-                        ShotKind::Penalty => 0.1 + 0.25 * p.attrs.goalkeeping,
-                        _ => (0.15 + 0.75 * p.attrs.goalkeeping - 0.5 * s.xg).clamp(0.05, 0.95),
+                        ShotKind::Penalty => 0.1 + 0.25 * gk,
+                        _ => (0.15 + 0.75 * gk - 0.5 * s.xg).clamp(0.05, 0.95),
                     };
                     let saved = self.rng.chance(save);
                     let held = self.rng.chance(0.55);
@@ -1315,12 +1495,13 @@ impl Simulation {
             let opponent_of_passer = pass.is_some_and(|ps| ps.from.team() != p.team);
             // At the edge of his reach a player only gets a touch on the ball.
             let reach_factor = 1.0 - 0.6 * (p.pos.distance(ball_pos) / CONTROL_RADIUS).min(1.0);
+            let control = exec(&self.state, &p, p.attrs.control);
             let p_control = if intended {
-                (1.25 - speed / 28.0 + 0.3 * p.attrs.control).clamp(0.55, 0.99)
+                (1.25 - speed / 28.0 + 0.3 * control).clamp(0.55, 0.99)
             } else if opponent_of_passer {
                 ((0.95 - speed / 30.0 + 0.15 * p.attrs.tackling) * reach_factor).clamp(0.1, 0.9)
             } else {
-                (1.15 - speed / 25.0 + 0.2 * p.attrs.control).clamp(0.3, 0.99)
+                (1.15 - speed / 25.0 + 0.2 * control).clamp(0.3, 0.99)
             };
             if self.rng.chance(p_control) {
                 if pass.is_some_and(|ps| ps.to == id && ps.receiver_offside) {

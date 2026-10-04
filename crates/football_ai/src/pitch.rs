@@ -138,8 +138,13 @@ pub fn zone_value_local(local: Vec2) -> f32 {
     let d = local.distance(goal);
     let proximity = (1.0 - d / 40.0).clamp(0.0, 1.0);
     let centrality = 1.0 - (local.y.abs() / HALF_WIDTH).clamp(0.0, 1.0);
+    // Closeness only counts with a view of goal: running down the byline
+    // gets nearer the goal without getting nearer a chance.
+    let view = (crate::eval::goal_angle(local) / 0.6)
+        .clamp(0.0, 1.0)
+        .sqrt();
     (0.45 * along * along
-        + 0.45 * proximity * proximity * (0.5 + 0.5 * centrality)
+        + 0.45 * proximity * proximity * (0.25 + 0.75 * view) * (0.6 + 0.4 * centrality)
         + 0.1 * centrality * along)
         .clamp(0.0, 1.0)
 }

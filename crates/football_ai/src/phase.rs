@@ -157,10 +157,12 @@ pub fn determine_phase(prev: TeamPhase, inputs: PhaseInputs, tactics: &Tactics) 
             _ => TeamPhase::FinalThird,
         }
     } else {
-        if transition {
+        let (lo, hi) = defending_thresholds(tactics);
+        // Transition ends early once the ball is deep in the own half: the
+        // team settles into its block.
+        if transition && inputs.ball_local_x >= lo {
             return TeamPhase::DefensiveTransition;
         }
-        let (lo, hi) = defending_thresholds(tactics);
         let prev_band = match prev {
             TeamPhase::LowBlock => Some(0),
             TeamPhase::MidBlock => Some(1),

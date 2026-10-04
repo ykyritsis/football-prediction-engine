@@ -14,10 +14,11 @@ inspecting it.
 ## Quick start
 
 ```sh
-cargo test -p football_ai                                         # ~100 tests, a few seconds
+cargo test -p football_ai                                         # ~150 tests, about two minutes
 cargo run --release -p football_ai --example headless_match -- 7 90 tiki-taka long-ball
 cargo run --release -p football_ai --example style_report -- 90 2  # round-robin of team styles
 cargo run -p football_ai --example describe                        # generated team/player descriptions
+cargo run --release -p football_ai --example trend_report -- 24    # upsets, star finishers, match-day form
 cargo run --release -p football_sandbox                            # visual sandbox
 ```
 
@@ -43,7 +44,8 @@ each player makes a **decision** from that snapshot and his team's plan.
 | Stamina and substitutions | `sim` | Energy drains with running (faster for low stamina); tired players lose up to 20% speed and press less, so pressing teams fade late. Benches of seven; the manager AI makes up to three substitutions at dead balls: injured players at once, tactical changes for the score from the 60th minute (an attacker on when chasing, a defender when protecting a lead), and tired players from the 55th, each time bringing on the best fit for the position |
 | Injuries | `sim` | Fouls (especially from behind) and exhaustion can injure a player, less often for high injury resistance; injured players are slowed and replaced at the next dead ball |
 | Game management | `tactics::Mentality` | From the 60th minute teams adapt to the score: chasing (higher line, harder press, more direct, more risk), all-out attack after 80', or protecting a lead after 75' (deeper, cautious, forward kept as an outlet) |
-| Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
+| Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, contact duels, dispossession in traffic, aerial duels for crosses and long balls, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
+| Trend breakers | `execution` | Stars execute above their ratings, match-day form (team day + individual, PES condition arrows), Fighting Spirit, Captaincy, Super-sub: see below |
 
 ## Team and player identity
 
@@ -87,18 +89,50 @@ squads that suit each style, and two example star profiles. The star
 profiles' ratings are illustrative placeholders: real values should come from
 the game data.
 
+### Trend breakers
+
+Ratings set expectations; they do not decide matches.
+
+* **Execution vs expectation.** Decisions use a player's attributes;
+  what happens on the pitch uses his *execution* value
+  (`execution::exec`). Above 0.8 (about 87 rated) the curve is
+  non-linear, so elite finishers, dribblers, passers and keepers produce
+  results the model does not predict.
+* **Match-day form.** Each team draws a "team day" and each player an
+  individual form from the match seed, scaled by his consistency (PES
+  "Form" 1–8): erratic players swing more. Form scales execution by up to
+  ±25%. Fighting Spirit lifts a player while his team is behind, a Captaincy
+  holder lifts the rest of the XI, a Super-sub arrives in good form. The
+  sandbox HUD shows each player's condition.
+* **Football's own randomness.** Carriers can be crowded off the ball,
+  crosses and long balls are aerial duels (heading, jump, strength,
+  height), defenders lead the carrier when they press.
+
+`trend_report` (24 matches each):
+
+```text
+80-rated favourite at home to a 77-rated side: W10 D7 L7 (underdog wins 29%)
+Wing Play 79 with C. Ronaldo up front:  230 shots  xG 38.1  goals 59
+same team with an ordinary striker:     166 shots  xG 28.4  goals 33
+```
+
+Tests in `tests/trend_breakers.rs` pin these: form is seeded and varies, a
+star finisher outscores an ordinary striker, the weaker side takes about a
+third of the points across a three-point gap, a low block concedes less
+than an open game, and carriers get dispossessed in traffic.
+
 ### Does identity change the football?
 
 Round-robin of the archetypes (`style_report`, 90 min, every pairing home and away):
 
 | Style | Poss | Avg pass | Long % | Crosses | Shots | Goals | PPDA |
 |---|---|---|---|---|---|---|---|
-| Tiki-Taka | 63% | 13.0 m | 11% | 2 | 22 | 1.8 | 2.0 |
-| Gegenpress | 52% | 21.9 m | 26% | 5 | 31 | 4.2 | 2.6 |
-| Route One | 47% | 32.5 m | 61% | 37 | 11 | 1.9 | 4.5 |
-| Counter-Attack | 51% | 23.7 m | 27% | 45 | 16 | 2.1 | 3.2 |
-| Wing Play | 47% | 21.0 m | 26% | 21 | 9 | 1.4 | 3.4 |
-| Park the Bus | 39% | 28.5 m | 42% | 1 | 5 | 0.7 | 7.6 |
+| Tiki-Taka | 64% | 13.2 m | 12% | 0 | 6 | 0.6 | 1.5 |
+| Gegenpress | 48% | 21.5 m | 24% | 2 | 10 | 1.2 | 1.6 |
+| Route One | 45% | 29.6 m | 57% | 45 | 12 | 2.6 | 2.7 |
+| Counter-Attack | 51% | 22.4 m | 24% | 52 | 16 | 3.6 | 2.6 |
+| Wing Play | 56% | 19.9 m | 24% | 31 | 7 | 1.3 | 2.4 |
+| Park the Bus | 35% | 28.4 m | 48% | 0 | 3 | 0.7 | 3.4 |
 
 (PPDA = opponent passes per defensive action in the pressing zone; lower =
 more intense pressing.) A full match also produces football-like discipline:
@@ -175,15 +209,23 @@ the selected player's identity and behaviour numbers, and recent events.
 
 ## Status and roadmap
 
-Calibration is ongoing. Possession, passing, pressing intensity, crossing,
-discipline, fatigue and shot accuracy are in a football-like range: about two
-thirds of shots hit the target, keepers save around 80% of those, and a match
-averages about four goals (real football: 2.7). The decision layer's xG is
-scaled to what shots actually score (`XG_EXECUTION`). Gegenpress still creates
-the most chances (about 30 shots) and its very high line produces occasional
-blowouts (6–9, 3–7); Park the Bus and Wing Play create the fewest.
-`style_report`, `headless_match` and the SVG snapshot renderer
-(`football_ai::svg`) are the tuning tools.
+Calibration is ongoing. A match averages a little over three goals (real
+football: 2.7) and the blowouts of earlier versions are gone: pressers now
+run at where the carrier is going instead of trailing him, defenders commit
+to tackles, the counter-press swarm and the shot blocker no longer pull the
+back line out of the box, carriers no longer shield indefinitely near goal,
+and crosses are contested in the air. Known gaps, in priority order:
+
+* Too many small contests: hundreds of tackles and possession changes per
+  match (real football: a few dozen tackles), and through balls and long
+  balls complete about twice as often as in real football.
+* Shot volume depends on style more than it should: Tiki-Taka and Park the
+  Bus take very few shots (almost none from outside the box), Counter-Attack
+  is the strongest style.
+* A six-point rating gap is still close to decisive.
+
+`style_report`, `trend_report`, `headless_match` and the SVG snapshot
+renderer (`football_ai::svg`) are the tuning tools.
 
 Teams change ends at half-time. Internally Home always attacks `+x` (the AI
 is symmetric); `MatchState::ends_swapped` and `display_pos()` tell the

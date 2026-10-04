@@ -140,14 +140,16 @@ pub fn tackle_success(tackler: &Player, carrier: &Player, settling: bool) -> f32
     } else {
         tackler.attrs.tackling
     };
-    let mut p = 0.22 + 0.5 * (skill - 0.9 * carrier.attrs.dribbling);
+    // Equal players: ~45%, so defenders do commit. The skill gap matters,
+    // but an outclassed defender still wins the ball now and then.
+    let mut p = 0.42 + 0.45 * (skill - 0.9 * carrier.attrs.dribbling);
     if settling {
         p += 0.08;
     }
     if back_turned {
         p += 0.05;
     }
-    p.clamp(0.12, 0.65)
+    p.clamp(0.15, 0.75)
 }
 
 /// Minimum expected success at which a player commits to a tackle: aggressive

@@ -312,8 +312,10 @@ pub fn hold_score(state: &MatchState, carrier: &Player) -> f32 {
     let pressure = pressure_at(state, side, carrier.pos);
     let b = &carrier.behaviour;
     let lose = pressure * 0.4 * (1.15 - 0.45 * carrier.attrs.control - 0.35 * b.hold_up);
-    let ev = (1.0 - lose) * possession_value(here)
-        - lose * turnover_cost(here) * risk_aversion(state, carrier);
+    // Holding only preserves the position: boxed in, it is worth what can
+    // still be done from there, not the open-play value of the spot.
+    let held_value = possession_value(here) * (1.0 - 0.3 * pressure);
+    let ev = (1.0 - lose) * held_value - lose * turnover_cost(here) * risk_aversion(state, carrier);
     // Holding is a stop-gap: small constant penalty so players act.
     ev - 0.006
         + if pressure > 0.5 {
@@ -511,13 +513,15 @@ fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decis
         .filter(|c| c.team != p.team && state.restart.is_none())
     {
         let goal = p.team.own_goal();
-        let one_on_one = c.pos.distance(goal) < 7.0
-            && p.team.to_local(c.pos).y.abs() < 6.0
-            && !state.on_pitch(c.team).any(|m| {
-                m.id != c.id
-                    && m.pos.distance(goal) < 14.0
-                    && state.nearest_distance(p.team, m.pos) > 2.0
-            });
+        let close = c.pos.distance(goal) < 6.0 && p.team.to_local(c.pos).y.abs() < 6.0;
+        let one_on_one = close
+            || c.pos.distance(goal) < 7.0
+                && p.team.to_local(c.pos).y.abs() < 6.0
+                && !state.on_pitch(c.team).any(|m| {
+                    m.id != c.id
+                        && m.pos.distance(goal) < 14.0
+                        && state.nearest_distance(p.team, m.pos) > 2.0
+                });
         if one_on_one {
             target = c.pos + (goal - c.pos).normalize_or_zero() * 0.5;
             speed = MoveSpeed::Sprint;
@@ -686,6 +690,9 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
     if let Some(carrier) = state.carrier().filter(|c| c.team != p.team) {
         let press = &plan.press;
         let engaging = press.primary == Some(id) || press.swarm.contains(&Some(id));
+        // Chase where the carrier is going, not where he is: steering slows
+        // on arrival, so aiming at a moving carrier only ever trails him.
+        let lead = carrier.vel * 0.6;
         if engaging {
             let dist = p.pos.distance(carrier.pos);
             let (activity, target, speed, tackle_range) =
@@ -693,7 +700,7 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
                     let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.6;
                     (
                         Activity::Press(carrier.id),
-                        carrier.pos + goal_side,
+                        carrier.pos + lead + goal_side,
                         MoveSpeed::Sprint,
                         TACKLE_RANGE,
                     )
@@ -705,7 +712,7 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
                         let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.8;
                         (
                             Activity::Contain(carrier.id),
-                            carrier.pos + goal_side,
+                            carrier.pos + lead + goal_side,
                             MoveSpeed::Run,
                             TACKLE_RANGE,
                         )
@@ -736,7 +743,7 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
             };
         }
         if press.blocker == Some(id) {
-            let target = crate::pressing::blocking_position(p.team, carrier.pos);
+            let target = crate::pressing::blocking_position(p.team, carrier.pos + lead);
             return Decision {
                 player: id,
                 activity: Activity::Block(carrier.id),

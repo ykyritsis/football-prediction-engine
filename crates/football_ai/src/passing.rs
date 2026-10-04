@@ -299,7 +299,11 @@ fn score_candidate(
         lofted,
         kind == PassKind::Cross,
     );
-    let misplace = misplace_probability(passer, distance, lofted);
+    let mut misplace = misplace_probability(passer, distance, lofted);
+    if kind == PassKind::Cross {
+        // Most crosses fail on delivery.
+        misplace = (misplace + 0.2 + 0.25 * (1.0 - passer.attrs.long_passing)).min(0.9);
+    }
     let risk = 1.0 - (1.0 - intercept) * (1.0 - misplace);
 
     let target_local = team.to_local(target);

@@ -78,6 +78,11 @@ pub struct Player {
     pub energy: f32,
     /// Carrying a knock: slower, and replaced at the next dead ball.
     pub injured: bool,
+    /// Match-day form `-1..1` (PES condition arrows): scales how well the
+    /// player executes, not how he decides.
+    pub form: f32,
+    /// PES skills that change form during the match.
+    pub fighting_spirit: bool,
     /// Top speed and acceleration when fresh (`attrs` holds the current,
     /// fatigue-adjusted values).
     pub base_top_speed: f32,
@@ -104,6 +109,8 @@ impl Player {
             sent_off: false,
             energy: 1.0,
             injured: false,
+            form: 0.0,
+            fighting_spirit: false,
             base_top_speed: attrs.top_speed,
             base_acceleration: attrs.acceleration,
         }
@@ -405,6 +412,7 @@ impl MatchState {
             h.u32(p.yellow_cards as u32 | (p.sent_off as u32) << 8);
             h.u32(p.energy.to_bits());
             h.u32(p.injured as u32);
+            h.u32(p.form.to_bits());
         }
         h.u32(self.period as u32 | (self.ends_swapped as u32) << 4);
         h.u32(self.teams[0].mentality as u32 | (self.teams[1].mentality as u32) << 8);

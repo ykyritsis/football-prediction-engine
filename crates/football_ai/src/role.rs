@@ -319,6 +319,10 @@ pub struct Attributes {
     pub stamina: f32,
     /// Resistance to injury `0..1`.
     pub injury_resistance: f32,
+    /// How steady the player's form is from match to match `0..1` (PES "Form").
+    pub consistency: f32,
+    /// Winning the ball in the air: heading, jump, strength and height.
+    pub aerial: f32,
     pub goalkeeping: f32,
 }
 
@@ -337,6 +341,8 @@ impl Attributes {
             set_pieces: 0.5,
             stamina: 0.7,
             injury_resistance: 0.5,
+            consistency: 0.5,
+            aerial: 0.6,
             goalkeeping: 0.0,
         };
         match role {
@@ -350,6 +356,7 @@ impl Attributes {
             },
             Role::CentreBack => Attributes {
                 top_speed: 7.6,
+                aerial: 0.75,
                 tackling: 0.8,
                 passing: 0.65,
                 finishing: 0.3,
