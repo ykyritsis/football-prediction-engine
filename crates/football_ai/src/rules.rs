@@ -152,7 +152,7 @@ pub fn tackle_commit_threshold(tackler: &Player) -> f32 {
         .press_willingness
         .max(tackler.behaviour.marking_tightness);
     let booked = if tackler.yellow_cards > 0 { 0.08 } else { 0.0 };
-    0.3 - 0.12 * aggression + booked
+    0.42 - 0.12 * aggression + booked
 }
 
 /// Probability that a challenge is penalised as a foul.

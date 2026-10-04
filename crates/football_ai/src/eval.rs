@@ -32,7 +32,7 @@ pub fn possession_value(local: Vec2) -> f32 {
 /// the loss of our own possession.
 #[inline]
 pub fn turnover_cost(local: Vec2) -> f32 {
-    0.02 + POSSESSION_VALUE_SCALE * zone_value_local(-local)
+    0.04 + POSSESSION_VALUE_SCALE * zone_value_local(-local)
 }
 
 /// Pressure on a point from `side`'s opponents, `0` (free) to `1` (closed down).

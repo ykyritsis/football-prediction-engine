@@ -39,7 +39,8 @@ each player makes a **decision** from that snapshot and his team's plan.
 | Support runs | `support` | Rest defence, near/far post, penalty spot, cut-back, runs in behind timed to the passer, overlaps/underlaps, showing for the ball into free pockets, holding width |
 | Passing evaluation | `passing` | Short / through / long / cross candidates; interception risk from lane timing (lofted balls only contestable at landing, aerial duels), misplacement, receiver pressure, progression, lines broken, offside excluded |
 | On-ball choice | `decision`, `eval` | Pass vs shot (xG) vs carry vs shield on one expected-value scale, with identity as style utility |
-| Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, tackles, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
+| Laws of the game | `rules` | Fouls from challenges (angle, skill, aggression, bookings, own box), advantage with call-back, yellow/red cards incl. second yellows and denial of a goal-scoring chance, sending-offs (the team plays a man short), direct/indirect free kicks with walls, penalties, two halves with stoppage time; referees have a style (`Referee::strict()`, `lenient()`) |
+| Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
 
 ## Team and player identity
 
@@ -73,16 +74,20 @@ the game data.
 
 ### Does identity change the football?
 
-Round-robin of the archetypes (`style_report`, 90 min, 2 seeds per pairing):
+Round-robin of the archetypes (`style_report`, 90 min, every pairing home and away):
 
 | Style | Poss | Avg pass | Long % | Crosses | Shots | PPDA |
 |---|---|---|---|---|---|---|
-| Tiki-Taka | 59% | 19.6 m | 26% | 3 | 42 | 1.20 |
-| Gegenpress | 48% | 27.6 m | 44% | 8 | 37 | 1.26 |
-| Route One | 45% | 32.0 m | 64% | 10 | 9 | 2.02 |
-| Counter-Attack | 51% | 28.6 m | 44% | 15 | 17 | 1.72 |
-| Wing Play | 57% | 23.8 m | 34% | 5 | 11 | 1.57 |
-| Park the Bus | 40% | 30.9 m | 51% | 1 | 7 | 2.81 |
+| Tiki-Taka | 58% | 14.5 m | 13% | 2 | 51 | 2.0 |
+| Gegenpress | 48% | 23.3 m | 28% | 6 | 61 | 2.6 |
+| Route One | 45% | 30.0 m | 56% | 13 | 14 | 4.8 |
+| Counter-Attack | 54% | 23.3 m | 29% | 16 | 28 | 3.0 |
+| Wing Play | 54% | 20.4 m | 25% | 4 | 13 | 3.6 |
+| Park the Bus | 41% | 29.5 m | 46% | 2 | 13 | 9.5 |
+
+(PPDA = opponent passes per defensive action in the pressing zone; lower =
+more intense pressing.) A full match also produces football-like discipline:
+around 20 fouls, 2–4 yellow cards, the occasional red and penalty.
 
 Tests pin the important contrasts: long-ball teams play longer, possession
 teams keep the ball, pressing teams win it higher, dribblers carry more,
@@ -140,6 +145,7 @@ see is exactly what the headless tests run.
 | `+` / `-` | speed ×2 / ÷2 |
 | `1`–`6` | presets: kick-off, build-up under press, midfield progression, wide final third, counter-attack, low block |
 | `R` / `N` | reset preset / new seed |
+| `F` | whistle a foul on the ball carrier (free kick, penalty, cards) |
 | `H` / `A` | cycle home / away team style |
 | `X` | toggle the example star players in the home team |
 | Click / Tab / Esc | select player / cycle / clear |
@@ -153,14 +159,20 @@ the selected player's identity and behaviour numbers, and recent events.
 
 ## Status and roadmap
 
-Calibration is ongoing. Styles separate clearly, but attacking styles still
-create more shots and goals than real football, and crossing volume is low.
-`style_report` and the SVG snapshot renderer (`football_ai::svg`) are the
-tuning tools.
+Calibration is ongoing. Possession, pass length and completion, pressing
+intensity and discipline are in a football-like range and styles separate
+clearly. Chance creation is still too generous for the two high-pressing
+styles (Tiki-Taka and Gegenpress take 50–60 shots a match; real teams take
+10–20), mostly close-range finishes after sustained pressure, and wing play
+crosses too little. `style_report`, `headless_match` and the SVG snapshot
+renderer (`football_ai::svg`) are the tuning tools.
+
+Not modelled yet: substitutions and stamina, ends changing at half-time (the
+home side always attacks `+x`), handball, and ball height (lofted balls are
+approximated by an airborne distance).
 
 Next:
 
-1. Match rules engine: fouls and advantage, cards, free kicks and penalties, halves.
-2. 3D ball physics: height, spin and curl, bounces, headers, posts.
-3. Fill identities from the extracted PES 2018 database.
-4. Calibrate against PES 2018 match statistics.
+1. Calibrate chance creation against PES 2018 match statistics.
+2. Fill identities from the extracted PES 2018 database.
+3. Substitutions, stamina and fatigue.

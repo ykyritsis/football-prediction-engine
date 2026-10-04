@@ -195,7 +195,7 @@ impl TeamStyle {
                 t.counter_attack = 0.25;
                 t.directness = 0.3;
                 t.tempo = 0.45;
-                t.risk_aversion = 1.15;
+                t.risk_aversion = 1.5;
             }
         }
         match self.build_up {
@@ -253,6 +253,7 @@ impl TeamStyle {
         for &i in &self.instructions {
             match i {
                 Instruction::TikiTaka => {
+                    t.risk_aversion = t.risk_aversion.max(1.8);
                     t.support_closeness = t.support_closeness.max(0.9);
                     t.tempo = t.tempo.max(0.85);
                     t.long_ball = 0.05;

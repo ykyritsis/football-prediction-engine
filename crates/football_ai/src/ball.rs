@@ -14,11 +14,11 @@ use crate::state::Player;
 /// Rolling deceleration, m/s².
 pub const BALL_DECEL: f32 = 3.2;
 /// Speed (m/s) a ground pass should arrive at its target with.
-pub const PASS_ARRIVAL_SPEED: f32 = 6.5;
+pub const PASS_ARRIVAL_SPEED: f32 = 11.0;
 /// Arrival speed for lofted passes (they drop and slow sharply on landing).
 pub const LOFTED_ARRIVAL_SPEED: f32 = 4.0;
-pub const MIN_PASS_SPEED: f32 = 8.0;
-pub const MAX_PASS_SPEED: f32 = 30.0;
+pub const MIN_PASS_SPEED: f32 = 11.0;
+pub const MAX_PASS_SPEED: f32 = 32.0;
 pub const SHOT_SPEED: f32 = 28.0;
 /// Fraction of a lofted pass's length during which it is above head height
 /// and cannot be intercepted.

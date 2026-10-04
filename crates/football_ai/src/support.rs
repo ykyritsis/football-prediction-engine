@@ -158,7 +158,7 @@ pub fn plan_support(
         let spots = [
             (
                 SupportRun::NearPostRun,
-                Vec2::new(HALF_LENGTH - 6.0, sign * 3.0),
+                Vec2::new(HALF_LENGTH - 7.5, sign * 3.0),
             ),
             (
                 SupportRun::FarPostRun,

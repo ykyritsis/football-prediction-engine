@@ -83,6 +83,16 @@ fn choose_chaser(state: &MatchState, side: TeamSide) -> Option<(PlayerId, Vec2)>
             best = Some((t, p.id, pt));
         }
     }
+    // Balls into the six-yard area are the keeper's if he can get there.
+    let gk = state.goalkeeper(side);
+    if !gk.sent_off && gk.stun == 0 {
+        let (gpt, gt) = intercept(gk, ball.pos, ball.vel, ball.air_distance);
+        let gl = side.to_local(gpt);
+        let claimable = gl.x < -crate::pitch::HALF_LENGTH + 7.0 && gl.y.abs() < 10.0;
+        if claimable && best.is_none_or(|b| gt <= b.0 + 0.4) {
+            best = Some((gt, gk.id, gpt));
+        }
+    }
     let (t, id, pt) = best?;
     let pt = clamp_to_pitch(pt, 0.5);
     // Opponent pass in flight: only go for it if we can get there first.

@@ -112,8 +112,11 @@ pub fn interception_risk(
         } else {
             travel_time(speed, along).unwrap_or(10.0)
         };
-        let reach = if opp.is_goalkeeper() { 1.8 } else { 1.0 };
-        let opp_t = REACTION_TIME + (opp.pos.distance(c) - reach).max(0.0) / opp.attrs.top_speed;
+        // Slightly generous reach and quick reactions: being on the lane is
+        // usually enough to get a foot to a ground pass.
+        let reach = if opp.is_goalkeeper() { 1.8 } else { 1.4 };
+        let opp_t =
+            0.5 * REACTION_TIME + (opp.pos.distance(c) - reach).max(0.0) / opp.attrs.top_speed;
         let margin = opp_t - ball_t;
         let r = logistic(-margin * 5.0 - 1.2);
         if r > 0.01 {
@@ -198,11 +201,13 @@ pub fn evaluate_passes(
             continue;
         }
         if d <= 38.0 {
-            options.push((
-                PassKind::Short,
-                receiver.pos,
-                pass_speed_for(d, PASS_ARRIVAL_SPEED),
-            ));
+            // Play it into the receiver's path if he is moving.
+            let (target, speed) = if receiver.vel.length() > 1.5 {
+                lead_target(receiver, origin)
+            } else {
+                (receiver.pos, pass_speed_for(d, PASS_ARRIVAL_SPEED))
+            };
+            options.push((PassKind::Short, target, speed));
         }
         // Lead pass into a forward run.
         let forward_speed = team.to_local(receiver.vel).x;

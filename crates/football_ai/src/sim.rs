@@ -993,10 +993,12 @@ impl Simulation {
 
             let intended = pass.is_some_and(|ps| ps.to == id);
             let opponent_of_passer = pass.is_some_and(|ps| ps.from.team() != p.team);
+            // At the edge of his reach a player only gets a touch on the ball.
+            let reach_factor = 1.0 - 0.6 * (p.pos.distance(ball_pos) / CONTROL_RADIUS).min(1.0);
             let p_control = if intended {
                 (1.25 - speed / 28.0 + 0.3 * p.attrs.control).clamp(0.55, 0.99)
             } else if opponent_of_passer {
-                (0.95 - speed / 30.0 + 0.15 * p.attrs.tackling).clamp(0.2, 0.9)
+                ((0.95 - speed / 30.0 + 0.15 * p.attrs.tackling) * reach_factor).clamp(0.1, 0.9)
             } else {
                 (1.15 - speed / 25.0 + 0.2 * p.attrs.control).clamp(0.3, 0.99)
             };

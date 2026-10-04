@@ -511,7 +511,7 @@ pub fn tackle_window(state: &MatchState, tackler: &Player, carrier: &Player) -> 
     let back_turned = carrier.facing.dot(to_tackler) < -0.2;
     let stationary = carrier.vel.length() < 1.5;
     let exposed = if crate::rules::in_penalty_area(tackler.team, carrier.pos) {
-        stationary || (settling && back_turned)
+        stationary || settling
     } else {
         settling || back_turned || stationary
     };
