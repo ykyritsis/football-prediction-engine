@@ -87,6 +87,8 @@ pub enum Activity {
     Recovering,
     /// Standing in the wall for an opponent's free kick.
     Wall,
+    /// Blocking the line between the ball and goal near the box.
+    Block(PlayerId),
     /// Sent off: takes no further part.
     SentOff,
 }
@@ -112,6 +114,7 @@ impl Activity {
             Activity::Clearing => "clear".into(),
             Activity::Recovering => "recovering".into(),
             Activity::Wall => "wall".into(),
+            Activity::Block(t) => format!("block shot of #{}", t.0),
             Activity::SentOff => "sent off".into(),
         }
     }
@@ -689,6 +692,16 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
                 action,
                 target,
                 speed,
+            };
+        }
+        if press.blocker == Some(id) {
+            let target = crate::pressing::blocking_position(p.team, carrier.pos);
+            return Decision {
+                player: id,
+                activity: Activity::Block(carrier.id),
+                action: Action::None,
+                target,
+                speed: MoveSpeed::Sprint,
             };
         }
         if press.cover == Some(id) {

@@ -333,7 +333,7 @@ fn score_candidate(
         style += (b.through_ball_bias - 0.2) * 0.04;
     }
     if kind == PassKind::Cross {
-        style += (0.5 * tactics.crossing + 0.5 * b.cross_bias - 0.5) * 0.06;
+        style += (0.5 * tactics.crossing + 0.5 * b.cross_bias - 0.5) * 0.12;
     }
     if distance < 16.0 && !lofted {
         // Short combination play (tiki-taka, low support range, high tempo).

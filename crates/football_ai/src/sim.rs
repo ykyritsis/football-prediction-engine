@@ -327,6 +327,7 @@ impl Simulation {
         }
         self.apply_actions(&decisions);
         self.move_players(&decisions);
+        self.resolve_duels();
         self.move_ball();
         self.resolve_boundaries();
         self.resolve_control();
@@ -699,6 +700,37 @@ impl Simulation {
             self.state.advantage = None;
             self.event(MatchEvent::AdvantageCalledBack { team: a.team });
             self.award_free_kick(a.team, a.spot);
+        }
+    }
+
+    /// A carrier who runs into a defender standing in front of him has to get
+    /// the ball past him: that contact is a duel whether or not the defender
+    /// chose to dive in.
+    fn resolve_duels(&mut self) {
+        let Some(cid) = self.state.ball.owner else {
+            return;
+        };
+        if self.state.restart.is_some() {
+            return;
+        }
+        let c = self.state.player(cid).clone();
+        let speed = c.vel.length();
+        if speed < 2.0 {
+            return;
+        }
+        let dir = c.vel / speed;
+        let defender = self
+            .state
+            .on_pitch(c.team.opponent())
+            .filter(|d| d.tackle_cooldown == 0 && d.stun == 0)
+            .filter(|d| {
+                let off = d.pos - c.pos;
+                off.length() < 1.0 && off.normalize_or_zero().dot(dir) > 0.6
+            })
+            .map(|d| d.id)
+            .min();
+        if let Some(d) = defender {
+            self.do_tackle(d, cid);
         }
     }
 

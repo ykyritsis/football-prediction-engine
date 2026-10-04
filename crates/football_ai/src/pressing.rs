@@ -129,6 +129,8 @@ pub struct PressPlan {
     pub cover_target: Option<PlayerId>,
     /// Extra players swarming the ball during a counter-press.
     pub swarm: [Option<PlayerId>; 2],
+    /// Near goal: a second defender who blocks the line from ball to goal.
+    pub blocker: Option<PlayerId>,
 }
 
 impl PressPlan {
@@ -140,10 +142,14 @@ impl PressPlan {
         cover: None,
         cover_target: None,
         swarm: [None, None],
+        blocker: None,
     };
 
     pub fn involves(&self, id: PlayerId) -> bool {
-        self.primary == Some(id) || self.cover == Some(id) || self.swarm.contains(&Some(id))
+        self.primary == Some(id)
+            || self.cover == Some(id)
+            || self.blocker == Some(id)
+            || self.swarm.contains(&Some(id))
     }
 }
 
@@ -316,7 +322,25 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
             n += 1;
         }
     }
+    // Danger zone: double up, the second man protecting the goal.
+    if triggers.contains(PressTrigger::DangerZone) {
+        let spot = blocking_position(defending, carrier.pos);
+        plan.blocker = state
+            .on_pitch(defending)
+            .filter(|p| !p.is_goalkeeper() && p.stun == 0 && !plan.involves(p.id))
+            .min_by(|a, b| {
+                cmp_f32(a.pos.distance(spot), b.pos.distance(spot)).then(a.id.cmp(&b.id))
+            })
+            .map(|p| p.id);
+    }
     plan
+}
+
+/// Where a shot-blocking defender stands: on the line from the ball to the
+/// centre of the goal, a couple of metres from the carrier.
+pub fn blocking_position(defending: TeamSide, carrier_pos: Vec2) -> Vec2 {
+    let goal = defending.own_goal();
+    carrier_pos + (goal - carrier_pos).normalize_or_zero() * 2.2
 }
 
 /// Where the containing player stands: goal-side of the carrier, angled to

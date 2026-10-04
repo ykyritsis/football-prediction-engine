@@ -581,3 +581,22 @@ fn every_role_gets_a_sensible_activity() {
         }
     }
 }
+
+#[test]
+fn second_defender_blocks_the_line_to_goal_near_the_box() {
+    let mut s = Preset::LowBlockDefending.build(3, None, None);
+    let c = s.state.carrier().unwrap().id;
+    s.place(c, Vec2::new(-34.0, 4.0));
+    s.set_carrier(c);
+    let plan = plan_team(&s.state, HOME);
+    let blocker = plan.press.blocker.expect("a blocker near goal");
+    assert_ne!(Some(blocker), plan.press.primary);
+    let d = decide(&s.state, &plan, blocker);
+    let carrier = s.state.player(c).pos;
+    // Target lies between the carrier and the goal.
+    assert!(d.target.x < carrier.x && d.target.distance(carrier) < 3.0, "{d:?}");
+    // Far from goal there is no blocker.
+    s.place(c, Vec2::new(10.0, 4.0));
+    s.set_carrier(c);
+    assert!(plan_team(&s.state, HOME).press.blocker.is_none());
+}

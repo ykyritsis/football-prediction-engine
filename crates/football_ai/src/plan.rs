@@ -172,10 +172,16 @@ pub fn plan_team(state: &MatchState, side: TeamSide) -> TeamPlan {
     let phase = phase_for(state, side);
     let shape = team_shape(state, side, phase);
     let press = plan_press(state, side, phase);
-    let mut busy: Vec<PlayerId> = [press.primary, press.cover, press.swarm[0], press.swarm[1]]
-        .into_iter()
-        .flatten()
-        .collect();
+    let mut busy: Vec<PlayerId> = [
+        press.primary,
+        press.cover,
+        press.blocker,
+        press.swarm[0],
+        press.swarm[1],
+    ]
+    .into_iter()
+    .flatten()
+    .collect();
     let ball_chaser = choose_chaser(state, side);
     if let Some((c, _)) = ball_chaser {
         busy.push(c);

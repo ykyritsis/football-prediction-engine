@@ -281,16 +281,22 @@ fn fouls_and_cards_happen_at_football_rates() {
 
 #[test]
 fn strict_referee_gives_more_fouls_than_lenient() {
+    // Summed over several matches: a single match has too few fouls to compare.
     let run = |referee: Referee| {
-        let mut cfg = SimConfig::new(
-            9,
-            Squad::generated(presets::gegenpress(), 80),
-            Squad::generated(presets::gegenpress(), 80),
-        );
-        cfg.referee = referee;
-        let mut sim = Simulation::new(cfg);
-        sim.run_to_full_time(30 * 60 * 120);
-        count(&sim, |e| matches!(e, MatchEvent::Foul { .. }))
+        (0..4)
+            .map(|seed| {
+                let mut cfg = SimConfig::new(
+                    seed,
+                    Squad::generated(presets::gegenpress(), 80),
+                    Squad::generated(presets::gegenpress(), 80),
+                );
+                cfg.referee = referee;
+                let mut sim = Simulation::new(cfg);
+                sim.run_to_full_time(30 * 60 * 120);
+                count(&sim, |e| matches!(e, MatchEvent::Foul { .. }))
+            })
+            .sum::<usize>()
     };
-    assert!(run(Referee::strict()) > run(Referee::lenient()));
+    let (strict, lenient) = (run(Referee::strict()), run(Referee::lenient()));
+    assert!(strict > lenient, "strict {strict} lenient {lenient}");
 }
