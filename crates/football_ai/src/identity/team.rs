@@ -11,6 +11,7 @@ use crate::formation::FormationKind;
 use crate::tactics::Tactics;
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum AttackingStyle {
     /// Exploit space quickly after winning the ball.
     CounterAttack,
@@ -19,30 +20,35 @@ pub enum AttackingStyle {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum BuildUp {
     LongPass,
     ShortPass,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum AttackingArea {
     Wide,
     Centre,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Positioning {
     MaintainFormation,
     Flexible,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum DefensiveStyle {
     FrontlinePressure,
     AllOutDefence,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum ContainmentArea {
     /// Protect the middle, forcing the opponent wide.
     Middle,
@@ -51,6 +57,7 @@ pub enum ContainmentArea {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Pressuring {
     Aggressive,
     Conservative,
@@ -58,6 +65,7 @@ pub enum Pressuring {
 
 /// Advanced instructions (PES allows two attacking and two defensive).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Instruction {
     // attacking
     TikiTaka,
@@ -138,6 +146,7 @@ impl Instruction {
 
 /// A team's tactical identity.
 #[derive(Debug, Clone, PartialEq)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct TeamStyle {
     pub name: String,
     pub formation: FormationKind,

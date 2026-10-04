@@ -502,6 +502,31 @@ fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decis
         // On the line for a penalty.
         target = p.team.own_goal() + Vec2::new(p.team.direction() * 0.3, 0.0);
     }
+    let mut action = Action::None;
+    let mut activity = Activity::Goalkeeping;
+    // An attacker clean through, close in, with nobody free to square it to:
+    // come out and smother at his feet.
+    if let Some(c) = state
+        .carrier()
+        .filter(|c| c.team != p.team && state.restart.is_none())
+    {
+        let goal = p.team.own_goal();
+        let one_on_one = c.pos.distance(goal) < 7.0
+            && p.team.to_local(c.pos).y.abs() < 6.0
+            && !state.on_pitch(c.team).any(|m| {
+                m.id != c.id
+                    && m.pos.distance(goal) < 14.0
+                    && state.nearest_distance(p.team, m.pos) > 2.0
+            });
+        if one_on_one {
+            target = c.pos + (goal - c.pos).normalize_or_zero() * 0.5;
+            speed = MoveSpeed::Sprint;
+            activity = Activity::Press(c.id);
+            if p.pos.distance(c.pos) <= TACKLE_RANGE && p.tackle_cooldown == 0 {
+                action = Action::Tackle(c.id);
+            }
+        }
+    }
     if let Some(shot) = state.ball.shot {
         if shot.shooter.team() != p.team {
             // Get across to the shot line.
@@ -513,8 +538,8 @@ fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decis
     }
     Decision {
         player: p.id,
-        activity: Activity::Goalkeeping,
-        action: Action::None,
+        activity,
+        action,
         target,
         speed,
     }

@@ -594,6 +594,7 @@ pub fn example_ronaldo() -> PlayerProfile {
 
 /// A team identity plus eleven players in formation-slot order.
 #[derive(Debug, Clone, PartialEq)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Squad {
     pub style: TeamStyle,
     /// The starting eleven, in formation-slot order.

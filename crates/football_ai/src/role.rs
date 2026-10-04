@@ -12,6 +12,7 @@
 
 /// Tactical role of a formation slot.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, PartialOrd, Ord)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Role {
     Goalkeeper,
     CentreBack,

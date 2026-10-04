@@ -3,3 +3,22 @@ name = "football_ai"
 version = "0.1.0"
 edition.workspace = true
 license.workspace = true
+
+[features]
+# Serialize/deserialize identities (squads, player profiles, team styles) so
+# they can be loaded from data extracted from the game database.
+serde = ["dep:serde"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
+
+[dev-dependencies]
+serde_json = "1"
+
+[[example]]
+name = "squad_json"
+required-features = ["serde"]
+
+[[test]]
+name = "serde"
+required-features = ["serde"]

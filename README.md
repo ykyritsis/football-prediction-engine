@@ -70,6 +70,18 @@ passing. Standout abilities: ball control 97, dribbling 97, balance 95. On the b
 Long Ranger. In matches: Takes defenders on; Clinical finisher; Shoots from distance; Plays killer through balls.
 ```
 
+### Loading real data
+
+With the `serde` feature, squads (style + starting XI + bench), player
+profiles and team styles serialise to JSON or any serde format. Skills and
+COM styles are written as readable names. `data/example_squad.json` shows the
+schema; a database extractor only has to write that shape:
+
+```sh
+cargo run -p football_ai --features serde --example squad_json -- export > squad.json
+cargo run -p football_ai --features serde --example squad_json -- play squad.json
+```
+
 `presets` has six team archetypes, twenty player archetypes, generated
 squads that suit each style, and two example star profiles. The star
 profiles' ratings are illustrative placeholders: real values should come from
@@ -168,7 +180,8 @@ discipline, fatigue and shot accuracy are in a football-like range: about two
 thirds of shots hit the target, keepers save around 80% of those, and a match
 averages about four goals (real football: 2.7). The decision layer's xG is
 scaled to what shots actually score (`XG_EXECUTION`). Gegenpress still creates
-the most chances (about 30 shots); Park the Bus and Wing Play the fewest.
+the most chances (about 30 shots) and its very high line produces occasional
+blowouts (6–9, 3–7); Park the Bus and Wing Play create the fewest.
 `style_report`, `headless_match` and the SVG snapshot renderer
 (`football_ai::svg`) are the tuning tools.
 
@@ -182,5 +195,5 @@ an airborne distance).
 Next:
 
 1. Calibrate chance creation against PES 2018 match statistics.
-2. Fill identities from the extracted PES 2018 database.
-3. Formation changes from the bench; player and team data import format.
+2. Fill identities from the extracted PES 2018 database (load path ready: `serde` feature).
+3. Formation changes from the bench.

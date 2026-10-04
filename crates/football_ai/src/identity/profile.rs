@@ -11,6 +11,7 @@ use crate::role::{Attributes, Behaviour, Role};
 
 /// Everything that makes a player *that* player.
 #[derive(Debug, Clone, PartialEq)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct PlayerProfile {
     pub name: String,
     /// Registered (best) position.

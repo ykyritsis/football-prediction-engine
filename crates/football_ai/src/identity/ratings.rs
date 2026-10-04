@@ -9,6 +9,7 @@ use crate::role::Attributes;
 
 /// Preferred foot.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Foot {
     Left,
     Right,
@@ -16,6 +17,7 @@ pub enum Foot {
 
 /// Ability ratings on the PES 40–99 scale (plus a few 1–N fields).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Ratings {
     /// "Offensive Awareness" / "Attacking Prowess".
     pub offensive_awareness: u8,

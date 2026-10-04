@@ -134,7 +134,13 @@ impl Challenge {
 pub fn tackle_success(tackler: &Player, carrier: &Player, settling: bool) -> f32 {
     let to_tackler = (tackler.pos - carrier.pos).normalize_or_zero();
     let back_turned = carrier.facing.dot(to_tackler) < -0.2;
-    let mut p = 0.22 + 0.5 * (tackler.attrs.tackling - 0.9 * carrier.attrs.dribbling);
+    // Keepers smother with their hands: goalkeeping, not tackling, decides it.
+    let skill = if tackler.is_goalkeeper() {
+        0.35 + 0.6 * tackler.attrs.goalkeeping
+    } else {
+        tackler.attrs.tackling
+    };
+    let mut p = 0.22 + 0.5 * (skill - 0.9 * carrier.attrs.dribbling);
     if settling {
         p += 0.08;
     }

@@ -10,6 +10,7 @@ use crate::role::{Attributes, Behaviour};
 
 /// Primary playing style (one per player in PES).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum PlayingStyle {
     GoalPoacher,
     DummyRunner,
@@ -224,6 +225,7 @@ impl PlayingStyle {
 
 /// COM playing styles: how the AI uses the player on the ball.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[repr(u8)]
 pub enum ComStyle {
     Trickster,
@@ -299,6 +301,7 @@ impl ComStyle {
 
 /// Player skills (special abilities).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 #[repr(u8)]
 pub enum Skill {
     ScissorsFeint,
@@ -496,6 +499,11 @@ impl Skill {
 
 /// Compact bit set of [`Skill`]s.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default, Hash)]
+#[cfg_attr(
+    feature = "serde",
+    derive(serde::Serialize, serde::Deserialize),
+    serde(from = "Vec<Skill>", into = "Vec<Skill>")
+)]
 pub struct SkillSet(u64);
 
 impl SkillSet {
@@ -529,6 +537,11 @@ impl SkillSet {
 
 /// Compact bit set of [`ComStyle`]s.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Default, Hash)]
+#[cfg_attr(
+    feature = "serde",
+    derive(serde::Serialize, serde::Deserialize),
+    serde(from = "Vec<ComStyle>", into = "Vec<ComStyle>")
+)]
 pub struct ComStyleSet(u8);
 
 impl ComStyleSet {
@@ -550,6 +563,30 @@ impl ComStyleSet {
             .iter()
             .copied()
             .filter(move |&s| self.contains(s))
+    }
+}
+
+impl From<Vec<Skill>> for SkillSet {
+    fn from(v: Vec<Skill>) -> Self {
+        SkillSet::new(&v)
+    }
+}
+
+impl From<SkillSet> for Vec<Skill> {
+    fn from(s: SkillSet) -> Self {
+        s.iter().collect()
+    }
+}
+
+impl From<Vec<ComStyle>> for ComStyleSet {
+    fn from(v: Vec<ComStyle>) -> Self {
+        ComStyleSet::new(&v)
+    }
+}
+
+impl From<ComStyleSet> for Vec<ComStyle> {
+    fn from(s: ComStyleSet) -> Self {
+        s.iter().collect()
     }
 }
 

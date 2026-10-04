@@ -38,6 +38,7 @@ const fn s(role: Role, depth: f32, lateral: f32) -> Slot {
 
 /// Built-in formation templates.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum FormationKind {
     F442,
     F433,
