@@ -168,7 +168,7 @@ impl Formation {
 /// local position. Before the tactics' `line_offset` is applied.
 pub fn defensive_line_x(phase: TeamPhase, ball_local_x: f32) -> f32 {
     let b = ball_local_x;
-    match phase {
+    let line = match phase {
         TeamPhase::BuildUp => (b - 12.0).clamp(-38.0, -22.0),
         TeamPhase::Progression => (b - 26.0).clamp(-30.0, -2.0),
         TeamPhase::FinalThird => (b - 34.0).clamp(-8.0, 14.0),
@@ -177,6 +177,13 @@ pub fn defensive_line_x(phase: TeamPhase, ball_local_x: f32) -> f32 {
         TeamPhase::MidBlock => (b - 26.0).clamp(-34.0, -14.0),
         TeamPhase::LowBlock => (b - 14.0).clamp(-42.0, -34.0),
         TeamPhase::DefensiveTransition => (b - 22.0).clamp(-40.0, 4.0),
+    };
+    if phase.in_possession() {
+        line
+    } else {
+        // Out of possession the line never stays above a deep ball: it drops
+        // towards the six-yard box as the ball approaches the byline.
+        line.min((b + 3.0).max(-HALF_LENGTH + 5.0))
     }
 }
 
@@ -204,7 +211,17 @@ pub fn team_shape(state: &MatchState, side: TeamSide, phase: TeamPhase) -> [Vec2
     let ball = side.to_local(state.ball.pos);
     let in_poss = phase.in_possession();
 
-    let def_line = defensive_line_x(phase, ball.x) + t.line_offset;
+    let mut def_line = defensive_line_x(phase, ball.x) + t.line_offset;
+    // Drop off when the opponent's carrier has time to play a ball in behind.
+    if !in_poss {
+        if let Some(c) = state.carrier().filter(|c| c.team != side) {
+            let free = state.nearest_distance(side, c.pos) > 6.0;
+            let in_range = side.to_local(c.pos).x - def_line < 40.0;
+            if free && in_range {
+                def_line = (def_line - 6.0).max(-HALF_LENGTH + 6.0);
+            }
+        }
+    }
     let depth = if in_poss { t.depth_in_possession } else { t.depth_out_of_possession };
     let width = if in_poss { t.width_in_possession } else { t.width_out_of_possession };
     // The block slides towards the ball; more so out of possession.

@@ -93,6 +93,9 @@ pub struct PassInFlight {
     pub origin: Vec2,
     pub target: Vec2,
     pub kicked_tick: u32,
+    pub lofted: bool,
+    /// The receiver was in an offside position when the ball was played.
+    pub receiver_offside: bool,
 }
 
 /// A completed pass, remembered for pressing triggers.
@@ -112,6 +115,9 @@ pub struct ShotInFlight {
     pub shooter: PlayerId,
     pub target: Vec2,
     pub kicked_tick: u32,
+    pub xg: f32,
+    /// The goalkeeper has already tried to save this shot.
+    pub keeper_attempted: bool,
 }
 
 /// Ball state. The ball is modelled on the ground plane.
@@ -127,6 +133,9 @@ pub struct Ball {
     pub last_touch: Option<PlayerId>,
     pub pass: Option<PassInFlight>,
     pub shot: Option<ShotInFlight>,
+    /// Remaining horizontal distance (m) the ball travels above head height;
+    /// nobody can play it until this reaches zero.
+    pub air_distance: f32,
 }
 
 /// Kinds of dead-ball restart.
@@ -136,6 +145,14 @@ pub enum RestartKind {
     ThrowIn,
     GoalKick,
     Corner,
+    FreeKick,
+}
+
+impl RestartKind {
+    /// Restarts from which a player cannot be offside.
+    pub fn exempt_from_offside(self) -> bool {
+        matches!(self, RestartKind::ThrowIn | RestartKind::GoalKick | RestartKind::Corner)
+    }
 }
 
 /// A pending restart: only `team` may play the ball, opponents keep their
@@ -245,6 +262,13 @@ impl MatchState {
         second_last.max(0.0).max(ball_x)
     }
 
+    /// Is `id` in an offside position right now (in the opponent's half,
+    /// ahead of both the ball and the second-last opponent)?
+    pub fn in_offside_position(&self, id: PlayerId) -> bool {
+        let p = self.player(id);
+        p.team.to_local(p.pos).x > self.offside_line_local(p.team) + 0.05
+    }
+
     /// Deterministic 64-bit FNV-1a hash of the whole dynamic state. Two runs
     /// with the same seed and inputs must produce identical hashes every tick.
     pub fn state_hash(&self) -> u64 {
@@ -263,6 +287,7 @@ impl MatchState {
         h.u32(self.ball.owner.map_or(u32::MAX, |o| o.0 as u32));
         h.u32(self.ball.owner_since);
         h.u32(self.ball.last_touch.map_or(u32::MAX, |o| o.0 as u32));
+        h.u32(self.ball.air_distance.to_bits());
         if let Some(pass) = self.ball.pass {
             h.u32(pass.from.0 as u32);
             h.u32(pass.to.0 as u32);
