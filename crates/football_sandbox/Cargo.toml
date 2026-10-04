@@ -3,7 +3,22 @@ name = "football_sandbox"
 version = "0.1.0"
 edition.workspace = true
 license.workspace = true
+description = "Visual Bevy sandbox for inspecting football_ai behaviours"
+
+[features]
+# Native Wayland support (needs libwayland-dev). X11 works under XWayland too.
+wayland = ["bevy/wayland"]
 
 [dependencies]
 football_ai = { path = "../football_ai" }
-bevy = { version = "0.19", default-features = false, features = ["2d", "ui"] }
+bevy = { version = "0.19", default-features = false, features = [
+    "default_app",
+    "std",
+    "multi_threaded",
+    "bevy_winit",
+    "x11",
+    "default_font",
+    "2d_bevy_render",
+    "ui_api",
+    "ui_bevy_render",
+] }
