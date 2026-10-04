@@ -148,6 +148,7 @@ impl Ratings {
             kicking_power: n(self.kicking_power),
             set_pieces: 0.6 * n(self.place_kicking) + 0.4 * n(self.curl),
             stamina: n(self.stamina),
+            injury_resistance: (self.injury_resistance.clamp(1, 3) - 1) as f32 / 2.0,
             goalkeeping: (n(self.goalkeeping)
                 + n(self.catching)
                 + n(self.reflexes)

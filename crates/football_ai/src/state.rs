@@ -76,6 +76,8 @@ pub struct Player {
     pub sent_off: bool,
     /// Remaining energy `0..1`; tired players are slower and press less.
     pub energy: f32,
+    /// Carrying a knock: slower, and replaced at the next dead ball.
+    pub injured: bool,
     /// Top speed and acceleration when fresh (`attrs` holds the current,
     /// fatigue-adjusted values).
     pub base_top_speed: f32,
@@ -101,6 +103,7 @@ impl Player {
             yellow_cards: 0,
             sent_off: false,
             energy: 1.0,
+            injured: false,
             base_top_speed: attrs.top_speed,
             base_acceleration: attrs.acceleration,
         }
@@ -386,6 +389,7 @@ impl MatchState {
             h.u32(p.stun as u32);
             h.u32(p.yellow_cards as u32 | (p.sent_off as u32) << 8);
             h.u32(p.energy.to_bits());
+            h.u32(p.injured as u32);
         }
         h.u32(self.period as u32);
         h.u32(self.teams[0].mentality as u32 | (self.teams[1].mentality as u32) << 8);

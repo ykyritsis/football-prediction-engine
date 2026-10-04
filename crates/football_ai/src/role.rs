@@ -316,6 +316,8 @@ pub struct Attributes {
     pub set_pieces: f32,
     /// How slowly energy drains.
     pub stamina: f32,
+    /// Resistance to injury `0..1`.
+    pub injury_resistance: f32,
     pub goalkeeping: f32,
 }
 
@@ -333,6 +335,7 @@ impl Attributes {
             kicking_power: 0.65,
             set_pieces: 0.5,
             stamina: 0.7,
+            injury_resistance: 0.5,
             goalkeeping: 0.0,
         };
         match role {

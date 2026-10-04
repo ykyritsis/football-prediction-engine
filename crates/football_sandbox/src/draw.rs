@@ -122,7 +122,8 @@ pub fn sync_entities(
         } else {
             ""
         };
-        let label = format!("{}{}{}", p.role.short_name(), p.id.0, cards);
+        let knock = if p.injured { " +" } else { "" };
+        let label = format!("{}{}{}{}", p.role.short_name(), p.id.0, cards, knock);
         if text.0 != label {
             text.0 = label;
         }

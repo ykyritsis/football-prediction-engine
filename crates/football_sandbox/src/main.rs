@@ -233,6 +233,11 @@ fn input(
             }
         }
     }
+    if keys.just_pressed(KeyCode::KeyI) {
+        if let Some(id) = sb.selected {
+            sb.sim.injure(id);
+        }
+    }
     if keys.just_pressed(KeyCode::KeyX) {
         sb.stars = !sb.stars;
         sb.rebuild();

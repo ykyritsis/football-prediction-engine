@@ -254,8 +254,20 @@ fn possession_team_keeps_the_ball_more_than_a_bus() {
 
 #[test]
 fn pressing_team_wins_the_ball_higher_up() {
-    let [gp, _] = play(presets::gegenpress(), presets::wing_play(), 3, 30.0);
-    let [bus, _] = play(presets::park_the_bus(), presets::wing_play(), 3, 30.0);
+    // Two full matches each: high regains are counted in single digits per half.
+    let total = |style: fn() -> football_ai::TeamStyle| {
+        (3..5)
+            .map(|seed| play(style(), presets::wing_play(), seed, 90.0)[0].high_regains)
+            .sum::<f32>()
+    };
+    let gp = TeamStats {
+        high_regains: total(presets::gegenpress),
+        ..Default::default()
+    };
+    let bus = TeamStats {
+        high_regains: total(presets::park_the_bus),
+        ..Default::default()
+    };
     assert!(
         gp.high_regains > bus.high_regains * 1.5,
         "gegenpress {} bus {}",

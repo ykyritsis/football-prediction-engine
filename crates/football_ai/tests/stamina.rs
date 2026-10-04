@@ -178,3 +178,121 @@ fn losing_team_chases_the_game_late_on() {
         .iter()
         .any(|(_, e)| matches!(e, MatchEvent::MentalityChange { .. })));
 }
+
+fn dead_ball(sim: &mut Simulation) {
+    // Put the ball out for a throw-in so the managers get a chance to act.
+    sim.clear_restart();
+    sim.state.ball.owner = None;
+    sim.state.ball.pass = None;
+    sim.state.ball.pos = football_ai::math::Vec2::new(0.0, 33.9);
+    sim.state.ball.vel = football_ai::math::Vec2::new(0.0, 10.0);
+    sim.state.ball.last_touch = Some(PlayerId::new(TeamSide::Away, 5));
+    sim.step();
+}
+
+fn jump_to_minute(sim: &mut Simulation, minute: f32) {
+    let half = sim.clock.half_seconds;
+    let dt = sim.state.dt;
+    sim.state.period = football_ai::state::Period::SecondHalf;
+    sim.state.tick += ((minute * 60.0) / dt) as u32;
+    sim.state.period_start_tick = sim.state.tick - (((minute * 60.0) - half) / dt) as u32;
+}
+
+#[test]
+fn injured_players_are_slowed_and_replaced_at_the_next_dead_ball() {
+    let mut sim = Simulation::new(SimConfig::default());
+    sim.run(30 * 60 * 10);
+    let id = PlayerId::new(TeamSide::Home, 6);
+    let fresh = sim.state.player(id).attrs.top_speed;
+    sim.injure(id);
+    sim.clear_restart();
+    sim.step();
+    assert!(sim.state.player(id).attrs.top_speed < fresh);
+    assert!(sim
+        .events
+        .iter()
+        .any(|(_, e)| *e == MatchEvent::Injury { player: id }));
+    // First half, but injuries cannot wait.
+    dead_ball(&mut sim);
+    assert!(!sim.state.player(id).injured, "injured player still on");
+    assert_eq!(sim.state.subs_used[0], 1);
+}
+
+#[test]
+fn chasing_team_brings_on_an_attacker() {
+    let mut sim = Simulation::new(SimConfig::default());
+    jump_to_minute(&mut sim, 65.0);
+    sim.state.score = [0, 1];
+    dead_ball(&mut sim);
+    assert_eq!(
+        sim.state.team(TeamSide::Home).mentality,
+        football_ai::tactics::Mentality::Chasing
+    );
+    dead_ball(&mut sim);
+    let subs: Vec<_> = sim
+        .events
+        .iter()
+        .filter_map(|(_, e)| match e {
+            MatchEvent::Substitution {
+                team: TeamSide::Home,
+                slot,
+                ..
+            } => Some(*slot as usize),
+            _ => None,
+        })
+        .collect();
+    assert!(!subs.is_empty(), "no substitution when chasing");
+    let incoming = &sim.squads[0].players[subs[0]];
+    assert!(
+        incoming.position.is_forward(),
+        "brought on {:?}",
+        incoming.position
+    );
+    let outgoing_role = sim
+        .state
+        .player(PlayerId::new(TeamSide::Home, subs[0]))
+        .role;
+    assert!(matches!(
+        outgoing_role,
+        football_ai::role::Role::DefensiveMid
+            | football_ai::role::Role::CentralMid
+            | football_ai::role::Role::FullBack
+    ));
+}
+
+#[test]
+fn protecting_team_brings_on_a_defender() {
+    let mut sim = Simulation::new(SimConfig::default());
+    jump_to_minute(&mut sim, 78.0);
+    sim.state.score = [0, 1];
+    dead_ball(&mut sim);
+    dead_ball(&mut sim);
+    let incoming: Vec<_> = sim
+        .events
+        .iter()
+        .filter_map(|(_, e)| match e {
+            MatchEvent::Substitution {
+                team: TeamSide::Away,
+                slot,
+                ..
+            } => Some(sim.squads[1].players[*slot as usize].position),
+            _ => None,
+        })
+        .collect();
+    assert!(!incoming.is_empty(), "no substitution when protecting");
+    assert!(!incoming[0].is_forward(), "brought on {:?}", incoming[0]);
+}
+
+#[test]
+fn injuries_happen_occasionally_over_matches() {
+    let mut injuries = 0;
+    for seed in 0..4 {
+        let sim = full_match(seed, presets::gegenpress(), presets::gegenpress());
+        injuries += sim
+            .events
+            .iter()
+            .filter(|(_, e)| matches!(e, MatchEvent::Injury { .. }))
+            .count();
+    }
+    assert!(injuries <= 12, "{injuries} injuries in 4 matches");
+}

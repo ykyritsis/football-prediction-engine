@@ -144,6 +144,10 @@ pub enum MatchEvent {
         slot: u8,
         bench_index: u8,
     },
+    /// A player picked up an injury.
+    Injury {
+        player: PlayerId,
+    },
     /// A team changed approach because of the scoreline.
     MentalityChange {
         team: TeamSide,
@@ -633,6 +637,13 @@ impl Simulation {
     ) {
         let spot = self.state.player(on).pos;
         let fouled = on.team();
+        // Some fouls leave the victim with a knock.
+        let resistance = self.state.player(on).attrs.injury_resistance;
+        let p_injury =
+            (0.03 + if challenge.from_behind() { 0.05 } else { 0.0 }) * (1.3 - resistance);
+        if self.rng.chance(p_injury) {
+            self.injure(on);
+        }
         self.event(MatchEvent::Foul { by, on, spot });
         self.state.stoppage_secs += self.clock.stoppage_per_foul;
         let card = rules::card_for_foul(&self.state, by, on, challenge, &self.referee, card_roll);
@@ -826,10 +837,37 @@ impl Simulation {
             let drain = (0.00003 + 0.0007 * frac * frac * frac) * (1.4 - p.attrs.stamina);
             let recover = if frac < 0.25 { 0.0002 } else { 0.0 };
             p.energy = (p.energy - (drain - recover) * dt).clamp(0.0, 1.0);
-            let factor = 0.8 + 0.2 * p.energy;
+            let mut factor = 0.8 + 0.2 * p.energy;
+            if p.injured {
+                factor *= 0.85;
+            }
             p.attrs.top_speed = p.base_top_speed * factor;
             p.attrs.acceleration = p.base_acceleration * factor;
         }
+        // Exhausted players risk a muscle injury.
+        let exhausted: Vec<PlayerId> = self
+            .state
+            .players
+            .iter()
+            .filter(|p| !p.sent_off && !p.injured && p.energy < 0.3)
+            .map(|p| p.id)
+            .collect();
+        for id in exhausted {
+            let resistance = self.state.player(id).attrs.injury_resistance;
+            if self.rng.chance(0.0006 * (1.3 - resistance) * dt) {
+                self.injure(id);
+            }
+        }
+    }
+
+    /// Injure a player (also used by tests and the sandbox).
+    pub fn injure(&mut self, id: PlayerId) {
+        let p = &mut self.state.players[id.index()];
+        if p.sent_off || p.injured {
+            return;
+        }
+        p.injured = true;
+        self.event(MatchEvent::Injury { player: id });
     }
 
     // ------------------------------------------------------- substitutions --
@@ -885,54 +923,144 @@ impl Simulation {
         }
     }
 
-    /// The manager's substitution logic, run at dead balls: from the 55th
-    /// minute, replace the most tired outfield player (energy below 0.6) with
-    /// the best available bench player for his position.
+    /// The manager's substitution logic, run at dead balls, in priority order:
+    ///
+    /// 1. injured players are replaced at once, whatever the minute;
+    /// 2. from the 60th minute, a tactical change for the scoreline: an
+    ///    attacker on when chasing, a defender on when protecting a lead
+    ///    (keeping one substitution in reserve for injuries until the 85th);
+    /// 3. from the 55th minute, the most tired outfield player (energy below 0.6).
     fn consider_substitutions(&mut self) {
-        if self.match_seconds() < 55.0 * 60.0 {
-            return;
-        }
+        let minute = self.match_seconds() / 60.0;
         for team in TeamSide::BOTH {
             let t = team.index();
             if self.state.subs_used[t] >= MAX_SUBSTITUTIONS {
                 continue;
             }
+            let owner = self.state.ball.owner;
+            let outfield = |p: &&Player| !p.is_goalkeeper() && owner != Some(p.id);
+
+            // 1. Injuries (keepers included).
+            let injured = self
+                .state
+                .on_pitch(team)
+                .find(|p| p.injured && owner != Some(p.id))
+                .map(|p| (p.id.slot(), p.role));
+            if let Some((slot, role)) = injured {
+                if let Some(i) = self.best_bench_for(team, role, None) {
+                    self.substitute(team, slot, i);
+                }
+                continue;
+            }
+
+            // 2. Tactical change for the scoreline.
+            let mentality = self.state.teams[t].mentality;
+            let reserve = if minute >= 85.0 {
+                MAX_SUBSTITUTIONS
+            } else {
+                MAX_SUBSTITUTIONS - 1
+            };
+            if minute >= 60.0 && self.state.subs_used[t] < reserve {
+                use crate::tactics::Mentality;
+                let change = match mentality {
+                    Mentality::Chasing | Mentality::AllOut => {
+                        // Most defensive midfielder or full-back off, attacker on.
+                        let off = self
+                            .state
+                            .on_pitch(team)
+                            .filter(outfield)
+                            .filter(|p| {
+                                matches!(
+                                    p.role,
+                                    Role::DefensiveMid | Role::CentralMid | Role::FullBack
+                                )
+                            })
+                            .min_by(|a, b| {
+                                cmp_f32(
+                                    a.behaviour.run_in_behind + a.behaviour.box_presence,
+                                    b.behaviour.run_in_behind + b.behaviour.box_presence,
+                                )
+                                .then(a.id.cmp(&b.id))
+                            })
+                            .map(|p| p.id.slot());
+                        off.zip(self.best_bench_for(team, Role::Striker, Some(3)))
+                    }
+                    Mentality::Protecting => {
+                        let off = self
+                            .state
+                            .on_pitch(team)
+                            .filter(outfield)
+                            .filter(|p| {
+                                matches!(p.role, Role::Winger | Role::AttackingMid | Role::Striker)
+                            })
+                            .min_by(|a, b| {
+                                cmp_f32(a.behaviour.track_back, b.behaviour.track_back)
+                                    .then(a.id.cmp(&b.id))
+                            })
+                            .map(|p| p.id.slot());
+                        off.zip(
+                            self.best_bench_for(team, Role::DefensiveMid, Some(1))
+                                .or_else(|| self.best_bench_for(team, Role::CentreBack, Some(1))),
+                        )
+                    }
+                    Mentality::Normal => None,
+                };
+                if let Some((slot, i)) = change {
+                    if self.substitute(team, slot, i) {
+                        continue;
+                    }
+                }
+            }
+
+            // 3. Fatigue.
+            if minute < 55.0 {
+                continue;
+            }
             let tired = self
                 .state
                 .on_pitch(team)
-                .filter(|p| {
-                    !p.is_goalkeeper() && p.energy < 0.6 && self.state.ball.owner != Some(p.id)
-                })
+                .filter(outfield)
+                .filter(|p| p.energy < 0.6)
                 .min_by(|a, b| cmp_f32(a.energy, b.energy).then(a.id.cmp(&b.id)))
                 .map(|p| (p.id.slot(), p.role));
-            let Some((slot, role)) = tired else { continue };
-            let line = |r: Role| match r {
-                Role::Goalkeeper => 0,
-                Role::CentreBack | Role::FullBack => 1,
-                Role::DefensiveMid | Role::CentralMid | Role::AttackingMid => 2,
-                Role::Winger | Role::Striker => 3,
-            };
-            let bench = &self.squads[t].bench;
-            let pick = (0..bench.len())
-                .filter(|&i| !self.bench_used[t][i] && bench[i].position != Role::Goalkeeper)
-                .max_by_key(|&i| {
-                    let fit = if bench[i].position == role {
-                        2
-                    } else if line(bench[i].position) == line(role) {
-                        1
-                    } else {
-                        0
-                    };
-                    (
-                        fit,
-                        bench[i].ratings.overall_outfield(),
-                        std::cmp::Reverse(i),
-                    )
-                });
-            if let Some(i) = pick {
-                self.substitute(team, slot, i);
+            if let Some((slot, role)) = tired {
+                if let Some(i) = self.best_bench_for(team, role, None) {
+                    self.substitute(team, slot, i);
+                }
             }
         }
+    }
+
+    /// Best unused bench player for `role`: same position first, then the
+    /// same line, then anyone, by rating. With `line_only`, only players
+    /// from that line (1 defence, 2 midfield, 3 attack) qualify.
+    fn best_bench_for(&self, team: TeamSide, role: Role, line_only: Option<u8>) -> Option<usize> {
+        let line = |r: Role| match r {
+            Role::Goalkeeper => 0u8,
+            Role::CentreBack | Role::FullBack => 1,
+            Role::DefensiveMid | Role::CentralMid | Role::AttackingMid => 2,
+            Role::Winger | Role::Striker => 3,
+        };
+        let t = team.index();
+        let bench = &self.squads[t].bench;
+        (0..bench.len())
+            .filter(|&i| !self.bench_used[t][i])
+            .filter(|&i| (bench[i].position == Role::Goalkeeper) == (role == Role::Goalkeeper))
+            .filter(|&i| line_only.is_none_or(|l| line(bench[i].position) == l))
+            .max_by_key(|&i| {
+                let fit = if bench[i].position == role {
+                    2
+                } else if line(bench[i].position) == line(role) {
+                    1
+                } else {
+                    0
+                };
+                (
+                    fit,
+                    bench[i].ratings.overall_outfield(),
+                    std::cmp::Reverse(i),
+                )
+            })
     }
 
     fn move_ball(&mut self) {

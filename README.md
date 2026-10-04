@@ -40,7 +40,8 @@ each player makes a **decision** from that snapshot and his team's plan.
 | Passing evaluation | `passing` | Short / through / long / cross candidates; interception risk from lane timing (lofted balls only contestable at landing, aerial duels), misplacement, receiver pressure, progression, lines broken, offside excluded |
 | On-ball choice | `decision`, `eval` | Pass vs shot (xG) vs carry vs shield on one expected-value scale, with identity as style utility |
 | Laws of the game | `rules` | Fouls from challenges (angle, skill, aggression, bookings, own box), advantage with call-back, yellow/red cards incl. second yellows and denial of a goal-scoring chance, sending-offs (the team plays a man short), direct/indirect free kicks with walls, penalties, two halves with stoppage time; referees have a style (`Referee::strict()`, `lenient()`) |
-| Stamina and substitutions | `sim` | Energy drains with running (faster for low stamina); tired players lose up to 20% speed and press less, so pressing teams fade late. Benches of seven; the manager AI makes up to three substitutions at dead balls from the 55th minute, bringing on the best fit for the tired player's position |
+| Stamina and substitutions | `sim` | Energy drains with running (faster for low stamina); tired players lose up to 20% speed and press less, so pressing teams fade late. Benches of seven; the manager AI makes up to three substitutions at dead balls: injured players at once, tactical changes for the score from the 60th minute (an attacker on when chasing, a defender when protecting a lead), and tired players from the 55th, each time bringing on the best fit for the position |
+| Injuries | `sim` | Fouls (especially from behind) and exhaustion can injure a player, less often for high injury resistance; injured players are slowed and replaced at the next dead ball |
 | Game management | `tactics::Mentality` | From the 60th minute teams adapt to the score: chasing (higher line, harder press, more direct, more risk), all-out attack after 80', or protecting a lead after 75' (deeper, cautious, forward kept as an outlet) |
 | Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
 
@@ -148,6 +149,7 @@ see is exactly what the headless tests run.
 | `1`–`6` | presets: kick-off, build-up under press, midfield progression, wide final third, counter-attack, low block |
 | `R` / `N` | reset preset / new seed |
 | `F` | whistle a foul on the ball carrier (free kick, penalty, cards) |
+| `I` | injure the selected player |
 | `H` / `A` | cycle home / away team style |
 | `X` | toggle the example star players in the home team |
 | Click / Tab / Esc | select player / cycle / clear |
@@ -170,7 +172,7 @@ the most chances (about 30 shots); Park the Bus and Wing Play the fewest.
 `style_report`, `headless_match` and the SVG snapshot renderer
 (`football_ai::svg`) are the tuning tools.
 
-Not modelled yet: injuries, tactical (non-fatigue) substitutions, ends changing at half-time (the
+Not modelled yet: ends changing at half-time (the
 home side always attacks `+x`), handball, and ball height (lofted balls are
 approximated by an airborne distance).
 
@@ -178,4 +180,4 @@ Next:
 
 1. Calibrate chance creation against PES 2018 match statistics.
 2. Fill identities from the extracted PES 2018 database.
-3. Injuries and tactical substitutions (attackers on when chasing, defenders when protecting).
+3. Changing ends at half-time; formation changes from the bench.

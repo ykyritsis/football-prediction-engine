@@ -29,7 +29,7 @@ pub fn setup(mut commands: Commands) {
     commands.spawn((
         HelpPanel,
         Text::new(
-            "Space pause | Right/. step | +/- speed | 1-6 presets | R reset | N new seed | H/A cycle home/away style | X star players | F foul on carrier\n\
+            "Space pause | Right/. step | +/- speed | 1-6 presets | R reset | N new seed | H/A cycle home/away style | X star players | F foul on carrier | I injure selected\n\
              Click/Tab select player, Esc clear | Overlays: T targets, S shape, M marking, P pressing, U support, C pass options, O offside",
         ),
         TextFont::from_font_size(12.0),
@@ -225,6 +225,7 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::PenaltyAwarded { team } => format!("PENALTY to {:?}", team),
             MatchEvent::HalfTime => "Half time".into(),
             MatchEvent::FullTime => "Full time".into(),
+            MatchEvent::Injury { player } => format!("INJURY {}", sim.name(player)),
             MatchEvent::MentalityChange { team, mentality } => {
                 format!("{:?} now {}", team, mentality.name())
             }
