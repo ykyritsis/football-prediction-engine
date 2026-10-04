@@ -215,12 +215,17 @@ pub fn evaluate_passes(
             let (t, s) = lead_target(receiver, origin);
             // Only a genuine through ball if it plays the receiver into space
             // well ahead of him.
-            if origin.distance(t) <= 42.0 && team.to_local(t).x - rl.x > 6.0 {
+            // ...and in behind the defence: past the opponents' last line.
+            let line = state.offside_line_local(team);
+            if origin.distance(t) <= 42.0
+                && team.to_local(t).x - rl.x > 6.0
+                && team.to_local(t).x > line - 2.0
+            {
                 options.push((PassKind::Through, t, s));
             }
         }
-        // Long lofted ball.
-        if d >= 22.0 {
+        // Long lofted ball (Opta's "long ball" starts around 32 m).
+        if d >= 30.0 {
             let (t, _) = if receiver.vel.length() > 3.0 {
                 lead_target(receiver, origin)
             } else {
@@ -302,7 +307,7 @@ fn score_candidate(
     let mut misplace = misplace_probability(passer, distance, lofted);
     if kind == PassKind::Cross {
         // Most crosses fail on delivery.
-        misplace = (misplace + 0.2 + 0.25 * (1.0 - passer.attrs.long_passing)).min(0.9);
+        misplace = (misplace + 0.1 + 0.15 * (1.0 - passer.attrs.long_passing)).min(0.9);
     }
     let risk = 1.0 - (1.0 - intercept) * (1.0 - misplace);
 

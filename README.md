@@ -19,6 +19,7 @@ cargo run --release -p football_ai --example headless_match -- 7 90 tiki-taka lo
 cargo run --release -p football_ai --example style_report -- 90 2  # round-robin of team styles
 cargo run -p football_ai --example describe                        # generated team/player descriptions
 cargo run --release -p football_ai --example trend_report -- 24    # upsets, star finishers, match-day form
+cargo run --release -p football_ai --example calibration -- 30     # match statistics vs real football
 cargo run --release -p football_sandbox                            # visual sandbox
 ```
 
@@ -45,6 +46,7 @@ each player makes a **decision** from that snapshot and his team's plan.
 | Injuries | `sim` | Fouls (especially from behind) and exhaustion can injure a player, less often for high injury resistance; injured players are slowed and replaced at the next dead ball |
 | Game management | `tactics::Mentality` | From the 60th minute teams adapt to the score: chasing (higher line, harder press, more direct, more risk), all-out attack after 80', or protecting a lead after 75' (deeper, cautious, forward kept as an outlet) |
 | Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, contact duels, dispossession in traffic, aerial duels for crosses and long balls, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
+| Match statistics | `stats` | PES post-match screen data: possession, shots, xG, passing, tackles, discipline, set pieces per team; a line per appearance (substitutes included) with goals, assists, key passes, duels, saves and a 3–10 match rating; man of the match |
 | Trend breakers | `execution` | Stars execute above their ratings, match-day form (team day + individual, PES condition arrows), Fighting Spirit, Captaincy, Super-sub: see below |
 
 ## Team and player identity
@@ -209,20 +211,30 @@ the selected player's identity and behaviour numbers, and recent events.
 
 ## Status and roadmap
 
-Calibration is ongoing. A match averages a little over three goals (real
-football: 2.7) and the blowouts of earlier versions are gone: pressers now
-run at where the carrier is going instead of trailing him, defenders commit
-to tackles, the counter-press swarm and the shot blocker no longer pull the
-back line out of the box, carriers no longer shield indefinitely near goal,
-and crosses are contested in the air. Known gaps, in priority order:
+Calibration is ongoing; `calibration` compares the simulation with typical
+top-flight numbers (per team per match, 30 matches between archetypes):
 
-* Too many small contests: hundreds of tackles and possession changes per
-  match (real football: a few dozen tackles), and through balls and long
-  balls complete about twice as often as in real football.
-* Shot volume depends on style more than it should: Tiki-Taka and Park the
-  Bus take very few shots (almost none from outside the box), Counter-Attack
-  is the strongest style.
-* A six-point rating gap is still close to decisive.
+| | sim | real |
+|---|---|---|
+| goals / xG | 1.8 / 1.4 | 1.4 / 1.4 |
+| shots (on target) | 12.2 (6.6) | 12–13 (4–5) |
+| pass accuracy | 76% | 78–84% |
+| possessions lost | 130 | 100–130 |
+| fouls / yellow cards | 11.8 / 1.5 | 10–12 / 1.7 |
+| corners | 2.7 | 5 |
+| saves | 4.8 | 3 |
+
+The ball is in play about 70 minutes of 90 (restarts take realistic
+dead-ball time: throw-ins, goal kicks, free kicks, goal celebrations).
+Known gaps, in priority order:
+
+* Too many challenges (about 160 per team, where real football has around
+  50 ground duels and 17 tackles) and passes (about 670 vs 450–550), with
+  too many long balls (130 vs 60) and interceptions.
+* Shots are a little too accurate, crosses and corners too rare.
+* Upsets across a rating gap are rarer than in real football, and some
+  style match-ups are lopsided (Counter-Attack is the strongest style,
+  Park the Bus and Tiki-Taka create little).
 
 `style_report`, `trend_report`, `headless_match` and the SVG snapshot
 renderer (`football_ai::svg`) are the tuning tools.

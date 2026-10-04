@@ -20,8 +20,8 @@ fn full_match(seed: u64, home: football_ai::TeamStyle, away: football_ai::TeamSt
             idle = 0;
         }
         assert!(idle < 30 * 8, "ball abandoned at tick {t}");
-        // Restarts must be taken.
-        if s.restart.is_some() {
+        // Restarts must be taken once the dead-ball time is up.
+        if s.restart.is_some_and(|r| s.tick >= r.ready_tick) {
             restart_ticks += 1;
         } else {
             restart_ticks = 0;
@@ -32,7 +32,7 @@ fn full_match(seed: u64, home: football_ai::TeamStyle, away: football_ai::TeamSt
             s.restart
         );
         // Nobody keeps the ball for ever.
-        if s.ball.owner.is_some() {
+        if s.ball.owner.is_some() && s.restart.is_none() {
             assert!(
                 s.seconds_since(s.ball.owner_since) < 25.0,
                 "carrier stalled at tick {t}"

@@ -75,6 +75,7 @@ pub mod rules;
 pub mod scenario;
 pub mod sim;
 pub mod state;
+pub mod stats;
 pub mod support;
 pub mod svg;
 pub mod tactics;

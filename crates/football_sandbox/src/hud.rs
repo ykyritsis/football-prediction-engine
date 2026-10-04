@@ -92,6 +92,16 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
                 st.subs_used[plan.side.index()],
                 football_ai::sim::MAX_SUBSTITUTIONS
             );
+            let ts = sim.stats.team(plan.side);
+            s += &format!(
+                "  poss {:.0}%  shots {} ({} on)  xG {:.2}  passes {} ({:.0}%)\n",
+                100.0 * sim.stats.possession(plan.side),
+                ts.shots,
+                ts.shots_on_target,
+                ts.xg,
+                ts.passes,
+                100.0 * ts.pass_accuracy()
+            );
             if plan.press.mode != PressMode::None {
                 let triggers: Vec<&str> = plan.press.triggers.iter().map(|t| t.name()).collect();
                 s += &format!(
@@ -161,6 +171,16 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             p.attrs.top_speed,
             p.base_top_speed,
             football_ai::execution::condition_label(p.form)
+        );
+        let line = sim.stats.line(p.id);
+        s += &format!(
+            "  rating {:.1}  goals {}  assists {}  passes {}/{}  tackles won {}\n",
+            line.rating(),
+            line.goals,
+            line.assists,
+            line.passes_completed,
+            line.passes,
+            line.tackles_won
         );
         let b = &p.behaviour;
         s += &format!(

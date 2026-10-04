@@ -184,8 +184,17 @@ const CARRY_DIRS: [(f32, f32); 9] = [
 ];
 const CARRY_DISTANCE: f32 = 6.0;
 
-/// Scale from geometric chance quality to the simulation's conversion rate.
-pub const XG_EXECUTION: f32 = 0.55;
+/// Scale from geometric chance quality to the simulation's conversion rate
+/// (calibrated: predicted xG matches goals scored).
+pub const XG_EXECUTION: f32 = 1.0;
+
+/// Fraction of a player's shot threshold he will actually shoot at.
+pub const SHOT_GATE: f32 = 0.28;
+
+/// Weight of a shot's xG against keeping the ball. Zone values include the
+/// option of a better chance later, which players (rightly) discount: without
+/// this weight they walk the ball into the net instead of shooting.
+pub const SHOT_VALUE: f32 = 1.4;
 
 /// Team-local aim point: the corner further from the keeper.
 fn aim_point(state: &MatchState, shooter: &Player) -> Vec2 {
@@ -252,19 +261,17 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
     }
     // A defender closing the shooter down rushes and blocks the shot.
     xg *= 1.0 - 0.55 * pressure_at(state, side, shooter.pos);
-    // Execution: misses, blocks and saves, calibrated so predicted xG
-    // matches what shots score in the simulation.
     xg *= XG_EXECUTION;
     let xg = xg.clamp(0.0, 0.95);
     let b = &shooter.behaviour;
-    // Thresholds are expressed on the geometric scale; bring them onto the
-    // execution-adjusted one.
-    let threshold = (b.shot_threshold + state.team(side).tactics.shot_selectivity) * XG_EXECUTION;
+    // Role thresholds are cautious "good chance" levels; players take
+    // somewhat less than that on.
+    let threshold = (b.shot_threshold + state.team(side).tactics.shot_selectivity) * SHOT_GATE;
     let gate = if xg >= threshold { 0.0 } else { -1.0 };
     Some(ShotOption {
         target: side.to_world(aim),
         xg,
-        score: xg - (1.0 - xg) * 0.012 + gate,
+        score: xg * SHOT_VALUE - (1.0 - xg) * 0.012 + gate,
     })
 }
 
@@ -418,7 +425,7 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
         target: p.pos,
         speed: MoveSpeed::Walk,
     };
-    if p.action_cooldown > 0 {
+    if p.action_cooldown > 0 || state.restart.is_some_and(|r| state.tick < r.ready_tick) {
         return d;
     }
     let kind = state.restart.map(|r| r.kind);
@@ -558,13 +565,17 @@ pub fn tackle_window(state: &MatchState, tackler: &Player, carrier: &Player) -> 
     let to_tackler = (tackler.pos - carrier.pos).normalize_or_zero();
     let back_turned = carrier.facing.dot(to_tackler) < -0.2;
     let stationary = carrier.vel.length() < 1.5;
+    // The receiving touch is a cue to close down, not to dive in: the ball
+    // is only there to be won once the carrier has it and stands still or
+    // turns his back.
     let exposed = if crate::rules::in_penalty_area(tackler.team, carrier.pos) {
-        stationary || settling
+        stationary && !settling
     } else {
-        settling || back_turned || stationary
+        !settling && (back_turned || stationary)
     };
     // Commit only when the tackle is likely enough to succeed for this player.
     exposed
+        && carrier.duel_cooldown == 0
         && crate::rules::tackle_success(tackler, carrier, settling)
             >= crate::rules::tackle_commit_threshold(tackler)
 }

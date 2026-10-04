@@ -64,6 +64,9 @@ pub struct Player {
     pub facing: Vec2,
     /// Ticks until the player may attempt another tackle.
     pub tackle_cooldown: u16,
+    /// Ticks until the player can be challenged again on the ball: having
+    /// just ridden a challenge he is through, not tackled again at once.
+    pub duel_cooldown: u16,
     /// Ticks until the player may perform another on-ball action (pass/shot)
     /// or touch the ball again after releasing it.
     pub action_cooldown: u16,
@@ -103,6 +106,7 @@ impl Player {
             vel: Vec2::ZERO,
             facing: Vec2::new(team.direction(), 0.0),
             tackle_cooldown: 0,
+            duel_cooldown: 0,
             action_cooldown: 0,
             stun: 0,
             yellow_cards: 0,
@@ -223,6 +227,24 @@ pub struct Restart {
     pub kind: RestartKind,
     pub team: TeamSide,
     pub spot: Vec2,
+    /// First tick the restart may be taken: the ball is dead until then
+    /// (fetching the ball, setting up, celebrating a goal).
+    pub ready_tick: u32,
+}
+
+impl RestartKind {
+    /// Typical dead-ball time before this restart is taken, in seconds.
+    /// About a third of a real match is played with the ball out of play.
+    pub fn dead_ball_seconds(self) -> f32 {
+        match self {
+            RestartKind::KickOff => 0.0,
+            RestartKind::ThrowIn => 14.0,
+            RestartKind::GoalKick => 24.0,
+            RestartKind::Corner => 30.0,
+            RestartKind::FreeKick | RestartKind::IndirectFreeKick => 28.0,
+            RestartKind::Penalty => 45.0,
+        }
+    }
 }
 
 /// Match period.
@@ -407,6 +429,7 @@ impl MatchState {
             h.vec(p.vel);
             h.vec(p.facing);
             h.u32(p.tackle_cooldown as u32);
+            h.u32(p.duel_cooldown as u32);
             h.u32(p.action_cooldown as u32);
             h.u32(p.stun as u32);
             h.u32(p.yellow_cards as u32 | (p.sent_off as u32) << 8);
@@ -442,6 +465,7 @@ impl MatchState {
         if let Some(r) = self.restart {
             h.u32(r.kind as u32);
             h.vec(r.spot);
+            h.u32(r.ready_tick);
         }
         for t in &self.teams {
             h.u32(t.phase as u32);

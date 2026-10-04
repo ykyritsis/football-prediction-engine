@@ -7,9 +7,7 @@
 //! counter, wing-play, bus.
 
 use football_ai::identity::presets::{self, Squad};
-use football_ai::passing::PassKind;
-use football_ai::pitch::TeamSide;
-use football_ai::{MatchEvent, SimConfig, Simulation};
+use football_ai::{SimConfig, Simulation};
 
 fn style(name: &str) -> football_ai::TeamStyle {
     match name {
@@ -38,81 +36,30 @@ fn main() {
     } else {
         (minutes * 60.0 / sim.state.dt) as u32
     };
-    let mut possession_ticks = [0u32; 2];
     let start = std::time::Instant::now();
     for _ in 0..ticks {
         if sim.finished() {
             break;
         }
         sim.step();
-        possession_ticks[sim.state.possession.index()] += 1;
     }
     let elapsed = start.elapsed();
 
-    let mut stats = [[0u32; 9]; 2];
-    // passes, completed, long, through, crosses, shots, tackles won, interceptions, xg*100
-    let mut xg = [0f32; 2];
-    for (_, e) in &sim.events {
-        match *e {
-            MatchEvent::Pass { from, kind, .. } => {
-                let t = from.team().index();
-                stats[t][0] += 1;
-                match kind {
-                    PassKind::Long => stats[t][2] += 1,
-                    PassKind::Through => stats[t][3] += 1,
-                    PassKind::Cross => stats[t][4] += 1,
-                    PassKind::Short => {}
-                }
-            }
-            MatchEvent::PassCompleted { from, .. } => stats[from.team().index()][1] += 1,
-            MatchEvent::Shot { by, xg: x, .. } => {
-                stats[by.team().index()][5] += 1;
-                xg[by.team().index()] += x;
-            }
-            MatchEvent::Tackle { by, won: true, .. } => stats[by.team().index()][6] += 1,
-            MatchEvent::Interception { by, .. } => stats[by.team().index()][7] += 1,
-            _ => {}
-        }
-    }
     println!("{}", sim.squads[0].style.describe());
     println!();
     println!("{}", sim.squads[1].style.describe());
     println!();
     println!(
-        "{} {} - {} {}   ({minutes} min, seed {seed}, simulated in {:.2?})",
-        sim.squads[0].style.name,
-        sim.state.score[0],
-        sim.state.score[1],
-        sim.squads[1].style.name,
+        "{:.1} min played, seed {seed}, simulated in {:.2?}\n",
+        sim.match_seconds() / 60.0,
         elapsed
     );
-    let total = (possession_ticks[0] + possession_ticks[1]).max(1) as f32;
-    for side in TeamSide::BOTH {
-        let i = side.index();
-        let s = stats[i];
-        println!(
-            "{:>14}: poss {:>3.0}%  passes {:>4} ({:>3.0}% compl)  long {:>3}  through {:>3}  crosses {:>3}  shots {:>3} (xG {:.2})  tackles won {:>3}  interceptions {:>3}",
-            sim.squads[i].style.name,
-            100.0 * possession_ticks[i] as f32 / total,
-            s[0],
-            100.0 * s[1] as f32 / s[0].max(1) as f32,
-            s[2],
-            s[3],
-            s[4],
-            s[5],
-            xg[i],
-            s[6],
-            s[7],
-        );
-    }
-    let count = |f: &dyn Fn(&MatchEvent) -> bool| sim.events.iter().filter(|(_, e)| f(e)).count();
     println!(
-        "Discipline: fouls {}  yellows {}  reds {}  penalties {}  advantages {}   ({:.1} min played)",
-        count(&|e| matches!(e, MatchEvent::Foul { .. })),
-        count(&|e| matches!(e, MatchEvent::YellowCard { .. })),
-        count(&|e| matches!(e, MatchEvent::RedCard { .. })),
-        count(&|e| matches!(e, MatchEvent::PenaltyAwarded { .. })),
-        count(&|e| matches!(e, MatchEvent::Advantage { .. })),
-        sim.match_seconds() / 60.0,
+        "{}",
+        sim.stats
+            .report([&sim.squads[0].style.name, &sim.squads[1].style.name])
     );
+    if let Some(m) = sim.stats.man_of_the_match() {
+        println!("Man of the match: {} ({:.1})", m.name, m.rating());
+    }
 }

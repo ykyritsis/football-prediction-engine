@@ -179,7 +179,15 @@ pub struct Simulation {
     pub clock: MatchClock,
     /// Bench players already used (in or out), by team.
     pub bench_used: [Vec<bool>; 2],
+    /// Team and player statistics so far.
+    pub stats: crate::stats::MatchStats,
 }
+
+/// After a challenge the carrier cannot be challenged again for this long.
+pub const DUEL_IMMUNITY_SECONDS: f32 = 2.0;
+
+/// Dead-ball time after a goal before the kick-off.
+pub const GOAL_DEAD_BALL_SECONDS: f32 = 60.0;
 
 /// Maximum substitutions per team (PES 2018 era rules).
 pub const MAX_SUBSTITUTIONS: u8 = 3;
@@ -255,6 +263,14 @@ impl Simulation {
             first_kick_off: TeamSide::Home,
             advantage: None,
         };
+        let names = |s: &Squad| {
+            s.players
+                .iter()
+                .take(TEAM_SIZE)
+                .map(|p| p.name.clone())
+                .collect()
+        };
+        let stats = crate::stats::MatchStats::new([names(&home), names(&away)]);
         let mut sim = Simulation {
             state,
             rng: SimRng::new(seed),
@@ -265,6 +281,7 @@ impl Simulation {
             referee,
             clock,
             bench_used: [Vec::new(), Vec::new()],
+            stats,
         };
         for side in TeamSide::BOTH {
             sim.bench_used[side.index()] = vec![false; sim.squads[side.index()].bench.len()];
@@ -309,6 +326,8 @@ impl Simulation {
     }
 
     fn event(&mut self, e: MatchEvent) {
+        let seconds = self.match_seconds();
+        self.stats.record(&self.state, seconds, &e);
         self.events.push((self.state.tick, e));
     }
 
@@ -367,6 +386,7 @@ impl Simulation {
             kind: RestartKind::KickOff,
             team,
             spot: Vec2::ZERO,
+            ready_tick: st.tick,
         });
     }
 
@@ -393,6 +413,7 @@ impl Simulation {
         self.resolve_control();
         self.resolve_advantage();
         self.tick_cooldowns();
+        self.stats.tick(&self.state);
         self.state.tick += 1;
         self.plans = Some(plans);
         self.decisions = decisions;
@@ -564,7 +585,7 @@ impl Simulation {
         let over = match kind {
             ShotKind::Penalty => 0.04,
             ShotKind::FreeKick => 0.25,
-            ShotKind::OpenPlay => (0.2 + 0.015 * dist * (1.2 - finishing)).max(0.08),
+            ShotKind::OpenPlay => (0.3 + 0.015 * dist * (1.2 - finishing)).max(0.08),
         };
         if self.rng.chance(over) {
             let side = if target.y >= 0.0 { 1.0 } else { -1.0 };
@@ -616,6 +637,7 @@ impl Simulation {
         let (t, c) = (self.state.player(by).clone(), self.state.player(on).clone());
         if self.state.ball.owner != Some(on)
             || t.tackle_cooldown > 0
+            || c.duel_cooldown > 0
             || t.sent_off
             || t.pos.distance(c.pos) > TACKLE_RANGE
         {
@@ -645,6 +667,7 @@ impl Simulation {
         let kick = self.rng.range(3.0, 7.0);
         let card_roll = self.rng.next_f32();
         self.state.players[by.index()].tackle_cooldown = (3.0 / dt) as u16;
+        self.state.players[on.index()].duel_cooldown = (DUEL_IMMUNITY_SECONDS / dt) as u16;
 
         if foul {
             self.handle_foul(by, on, &challenge, !won, card_roll);
@@ -1022,6 +1045,9 @@ impl Simulation {
         p.pos = old.pos;
         p.facing = old.facing;
         self.state.players[id.index()] = p;
+        let minute = self.match_seconds() / 60.0;
+        self.stats
+            .substitution(team, slot, incoming.name.clone(), minute);
         self.event(MatchEvent::Substitution {
             team,
             slot: slot as u8,
@@ -1262,6 +1288,11 @@ impl Simulation {
                     scorer,
                 });
                 self.kick_off(defending);
+                // Celebration and walk back: the ball is dead for a while.
+                let wait = secs(&self.state, GOAL_DEAD_BALL_SECONDS) as u32;
+                if let Some(r) = self.state.restart.as_mut() {
+                    r.ready_tick += wait;
+                }
                 self.consider_substitutions();
                 self.consider_mentality();
                 return;
@@ -1291,6 +1322,22 @@ impl Simulation {
         }
     }
 
+    /// The defending side put the ball behind: corner to `attacking` on the
+    /// side of `near` (`side_hint` breaks the tie for central balls).
+    fn award_corner(&mut self, attacking: TeamSide, near: Vec2, side_hint: f32) {
+        let goal_x = attacking.opponent().own_goal().x;
+        let y = if near.y.abs() > 1.0 {
+            near.y.signum()
+        } else {
+            side_hint.signum()
+        };
+        let spot = Vec2::new(
+            goal_x.signum() * (HALF_LENGTH - 0.5),
+            y * (HALF_WIDTH - 0.5),
+        );
+        self.set_restart(RestartKind::Corner, attacking, spot);
+    }
+
     fn set_restart(&mut self, kind: RestartKind, team: TeamSide, spot: Vec2) {
         let st = &mut self.state;
         st.ball.pos = spot;
@@ -1299,7 +1346,13 @@ impl Simulation {
         st.ball.pass = None;
         st.ball.shot = None;
         st.ball.air_distance = 0.0;
-        st.restart = Some(Restart { kind, team, spot });
+        let ready_tick = st.tick + secs(st, kind.dead_ball_seconds()) as u32;
+        st.restart = Some(Restart {
+            kind,
+            team,
+            spot,
+            ready_tick,
+        });
         st.advantage = None;
         if st.possession != team {
             st.possession = team;
@@ -1450,10 +1503,15 @@ impl Simulation {
             // Goalkeeper facing a shot.
             if let Some(s) = shot.filter(|s| s.shooter.team() != p.team) {
                 if p.is_goalkeeper() {
+                    // One attempt per shot: a beaten keeper does not get
+                    // another roll every tick the ball is still near him.
+                    if s.keeper_attempted {
+                        continue;
+                    }
                     let gk = exec(&self.state, &p, p.attrs.goalkeeping);
                     let save = match s.kind {
                         ShotKind::Penalty => 0.1 + 0.25 * gk,
-                        _ => (0.15 + 0.75 * gk - 0.5 * s.xg).clamp(0.05, 0.95),
+                        _ => (0.15 + 0.75 * gk - 0.25 * s.xg).clamp(0.05, 0.95),
                     };
                     let saved = self.rng.chance(save);
                     let held = self.rng.chance(0.55);
@@ -1469,6 +1527,11 @@ impl Simulation {
                         self.state.ball.shot = None;
                         self.state.ball.pass = None;
                         self.after_control(id);
+                    } else if deflect.abs() > 0.4 {
+                        // Tipped round the post or over the bar.
+                        self.event(MatchEvent::Save { by: id, held });
+                        self.award_corner(p.team.opponent(), ball_pos, deflect);
+                        return;
                     } else {
                         let v = self.state.ball.vel;
                         let parry = Vec2::new(-v.x, v.y + deflect * 10.0).normalize_or_zero() * 9.0;
@@ -1479,8 +1542,14 @@ impl Simulation {
                     self.event(MatchEvent::Save { by: id, held });
                     return;
                 }
-                // Outfield block.
+                // Outfield block: often deflected behind for a corner.
                 if self.rng.chance(0.5) {
+                    let behind = self.rng.range(-1.0, 1.0);
+                    if behind.abs() > 0.55 {
+                        self.state.ball.last_touch = Some(id);
+                        self.award_corner(p.team.opponent(), ball_pos, behind);
+                        return;
+                    }
                     let v = self.state.ball.vel;
                     self.state.ball.vel =
                         (v.perp() * self.rng.range(-0.5, 0.5) - v * 0.3).clamp_length(10.0);
@@ -1526,7 +1595,15 @@ impl Simulation {
                             from: ps.from,
                             to: id,
                         });
-                    } else if ps.from.team() != p.team {
+                    } else if ps.from.team() == p.team {
+                        // Found a team-mate, just not the intended one.
+                        if ps.from != id {
+                            self.event(MatchEvent::PassCompleted {
+                                from: ps.from,
+                                to: id,
+                            });
+                        }
+                    } else {
                         self.event(MatchEvent::Interception {
                             by: id,
                             from: ps.from,
@@ -1563,6 +1640,7 @@ impl Simulation {
     fn tick_cooldowns(&mut self) {
         for p in &mut self.state.players {
             p.tackle_cooldown = p.tackle_cooldown.saturating_sub(1);
+            p.duel_cooldown = p.duel_cooldown.saturating_sub(1);
             p.action_cooldown = p.action_cooldown.saturating_sub(1);
             p.stun = p.stun.saturating_sub(1);
         }

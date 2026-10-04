@@ -112,7 +112,7 @@ fn foul_in_the_box_gives_a_penalty_taken_by_the_best_finisher() {
 
     // Run until the kick is taken: everyone else waits outside the area.
     let mut taken = false;
-    for _ in 0..30 * 30 {
+    for _ in 0..30 * 90 {
         sim.step();
         if let Some((_, MatchEvent::Shot { kind, by, .. })) = sim.events.last() {
             assert_eq!(*kind, ShotKind::Penalty);

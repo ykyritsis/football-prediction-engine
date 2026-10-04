@@ -256,9 +256,17 @@ fn presser_is_a_nearby_outfield_player_and_tackles_in_range() {
         "{d:?}"
     );
     assert_eq!(d.action, football_ai::Action::None, "{d:?}");
-    // A good tackler on a carrier still settling the ball commits.
+    // On the receiving touch even a good tackler only closes down...
     s.state.players[primary.index()].attrs.tackling = 0.9;
     s.state.players[carrier.id.index()].action_cooldown = 5;
+    let plan = plan_team(&s.state, AWAY);
+    let d = decide(&s.state, &plan, primary);
+    assert_eq!(d.action, football_ai::Action::None, "{d:?}");
+    // ...and commits once the carrier has it and has stopped.
+    s.state.players[carrier.id.index()].action_cooldown = 0;
+    s.set_velocity(carrier.id, Vec2::ZERO);
+    s.state.ball.owner_since = s.state.tick.saturating_sub(30);
+    s.state.tick = s.state.tick.max(30);
     let plan = plan_team(&s.state, AWAY);
     let d = decide(&s.state, &plan, primary);
     assert!(
