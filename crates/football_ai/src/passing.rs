@@ -19,7 +19,10 @@
 //! The breakdown is kept on each [`PassCandidate`] so the sandbox can show why
 //! a pass was (not) chosen.
 
-use crate::ball::{lofted_speed, lofted_time, pass_speed_for, travel_time, LOFT_SAFE_FRACTION, PASS_ARRIVAL_SPEED, REACTION_TIME};
+use crate::ball::{
+    lofted_speed, lofted_time, pass_speed_for, travel_time, LOFT_SAFE_FRACTION, PASS_ARRIVAL_SPEED,
+    REACTION_TIME,
+};
 use crate::eval::{possession_value, pressure_at, risk_aversion, turnover_cost};
 use crate::math::{closest_point_on_segment, cmp_f32, logistic, Vec2};
 use crate::phase::TeamPhase;
@@ -27,7 +30,7 @@ use crate::pitch::{clamp_to_pitch, TeamSide, HALF_LENGTH};
 use crate::state::{MatchState, Player, PlayerId};
 
 /// Chance a defender who reaches a lofted ball first actually wins it.
-pub const AERIAL_DUEL_WIN: f32 = 0.5;
+pub const AERIAL_DUEL_WIN: f32 = 0.7;
 
 /// Kind of pass.
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
@@ -90,6 +93,8 @@ pub fn interception_risk(
     let duel = if aerial { AERIAL_DUEL_WIN } else { 1.0 };
     let length = origin.distance(target);
     let mut survive = 1.0;
+    // Lofted balls: probability that any defender reaches the drop first.
+    let mut landing_free = 1.0;
     for opp in state.team_players(passer_team.opponent()) {
         let (c, t) = closest_point_on_segment(origin, target, opp.pos);
         if lofted && t < LOFT_SAFE_FRACTION {
@@ -98,20 +103,25 @@ pub fn interception_risk(
             let (c2, _) = closest_point_on_segment(landing, target, opp.pos);
             let ball_t = lofted_time(speed, origin.distance(c2));
             let opp_t = REACTION_TIME + (opp.pos.distance(c2) - 1.0).max(0.0) / opp.attrs.top_speed;
-            // Getting to a dropping ball only wins the aerial duel some of the time.
-            survive *= 1.0 - duel * logistic(-(opp_t - ball_t) * 5.0 - 1.2);
+            landing_free *= 1.0 - logistic(-(opp_t - ball_t) * 5.0 - 1.2);
             continue;
         }
         let along = t * length;
-        let ball_t = travel_time(speed, along).unwrap_or(10.0);
+        let ball_t = if lofted {
+            lofted_time(speed, along)
+        } else {
+            travel_time(speed, along).unwrap_or(10.0)
+        };
         let reach = if opp.is_goalkeeper() { 1.8 } else { 1.0 };
         let opp_t = REACTION_TIME + (opp.pos.distance(c) - reach).max(0.0) / opp.attrs.top_speed;
         let margin = opp_t - ball_t;
         let r = logistic(-margin * 5.0 - 1.2);
         if r > 0.01 {
-            survive *= 1.0 - r;
+            survive *= 1.0 - r * if lofted { duel } else { 1.0 };
         }
     }
+    // Getting to a dropping ball only wins the aerial duel some of the time.
+    survive *= 1.0 - duel * (1.0 - landing_free);
     1.0 - survive
 }
 
@@ -135,7 +145,11 @@ pub fn lines_broken(state: &MatchState, team: TeamSide, from: Vec2, to: Vec2) ->
 }
 
 fn misplace_probability(passer: &Player, distance: f32, lofted: bool) -> f32 {
-    let acc = if lofted { passer.attrs.long_passing } else { passer.attrs.passing };
+    let acc = if lofted {
+        passer.attrs.long_passing
+    } else {
+        passer.attrs.passing
+    };
     let base = (1.0 - acc) * distance / 55.0;
     (base + if lofted { 0.04 } else { 0.0 }).clamp(0.0, 0.9)
 }
@@ -155,7 +169,11 @@ fn lead_target(receiver: &Player, origin: Vec2) -> (Vec2, f32) {
 
 /// Generate and score every passing option for the carrier, best first.
 /// Ties are broken by receiver id and pass kind so the order is deterministic.
-pub fn evaluate_passes(state: &MatchState, carrier: PlayerId, phase: TeamPhase) -> Vec<PassCandidate> {
+pub fn evaluate_passes(
+    state: &MatchState,
+    carrier: PlayerId,
+    phase: TeamPhase,
+) -> Vec<PassCandidate> {
     let passer = state.player(carrier);
     let team = passer.team;
     let tactics = &state.team(team).tactics;
@@ -177,11 +195,15 @@ pub fn evaluate_passes(state: &MatchState, carrier: PlayerId, phase: TeamPhase) 
         let mut options: Vec<(PassKind, Vec2, f32)> = Vec::with_capacity(3);
 
         let d = origin.distance(receiver.pos);
-        if d < 3.0 || d > 60.0 {
+        if !(3.0..=60.0).contains(&d) {
             continue;
         }
         if d <= 38.0 {
-            options.push((PassKind::Short, receiver.pos, pass_speed_for(d, PASS_ARRIVAL_SPEED)));
+            options.push((
+                PassKind::Short,
+                receiver.pos,
+                pass_speed_for(d, PASS_ARRIVAL_SPEED),
+            ));
         }
         // Lead pass into a forward run.
         let forward_speed = team.to_local(receiver.vel).x;
@@ -195,25 +217,49 @@ pub fn evaluate_passes(state: &MatchState, carrier: PlayerId, phase: TeamPhase) 
         }
         // Long lofted ball.
         if d >= 22.0 {
-            let (t, _) = if receiver.vel.length() > 3.0 { lead_target(receiver, origin) } else { (receiver.pos, 0.0) };
+            let (t, _) = if receiver.vel.length() > 3.0 {
+                lead_target(receiver, origin)
+            } else {
+                (receiver.pos, 0.0)
+            };
             let dd = origin.distance(t);
             options.push((PassKind::Long, t, lofted_speed(dd)));
         }
         // Cross: carrier wide in the final third, receiver in or arriving in the box.
         // Aimed at the zone the receiver is attacking, not at his feet.
-        if origin_local.x > HALF_LENGTH - 34.0 && origin_local.y.abs() > 13.0 && rl.x > HALF_LENGTH - 28.0 && rl.y.abs() < 20.0
+        if origin_local.x > HALF_LENGTH - 34.0
+            && origin_local.y.abs() > 13.0
+            && rl.x > HALF_LENGTH - 28.0
+            && rl.y.abs() < 20.0
         {
-            let aim = team.to_world(Vec2::new((rl.x + 4.0).clamp(HALF_LENGTH - 13.0, HALF_LENGTH - 5.0), rl.y * 0.5));
+            let aim = team.to_world(Vec2::new(
+                (rl.x + 4.0).clamp(HALF_LENGTH - 13.0, HALF_LENGTH - 5.0),
+                rl.y * 0.5,
+            ));
             let dd = origin.distance(aim);
             options.push((PassKind::Cross, aim, lofted_speed(dd)));
         }
 
         for (kind, target, speed) in options {
-            out.push(score_candidate(state, passer, receiver, kind, target, speed, phase, risk_av, tactics, b, origin_local));
+            out.push(score_candidate(
+                state,
+                passer,
+                receiver,
+                kind,
+                target,
+                speed,
+                phase,
+                risk_av,
+                tactics,
+                b,
+                origin_local,
+            ));
         }
     }
     out.sort_by(|a, b| {
-        cmp_f32(b.score, a.score).then(a.receiver.cmp(&b.receiver)).then((a.kind as u8).cmp(&(b.kind as u8)))
+        cmp_f32(b.score, a.score)
+            .then(a.receiver.cmp(&b.receiver))
+            .then((a.kind as u8).cmp(&(b.kind as u8)))
     });
     out
 }
@@ -240,7 +286,15 @@ fn score_candidate(
     } else {
         travel_time(speed, distance).unwrap_or(distance / speed.max(1.0))
     };
-    let intercept = interception_risk(state, team, passer.pos, target, speed, lofted, kind == PassKind::Cross);
+    let intercept = interception_risk(
+        state,
+        team,
+        passer.pos,
+        target,
+        speed,
+        lofted,
+        kind == PassKind::Cross,
+    );
     let misplace = misplace_probability(passer, distance, lofted);
     let risk = 1.0 - (1.0 - intercept) * (1.0 - misplace);
 
@@ -250,7 +304,11 @@ fn score_candidate(
     let value = possession_value(target_local) * (1.0 - 0.35 * pressure);
     // Turnovers happen around the interception point; approximate with the
     // lane midpoint for ground passes and the landing zone for lofted ones.
-    let fail_at = if lofted { target_local } else { origin_local.lerp(target_local, 0.5) };
+    let fail_at = if lofted {
+        target_local
+    } else {
+        origin_local.lerp(target_local, 0.5)
+    };
     let ev = (1.0 - risk) * value - risk * turnover_cost(fail_at) * risk_av;
 
     let progression = target_local.x - origin_local.x;
@@ -271,7 +329,7 @@ fn score_candidate(
         style += (b.through_ball_bias - 0.2) * 0.04;
     }
     if kind == PassKind::Cross {
-        style += (0.5 * tactics.crossing + 0.5 * b.cross_bias - 0.3) * 0.06;
+        style += (0.5 * tactics.crossing + 0.5 * b.cross_bias - 0.5) * 0.06;
     }
     if distance < 16.0 && !lofted {
         // Short combination play (tiki-taka, low support range, high tempo).

@@ -264,7 +264,9 @@ impl ComStyle {
             ComStyle::MazingRun => "Weaves through tight spaces on long, slaloming dribbles.",
             ComStyle::SpeedingBullet => "Carries the ball at full speed into space.",
             ComStyle::IncisiveRun => "Drives with the ball into the penalty area.",
-            ComStyle::LongBallExpert => "Frequently plays long passes to switch play or find runners.",
+            ComStyle::LongBallExpert => {
+                "Frequently plays long passes to switch play or find runners."
+            }
             ComStyle::EarlyCross => "Crosses early from deep before the defence is set.",
             ComStyle::LongRanger => "Shoots from distance whenever he gets the chance.",
         }
@@ -455,8 +457,13 @@ impl Skill {
     pub fn apply(self, b: &mut Behaviour) {
         match self {
             s if s.is_dribbling_trick() => b.dribble_bias += 0.04,
-            Skill::LongRangeCurler | Skill::KnuckleShot | Skill::DippingShot | Skill::RisingShot => b.shot_range += 2.5,
-            Skill::AcrobaticFinishing | Skill::FirstTimeShot | Skill::ChipShotControl => b.shot_threshold -= 0.008,
+            Skill::LongRangeCurler
+            | Skill::KnuckleShot
+            | Skill::DippingShot
+            | Skill::RisingShot => b.shot_range += 2.5,
+            Skill::AcrobaticFinishing | Skill::FirstTimeShot | Skill::ChipShotControl => {
+                b.shot_threshold -= 0.008
+            }
             Skill::Heading => b.box_presence += 0.05,
             Skill::OneTouchPass => b.tempo += 0.2,
             Skill::ThroughPassing => b.through_ball_bias += 0.2,
@@ -474,8 +481,12 @@ impl Skill {
     pub fn apply_attributes(self, a: &mut Attributes) {
         match self {
             s if s.is_dribbling_trick() => a.dribbling = (a.dribbling + 0.012).min(1.0),
-            Skill::AcrobaticFinishing | Skill::FirstTimeShot => a.finishing = (a.finishing + 0.02).min(1.0),
-            Skill::OneTouchPass | Skill::ThroughPassing | Skill::WeightedPass => a.passing = (a.passing + 0.015).min(1.0),
+            Skill::AcrobaticFinishing | Skill::FirstTimeShot => {
+                a.finishing = (a.finishing + 0.02).min(1.0)
+            }
+            Skill::OneTouchPass | Skill::ThroughPassing | Skill::WeightedPass => {
+                a.passing = (a.passing + 0.015).min(1.0)
+            }
             Skill::LowLoftedPass => a.long_passing = (a.long_passing + 0.02).min(1.0),
             Skill::Interception | Skill::ManMarking => a.tackling = (a.tackling + 0.015).min(1.0),
             _ => {}
@@ -509,7 +520,10 @@ impl SkillSet {
     }
     /// Skills in declaration order (deterministic).
     pub fn iter(&self) -> impl Iterator<Item = Skill> + '_ {
-        Skill::ALL.iter().copied().filter(move |&s| self.contains(s))
+        Skill::ALL
+            .iter()
+            .copied()
+            .filter(move |&s| self.contains(s))
     }
 }
 
@@ -532,7 +546,10 @@ impl ComStyleSet {
         self.0 & (1 << (s as u8)) != 0
     }
     pub fn iter(&self) -> impl Iterator<Item = ComStyle> + '_ {
-        ComStyle::ALL.iter().copied().filter(move |&s| self.contains(s))
+        ComStyle::ALL
+            .iter()
+            .copied()
+            .filter(move |&s| self.contains(s))
     }
 }
 
@@ -543,12 +560,23 @@ mod tests {
 
     #[test]
     fn skill_set_round_trip() {
-        let s = SkillSet::new(&[Skill::DoubleTouch, Skill::FightingSpirit, Skill::ScissorsFeint]);
+        let s = SkillSet::new(&[
+            Skill::DoubleTouch,
+            Skill::FightingSpirit,
+            Skill::ScissorsFeint,
+        ]);
         assert_eq!(s.len(), 3);
         assert!(s.contains(Skill::DoubleTouch));
         assert!(!s.contains(Skill::Rabona));
         let v: Vec<Skill> = s.iter().collect();
-        assert_eq!(v, vec![Skill::ScissorsFeint, Skill::DoubleTouch, Skill::FightingSpirit]);
+        assert_eq!(
+            v,
+            vec![
+                Skill::ScissorsFeint,
+                Skill::DoubleTouch,
+                Skill::FightingSpirit
+            ]
+        );
     }
 
     #[test]

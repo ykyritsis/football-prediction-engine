@@ -70,6 +70,7 @@ pub mod plan;
 pub mod pressing;
 pub mod rng;
 pub mod role;
+pub mod scenario;
 pub mod sim;
 pub mod state;
 pub mod support;

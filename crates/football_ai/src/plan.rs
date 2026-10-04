@@ -7,6 +7,7 @@
 //! each other and can run in any order, or in parallel.
 
 use crate::ball::intercept;
+use crate::formation::team_shape;
 use crate::marking::{assign_marking, MarkAssignment};
 use crate::math::{cmp_f32, Vec2};
 use crate::phase::{phase_for, TeamPhase};
@@ -14,7 +15,6 @@ use crate::pitch::{clamp_to_pitch, TeamSide};
 use crate::pressing::{plan_press, PressPlan};
 use crate::state::{MatchState, PlayerId, RestartKind, TEAM_SIZE};
 use crate::support::{plan_support, SupportAssignment};
-use crate::formation::team_shape;
 
 /// Everything a team decided collectively this tick.
 #[derive(Debug, Clone, PartialEq)]
@@ -73,7 +73,7 @@ fn choose_chaser(state: &MatchState, side: TeamSide) -> Option<(PlayerId, Vec2)>
             continue;
         }
         let (pt, t) = intercept(p, ball.pos, ball.vel, ball.air_distance);
-        if best.map_or(true, |b| cmp_f32(t, b.0).then(p.id.cmp(&b.1)).is_lt()) {
+        if best.is_none_or(|b| cmp_f32(t, b.0).then(p.id.cmp(&b.1)).is_lt()) {
             best = Some((t, p.id, pt));
         }
     }
@@ -92,7 +92,12 @@ fn choose_chaser(state: &MatchState, side: TeamSide) -> Option<(PlayerId, Vec2)>
 }
 
 /// Who takes a restart.
-pub fn restart_taker(state: &MatchState, side: TeamSide, kind: RestartKind, spot: Vec2) -> Option<PlayerId> {
+pub fn restart_taker(
+    state: &MatchState,
+    side: TeamSide,
+    kind: RestartKind,
+    spot: Vec2,
+) -> Option<PlayerId> {
     if kind == RestartKind::GoalKick {
         return Some(state.goalkeeper(side).id);
     }
@@ -109,13 +114,28 @@ pub fn plan_team(state: &MatchState, side: TeamSide) -> TeamPlan {
     let phase = phase_for(state, side);
     let shape = team_shape(state, side, phase);
     let press = plan_press(state, side, phase);
-    let mut busy: Vec<PlayerId> = [press.primary, press.cover, press.swarm[0], press.swarm[1]].into_iter().flatten().collect();
+    let mut busy: Vec<PlayerId> = [press.primary, press.cover, press.swarm[0], press.swarm[1]]
+        .into_iter()
+        .flatten()
+        .collect();
     let ball_chaser = choose_chaser(state, side);
     if let Some((c, _)) = ball_chaser {
         busy.push(c);
     }
     let marking = assign_marking(state, side, phase, &shape, &busy);
     let support = plan_support(state, side, phase, &shape);
-    let restart_taker = state.restart.filter(|r| r.team == side).and_then(|r| restart_taker(state, side, r.kind, r.spot));
-    TeamPlan { side, phase, shape, press, marking, support, ball_chaser, restart_taker }
+    let restart_taker = state
+        .restart
+        .filter(|r| r.team == side)
+        .and_then(|r| restart_taker(state, side, r.kind, r.spot));
+    TeamPlan {
+        side,
+        phase,
+        shape,
+        press,
+        marking,
+        support,
+        ball_chaser,
+        restart_taker,
+    }
 }

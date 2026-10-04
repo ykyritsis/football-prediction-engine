@@ -18,11 +18,15 @@ use crate::eval::{base_xg, possession_value, pressure_at, risk_aversion, turnove
 use crate::marking::marking_position;
 use crate::math::{closest_point_on_segment, cmp_f32, logistic, Vec2};
 use crate::passing::{evaluate_passes, PassCandidate, PassKind};
-use crate::pitch::{clamp_to_pitch, in_own_box_local, CENTRE_CIRCLE_RADIUS, GOAL_HALF_WIDTH, HALF_LENGTH, HALF_WIDTH};
+use crate::pitch::{
+    clamp_to_pitch, in_own_box_local, CENTRE_CIRCLE_RADIUS, GOAL_HALF_WIDTH, HALF_LENGTH,
+    HALF_WIDTH,
+};
 use crate::plan::TeamPlan;
 use crate::pressing::{contain_position, cover_position, PressMode};
 use crate::state::{MatchState, Player, PlayerId};
 use crate::support::SupportRun;
+use std::f32::consts::FRAC_1_SQRT_2;
 
 /// Maximum distance at which a tackle can be attempted.
 pub const TACKLE_RANGE: f32 = 1.8;
@@ -164,8 +168,8 @@ const CARRY_DIRS: [(f32, f32); 9] = [
     (0.5, -0.866_025_4),
     (0.0, 1.0),
     (0.0, -1.0),
-    (-0.707_106_8, 0.707_106_8),
-    (-0.707_106_8, -0.707_106_8),
+    (-FRAC_1_SQRT_2, FRAC_1_SQRT_2),
+    (-FRAC_1_SQRT_2, -FRAC_1_SQRT_2),
 ];
 const CARRY_DISTANCE: f32 = 6.0;
 
@@ -185,7 +189,8 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
     }
     // Pick the corner further from the keeper.
     let gk = side.to_local(state.goalkeeper(side.opponent()).pos);
-    let aim_y = if (gk.y - (GOAL_HALF_WIDTH - 0.6)).abs() >= (gk.y + (GOAL_HALF_WIDTH - 0.6)).abs() {
+    let aim_y = if (gk.y - (GOAL_HALF_WIDTH - 0.6)).abs() >= (gk.y + (GOAL_HALF_WIDTH - 0.6)).abs()
+    {
         GOAL_HALF_WIDTH - 0.6
     } else {
         -(GOAL_HALF_WIDTH - 0.6)
@@ -207,7 +212,11 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
     let xg = xg.clamp(0.0, 0.95);
     let b = &shooter.behaviour;
     let gate = if xg >= b.shot_threshold { 0.0 } else { -1.0 };
-    Some(ShotOption { target: side.to_world(aim), xg, score: xg - (1.0 - xg) * 0.012 + gate })
+    Some(ShotOption {
+        target: side.to_world(aim),
+        xg,
+        score: xg - (1.0 - xg) * 0.012 + gate,
+    })
 }
 
 /// Evaluate carrying the ball in each of [`CARRY_DIRS`].
@@ -216,7 +225,11 @@ pub fn evaluate_dribbles(state: &MatchState, carrier: &Player) -> Vec<DribbleOpt
     let here = side.to_local(carrier.pos);
     let risk_av = risk_aversion(state, carrier);
     let b = &carrier.behaviour;
-    let opps: Vec<Vec2> = state.team_players(side.opponent()).iter().map(|p| side.to_local(p.pos)).collect();
+    let opps: Vec<Vec2> = state
+        .team_players(side.opponent())
+        .iter()
+        .map(|p| side.to_local(p.pos))
+        .collect();
     let mut out: Vec<DribbleOption> = CARRY_DIRS
         .iter()
         .filter_map(|&(x, y)| {
@@ -233,7 +246,11 @@ pub fn evaluate_dribbles(state: &MatchState, carrier: &Player) -> Vec<DribbleOpt
             let risk = (logistic((2.4 - lane) * 1.7) * (1.2 - 0.75 * skill)).clamp(0.0, 0.95);
             let ev = (1.0 - risk) * possession_value(p) - risk * turnover_cost(here) * risk_av;
             let style = (b.dribble_bias - 0.45) * 0.03;
-            Some(DribbleOption { target: side.to_world(p), risk, score: ev + style })
+            Some(DribbleOption {
+                target: side.to_world(p),
+                risk,
+                score: ev + style,
+            })
         })
         .collect();
     out.sort_by(|a, b| cmp_f32(b.score, a.score));
@@ -247,9 +264,24 @@ pub fn hold_score(state: &MatchState, carrier: &Player) -> f32 {
     let pressure = pressure_at(state, side, carrier.pos);
     let b = &carrier.behaviour;
     let lose = pressure * 0.4 * (1.15 - 0.45 * carrier.attrs.control - 0.35 * b.hold_up);
-    let ev = (1.0 - lose) * possession_value(here) - lose * turnover_cost(here) * risk_aversion(state, carrier);
+    let ev = (1.0 - lose) * possession_value(here)
+        - lose * turnover_cost(here) * risk_aversion(state, carrier);
     // Holding is a stop-gap: small constant penalty so players act.
-    ev - 0.006 + if pressure > 0.5 { (b.hold_up - 0.3) * 0.015 } else { 0.0 }
+    ev - 0.006
+        + if pressure > 0.5 {
+            (b.hold_up - 0.3) * 0.015
+        } else {
+            0.0
+        }
+}
+
+/// Extra cost of continuing to shield: under pressure for more than eight
+/// seconds it becomes untenable and the carrier must pass or carry.
+pub fn shielding_fatigue(state: &MatchState, carrier: &Player) -> f32 {
+    if pressure_at(state, carrier.team, carrier.pos) <= 0.5 {
+        return 0.0;
+    }
+    (state.seconds_since(state.ball.owner_since) - 8.0).max(0.0) * 0.01
 }
 
 /// Full option breakdown for the ball carrier.
@@ -266,10 +298,19 @@ pub fn carrier_options(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Car
 
 fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
     let opts = carrier_options(state, plan, p.id);
-    let mut d = Decision { player: p.id, activity: Activity::Shield, action: Action::None, target: p.pos, speed: MoveSpeed::Walk };
+    let mut d = Decision {
+        player: p.id,
+        activity: Activity::Shield,
+        action: Action::None,
+        target: p.pos,
+        speed: MoveSpeed::Walk,
+    };
 
     let best_dribble = opts.dribbles.first().copied();
-    let mut best_score = opts.hold_score;
+    // A shot must beat holding on; shielding fatigue only pushes the carrier
+    // towards passing or carrying, never into a forced shot.
+    let shot_bar_hold = opts.hold_score;
+    let mut best_score = opts.hold_score - shielding_fatigue(state, p);
     if let Some(dr) = best_dribble {
         if dr.score > best_score {
             best_score = dr.score;
@@ -290,7 +331,7 @@ fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
         }
     }
     if let Some(shot) = opts.shot {
-        if shot.score > best_score {
+        if shot.score > best_score && shot.score > shot_bar_hold {
             best_score = shot.score;
             d.activity = Activity::Shooting;
             d.action = Action::Shoot(shot);
@@ -300,10 +341,20 @@ fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
     // Under heavy pressure in or near the own box with nothing good on: clear it.
     let local = p.team.to_local(p.pos);
     let pressure = pressure_at(state, p.team, p.pos);
-    if (in_own_box_local(local) || local.x < -HALF_LENGTH + 22.0) && pressure > 0.7 && best_score < -0.01 {
-        let y = if local.y >= 0.0 { HALF_WIDTH - 6.0 } else { -(HALF_WIDTH - 6.0) };
+    if (in_own_box_local(local) || local.x < -HALF_LENGTH + 22.0)
+        && pressure > 0.7
+        && best_score < -0.01
+    {
+        let y = if local.y >= 0.0 {
+            HALF_WIDTH - 6.0
+        } else {
+            -(HALF_WIDTH - 6.0)
+        };
         d.activity = Activity::Clearing;
-        d.action = Action::Clear { target: p.team.to_world(Vec2::new(10.0, y)), speed: 26.0 };
+        d.action = Action::Clear {
+            target: p.team.to_world(Vec2::new(10.0, y)),
+            speed: 26.0,
+        };
         d.target = p.pos;
     }
     d
@@ -311,9 +362,19 @@ fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
 
 fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
     let opts = evaluate_passes(state, p.id, plan.phase);
-    let mut d = Decision { player: p.id, activity: Activity::TakeRestart, action: Action::None, target: p.pos, speed: MoveSpeed::Walk };
+    let mut d = Decision {
+        player: p.id,
+        activity: Activity::TakeRestart,
+        action: Action::None,
+        target: p.pos,
+        speed: MoveSpeed::Walk,
+    };
     if p.action_cooldown == 0 {
-        if let Some(best) = opts.iter().find(|c| c.kind != PassKind::Cross).or(opts.first()) {
+        if let Some(best) = opts
+            .iter()
+            .find(|c| c.kind != PassKind::Cross)
+            .or(opts.first())
+        {
             d.action = Action::Pass(*best);
         }
     }
@@ -326,7 +387,11 @@ fn keep_distance(target: Vec2, spot: Vec2) -> Vec2 {
     if off.length() >= min {
         target
     } else {
-        let dir = if off.length() < 1e-3 { Vec2::X } else { off.normalize_or_zero() };
+        let dir = if off.length() < 1e-3 {
+            Vec2::X
+        } else {
+            off.normalize_or_zero()
+        };
         clamp_to_pitch(spot + dir * min, 0.5)
     }
 }
@@ -343,7 +408,13 @@ fn goalkeeper_decision(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decis
             speed = MoveSpeed::Sprint;
         }
     }
-    Decision { player: p.id, activity: Activity::Goalkeeping, action: Action::None, target, speed }
+    Decision {
+        player: p.id,
+        activity: Activity::Goalkeeping,
+        action: Action::None,
+        target,
+        speed,
+    }
 }
 
 /// Decide what player `id` does this tick.
@@ -354,7 +425,13 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
     let shape_target = plan.shape[slot];
 
     if p.stun > 0 {
-        return Decision { player: id, activity: Activity::Recovering, action: Action::None, target: p.pos, speed: MoveSpeed::Walk };
+        return Decision {
+            player: id,
+            activity: Activity::Recovering,
+            action: Action::None,
+            target: p.pos,
+            speed: MoveSpeed::Walk,
+        };
     }
     if state.ball.owner == Some(id) {
         if state.restart.is_some() {
@@ -369,7 +446,13 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
                 (None, Some(pass)) if pass.to == id => Activity::ReceivePass,
                 _ => Activity::ChaseBall,
             };
-            return Decision { player: id, activity, action: Action::None, target: point, speed: MoveSpeed::Sprint };
+            return Decision {
+                player: id,
+                activity,
+                action: Action::None,
+                target: point,
+                speed: MoveSpeed::Sprint,
+            };
         }
     }
 
@@ -378,7 +461,13 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
         if r.team != p.team {
             let t = keep_distance(shape_target, r.spot);
             let d = p.pos.distance(t);
-            return Decision { player: id, activity: Activity::KeepDistance, action: Action::None, target: t, speed: MoveSpeed::for_distance(d) };
+            return Decision {
+                player: id,
+                activity: Activity::KeepDistance,
+                action: Action::None,
+                target: t,
+                speed: MoveSpeed::for_distance(d),
+            };
         }
     }
 
@@ -389,11 +478,27 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
     if plan.phase.in_possession() {
         if let Some(s) = plan.support_for(id) {
             let d = p.pos.distance(s.target);
-            let speed = if s.run.is_sprint() && d > 2.0 { MoveSpeed::Sprint } else { MoveSpeed::for_distance(d).max(MoveSpeed::Jog) };
-            return Decision { player: id, activity: Activity::Support(s.run), action: Action::None, target: s.target, speed };
+            let speed = if s.run.is_sprint() && d > 2.0 {
+                MoveSpeed::Sprint
+            } else {
+                MoveSpeed::for_distance(d).max(MoveSpeed::Jog)
+            };
+            return Decision {
+                player: id,
+                activity: Activity::Support(s.run),
+                action: Action::None,
+                target: s.target,
+                speed,
+            };
         }
         let d = p.pos.distance(shape_target);
-        return Decision { player: id, activity: Activity::HoldShape, action: Action::None, target: shape_target, speed: MoveSpeed::for_distance(d) };
+        return Decision {
+            player: id,
+            activity: Activity::HoldShape,
+            action: Action::None,
+            target: shape_target,
+            speed: MoveSpeed::for_distance(d),
+        };
     }
 
     // ---- out of possession ----
@@ -402,28 +507,60 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
         let engaging = press.primary == Some(id) || press.swarm.contains(&Some(id));
         if engaging {
             let dist = p.pos.distance(carrier.pos);
-            let (activity, target, speed, tackle_range) = if press.mode == PressMode::Press || press.swarm.contains(&Some(id)) {
-                let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.6;
-                (Activity::Press(carrier.id), carrier.pos + goal_side, MoveSpeed::Sprint, TACKLE_RANGE)
-            } else {
-                // Containing: stay goal-side, but step in on a carrier who stops
-                // or who reaches the danger zone.
-                let danger = p.team.to_local(carrier.pos).x < -HALF_LENGTH + 25.0;
-                if carrier.vel.length() < 2.0 || danger {
-                    let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.8;
-                    (Activity::Contain(carrier.id), carrier.pos + goal_side, MoveSpeed::Run, TACKLE_RANGE)
+            let (activity, target, speed, tackle_range) =
+                if press.mode == PressMode::Press || press.swarm.contains(&Some(id)) {
+                    let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.6;
+                    (
+                        Activity::Press(carrier.id),
+                        carrier.pos + goal_side,
+                        MoveSpeed::Sprint,
+                        TACKLE_RANGE,
+                    )
                 } else {
-                    let t = contain_position(state, p.team, carrier.pos);
-                    (Activity::Contain(carrier.id), t, MoveSpeed::Run, CONTROL_RADIUS + 0.2)
-                }
+                    // Containing: stay goal-side, but step in on a carrier who stops
+                    // or who reaches the danger zone.
+                    let danger = p.team.to_local(carrier.pos).x < -HALF_LENGTH + 25.0;
+                    if carrier.vel.length() < 2.0 || danger {
+                        let goal_side = (p.team.own_goal() - carrier.pos).normalize_or_zero() * 0.8;
+                        (
+                            Activity::Contain(carrier.id),
+                            carrier.pos + goal_side,
+                            MoveSpeed::Run,
+                            TACKLE_RANGE,
+                        )
+                    } else {
+                        let t = contain_position(state, p.team, carrier.pos);
+                        (
+                            Activity::Contain(carrier.id),
+                            t,
+                            MoveSpeed::Run,
+                            CONTROL_RADIUS + 0.2,
+                        )
+                    }
+                };
+            let action = if dist <= tackle_range && p.tackle_cooldown == 0 {
+                Action::Tackle(carrier.id)
+            } else {
+                Action::None
             };
-            let action = if dist <= tackle_range && p.tackle_cooldown == 0 { Action::Tackle(carrier.id) } else { Action::None };
-            return Decision { player: id, activity, action, target, speed };
+            return Decision {
+                player: id,
+                activity,
+                action,
+                target,
+                speed,
+            };
         }
         if press.cover == Some(id) {
             if let Some(t) = press.cover_target {
                 let target = cover_position(carrier.pos, state.player(t).pos);
-                return Decision { player: id, activity: Activity::Cover(t), action: Action::None, target, speed: MoveSpeed::Run };
+                return Decision {
+                    player: id,
+                    activity: Activity::Cover(t),
+                    action: Action::None,
+                    target,
+                    speed: MoveSpeed::Run,
+                };
             }
         }
     }
@@ -438,16 +575,36 @@ pub fn decide(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decision {
         } else {
             MoveSpeed::for_distance(d).max(MoveSpeed::Jog)
         };
-        return Decision { player: id, activity: Activity::Mark(m.target), action: Action::None, target, speed };
+        return Decision {
+            player: id,
+            activity: Activity::Mark(m.target),
+            action: Action::None,
+            target,
+            speed,
+        };
     }
     let d = p.pos.distance(shape_target);
     // Recovery runs: sprint back when caught upfield.
     let behind_ball = p.team.to_local(p.pos).x > p.team.to_local(state.ball.pos).x;
-    let speed = if behind_ball && d > 15.0 && p.behaviour.track_back > 0.5 { MoveSpeed::Sprint } else { MoveSpeed::for_distance(d) };
-    Decision { player: id, activity: Activity::HoldShape, action: Action::None, target: shape_target, speed }
+    let speed = if behind_ball && d > 15.0 && p.behaviour.track_back > 0.5 {
+        MoveSpeed::Sprint
+    } else {
+        MoveSpeed::for_distance(d)
+    };
+    Decision {
+        player: id,
+        activity: Activity::HoldShape,
+        action: Action::None,
+        target: shape_target,
+        speed,
+    }
 }
 
 /// Decide for every player, in id order.
 pub fn decide_all(state: &MatchState, plans: &[TeamPlan; 2]) -> Vec<Decision> {
-    state.players.iter().map(|p| decide(state, &plans[p.team.index()], p.id)).collect()
+    state
+        .players
+        .iter()
+        .map(|p| decide(state, &plans[p.team.index()], p.id))
+        .collect()
 }

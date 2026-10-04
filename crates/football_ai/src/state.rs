@@ -151,7 +151,10 @@ pub enum RestartKind {
 impl RestartKind {
     /// Restarts from which a player cannot be offside.
     pub fn exempt_from_offside(self) -> bool {
-        matches!(self, RestartKind::ThrowIn | RestartKind::GoalKick | RestartKind::Corner)
+        matches!(
+            self,
+            RestartKind::ThrowIn | RestartKind::GoalKick | RestartKind::Corner
+        )
     }
 }
 
@@ -235,7 +238,8 @@ impl MatchState {
             .iter()
             .filter(|pl| include_gk || !pl.is_goalkeeper())
             .min_by(|a, b| {
-                crate::math::cmp_f32(a.pos.distance_squared(p), b.pos.distance_squared(p)).then(a.id.cmp(&b.id))
+                crate::math::cmp_f32(a.pos.distance_squared(p), b.pos.distance_squared(p))
+                    .then(a.id.cmp(&b.id))
             })
     }
 

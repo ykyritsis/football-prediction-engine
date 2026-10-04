@@ -199,10 +199,12 @@ mod tests {
 
     #[test]
     fn segment_projection() {
-        let (p, t) = closest_point_on_segment(Vec2::ZERO, Vec2::new(10.0, 0.0), Vec2::new(5.0, 3.0));
+        let (p, t) =
+            closest_point_on_segment(Vec2::ZERO, Vec2::new(10.0, 0.0), Vec2::new(5.0, 3.0));
         assert_eq!(p, Vec2::new(5.0, 0.0));
         assert!((t - 0.5).abs() < 1e-6);
-        let (p, t) = closest_point_on_segment(Vec2::ZERO, Vec2::new(10.0, 0.0), Vec2::new(-5.0, 3.0));
+        let (p, t) =
+            closest_point_on_segment(Vec2::ZERO, Vec2::new(10.0, 0.0), Vec2::new(-5.0, 3.0));
         assert_eq!(p, Vec2::ZERO);
         assert_eq!(t, 0.0);
     }

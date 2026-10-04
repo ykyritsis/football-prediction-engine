@@ -19,7 +19,9 @@ use crate::formation::{team_shape, Formation};
 use crate::identity::presets::{self, Squad};
 use crate::math::{cmp_f32, Vec2};
 use crate::phase::TeamPhase;
-use crate::pitch::{clamp_to_pitch, TeamSide, CENTRE_CIRCLE_RADIUS, GOAL_HALF_WIDTH, HALF_LENGTH, HALF_WIDTH};
+use crate::pitch::{
+    clamp_to_pitch, TeamSide, CENTRE_CIRCLE_RADIUS, GOAL_HALF_WIDTH, HALF_LENGTH, HALF_WIDTH,
+};
 use crate::plan::{plan_team, TeamPlan};
 use crate::rng::SimRng;
 use crate::role::Role;
@@ -49,17 +51,49 @@ impl Default for SimConfig {
 /// Something notable that happened.
 #[derive(Debug, Clone, Copy, PartialEq)]
 pub enum MatchEvent {
-    Pass { from: PlayerId, to: PlayerId, kind: crate::passing::PassKind },
-    PassCompleted { from: PlayerId, to: PlayerId },
-    Interception { by: PlayerId, from: PlayerId },
-    Tackle { by: PlayerId, on: PlayerId, won: bool },
-    Shot { by: PlayerId, xg: f32 },
-    Save { by: PlayerId, held: bool },
-    Goal { team: TeamSide, scorer: Option<PlayerId> },
-    Clearance { by: PlayerId },
-    Offside { player: PlayerId },
-    OutOfPlay { restart: RestartKind, team: TeamSide },
-    PossessionChange { team: TeamSide },
+    Pass {
+        from: PlayerId,
+        to: PlayerId,
+        kind: crate::passing::PassKind,
+    },
+    PassCompleted {
+        from: PlayerId,
+        to: PlayerId,
+    },
+    Interception {
+        by: PlayerId,
+        from: PlayerId,
+    },
+    Tackle {
+        by: PlayerId,
+        on: PlayerId,
+        won: bool,
+    },
+    Shot {
+        by: PlayerId,
+        xg: f32,
+    },
+    Save {
+        by: PlayerId,
+        held: bool,
+    },
+    Goal {
+        team: TeamSide,
+        scorer: Option<PlayerId>,
+    },
+    Clearance {
+        by: PlayerId,
+    },
+    Offside {
+        player: PlayerId,
+    },
+    OutOfPlay {
+        restart: RestartKind,
+        team: TeamSide,
+    },
+    PossessionChange {
+        team: TeamSide,
+    },
 }
 
 /// The simulation.
@@ -82,7 +116,12 @@ fn secs(state: &MatchState, s: f32) -> u16 {
 
 impl Simulation {
     pub fn new(config: SimConfig) -> Self {
-        let SimConfig { seed, dt, home, away } = config;
+        let SimConfig {
+            seed,
+            dt,
+            home,
+            away,
+        } = config;
         let mut players = Vec::with_capacity(PLAYER_COUNT);
         let mut teams = Vec::with_capacity(2);
         for (side, squad) in [(TeamSide::Home, &home), (TeamSide::Away, &away)] {
@@ -103,9 +142,18 @@ impl Simulation {
                     stun: 0,
                 });
             }
-            teams.push(TeamState { side, formation, tactics: squad.style.compile(), phase: TeamPhase::MidBlock });
+            teams.push(TeamState {
+                side,
+                formation,
+                tactics: squad.style.compile(),
+                phase: TeamPhase::MidBlock,
+            });
         }
-        assert_eq!(players.len(), PLAYER_COUNT, "each squad needs eleven players");
+        assert_eq!(
+            players.len(),
+            PLAYER_COUNT,
+            "each squad needs eleven players"
+        );
         let state = MatchState {
             tick: 0,
             dt,
@@ -159,11 +207,15 @@ impl Simulation {
         st.possession = team;
         st.possession_since = st.tick;
         for side in TeamSide::BOTH {
-            let phase = if side == team { TeamPhase::BuildUp } else { TeamPhase::MidBlock };
+            let phase = if side == team {
+                TeamPhase::BuildUp
+            } else {
+                TeamPhase::MidBlock
+            };
             st.teams[side.index()].phase = phase;
             let shape = team_shape(st, side, phase);
-            for slot in 0..TEAM_SIZE {
-                let mut local = side.to_local(shape[slot]);
+            for (slot, &target) in shape.iter().enumerate() {
+                let mut local = side.to_local(target);
                 local.x = local.x.min(-1.0);
                 if side != team && local.length() < CENTRE_CIRCLE_RADIUS + 0.5 {
                     local = local.normalize_or_zero() * (CENTRE_CIRCLE_RADIUS + 0.5);
@@ -182,7 +234,9 @@ impl Simulation {
             .team_players(team)
             .iter()
             .filter(|p| p.role != Role::Goalkeeper)
-            .max_by(|a, b| cmp_f32(team.to_local(a.pos).x, team.to_local(b.pos).x).then(b.id.cmp(&a.id)))
+            .max_by(|a, b| {
+                cmp_f32(team.to_local(a.pos).x, team.to_local(b.pos).x).then(b.id.cmp(&a.id))
+            })
             .map(|p| p.id)
             .unwrap();
         st.players[taker.index()].pos = team.to_world(Vec2::new(-0.4, 0.0));
@@ -190,12 +244,19 @@ impl Simulation {
         st.ball.owner_since = st.tick;
         st.ball.last_touch = Some(taker);
         st.players[taker.index()].action_cooldown = secs(st, 0.5);
-        st.restart = Some(Restart { kind: RestartKind::KickOff, team, spot: Vec2::ZERO });
+        st.restart = Some(Restart {
+            kind: RestartKind::KickOff,
+            team,
+            spot: Vec2::ZERO,
+        });
     }
 
     /// Advance one fixed timestep.
     pub fn step(&mut self) {
-        let plans = [plan_team(&self.state, TeamSide::Home), plan_team(&self.state, TeamSide::Away)];
+        let plans = [
+            plan_team(&self.state, TeamSide::Home),
+            plan_team(&self.state, TeamSide::Away),
+        ];
         let decisions = decide_all(&self.state, &plans);
         for side in TeamSide::BOTH {
             self.state.teams[side.index()].phase = plans[side.index()].phase;
@@ -248,10 +309,15 @@ impl Simulation {
         }
         let p = self.state.player(by).clone();
         let lofted = c.kind.is_lofted();
-        let acc = if lofted { p.attrs.long_passing } else { p.attrs.passing };
+        let acc = if lofted {
+            p.attrs.long_passing
+        } else {
+            p.attrs.passing
+        };
         let spread = (1.0 - acc) * c.distance * 0.07 + 0.15;
         let along = (c.target - p.pos).normalize_or_zero();
-        let err = along.perp() * self.rng.range(-spread, spread) + along * self.rng.range(-spread, spread) * 0.5;
+        let err = along.perp() * self.rng.range(-spread, spread)
+            + along * self.rng.range(-spread, spread) * 0.5;
         let target = c.target + err;
         let dir = (target - p.pos).normalize_or_zero();
         let st = &mut self.state;
@@ -259,12 +325,27 @@ impl Simulation {
         st.ball.pos = p.pos + dir * 0.4;
         let offside_applies = !st.restart.is_some_and(|r| r.kind.exempt_from_offside());
         let receiver_offside = offside_applies && st.in_offside_position(c.receiver);
-        st.ball.pass =
-            Some(PassInFlight { from: by, to: c.receiver, origin: p.pos, target, kicked_tick: st.tick, lofted, receiver_offside });
-        st.ball.air_distance = if lofted { p.pos.distance(target) * 0.97 } else { 0.0 };
+        st.ball.pass = Some(PassInFlight {
+            from: by,
+            to: c.receiver,
+            origin: p.pos,
+            target,
+            kicked_tick: st.tick,
+            lofted,
+            receiver_offside,
+        });
+        st.ball.air_distance = if lofted {
+            p.pos.distance(target) * 0.97
+        } else {
+            0.0
+        };
         st.ball.shot = None;
         self.release(by);
-        self.event(MatchEvent::Pass { from: by, to: c.receiver, kind: c.kind });
+        self.event(MatchEvent::Pass {
+            from: by,
+            to: c.receiver,
+            kind: c.kind,
+        });
     }
 
     fn do_shot(&mut self, by: PlayerId, s: crate::decision::ShotOption) {
@@ -283,7 +364,13 @@ impl Simulation {
         st.ball.pos = p.pos + dir * 0.4;
         st.ball.pass = None;
         st.ball.air_distance = 0.0;
-        st.ball.shot = Some(ShotInFlight { shooter: by, target, kicked_tick: st.tick, xg: s.xg, keeper_attempted: false });
+        st.ball.shot = Some(ShotInFlight {
+            shooter: by,
+            target,
+            kicked_tick: st.tick,
+            xg: s.xg,
+            keeper_attempted: false,
+        });
         self.release(by);
         self.event(MatchEvent::Shot { by, xg: s.xg });
     }
@@ -308,10 +395,13 @@ impl Simulation {
     fn do_tackle(&mut self, by: PlayerId, on: PlayerId) {
         let dt = self.state.dt;
         let (t, c) = (self.state.player(by).clone(), self.state.player(on).clone());
-        if self.state.ball.owner != Some(on) || t.tackle_cooldown > 0 || t.pos.distance(c.pos) > TACKLE_RANGE {
+        if self.state.ball.owner != Some(on)
+            || t.tackle_cooldown > 0
+            || t.pos.distance(c.pos) > TACKLE_RANGE
+        {
             return;
         }
-        let p_win = (0.22 + 0.5 * (t.attrs.tackling - 0.9 * c.attrs.dribbling)).clamp(0.05, 0.6);
+        let p_win = (0.22 + 0.5 * (t.attrs.tackling - 0.9 * c.attrs.dribbling)).clamp(0.12, 0.6);
         let won = self.rng.chance(p_win);
         let keep = self.rng.chance(0.45);
         let angle = self.rng.range(-0.9, 0.9);
@@ -376,7 +466,10 @@ impl Simulation {
             }
             let dv = (desired + sep - p.vel).clamp_length(p.attrs.acceleration * dt);
             p.vel = (p.vel + dv).clamp_length(p.attrs.top_speed);
-            p.pos = clamp_to_pitch(p.pos + p.vel * dt, if owner == Some(p.id) { 0.6 } else { -1.5 });
+            p.pos = clamp_to_pitch(
+                p.pos + p.vel * dt,
+                if owner == Some(p.id) { 0.6 } else { -1.5 },
+            );
             if p.vel.length() > 0.4 {
                 p.facing = p.vel.normalize_or_zero();
             }
@@ -421,35 +514,63 @@ impl Simulation {
 
     fn resolve_boundaries(&mut self) {
         let b = self.state.ball.pos;
-        if self.state.ball.owner.is_some() || (b.x.abs() <= HALF_LENGTH && b.y.abs() <= HALF_WIDTH) {
+        if self.state.ball.owner.is_some() || (b.x.abs() <= HALF_LENGTH && b.y.abs() <= HALF_WIDTH)
+        {
             return;
         }
-        let last = self.state.ball.last_touch.map(|p| p.team()).unwrap_or(TeamSide::Home);
+        let last = self
+            .state
+            .ball
+            .last_touch
+            .map(|p| p.team())
+            .unwrap_or(TeamSide::Home);
         if b.x.abs() > HALF_LENGTH {
             // Which team defends this end?
-            let defending = if b.x > 0.0 { TeamSide::Away } else { TeamSide::Home };
+            let defending = if b.x > 0.0 {
+                TeamSide::Away
+            } else {
+                TeamSide::Home
+            };
             let attacking = defending.opponent();
             // Interpolate the crossing point on the goal line.
             let v = self.state.ball.vel;
-            let back = if v.x.abs() > 1e-4 { (b.x.abs() - HALF_LENGTH) / v.x.abs() } else { 0.0 };
+            let back = if v.x.abs() > 1e-4 {
+                (b.x.abs() - HALF_LENGTH) / v.x.abs()
+            } else {
+                0.0
+            };
             let cross_y = b.y - v.y * back;
             if cross_y.abs() < GOAL_HALF_WIDTH {
                 let scorer = self.state.ball.last_touch;
                 self.state.score[attacking.index()] += 1;
-                self.event(MatchEvent::Goal { team: attacking, scorer });
+                self.event(MatchEvent::Goal {
+                    team: attacking,
+                    scorer,
+                });
                 self.kick_off(defending);
                 return;
             }
             let (kind, team, spot) = if last == defending {
                 let sy = b.y.signum() * (HALF_WIDTH - 0.5);
-                (RestartKind::Corner, attacking, Vec2::new(b.x.signum() * (HALF_LENGTH - 0.5), sy))
+                (
+                    RestartKind::Corner,
+                    attacking,
+                    Vec2::new(b.x.signum() * (HALF_LENGTH - 0.5), sy),
+                )
             } else {
-                (RestartKind::GoalKick, defending, Vec2::new(b.x.signum() * (HALF_LENGTH - 5.5), 0.0))
+                (
+                    RestartKind::GoalKick,
+                    defending,
+                    Vec2::new(b.x.signum() * (HALF_LENGTH - 5.5), 0.0),
+                )
             };
             self.set_restart(kind, team, spot);
         } else {
             let team = last.opponent();
-            let spot = Vec2::new(b.x.clamp(-HALF_LENGTH + 1.0, HALF_LENGTH - 1.0), b.y.signum() * (HALF_WIDTH - 0.3));
+            let spot = Vec2::new(
+                b.x.clamp(-HALF_LENGTH + 1.0, HALF_LENGTH - 1.0),
+                b.y.signum() * (HALF_WIDTH - 0.3),
+            );
             self.set_restart(RestartKind::ThrowIn, team, spot);
         }
     }
@@ -467,7 +588,10 @@ impl Simulation {
             st.possession = team;
             st.possession_since = st.tick;
         }
-        self.event(MatchEvent::OutOfPlay { restart: kind, team });
+        self.event(MatchEvent::OutOfPlay {
+            restart: kind,
+            team,
+        });
     }
 
     // ------------------------------------------------------------ control --
@@ -512,15 +636,16 @@ impl Simulation {
             if restart_team.is_some_and(|t| t != p.team) {
                 continue;
             }
-            let keeper_reach = if p.is_goalkeeper() && crate::pitch::in_own_box_local(p.team.to_local(p.pos)) {
-                if shot.is_some_and(|s| s.shooter.team() != p.team && !s.keeper_attempted) {
-                    1.6 + 1.7 * p.attrs.goalkeeping
+            let keeper_reach =
+                if p.is_goalkeeper() && crate::pitch::in_own_box_local(p.team.to_local(p.pos)) {
+                    if shot.is_some_and(|s| s.shooter.team() != p.team && !s.keeper_attempted) {
+                        1.6 + 1.7 * p.attrs.goalkeeping
+                    } else {
+                        1.8
+                    }
                 } else {
-                    1.8
-                }
-            } else {
-                CONTROL_RADIUS
-            };
+                    CONTROL_RADIUS
+                };
             let d = p.pos.distance(ball_pos);
             if d > keeper_reach {
                 continue;
@@ -531,7 +656,11 @@ impl Simulation {
                     continue;
                 }
             }
-            let priority = if pass.is_some_and(|ps| ps.to == p.id) { 0 } else { 1 };
+            let priority = if pass.is_some_and(|ps| ps.to == p.id) {
+                0
+            } else {
+                1
+            };
             cands.push((priority, d, p.id));
         }
         cands.sort_by(|a, b| a.0.cmp(&b.0).then(cmp_f32(a.1, b.1)).then(a.2.cmp(&b.2)));
@@ -569,7 +698,8 @@ impl Simulation {
                 // Outfield block.
                 if self.rng.chance(0.5) {
                     let v = self.state.ball.vel;
-                    self.state.ball.vel = (v.perp() * self.rng.range(-0.5, 0.5) - v * 0.3).clamp_length(10.0);
+                    self.state.ball.vel =
+                        (v.perp() * self.rng.range(-0.5, 0.5) - v * 0.3).clamp_length(10.0);
                     self.state.ball.last_touch = Some(id);
                     self.state.ball.shot = None;
                     return;
@@ -605,9 +735,15 @@ impl Simulation {
                             received_at: ball_pos,
                             completed_tick: self.state.tick,
                         });
-                        self.event(MatchEvent::PassCompleted { from: ps.from, to: id });
+                        self.event(MatchEvent::PassCompleted {
+                            from: ps.from,
+                            to: id,
+                        });
                     } else if ps.from.team() != p.team {
-                        self.event(MatchEvent::Interception { by: id, from: ps.from });
+                        self.event(MatchEvent::Interception {
+                            by: id,
+                            from: ps.from,
+                        });
                     }
                 }
                 self.state.ball.pass = None;

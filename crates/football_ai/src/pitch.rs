@@ -138,7 +138,9 @@ pub fn zone_value_local(local: Vec2) -> f32 {
     let d = local.distance(goal);
     let proximity = (1.0 - d / 40.0).clamp(0.0, 1.0);
     let centrality = 1.0 - (local.y.abs() / HALF_WIDTH).clamp(0.0, 1.0);
-    (0.45 * along * along + 0.45 * proximity * proximity * (0.5 + 0.5 * centrality) + 0.1 * centrality * along)
+    (0.45 * along * along
+        + 0.45 * proximity * proximity * (0.5 + 0.5 * centrality)
+        + 0.1 * centrality * along)
         .clamp(0.0, 1.0)
 }
 
@@ -158,8 +160,14 @@ mod tests {
     #[test]
     fn goals_are_opposite() {
         assert_eq!(TeamSide::Home.target_goal(), TeamSide::Away.own_goal());
-        assert_eq!(TeamSide::Home.to_local(TeamSide::Home.target_goal()).x, HALF_LENGTH);
-        assert_eq!(TeamSide::Away.to_local(TeamSide::Away.target_goal()).x, HALF_LENGTH);
+        assert_eq!(
+            TeamSide::Home.to_local(TeamSide::Home.target_goal()).x,
+            HALF_LENGTH
+        );
+        assert_eq!(
+            TeamSide::Away.to_local(TeamSide::Away.target_goal()).x,
+            HALF_LENGTH
+        );
     }
 
     #[test]

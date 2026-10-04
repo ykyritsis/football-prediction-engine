@@ -113,9 +113,13 @@ impl Instruction {
     pub fn description(self) -> &'static str {
         match self {
             Instruction::TikiTaka => "short, quick passing in tight triangles around the ball",
-            Instruction::WingRotation => "wide players rotate positions to drag markers out of shape",
+            Instruction::WingRotation => {
+                "wide players rotate positions to drag markers out of shape"
+            }
             Instruction::FalseNine => "the centre-forward drops into midfield to overload it",
-            Instruction::HugTheTouchline => "wingers stay glued to the touchline to stretch the defence",
+            Instruction::HugTheTouchline => {
+                "wingers stay glued to the touchline to stretch the defence"
+            }
             Instruction::AttackingFullBacks => "full-backs push high to join every attack",
             Instruction::FalseFullBacks => "full-backs tuck into midfield in possession",
             Instruction::CentringTargets => "extra bodies attack the box for crosses",
@@ -124,7 +128,9 @@ impl Instruction {
             Instruction::TightMarking => "defenders mark their men touch-tight",
             Instruction::DeepDefensiveLine => "the back line drops deep to deny space in behind",
             Instruction::SwarmTheBox => "the team packs its own penalty area when under pressure",
-            Instruction::Anchoring => "the defensive midfielder never leaves the space in front of the defence",
+            Instruction::Anchoring => {
+                "the defensive midfielder never leaves the space in front of the defence"
+            }
             Instruction::FlankProtection => "wide players track back to double up on the flanks",
         }
     }
@@ -155,7 +161,11 @@ pub struct TeamStyle {
 impl TeamStyle {
     /// Is the instruction set legal (≤ 2 attacking, ≤ 2 defensive, no duplicates)?
     pub fn instructions_valid(&self) -> bool {
-        let att = self.instructions.iter().filter(|i| i.is_attacking()).count();
+        let att = self
+            .instructions
+            .iter()
+            .filter(|i| i.is_attacking())
+            .count();
         let def = self.instructions.len() - att;
         let mut sorted: Vec<u8> = self.instructions.iter().map(|&i| i as u8).collect();
         sorted.sort_unstable();
@@ -333,8 +343,11 @@ impl TeamStyle {
         };
         s.push_str(&format!(", with {line} and a {compact} block."));
         if !self.instructions.is_empty() {
-            let parts: Vec<String> =
-                self.instructions.iter().map(|i| format!("{} ({})", i.name(), i.description())).collect();
+            let parts: Vec<String> = self
+                .instructions
+                .iter()
+                .map(|i| format!("{} ({})", i.name(), i.description()))
+                .collect();
             s.push_str(&format!(" Special instructions: {}.", parts.join("; ")));
         }
         s
@@ -356,7 +369,11 @@ mod tests {
     #[test]
     fn invalid_instruction_sets_are_detected() {
         let mut s = presets::tiki_taka();
-        s.instructions = vec![Instruction::TikiTaka, Instruction::FalseNine, Instruction::HugTheTouchline];
+        s.instructions = vec![
+            Instruction::TikiTaka,
+            Instruction::FalseNine,
+            Instruction::HugTheTouchline,
+        ];
         assert!(!s.instructions_valid());
         s.instructions = vec![Instruction::Gegenpress, Instruction::Gegenpress];
         assert!(!s.instructions_valid());

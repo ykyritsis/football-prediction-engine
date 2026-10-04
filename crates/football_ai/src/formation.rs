@@ -29,7 +29,11 @@ pub struct Slot {
 }
 
 const fn s(role: Role, depth: f32, lateral: f32) -> Slot {
-    Slot { role, depth, lateral }
+    Slot {
+        role,
+        depth,
+        lateral,
+    }
 }
 
 /// Built-in formation templates.
@@ -156,7 +160,10 @@ impl Formation {
                 s(Striker, 1.0, -0.2),
             ],
         };
-        Formation { name: kind.name(), slots }
+        Formation {
+            name: kind.name(),
+            slots,
+        }
     }
 
     pub fn role(&self, slot: usize) -> Role {
@@ -222,11 +229,22 @@ pub fn team_shape(state: &MatchState, side: TeamSide, phase: TeamPhase) -> [Vec2
             }
         }
     }
-    let depth = if in_poss { t.depth_in_possession } else { t.depth_out_of_possession };
-    let width = if in_poss { t.width_in_possession } else { t.width_out_of_possession };
+    let depth = if in_poss {
+        t.depth_in_possession
+    } else {
+        t.depth_out_of_possession
+    };
+    let width = if in_poss {
+        t.width_in_possession
+    } else {
+        t.width_out_of_possession
+    };
     // The block slides towards the ball; more so out of possession.
     let slide = if in_poss { 0.2 } else { 0.45 };
-    let shift = (ball.y * slide).clamp(-(HALF_WIDTH - width).max(0.0) - 4.0, (HALF_WIDTH - width).max(0.0) + 4.0);
+    let shift = (ball.y * slide).clamp(
+        -(HALF_WIDTH - width).max(0.0) - 4.0,
+        (HALF_WIDTH - width).max(0.0) + 4.0,
+    );
     let offside = state.offside_line_local(side);
 
     let mut out = [Vec2::ZERO; TEAM_SIZE];
@@ -234,7 +252,11 @@ pub fn team_shape(state: &MatchState, side: TeamSide, phase: TeamPhase) -> [Vec2
         let player = &state.team_players(side)[i];
         let b = &player.behaviour;
         if slot.role == Role::Goalkeeper {
-            out[i] = side.to_world(goalkeeper_local(ball, def_line + b.possession_push, in_poss));
+            out[i] = side.to_world(goalkeeper_local(
+                ball,
+                def_line + b.possession_push,
+                in_poss,
+            ));
             continue;
         }
 
@@ -265,7 +287,11 @@ pub fn team_shape(state: &MatchState, side: TeamSide, phase: TeamPhase) -> [Vec2
             // Players who do not track back hold a higher position, acting as
             // an outlet for the counter.
             let lazy = (1.0 - b.track_back).max(b.stays_high);
-            let outlet = if t.counter_target && slot.role == Role::Striker { 1.0 } else { lazy };
+            let outlet = if t.counter_target && slot.role == Role::Striker {
+                1.0
+            } else {
+                lazy
+            };
             if outlet > 0.0 {
                 let high = (ball.x - 5.0).max(def_line + depth).max(-5.0);
                 x += (high - x).max(0.0) * outlet * 0.8;
@@ -297,7 +323,13 @@ mod tests {
         for kind in FormationKind::ALL {
             let f = Formation::new(kind);
             assert_eq!(f.slots[0].role, Role::Goalkeeper, "{}", f.name);
-            assert_eq!(f.slots.iter().filter(|s| s.role == Role::Goalkeeper).count(), 1);
+            assert_eq!(
+                f.slots
+                    .iter()
+                    .filter(|s| s.role == Role::Goalkeeper)
+                    .count(),
+                1
+            );
         }
     }
 
@@ -305,7 +337,11 @@ mod tests {
     fn formation_counts_match_name() {
         for kind in FormationKind::ALL {
             let f = Formation::new(kind);
-            let defenders = f.slots.iter().filter(|s| s.role.is_defender() && s.depth < 0.2).count();
+            let defenders = f
+                .slots
+                .iter()
+                .filter(|s| s.role.is_defender() && s.depth < 0.2)
+                .count();
             let first_digit: usize = f.name[..1].parse().unwrap();
             assert_eq!(defenders, first_digit, "{}", f.name);
         }

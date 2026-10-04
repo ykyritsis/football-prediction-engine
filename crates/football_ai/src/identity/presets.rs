@@ -30,7 +30,11 @@ pub fn tiki_taka() -> TeamStyle {
         pressuring: Pressuring::Aggressive,
         defensive_line: 8,
         compactness: 7,
-        instructions: vec![Instruction::TikiTaka, Instruction::FalseNine, Instruction::Gegenpress],
+        instructions: vec![
+            Instruction::TikiTaka,
+            Instruction::FalseNine,
+            Instruction::Gegenpress,
+        ],
     }
 }
 
@@ -49,7 +53,11 @@ pub fn gegenpress() -> TeamStyle {
         pressuring: Pressuring::Aggressive,
         defensive_line: 9,
         compactness: 9,
-        instructions: vec![Instruction::Gegenpress, Instruction::TightMarking, Instruction::AttackingFullBacks],
+        instructions: vec![
+            Instruction::Gegenpress,
+            Instruction::TightMarking,
+            Instruction::AttackingFullBacks,
+        ],
     }
 }
 
@@ -131,7 +139,14 @@ pub fn park_the_bus() -> TeamStyle {
 
 /// All team archetypes.
 pub fn team_archetypes() -> Vec<TeamStyle> {
-    vec![tiki_taka(), gegenpress(), long_ball(), counter_attack(), wing_play(), park_the_bus()]
+    vec![
+        tiki_taka(),
+        gegenpress(),
+        long_ball(),
+        counter_attack(),
+        wing_play(),
+        park_the_bus(),
+    ]
 }
 
 // -------------------------------------------------------------- players ----
@@ -278,63 +293,115 @@ pub fn archetype_profile(arch: PlayerArchetype, name: impl Into<String>, q: u8) 
         SweeperKeeper => {
             bump(&mut r.low_pass, 12);
             bump(&mut r.coverage, 4);
-            (Some(PlayingStyle::OffensiveGoalkeeper), vec![], vec![Skill::GkLowPunt])
+            (
+                Some(PlayingStyle::OffensiveGoalkeeper),
+                vec![],
+                vec![Skill::GkLowPunt],
+            )
         }
         LineKeeper => {
             bump(&mut r.reflexes, 4);
-            (Some(PlayingStyle::DefensiveGoalkeeper), vec![], vec![Skill::GkHighPunt, Skill::GkLongThrow])
+            (
+                Some(PlayingStyle::DefensiveGoalkeeper),
+                vec![],
+                vec![Skill::GkHighPunt, Skill::GkLongThrow],
+            )
         }
         BallPlayingDefender => {
             bump(&mut r.low_pass, 10);
             bump(&mut r.lofted_pass, 10);
-            (Some(PlayingStyle::BuildUp), vec![ComStyle::LongBallExpert], vec![Skill::LowLoftedPass])
+            (
+                Some(PlayingStyle::BuildUp),
+                vec![ComStyle::LongBallExpert],
+                vec![Skill::LowLoftedPass],
+            )
         }
         Stopper => {
             bump(&mut r.physical_contact, 6);
             bump(&mut r.ball_winning, 4);
-            (Some(PlayingStyle::TheDestroyer), vec![], vec![Skill::Heading, Skill::ManMarking, Skill::AcrobaticClear])
+            (
+                Some(PlayingStyle::TheDestroyer),
+                vec![],
+                vec![Skill::Heading, Skill::ManMarking, Skill::AcrobaticClear],
+            )
         }
         AttackingFullBack => {
             bump(&mut r.speed, 4);
             bump(&mut r.lofted_pass, 4);
-            (Some(PlayingStyle::OffensiveFullBack), vec![ComStyle::EarlyCross], vec![Skill::PinpointCrossing])
+            (
+                Some(PlayingStyle::OffensiveFullBack),
+                vec![ComStyle::EarlyCross],
+                vec![Skill::PinpointCrossing],
+            )
         }
         DefensiveFullBack => {
             bump(&mut r.defensive_awareness, 6);
-            (Some(PlayingStyle::DefensiveFullBack), vec![], vec![Skill::ManMarking])
+            (
+                Some(PlayingStyle::DefensiveFullBack),
+                vec![],
+                vec![Skill::ManMarking],
+            )
         }
         Anchor => {
             bump(&mut r.defensive_awareness, 6);
-            (Some(PlayingStyle::AnchorMan), vec![], vec![Skill::Interception])
+            (
+                Some(PlayingStyle::AnchorMan),
+                vec![],
+                vec![Skill::Interception],
+            )
         }
         Destroyer => {
             bump(&mut r.ball_winning, 6);
             bump(&mut r.stamina, 5);
-            (Some(PlayingStyle::TheDestroyer), vec![], vec![Skill::Interception, Skill::FightingSpirit])
+            (
+                Some(PlayingStyle::TheDestroyer),
+                vec![],
+                vec![Skill::Interception, Skill::FightingSpirit],
+            )
         }
         DeepPlaymaker => {
             bump(&mut r.lofted_pass, 10);
             bump(&mut r.low_pass, 8);
-            (Some(PlayingStyle::BuildUp), vec![ComStyle::LongBallExpert], vec![Skill::WeightedPass, Skill::OneTouchPass])
+            (
+                Some(PlayingStyle::BuildUp),
+                vec![ComStyle::LongBallExpert],
+                vec![Skill::WeightedPass, Skill::OneTouchPass],
+            )
         }
         BoxToBox => {
             bump(&mut r.stamina, 8);
-            (Some(PlayingStyle::BoxToBox), vec![ComStyle::LongRanger], vec![Skill::TrackBack])
+            (
+                Some(PlayingStyle::BoxToBox),
+                vec![ComStyle::LongRanger],
+                vec![Skill::TrackBack],
+            )
         }
         Playmaker => {
             bump(&mut r.low_pass, 8);
             bump(&mut r.ball_control, 5);
-            (Some(PlayingStyle::CreativePlaymaker), vec![], vec![Skill::ThroughPassing, Skill::OneTouchPass])
+            (
+                Some(PlayingStyle::CreativePlaymaker),
+                vec![],
+                vec![Skill::ThroughPassing, Skill::OneTouchPass],
+            )
         }
         ClassicNo10 => {
             bump(&mut r.low_pass, 8);
             bump(&mut r.speed, -8);
-            (Some(PlayingStyle::ClassicNo10), vec![], vec![Skill::ThroughPassing, Skill::NoLookPass])
+            (
+                Some(PlayingStyle::ClassicNo10),
+                vec![],
+                vec![Skill::ThroughPassing, Skill::NoLookPass],
+            )
         }
         ShadowStriker => {
             bump(&mut r.finishing, 6);
             bump(&mut r.offensive_awareness, 6);
-            (Some(PlayingStyle::HolePlayer), vec![ComStyle::IncisiveRun], vec![Skill::FirstTimeShot])
+            (
+                Some(PlayingStyle::HolePlayer),
+                vec![ComStyle::IncisiveRun],
+                vec![Skill::FirstTimeShot],
+            )
         }
         DribblingWinger => {
             bump(&mut r.dribbling, 8);
@@ -348,17 +415,29 @@ pub fn archetype_profile(arch: PlayerArchetype, name: impl Into<String>, q: u8) 
         CrossingWinger => {
             bump(&mut r.lofted_pass, 8);
             bump(&mut r.curl, 8);
-            (Some(PlayingStyle::CrossSpecialist), vec![ComStyle::EarlyCross], vec![Skill::PinpointCrossing])
+            (
+                Some(PlayingStyle::CrossSpecialist),
+                vec![ComStyle::EarlyCross],
+                vec![Skill::PinpointCrossing],
+            )
         }
         InsideForward => {
             bump(&mut r.finishing, 6);
             bump(&mut r.dribbling, 4);
-            (Some(PlayingStyle::ProlificWinger), vec![ComStyle::IncisiveRun], vec![Skill::LongRangeCurler])
+            (
+                Some(PlayingStyle::ProlificWinger),
+                vec![ComStyle::IncisiveRun],
+                vec![Skill::LongRangeCurler],
+            )
         }
         Poacher => {
             bump(&mut r.finishing, 6);
             bump(&mut r.offensive_awareness, 6);
-            (Some(PlayingStyle::GoalPoacher), vec![], vec![Skill::FirstTimeShot])
+            (
+                Some(PlayingStyle::GoalPoacher),
+                vec![],
+                vec![Skill::FirstTimeShot],
+            )
         }
         TargetMan => {
             bump(&mut r.physical_contact, 10);
@@ -368,12 +447,20 @@ pub fn archetype_profile(arch: PlayerArchetype, name: impl Into<String>, q: u8) 
         }
         CompleteForward => {
             bump(&mut r.low_pass, 4);
-            (Some(PlayingStyle::DummyRunner), vec![], vec![Skill::OneTouchPass, Skill::FirstTimeShot])
+            (
+                Some(PlayingStyle::DummyRunner),
+                vec![],
+                vec![Skill::OneTouchPass, Skill::FirstTimeShot],
+            )
         }
         FoxInTheBox => {
             bump(&mut r.finishing, 8);
             bump(&mut r.speed, -4);
-            (Some(PlayingStyle::FoxInTheBox), vec![], vec![Skill::AcrobaticFinishing, Skill::FirstTimeShot])
+            (
+                Some(PlayingStyle::FoxInTheBox),
+                vec![],
+                vec![Skill::AcrobaticFinishing, Skill::FirstTimeShot],
+            )
         }
     };
     PlayerProfile {
@@ -429,7 +516,11 @@ pub fn example_messi() -> PlayerProfile {
         position: Role::Winger,
         ratings: r,
         playing_style: Some(PlayingStyle::CreativePlaymaker),
-        com_styles: ComStyleSet::new(&[ComStyle::MazingRun, ComStyle::Trickster, ComStyle::LongRanger]),
+        com_styles: ComStyleSet::new(&[
+            ComStyle::MazingRun,
+            ComStyle::Trickster,
+            ComStyle::LongRanger,
+        ]),
         skills: SkillSet::new(&[
             Skill::DoubleTouch,
             Skill::ScissorsFeint,
@@ -638,19 +729,33 @@ mod tests {
     #[test]
     fn long_ball_squad_has_target_man() {
         let squad = Squad::generated(long_ball(), 75);
-        assert!(squad.players.iter().any(|p| p.playing_style == Some(PlayingStyle::TargetMan)));
+        assert!(squad
+            .players
+            .iter()
+            .any(|p| p.playing_style == Some(PlayingStyle::TargetMan)));
     }
 
     #[test]
     fn possession_squad_has_playmaker() {
         let squad = Squad::generated(tiki_taka(), 80);
-        assert!(squad.players.iter().any(|p| p.playing_style == Some(PlayingStyle::CreativePlaymaker)));
+        assert!(squad
+            .players
+            .iter()
+            .any(|p| p.playing_style == Some(PlayingStyle::CreativePlaymaker)));
     }
 
     #[test]
     fn archetype_positions_are_consistent() {
         use PlayerArchetype::*;
-        for a in [SweeperKeeper, Stopper, Anchor, Playmaker, DribblingWinger, Poacher, TargetMan] {
+        for a in [
+            SweeperKeeper,
+            Stopper,
+            Anchor,
+            Playmaker,
+            DribblingWinger,
+            Poacher,
+            TargetMan,
+        ] {
             assert_eq!(archetype_profile(a, "x", 75).position, a.position());
         }
     }

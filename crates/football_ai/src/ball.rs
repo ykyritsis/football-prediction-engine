@@ -32,7 +32,9 @@ pub const CONTROL_RADIUS: f32 = 1.1;
 
 /// Initial speed so that a ball rolls `distance` metres and arrives at `arrival` m/s.
 pub fn pass_speed_for(distance: f32, arrival: f32) -> f32 {
-    (arrival * arrival + 2.0 * BALL_DECEL * distance.max(0.0)).sqrt().clamp(MIN_PASS_SPEED, MAX_PASS_SPEED)
+    (arrival * arrival + 2.0 * BALL_DECEL * distance.max(0.0))
+        .sqrt()
+        .clamp(MIN_PASS_SPEED, MAX_PASS_SPEED)
 }
 
 /// Horizontal speed for a lofted ball travelling `distance` metres. Longer
@@ -122,8 +124,13 @@ pub fn time_to_reach(player: &Player, point: Vec2) -> f32 {
 /// moving with `vel` with `air` metres of flight left. Returns `(point, time)`.
 pub fn intercept(player: &Player, pos: Vec2, vel: Vec2, air: f32) -> (Vec2, f32) {
     let speed = vel.length();
-    let t_air = if air > 0.0 && speed > 1e-4 { air / speed } else { 0.0 };
-    let horizon = (t_air + stop_time(speed * if t_air > 0.0 { LANDING_DAMPING } else { 1.0 })).min(7.0);
+    let t_air = if air > 0.0 && speed > 1e-4 {
+        air / speed
+    } else {
+        0.0
+    };
+    let horizon =
+        (t_air + stop_time(speed * if t_air > 0.0 { LANDING_DAMPING } else { 1.0 })).min(7.0);
     let mut t = 0.0;
     while t <= horizon {
         let (p, airborne) = predict_flight(pos, vel, air, t);
@@ -165,7 +172,10 @@ mod tests {
             let v0 = pass_speed_for(d, PASS_ARRIVAL_SPEED);
             let t = travel_time(v0, d).unwrap();
             let v_end = v0 - BALL_DECEL * t;
-            assert!((v_end - PASS_ARRIVAL_SPEED).abs() < 0.3 || v0 == MIN_PASS_SPEED, "d={d} v_end={v_end}");
+            assert!(
+                (v_end - PASS_ARRIVAL_SPEED).abs() < 0.3 || v0 == MIN_PASS_SPEED,
+                "d={d} v_end={v_end}"
+            );
         }
     }
 

@@ -97,7 +97,10 @@ impl TriggerSet {
         self.0 == 0
     }
     pub fn iter(&self) -> impl Iterator<Item = PressTrigger> + '_ {
-        PressTrigger::ALL.iter().copied().filter(move |&t| self.contains(t))
+        PressTrigger::ALL
+            .iter()
+            .copied()
+            .filter(move |&t| self.contains(t))
     }
 }
 
@@ -150,9 +153,15 @@ pub const PRESS_THRESHOLD: f32 = 0.5;
 pub const COVER_THRESHOLD: f32 = 0.8;
 
 /// Evaluate pressing triggers for `defending` against the current carrier.
-pub fn evaluate_triggers(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> (TriggerSet, f32) {
+pub fn evaluate_triggers(
+    state: &MatchState,
+    defending: TeamSide,
+    phase: TeamPhase,
+) -> (TriggerSet, f32) {
     let mut set = TriggerSet::default();
-    let Some(carrier) = state.carrier() else { return (set, 0.0) };
+    let Some(carrier) = state.carrier() else {
+        return (set, 0.0);
+    };
     if carrier.team == defending || state.restart.is_some() {
         return (set, 0.0);
     }
@@ -205,7 +214,9 @@ pub fn evaluate_triggers(state: &MatchState, defending: TeamSide, phase: TeamPha
         set.insert(PressTrigger::CounterPress);
         counter = tactics.counter_press * 0.8;
     }
-    if (carrier.is_goalkeeper() || carrier.role == crate::role::Role::CentreBack) && phase == TeamPhase::HighPress {
+    if (carrier.is_goalkeeper() || carrier.role == crate::role::Role::CentreBack)
+        && phase == TeamPhase::HighPress
+    {
         set.insert(PressTrigger::SlowBuildUp);
     }
 
@@ -221,12 +232,18 @@ pub fn evaluate_triggers(state: &MatchState, defending: TeamSide, phase: TeamPha
 
 /// Build the pressing plan. `excluded` players (e.g. the goalkeeper) are never selected.
 pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> PressPlan {
-    let Some(carrier) = state.carrier() else { return PressPlan::NONE };
+    let Some(carrier) = state.carrier() else {
+        return PressPlan::NONE;
+    };
     if carrier.team == defending || state.restart.is_some() {
         return PressPlan::NONE;
     }
     let (triggers, intensity) = evaluate_triggers(state, defending, phase);
-    let mode = if intensity >= PRESS_THRESHOLD { PressMode::Press } else { PressMode::Contain };
+    let mode = if intensity >= PRESS_THRESHOLD {
+        PressMode::Press
+    } else {
+        PressMode::Contain
+    };
 
     // Rank candidates by time to reach the carrier, discounted by willingness.
     let mut ranked: Vec<(f32, PlayerId)> = state
@@ -242,14 +259,22 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
     ranked.sort_by(|a, b| cmp_f32(a.0, b.0).then(a.1.cmp(&b.1)));
 
     let primary = ranked.first().map(|r| r.1);
-    let mut plan = PressPlan { mode, triggers, intensity, primary, ..PressPlan::NONE };
+    let mut plan = PressPlan {
+        mode,
+        triggers,
+        intensity,
+        primary,
+        ..PressPlan::NONE
+    };
 
     if mode == PressMode::Press && intensity >= COVER_THRESHOLD && ranked.len() > 1 {
         // Block the lane to the carrier's most valuable short option.
         let target = state
             .team_players(carrier.team)
             .iter()
-            .filter(|p| p.id != carrier.id && !p.is_goalkeeper() && p.pos.distance(carrier.pos) < 28.0)
+            .filter(|p| {
+                p.id != carrier.id && !p.is_goalkeeper() && p.pos.distance(carrier.pos) < 28.0
+            })
             .max_by(|a, b| {
                 let va = crate::pitch::zone_value_local(carrier.team.to_local(a.pos));
                 let vb = crate::pitch::zone_value_local(carrier.team.to_local(b.pos));
@@ -263,7 +288,10 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
                 .team_players(defending)
                 .iter()
                 .filter(|p| !p.is_goalkeeper() && Some(p.id) != primary && p.stun == 0)
-                .min_by(|a, b| cmp_f32(a.pos.distance(lane_mid), b.pos.distance(lane_mid)).then(a.id.cmp(&b.id)))
+                .min_by(|a, b| {
+                    cmp_f32(a.pos.distance(lane_mid), b.pos.distance(lane_mid))
+                        .then(a.id.cmp(&b.id))
+                })
                 .map(|p| p.id);
             plan.cover = cover;
             plan.cover_target = Some(t);
@@ -273,7 +301,13 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
     // Counter-press swarm: extra bodies close the ball down immediately.
     if phase == TeamPhase::DefensiveTransition && mode == PressMode::Press {
         let tactics = &state.team(defending).tactics;
-        let extra = if tactics.counter_press >= 0.85 { 2 } else if tactics.counter_press >= 0.6 { 1 } else { 0 };
+        let extra = if tactics.counter_press >= 0.85 {
+            2
+        } else if tactics.counter_press >= 0.6 {
+            1
+        } else {
+            0
+        };
         let mut n = 0;
         for &(_, id) in ranked.iter().skip(1) {
             if n >= extra {

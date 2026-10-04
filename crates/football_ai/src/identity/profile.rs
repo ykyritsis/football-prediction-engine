@@ -71,9 +71,14 @@ impl PlayerProfile {
     /// The player's standout abilities, strongest first (ties broken by the
     /// fixed label order so the output is deterministic).
     pub fn strengths(&self, count: usize) -> Vec<(&'static str, u8)> {
-        let mut v: Vec<(usize, (&'static str, u8))> = self.ratings.labelled().into_iter().enumerate().collect();
+        let mut v: Vec<(usize, (&'static str, u8))> =
+            self.ratings.labelled().into_iter().enumerate().collect();
         v.sort_by(|a, b| b.1 .1.cmp(&a.1 .1).then(a.0.cmp(&b.0)));
-        v.into_iter().take(count).map(|(_, x)| x).filter(|x| x.1 >= 80).collect()
+        v.into_iter()
+            .take(count)
+            .map(|(_, x)| x)
+            .filter(|x| x.1 >= 80)
+            .collect()
     }
 
     /// Short tags summarising how the player *feels* in the simulation.
@@ -82,7 +87,8 @@ impl PlayerProfile {
         let base = Behaviour::for_role(self.position);
         let a = self.attributes();
         let mut tags = Vec::new();
-        if b.dribble_bias >= base.dribble_bias + 0.2 || (a.dribbling > 0.9 && b.dribble_bias > 0.8) {
+        if b.dribble_bias >= base.dribble_bias + 0.2 || (a.dribbling > 0.9 && b.dribble_bias > 0.8)
+        {
             tags.push("Takes defenders on");
         }
         if a.finishing >= 0.85 || b.shot_threshold <= base.shot_threshold - 0.025 {

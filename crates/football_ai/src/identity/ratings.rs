@@ -123,7 +123,13 @@ impl Ratings {
 
     /// Goalkeeping overall.
     pub fn overall_goalkeeping(&self) -> u8 {
-        let v = [self.goalkeeping, self.catching, self.clearing, self.reflexes, self.coverage];
+        let v = [
+            self.goalkeeping,
+            self.catching,
+            self.clearing,
+            self.reflexes,
+            self.coverage,
+        ];
         (v.iter().map(|&x| x as u32).sum::<u32>() / v.len() as u32) as u8
     }
 
@@ -140,7 +146,11 @@ impl Ratings {
             tackling: 0.6 * n(self.ball_winning) + 0.4 * n(self.defensive_awareness),
             finishing: n(self.finishing),
             kicking_power: n(self.kicking_power),
-            goalkeeping: (n(self.goalkeeping) + n(self.catching) + n(self.reflexes) + n(self.coverage)) / 4.0,
+            goalkeeping: (n(self.goalkeeping)
+                + n(self.catching)
+                + n(self.reflexes)
+                + n(self.coverage))
+                / 4.0,
         }
     }
 

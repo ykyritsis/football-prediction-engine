@@ -48,12 +48,18 @@ impl TeamPhase {
     pub fn in_possession(self) -> bool {
         matches!(
             self,
-            TeamPhase::AttackingTransition | TeamPhase::BuildUp | TeamPhase::Progression | TeamPhase::FinalThird
+            TeamPhase::AttackingTransition
+                | TeamPhase::BuildUp
+                | TeamPhase::Progression
+                | TeamPhase::FinalThird
         )
     }
 
     pub fn is_transition(self) -> bool {
-        matches!(self, TeamPhase::AttackingTransition | TeamPhase::DefensiveTransition)
+        matches!(
+            self,
+            TeamPhase::AttackingTransition | TeamPhase::DefensiveTransition
+        )
     }
 
     pub fn name(self) -> &'static str {
@@ -186,41 +192,76 @@ mod tests {
     use super::*;
 
     fn inp(pos: bool, x: f32, secs: f32) -> PhaseInputs {
-        PhaseInputs { in_possession: pos, ball_local_x: x, seconds_since_change: secs, dead_ball: false }
+        PhaseInputs {
+            in_possession: pos,
+            ball_local_x: x,
+            seconds_since_change: secs,
+            dead_ball: false,
+        }
     }
 
     #[test]
     fn in_possession_phases_follow_ball() {
         let t = Tactics::default();
-        assert_eq!(determine_phase(TeamPhase::BuildUp, inp(true, -40.0, 30.0), &t), TeamPhase::BuildUp);
-        assert_eq!(determine_phase(TeamPhase::Progression, inp(true, 0.0, 30.0), &t), TeamPhase::Progression);
-        assert_eq!(determine_phase(TeamPhase::FinalThird, inp(true, 40.0, 30.0), &t), TeamPhase::FinalThird);
+        assert_eq!(
+            determine_phase(TeamPhase::BuildUp, inp(true, -40.0, 30.0), &t),
+            TeamPhase::BuildUp
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::Progression, inp(true, 0.0, 30.0), &t),
+            TeamPhase::Progression
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::FinalThird, inp(true, 40.0, 30.0), &t),
+            TeamPhase::FinalThird
+        );
     }
 
     #[test]
     fn out_of_possession_phases_follow_ball() {
         let t = Tactics::default();
         // Ball deep in the opponent's half (high local x) => press high.
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(false, 40.0, 30.0), &t), TeamPhase::HighPress);
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(false, 0.0, 30.0), &t), TeamPhase::MidBlock);
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(false, -40.0, 30.0), &t), TeamPhase::LowBlock);
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(false, 40.0, 30.0), &t),
+            TeamPhase::HighPress
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(false, 0.0, 30.0), &t),
+            TeamPhase::MidBlock
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(false, -40.0, 30.0), &t),
+            TeamPhase::LowBlock
+        );
     }
 
     #[test]
     fn transitions_after_possession_change() {
         let t = Tactics::default();
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(true, 0.0, 1.0), &t), TeamPhase::AttackingTransition);
-        assert_eq!(determine_phase(TeamPhase::Progression, inp(false, 0.0, 1.0), &t), TeamPhase::DefensiveTransition);
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(true, 0.0, 1.0), &t),
+            TeamPhase::AttackingTransition
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::Progression, inp(false, 0.0, 1.0), &t),
+            TeamPhase::DefensiveTransition
+        );
         // No transition during dead balls.
         let mut i = inp(false, 0.0, 1.0);
         i.dead_ball = true;
-        assert_eq!(determine_phase(TeamPhase::Progression, i, &t), TeamPhase::MidBlock);
+        assert_eq!(
+            determine_phase(TeamPhase::Progression, i, &t),
+            TeamPhase::MidBlock
+        );
     }
 
     #[test]
     fn attacking_transition_ends_in_final_third() {
         let t = Tactics::default();
-        assert_eq!(determine_phase(TeamPhase::AttackingTransition, inp(true, 40.0, 1.0), &t), TeamPhase::FinalThird);
+        assert_eq!(
+            determine_phase(TeamPhase::AttackingTransition, inp(true, 40.0, 1.0), &t),
+            TeamPhase::FinalThird
+        );
     }
 
     #[test]
@@ -228,12 +269,24 @@ mod tests {
         let t = Tactics::default();
         let edge = PITCH_LENGTH / 6.0;
         // Just past the threshold, the previous phase sticks.
-        assert_eq!(determine_phase(TeamPhase::Progression, inp(true, edge + 1.0, 30.0), &t), TeamPhase::Progression);
+        assert_eq!(
+            determine_phase(TeamPhase::Progression, inp(true, edge + 1.0, 30.0), &t),
+            TeamPhase::Progression
+        );
         // Well past it, the phase changes.
-        assert_eq!(determine_phase(TeamPhase::Progression, inp(true, edge + 5.0, 30.0), &t), TeamPhase::FinalThird);
+        assert_eq!(
+            determine_phase(TeamPhase::Progression, inp(true, edge + 5.0, 30.0), &t),
+            TeamPhase::FinalThird
+        );
         // And coming back requires crossing the band too.
-        assert_eq!(determine_phase(TeamPhase::FinalThird, inp(true, edge - 1.0, 30.0), &t), TeamPhase::FinalThird);
-        assert_eq!(determine_phase(TeamPhase::FinalThird, inp(true, edge - 5.0, 30.0), &t), TeamPhase::Progression);
+        assert_eq!(
+            determine_phase(TeamPhase::FinalThird, inp(true, edge - 1.0, 30.0), &t),
+            TeamPhase::FinalThird
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::FinalThird, inp(true, edge - 5.0, 30.0), &t),
+            TeamPhase::Progression
+        );
     }
 
     #[test]
@@ -242,8 +295,14 @@ mod tests {
         let low = Tactics::low_block();
         // Ball just inside the opponent's half.
         let x = 15.0;
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(false, x, 30.0), &high), TeamPhase::HighPress);
-        assert_eq!(determine_phase(TeamPhase::MidBlock, inp(false, x, 30.0), &low), TeamPhase::MidBlock);
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(false, x, 30.0), &high),
+            TeamPhase::HighPress
+        );
+        assert_eq!(
+            determine_phase(TeamPhase::MidBlock, inp(false, x, 30.0), &low),
+            TeamPhase::MidBlock
+        );
     }
 
     #[test]
@@ -251,8 +310,12 @@ mod tests {
         let t = Tactics::default();
         for x in [-50.0, -20.0, 0.0, 20.0, 50.0] {
             for secs in [0.0, 10.0] {
-                assert!(determine_phase(TeamPhase::MidBlock, inp(true, x, secs), &t).in_possession());
-                assert!(!determine_phase(TeamPhase::MidBlock, inp(false, x, secs), &t).in_possession());
+                assert!(
+                    determine_phase(TeamPhase::MidBlock, inp(true, x, secs), &t).in_possession()
+                );
+                assert!(
+                    !determine_phase(TeamPhase::MidBlock, inp(false, x, secs), &t).in_possession()
+                );
             }
         }
     }

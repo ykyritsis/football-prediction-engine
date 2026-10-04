@@ -110,14 +110,23 @@ pub fn assign_marking(
             + tactics.marking_tightness
             + phase_bonus)
             .clamp(0.0, 1.0);
-        out.push(MarkAssignment { marker: mid, target: aid, tightness });
+        out.push(MarkAssignment {
+            marker: mid,
+            target: aid,
+            tightness,
+        });
     }
     out.sort_by_key(|m| m.marker);
     out
 }
 
 /// Where a marker should stand.
-pub fn marking_position(state: &MatchState, defending: TeamSide, attacker: PlayerId, tightness: f32) -> Vec2 {
+pub fn marking_position(
+    state: &MatchState,
+    defending: TeamSide,
+    attacker: PlayerId,
+    tightness: f32,
+) -> Vec2 {
     let a = state.player(attacker);
     // Anticipate: mark where the attacker is going, not where he is.
     let attacker_pos = a.pos + a.vel * 0.5;

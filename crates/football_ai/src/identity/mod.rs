@@ -42,6 +42,6 @@ pub use profile::PlayerProfile;
 pub use ratings::{norm, Foot, Ratings};
 pub use styles::{ComStyle, ComStyleSet, PlayingStyle, Skill, SkillSet};
 pub use team::{
-    AttackingArea, AttackingStyle, BuildUp, ContainmentArea, DefensiveStyle, Instruction, Positioning, Pressuring,
-    TeamStyle,
+    AttackingArea, AttackingStyle, BuildUp, ContainmentArea, DefensiveStyle, Instruction,
+    Positioning, Pressuring, TeamStyle,
 };

@@ -30,7 +30,12 @@ fn main() {
     let home = style(args.get(3).map(String::as_str).unwrap_or("tiki-taka"));
     let away = style(args.get(4).map(String::as_str).unwrap_or("long-ball"));
 
-    let config = SimConfig { seed, dt: 1.0 / 30.0, home: Squad::generated(home, 80), away: Squad::generated(away, 80) };
+    let config = SimConfig {
+        seed,
+        dt: 1.0 / 30.0,
+        home: Squad::generated(home, 80),
+        away: Squad::generated(away, 80),
+    };
     let mut sim = Simulation::new(config);
     let ticks = (minutes * 60.0 / sim.state.dt) as u32;
     let mut possession_ticks = [0u32; 2];
@@ -72,7 +77,11 @@ fn main() {
     println!();
     println!(
         "{} {} - {} {}   ({minutes} min, seed {seed}, simulated in {:.2?})",
-        sim.squads[0].style.name, sim.state.score[0], sim.state.score[1], sim.squads[1].style.name, elapsed
+        sim.squads[0].style.name,
+        sim.state.score[0],
+        sim.state.score[1],
+        sim.squads[1].style.name,
+        elapsed
     );
     let total = (possession_ticks[0] + possession_ticks[1]).max(1) as f32;
     for side in TeamSide::BOTH {

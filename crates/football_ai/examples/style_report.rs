@@ -77,11 +77,13 @@ fn main() {
                                 }
                                 // Opponent passes in their own 60% (for PPDA of the other side).
                                 if t.to_local(pre_ball).x < 10.0 {
-                                    agg[if t == TeamSide::Home { j } else { i }].opp_passes_own_half += 1.0;
+                                    agg[if t == TeamSide::Home { j } else { i }]
+                                        .opp_passes_own_half += 1.0;
                                 }
                             }
                             MatchEvent::PassCompleted { from, .. } => {
-                                agg[if from.team() == TeamSide::Home { i } else { j }].completed += 1.0
+                                agg[if from.team() == TeamSide::Home { i } else { j }].completed +=
+                                    1.0
                             }
                             MatchEvent::Shot { by, xg } => {
                                 let g = &mut agg[if by.team() == TeamSide::Home { i } else { j }];
@@ -94,7 +96,11 @@ fn main() {
                                 if t.to_local(pre_ball).x > -10.0 {
                                     g.def_actions_opp_half += 1.0;
                                 }
-                                let won = matches!(*e, MatchEvent::Interception { .. } | MatchEvent::Tackle { won: true, .. });
+                                let won = matches!(
+                                    *e,
+                                    MatchEvent::Interception { .. }
+                                        | MatchEvent::Tackle { won: true, .. }
+                                );
                                 if won && t.to_local(pre_ball).x > 17.5 {
                                     g.regains_high += 1.0;
                                 }
@@ -117,7 +123,19 @@ fn main() {
 
     println!(
         "{:<15} {:>5} {:>5} {:>5} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6} {:>6}",
-        "style", "GF", "GA", "poss", "passes", "compl", "len m", "long%", "thru", "cross", "shots", "xG", "PPDA"
+        "style",
+        "GF",
+        "GA",
+        "poss",
+        "passes",
+        "compl",
+        "len m",
+        "long%",
+        "thru",
+        "cross",
+        "shots",
+        "xG",
+        "PPDA"
     );
     for (s, g) in styles.iter().zip(&agg) {
         let m = g.matches.max(1.0);

@@ -236,7 +236,7 @@ impl Behaviour {
                 box_presence: 0.5,
                 track_back: 0.6,
                 shot_threshold: 0.1,
-                dribble_bias: 0.8,
+                dribble_bias: 0.6,
                 through_ball_bias: 0.35,
                 long_pass_bias: 0.15,
                 cross_bias: 0.65,
@@ -330,11 +330,39 @@ impl Attributes {
             goalkeeping: 0.0,
         };
         match role {
-            Role::Goalkeeper => Attributes { top_speed: 6.5, passing: 0.6, goalkeeping: 0.8, tackling: 0.3, dribbling: 0.4, ..base },
-            Role::CentreBack => Attributes { top_speed: 7.6, tackling: 0.8, passing: 0.65, finishing: 0.3, dribbling: 0.5, ..base },
-            Role::FullBack => Attributes { top_speed: 8.4, tackling: 0.7, ..base },
-            Role::DefensiveMid => Attributes { tackling: 0.75, passing: 0.75, long_passing: 0.7, ..base },
-            Role::CentralMid => Attributes { passing: 0.8, long_passing: 0.72, control: 0.75, ..base },
+            Role::Goalkeeper => Attributes {
+                top_speed: 6.5,
+                passing: 0.6,
+                goalkeeping: 0.8,
+                tackling: 0.3,
+                dribbling: 0.4,
+                ..base
+            },
+            Role::CentreBack => Attributes {
+                top_speed: 7.6,
+                tackling: 0.8,
+                passing: 0.65,
+                finishing: 0.3,
+                dribbling: 0.5,
+                ..base
+            },
+            Role::FullBack => Attributes {
+                top_speed: 8.4,
+                tackling: 0.7,
+                ..base
+            },
+            Role::DefensiveMid => Attributes {
+                tackling: 0.75,
+                passing: 0.75,
+                long_passing: 0.7,
+                ..base
+            },
+            Role::CentralMid => Attributes {
+                passing: 0.8,
+                long_passing: 0.72,
+                control: 0.75,
+                ..base
+            },
             Role::AttackingMid => Attributes {
                 passing: 0.82,
                 control: 0.82,
@@ -343,8 +371,22 @@ impl Attributes {
                 tackling: 0.45,
                 ..base
             },
-            Role::Winger => Attributes { top_speed: 8.8, control: 0.8, dribbling: 0.8, finishing: 0.6, tackling: 0.4, ..base },
-            Role::Striker => Attributes { top_speed: 8.4, control: 0.75, finishing: 0.8, kicking_power: 0.75, tackling: 0.4, ..base },
+            Role::Winger => Attributes {
+                top_speed: 8.8,
+                control: 0.8,
+                dribbling: 0.8,
+                finishing: 0.6,
+                tackling: 0.4,
+                ..base
+            },
+            Role::Striker => Attributes {
+                top_speed: 8.4,
+                control: 0.75,
+                finishing: 0.8,
+                kicking_power: 0.75,
+                tackling: 0.4,
+                ..base
+            },
         }
     }
 }
@@ -363,9 +405,15 @@ mod tests {
 
     #[test]
     fn defenders_are_more_conservative_than_forwards() {
-        assert!(Role::CentreBack.behaviour().risk_aversion > Role::Striker.behaviour().risk_aversion);
-        assert!(Role::Goalkeeper.behaviour().risk_aversion > Role::CentreBack.behaviour().risk_aversion);
-        assert!(Role::Striker.behaviour().shot_threshold < Role::CentreBack.behaviour().shot_threshold);
+        assert!(
+            Role::CentreBack.behaviour().risk_aversion > Role::Striker.behaviour().risk_aversion
+        );
+        assert!(
+            Role::Goalkeeper.behaviour().risk_aversion > Role::CentreBack.behaviour().risk_aversion
+        );
+        assert!(
+            Role::Striker.behaviour().shot_threshold < Role::CentreBack.behaviour().shot_threshold
+        );
     }
 
     #[test]
