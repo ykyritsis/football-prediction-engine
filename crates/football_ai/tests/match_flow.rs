@@ -144,3 +144,26 @@ fn keepers_make_saves_and_offsides_are_called() {
             || count(&sim, |e| matches!(e, MatchEvent::Shot { .. })) > 0
     );
 }
+
+#[test]
+fn scoring_is_football_like() {
+    let styles = presets::team_archetypes();
+    let n = 6;
+    let (mut goals, mut shots, mut on_target) = (0usize, 0usize, 0usize);
+    for seed in 0..n {
+        let mut sim = Simulation::new(SimConfig::new(
+            seed,
+            Squad::generated(styles[seed as usize % 6].clone(), 80),
+            Squad::generated(styles[(seed as usize + 3) % 6].clone(), 80),
+        ));
+        sim.run_to_full_time(u32::MAX);
+        goals += count(&sim, |e| matches!(e, MatchEvent::Goal { .. }));
+        shots += count(&sim, |e| matches!(e, MatchEvent::Shot { .. }));
+        on_target += count(&sim, |e| matches!(e, MatchEvent::Goal { .. } | MatchEvent::Save { .. }));
+    }
+    let per_match = goals as f32 / n as f32;
+    assert!((1.0..7.0).contains(&per_match), "{per_match} goals per match");
+    let accuracy = on_target as f32 / shots as f32;
+    assert!(accuracy < 0.85, "{:.0}% of shots on target", accuracy * 100.0);
+    assert!((10..60).contains(&(shots / n as usize)), "{} shots per match", shots / n as usize);
+}

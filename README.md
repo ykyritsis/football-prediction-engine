@@ -78,14 +78,14 @@ the game data.
 
 Round-robin of the archetypes (`style_report`, 90 min, every pairing home and away):
 
-| Style | Poss | Avg pass | Long % | Crosses | Shots | PPDA |
-|---|---|---|---|---|---|---|
-| Tiki-Taka | 61% | 14.2 m | 14% | 3 | 25 | 2.1 |
-| Gegenpress | 53% | 21.7 m | 26% | 5 | 27 | 2.5 |
-| Route One | 43% | 30.1 m | 57% | 26 | 11 | 4.8 |
-| Counter-Attack | 52% | 23.7 m | 30% | 36 | 20 | 2.9 |
-| Wing Play | 50% | 21.3 m | 28% | 14 | 6 | 3.6 |
-| Park the Bus | 41% | 29.2 m | 45% | 1 | 8 | 8.8 |
+| Style | Poss | Avg pass | Long % | Crosses | Shots | Goals | PPDA |
+|---|---|---|---|---|---|---|---|
+| Tiki-Taka | 63% | 13.0 m | 11% | 2 | 22 | 1.8 | 2.0 |
+| Gegenpress | 52% | 21.9 m | 26% | 5 | 31 | 4.2 | 2.6 |
+| Route One | 47% | 32.5 m | 61% | 37 | 11 | 1.9 | 4.5 |
+| Counter-Attack | 51% | 23.7 m | 27% | 45 | 16 | 2.1 | 3.2 |
+| Wing Play | 47% | 21.0 m | 26% | 21 | 9 | 1.4 | 3.4 |
+| Park the Bus | 39% | 28.5 m | 42% | 1 | 5 | 0.7 | 7.6 |
 
 (PPDA = opponent passes per defensive action in the pressing zone; lower =
 more intense pressing.) A full match also produces football-like discipline:
@@ -161,12 +161,14 @@ the selected player's identity and behaviour numbers, and recent events.
 
 ## Status and roadmap
 
-Calibration is ongoing. Possession, pass length and completion, pressing
-intensity, crossing, discipline and fatigue are in a football-like range and
-styles separate clearly. Chance creation is still somewhat generous for the
-possession and pressing styles (about 25 shots a match against a real 15–20),
-while Wing Play creates too little. `style_report`, `headless_match` and the
-SVG snapshot renderer (`football_ai::svg`) are the tuning tools.
+Calibration is ongoing. Possession, passing, pressing intensity, crossing,
+discipline, fatigue and shot accuracy are in a football-like range: about two
+thirds of shots hit the target, keepers save around 80% of those, and a match
+averages about four goals (real football: 2.7). The decision layer's xG is
+scaled to what shots actually score (`XG_EXECUTION`). Gegenpress still creates
+the most chances (about 30 shots); Park the Bus and Wing Play the fewest.
+`style_report`, `headless_match` and the SVG snapshot renderer
+(`football_ai::svg`) are the tuning tools.
 
 Not modelled yet: injuries, tactical (non-fatigue) substitutions, ends changing at half-time (the
 home side always attacks `+x`), handball, and ball height (lofted balls are

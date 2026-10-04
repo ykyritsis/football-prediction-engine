@@ -173,7 +173,7 @@ pub fn foul_probability(c: &Challenge, referee: &Referee) -> f32 {
     }
     if c.in_own_box {
         // Defenders stay on their feet in the box: a foul there costs a penalty.
-        p *= 0.12;
+        p *= 0.05;
     }
     (p * referee.foul_strictness).clamp(0.0, 0.9)
 }

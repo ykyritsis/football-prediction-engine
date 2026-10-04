@@ -178,6 +178,8 @@ pub struct Ball {
     /// Remaining horizontal distance (m) the ball travels above head height;
     /// nobody can play it until this reaches zero.
     pub air_distance: f32,
+    /// The owner met a cross in the air: he can only head or volley it first time.
+    pub aerial_touch: bool,
 }
 
 /// Kinds of dead-ball restart.
@@ -400,6 +402,7 @@ impl MatchState {
         h.u32(self.ball.owner_since);
         h.u32(self.ball.last_touch.map_or(u32::MAX, |o| o.0 as u32));
         h.u32(self.ball.air_distance.to_bits());
+        h.u32(self.ball.aerial_touch as u32);
         if let Some(pass) = self.ball.pass {
             h.u32(pass.from.0 as u32);
             h.u32(pass.to.0 as u32);

@@ -187,12 +187,14 @@ impl TeamStyle {
         match self.attacking_style {
             AttackingStyle::CounterAttack => {
                 t.counter_attack = 0.9;
+                t.shot_selectivity = -0.01;
                 t.directness = 0.75;
                 t.tempo = 0.7;
                 t.risk_aversion = 0.9;
             }
             AttackingStyle::PossessionGame => {
                 t.counter_attack = 0.25;
+                t.shot_selectivity = 0.03;
                 t.directness = 0.3;
                 t.tempo = 0.45;
                 t.risk_aversion = 1.5;
@@ -254,6 +256,7 @@ impl TeamStyle {
             match i {
                 Instruction::TikiTaka => {
                     t.risk_aversion = t.risk_aversion.max(1.8);
+                    t.shot_selectivity += 0.02;
                     t.support_closeness = t.support_closeness.max(0.9);
                     t.tempo = t.tempo.max(0.85);
                     t.long_ball = 0.05;

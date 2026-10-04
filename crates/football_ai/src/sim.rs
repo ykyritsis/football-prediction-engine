@@ -229,6 +229,7 @@ impl Simulation {
                 pass: None,
                 shot: None,
                 air_distance: 0.0,
+                aerial_touch: false,
             },
             teams: [teams[0].clone(), teams[1].clone()],
             possession: TeamSide::Home,
@@ -499,10 +500,21 @@ impl Simulation {
             ShotKind::FreeKick => 0.4 + (1.0 - p.attrs.set_pieces) * dist * 0.05,
             ShotKind::OpenPlay => {
                 let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
-                (1.0 - p.attrs.finishing) * dist * 0.06 + 0.25 + pressure * 1.5
+                0.9 + (1.0 - p.attrs.finishing) * dist * 0.15 + pressure * 2.0
             }
         };
-        let target = s.target + Vec2::new(0.0, self.rng.range(-spread, spread));
+        let mut target = s.target + Vec2::new(0.0, self.rng.range(-spread, spread));
+        // The ball has no height: a shot skied over the bar is modelled as
+        // one that misses the frame.
+        let over = match kind {
+            ShotKind::Penalty => 0.04,
+            ShotKind::FreeKick => 0.25,
+            ShotKind::OpenPlay => 0.2 + 0.015 * dist * (1.2 - p.attrs.finishing),
+        };
+        if self.rng.chance(over) {
+            let side = if target.y >= 0.0 { 1.0 } else { -1.0 };
+            target.y = side * (GOAL_HALF_WIDTH + 1.5);
+        }
         let dir = (target - p.pos).normalize_or_zero();
         let speed = SHOT_SPEED * (0.85 + 0.15 * p.attrs.kicking_power);
         let st = &mut self.state;
@@ -1056,6 +1068,7 @@ impl Simulation {
         st.ball.owner_since = st.tick;
         st.ball.last_touch = Some(id);
         st.ball.air_distance = 0.0;
+        st.ball.aerial_touch = false;
         if st.possession != id.team() {
             st.possession = id.team();
             st.possession_since = st.tick;
@@ -1215,6 +1228,14 @@ impl Simulation {
                     self.event(MatchEvent::PossessionChange { team: p.team });
                 }
                 self.after_control(id);
+                // Meeting a cross in the box: a first-time header or volley.
+                let box_local = p.team.to_local(ball_pos);
+                if pass.is_some_and(|ps| ps.to == id && ps.lofted)
+                    && crate::pitch::in_attacking_box_local(box_local)
+                {
+                    self.state.ball.aerial_touch = true;
+                    self.state.players[id.index()].action_cooldown = 0;
+                }
                 return;
             }
             // Failed control: the ball deflects off the player.

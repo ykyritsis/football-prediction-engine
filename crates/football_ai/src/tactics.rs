@@ -73,6 +73,9 @@ pub struct Tactics {
     pub risk_aversion: f32,
     /// Look for forwards running in behind as soon as possession is won.
     pub counter_attack: f32,
+    /// Added to every player's xG threshold for shooting: patient teams work
+    /// the ball for a better chance (`> 0`), direct teams shoot on sight (`< 0`).
+    pub shot_selectivity: f32,
 }
 
 impl Default for Tactics {
@@ -106,6 +109,7 @@ impl Default for Tactics {
             tempo: 0.5,
             risk_aversion: 1.0,
             counter_attack: 0.5,
+            shot_selectivity: 0.0,
         }
     }
 }

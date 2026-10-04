@@ -19,7 +19,7 @@ use crate::pitch::{zone_value_local, TeamSide, GOAL_HALF_WIDTH, HALF_LENGTH};
 use crate::state::{MatchState, Player};
 
 /// Scale from the `[0, 1]` zone surface to goal probability.
-pub const POSSESSION_VALUE_SCALE: f32 = 0.3;
+pub const POSSESSION_VALUE_SCALE: f32 = 0.24;
 
 /// Value of possessing the ball at a team-local point.
 #[inline]

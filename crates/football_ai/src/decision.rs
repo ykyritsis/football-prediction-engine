@@ -184,6 +184,9 @@ const CARRY_DIRS: [(f32, f32); 9] = [
 ];
 const CARRY_DISTANCE: f32 = 6.0;
 
+/// Scale from geometric chance quality to the simulation's conversion rate.
+pub const XG_EXECUTION: f32 = 0.55;
+
 /// Team-local aim point: the corner further from the keeper.
 fn aim_point(state: &MatchState, shooter: &Player) -> Vec2 {
     let side = shooter.team;
@@ -240,11 +243,24 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
             xg *= 0.45;
         }
     }
+    // A first-time header or volley from a cross is harder to place.
+    if state.ball.owner == Some(shooter.id)
+        && state.ball.aerial_touch
+        && state.seconds_since(state.ball.owner_since) < 0.4
+    {
+        xg *= 0.6;
+    }
     // A defender closing the shooter down rushes and blocks the shot.
     xg *= 1.0 - 0.55 * pressure_at(state, side, shooter.pos);
+    // Execution: misses, blocks and saves, calibrated so predicted xG
+    // matches what shots score in the simulation.
+    xg *= XG_EXECUTION;
     let xg = xg.clamp(0.0, 0.95);
     let b = &shooter.behaviour;
-    let gate = if xg >= b.shot_threshold { 0.0 } else { -1.0 };
+    // Thresholds are expressed on the geometric scale; bring them onto the
+    // execution-adjusted one.
+    let threshold = (b.shot_threshold + state.team(side).tactics.shot_selectivity) * XG_EXECUTION;
+    let gate = if xg >= threshold { 0.0 } else { -1.0 };
     Some(ShotOption {
         target: side.to_world(aim),
         xg,
