@@ -41,6 +41,7 @@ each player makes a **decision** from that snapshot and his team's plan.
 | On-ball choice | `decision`, `eval` | Pass vs shot (xG) vs carry vs shield on one expected-value scale, with identity as style utility |
 | Laws of the game | `rules` | Fouls from challenges (angle, skill, aggression, bookings, own box), advantage with call-back, yellow/red cards incl. second yellows and denial of a goal-scoring chance, sending-offs (the team plays a man short), direct/indirect free kicks with walls, penalties, two halves with stoppage time; referees have a style (`Referee::strict()`, `lenient()`) |
 | Stamina and substitutions | `sim` | Energy drains with running (faster for low stamina); tired players lose up to 20% speed and press less, so pressing teams fade late. Benches of seven; the manager AI makes up to three substitutions at dead balls from the 55th minute, bringing on the best fit for the tired player's position |
+| Game management | `tactics::Mentality` | From the 60th minute teams adapt to the score: chasing (higher line, harder press, more direct, more risk), all-out attack after 80', or protecting a lead after 75' (deeper, cautious, forward kept as an outlet) |
 | Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
 
 ## Team and player identity
@@ -175,4 +176,4 @@ Next:
 
 1. Calibrate chance creation against PES 2018 match statistics.
 2. Fill identities from the extracted PES 2018 database.
-3. Injuries and tactical substitutions (chasing a game, protecting a lead).
+3. Injuries and tactical substitutions (attackers on when chasing, defenders when protecting).

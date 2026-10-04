@@ -79,6 +79,10 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
                 plan.phase.name(),
                 sim.squads[plan.side.index()].style.formation.name()
             );
+            let mentality = st.team(plan.side).mentality;
+            if mentality != football_ai::tactics::Mentality::Normal {
+                s += &format!("  mentality: {}\n", mentality.name());
+            }
             let energy: Vec<f32> = st.on_pitch(plan.side).map(|p| p.energy).collect();
             s += &format!(
                 "  energy {:.0}%  subs {}/{}\n",
@@ -221,6 +225,9 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::PenaltyAwarded { team } => format!("PENALTY to {:?}", team),
             MatchEvent::HalfTime => "Half time".into(),
             MatchEvent::FullTime => "Full time".into(),
+            MatchEvent::MentalityChange { team, mentality } => {
+                format!("{:?} now {}", team, mentality.name())
+            }
             MatchEvent::Substitution {
                 team,
                 slot,

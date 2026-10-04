@@ -148,3 +148,33 @@ fn substitutions_keep_the_match_deterministic() {
         .iter()
         .any(|(_, e)| matches!(e, MatchEvent::Substitution { .. })));
 }
+
+#[test]
+fn losing_team_chases_the_game_late_on() {
+    let mut sim = Simulation::new(SimConfig::default());
+    // Away team leads; jump to the 70th minute and trigger a dead ball.
+    sim.state.score = [0, 1];
+    sim.state.period = football_ai::state::Period::SecondHalf;
+    sim.state.period_start_tick = sim
+        .state
+        .tick
+        .saturating_sub((25.0 * 60.0 / sim.state.dt) as u32);
+    sim.state.tick += (25.0 * 60.0 / sim.state.dt) as u32;
+    sim.state.period_start_tick = sim.state.tick - (25.0 * 60.0 / sim.state.dt) as u32;
+    // Kick the ball out for a throw-in.
+    sim.clear_restart();
+    sim.state.ball.owner = None;
+    sim.state.ball.pos = football_ai::math::Vec2::new(0.0, 33.9);
+    sim.state.ball.vel = football_ai::math::Vec2::new(0.0, 10.0);
+    sim.state.ball.last_touch = Some(PlayerId::new(TeamSide::Away, 5));
+    sim.step();
+    use football_ai::tactics::Mentality;
+    assert_eq!(sim.state.team(TeamSide::Home).mentality, Mentality::Chasing);
+    assert_eq!(sim.state.team(TeamSide::Away).mentality, Mentality::Normal);
+    let home = sim.state.team(TeamSide::Home);
+    assert!(home.tactics.line_offset > home.base_tactics.line_offset);
+    assert!(sim
+        .events
+        .iter()
+        .any(|(_, e)| matches!(e, MatchEvent::MentalityChange { .. })));
+}

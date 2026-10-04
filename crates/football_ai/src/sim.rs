@@ -144,6 +144,11 @@ pub enum MatchEvent {
         slot: u8,
         bench_index: u8,
     },
+    /// A team changed approach because of the scoreline.
+    MentalityChange {
+        team: TeamSide,
+        mentality: crate::tactics::Mentality,
+    },
     HalfTime,
     FullTime,
 }
@@ -196,10 +201,13 @@ impl Simulation {
                     profile.behaviour_in(role),
                 ));
             }
+            let tactics = squad.style.compile();
             teams.push(TeamState {
                 side,
                 formation,
-                tactics: squad.style.compile(),
+                tactics,
+                base_tactics: tactics,
+                mentality: crate::tactics::Mentality::Normal,
                 phase: TeamPhase::MidBlock,
             });
         }
@@ -846,6 +854,25 @@ impl Simulation {
         true
     }
 
+    /// Adapt each team's mentality to the scoreline (run at dead balls).
+    fn consider_mentality(&mut self) {
+        let minute = self.match_seconds() / 60.0;
+        for side in TeamSide::BOTH {
+            let i = side.index();
+            let diff = self.state.score[i] as i32 - self.state.score[1 - i] as i32;
+            let m = crate::tactics::Mentality::for_situation(diff, minute);
+            if m != self.state.teams[i].mentality {
+                let team = &mut self.state.teams[i];
+                team.mentality = m;
+                team.tactics = m.apply(&team.base_tactics);
+                self.event(MatchEvent::MentalityChange {
+                    team: side,
+                    mentality: m,
+                });
+            }
+        }
+    }
+
     /// The manager's substitution logic, run at dead balls: from the 55th
     /// minute, replace the most tired outfield player (energy below 0.6) with
     /// the best available bench player for his position.
@@ -970,6 +997,7 @@ impl Simulation {
                 });
                 self.kick_off(defending);
                 self.consider_substitutions();
+                self.consider_mentality();
                 return;
             }
             let (kind, team, spot) = if last == defending {
@@ -1017,6 +1045,7 @@ impl Simulation {
         });
         if kind != RestartKind::Penalty {
             self.consider_substitutions();
+            self.consider_mentality();
         }
     }
 

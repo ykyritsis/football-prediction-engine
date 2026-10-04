@@ -236,7 +236,11 @@ pub struct Advantage {
 pub struct TeamState {
     pub side: TeamSide,
     pub formation: Formation,
+    /// Tactics in force (the style's tactics adjusted for [`Mentality`]).
     pub tactics: Tactics,
+    /// Tactics compiled from the team's style.
+    pub base_tactics: Tactics,
+    pub mentality: crate::tactics::Mentality,
     /// Phase chosen on the previous tick (used for hysteresis).
     pub phase: TeamPhase,
 }
@@ -382,6 +386,7 @@ impl MatchState {
             h.u32(p.energy.to_bits());
         }
         h.u32(self.period as u32);
+        h.u32(self.teams[0].mentality as u32 | (self.teams[1].mentality as u32) << 8);
         h.u32(self.subs_used[0] as u32 | (self.subs_used[1] as u32) << 8);
         h.u32(self.period_start_tick);
         h.u32(self.stoppage_secs.to_bits());

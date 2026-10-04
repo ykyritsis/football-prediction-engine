@@ -136,3 +136,95 @@ impl Tactics {
         }
     }
 }
+
+/// How a team adapts to the scoreline late in a match.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum Mentality {
+    /// Play to the team's style.
+    Normal,
+    /// Behind: push up, press harder, go more direct.
+    Chasing,
+    /// Behind late on: everything forward.
+    AllOut,
+    /// Ahead late on: sit deeper, take no risks, keep an outlet.
+    Protecting,
+}
+
+impl Mentality {
+    pub fn name(self) -> &'static str {
+        match self {
+            Mentality::Normal => "normal",
+            Mentality::Chasing => "chasing the game",
+            Mentality::AllOut => "all out attack",
+            Mentality::Protecting => "protecting the lead",
+        }
+    }
+
+    /// Choose a mentality from the goal difference (own - opponent) and the
+    /// match minute.
+    pub fn for_situation(goal_difference: i32, minute: f32) -> Mentality {
+        match goal_difference {
+            d if d < 0 && minute >= 80.0 => Mentality::AllOut,
+            d if d < 0 && minute >= 60.0 => Mentality::Chasing,
+            d if d > 0 && minute >= 75.0 => Mentality::Protecting,
+            _ => Mentality::Normal,
+        }
+    }
+
+    /// Apply to a team's base tactics.
+    pub fn apply(self, base: &Tactics) -> Tactics {
+        let mut t = *base;
+        match self {
+            Mentality::Normal => {}
+            Mentality::Chasing | Mentality::AllOut => {
+                let k = if self == Mentality::AllOut { 2.0 } else { 1.0 };
+                t.line_offset += 4.0 * k;
+                t.press_height = (t.press_height + 0.15 * k).min(1.0);
+                t.press_aggression *= 1.0 + 0.15 * k;
+                t.directness = (t.directness + 0.15 * k).min(1.0);
+                t.risk_aversion *= 1.0 - 0.15 * k;
+                t.box_crowding = (t.box_crowding + 0.25 * k).min(1.0);
+                t.fullback_push += 3.0 * k;
+                t.counter_target = false;
+            }
+            Mentality::Protecting => {
+                t.line_offset -= 6.0;
+                t.press_height = (t.press_height - 0.25).max(0.0);
+                t.press_aggression *= 0.8;
+                t.risk_aversion *= 1.3;
+                t.fullback_push = 0.0;
+                t.counter_target = true;
+                t.depth_out_of_possession -= 3.0;
+            }
+        }
+        t
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn mentality_follows_score_and_time() {
+        assert_eq!(Mentality::for_situation(-1, 50.0), Mentality::Normal);
+        assert_eq!(Mentality::for_situation(-1, 65.0), Mentality::Chasing);
+        assert_eq!(Mentality::for_situation(-2, 85.0), Mentality::AllOut);
+        assert_eq!(Mentality::for_situation(1, 70.0), Mentality::Normal);
+        assert_eq!(Mentality::for_situation(1, 78.0), Mentality::Protecting);
+        assert_eq!(Mentality::for_situation(0, 89.0), Mentality::Normal);
+    }
+
+    #[test]
+    fn chasing_pushes_up_and_protecting_drops_off() {
+        let base = Tactics::default();
+        let chase = Mentality::Chasing.apply(&base);
+        let all_out = Mentality::AllOut.apply(&base);
+        let protect = Mentality::Protecting.apply(&base);
+        assert!(chase.line_offset > base.line_offset && all_out.line_offset > chase.line_offset);
+        assert!(chase.risk_aversion < base.risk_aversion);
+        assert!(protect.line_offset < base.line_offset);
+        assert!(protect.risk_aversion > base.risk_aversion);
+        assert_eq!(Mentality::Normal.apply(&base), base);
+    }
+}
