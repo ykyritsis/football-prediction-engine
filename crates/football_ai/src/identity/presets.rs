@@ -596,7 +596,10 @@ pub fn example_ronaldo() -> PlayerProfile {
 #[derive(Debug, Clone, PartialEq)]
 pub struct Squad {
     pub style: TeamStyle,
+    /// The starting eleven, in formation-slot order.
     pub players: Vec<PlayerProfile>,
+    /// Substitutes.
+    pub bench: Vec<PlayerProfile>,
 }
 
 impl Squad {
@@ -690,7 +693,25 @@ impl Squad {
                 archetype_profile(arch, format!("{} {}", arch.name(), k + 1), quality)
             })
             .collect();
-        Squad { style, players }
+        // A balanced bench, slightly weaker than the starters.
+        let bq = quality.saturating_sub(3);
+        let bench = [
+            PlayerArchetype::LineKeeper,
+            PlayerArchetype::Stopper,
+            PlayerArchetype::DefensiveFullBack,
+            PlayerArchetype::BoxToBox,
+            PlayerArchetype::Anchor,
+            PlayerArchetype::DribblingWinger,
+            PlayerArchetype::Poacher,
+        ]
+        .iter()
+        .map(|&a| archetype_profile(a, format!("Sub {}", a.name()), bq))
+        .collect();
+        Squad {
+            style,
+            players,
+            bench,
+        }
     }
 
     /// Replace the player in `slot` with `profile`.

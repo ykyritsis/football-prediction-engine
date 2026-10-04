@@ -146,26 +146,18 @@ pub fn intercept(player: &Player, pos: Vec2, vel: Vec2, air: f32) -> (Vec2, f32)
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::pitch::TeamSide;
     use crate::role::{Attributes, Behaviour, Role};
     use crate::state::PlayerId;
 
     fn player_at(p: Vec2) -> Player {
-        Player {
-            id: PlayerId(0),
-            team: TeamSide::Home,
-            role: Role::CentralMid,
-            attrs: Attributes::for_role(Role::CentralMid),
-            behaviour: Behaviour::for_role(Role::CentralMid),
-            pos: p,
-            vel: Vec2::ZERO,
-            facing: Vec2::X,
-            tackle_cooldown: 0,
-            action_cooldown: 0,
-            stun: 0,
-            yellow_cards: 0,
-            sent_off: false,
-        }
+        let mut pl = Player::new(
+            PlayerId(0),
+            Role::CentralMid,
+            Attributes::for_role(Role::CentralMid),
+            Behaviour::for_role(Role::CentralMid),
+        );
+        pl.pos = p;
+        pl
     }
 
     #[test]

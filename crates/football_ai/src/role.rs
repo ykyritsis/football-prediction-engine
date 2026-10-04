@@ -314,6 +314,8 @@ pub struct Attributes {
     pub kicking_power: f32,
     /// Dead-ball delivery: free kicks, corners, penalties placement.
     pub set_pieces: f32,
+    /// How slowly energy drains.
+    pub stamina: f32,
     pub goalkeeping: f32,
 }
 
@@ -330,6 +332,7 @@ impl Attributes {
             finishing: 0.5,
             kicking_power: 0.65,
             set_pieces: 0.5,
+            stamina: 0.7,
             goalkeeping: 0.0,
         };
         match role {

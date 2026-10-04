@@ -594,7 +594,10 @@ fn second_defender_blocks_the_line_to_goal_near_the_box() {
     let d = decide(&s.state, &plan, blocker);
     let carrier = s.state.player(c).pos;
     // Target lies between the carrier and the goal.
-    assert!(d.target.x < carrier.x && d.target.distance(carrier) < 3.0, "{d:?}");
+    assert!(
+        d.target.x < carrier.x && d.target.distance(carrier) < 3.0,
+        "{d:?}"
+    );
     // Far from goal there is no blocker.
     s.place(c, Vec2::new(10.0, 4.0));
     s.set_carrier(c);

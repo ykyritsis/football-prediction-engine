@@ -79,6 +79,13 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
                 plan.phase.name(),
                 sim.squads[plan.side.index()].style.formation.name()
             );
+            let energy: Vec<f32> = st.on_pitch(plan.side).map(|p| p.energy).collect();
+            s += &format!(
+                "  energy {:.0}%  subs {}/{}\n",
+                100.0 * energy.iter().sum::<f32>() / energy.len().max(1) as f32,
+                st.subs_used[plan.side.index()],
+                football_ai::sim::MAX_SUBSTITUTIONS
+            );
             if plan.press.mode != PressMode::None {
                 let triggers: Vec<&str> = plan.press.triggers.iter().map(|t| t.name()).collect();
                 s += &format!(
@@ -142,6 +149,12 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
         if let Some(d) = d {
             s += &format!("  doing: {}  {:?}\n", d.activity.label(), d.speed);
         }
+        s += &format!(
+            "  energy {:.0}%  speed {:.1}/{:.1} m/s\n",
+            100.0 * p.energy,
+            p.attrs.top_speed,
+            p.base_top_speed
+        );
         let b = &p.behaviour;
         s += &format!(
             "  dribble {:.2} press {:.2} run-behind {:.2} shoot>={:.2} xG\n  range {:.0}m  tempo {:.2} track-back {:.2}\n",
@@ -208,6 +221,16 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::PenaltyAwarded { team } => format!("PENALTY to {:?}", team),
             MatchEvent::HalfTime => "Half time".into(),
             MatchEvent::FullTime => "Full time".into(),
+            MatchEvent::Substitution {
+                team,
+                slot,
+                bench_index,
+            } => format!(
+                "SUB {:?}: {} on for {}",
+                team,
+                sim.squads[team.index()].players[slot as usize].name,
+                sim.squads[team.index()].bench[bench_index as usize].name
+            ),
         };
         s += &format!("  {:>5.1}s {}\n", t, line);
     }

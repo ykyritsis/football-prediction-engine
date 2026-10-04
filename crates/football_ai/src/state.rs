@@ -74,9 +74,38 @@ pub struct Player {
     pub yellow_cards: u8,
     /// Sent off: no longer takes part (kept in the array so ids stay stable).
     pub sent_off: bool,
+    /// Remaining energy `0..1`; tired players are slower and press less.
+    pub energy: f32,
+    /// Top speed and acceleration when fresh (`attrs` holds the current,
+    /// fatigue-adjusted values).
+    pub base_top_speed: f32,
+    pub base_acceleration: f32,
 }
 
 impl Player {
+    /// A fresh player at the origin.
+    pub fn new(id: PlayerId, role: Role, attrs: Attributes, behaviour: Behaviour) -> Self {
+        let team = id.team();
+        Player {
+            id,
+            team,
+            role,
+            attrs,
+            behaviour,
+            pos: Vec2::ZERO,
+            vel: Vec2::ZERO,
+            facing: Vec2::new(team.direction(), 0.0),
+            tackle_cooldown: 0,
+            action_cooldown: 0,
+            stun: 0,
+            yellow_cards: 0,
+            sent_off: false,
+            energy: 1.0,
+            base_top_speed: attrs.top_speed,
+            base_acceleration: attrs.acceleration,
+        }
+    }
+
     #[inline]
     pub fn is_goalkeeper(&self) -> bool {
         self.role == Role::Goalkeeper
@@ -230,6 +259,8 @@ pub struct MatchState {
     pub restart: Option<Restart>,
     pub score: [u16; 2],
     pub period: Period,
+    /// Substitutions made by each team.
+    pub subs_used: [u8; 2],
     /// Tick at which the current period started.
     pub period_start_tick: u32,
     /// Stoppage time accumulated in the current period (s).
@@ -348,8 +379,10 @@ impl MatchState {
             h.u32(p.action_cooldown as u32);
             h.u32(p.stun as u32);
             h.u32(p.yellow_cards as u32 | (p.sent_off as u32) << 8);
+            h.u32(p.energy.to_bits());
         }
         h.u32(self.period as u32);
+        h.u32(self.subs_used[0] as u32 | (self.subs_used[1] as u32) << 8);
         h.u32(self.period_start_tick);
         h.u32(self.stoppage_secs.to_bits());
         if let Some(a) = self.advantage {

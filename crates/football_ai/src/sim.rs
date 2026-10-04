@@ -137,6 +137,13 @@ pub enum MatchEvent {
     PenaltyAwarded {
         team: TeamSide,
     },
+    /// `slot` now holds the substitute; the substituted player went to the
+    /// bench at `bench_index`.
+    Substitution {
+        team: TeamSide,
+        slot: u8,
+        bench_index: u8,
+    },
     HalfTime,
     FullTime,
 }
@@ -155,7 +162,12 @@ pub struct Simulation {
     pub events: Vec<(u32, MatchEvent)>,
     pub referee: Referee,
     pub clock: MatchClock,
+    /// Bench players already used (in or out), by team.
+    pub bench_used: [Vec<bool>; 2],
 }
+
+/// Maximum substitutions per team (PES 2018 era rules).
+pub const MAX_SUBSTITUTIONS: u8 = 3;
 
 fn secs(state: &MatchState, s: f32) -> u16 {
     (s / state.dt).round().max(0.0) as u16
@@ -177,21 +189,12 @@ impl Simulation {
             let formation = Formation::new(squad.style.formation);
             for (slot, profile) in squad.players.iter().enumerate().take(TEAM_SIZE) {
                 let role = formation.role(slot);
-                players.push(Player {
-                    id: PlayerId::new(side, slot),
-                    team: side,
+                players.push(Player::new(
+                    PlayerId::new(side, slot),
                     role,
-                    attrs: profile.attributes(),
-                    behaviour: profile.behaviour_in(role),
-                    pos: Vec2::ZERO,
-                    vel: Vec2::ZERO,
-                    facing: Vec2::new(side.direction(), 0.0),
-                    tackle_cooldown: 0,
-                    action_cooldown: 0,
-                    stun: 0,
-                    yellow_cards: 0,
-                    sent_off: false,
-                });
+                    profile.attributes(),
+                    profile.behaviour_in(role),
+                ));
             }
             teams.push(TeamState {
                 side,
@@ -226,6 +229,7 @@ impl Simulation {
             restart: None,
             score: [0, 0],
             period: Period::FirstHalf,
+            subs_used: [0, 0],
             period_start_tick: 0,
             stoppage_secs: 0.0,
             first_kick_off: TeamSide::Home,
@@ -240,7 +244,11 @@ impl Simulation {
             events: Vec::new(),
             referee,
             clock,
+            bench_used: [Vec::new(), Vec::new()],
         };
+        for side in TeamSide::BOTH {
+            sim.bench_used[side.index()] = vec![false; sim.squads[side.index()].bench.len()];
+        }
         sim.kick_off(TeamSide::Home);
         sim
     }
@@ -327,6 +335,7 @@ impl Simulation {
         }
         self.apply_actions(&decisions);
         self.move_players(&decisions);
+        self.update_fatigue();
         self.resolve_duels();
         self.move_ball();
         self.resolve_boundaries();
@@ -363,6 +372,7 @@ impl Simulation {
                 self.state.restart = None;
                 let team = self.state.first_kick_off.opponent();
                 self.kick_off(team);
+                self.consider_substitutions();
             }
             Period::SecondHalf => {
                 self.event(MatchEvent::FullTime);
@@ -784,6 +794,108 @@ impl Simulation {
         }
     }
 
+    /// Energy drains with running (faster for low-stamina players) and
+    /// recovers slowly at walking pace; tired players lose speed.
+    fn update_fatigue(&mut self) {
+        let dt = self.state.dt;
+        for p in &mut self.state.players {
+            if p.sent_off {
+                continue;
+            }
+            let frac = (p.vel.length() / p.base_top_speed).min(1.0);
+            let drain = (0.00003 + 0.0007 * frac * frac * frac) * (1.4 - p.attrs.stamina);
+            let recover = if frac < 0.25 { 0.0002 } else { 0.0 };
+            p.energy = (p.energy - (drain - recover) * dt).clamp(0.0, 1.0);
+            let factor = 0.8 + 0.2 * p.energy;
+            p.attrs.top_speed = p.base_top_speed * factor;
+            p.attrs.acceleration = p.base_acceleration * factor;
+        }
+    }
+
+    // ------------------------------------------------------- substitutions --
+
+    /// Bring on bench player `bench_index` for the player in `slot`.
+    /// Returns `false` (and does nothing) if the substitution is not allowed.
+    pub fn substitute(&mut self, team: TeamSide, slot: usize, bench_index: usize) -> bool {
+        let t = team.index();
+        let id = PlayerId::new(team, slot);
+        if self.state.subs_used[t] >= MAX_SUBSTITUTIONS
+            || bench_index >= self.squads[t].bench.len()
+            || self.bench_used[t][bench_index]
+            || self.state.player(id).sent_off
+            || self.state.ball.owner == Some(id)
+        {
+            return false;
+        }
+        let incoming = self.squads[t].bench[bench_index].clone();
+        let outgoing = std::mem::replace(&mut self.squads[t].players[slot], incoming.clone());
+        self.squads[t].bench[bench_index] = outgoing;
+        self.bench_used[t][bench_index] = true;
+        self.state.subs_used[t] += 1;
+        let old = self.state.player(id).clone();
+        let role = old.role;
+        let mut p = Player::new(id, role, incoming.attributes(), incoming.behaviour_in(role));
+        p.pos = old.pos;
+        p.facing = old.facing;
+        self.state.players[id.index()] = p;
+        self.event(MatchEvent::Substitution {
+            team,
+            slot: slot as u8,
+            bench_index: bench_index as u8,
+        });
+        true
+    }
+
+    /// The manager's substitution logic, run at dead balls: from the 55th
+    /// minute, replace the most tired outfield player (energy below 0.6) with
+    /// the best available bench player for his position.
+    fn consider_substitutions(&mut self) {
+        if self.match_seconds() < 55.0 * 60.0 {
+            return;
+        }
+        for team in TeamSide::BOTH {
+            let t = team.index();
+            if self.state.subs_used[t] >= MAX_SUBSTITUTIONS {
+                continue;
+            }
+            let tired = self
+                .state
+                .on_pitch(team)
+                .filter(|p| {
+                    !p.is_goalkeeper() && p.energy < 0.6 && self.state.ball.owner != Some(p.id)
+                })
+                .min_by(|a, b| cmp_f32(a.energy, b.energy).then(a.id.cmp(&b.id)))
+                .map(|p| (p.id.slot(), p.role));
+            let Some((slot, role)) = tired else { continue };
+            let line = |r: Role| match r {
+                Role::Goalkeeper => 0,
+                Role::CentreBack | Role::FullBack => 1,
+                Role::DefensiveMid | Role::CentralMid | Role::AttackingMid => 2,
+                Role::Winger | Role::Striker => 3,
+            };
+            let bench = &self.squads[t].bench;
+            let pick = (0..bench.len())
+                .filter(|&i| !self.bench_used[t][i] && bench[i].position != Role::Goalkeeper)
+                .max_by_key(|&i| {
+                    let fit = if bench[i].position == role {
+                        2
+                    } else if line(bench[i].position) == line(role) {
+                        1
+                    } else {
+                        0
+                    };
+                    (
+                        fit,
+                        bench[i].ratings.overall_outfield(),
+                        std::cmp::Reverse(i),
+                    )
+                });
+            if let Some(i) = pick {
+                self.substitute(team, slot, i);
+            }
+        }
+    }
+
     fn move_ball(&mut self) {
         let dt = self.state.dt;
         let st = &mut self.state;
@@ -857,6 +969,7 @@ impl Simulation {
                     scorer,
                 });
                 self.kick_off(defending);
+                self.consider_substitutions();
                 return;
             }
             let (kind, team, spot) = if last == defending {
@@ -902,6 +1015,9 @@ impl Simulation {
             restart: kind,
             team,
         });
+        if kind != RestartKind::Penalty {
+            self.consider_substitutions();
+        }
     }
 
     // ------------------------------------------------------------ control --

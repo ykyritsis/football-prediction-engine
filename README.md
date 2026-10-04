@@ -40,6 +40,7 @@ each player makes a **decision** from that snapshot and his team's plan.
 | Passing evaluation | `passing` | Short / through / long / cross candidates; interception risk from lane timing (lofted balls only contestable at landing, aerial duels), misplacement, receiver pressure, progression, lines broken, offside excluded |
 | On-ball choice | `decision`, `eval` | Pass vs shot (xG) vs carry vs shield on one expected-value scale, with identity as style utility |
 | Laws of the game | `rules` | Fouls from challenges (angle, skill, aggression, bookings, own box), advantage with call-back, yellow/red cards incl. second yellows and denial of a goal-scoring chance, sending-offs (the team plays a man short), direct/indirect free kicks with walls, penalties, two halves with stoppage time; referees have a style (`Referee::strict()`, `lenient()`) |
+| Stamina and substitutions | `sim` | Energy drains with running (faster for low stamina); tired players lose up to 20% speed and press less, so pressing teams fade late. Benches of seven; the manager AI makes up to three substitutions at dead balls from the 55th minute, bringing on the best fit for the tired player's position |
 | Simulation | `sim` | Fixed step, steering, rolling and lofted ball flight, selective tackling, saves, offside, throw-ins, corners, goal kicks, kick-offs, event log |
 
 ## Team and player identity
@@ -78,12 +79,12 @@ Round-robin of the archetypes (`style_report`, 90 min, every pairing home and aw
 
 | Style | Poss | Avg pass | Long % | Crosses | Shots | PPDA |
 |---|---|---|---|---|---|---|
-| Tiki-Taka | 58% | 14.5 m | 13% | 2 | 51 | 2.0 |
-| Gegenpress | 48% | 23.3 m | 28% | 6 | 61 | 2.6 |
-| Route One | 45% | 30.0 m | 56% | 13 | 14 | 4.8 |
-| Counter-Attack | 54% | 23.3 m | 29% | 16 | 28 | 3.0 |
-| Wing Play | 54% | 20.4 m | 25% | 4 | 13 | 3.6 |
-| Park the Bus | 41% | 29.5 m | 46% | 2 | 13 | 9.5 |
+| Tiki-Taka | 61% | 14.2 m | 14% | 3 | 25 | 2.1 |
+| Gegenpress | 53% | 21.7 m | 26% | 5 | 27 | 2.5 |
+| Route One | 43% | 30.1 m | 57% | 26 | 11 | 4.8 |
+| Counter-Attack | 52% | 23.7 m | 30% | 36 | 20 | 2.9 |
+| Wing Play | 50% | 21.3 m | 28% | 14 | 6 | 3.6 |
+| Park the Bus | 41% | 29.2 m | 45% | 1 | 8 | 8.8 |
 
 (PPDA = opponent passes per defensive action in the pressing zone; lower =
 more intense pressing.) A full match also produces football-like discipline:
@@ -160,14 +161,13 @@ the selected player's identity and behaviour numbers, and recent events.
 ## Status and roadmap
 
 Calibration is ongoing. Possession, pass length and completion, pressing
-intensity and discipline are in a football-like range and styles separate
-clearly. Chance creation is still too generous for the two high-pressing
-styles (Tiki-Taka and Gegenpress take 50–60 shots a match; real teams take
-10–20), mostly close-range finishes after sustained pressure, and wing play
-crosses too little. `style_report`, `headless_match` and the SVG snapshot
-renderer (`football_ai::svg`) are the tuning tools.
+intensity, crossing, discipline and fatigue are in a football-like range and
+styles separate clearly. Chance creation is still somewhat generous for the
+possession and pressing styles (about 25 shots a match against a real 15–20),
+while Wing Play creates too little. `style_report`, `headless_match` and the
+SVG snapshot renderer (`football_ai::svg`) are the tuning tools.
 
-Not modelled yet: substitutions and stamina, ends changing at half-time (the
+Not modelled yet: injuries, tactical (non-fatigue) substitutions, ends changing at half-time (the
 home side always attacks `+x`), handball, and ball height (lofted balls are
 approximated by an airborne distance).
 
@@ -175,4 +175,4 @@ Next:
 
 1. Calibrate chance creation against PES 2018 match statistics.
 2. Fill identities from the extracted PES 2018 database.
-3. Substitutions, stamina and fatigue.
+3. Injuries and tactical substitutions (chasing a game, protecting a lead).

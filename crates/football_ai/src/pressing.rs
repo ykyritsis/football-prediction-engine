@@ -256,7 +256,9 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
         .filter(|p| !p.is_goalkeeper() && p.stun == 0)
         .map(|p| {
             let t = p.pos.distance(carrier.pos) / p.attrs.top_speed;
-            let reluctance = 1.0 + (1.0 - p.behaviour.press_willingness) * 1.5;
+            // Tired players are less keen to press.
+            let reluctance =
+                1.0 + (1.0 - p.behaviour.press_willingness) * 1.5 + (1.0 - p.energy) * 1.2;
             (t * reluctance, p.id)
         })
         .collect();
