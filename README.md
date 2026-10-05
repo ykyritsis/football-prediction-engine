@@ -83,6 +83,11 @@ average in every league. Cards gain about 0.05–0.2 per match (most in
 Serie A and La Liga). Corners and shots on target totals barely beat the
 league average.
 
+Team news goes in `data/adjustments/<league>.json` (see its README): a
+strength shift per club, with an optional expiry date, applied before
+`fixtures`, `match` and `table` predict. For example, -0.10 attack for
+Arsenal's star forward moves Arsenal v Leeds from 69% to 64%.
+
 Honest limits: football is noisy enough that no model picks much more than
 55–58% of results, so "confidence" here means calibrated probabilities, not
 certainty. What scores and stats cannot see is where the next gains are:

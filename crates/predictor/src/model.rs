@@ -284,6 +284,13 @@ impl Model {
         }
     }
 
+    /// Shift a club's strengths (team news: injuries, suspensions).
+    pub fn adjust(&mut self, team: &str, attack: f64, defence: f64) {
+        let s = self.teams.entry(team.to_string()).or_insert(self.newcomer);
+        s.attack += attack;
+        s.defence += defence;
+    }
+
     /// Strength of `team`, or the newcomer prior for a club never seen.
     pub fn strength(&self, team: &str) -> Strength {
         self.teams.get(team).copied().unwrap_or(self.newcomer)

@@ -214,7 +214,7 @@ fn cmd_fixtures(args: &[String]) {
             .min()
             .unwrap_or_else(|| today.clone());
         let end = add_days(&start, days);
-        let model = Model::fit(&all, &today, &ModelConfig::default());
+        let model = fit_with_news(&all, key, &today);
         let cards = CountModel::fit(&all, Stat::Cards, &today, STAT_HALF_LIFE);
         let corners = CountModel::fit(&all, Stat::Corners, &today, STAT_HALF_LIFE);
         let upcoming: Vec<_> = all
@@ -260,7 +260,7 @@ fn cmd_table(args: &[String]) {
     for (key, name) in leagues(args.first().map(String::as_str)) {
         let all = load(key);
         let today = today(&all);
-        let model = Model::fit(&all, &today, &ModelConfig::default());
+        let model = fit_with_news(&all, key, &today);
         let fixtures = current_season(&all, &today);
         let proj = season::project(&fixtures, &model, runs, 0x5eed);
         println!("\n{name} — projection as of {today} ({runs} simulated seasons)");
@@ -285,6 +285,43 @@ fn cmd_table(args: &[String]) {
             );
         }
     }
+}
+
+/// Fit the goals model and apply `data/adjustments/<league>.json`.
+fn fit_with_news(all: &[Match], key: &str, today: &str) -> Model {
+    let mut model = Model::fit(all, today, &ModelConfig::default());
+    let path = data_dir()
+        .parent()
+        .map(|p| p.join("adjustments").join(format!("{key}.json")))
+        .unwrap_or_default();
+    let Ok(text) = std::fs::read_to_string(&path) else {
+        return model;
+    };
+    let news: std::collections::BTreeMap<String, serde_json::Value> = serde_json::from_str(&text)
+        .unwrap_or_else(|e| {
+            eprintln!("{}: {e}", path.display());
+            std::process::exit(1)
+        });
+    for (team, v) in news {
+        if v.get("until")
+            .and_then(|u| u.as_str())
+            .is_some_and(|u| u <= today)
+        {
+            continue;
+        }
+        let f = |k: &str| v.get(k).and_then(|x| x.as_f64()).unwrap_or(0.0);
+        if !model.teams.contains_key(&team) {
+            eprintln!("warning: {}: unknown club {team}", path.display());
+        }
+        model.adjust(&team, f("attack"), f("defence"));
+        let note = v.get("note").and_then(|x| x.as_str()).unwrap_or("");
+        eprintln!(
+            "team news: {team} attack {:+.2} defence {:+.2} {note}",
+            f("attack"),
+            f("defence")
+        );
+    }
+    model
 }
 
 /// The club in `all` whose name contains `q` (case-insensitive), preferring
@@ -344,7 +381,7 @@ fn cmd_match(args: &[String]) {
     let (home, away) = (find_team(&all, &args[1]), find_team(&all, &args[2]));
     let referee = args.get(3).map(String::as_str);
     let today = today(&all);
-    let model = Model::fit(&all, &today, &ModelConfig::default());
+    let model = fit_with_news(&all, key, &today);
     let p = model.predict(&home, &away);
     println!("{name}: {home} v {away}  (fitted to results before {today})\n");
     for t in [&home, &away] {
