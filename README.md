@@ -247,7 +247,7 @@ top-flight numbers (per team per match, 30 matches between archetypes):
 
 | | sim | real |
 |---|---|---|
-| ball in play | 59 min | 55–60 min |
+| ball in play | 61 min | 55–60 min |
 | goals / xG | 1.4 / 1.3 | 1.4 / 1.4 |
 | shots (on target) | 10.1 (3.3) | 12–13 (4–5) |
 | saves | 1.9 | 3 |
