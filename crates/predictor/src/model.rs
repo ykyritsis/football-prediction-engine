@@ -17,6 +17,14 @@ pub struct ModelConfig {
     /// scaled to goals (0 = goals only). Shots are less noisy than goals,
     /// so they reveal strength sooner. Needs [`Match::stats`].
     pub shot_weight: f64,
+    /// Prior standard deviation of each club's own home advantage around the
+    /// league's (0 = one shared value). Some grounds are harder to visit.
+    pub home_sd: f64,
+    /// Multiplies strength differences at prediction time. Exponential
+    /// decay averages a club over months, which blurs how far apart clubs
+    /// are now; the backtest shows favourites win more often than an
+    /// unscaled fit says.
+    pub spread: f64,
 }
 
 impl Default for ModelConfig {
@@ -25,7 +33,9 @@ impl Default for ModelConfig {
             half_life_days: 365.0,
             prior_sd: 0.5,
             newcomer_penalty: 0.25,
-            shot_weight: 0.0,
+            shot_weight: 0.3,
+            home_sd: 0.1,
+            spread: 1.15,
         }
     }
 }
@@ -41,6 +51,7 @@ pub struct Model {
     /// Dixon–Coles low-score dependence.
     pub rho: f64,
     newcomer: Strength,
+    spread: f64,
 }
 
 #[derive(Debug, Clone, Copy, Default, PartialEq)]
@@ -49,6 +60,8 @@ pub struct Strength {
     pub defence: f64,
     /// Total decayed weight of the club's matches (how much data it has).
     pub weight: f64,
+    /// This club's home advantage relative to the league's (log scale).
+    pub home: f64,
 }
 
 /// A predicted match.
@@ -142,6 +155,7 @@ impl Model {
         let mut att = vec![0.0; n];
         let mut def = vec![0.0; n];
         let mut weight = vec![0.0; n];
+        let mut hadv = vec![0.0; n];
         for r in &rows {
             weight[r.h] += r.w;
             weight[r.a] += r.w;
@@ -159,7 +173,7 @@ impl Model {
             let mut g = vec![0.0; n];
             let mut hss = vec![0.0; n];
             for r in &rows {
-                let lh = (mu + home + att[r.h] - def[r.a]).exp();
+                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 g[r.h] += r.w * (r.gh - lh);
                 hss[r.h] += r.w * lh;
@@ -175,7 +189,7 @@ impl Model {
             let mut g = vec![0.0; n];
             let mut hss = vec![0.0; n];
             for r in &rows {
-                let lh = (mu + home + att[r.h] - def[r.a]).exp();
+                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 g[r.a] -= r.w * (r.gh - lh);
                 hss[r.a] += r.w * lh;
@@ -187,10 +201,26 @@ impl Model {
                 def[i] += step;
                 change = change.max(step.abs());
             }
+            // Each club's own home advantage.
+            if cfg.home_sd > 0.0 {
+                let prec = 1.0 / (cfg.home_sd * cfg.home_sd);
+                let mut g = vec![0.0; n];
+                let mut hss = vec![0.0; n];
+                for r in &rows {
+                    let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
+                    g[r.h] += r.w * (r.gh - lh);
+                    hss[r.h] += r.w * lh;
+                }
+                for i in 0..n {
+                    let step = (g[i] - hadv[i] * prec) / (hss[i] + prec);
+                    hadv[i] += step;
+                    change = change.max(step.abs());
+                }
+            }
             // Global level and home advantage.
             let (mut goals, mut expect, mut hg, mut he) = (0.0, 0.0, 0.0, 0.0);
             for r in &rows {
-                let lh = (mu + home + att[r.h] - def[r.a]).exp();
+                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 goals += r.w * (r.gh + r.ga);
                 expect += r.w * (lh + la);
@@ -218,7 +248,7 @@ impl Model {
             let ll: f64 = rows
                 .iter()
                 .map(|r| {
-                    let lh = (mu + home + att[r.h] - def[r.a]).exp();
+                    let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
                     let la = (mu + att[r.a] - def[r.h]).exp();
                     r.w * tau(r.goals.0, r.goals.1, lh, la, rho).max(1e-9).ln()
                 })
@@ -235,6 +265,7 @@ impl Model {
                     attack: att[i],
                     defence: def[i],
                     weight: weight[i],
+                    home: hadv[i],
                 },
             );
         }
@@ -247,7 +278,9 @@ impl Model {
                 attack: -cfg.newcomer_penalty,
                 defence: -cfg.newcomer_penalty,
                 weight: 0.0,
+                home: 0.0,
             },
+            spread: cfg.spread,
         }
     }
 
@@ -260,8 +293,8 @@ impl Model {
     pub fn rates(&self, home: &str, away: &str) -> (f64, f64) {
         let (h, a) = (self.strength(home), self.strength(away));
         (
-            (self.mu + self.home + h.attack - a.defence).exp(),
-            (self.mu + a.attack - h.defence).exp(),
+            (self.mu + self.home + h.home + self.spread * (h.attack - a.defence)).exp(),
+            (self.mu + self.spread * (a.attack - h.defence)).exp(),
         )
     }
 

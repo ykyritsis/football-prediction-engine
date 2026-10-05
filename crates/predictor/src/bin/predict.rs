@@ -6,6 +6,7 @@
 //! predict fixtures [LEAGUE|all] [DAYS]      next matches (default 10 days from the next fixture)
 //! predict table    [LEAGUE|all] [RUNS]      season projection (default 20000 runs)
 //! predict stats    [LEAGUE|all] [FROM]      backtest cards, corners, shots on target, fouls
+//! predict match    LEAGUE HOME AWAY [REF]   full report for one match (names may be partial)
 //! ```
 //!
 //! "Today" is the day after the last played match in the data, so results
@@ -143,18 +144,13 @@ fn cmd_tune(args: &[String]) {
         .into_iter()
         .map(|(k, n)| (n, load(k)))
         .collect();
-    let grid: Vec<(f64, f64, f64)> = [240.0, 365.0, 540.0]
-        .iter()
-        .flat_map(|&h| [0.35, 0.5].map(move |sd| (h, sd)))
-        .flat_map(|(h, sd)| [0.0, 0.3, 0.5, 0.7].map(move |k| (h, sd, k)))
-        .collect();
-    for (half_life, prior_sd, shot_weight) in grid {
-        let cfg = ModelConfig {
-            half_life_days: half_life,
-            prior_sd,
-            shot_weight,
-            ..ModelConfig::default()
-        };
+    // Vary one setting at a time around the defaults.
+    let base = ModelConfig::default();
+    let mut grid = vec![base];
+    for spread in [1.1, 1.2, 1.3] {
+        grid.push(ModelConfig { spread, ..base });
+    }
+    for cfg in grid {
         let (mut n, mut ll, mut hit) = (0usize, 0.0, 0.0);
         for (_, data) in &sets {
             let r = backtest(data, from, &cfg);
@@ -163,7 +159,12 @@ fn cmd_tune(args: &[String]) {
             hit += r.hit_rate * r.matches as f64;
         }
         println!(
-            "half-life {half_life:>4} d  prior sd {prior_sd:.2}  shot weight {shot_weight:.1}  log-loss {:.4}  hit {:.1}%",
+            "half-life {:>4} d  prior sd {:.2}  shot weight {:.1}  home sd {:.2}  spread {:.2}  log-loss {:.4}  hit {:.1}%",
+            cfg.half_life_days,
+            cfg.prior_sd,
+            cfg.shot_weight,
+            cfg.home_sd,
+            cfg.spread,
             ll / n as f64,
             hit / n as f64 * 100.0
         );
@@ -286,6 +287,144 @@ fn cmd_table(args: &[String]) {
     }
 }
 
+/// The club in `all` whose name contains `q` (case-insensitive), preferring
+/// clubs from the latest season.
+fn find_team(all: &[Match], q: &str) -> String {
+    let q = q.to_lowercase();
+    let mut seen: Vec<&str> = Vec::new();
+    for m in all.iter().rev() {
+        for t in [&m.home, &m.away] {
+            if !seen.contains(&t.as_str()) {
+                seen.push(t);
+            }
+        }
+    }
+    seen.iter()
+        .find(|t| t.to_lowercase() == q)
+        .or_else(|| seen.iter().find(|t| t.to_lowercase().contains(&q)))
+        .map(|t| t.to_string())
+        .unwrap_or_else(|| {
+            eprintln!("no club matching {q}");
+            std::process::exit(2)
+        })
+}
+
+fn form(all: &[Match], team: &str, n: usize) -> String {
+    let mut out: Vec<String> = all
+        .iter()
+        .rev()
+        .filter(|m| m.score.is_some() && (m.home == team || m.away == team))
+        .take(n)
+        .map(|m| {
+            let (h, a) = m.score.unwrap();
+            let (gf, ga, opp, venue) = if m.home == team {
+                (h, a, &m.away, "H")
+            } else {
+                (a, h, &m.home, "A")
+            };
+            let r = match gf.cmp(&ga) {
+                std::cmp::Ordering::Greater => "W",
+                std::cmp::Ordering::Equal => "D",
+                std::cmp::Ordering::Less => "L",
+            };
+            format!("{r} {gf}-{ga} {venue} {opp}")
+        })
+        .collect();
+    out.reverse();
+    out.join(", ")
+}
+
+fn cmd_match(args: &[String]) {
+    if args.len() < 3 {
+        eprintln!("usage: predict match LEAGUE HOME AWAY [REFEREE]");
+        std::process::exit(2);
+    }
+    let (key, name) = leagues(Some(&args[0]))[0];
+    let all = load(key);
+    let (home, away) = (find_team(&all, &args[1]), find_team(&all, &args[2]));
+    let referee = args.get(3).map(String::as_str);
+    let today = today(&all);
+    let model = Model::fit(&all, &today, &ModelConfig::default());
+    let p = model.predict(&home, &away);
+    println!("{name}: {home} v {away}  (fitted to results before {today})\n");
+    for t in [&home, &away] {
+        let s = model.strength(t);
+        println!(
+            "  {t:<28} attack {:+.2}  defence {:+.2}  own home edge {:+.2}  data weight {:.0}",
+            s.attack, s.defence, s.home, s.weight
+        );
+        println!("  {:<28} last 6: {}", "", form(&all, t, 6));
+    }
+    println!(
+        "\n  Result     home {}  draw {}  away {}",
+        pct(p.home_win),
+        pct(p.draw),
+        pct(p.away_win)
+    );
+    println!("  Expected goals  {:.2} - {:.2}", p.home_xg, p.away_xg);
+    let mut cells: Vec<(f64, usize, usize)> = p
+        .scores
+        .iter()
+        .enumerate()
+        .flat_map(|(h, row)| row.iter().enumerate().map(move |(a, &q)| (q, h, a)))
+        .collect();
+    cells.sort_by(|a, b| b.0.partial_cmp(&a.0).unwrap());
+    let top: Vec<String> = cells
+        .iter()
+        .take(8)
+        .map(|(q, h, a)| format!("{h}-{a} {:.1}%", q * 100.0))
+        .collect();
+    println!("  Scorelines  {}", top.join("  "));
+    let goals_over = |line: f64| -> f64 {
+        cells
+            .iter()
+            .filter(|(_, h, a)| (h + a) as f64 > line)
+            .map(|c| c.0)
+            .sum()
+    };
+    println!(
+        "  Goals      over 1.5 {}  over 2.5 {}  over 3.5 {}  both score {}",
+        pct(goals_over(1.5)),
+        pct(goals_over(2.5)),
+        pct(goals_over(3.5)),
+        pct(p.both_score)
+    );
+    for stat in STATS {
+        let m = CountModel::fit(&all, stat, &today, STAT_HALF_LIFE);
+        let c = m.predict(&home, &away, referee);
+        let mean = c.home + c.away;
+        let line = mean.round() - 0.5;
+        println!(
+            "  {:<16} {:.1} - {:.1} (total {:.1})  over {:.1} {}  over {:.1} {}  over {:.1} {}",
+            stat.name(),
+            c.home,
+            c.away,
+            mean,
+            line - 1.0,
+            pct(c.over(line - 1.0)),
+            line,
+            pct(c.over(line)),
+            line + 1.0,
+            pct(c.over(line + 1.0))
+        );
+        if stat == Stat::Cards {
+            if let Some(r) = referee {
+                match m.referee.get(r) {
+                    Some(e) => println!(
+                        "  {:<16} referee {r}: {:+.0}% cards vs average",
+                        "",
+                        (e.exp() - 1.0) * 100.0
+                    ),
+                    None => println!(
+                        "  {:<16} referee {r} not in the data (Premier League only)",
+                        ""
+                    ),
+                }
+            }
+        }
+    }
+}
+
 fn main() {
     let args: Vec<String> = std::env::args().skip(1).collect();
     let rest = args.get(1..).unwrap_or(&[]).to_vec();
@@ -295,8 +434,11 @@ fn main() {
         Some("fixtures") => cmd_fixtures(&rest),
         Some("table") => cmd_table(&rest),
         Some("stats") => cmd_stats(&rest),
+        Some("match") => cmd_match(&rest),
         _ => {
-            eprintln!("usage: predict <backtest|tune|fixtures|table|stats> [LEAGUE|all] [ARG]");
+            eprintln!(
+                "usage: predict <backtest|tune|fixtures|table|stats|match> [LEAGUE|all] [ARG]"
+            );
             std::process::exit(2);
         }
     }
