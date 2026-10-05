@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/football_ai", "crates/football_sandbox"]
+members = ["crates/football_ai", "crates/football_sandbox", "crates/predictor"]
 
 [workspace.package]
 edition = "2021"

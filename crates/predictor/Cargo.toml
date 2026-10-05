@@ -1,0 +1,10 @@
+[package]
+name = "predictor"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+description = "Match outcome prediction for the top five European leagues from real results"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
