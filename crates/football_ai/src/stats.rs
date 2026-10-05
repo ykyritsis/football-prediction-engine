@@ -7,7 +7,7 @@
 //! Everything is derived from the event stream plus a possession tick, so a
 //! game that runs its own simulation can feed it the same way.
 
-use crate::pitch::TeamSide;
+use crate::pitch::{TeamSide, HALF_LENGTH};
 use crate::sim::MatchEvent;
 use crate::state::{MatchState, Period, PlayerId, RestartKind, ShotKind, PLAYER_COUNT};
 
@@ -45,6 +45,8 @@ pub struct TeamStats {
     pub penalties: u32,
     /// Times this team lost the ball to the other side.
     pub possessions_lost: u32,
+    /// Possession won in the attacking third (the pressing team's reward).
+    pub regains_final_third: u32,
 }
 
 impl TeamStats {
@@ -349,6 +351,9 @@ impl MatchStats {
             },
             MatchEvent::PossessionChange { team } => {
                 self.teams[team.opponent().index()].possessions_lost += 1;
+                if state.restart.is_none() && team.to_local(state.ball.pos).x > HALF_LENGTH / 3.0 {
+                    self.teams[team.index()].regains_final_third += 1;
+                }
             }
             MatchEvent::Foul { by, on, .. } => {
                 self.teams[by.team().index()].fouls += 1;

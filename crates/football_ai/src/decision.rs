@@ -183,18 +183,20 @@ const CARRY_DIRS: [(f32, f32); 9] = [
     (-FRAC_1_SQRT_2, -FRAC_1_SQRT_2),
 ];
 const CARRY_DISTANCE: f32 = 6.0;
+/// Longest throw-in.
+pub const THROW_IN_RANGE: f32 = 24.0;
 
 /// Scale from geometric chance quality to the simulation's conversion rate
 /// (calibrated: predicted xG matches goals scored).
 pub const XG_EXECUTION: f32 = 1.0;
 
 /// Fraction of a player's shot threshold he will actually shoot at.
-pub const SHOT_GATE: f32 = 0.28;
+pub const SHOT_GATE: f32 = 0.4;
 
 /// Weight of a shot's xG against keeping the ball. Zone values include the
 /// option of a better chance later, which players (rightly) discount: without
 /// this weight they walk the ball into the net instead of shooting.
-pub const SHOT_VALUE: f32 = 1.4;
+pub const SHOT_VALUE: f32 = 1.2;
 
 /// Team-local aim point: the corner further from the keeper.
 fn aim_point(state: &MatchState, shooter: &Player) -> Vec2 {
@@ -318,7 +320,7 @@ pub fn hold_score(state: &MatchState, carrier: &Player) -> f32 {
     let here = side.to_local(carrier.pos);
     let pressure = pressure_at(state, side, carrier.pos);
     let b = &carrier.behaviour;
-    let lose = pressure * 0.4 * (1.15 - 0.45 * carrier.attrs.control - 0.35 * b.hold_up);
+    let lose = pressure * 0.45 * (1.15 - 0.45 * carrier.attrs.control - 0.35 * b.hold_up);
     // Holding only preserves the position: boxed in, it is worth what can
     // still be done from there, not the open-play value of the spot.
     let held_value = possession_value(here) * (1.0 - 0.3 * pressure);
@@ -464,10 +466,19 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
         }
     }
     {
+        // A throw-in only reaches 20–25 m.
+        let reach = |c: &&crate::passing::PassCandidate| {
+            kind != Some(RestartKind::ThrowIn) || c.distance <= THROW_IN_RANGE
+        };
         if let Some(best) = opts
             .iter()
+            .filter(reach)
             .find(|c| c.kind != PassKind::Cross)
-            .or(opts.first())
+            .or(opts.iter().find(reach))
+            // Nobody in range: throw it to the nearest team-mate anyway.
+            .or(opts
+                .iter()
+                .min_by(|a, b| cmp_f32(a.distance, b.distance).then(a.receiver.cmp(&b.receiver))))
         {
             d.action = Action::Pass(*best);
         }
@@ -565,13 +576,16 @@ pub fn tackle_window(state: &MatchState, tackler: &Player, carrier: &Player) -> 
     let to_tackler = (tackler.pos - carrier.pos).normalize_or_zero();
     let back_turned = carrier.facing.dot(to_tackler) < -0.2;
     let stationary = carrier.vel.length() < 1.5;
-    // The receiving touch is a cue to close down, not to dive in: the ball
-    // is only there to be won once the carrier has it and stands still or
-    // turns his back.
+    // The receiving touch is a cue to close down; only an aggressive press
+    // dives in on it, and only on a receiver with his back to the presser.
+    // Otherwise the ball is there to be won once the carrier has it and
+    // stands still or turns his back.
+    let jump_the_touch =
+        settling && back_turned && state.team(tackler.team).tactics.press_aggression >= 1.2;
     let exposed = if crate::rules::in_penalty_area(tackler.team, carrier.pos) {
         stationary && !settling
     } else {
-        !settling && (back_turned || stationary)
+        jump_the_touch || (!settling && (back_turned || stationary))
     };
     // Commit only when the tackle is likely enough to succeed for this player.
     exposed

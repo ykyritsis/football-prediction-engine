@@ -238,11 +238,11 @@ impl RestartKind {
     pub fn dead_ball_seconds(self) -> f32 {
         match self {
             RestartKind::KickOff => 0.0,
-            RestartKind::ThrowIn => 14.0,
-            RestartKind::GoalKick => 24.0,
-            RestartKind::Corner => 30.0,
-            RestartKind::FreeKick | RestartKind::IndirectFreeKick => 28.0,
-            RestartKind::Penalty => 45.0,
+            RestartKind::ThrowIn => 16.0,
+            RestartKind::GoalKick => 26.0,
+            RestartKind::Corner => 32.0,
+            RestartKind::FreeKick | RestartKind::IndirectFreeKick => 32.0,
+            RestartKind::Penalty => 50.0,
         }
     }
 }

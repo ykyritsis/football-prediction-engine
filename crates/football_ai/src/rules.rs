@@ -165,10 +165,9 @@ pub fn tackle_commit_threshold(tackler: &Player) -> f32 {
 
 /// Probability that a challenge is penalised as a foul.
 pub fn foul_probability(c: &Challenge, referee: &Referee) -> f32 {
-    // Calibrated so a typical match has ~20–25 fouls from a couple of
-    // hundred challenges.
+    // Calibrated so a typical match has ~20–25 fouls from 300-odd challenges.
     let base =
-        0.007 + 0.028 * (1.0 - c.tackling) + 0.014 * c.aggression + 0.014 * c.carrier_dribbling;
+        0.007 + 0.027 * (1.0 - c.tackling) + 0.014 * c.aggression + 0.014 * c.carrier_dribbling;
     let angle = if c.from_behind() {
         0.07
     } else if c.frontness < 0.2 {

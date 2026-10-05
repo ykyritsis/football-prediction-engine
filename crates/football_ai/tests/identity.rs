@@ -173,13 +173,17 @@ fn dribbler_carries_the_ball_more_over_a_match() {
 
 // ------------------------------------------------------- team identity --
 
-#[derive(Default, Debug)]
+#[derive(Default, Debug, Clone, Copy)]
 struct TeamStats {
     passes: f32,
     long: f32,
     pass_len: f32,
     possession: f32,
     high_regains: f32,
+    /// Opponent passes in their own 60% of the pitch, and this team's
+    /// defensive actions in that zone: PPDA = passes / actions.
+    ppda_passes: f32,
+    ppda_actions: f32,
 }
 
 fn play(
@@ -200,6 +204,9 @@ fn play(
         for (_, e) in &sim.events[before..] {
             match *e {
                 MatchEvent::Pass { from, kind, .. } => {
+                    if from.team().to_local(ball).x < 10.0 {
+                        out[from.team().opponent().index()].ppda_passes += 1.0;
+                    }
                     let s = &mut out[from.team().index()];
                     s.passes += 1.0;
                     if kind == PassKind::Long {
@@ -209,10 +216,17 @@ fn play(
                         s.pass_len += p.origin.distance(p.target);
                     }
                 }
-                MatchEvent::Tackle { by, won: true, .. } | MatchEvent::Interception { by, .. }
-                    if by.team().to_local(ball).x > 17.5 =>
+                MatchEvent::Tackle { by, .. }
+                | MatchEvent::Interception { by, .. }
+                | MatchEvent::Foul { by, .. }
+                    if by.team().to_local(ball).x > -10.0 =>
                 {
-                    out[by.team().index()].high_regains += 1.0;
+                    out[by.team().index()].ppda_actions += 1.0;
+                }
+                // Possession won in the attacking third, however it came:
+                // a tackle, an interception, or a hurried pass under pressure.
+                MatchEvent::PossessionChange { team } if team.to_local(ball).x > 17.5 => {
+                    out[team.index()].high_regains += 1.0;
                 }
                 _ => {}
             }
@@ -253,25 +267,17 @@ fn possession_team_keeps_the_ball_more_than_a_bus() {
 }
 
 #[test]
-fn pressing_team_wins_the_ball_higher_up() {
-    // Two full matches each: high regains are counted in single digits per half.
-    let total = |style: fn() -> football_ai::TeamStyle| {
-        (3..5)
-            .map(|seed| play(style(), presets::wing_play(), seed, 90.0)[0].high_regains)
-            .sum::<f32>()
+fn pressing_team_allows_fewer_passes_per_defensive_action() {
+    // PPDA, the standard pressing metric: a pressing side lets the opponent
+    // string far fewer passes together before it challenges.
+    let ppda = |style: fn() -> football_ai::TeamStyle| {
+        let (passes, actions) = (3..5)
+            .map(|seed| play(style(), presets::wing_play(), seed, 90.0)[0])
+            .fold((0.0, 0.0), |(p, a), t| {
+                (p + t.ppda_passes, a + t.ppda_actions)
+            });
+        passes / f32::max(actions, 1.0)
     };
-    let gp = TeamStats {
-        high_regains: total(presets::gegenpress),
-        ..Default::default()
-    };
-    let bus = TeamStats {
-        high_regains: total(presets::park_the_bus),
-        ..Default::default()
-    };
-    assert!(
-        gp.high_regains > bus.high_regains * 1.5,
-        "gegenpress {} bus {}",
-        gp.high_regains,
-        bus.high_regains
-    );
+    let (gp, bus) = (ppda(presets::gegenpress), ppda(presets::park_the_bus));
+    assert!(gp * 2.0 < bus, "PPDA gegenpress {gp:.1} bus {bus:.1}");
 }

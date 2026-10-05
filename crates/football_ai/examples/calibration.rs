@@ -59,7 +59,17 @@ fn main() {
     let k = teams.len() as f32;
     let avg = |f: &dyn Fn(&TeamStats) -> f32| teams.iter().map(|t| f(t)).sum::<f32>() / k;
 
-    println!("Per team per match, {n} matches between archetypes rated 80\n");
+    let in_play: f32 = sims
+        .iter()
+        .map(|s| {
+            (s.stats.teams[0].possession_ticks + s.stats.teams[1].possession_ticks) as f32
+                * s.state.dt
+                / 60.0
+        })
+        .sum::<f32>()
+        / sims.len() as f32;
+    println!("Per team per match, {n} matches between archetypes rated 80");
+    println!("ball in play {in_play:.0} min per match (real: 55-60)\n");
     println!("{:<18} {:>8}   {:>12}", "statistic", "sim", "real (approx)");
     let rows: Vec<(&str, f32, &str)> = vec![
         ("goals", avg(&|t| t.goals as f32), "1.4"),
@@ -82,6 +92,11 @@ fn main() {
             "possessions lost",
             avg(&|t| t.possessions_lost as f32),
             "100-130",
+        ),
+        (
+            "regains att. 3rd",
+            avg(&|t| t.regains_final_third as f32),
+            "5-10",
         ),
         ("saves", avg(&|t| t.saves as f32), "3"),
         ("fouls", avg(&|t| t.fouls as f32), "10-12"),

@@ -305,6 +305,11 @@ fn score_candidate(
         kind == PassKind::Cross,
     );
     let mut misplace = misplace_probability(passer, distance, lofted);
+    if lofted {
+        // Striking a long ball with a man on you: no time to set the body.
+        let pressed = pressure_at(state, team, passer.pos);
+        misplace = (misplace + 0.25 * pressed).min(0.9);
+    }
     if kind == PassKind::Cross {
         // Most crosses fail on delivery.
         misplace = (misplace + 0.1 + 0.15 * (1.0 - passer.attrs.long_passing)).min(0.9);

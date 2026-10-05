@@ -216,24 +216,27 @@ top-flight numbers (per team per match, 30 matches between archetypes):
 
 | | sim | real |
 |---|---|---|
-| goals / xG | 1.8 / 1.4 | 1.4 / 1.4 |
-| shots (on target) | 12.2 (6.6) | 12–13 (4–5) |
-| pass accuracy | 76% | 78–84% |
-| possessions lost | 130 | 100–130 |
-| fouls / yellow cards | 11.8 / 1.5 | 10–12 / 1.7 |
-| corners | 2.7 | 5 |
-| saves | 4.8 | 3 |
+| ball in play | 59 min | 55–60 min |
+| goals / xG | 1.9 / 1.9 | 1.4 / 1.4 |
+| shots (on target) | 13.6 (4.8) | 12–13 (4–5) |
+| saves | 3.0 | 3 |
+| pass accuracy | 74% | 78–84% |
+| long balls | 68 | 50–70 |
+| fouls / yellow cards | 14.6 / 1.9 | 10–12 / 1.7 |
+| corners | 2.8 | 5 |
+| 80 vs 77 upset rate | about 20% | about 25% |
 
-The ball is in play about 70 minutes of 90 (restarts take realistic
-dead-ball time: throw-ins, goal kicks, free kicks, goal celebrations).
+Restarts take realistic dead-ball time, keepers get one save attempt per
+shot and leave shots that are going wide, and decision xG matches goals.
 Known gaps, in priority order:
 
-* Too many challenges (about 160 per team, where real football has around
-  50 ground duels and 17 tackles) and passes (about 670 vs 450–550), with
-  too many long balls (130 vs 60) and interceptions.
-* Shots are a little too accurate, crosses and corners too rare.
-* Upsets across a rating gap are rarer than in real football, and some
-  style match-ups are lopsided (Counter-Attack is the strongest style,
+* Midfield gives too little resistance: about 100 final-third entries per
+  team (real: about 50), so matches carry too many passes (about 700),
+  challenges (about 200; real: about 50 ground duels) and turnovers, and a
+  few too many goals.
+* Crosses (10 vs 15–20), corners and offsides are too rare; through balls
+  (20 vs 2–6) too common.
+* Some style match-ups are lopsided (Counter-Attack is the strongest style,
   Park the Bus and Tiki-Taka create little).
 
 `style_report`, `trend_report`, `headless_match` and the SVG snapshot

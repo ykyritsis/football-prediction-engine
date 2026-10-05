@@ -138,7 +138,7 @@ fn a_star_finisher_outperforms_an_ordinary_striker() {
 #[test]
 fn the_weaker_team_sometimes_wins() {
     // Three overall points apart: a clear favourite, not a foregone conclusion.
-    let sims = matches(0..24, |s| {
+    let sims = matches(0..36, |s| {
         let styles = presets::team_archetypes();
         (
             Squad::generated(styles[s as usize % 6].clone(), 80),
@@ -165,9 +165,10 @@ fn the_weaker_team_sometimes_wins() {
         dog_wins += (a > h) as u32;
     }
     assert!(fav > dog, "favourite {fav} points, underdog {dog}");
-    // Real football: the underdog takes roughly a third of the points.
-    assert!(dog >= 15, "underdog took only {dog} points from 24 matches");
-    assert!(dog_wins >= 3, "the underdog won only {dog_wins} of 24");
+    // Real football: the underdog takes roughly a third of the points and
+    // wins about one match in five.
+    assert!(dog >= 22, "underdog took only {dog} points from 36 matches");
+    assert!(dog_wins >= 4, "the underdog won only {dog_wins} of 36");
 }
 
 #[test]

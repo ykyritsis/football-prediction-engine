@@ -184,7 +184,7 @@ pub struct Simulation {
 }
 
 /// After a challenge the carrier cannot be challenged again for this long.
-pub const DUEL_IMMUNITY_SECONDS: f32 = 2.0;
+pub const DUEL_IMMUNITY_SECONDS: f32 = 4.0;
 
 /// Dead-ball time after a goal before the kick-off.
 pub const GOAL_DEAD_BALL_SECONDS: f32 = 60.0;
@@ -520,6 +520,9 @@ impl Simulation {
         )
         .min(1.0);
         let mut spread = (1.0 - acc) * c.distance * 0.07 + 0.15;
+        if lofted {
+            spread *= 1.0 + 0.8 * crate::eval::pressure_at(&self.state, p.team, p.pos);
+        }
         if c.kind == crate::passing::PassKind::Cross {
             // Whipped in at pace from a wide angle: delivery is hard to weight.
             spread += 1.0 + (1.0 - acc) * 3.0;
@@ -585,7 +588,7 @@ impl Simulation {
         let over = match kind {
             ShotKind::Penalty => 0.04,
             ShotKind::FreeKick => 0.25,
-            ShotKind::OpenPlay => (0.3 + 0.015 * dist * (1.2 - finishing)).max(0.08),
+            ShotKind::OpenPlay => (0.42 + 0.015 * dist * (1.2 - finishing)).max(0.08),
         };
         if self.rng.chance(over) {
             let side = if target.y >= 0.0 { 1.0 } else { -1.0 };
@@ -968,13 +971,20 @@ impl Simulation {
     /// recovers slowly at walking pace; tired players lose speed.
     fn update_fatigue(&mut self) {
         let dt = self.state.dt;
+        // Breathers restore short-term energy, but fatigue accumulates over
+        // the match: recovery stops short of a ceiling that falls with time.
+        let ceiling = 1.0 - 0.25 * (self.match_seconds() / 5400.0).min(1.0);
         for p in &mut self.state.players {
             if p.sent_off {
                 continue;
             }
             let frac = (p.vel.length() / p.base_top_speed).min(1.0);
             let drain = (0.00003 + 0.0007 * frac * frac * frac) * (1.4 - p.attrs.stamina);
-            let recover = if frac < 0.25 { 0.0002 } else { 0.0 };
+            let recover = if frac < 0.25 && p.energy < ceiling {
+                0.0002
+            } else {
+                0.0
+            };
             p.energy = (p.energy - (drain - recover) * dt).clamp(0.0, 1.0);
             let mut factor = 0.8 + 0.2 * p.energy;
             if p.injured {
@@ -1417,7 +1427,7 @@ impl Simulation {
             let keeper_reach =
                 if p.is_goalkeeper() && crate::pitch::in_own_box_local(p.team.to_local(p.pos)) {
                     if shot.is_some_and(|s| s.shooter.team() != p.team && !s.keeper_attempted) {
-                        1.6 + 1.7 * p.attrs.goalkeeping
+                        2.0 + 1.6 * p.attrs.goalkeeping
                     } else {
                         1.8
                     }
@@ -1508,10 +1518,14 @@ impl Simulation {
                     if s.keeper_attempted {
                         continue;
                     }
+                    // A shot going wide is left alone (and is not a save).
+                    if s.target.y.abs() > GOAL_HALF_WIDTH + 0.3 {
+                        continue;
+                    }
                     let gk = exec(&self.state, &p, p.attrs.goalkeeping);
                     let save = match s.kind {
                         ShotKind::Penalty => 0.1 + 0.25 * gk,
-                        _ => (0.15 + 0.75 * gk - 0.25 * s.xg).clamp(0.05, 0.95),
+                        _ => (0.3 + 0.7 * gk - 0.25 * s.xg).clamp(0.05, 0.95),
                     };
                     let saved = self.rng.chance(save);
                     let held = self.rng.chance(0.55);

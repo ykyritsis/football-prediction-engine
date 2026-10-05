@@ -27,7 +27,8 @@ fn players_tire_and_slow_down() {
     for p in sim
         .state
         .on_pitch(TeamSide::Home)
-        .filter(|p| !p.is_goalkeeper())
+        // Starters only: an injury replacement may have just come on fresh.
+        .filter(|p| !p.is_goalkeeper() && sim.stats.line(p.id).on == 0.0)
     {
         assert!(
             p.energy < 1.0 && p.energy > 0.0,
@@ -89,7 +90,21 @@ fn managers_substitute_tired_players_at_dead_balls() {
         assert!(!subs.is_empty(), "{side:?} made no substitutions");
         assert!(subs.len() <= MAX_SUBSTITUTIONS as usize);
         assert_eq!(sim.state.subs_used[side.index()] as usize, subs.len());
-        for (tick, _) in &subs {
+        for (tick, e) in &subs {
+            let MatchEvent::Substitution { slot, .. } = e else {
+                unreachable!()
+            };
+            // Injured players are replaced at once; anything else waits.
+            let injured = sim.events.iter().any(|(t, e)| {
+                t <= tick
+                    && *e
+                        == MatchEvent::Injury {
+                            player: PlayerId::new(side, *slot as usize),
+                        }
+            });
+            if injured {
+                continue;
+            }
             // From the 55th minute (second half), never in the first half.
             assert!(
                 *tick as f32 * sim.state.dt > half,
