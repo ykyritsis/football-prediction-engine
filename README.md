@@ -91,37 +91,68 @@ squads that suit each style, and two example star profiles. The star
 profiles' ratings are illustrative placeholders: real values should come from
 the game data.
 
-### Trend breakers
+### Trend breakers and the randomness of football
 
 Ratings set expectations; they do not decide matches.
 
 * **Execution vs expectation.** Decisions use a player's attributes;
   what happens on the pitch uses his *execution* value
   (`execution::exec`). Above 0.8 (about 87 rated) the curve is
-  non-linear, so elite finishers, dribblers, passers and keepers produce
-  results the model does not predict.
+  non-linear, so elite finishers, dribblers, passers, keepers and sprinters
+  produce results the model does not predict. Even so, nobody is flawless
+  (execution caps at 1.1) or unstoppable in a duel, and elite dribblers get
+  double-marked.
 * **Match-day form.** Each team draws a "team day" and each player an
   individual form from the match seed, scaled by his consistency (PES
   "Form" 1–8): erratic players swing more. Form scales execution by up to
-  ±25%. Fighting Spirit lifts a player while his team is behind, a Captaincy
-  holder lifts the rest of the XI, a Super-sub arrives in good form. The
-  sandbox HUD shows each player's condition.
-* **Football's own randomness.** Carriers can be crowded off the ball,
-  crosses and long balls are aerial duels (heading, jump, strength,
-  height), defenders lead the carrier when they press.
+  ±25%. Captaincy lifts the XI, a Super-sub arrives in good form.
+* **In-match confidence.** Goals, big saves and assists lift a player; a
+  missed sitter, an own goal or a howler knocks him, and it fades over about
+  20 minutes. A goal lifts the scoring side a little and rattles the other,
+  unless the player has Fighting Spirit, which a setback only fires up.
+* **Game state.** Teams protect a lead from the 65th minute (55th when two
+  up) and chase from the 55th (30th when two down); chasing teams open up and
+  get caught on the break, so comebacks and late collapses both happen.
+* **Things go wrong.** Passes are shanked now and then, shots are skied
+  (more under pressure and from distance), keepers spill catches, blocked
+  shots deflect past wrong-footed keepers (own goals when they were going
+  wide), shots are sometimes struck perfectly (screamers), and against a
+  packed box players try their luck from distance.
+* **Set pieces.** On corners and wide free kicks the five best in the air
+  (centre-backs included) attack the near post, far post, six-yard line,
+  penalty spot and edge; defenders mark them by heading ability and hold
+  two zones; the taker whips it in (one in five is played short) and a
+  ball met in the box is a header at goal.
+* **Keepers** react to every shot on target, with saves depending on
+  reaction time (point-blank is hard) and how far they have to dive.
 
-`trend_report` (24 matches each):
+`calibration` (60 matches between archetypes rated 80):
 
-```text
-80-rated favourite at home to a 77-rated side: W10 D7 L7 (underdog wins 29%)
-Wing Play 79 with C. Ronaldo up front:  230 shots  xG 38.1  goals 59
-same team with an ordinary striker:     166 shots  xG 28.4  goals 33
-```
+| Unpredictability | sim | real |
+|---|---|---|
+| goals per team / xG | 1.4 / 1.3 | 1.4 / 1.4 |
+| team scoring first fails to win | 26% | 30–35% |
+| xG winner (by 0.3+) fails to win | 28% | 35–40% |
+| 0-0 / 4+ goals | 10% / 30% | 7–8% / 20–25% |
+| goals from shots under 0.05 xG | 11% | 8–10% |
+| own goals / keeper howlers per match | 0.07 / 0.05 | 0.1 / 0.05–0.1 |
+| injuries / red cards per match | 0.47 / 0.27 | 0.3–0.5 / 0.1–0.2 |
+| 80 vs 77, favourite W–D–L | 10–8–6 | about 50–25–25% |
 
-Tests in `tests/trend_breakers.rs` pin these: form is seeded and varies, a
-star finisher outscores an ordinary striker, the weaker side takes about a
-third of the points across a three-point gap, a low block concedes less
-than an open game, and carriers get dispossessed in traffic.
+`trend_report` (Wing Play 79 with and without a star, same 40 opponents):
+
+| | points per match | his goals per match |
+|---|---|---|
+| without a star | 0.85 | |
+| with C. Ronaldo | 1.17 | 0.43 |
+| with K. Mbappé | 1.12 | 0.43 |
+| with L. Messi | 1.42 | 0.80 |
+
+Tests in `tests/trend_breakers.rs` and `tests/chaos.rs` pin these: form is
+seeded and varies, scoring lifts confidence, stars change results without
+winning every match, the weaker side takes points across a rating gap, a
+low block concedes less while it holds its shape, and lucky goals,
+set-piece goals, centre-back goals, howlers and own goals all happen.
 
 ### Does identity change the football?
 
@@ -217,25 +248,24 @@ top-flight numbers (per team per match, 30 matches between archetypes):
 | | sim | real |
 |---|---|---|
 | ball in play | 59 min | 55–60 min |
-| goals / xG | 1.9 / 1.9 | 1.4 / 1.4 |
-| shots (on target) | 13.6 (4.8) | 12–13 (4–5) |
-| saves | 3.0 | 3 |
+| goals / xG | 1.4 / 1.3 | 1.4 / 1.4 |
+| shots (on target) | 10.1 (3.3) | 12–13 (4–5) |
+| saves | 1.9 | 3 |
 | pass accuracy | 74% | 78–84% |
-| long balls | 68 | 50–70 |
-| fouls / yellow cards | 14.6 / 1.9 | 10–12 / 1.7 |
-| corners | 2.8 | 5 |
-| 80 vs 77 upset rate | about 20% | about 25% |
+| long balls | 65 | 50–70 |
+| fouls / yellow cards | 14.7 / 1.9 | 10–12 / 1.7 |
+| corners | 2.5 | 5 |
 
-Restarts take realistic dead-ball time, keepers get one save attempt per
-shot and leave shots that are going wide, and decision xG matches goals.
+Restarts take realistic dead-ball time and decision xG matches goals.
 Known gaps, in priority order:
 
 * Midfield gives too little resistance: about 100 final-third entries per
   team (real: about 50), so matches carry too many passes (about 700),
   challenges (about 200; real: about 50 ground duels) and turnovers, and a
   few too many goals.
-* Crosses (10 vs 15–20), corners and offsides are too rare; through balls
-  (20 vs 2–6) too common.
+* Shots and saves are a little low, red cards a little high; crosses
+  (13 vs 15–20), corners and offsides too rare; through balls (21 vs 2–6)
+  too common.
 * Some style match-ups are lopsided (Counter-Attack is the strongest style,
   Park the Bus and Tiki-Taka create little).
 

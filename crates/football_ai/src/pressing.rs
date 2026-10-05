@@ -329,6 +329,16 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
             n += 1;
         }
     }
+    // Double up on an elite dribbler in the final two thirds: nobody lets a
+    // Messi go one against one.
+    if plan.swarm[0].is_none()
+        && carrier.attrs.dribbling >= ELITE_DRIBBLER
+        && carrier_local.x < HALF_LENGTH / 3.0
+    {
+        plan.swarm[0] = ranked.iter().skip(1).map(|&(_, id)| id).find(|&id| {
+            Some(id) != plan.cover && state.player(id).pos.distance(carrier.pos) < 15.0
+        });
+    }
     // Danger zone: double up, the second man protecting the goal.
     // Only when the carrier can actually shoot: a blocker pulled out to a wide
     // carrier leaves the centre of the box empty.
@@ -344,6 +354,9 @@ pub fn plan_press(state: &MatchState, defending: TeamSide, phase: TeamPhase) -> 
     }
     plan
 }
+
+/// Dribbling (0..1) at which a carrier is double-marked.
+pub const ELITE_DRIBBLER: f32 = 0.85;
 
 /// Where a shot-blocking defender stands: on the line from the ball to the
 /// centre of the goal, a couple of metres from the carrier.

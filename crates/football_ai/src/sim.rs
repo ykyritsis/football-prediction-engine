@@ -145,6 +145,10 @@ pub enum MatchEvent {
         slot: u8,
         bench_index: u8,
     },
+    /// A goalkeeper spilled a shot he should have held.
+    KeeperError {
+        keeper: PlayerId,
+    },
     /// The carrier lost the ball in traffic.
     Dispossessed {
         by: PlayerId,
@@ -181,7 +185,33 @@ pub struct Simulation {
     pub bench_used: [Vec<bool>; 2],
     /// Team and player statistics so far.
     pub stats: crate::stats::MatchStats,
+    /// Taker of the last big chance, until it is scored or the next goal.
+    big_chance: Option<PlayerId>,
 }
+
+/// Chance that an open-play shot is struck perfectly (a screamer): a base
+/// rate plus a share growing with (execution) shot power squared.
+pub const SCREAMER_BASE: f32 = 0.02;
+pub const SCREAMER_POWER: f32 = 0.06;
+/// In-match confidence (see [`Player::confidence`]): limits, swings and how
+/// quickly it fades (seconds for it to fall by about two thirds).
+pub const CONFIDENCE_CAP: f32 = 0.6;
+pub const CONFIDENCE_FADE_SECONDS: f32 = 1200.0;
+pub const GOAL_BOOST: f32 = 0.3;
+pub const BIG_CHANCE_XG: f32 = 0.25;
+pub const MISSED_CHANCE_KNOCK: f32 = 0.12;
+pub const HOWLER_KNOCK: f32 = 0.3;
+pub const TEAM_GOAL_SWING: f32 = 0.03;
+
+/// A keeper reacts to an opponent's shot on target once the ball is this
+/// close to him.
+pub const KEEPER_REACT_RADIUS: f32 = 4.5;
+/// Chance that a blocked shot deflects on towards goal, wrong-footing the keeper.
+pub const DEFLECTION_ON: f32 = 0.07;
+/// Chance of a shanked pass, before skill and form.
+pub const MISHIT_BASE: f32 = 0.03;
+/// Chance a keeper spills a shot he has caught, before skill and form.
+pub const FUMBLE_BASE: f32 = 0.05;
 
 /// After a challenge the carrier cannot be challenged again for this long.
 pub const DUEL_IMMUNITY_SECONDS: f32 = 4.0;
@@ -282,6 +312,7 @@ impl Simulation {
             clock,
             bench_used: [Vec::new(), Vec::new()],
             stats,
+            big_chance: None,
         };
         for side in TeamSide::BOTH {
             sim.bench_used[side.index()] = vec![false; sim.squads[side.index()].bench.len()];
@@ -326,9 +357,57 @@ impl Simulation {
     }
 
     fn event(&mut self, e: MatchEvent) {
+        self.update_confidence(&e);
         let seconds = self.match_seconds();
         self.stats.record(&self.state, seconds, &e);
         self.events.push((self.state.tick, e));
+    }
+
+    /// Confidence swings: what happens to a player, and to his team, changes
+    /// how well he plays for the next while.
+    fn update_confidence(&mut self, e: &MatchEvent) {
+        let nudge = |st: &mut MatchState, id: PlayerId, d: f32| {
+            let p = &mut st.players[id.index()];
+            p.confidence = (p.confidence + d).clamp(-CONFIDENCE_CAP, CONFIDENCE_CAP);
+        };
+        match *e {
+            MatchEvent::Shot { by, xg, kind }
+                if kind == ShotKind::OpenPlay && xg >= BIG_CHANCE_XG =>
+            {
+                // Charged now, refunded if it goes in.
+                nudge(&mut self.state, by, -MISSED_CHANCE_KNOCK);
+                self.big_chance = Some(by);
+            }
+            MatchEvent::Goal { team, scorer } => {
+                if let Some(s) = scorer {
+                    if s.team() == team {
+                        let refund = if self.big_chance == Some(s) {
+                            MISSED_CHANCE_KNOCK
+                        } else {
+                            0.0
+                        };
+                        nudge(&mut self.state, s, GOAL_BOOST + refund);
+                    } else {
+                        nudge(&mut self.state, s, -HOWLER_KNOCK);
+                    }
+                }
+                self.big_chance = None;
+                // The whole side lifts; the other is rattled, unless the
+                // player has Fighting Spirit, which a setback only fires up.
+                for p in &mut self.state.players {
+                    let d = if p.team == team || p.fighting_spirit {
+                        TEAM_GOAL_SWING
+                    } else {
+                        -TEAM_GOAL_SWING
+                    };
+                    p.confidence = (p.confidence + d).clamp(-CONFIDENCE_CAP, CONFIDENCE_CAP);
+                }
+            }
+            MatchEvent::KeeperError { keeper } => nudge(&mut self.state, keeper, -HOWLER_KNOCK),
+            MatchEvent::Save { by, .. } => nudge(&mut self.state, by, 0.04),
+            MatchEvent::YellowCard { player } => nudge(&mut self.state, player, -0.05),
+            _ => {}
+        }
     }
 
     /// Reset positions for a kick-off by `team`.
@@ -527,6 +606,11 @@ impl Simulation {
             // Whipped in at pace from a wide angle: delivery is hard to weight.
             spread += 1.0 + (1.0 - acc) * 3.0;
         }
+        // Everyone shanks one now and then, more so the less able and the
+        // more off-colour.
+        if self.rng.chance(MISHIT_BASE * (1.3 - acc).max(0.1)) {
+            spread = spread * 3.0 + 4.0;
+        }
         let along = (c.target - p.pos).normalize_or_zero();
         let err = along.perp() * self.rng.range(-spread, spread)
             + along * self.rng.range(-spread, spread) * 0.5;
@@ -579,8 +663,26 @@ impl Simulation {
             ShotKind::FreeKick => 0.4 + (1.0 - set_pieces).max(0.0) * dist * 0.05,
             ShotKind::OpenPlay => {
                 let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
-                (0.9 + (1.0 - finishing) * dist * 0.15 + pressure * 2.0).max(0.4)
+                (1.3 + (1.0 - finishing) * dist * 0.15 + pressure * 2.0).max(0.5)
             }
+        };
+        // Now and then a shot is struck perfectly: a screamer the chance
+        // never deserved. More likely for powerful strikers on a good day.
+        let power = exec(&self.state, &p, p.attrs.kicking_power);
+        let sweet = kind == ShotKind::OpenPlay
+            && self
+                .rng
+                .chance(SCREAMER_BASE + SCREAMER_POWER * power * power);
+        // A first-time header: less placement, less pace.
+        let header = kind == ShotKind::OpenPlay
+            && self.state.ball.aerial_touch
+            && self.state.seconds_since(self.state.ball.owner_since) < 0.5;
+        let spread = if sweet {
+            spread * 0.3
+        } else if header {
+            spread + 1.0 + (1.0 - exec(&self.state, &p, p.attrs.aerial)) * 2.0
+        } else {
+            spread
         };
         let mut target = s.target + Vec2::new(0.0, self.rng.range(-spread, spread));
         // The ball has no height: a shot skied over the bar is modelled as
@@ -588,14 +690,23 @@ impl Simulation {
         let over = match kind {
             ShotKind::Penalty => 0.04,
             ShotKind::FreeKick => 0.25,
-            ShotKind::OpenPlay => (0.42 + 0.015 * dist * (1.2 - finishing)).max(0.08),
+            ShotKind::OpenPlay if sweet => 0.03,
+            ShotKind::OpenPlay if header => {
+                (0.65 - 0.3 * exec(&self.state, &p, p.attrs.aerial)).max(0.25)
+            }
+            ShotKind::OpenPlay => {
+                // Snatched under pressure: more often skied.
+                let pressure = crate::eval::pressure_at(&self.state, p.team, p.pos);
+                (0.2 + 0.02 * dist * (1.3 - finishing) + 0.15 * pressure).max(0.08)
+            }
         };
         if self.rng.chance(over) {
             let side = if target.y >= 0.0 { 1.0 } else { -1.0 };
             target.y = side * (GOAL_HALF_WIDTH + 1.5);
         }
         let dir = (target - p.pos).normalize_or_zero();
-        let speed = SHOT_SPEED * (0.85 + 0.15 * p.attrs.kicking_power);
+        let speed =
+            SHOT_SPEED * (0.85 + 0.15 * p.attrs.kicking_power) * if header { 0.65 } else { 1.0 };
         let st = &mut self.state;
         st.ball.vel = dir * speed;
         st.ball.pos = p.pos + dir * 0.4;
@@ -613,6 +724,9 @@ impl Simulation {
             xg: s.xg,
             keeper_attempted: false,
             kind,
+            origin: p.pos,
+            keeper_odds: if sweet { 0.55 } else { 1.0 },
+            deflected_by: None,
         });
         self.release(by);
         self.event(MatchEvent::Shot { by, xg: s.xg, kind });
@@ -727,7 +841,7 @@ impl Simulation {
         // Some fouls leave the victim with a knock.
         let resistance = self.state.player(on).attrs.injury_resistance;
         let p_injury =
-            (0.015 + if challenge.from_behind() { 0.03 } else { 0.0 }) * (1.3 - resistance);
+            (0.008 + if challenge.from_behind() { 0.015 } else { 0.0 }) * (1.3 - resistance);
         if self.rng.chance(p_injury) {
             self.injure(on);
         }
@@ -844,7 +958,8 @@ impl Simulation {
             return;
         }
         let c = self.state.player(cid).clone();
-        let dribbling = exec(&self.state, &c, c.attrs.dribbling);
+        let dribbling =
+            exec(&self.state, &c, c.attrs.dribbling).min(crate::execution::DUEL_DRIBBLING_CAP);
         let mut hazard = 0.0;
         let mut nearest: Option<(f32, PlayerId)> = None;
         for d in self.state.on_pitch(c.team.opponent()) {
@@ -857,7 +972,7 @@ impl Simulation {
             }
             let closeness = (2.2 - dist) / 2.2;
             let tackling = exec(&self.state, d, d.attrs.tackling);
-            hazard += 0.55 * closeness * (0.45 + tackling - dribbling).max(0.05);
+            hazard += 0.55 * closeness * (0.45 + tackling - dribbling).max(0.25);
             if nearest.is_none_or(|n| dist < n.0) {
                 nearest = Some((dist, d.id));
             }
@@ -986,6 +1101,7 @@ impl Simulation {
                 0.0
             };
             p.energy = (p.energy - (drain - recover) * dt).clamp(0.0, 1.0);
+            p.confidence *= 1.0 - dt / CONFIDENCE_FADE_SECONDS;
             let mut factor = 0.8 + 0.2 * p.energy;
             if p.injured {
                 factor *= 0.85;
@@ -1091,7 +1207,8 @@ impl Simulation {
     /// 2. from the 60th minute, a tactical change for the scoreline: an
     ///    attacker on when chasing, a defender on when protecting a lead
     ///    (keeping one substitution in reserve for injuries until the 85th);
-    /// 3. from the 55th minute, the most tired outfield player (energy below 0.6).
+    /// 3. from the 55th minute, the most tired outfield player (energy below
+    ///    0.6, rising to 0.9 by the 85th).
     fn consider_substitutions(&mut self) {
         let minute = self.match_seconds() / 60.0;
         for team in TeamSide::BOTH {
@@ -1174,15 +1291,17 @@ impl Simulation {
                 }
             }
 
-            // 3. Fatigue.
+            // 3. Fatigue: the bar rises as the match goes on, so late on the
+            // manager brings on fresh legs for whoever has run most.
             if minute < 55.0 {
                 continue;
             }
+            let tired_below = 0.6 + 0.3 * ((minute - 55.0) / 30.0).clamp(0.0, 1.0);
             let tired = self
                 .state
                 .on_pitch(team)
                 .filter(outfield)
-                .filter(|p| p.energy < 0.6)
+                .filter(|p| p.energy < tired_below)
                 .min_by(|a, b| cmp_f32(a.energy, b.energy).then(a.id.cmp(&b.id)))
                 .map(|p| (p.id.slot(), p.role));
             if let Some((slot, role)) = tired {
@@ -1415,8 +1534,11 @@ impl Simulation {
         // Candidates: within reach, ordered intended receiver first, then by distance and id.
         let mut cands: Vec<(u8, f32, PlayerId)> = Vec::new();
         for p in &self.state.players {
+            // A keeper on the ground can still throw himself at a shot.
+            let grounded_keeper_vs_shot = p.is_goalkeeper()
+                && shot.is_some_and(|s| s.shooter.team() != p.team && !s.keeper_attempted);
             if p.sent_off
-                || p.stun > 0
+                || (p.stun > 0 && !grounded_keeper_vs_shot)
                 || (p.action_cooldown > 0 && self.state.ball.last_touch == Some(p.id))
             {
                 continue;
@@ -1427,7 +1549,9 @@ impl Simulation {
             let keeper_reach =
                 if p.is_goalkeeper() && crate::pitch::in_own_box_local(p.team.to_local(p.pos)) {
                     if shot.is_some_and(|s| s.shooter.team() != p.team && !s.keeper_attempted) {
-                        2.0 + 1.6 * p.attrs.goalkeeping
+                        // He reacts to any shot on target that comes near
+                        // him; how far he has to dive decides the save.
+                        KEEPER_REACT_RADIUS
                     } else {
                         1.8
                     }
@@ -1478,7 +1602,7 @@ impl Simulation {
                 );
                 // Defenders face the ball; attackers have to read its flight.
                 let home = if crate::pitch::in_own_box_local(dp.team.to_local(ball_pos)) {
-                    0.08
+                    0.15
                 } else {
                     0.0
                 };
@@ -1523,20 +1647,57 @@ impl Simulation {
                         continue;
                     }
                     let gk = exec(&self.state, &p, p.attrs.goalkeeping);
+                    // Reaction time: a shot from point-blank range leaves the
+                    // keeper little chance, one from distance he sees all the way.
+                    let reaction = ((s.origin.distance(p.pos) - 2.0) / 14.0).clamp(0.3, 1.0);
+                    // The dive: distance from the keeper to the ball's line of
+                    // flight, against how far he can reach in the time.
+                    let dir = self.state.ball.vel.normalize_or_zero();
+                    let rel = p.pos - ball_pos;
+                    let lateral = (dir.x * rel.y - dir.y * rel.x).abs();
+                    let dive = 1.6 + 1.2 * gk + 1.4 * reaction;
+                    let mut positioned = (1.0 - (lateral - dive).max(0.0) / 1.2).clamp(0.0, 1.0);
+                    if p.stun > 0 {
+                        positioned *= 0.4;
+                    }
                     let save = match s.kind {
                         ShotKind::Penalty => 0.1 + 0.25 * gk,
-                        _ => (0.3 + 0.7 * gk - 0.25 * s.xg).clamp(0.05, 0.95),
+                        _ => ((0.7 + 0.35 * gk)
+                            * (0.75 + 0.25 * reaction)
+                            * positioned
+                            * s.keeper_odds)
+                            .clamp(0.0, 0.95),
                     };
+                    if std::env::var("DBGK").is_ok() {
+                        eprintln!("KEEPER lateral {lateral:.2} dive {dive:.2} reaction {reaction:.2} gk {gk:.2} odds {:.2} save {save:.2}", s.keeper_odds);
+                    }
                     let saved = self.rng.chance(save);
                     let held = self.rng.chance(0.55);
                     let deflect = self.rng.range(-1.0, 1.0);
+                    // A howler: the catch spilled. Weaker and out-of-form
+                    // keepers drop more.
+                    let fumble = self.rng.chance(FUMBLE_BASE * (1.3 - gk).max(0.1));
                     if let Some(sh) = self.state.ball.shot.as_mut() {
                         sh.keeper_attempted = true;
                     }
                     if !saved {
                         continue;
                     }
-                    if held {
+                    if held && fumble {
+                        // Spilled at his feet: a scramble.
+                        let st = &mut self.state;
+                        st.ball.vel =
+                            Vec2::new(deflect, 1.0 - deflect.abs()).normalize_or_zero() * 3.0;
+                        st.ball.last_touch = Some(id);
+                        st.ball.shot = None;
+                        st.ball.pass = None;
+                        self.event(MatchEvent::Save {
+                            by: id,
+                            held: false,
+                        });
+                        self.event(MatchEvent::KeeperError { keeper: id });
+                        return;
+                    } else if held {
                         Self::give_ball(&mut self.state, id);
                         self.state.ball.shot = None;
                         self.state.ball.pass = None;
@@ -1556,9 +1717,37 @@ impl Simulation {
                     self.event(MatchEvent::Save { by: id, held });
                     return;
                 }
-                // Outfield block: often deflected behind for a corner.
-                if self.rng.chance(0.5) {
+                // Outfield block: often deflected behind for a corner, now
+                // and then on past a wrong-footed keeper.
+                if s.deflected_by.is_none() && self.rng.chance(0.7) {
                     let behind = self.rng.range(-1.0, 1.0);
+                    if behind.abs() < DEFLECTION_ON {
+                        let v = self.state.ball.vel;
+                        let turn = behind * 2.5;
+                        let (c, sn) = (turn.cos(), turn.sin());
+                        let st = &mut self.state;
+                        let nv = Vec2::new(v.x * c - v.y * sn, v.x * sn + v.y * c) * 0.8;
+                        st.ball.vel = nv;
+                        // A shot already on target stays the shooter's goal;
+                        // one diverted in from wide is an own goal.
+                        let on_frame = s.target.y.abs() < GOAL_HALF_WIDTH;
+                        st.ball.last_touch = Some(if on_frame { s.shooter } else { id });
+                        st.players[id.index()].action_cooldown = (0.4 / st.dt) as u16;
+                        // Where the new path crosses the goal line.
+                        let goal_x = s.shooter.team().opponent().own_goal().x;
+                        let cross_y = if nv.x.abs() > 1e-3 && (goal_x - st.ball.pos.x) * nv.x > 0.0
+                        {
+                            st.ball.pos.y + nv.y * (goal_x - st.ball.pos.x) / nv.x
+                        } else {
+                            HALF_WIDTH
+                        };
+                        if let Some(sh) = st.ball.shot.as_mut() {
+                            sh.keeper_odds *= 0.35;
+                            sh.deflected_by = Some(id);
+                            sh.target = Vec2::new(goal_x, cross_y);
+                        }
+                        return;
+                    }
                     if behind.abs() > 0.55 {
                         self.state.ball.last_touch = Some(id);
                         self.award_corner(p.team.opponent(), ball_pos, behind);

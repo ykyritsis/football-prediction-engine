@@ -188,15 +188,21 @@ pub const THROW_IN_RANGE: f32 = 24.0;
 
 /// Scale from geometric chance quality to the simulation's conversion rate
 /// (calibrated: predicted xG matches goals scored).
-pub const XG_EXECUTION: f32 = 1.0;
+pub const XG_EXECUTION: f32 = 0.8;
+
+/// Against a packed box (three or more defenders in it), shots from outside
+/// the area are taken at this fraction of the usual threshold...
+pub const LONG_SHOT_GATE: f32 = 0.3;
+/// ...and with this much extra appeal per defender beyond two.
+pub const LONG_SHOT_APPETITE: f32 = 0.005;
 
 /// Fraction of a player's shot threshold he will actually shoot at.
-pub const SHOT_GATE: f32 = 0.4;
+pub const SHOT_GATE: f32 = 0.32;
 
 /// Weight of a shot's xG against keeping the ball. Zone values include the
 /// option of a better chance later, which players (rightly) discount: without
 /// this weight they walk the ball into the net instead of shooting.
-pub const SHOT_VALUE: f32 = 1.2;
+pub const SHOT_VALUE: f32 = 0.69;
 
 /// Team-local aim point: the corner further from the keeper.
 fn aim_point(state: &MatchState, shooter: &Player) -> Vec2 {
@@ -268,12 +274,25 @@ pub fn evaluate_shot(state: &MatchState, shooter: &Player) -> Option<ShotOption>
     let b = &shooter.behaviour;
     // Role thresholds are cautious "good chance" levels; players take
     // somewhat less than that on.
-    let threshold = (b.shot_threshold + state.team(side).tactics.shot_selectivity) * SHOT_GATE;
+    let mut threshold = (b.shot_threshold + state.team(side).tactics.shot_selectivity) * SHOT_GATE;
+    // Against a packed box the way in is shut: from outside it, with a sight
+    // of goal, have a go.
+    let mut speculative = 0.0;
+    if dist > 16.5 {
+        let packed = state
+            .on_pitch(side.opponent())
+            .filter(|o| !o.is_goalkeeper() && crate::rules::in_penalty_area(side.opponent(), o.pos))
+            .count();
+        if packed >= 3 {
+            threshold *= LONG_SHOT_GATE;
+            speculative = LONG_SHOT_APPETITE * (packed as f32 - 2.0).min(4.0);
+        }
+    }
     let gate = if xg >= threshold { 0.0 } else { -1.0 };
     Some(ShotOption {
         target: side.to_world(aim),
         xg,
-        score: xg * SHOT_VALUE - (1.0 - xg) * 0.012 + gate,
+        score: xg * SHOT_VALUE - (1.0 - xg) * 0.012 + speculative + gate,
     })
 }
 
@@ -365,6 +384,19 @@ fn decide_carrier(state: &MatchState, plan: &TeamPlan, p: &Player) -> Decision {
         speed: MoveSpeed::Walk,
     };
 
+    // Meeting a cross in the box: there is no time to take it down, it is a
+    // header (or volley) at goal.
+    if state.ball.aerial_touch
+        && opts.can_release
+        && state.seconds_since(state.ball.owner_since) < 0.4
+        && crate::pitch::in_attacking_box_local(p.team.to_local(p.pos))
+    {
+        if let Some(shot) = opts.shot.filter(|s| s.xg >= 0.012) {
+            d.activity = Activity::Shooting;
+            d.action = Action::Shoot(shot);
+            return d;
+        }
+    }
     let best_dribble = opts.dribbles.first().copied();
     // A shot must beat holding on; shielding fatigue only pushes the carrier
     // towards passing or carrying, never into a forced shot.
@@ -465,6 +497,26 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
             }
         }
     }
+    if is_box_delivery(state) {
+        // Whip it in towards the best header of the ball; one in five is
+        // played short.
+        let short = (state.tick / 7 + p.id.0 as u32).is_multiple_of(5);
+        let best_cross = opts
+            .iter()
+            .filter(|c| c.kind == PassKind::Cross || c.kind == PassKind::Long)
+            .filter(|c| crate::pitch::in_attacking_box_local(p.team.to_local(c.target)))
+            .max_by(|a, b| {
+                cmp_f32(
+                    state.player(a.receiver).attrs.aerial - a.risk * 0.3,
+                    state.player(b.receiver).attrs.aerial - b.risk * 0.3,
+                )
+                .then(b.receiver.cmp(&a.receiver))
+            });
+        if let (false, Some(c)) = (short, best_cross) {
+            d.action = Action::Pass(*c);
+            return d;
+        }
+    }
     {
         // A throw-in only reaches 20–25 m.
         let reach = |c: &&crate::passing::PassCandidate| {
@@ -484,6 +536,90 @@ fn decide_restart_taker(state: &MatchState, plan: &TeamPlan, p: &Player) -> Deci
         }
     }
     d
+}
+
+/// Is this restart a delivery into the box (a corner, or a free kick wide or
+/// deep in the attacking third, too far out to shoot)?
+pub fn is_box_delivery(state: &MatchState) -> bool {
+    let Some(r) = state.restart else {
+        return false;
+    };
+    let local = r.team.to_local(r.spot);
+    match r.kind {
+        RestartKind::Corner => true,
+        RestartKind::FreeKick | RestartKind::IndirectFreeKick => {
+            local.x > HALF_LENGTH - 32.0
+                && (local.y.abs() > 16.0 || local.distance(Vec2::new(HALF_LENGTH, 0.0)) > 28.0)
+        }
+        _ => false,
+    }
+}
+
+/// The attacking side's box targets for a delivery, in the attacking team's
+/// local frame (`side` is +1 when the ball is on the left, -1 on the right):
+/// near post, far post, six-yard line, penalty spot, edge of the area.
+fn box_targets(side: f32) -> [Vec2; 5] {
+    [
+        Vec2::new(HALF_LENGTH - 3.0, side * 2.5),
+        Vec2::new(HALF_LENGTH - 3.5, -side * 3.5),
+        Vec2::new(HALF_LENGTH - 6.0, -side * 0.5),
+        Vec2::new(HALF_LENGTH - 11.0, side * 1.0),
+        Vec2::new(HALF_LENGTH - 18.0, -side * 4.0),
+    ]
+}
+
+/// Attackers sent into the box for a delivery: the five best in the air
+/// (centre-backs included), the taker excepted. Everyone else holds the
+/// rest-defence shape.
+fn box_attackers(
+    state: &MatchState,
+    plan: &TeamPlan,
+    team: crate::pitch::TeamSide,
+) -> Vec<PlayerId> {
+    let taker = plan.restart_taker.or(state.ball.owner);
+    let mut up: Vec<&Player> = state
+        .on_pitch(team)
+        .filter(|q| !q.is_goalkeeper() && Some(q.id) != taker)
+        .collect();
+    up.sort_by(|a, b| cmp_f32(b.attrs.aerial, a.attrs.aerial).then(a.id.cmp(&b.id)));
+    up.into_iter().take(5).map(|q| q.id).collect()
+}
+
+/// Where `p` stands for a corner or a wide free kick, if he has a job in the box.
+fn set_piece_position(state: &MatchState, plan: &TeamPlan, p: &Player) -> Option<Vec2> {
+    if !is_box_delivery(state) || p.is_goalkeeper() {
+        return None;
+    }
+    let r = state.restart?;
+    let attackers = box_attackers(state, plan, r.team);
+    let side = if r.team.to_local(r.spot).y >= 0.0 {
+        1.0
+    } else {
+        -1.0
+    };
+    let targets = box_targets(side);
+    if p.team == r.team {
+        let i = attackers.iter().position(|&a| a == p.id)?;
+        return Some(r.team.to_world(targets[i]));
+    }
+    // Defenders: the best in the air mark the most dangerous attackers,
+    // goal-side; two more hold the near post and the six-yard line.
+    let mut defenders: Vec<&Player> = state
+        .on_pitch(p.team)
+        .filter(|q| !q.is_goalkeeper() && plan.wall_spot(q.id).is_none())
+        .collect();
+    defenders.sort_by(|a, b| cmp_f32(b.attrs.aerial, a.attrs.aerial).then(a.id.cmp(&b.id)));
+    let i = defenders.iter().position(|q| q.id == p.id)?;
+    let goal = p.team.own_goal();
+    if let Some(&a) = attackers.get(i) {
+        let ap = state.player(a).pos;
+        return Some(ap + (goal - ap).normalize_or_zero() * 0.8);
+    }
+    let zonal = [
+        Vec2::new(HALF_LENGTH - 1.0, side * 3.0),
+        Vec2::new(HALF_LENGTH - 5.5, 0.0),
+    ];
+    zonal.get(i - attackers.len()).map(|z| r.team.to_world(*z))
 }
 
 /// During a penalty everyone except the taker and the defending keeper waits
@@ -583,7 +719,10 @@ pub fn tackle_window(state: &MatchState, tackler: &Player, carrier: &Player) -> 
     let jump_the_touch =
         settling && back_turned && state.team(tackler.team).tactics.press_aggression >= 1.2;
     let exposed = if crate::rules::in_penalty_area(tackler.team, carrier.pos) {
-        stationary && !settling
+        // In the box: careful, but a carrier bearing down on goal has to be
+        // challenged.
+        let near_goal = carrier.pos.distance(tackler.team.own_goal()) < 12.0;
+        !settling && (stationary || near_goal)
     } else {
         jump_the_touch || (!settling && (back_turned || stationary))
     };
@@ -654,6 +793,18 @@ fn decide_on_pitch(state: &MatchState, plan: &TeamPlan, id: PlayerId) -> Decisio
                 speed: MoveSpeed::Sprint,
             };
         }
+    }
+
+    // Corners and wide free kicks: attack and defend the box.
+    if let Some(t) = set_piece_position(state, plan, p) {
+        let d = p.pos.distance(t);
+        return Decision {
+            player: id,
+            activity: Activity::HoldShape,
+            action: Action::None,
+            target: t,
+            speed: MoveSpeed::for_distance(d).max(MoveSpeed::Jog),
+        };
     }
 
     // Opponent restart: form the wall, everyone else keeps their distance.

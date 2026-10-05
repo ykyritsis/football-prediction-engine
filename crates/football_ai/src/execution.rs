@@ -20,6 +20,10 @@ use crate::state::{MatchState, Player};
 pub const STAR_KNEE: f32 = 0.8;
 /// Extra weight per unit above the knee.
 pub const STAR_GAIN: f32 = 0.9;
+/// Ceiling on dribbling in duels (see [`executing`]).
+pub const DUEL_DRIBBLING_CAP: f32 = 0.95;
+/// Ceiling on execution values: even a star on his best day is not flawless.
+pub const EXEC_CAP: f32 = 1.1;
 /// Execution change per unit of form.
 pub const FORM_EFFECT: f32 = 0.25;
 
@@ -28,7 +32,8 @@ pub fn star(x: f32) -> f32 {
     x + (x - STAR_KNEE).max(0.0) * STAR_GAIN
 }
 
-/// Effective form right now: match-day form plus situational boosts.
+/// Effective form right now: match-day form, in-match confidence and
+/// situational boosts.
 pub fn effective_form(state: &MatchState, p: &Player) -> f32 {
     let t = p.team.index();
     let behind = state.score[t] < state.score[1 - t];
@@ -37,12 +42,12 @@ pub fn effective_form(state: &MatchState, p: &Player) -> f32 {
     } else {
         0.0
     };
-    (p.form + spirit).clamp(-1.0, 1.5)
+    (p.form + p.confidence + spirit).clamp(-1.0, 1.5)
 }
 
 /// Execution value of an attribute for `p`.
 pub fn exec(state: &MatchState, p: &Player, attribute: f32) -> f32 {
-    (star(attribute) * (1.0 + FORM_EFFECT * effective_form(state, p))).clamp(0.0, 1.2)
+    (star(attribute) * (1.0 + FORM_EFFECT * effective_form(state, p))).clamp(0.0, EXEC_CAP)
 }
 
 /// A copy of `p` whose technical attributes are replaced by their execution
@@ -53,7 +58,9 @@ pub fn executing(state: &MatchState, p: &Player) -> Player {
     a.passing = exec(state, p, a.passing);
     a.long_passing = exec(state, p, a.long_passing);
     a.control = exec(state, p, a.control);
-    a.dribbling = exec(state, p, a.dribbling);
+    // In a duel even the best dribbler can be stopped: past this point skill
+    // shows in how often he tries and where he goes, not in invincibility.
+    a.dribbling = exec(state, p, a.dribbling).min(DUEL_DRIBBLING_CAP);
     a.tackling = exec(state, p, a.tackling);
     a.finishing = exec(state, p, a.finishing);
     a.set_pieces = exec(state, p, a.set_pieces);

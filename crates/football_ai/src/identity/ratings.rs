@@ -141,8 +141,10 @@ impl Ratings {
         Attributes {
             // Real top speeds sit in a narrow band (~7.9–9.4 m/s); a wide
             // mapping makes every race a foregone conclusion.
-            top_speed: 7.9 + 1.5 * n(self.speed),
-            acceleration: 5.0 + 2.5 * n(self.explosive_power),
+            // Elite pace is on the star curve: a 98-rated sprinter is
+            // visibly in a different class.
+            top_speed: 7.9 + 1.5 * crate::execution::star(n(self.speed)),
+            acceleration: 5.0 + 2.5 * crate::execution::star(n(self.explosive_power)),
             passing: n(self.low_pass),
             long_passing: n(self.lofted_pass),
             control: n(self.ball_control),

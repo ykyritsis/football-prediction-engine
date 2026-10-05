@@ -249,6 +249,7 @@ pub fn update(sb: Res<Sandbox>, mut q: Query<&mut Text, With<InfoPanel>>) {
             MatchEvent::HalfTime => "Half time".into(),
             MatchEvent::FullTime => "Full time".into(),
             MatchEvent::Injury { player } => format!("INJURY {}", sim.name(player)),
+            MatchEvent::KeeperError { keeper } => format!("HOWLER! {} spills it", sim.name(keeper)),
             MatchEvent::Dispossessed { by, on } => {
                 format!("{} dispossessed by {}", sim.name(on), sim.name(by))
             }

@@ -185,7 +185,11 @@ fn losing_team_chases_the_game_late_on() {
     sim.step();
     use football_ai::tactics::Mentality;
     assert_eq!(sim.state.team(TeamSide::Home).mentality, Mentality::Chasing);
-    assert_eq!(sim.state.team(TeamSide::Away).mentality, Mentality::Normal);
+    // ...and the side in front starts protecting its lead.
+    assert_eq!(
+        sim.state.team(TeamSide::Away).mentality,
+        Mentality::Protecting
+    );
     let home = sim.state.team(TeamSide::Home);
     assert!(home.tactics.line_offset > home.base_tactics.line_offset);
     assert!(sim

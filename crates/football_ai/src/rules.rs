@@ -141,15 +141,21 @@ pub fn tackle_success(tackler: &Player, carrier: &Player, settling: bool) -> f32
         tackler.attrs.tackling
     };
     // Equal players: ~45%, so defenders do commit. The skill gap matters,
-    // but an outclassed defender still wins the ball now and then.
-    let mut p = 0.42 + 0.45 * (skill - 0.9 * carrier.attrs.dribbling);
+    // but an outclassed defender still wins the ball now and then. A keeper
+    // spreading himself depends far less on how good the dribbler is.
+    let mut p = if tackler.is_goalkeeper() {
+        0.3 + 0.4 * skill - 0.15 * carrier.attrs.dribbling
+    } else {
+        0.42 + 0.45 * (skill - 0.9 * carrier.attrs.dribbling)
+    };
     if settling {
         p += 0.08;
     }
     if back_turned {
         p += 0.05;
     }
-    p.clamp(0.15, 0.75)
+    // Even the best dribbler in the world loses one challenge in four.
+    p.clamp(0.25, 0.75)
 }
 
 /// Minimum expected success at which a player commits to a tackle: aggressive
@@ -247,7 +253,9 @@ pub fn card_for_foul(
     if denies_goal_scoring_opportunity(state, fouler, victim) {
         // In the box, a penalty already restores the chance: caution only
         // (the IFAB "double punishment" change from 2016).
-        return if in_box {
+        // Outside it, referees often judge a covering defender could have
+        // got back, and only book.
+        return if in_box || roll >= 0.2 * referee.card_strictness {
             CardDecision::Yellow
         } else {
             CardDecision::Red
@@ -263,10 +271,11 @@ pub fn card_for_foul(
         yellow += 0.06;
     }
     yellow *= referee.card_strictness;
+    // Serious foul play is rare: a few straight reds per hundred matches.
     let red = if challenge.from_behind() {
-        0.01 * referee.card_strictness
+        0.004 * referee.card_strictness
     } else {
-        0.002 * referee.card_strictness
+        0.0008 * referee.card_strictness
     };
     if roll < red {
         CardDecision::Red

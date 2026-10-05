@@ -169,8 +169,10 @@ impl Mentality {
     pub fn for_situation(goal_difference: i32, minute: f32) -> Mentality {
         match goal_difference {
             d if d < 0 && minute >= 80.0 => Mentality::AllOut,
-            d if d < 0 && minute >= 60.0 => Mentality::Chasing,
-            d if d > 0 && minute >= 75.0 => Mentality::Protecting,
+            d if d < 0 && minute >= 55.0 => Mentality::Chasing,
+            d if d <= -2 && minute >= 30.0 => Mentality::Chasing,
+            d if d > 0 && minute >= 65.0 => Mentality::Protecting,
+            d if d >= 2 && minute >= 55.0 => Mentality::Protecting,
             _ => Mentality::Normal,
         }
     }
@@ -214,8 +216,9 @@ mod tests {
         assert_eq!(Mentality::for_situation(-1, 50.0), Mentality::Normal);
         assert_eq!(Mentality::for_situation(-1, 65.0), Mentality::Chasing);
         assert_eq!(Mentality::for_situation(-2, 85.0), Mentality::AllOut);
-        assert_eq!(Mentality::for_situation(1, 70.0), Mentality::Normal);
-        assert_eq!(Mentality::for_situation(1, 78.0), Mentality::Protecting);
+        assert_eq!(Mentality::for_situation(1, 60.0), Mentality::Normal);
+        assert_eq!(Mentality::for_situation(1, 70.0), Mentality::Protecting);
+        assert_eq!(Mentality::for_situation(-2, 35.0), Mentality::Chasing);
         assert_eq!(Mentality::for_situation(0, 89.0), Mentality::Normal);
     }
 

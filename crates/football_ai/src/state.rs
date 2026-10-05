@@ -84,6 +84,9 @@ pub struct Player {
     /// Match-day form `-1..1` (PES condition arrows): scales how well the
     /// player executes, not how he decides.
     pub form: f32,
+    /// In-match confidence `-0.6..0.6`, added to form: goals and big saves
+    /// lift it, misses and howlers knock it, and it fades back over time.
+    pub confidence: f32,
     /// PES skills that change form during the match.
     pub fighting_spirit: bool,
     /// Top speed and acceleration when fresh (`attrs` holds the current,
@@ -114,6 +117,7 @@ impl Player {
             energy: 1.0,
             injured: false,
             form: 0.0,
+            confidence: 0.0,
             fighting_spirit: false,
             base_top_speed: attrs.top_speed,
             base_acceleration: attrs.acceleration,
@@ -166,6 +170,13 @@ pub struct ShotInFlight {
     /// The goalkeeper has already tried to save this shot.
     pub keeper_attempted: bool,
     pub kind: ShotKind,
+    /// Where it was struck from (the keeper's reaction time depends on it).
+    pub origin: Vec2,
+    /// Multiplier on the keeper's save chance: below 1 for a shot struck
+    /// perfectly or deflected past him.
+    pub keeper_odds: f32,
+    /// Defender whose block sent it on towards goal.
+    pub deflected_by: Option<PlayerId>,
 }
 
 /// How a shot was taken.
@@ -436,6 +447,7 @@ impl MatchState {
             h.u32(p.energy.to_bits());
             h.u32(p.injured as u32);
             h.u32(p.form.to_bits());
+            h.u32(p.confidence.to_bits());
         }
         h.u32(self.period as u32 | (self.ends_swapped as u32) << 4);
         h.u32(self.teams[0].mentality as u32 | (self.teams[1].mentality as u32) << 8);

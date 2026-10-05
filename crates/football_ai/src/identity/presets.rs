@@ -590,6 +590,55 @@ pub fn example_ronaldo() -> PlayerProfile {
     }
 }
 
+/// A young, explosive forward in the style of K. Mbappé: elite pace and
+/// acceleration, direct dribbling, composed finishing. Illustrative ratings.
+pub fn example_mbappe() -> PlayerProfile {
+    let r = Ratings {
+        offensive_awareness: 90,
+        ball_control: 89,
+        dribbling: 91,
+        low_pass: 78,
+        lofted_pass: 72,
+        finishing: 88,
+        place_kicking: 70,
+        curl: 78,
+        header: 70,
+        defensive_awareness: 40,
+        ball_winning: 42,
+        kicking_power: 86,
+        speed: 99,
+        explosive_power: 98,
+        body_control: 86,
+        physical_contact: 76,
+        jump: 78,
+        goalkeeping: 40,
+        catching: 40,
+        clearing: 40,
+        reflexes: 40,
+        coverage: 40,
+        stamina: 85,
+        weak_foot_usage: 3,
+        weak_foot_accuracy: 3,
+        form: 6,
+        injury_resistance: 3,
+        height_cm: 178,
+        stronger_foot: Foot::Right,
+    };
+    PlayerProfile {
+        name: "K. Mbappe".into(),
+        position: Role::Striker,
+        ratings: r,
+        playing_style: Some(PlayingStyle::GoalPoacher),
+        com_styles: ComStyleSet::new(&[ComStyle::SpeedingBullet, ComStyle::IncisiveRun]),
+        skills: SkillSet::new(&[
+            Skill::DoubleTouch,
+            Skill::ScissorsFeint,
+            Skill::FirstTimeShot,
+            Skill::OneTouchPass,
+        ]),
+    }
+}
+
 // -------------------------------------------------------------- squads ----
 
 /// A team identity plus eleven players in formation-slot order.

@@ -138,7 +138,9 @@ fn count_activity(
     let (mut hits, mut on_ball) = (0, 0);
     for _ in 0..ticks {
         sim.step();
-        if sim.state.ball.owner == Some(id) {
+        // Open play only: a set-piece taker holds the ball through the
+        // dead-ball time.
+        if sim.state.ball.owner == Some(id) && sim.state.restart.is_none() {
             on_ball += 1;
             if pred(&sim.decisions[id.index()].activity) {
                 hits += 1;
