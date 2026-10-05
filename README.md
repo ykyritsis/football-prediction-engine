@@ -10,6 +10,7 @@ inspecting it.
 |---|---|
 | [`crates/football_ai`](crates/football_ai) | Zero-dependency library: 22 players + ball, formations, phases, pressing, marking, support runs, passing evaluation, role behaviour, team/player identity, fixed-step simulation |
 | [`crates/football_sandbox`](crates/football_sandbox) | Bevy 0.19 app that runs the simulation and draws every decision |
+| [`crates/predictor`](crates/predictor) | Match and season prediction for the top five European leagues, fitted to real results |
 
 ## Quick start
 
@@ -26,6 +27,39 @@ cargo run --release -p football_sandbox                            # visual sand
 On Linux the sandbox uses X11 by default (works under XWayland); build with
 `--features wayland` for native Wayland (needs `libwayland-dev`).
 `SANDBOX_CAPTURE=<dir> football_sandbox` captures a screenshot of every preset and exits.
+
+## Predictions for real leagues
+
+`predictor` fits a Dixon–Coles goals model (attack and defence strength per
+club, home advantage, low-score correction, recent matches weighted more) to
+every Premier League, La Liga, Serie A, Bundesliga and Ligue 1 result since
+2019-20 ([openfootball](https://github.com/openfootball/football.json), public
+domain; refresh with `python3 tools/fetch_results.py`).
+
+```sh
+cargo run --release -p predictor --bin predict -- fixtures all 4        # next matchday: 1X2, xG, likely score, O2.5, BTTS
+cargo run --release -p predictor --bin predict -- table premier_league  # title / top-4 / relegation odds
+cargo run --release -p predictor --bin predict -- backtest all 2024-08-01
+cargo run --release -p predictor --bin predict -- tune all              # decay and prior search
+```
+
+Walk-forward backtest, 2024-08 to 2026-09 (3,603 matches; the model refits
+every week on earlier results only):
+
+| | matches | log-loss (base rate) | hit rate | exact score |
+|---|---|---|---|---|
+| Premier League | 778 | 0.995 (1.076) | 51.8% | 11.6% |
+| La Liga | 799 | 0.965 (1.058) | 54.2% | 15.8% |
+| Serie A | 764 | 0.960 (1.080) | 55.1% | 13.9% |
+| Bundesliga | 633 | 0.985 (1.076) | 53.9% | 8.4% |
+| Ligue 1 | 629 | 0.969 (1.045) | 56.6% | 11.0% |
+
+Calibration is close: events given 20–30% happened 24% of the time, and
+50–60% happened 55%. Strong favourites (70–80%) won a little more often (81%)
+than predicted. This is in line with published goals-only models; football
+is noisy enough that no model picks much more than 55–58% of 1X2 results.
+The next gains come from information scores do not contain: lineups and
+injuries, shots/xG, betting markets as a prior, and referees for cards.
 
 ## What the AI does
 

@@ -18,8 +18,8 @@ pub struct ModelConfig {
 impl Default for ModelConfig {
     fn default() -> Self {
         ModelConfig {
-            half_life_days: 240.0,
-            prior_sd: 0.35,
+            half_life_days: 365.0,
+            prior_sd: 0.5,
             newcomer_penalty: 0.25,
         }
     }
