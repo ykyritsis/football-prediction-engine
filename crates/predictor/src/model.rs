@@ -13,6 +13,10 @@ pub struct ModelConfig {
     /// How much weaker than average a club with no data is assumed to be
     /// (log scale, applied to attack and defence alike).
     pub newcomer_penalty: f64,
+    /// Share of each side's goal tally replaced by its shots on target
+    /// scaled to goals (0 = goals only). Shots are less noisy than goals,
+    /// so they reveal strength sooner. Needs [`Match::stats`].
+    pub shot_weight: f64,
 }
 
 impl Default for ModelConfig {
@@ -21,6 +25,7 @@ impl Default for ModelConfig {
             half_life_days: 365.0,
             prior_sd: 0.5,
             newcomer_penalty: 0.25,
+            shot_weight: 0.0,
         }
     }
 }
@@ -92,10 +97,21 @@ impl Model {
             a: usize,
             gh: f64,
             ga: f64,
+            /// Actual goals (for the low-score correction).
+            goals: (u8, u8),
             w: f64,
         }
         let mut index: BTreeMap<String, usize> = BTreeMap::new();
         let mut rows = Vec::new();
+        // Goals per shot on target, for the shot blend.
+        let (mut g_sum, mut sot_sum) = (0.0, 0.0);
+        for m in history {
+            if let (Some((gh, ga)), Some(s)) = (m.score, &m.stats) {
+                g_sum += (gh + ga) as f64;
+                sot_sum += (s.shots_on_target.0 + s.shots_on_target.1) as f64;
+            }
+        }
+        let per_sot = if sot_sum > 0.0 { g_sum / sot_sum } else { 0.0 };
         for m in history {
             let Some((gh, ga)) = m.score else { continue };
             let age = (today - day_number(&m.date)).max(0) as f64;
@@ -107,11 +123,18 @@ impl Model {
             let h = *index.entry(m.home.clone()).or_insert(n);
             let n = index.len();
             let a = *index.entry(m.away.clone()).or_insert(n);
+            let (mut th, mut ta) = (gh as f64, ga as f64);
+            if let (Some(s), true) = (&m.stats, cfg.shot_weight > 0.0 && per_sot > 0.0) {
+                let k = cfg.shot_weight;
+                th = (1.0 - k) * th + k * per_sot * s.shots_on_target.0 as f64;
+                ta = (1.0 - k) * ta + k * per_sot * s.shots_on_target.1 as f64;
+            }
             rows.push(Row {
                 h,
                 a,
-                gh: gh as f64,
-                ga: ga as f64,
+                gh: th,
+                ga: ta,
+                goals: (gh, ga),
                 w,
             });
         }
@@ -197,7 +220,7 @@ impl Model {
                 .map(|r| {
                     let lh = (mu + home + att[r.h] - def[r.a]).exp();
                     let la = (mu + att[r.a] - def[r.h]).exp();
-                    r.w * tau(r.gh as u8, r.ga as u8, lh, la, rho).max(1e-9).ln()
+                    r.w * tau(r.goals.0, r.goals.1, lh, la, rho).max(1e-9).ln()
                 })
                 .sum();
             if ll > best.0 {
@@ -300,6 +323,7 @@ mod tests {
             home: h.into(),
             away: a.into(),
             score: Some((gh, ga)),
+            stats: None,
         }
     }
 

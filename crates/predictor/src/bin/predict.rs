@@ -5,14 +5,16 @@
 //! predict tune     [LEAGUE|all] [FROM]      backtest several decay half-lives
 //! predict fixtures [LEAGUE|all] [DAYS]      next matches (default 10 days from the next fixture)
 //! predict table    [LEAGUE|all] [RUNS]      season projection (default 20000 runs)
+//! predict stats    [LEAGUE|all] [FROM]      backtest cards, corners, shots on target, fouls
 //! ```
 //!
 //! "Today" is the day after the last played match in the data, so results
 //! are reproducible from the committed files. Data lives in `data/results`
 //! (override with `PREDICTOR_DATA`).
 
+use predictor::counts::{self, CountModel, Stat};
 use predictor::data::add_days;
-use predictor::{backtest, load_league, season, Match, Model, ModelConfig};
+use predictor::{backtest, load_league, season, stats, Match, Model, ModelConfig};
 use std::path::PathBuf;
 
 const LEAGUES: [(&str, &str); 5] = [
@@ -50,11 +52,16 @@ fn leagues(arg: Option<&str>) -> Vec<(&'static str, &'static str)> {
     }
 }
 
+/// Results plus match statistics (from `data/stats`, beside the results).
 fn load(key: &str) -> Vec<Match> {
-    load_league(&data_dir(), key).unwrap_or_else(|e| {
+    let dir = data_dir();
+    let mut all = load_league(&dir, key).unwrap_or_else(|e| {
         eprintln!("{e}");
         std::process::exit(1)
-    })
+    });
+    let stats_dir = dir.parent().map(|p| p.join("stats")).unwrap_or_default();
+    stats::attach(&stats_dir, key, &mut all);
+    all
 }
 
 /// The day after the latest played match.
@@ -136,24 +143,58 @@ fn cmd_tune(args: &[String]) {
         .into_iter()
         .map(|(k, n)| (n, load(k)))
         .collect();
-    for half_life in [120.0, 180.0, 240.0, 365.0, 540.0] {
-        for prior_sd in [0.25, 0.35, 0.5] {
-            let cfg = ModelConfig {
-                half_life_days: half_life,
-                prior_sd,
-                ..ModelConfig::default()
-            };
-            let (mut n, mut ll, mut hit) = (0usize, 0.0, 0.0);
-            for (_, data) in &sets {
-                let r = backtest(data, from, &cfg);
-                n += r.matches;
-                ll += r.log_loss * r.matches as f64;
-                hit += r.hit_rate * r.matches as f64;
-            }
+    let grid: Vec<(f64, f64, f64)> = [240.0, 365.0, 540.0]
+        .iter()
+        .flat_map(|&h| [0.35, 0.5].map(move |sd| (h, sd)))
+        .flat_map(|(h, sd)| [0.0, 0.3, 0.5, 0.7].map(move |k| (h, sd, k)))
+        .collect();
+    for (half_life, prior_sd, shot_weight) in grid {
+        let cfg = ModelConfig {
+            half_life_days: half_life,
+            prior_sd,
+            shot_weight,
+            ..ModelConfig::default()
+        };
+        let (mut n, mut ll, mut hit) = (0usize, 0.0, 0.0);
+        for (_, data) in &sets {
+            let r = backtest(data, from, &cfg);
+            n += r.matches;
+            ll += r.log_loss * r.matches as f64;
+            hit += r.hit_rate * r.matches as f64;
+        }
+        println!(
+            "half-life {half_life:>4} d  prior sd {prior_sd:.2}  shot weight {shot_weight:.1}  log-loss {:.4}  hit {:.1}%",
+            ll / n as f64,
+            hit / n as f64 * 100.0
+        );
+    }
+}
+
+const STATS: [Stat; 4] = [Stat::Cards, Stat::Corners, Stat::ShotsOnTarget, Stat::Fouls];
+const STAT_HALF_LIFE: f64 = 365.0;
+
+fn cmd_stats(args: &[String]) {
+    let from = args.get(1).map(String::as_str).unwrap_or("2024-08-01");
+    println!("Walk-forward backtest of match totals from {from} (cards = yellows + 2 per red)\n");
+    for (key, name) in leagues(args.first().map(String::as_str)) {
+        let data = load(key);
+        println!(
+            "{name} ({} matches with statistics)",
+            data.iter().filter(|m| m.stats.is_some()).count()
+        );
+        for stat in STATS {
+            let r = counts::backtest(&data, stat, from, STAT_HALF_LIFE);
             println!(
-                "half-life {half_life:>4} d  prior sd {prior_sd:.2}  log-loss {:.4}  hit {:.1}%",
-                ll / n as f64,
-                hit / n as f64 * 100.0
+                "  {:<16} {:>4} matches  MAE {:.2} (base {:.2})  log-loss {:.3} (base {:.3})  over {:.1}: predicted {:.0}%, observed {:.0}%",
+                stat.name(),
+                r.matches,
+                r.mae,
+                r.base_mae,
+                r.log_loss,
+                r.base_log_loss,
+                r.over_line,
+                r.over_pred * 100.0,
+                r.over_obs * 100.0
             );
         }
     }
@@ -173,19 +214,23 @@ fn cmd_fixtures(args: &[String]) {
             .unwrap_or_else(|| today.clone());
         let end = add_days(&start, days);
         let model = Model::fit(&all, &today, &ModelConfig::default());
+        let cards = CountModel::fit(&all, Stat::Cards, &today, STAT_HALF_LIFE);
+        let corners = CountModel::fit(&all, Stat::Corners, &today, STAT_HALF_LIFE);
         let upcoming: Vec<_> = all
             .iter()
             .filter(|m| m.score.is_none() && m.date >= start && m.date < end)
             .collect();
         println!("\n{name} — fixtures {start} to {end} (fitted to results before {today})");
         println!(
-            "  {:<10} {:<26} {:<26}  {:>4} {:>4} {:>4}   xG          likely  O2.5  BTTS",
+            "  {:<10} {:<26} {:<26}  {:>4} {:>4} {:>4}   xG          likely  O2.5  BTTS   cards  O4.5  corners  O9.5",
             "date", "home", "away", "1", "X", "2"
         );
         for m in upcoming {
             let p = model.predict(&m.home, &m.away);
+            let c = cards.predict(&m.home, &m.away, None);
+            let k = corners.predict(&m.home, &m.away, None);
             println!(
-                "  {:<10} {:<26} {:<26}  {} {} {}   {:.2}-{:.2}   {}-{}    {}  {}",
+                "  {:<10} {:<26} {:<26}  {} {} {}   {:.2}-{:.2}   {}-{}    {}  {}   {:.1}-{:.1}  {}  {:.1}-{:.1}  {}",
                 m.date,
                 m.home,
                 m.away,
@@ -197,7 +242,13 @@ fn cmd_fixtures(args: &[String]) {
                 p.most_likely_score.0,
                 p.most_likely_score.1,
                 pct(p.over_2_5),
-                pct(p.both_score)
+                pct(p.both_score),
+                c.home,
+                c.away,
+                pct(c.over(4.5)),
+                k.home,
+                k.away,
+                pct(k.over(9.5))
             );
         }
     }
@@ -243,8 +294,9 @@ fn main() {
         Some("tune") => cmd_tune(&rest),
         Some("fixtures") => cmd_fixtures(&rest),
         Some("table") => cmd_table(&rest),
+        Some("stats") => cmd_stats(&rest),
         _ => {
-            eprintln!("usage: predict <backtest|tune|fixtures|table> [LEAGUE|all] [ARG]");
+            eprintln!("usage: predict <backtest|tune|fixtures|table|stats> [LEAGUE|all] [ARG]");
             std::process::exit(2);
         }
     }

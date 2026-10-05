@@ -11,6 +11,8 @@ pub struct Match {
     pub away: String,
     /// Full-time score, home first.
     pub score: Option<(u8, u8)>,
+    /// Shots, corners, cards and so on, when known (see [`crate::stats`]).
+    pub stats: Option<crate::stats::Stats>,
 }
 
 #[derive(Deserialize)]
@@ -51,6 +53,7 @@ pub fn parse_season(json: &str) -> Result<Vec<Match>, String> {
                 home: m.team1,
                 away: m.team2,
                 score,
+                stats: None,
             })
         })
         .collect())
@@ -72,6 +75,18 @@ pub fn load_league(dir: &std::path::Path, league: &str) -> Result<Vec<Match>, St
         let text =
             std::fs::read_to_string(&path).map_err(|e| format!("{}: {e}", path.display()))?;
         out.extend(parse_season(&text).map_err(|e| format!("{}: {e}", path.display()))?);
+    }
+    // One name per club across seasons.
+    if let Ok(text) = std::fs::read_to_string(dir.join("aliases.json")) {
+        let aliases: std::collections::HashMap<String, serde_json::Value> =
+            serde_json::from_str(&text).map_err(|e| format!("aliases.json: {e}"))?;
+        for m in &mut out {
+            for name in [&mut m.home, &mut m.away] {
+                if let Some(serde_json::Value::String(to)) = aliases.get(name.as_str()) {
+                    *name = to.clone();
+                }
+            }
+        }
     }
     out.sort_by(|a, b| a.date.cmp(&b.date));
     Ok(out)

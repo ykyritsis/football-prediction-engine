@@ -15,10 +15,13 @@
 //! remaining fixtures. [`backtest`] scores the model walk-forward, using only
 //! matches played before each prediction, so its accuracy can be trusted.
 
+pub mod counts;
 pub mod data;
 pub mod model;
 pub mod season;
+pub mod stats;
 
+pub use counts::{CountModel, Stat};
 pub use data::{load_league, Match};
 pub use model::{Model, ModelConfig, Prediction};
 
