@@ -1,0 +1,366 @@
+{
+  "name": "Gold Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-07-11",
+      "team1": "Mexico",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "Canada",
+      "team2": "Martinique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-12",
+      "team1": "United States",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-12",
+      "team1": "El Salvador",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-12",
+      "team1": "Jamaica",
+      "team2": "Suriname",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-13",
+      "team1": "Costa Rica",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-13",
+      "team1": "Qatar",
+      "team2": "Panama",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-07-14",
+      "team1": "Honduras",
+      "team2": "Grenada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-14",
+      "team1": "Trinidad and Tobago",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "team1": "Guatemala",
+      "team2": "Mexico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-07-15",
+      "team1": "Haiti",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "team1": "Martinique",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2021-07-16",
+      "team1": "Guadeloupe",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "team1": "Suriname",
+      "team2": "Costa Rica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-17",
+      "team1": "Grenada",
+      "team2": "Qatar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "Panama",
+      "team2": "Honduras",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "Martinique",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-18",
+      "team1": "United States",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "team1": "Guatemala",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-19",
+      "team1": "Mexico",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Costa Rica",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-20",
+      "team1": "Suriname",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "team1": "Honduras",
+      "team2": "Qatar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-21",
+      "team1": "Panama",
+      "team2": "Grenada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-24",
+      "team1": "Qatar",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-25",
+      "team1": "Mexico",
+      "team2": "Honduras",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-25",
+      "team1": "Costa Rica",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-26",
+      "team1": "United States",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-29",
+      "team1": "Qatar",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-07-30",
+      "team1": "Mexico",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "name": "Club World Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-02-04",
+      "team1": "ESPN:232:Tigres UANL",
+      "team2": "Ulsan HD",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-02-04",
+      "team1": "ESPN:12008:Al Duhail",
+      "team2": "Al Ahly",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-02-07",
+      "team1": "Ulsan HD",
+      "team2": "ESPN:12008:Al Duhail",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-02-07",
+      "team1": "Palmeiras",
+      "team2": "ESPN:232:Tigres UANL",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-02-08",
+      "team1": "Al Ahly",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-02-11",
+      "team1": "FC Bayern München",
+      "team2": "ESPN:232:Tigres UANL",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

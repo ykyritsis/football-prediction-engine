@@ -1,0 +1,486 @@
+{
+  "name": "European Championship",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-06-11",
+      "team1": "Türkiye",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Wales",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Denmark",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-12",
+      "team1": "Belgium",
+      "team2": "ESPN:454:Russia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "England",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "Austria",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-13",
+      "team1": "Netherlands",
+      "team2": "Ukraine",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Scotland",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Poland",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-14",
+      "team1": "Spain",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-15",
+      "team1": "Hungary",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-06-15",
+      "team1": "France",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Finland",
+      "team2": "ESPN:454:Russia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Türkiye",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-16",
+      "team1": "Italy",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Ukraine",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Denmark",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-17",
+      "team1": "Netherlands",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Sweden",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "Croatia",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-18",
+      "team1": "England",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Hungary",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Portugal",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2021-06-19",
+      "team1": "Spain",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Italy",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-20",
+      "team1": "Switzerland",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "North Macedonia",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Ukraine",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "Finland",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-21",
+      "team1": "ESPN:454:Russia",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2021-06-22",
+      "team1": "Croatia",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-22",
+      "team1": "Czechia",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Slovakia",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Sweden",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Germany",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-23",
+      "team1": "Portugal",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-26",
+      "team1": "Wales",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Netherlands",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-06-27",
+      "team1": "Belgium",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-06-29",
+      "team1": "England",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    }
+  ]
+}

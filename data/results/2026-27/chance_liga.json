@@ -1,0 +1,1632 @@
+{
+  "name": "Chance Liga",
+  "source": "https://raw.githubusercontent.com/openfootball/europe/master/czech-republic/2026-27_cz1.txt",
+  "matches": [
+    {
+      "date": "2026-07-25",
+      "team1": "FK Teplice",
+      "team2": "Bohemians Prague 1905",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "team1": "FC Zlin",
+      "team2": "FC Banik Ostrava",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Slovan Liberec",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-07-25",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "Sparta Prague",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-26",
+      "team1": "Slavia Prague",
+      "team2": "1.FC Slovacko",
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-26",
+      "team1": "Jablonec",
+      "team2": "SK Sigma Olomouc",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-26",
+      "team1": "FC Hradec Kralove",
+      "team2": "FK Pardubice",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-27",
+      "team1": "SK Artis Brno",
+      "team2": "FK Mlada Boleslav",
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-07-31",
+      "team1": "Sparta Prague",
+      "team2": "FC Zlin",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "team1": "1.FC Slovacko",
+      "team2": "SK Artis Brno",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "team1": "FC Banik Ostrava",
+      "team2": "Slavia Prague",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "team1": "FC Slovan Liberec",
+      "team2": "FK Teplice",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-01",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Zbrojovka Brno",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-02",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FK Mlada Boleslav",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-02",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FC Hradec Kralove",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-02",
+      "team1": "FK Pardubice",
+      "team2": "Jablonec",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-07",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FC Slovan Liberec",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "FC Zlin",
+      "team2": "Bohemians Prague 1905",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "FK Teplice",
+      "team2": "Viktoria Plzen",
+      "score": {
+        "ft": [
+          5,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "FK Mlada Boleslav",
+      "team2": "Sparta Prague",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "Slavia Prague",
+      "team2": "FK Pardubice",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "FC Hradec Kralove",
+      "team2": "FC Banik Ostrava",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "Jablonec",
+      "team2": "1.FC Slovacko",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "SK Artis Brno",
+      "team2": "SK Sigma Olomouc",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "1.FC Slovacko",
+      "team2": "SK Sigma Olomouc",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "Sparta Prague",
+      "team2": "FK Teplice",
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "FK Pardubice",
+      "team2": "FK Mlada Boleslav",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Zlin",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "team1": "FC Banik Ostrava",
+      "team2": "SK Artis Brno",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "team1": "FC Slovan Liberec",
+      "team2": "Slavia Prague",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "SK Artis Brno",
+      "team2": "Sparta Prague",
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "FK Mlada Boleslav",
+      "team2": "1.FC Slovacko",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "FC Zlin",
+      "team2": "FC Slovan Liberec",
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "Slavia Prague",
+      "team2": "Bohemians Prague 1905",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-23",
+      "team1": "FK Teplice",
+      "team2": "FC Zbrojovka Brno",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-23",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FK Pardubice",
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "FK Pardubice",
+      "team2": "SK Artis Brno",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FC Zlin",
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "FC Banik Ostrava",
+      "team2": "SK Sigma Olomouc",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "FC Slovan Liberec",
+      "team2": "FC Hradec Kralove",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "FK Teplice",
+      "team2": "Jablonec",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "Viktoria Plzen",
+      "team2": "1.FC Slovacko",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "Sparta Prague",
+      "team2": "Slavia Prague",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FC Hradec Kralove",
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-02",
+      "team1": "Bohemians Prague 1905",
+      "team2": "Jablonec",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "1.FC Slovacko",
+      "team2": "FK Pardubice",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "SK Sigma Olomouc",
+      "team2": "Bohemians Prague 1905",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "Slavia Prague",
+      "team2": "FC Zbrojovka Brno",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "SK Artis Brno",
+      "team2": "Viktoria Plzen",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FC Banik Ostrava",
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "Jablonec",
+      "team2": "FC Slovan Liberec",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "FC Zlin",
+      "team2": "FK Teplice",
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "FC Hradec Kralove",
+      "team2": "Sparta Prague",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "Jablonec",
+      "team2": "FC Banik Ostrava",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "FC Hradec Kralove",
+      "team2": "Viktoria Plzen",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "Bohemians Prague 1905",
+      "team2": "1.FC Slovacko",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "SK Artis Brno",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "FC Slovan Liberec",
+      "team2": "FK Mlada Boleslav",
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "Sparta Prague",
+      "team2": "Jablonec",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "FC Banik Ostrava",
+      "team2": "FK Pardubice",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "Viktoria Plzen",
+      "team2": "SK Sigma Olomouc",
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "FC Zlin",
+      "team2": "FC Hradec Kralove",
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "FK Teplice",
+      "team2": "Slavia Prague",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "FK Pardubice",
+      "team2": "Bohemians Prague 1905",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "SK Artis Brno",
+      "team2": "FC Slovan Liberec",
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FC Zbrojovka Brno",
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "1.FC Slovacko",
+      "team2": "FC Banik Ostrava",
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "FC Hradec Kralove",
+      "team2": "FK Teplice",
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "SK Sigma Olomouc",
+      "team2": "Sparta Prague",
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Jablonec",
+      "team2": "FC Zlin",
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Slavia Prague",
+      "team2": "Viktoria Plzen",
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "team1": "FC Zlin",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "Viktoria Plzen",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "FC Hradec Kralove",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "FC Slovan Liberec",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "FK Teplice",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "Sparta Prague",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2026-10-17",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2026-10-17",
+      "team1": "SK Artis Brno",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2026-10-17",
+      "team1": "Slavia Prague",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2026-10-17",
+      "team1": "FK Pardubice",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2026-10-17",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2026-10-18",
+      "team1": "1.FC Slovacko",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2026-10-18",
+      "team1": "FC Banik Ostrava",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2026-10-18",
+      "team1": "Jablonec",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "FC Slovan Liberec",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "FK Teplice",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "FC Zlin",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "Slavia Prague",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "FC Hradec Kralove",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Sparta Prague",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Viktoria Plzen",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "1.FC Slovacko",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "FK Pardubice",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "SK Artis Brno",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "Jablonec",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "FC Banik Ostrava",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Bohemians Prague 1905",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "FC Zlin",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "FC Hradec Kralove",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "FC Slovan Liberec",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "FK Teplice",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Jablonec",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Slavia Prague",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Viktoria Plzen",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "SK Artis Brno",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "FC Banik Ostrava",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "SK Sigma Olomouc",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "Bohemians Prague 1905",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2026-11-22",
+      "team1": "FK Pardubice",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2026-11-22",
+      "team1": "1.FC Slovacko",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2026-11-22",
+      "team1": "Sparta Prague",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2026-11-27",
+      "team1": "SK Artis Brno",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "FK Mlada Boleslav",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "FK Teplice",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "FC Hradec Kralove",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "Slavia Prague",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "Jablonec",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "FC Zlin",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2026-12-04",
+      "team1": "FK Pardubice",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "SK Sigma Olomouc",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "1.FC Slovacko",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "FC Slovan Liberec",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "Sparta Prague",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Viktoria Plzen",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "FC Banik Ostrava",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "SK Artis Brno",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "FC Hradec Kralove",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "SK Sigma Olomouc",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Jablonec",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Slavia Prague",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2026-12-14",
+      "team1": "FC Zlin",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2026-12-14",
+      "team1": "FK Teplice",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "1.FC Slovacko",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "Sparta Prague",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "FC Slovan Liberec",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "FC Banik Ostrava",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "FK Pardubice",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "Bohemians Prague 1905",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-01-30",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "FC Zlin",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "FC Hradec Kralove",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "FK Mlada Boleslav",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "Slavia Prague",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "1.FC Slovacko",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "Jablonec",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-02-06",
+      "team1": "SK Artis Brno",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "FC Slovan Liberec",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "FK Pardubice",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "FK Teplice",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "Bohemians Prague 1905",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "Sparta Prague",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "Viktoria Plzen",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-02-13",
+      "team1": "FC Banik Ostrava",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "SK Sigma Olomouc",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "Slavia Prague",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "Jablonec",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "FC Hradec Kralove",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "1.FC Slovacko",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "FK Mlada Boleslav",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "FK Pardubice",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2027-02-20",
+      "team1": "SK Artis Brno",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "Sparta Prague",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "Viktoria Plzen",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "FC Zlin",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "FC Slovan Liberec",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "FC Banik Ostrava",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-02-27",
+      "team1": "FK Teplice",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "FK Mlada Boleslav",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "1.FC Slovacko",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "FK Pardubice",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "SK Artis Brno",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "Jablonec",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "FC Banik Ostrava",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "Slavia Prague",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-03-06",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "FC Hradec Kralove",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "FK Teplice",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "Sparta Prague",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "FC Slovan Liberec",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "Bohemians Prague 1905",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "FC Zlin",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2027-03-13",
+      "team1": "Viktoria Plzen",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "Jablonec",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "1.FC Slovacko",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "SK Artis Brno",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "FK Pardubice",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "FK Mlada Boleslav",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-03-20",
+      "team1": "FC Banik Ostrava",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "FC Zlin",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "FK Teplice",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "FC Slovan Liberec",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "Slavia Prague",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "Sparta Prague",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "FC Hradec Kralove",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-04-03",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FC Slovan Liberec"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "1.FC Slovacko",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "SK Artis Brno",
+      "team2": "Slavia Prague"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "FK Mlada Boleslav",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "FK Pardubice",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "FC Banik Ostrava",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "SK Sigma Olomouc",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-04-10",
+      "team1": "Sparta Prague",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "Jablonec",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "FC Zbrojovka Brno",
+      "team2": "FK Pardubice"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "FK Teplice",
+      "team2": "FC Banik Ostrava"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "FC Zlin",
+      "team2": "FK Mlada Boleslav"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "Slavia Prague",
+      "team2": "SK Sigma Olomouc"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "FC Hradec Kralove",
+      "team2": "1.FC Slovacko"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "FC Slovan Liberec",
+      "team2": "Sparta Prague"
+    },
+    {
+      "date": "2027-04-17",
+      "team1": "Viktoria Plzen",
+      "team2": "Bohemians Prague 1905"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "FC Slovan Liberec",
+      "team2": "Viktoria Plzen"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "FK Mlada Boleslav",
+      "team2": "SK Artis Brno"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "Sparta Prague",
+      "team2": "FC Zbrojovka Brno"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "SK Sigma Olomouc",
+      "team2": "Jablonec"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "FK Pardubice",
+      "team2": "FC Hradec Kralove"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "FC Banik Ostrava",
+      "team2": "FC Zlin"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "Bohemians Prague 1905",
+      "team2": "FK Teplice"
+    },
+    {
+      "date": "2027-04-24",
+      "team1": "1.FC Slovacko",
+      "team2": "Slavia Prague"
+    }
+  ]
+}

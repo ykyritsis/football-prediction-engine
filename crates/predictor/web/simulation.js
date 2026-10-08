@@ -147,5 +147,22 @@ function sampleMatch(scores, players, seed) {
   events.sort((a, b) => a.minute - b.minute || a.side - b.side);
   return { score: result, events };
 }
+// A synthetic broadcast story around the sampled score. These are entertainment
+// events and never claimed as observed match statistics or a tactical model.
+function matchStory(match,players,seed){
+ const random=seededRandom(seed^0x1b873593),events=match.events.map(e=>({...e,kind:'goal'}));
+ const possession=38+Math.floor(random()*25),shots=[0,0],onTarget=[0,0],saves=[0,0];
+ for(let side=0;side<2;side++){
+  const count=Math.max(match.score[side]+3,7+Math.floor(random()*11));
+  for(let i=0;i<count-match.score[side];i++){
+   const saved=random()<.5,rows=players[side];
+   const shooter=rows.length?rows[Math.floor(random()*rows.length)]:null;
+   events.push({minute:2+Math.floor(random()*87),side,kind:saved?'save':'wide',scorer:shooter});
+  }
+ }
+ events.sort((a,b)=>a.minute-b.minute||(a.kind==='goal'?-1:1));
+ for(const e of events){shots[e.side]++;if(e.kind==='goal'||e.kind==='save')onTarget[e.side]++;if(e.kind==='save')saves[1-e.side]++;}
+ return {events,shots,onTarget,saves,possession:[possession,100-possession]};
+}
 if (typeof module !== "undefined")
-  module.exports = { simulate, playerForecast, sampleMatch };
+  module.exports = { simulate, playerForecast, sampleMatch, matchStory };

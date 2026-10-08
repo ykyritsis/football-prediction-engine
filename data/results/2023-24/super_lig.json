@@ -1,0 +1,4566 @@
+{
+  "name": "Süper Lig",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2023-08-11",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-12",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-08-12",
+      "team1": "Konyaspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-12",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-12",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2023-08-13",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-13",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-13",
+      "team1": "Fenerbahce",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-14",
+      "team1": "Alanyaspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-14",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-18",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-18",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-19",
+      "team1": "Caykur Rizespor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-19",
+      "team1": "Galatasaray",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-19",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-20",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-08-20",
+      "team1": "Besiktas",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-20",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-08-21",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-21",
+      "team1": "Samsunspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-08-25",
+      "team1": "Konyaspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-08-26",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-26",
+      "team1": "Trabzonspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-08-26",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-27",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-27",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-08-27",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-01",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-01",
+      "team1": "Kasimpasa",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-02",
+      "team1": "Gaziantep FK",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-03",
+      "team1": "Besiktas",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-03",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-03",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "team1": "Konyaspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-16",
+      "team1": "Galatasaray",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-17",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-17",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-17",
+      "team1": "Alanyaspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-17",
+      "team1": "Trabzonspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-18",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-18",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-22",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-23",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "team1": "Besiktas",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "team1": "Alanyaspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-24",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-25",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-26",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-27",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-28",
+      "team1": "Fenerbahce",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-29",
+      "team1": "Samsunspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-30",
+      "team1": "Galatasaray",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-01",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-01",
+      "team1": "Fenerbahce",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-01",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-01",
+      "team1": "Konyaspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-02",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-06",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-06",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-07",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-07",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-07",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-07",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-08",
+      "team1": "Caykur Rizespor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-08",
+      "team1": "Besiktas",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-08",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-08",
+      "team1": "Kasimpasa",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-21",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-21",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-21",
+      "team1": "Konyaspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-21",
+      "team1": "Galatasaray",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-22",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-22",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-22",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-22",
+      "team1": "Samsunspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-23",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-23",
+      "team1": "Trabzonspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-27",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-27",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-28",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-28",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-28",
+      "team1": "Caykur Rizespor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-29",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-29",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-29",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-29",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2023-10-30",
+      "team1": "Besiktas",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-03",
+      "team1": "Galatasaray",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-04",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-11-04",
+      "team1": "Samsunspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-04",
+      "team1": "Fenerbahce",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-05",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-05",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-05",
+      "team1": "Konyaspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-05",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-06",
+      "team1": "Gaziantep FK",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-06",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-08",
+      "team1": "Samsunspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-10",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-11-10",
+      "team1": "Trabzonspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "team1": "Alanyaspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-11",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-12",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-12",
+      "team1": "Besiktas",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-12",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-12",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "team1": "Konyaspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "team1": "Galatasaray",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-26",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-26",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-26",
+      "team1": "Samsunspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-26",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-27",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-27",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-01",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-01",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-02",
+      "team1": "Alanyaspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-02",
+      "team1": "Caykur Rizespor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-02",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-02",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-03",
+      "team1": "Kasimpasa",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-03",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-03",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-04",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-08",
+      "team1": "Galatasaray",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-09",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-09",
+      "team1": "Samsunspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-09",
+      "team1": "Besiktas",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-10",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-10",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-10",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-10",
+      "team1": "Gaziantep FK",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-11",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-11",
+      "team1": "Konyaspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-19",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-19",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-19",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-20",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-12-20",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-20",
+      "team1": "Galatasaray",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-21",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-21",
+      "team1": "Samsunspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-21",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-21",
+      "team1": "Besiktas",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-23",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-23",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-23",
+      "team1": "Trabzonspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-24",
+      "team1": "Konyaspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-24",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-24",
+      "team1": "Fenerbahce",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-25",
+      "team1": "Alanyaspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-25",
+      "team1": "Kasimpasa",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-25",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-25",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-05",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-05",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-05",
+      "team1": "Besiktas",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-06",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-06",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-06",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-06",
+      "team1": "Samsunspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-07",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-07",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2024-01-07",
+      "team1": "Galatasaray",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-09",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-09",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-09",
+      "team1": "Caykur Rizespor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-01-09",
+      "team1": "Kasimpasa",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-10",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-10",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-10",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-10",
+      "team1": "Fenerbahce",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-11",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-11",
+      "team1": "Trabzonspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "Besiktas",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-13",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Samsunspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Gaziantep FK",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Galatasaray",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Alanyaspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Fenerbahce",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Konyaspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Trabzonspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Besiktas",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Gaziantep FK",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Samsunspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Caykur Rizespor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-25",
+      "team1": "Galatasaray",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Konyaspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Galatasaray",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Trabzonspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Samsunspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Caykur Rizespor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-03",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-04",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-04",
+      "team1": "Kasimpasa",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-04",
+      "team1": "Besiktas",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-09",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-10",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-10",
+      "team1": "Galatasaray",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "Konyaspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "Fenerbahce",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-12",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-12",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-12",
+      "team1": "Samsunspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-16",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-17",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-17",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-17",
+      "team1": "Caykur Rizespor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-18",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-18",
+      "team1": "Gaziantep FK",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-18",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-18",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-19",
+      "team1": "Besiktas",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-19",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-23",
+      "team1": "Samsunspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-24",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-24",
+      "team1": "Gaziantep FK",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-24",
+      "team1": "Fenerbahce",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-24",
+      "team1": "Konyaspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-25",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-26",
+      "team1": "Galatasaray",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-01",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-02",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-02",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-02",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-03",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-03",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-03",
+      "team1": "Besiktas",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-04",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-04",
+      "team1": "Alanyaspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-04",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-08",
+      "team1": "Galatasaray",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-09",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-09",
+      "team1": "Konyaspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-09",
+      "team1": "Istanbul Basaksehir",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-09",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-10",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-10",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-10",
+      "team1": "Samsunspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-10",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-11",
+      "team1": "Gaziantep FK",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-15",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-15",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-16",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-16",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-16",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-16",
+      "team1": "Besiktas",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-17",
+      "team1": "Caykur Rizespor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-17",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-17",
+      "team1": "Kasimpasa",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-03-17",
+      "team1": "Trabzonspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-02",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-04-02",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-02",
+      "team1": "Galatasaray",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-02",
+      "team1": "Gaziantep FK",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-03",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-03",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-03",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-03",
+      "team1": "Konyaspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-04",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-04",
+      "team1": "Samsunspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-12",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-13",
+      "team1": "Kasimpasa",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-13",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-13",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-13",
+      "team1": "Besiktas",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-14",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-14",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-14",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-14",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-15",
+      "team1": "Alanyaspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-04-19",
+      "team1": "Besiktas",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-20",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-20",
+      "team1": "Konyaspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-20",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-20",
+      "team1": "Samsunspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-21",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-21",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-21",
+      "team1": "Galatasaray",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-21",
+      "team1": "Gaziantep FK",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-22",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-26",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-27",
+      "team1": "Kasimpasa",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-27",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-27",
+      "team1": "Fenerbahce",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-27",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-28",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-28",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-28",
+      "team1": "Caykur Rizespor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-28",
+      "team1": "Trabzonspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-29",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-03",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-03",
+      "team1": "Besiktas",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-04",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-04",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-04",
+      "team1": "Samsunspor",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-05",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-05",
+      "team1": "Galatasaray",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-05",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-06",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-06",
+      "team1": "Konyaspor",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "Alanyaspor",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "Kasimpasa",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "Konyaspor",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-12",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-17",
+      "team1": "ESPN:8841:Istanbulspor",
+      "team2": "ESPN:3691:Sivasspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-05-17",
+      "team1": "ESPN:3794:Antalyaspor",
+      "team2": "ESPN:20765:Adana Demirspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "ESPN:2429:Ankaragucu",
+      "team2": "ESPN:9104:Pendikspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "Besiktas",
+      "team2": "ESPN:20737:Hatayspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "Caykur Rizespor",
+      "team2": "Kasimpasa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "Gaziantep FK",
+      "team2": "ESPN:20736:Fatih Karagümrük",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "Istanbul Basaksehir",
+      "team2": "Trabzonspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "ESPN:3643:Kayserispor",
+      "team2": "Konyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-18",
+      "team1": "Samsunspor",
+      "team2": "Alanyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-19",
+      "team1": "Galatasaray",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-24",
+      "team1": "Alanyaspor",
+      "team2": "ESPN:3794:Antalyaspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-25",
+      "team1": "ESPN:20736:Fatih Karagümrük",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-25",
+      "team1": "ESPN:3691:Sivasspor",
+      "team2": "ESPN:3643:Kayserispor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "ESPN:20765:Adana Demirspor",
+      "team2": "Istanbul Basaksehir",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:8841:Istanbulspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "ESPN:20737:Hatayspor",
+      "team2": "Caykur Rizespor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "Kasimpasa",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "Konyaspor",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "ESPN:9104:Pendikspor",
+      "team2": "Gaziantep FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-26",
+      "team1": "Trabzonspor",
+      "team2": "ESPN:2429:Ankaragucu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    }
+  ]
+}

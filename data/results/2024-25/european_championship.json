@@ -1,0 +1,90 @@
+{
+  "name": "European Championship",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2024-07-01",
+      "team1": "France",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-07-02",
+      "team1": "Romania",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-07-02",
+      "team1": "Austria",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-07-06",
+      "team1": "Netherlands",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-07-09",
+      "team1": "Spain",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-07-10",
+      "team1": "Netherlands",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-07-14",
+      "team1": "Spain",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    }
+  ]
+}

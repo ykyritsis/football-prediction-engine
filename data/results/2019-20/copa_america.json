@@ -1,0 +1,54 @@
+{
+  "name": "Copa América",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2019-07-03",
+      "team1": "Brazil",
+      "team2": "Argentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-07-04",
+      "team1": "Chile",
+      "team2": "Peru",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-07-06",
+      "team1": "Argentina",
+      "team2": "Chile",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-07-07",
+      "team1": "Brazil",
+      "team2": "Peru",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

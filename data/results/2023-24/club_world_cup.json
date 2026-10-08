@@ -1,0 +1,90 @@
+{
+  "name": "Club World Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2023-12-12",
+      "team1": "ESPN:2276:Al Ittihad",
+      "team2": "Auckland City",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-15",
+      "team1": "ESPN:228:León",
+      "team2": "Urawa Red Diamonds",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-15",
+      "team1": "Al Ahly",
+      "team2": "ESPN:2276:Al Ittihad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-18",
+      "team1": "Fluminense",
+      "team2": "Al Ahly",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-19",
+      "team1": "Urawa Red Diamonds",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-22",
+      "team1": "Urawa Red Diamonds",
+      "team2": "Al Ahly",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-12-22",
+      "team1": "Manchester City FC",
+      "team2": "Fluminense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    }
+  ]
+}

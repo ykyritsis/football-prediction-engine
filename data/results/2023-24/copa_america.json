@@ -1,0 +1,222 @@
+{
+  "name": "Copa América",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2024-06-21",
+      "team1": "Argentina",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-22",
+      "team1": "Peru",
+      "team2": "Chile",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-22",
+      "team1": "Ecuador",
+      "team2": "Venezuela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-06-23",
+      "team1": "Mexico",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-23",
+      "team1": "United States",
+      "team2": "Bolivia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-24",
+      "team1": "Uruguay",
+      "team2": "Panama",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-24",
+      "team1": "Colombia",
+      "team2": "Paraguay",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-25",
+      "team1": "Brazil",
+      "team2": "Costa Rica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-25",
+      "team1": "Peru",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-26",
+      "team1": "Chile",
+      "team2": "Argentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-26",
+      "team1": "Ecuador",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-27",
+      "team1": "Venezuela",
+      "team2": "Mexico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-27",
+      "team1": "Panama",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-06-28",
+      "team1": "Uruguay",
+      "team2": "Bolivia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-28",
+      "team1": "Colombia",
+      "team2": "Costa Rica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-29",
+      "team1": "Paraguay",
+      "team2": "Brazil",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-06-30",
+      "team1": "Argentina",
+      "team2": "Peru",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-06-30",
+      "team1": "Canada",
+      "team2": "Chile",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

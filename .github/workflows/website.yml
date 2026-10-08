@@ -8,7 +8,7 @@ on:
     paths:
       - "crates/predictor/**"
       - "data/**"
-      - "tools/build_website.cjs"
+      - "tools/**"
       - "Cargo.toml"
       - "Cargo.lock"
       - ".github/workflows/website.yml"
@@ -37,7 +37,7 @@ jobs:
       - name: Check the prediction engine
         run: cargo test --locked -p predictor
       - name: Check browser simulation
-        run: node --test crates/predictor/web/simulation.test.cjs
+        run: node --test crates/predictor/web/*.test.cjs
       - name: Build the saved-data website
         run: node tools/build_website.cjs
       - uses: actions/configure-pages@v5

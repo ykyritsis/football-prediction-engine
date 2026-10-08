@@ -1,0 +1,42 @@
+{
+  "name": "European Championship",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-07-02",
+      "team1": "Belgium",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Czechia",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-03",
+      "team1": "Ukraine",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    }
+  ]
+}

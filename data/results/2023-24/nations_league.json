@@ -1,0 +1,30 @@
+{
+  "name": "UEFA Nations League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2024-03-21",
+      "team1": "Gibraltar",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-26",
+      "team1": "Lithuania",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

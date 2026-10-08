@@ -1,0 +1,558 @@
+{
+  "name": "Africa Cup of Nations",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2025-12-21",
+      "team1": "Morocco",
+      "team2": "Comoros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Mali",
+      "team2": "Zambia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "South Africa",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Egypt",
+      "team2": "Zimbabwe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Congo DR",
+      "team2": "Benin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Senegal",
+      "team2": "Botswana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Nigeria",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Tunisia",
+      "team2": "Uganda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Burkina Faso",
+      "team2": "Equatorial Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Algeria",
+      "team2": "Sudan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Ivory Coast",
+      "team2": "Mozambique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-24",
+      "team1": "Cameroon",
+      "team2": "Gabon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Angola",
+      "team2": "Zimbabwe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Egypt",
+      "team2": "South Africa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Zambia",
+      "team2": "Comoros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-26",
+      "team1": "Morocco",
+      "team2": "Mali",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Benin",
+      "team2": "Botswana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Senegal",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Uganda",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Nigeria",
+      "team2": "Tunisia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Gabon",
+      "team2": "Mozambique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Equatorial Guinea",
+      "team2": "Sudan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Algeria",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Ivory Coast",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Angola",
+      "team2": "Egypt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Zimbabwe",
+      "team2": "South Africa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Comoros",
+      "team2": "Mali",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "Zambia",
+      "team2": "Morocco",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Tanzania",
+      "team2": "Tunisia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Uganda",
+      "team2": "Nigeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Benin",
+      "team2": "Senegal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-30",
+      "team1": "Botswana",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Equatorial Guinea",
+      "team2": "Algeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Sudan",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Gabon",
+      "team2": "Ivory Coast",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-31",
+      "team1": "Mozambique",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "Senegal",
+      "team2": "Sudan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "Morocco",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "South Africa",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-05",
+      "team1": "Nigeria",
+      "team2": "Mozambique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-06",
+      "team1": "Ivory Coast",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-09",
+      "team1": "Mali",
+      "team2": "Senegal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-09",
+      "team1": "Cameroon",
+      "team2": "Morocco",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "Algeria",
+      "team2": "Nigeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "Egypt",
+      "team2": "Ivory Coast",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-14",
+      "team1": "Senegal",
+      "team2": "Egypt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Gold Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2025-07-02",
+      "team1": "United States",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-07-03",
+      "team1": "Mexico",
+      "team2": "Honduras",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-07-06",
+      "team1": "United States",
+      "team2": "Mexico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

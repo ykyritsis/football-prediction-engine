@@ -1,0 +1,3762 @@
+{
+  "name": "Belgian Pro League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2024-07-26",
+      "team1": "Club Brugge",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-07-27",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-07-27",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-07-27",
+      "team1": "Anderlecht",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-07-28",
+      "team1": "Racing Genk",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-07-28",
+      "team1": "KV Kortrijk",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-07-28",
+      "team1": "Royal Charleroi SC",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-07-28",
+      "team1": "KVC Westerlo",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-02",
+      "team1": "Union St.-Gilloise",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-03",
+      "team1": "KV Mechelen",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-08-03",
+      "team1": "OH Leuven",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-03",
+      "team1": "Sint-Truidense",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-08-04",
+      "team1": "Antwerp",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-04",
+      "team1": "Cercle Brugge KSV",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-04",
+      "team1": "Standard Liege",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-04",
+      "team1": "KAA Gent",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-09",
+      "team1": "Standard Liege",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-10",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-10",
+      "team1": "KVC Westerlo",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-08-10",
+      "team1": "Anderlecht",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-11",
+      "team1": "Racing Genk",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-11",
+      "team1": "Antwerp",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-11",
+      "team1": "Royal Charleroi SC",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-11",
+      "team1": "Cercle Brugge KSV",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-16",
+      "team1": "Union St.-Gilloise",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-17",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-08-17",
+      "team1": "Sint-Truidense",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-08-17",
+      "team1": "KV Mechelen",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-08-18",
+      "team1": "Club Brugge",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-18",
+      "team1": "OH Leuven",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-18",
+      "team1": "KV Kortrijk",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-18",
+      "team1": "KAA Gent",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-24",
+      "team1": "KVC Westerlo",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-24",
+      "team1": "Antwerp",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-08-25",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-25",
+      "team1": "Sint-Truidense",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-25",
+      "team1": "Standard Liege",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-25",
+      "team1": "Royal Charleroi SC",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-30",
+      "team1": "Racing Genk",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-08-31",
+      "team1": "KV Mechelen",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-31",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-08-31",
+      "team1": "OH Leuven",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-01",
+      "team1": "Club Brugge",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-01",
+      "team1": "KAA Gent",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-01",
+      "team1": "Union St.-Gilloise",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-01",
+      "team1": "KV Kortrijk",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-13",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "team1": "KV Kortrijk",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-09-14",
+      "team1": "Anderlecht",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "team1": "Antwerp",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "team1": "Sint-Truidense",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "team1": "Royal Charleroi SC",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-15",
+      "team1": "KAA Gent",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-17",
+      "team1": "Anderlecht",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-09-20",
+      "team1": "Standard Liege",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "team1": "KVC Westerlo",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-09-21",
+      "team1": "Anderlecht",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-22",
+      "team1": "Club Brugge",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-09-22",
+      "team1": "KV Mechelen",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-22",
+      "team1": "Racing Genk",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-22",
+      "team1": "OH Leuven",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-26",
+      "team1": "Cercle Brugge KSV",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-27",
+      "team1": "Royal Charleroi SC",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-28",
+      "team1": "Racing Genk",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-28",
+      "team1": "Standard Liege",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-09-28",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "team1": "Antwerp",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "team1": "Union St.-Gilloise",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "team1": "KAA Gent",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-09-29",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-04",
+      "team1": "KVC Westerlo",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-10-05",
+      "team1": "KV Mechelen",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-05",
+      "team1": "KV Kortrijk",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-05",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-06",
+      "team1": "Anderlecht",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-06",
+      "team1": "Antwerp",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-06",
+      "team1": "Club Brugge",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-06",
+      "team1": "Sint-Truidense",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-18",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-19",
+      "team1": "KVC Westerlo",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-10-19",
+      "team1": "Cercle Brugge KSV",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-19",
+      "team1": "Union St.-Gilloise",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-20",
+      "team1": "Racing Genk",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-10-20",
+      "team1": "OH Leuven",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-20",
+      "team1": "Standard Liege",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-20",
+      "team1": "KV Mechelen",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-25",
+      "team1": "KV Kortrijk",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-26",
+      "team1": "Royal Charleroi SC",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-10-26",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2024-10-26",
+      "team1": "Sint-Truidense",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-27",
+      "team1": "Club Brugge",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-10-27",
+      "team1": "Antwerp",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-10-27",
+      "team1": "KAA Gent",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-10-27",
+      "team1": "Union St.-Gilloise",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-11-01",
+      "team1": "KVC Westerlo",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-02",
+      "team1": "Standard Liege",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-02",
+      "team1": "OH Leuven",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-02",
+      "team1": "KV Mechelen",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-03",
+      "team1": "Racing Genk",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-03",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-03",
+      "team1": "Anderlecht",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-03",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-08",
+      "team1": "Sint-Truidense",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-09",
+      "team1": "KV Kortrijk",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-11-09",
+      "team1": "ESPN:7878:Dender",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-09",
+      "team1": "Royal Charleroi SC",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-10",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2024-11-10",
+      "team1": "KAA Gent",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-10",
+      "team1": "Union St.-Gilloise",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-10",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-11-22",
+      "team1": "Antwerp",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-23",
+      "team1": "Club Brugge",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-23",
+      "team1": "Standard Liege",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-23",
+      "team1": "Racing Genk",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-24",
+      "team1": "KV Mechelen",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-24",
+      "team1": "OH Leuven",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-24",
+      "team1": "Anderlecht",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-24",
+      "team1": "KVC Westerlo",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-11-29",
+      "team1": "KV Kortrijk",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-30",
+      "team1": "Club Brugge",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-11-30",
+      "team1": "Royal Charleroi SC",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-01",
+      "team1": "Sint-Truidense",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-01",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-01",
+      "team1": "OH Leuven",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-01",
+      "team1": "Union St.-Gilloise",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-01",
+      "team1": "KVC Westerlo",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-07",
+      "team1": "Racing Genk",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-07",
+      "team1": "KV Mechelen",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-07",
+      "team1": "Standard Liege",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-07",
+      "team1": "KAA Gent",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-08",
+      "team1": "Antwerp",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-08",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-08",
+      "team1": "Anderlecht",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-08",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-13",
+      "team1": "KV Mechelen",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-14",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-14",
+      "team1": "OH Leuven",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-14",
+      "team1": "KV Kortrijk",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-15",
+      "team1": "Club Brugge",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-15",
+      "team1": "Union St.-Gilloise",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-15",
+      "team1": "Sint-Truidense",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-15",
+      "team1": "KAA Gent",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-20",
+      "team1": "KVC Westerlo",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-21",
+      "team1": "Royal Charleroi SC",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-21",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-21",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-22",
+      "team1": "Racing Genk",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-22",
+      "team1": "Standard Liege",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-22",
+      "team1": "Union St.-Gilloise",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-22",
+      "team1": "Cercle Brugge KSV",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "team1": "Antwerp",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "team1": "Club Brugge",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "team1": "KV Kortrijk",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "team1": "KV Mechelen",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-26",
+      "team1": "KAA Gent",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-27",
+      "team1": "OH Leuven",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-12-27",
+      "team1": "Anderlecht",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-12-27",
+      "team1": "Sint-Truidense",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-10",
+      "team1": "Standard Liege",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-11",
+      "team1": "KVC Westerlo",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-11",
+      "team1": "Racing Genk",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-11",
+      "team1": "Royal Charleroi SC",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-12",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-12",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-12",
+      "team1": "Anderlecht",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-01-12",
+      "team1": "Cercle Brugge KSV",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-17",
+      "team1": "KAA Gent",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-18",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-18",
+      "team1": "KV Mechelen",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-18",
+      "team1": "Club Brugge",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-19",
+      "team1": "KV Kortrijk",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-19",
+      "team1": "Union St.-Gilloise",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-19",
+      "team1": "Sint-Truidense",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-19",
+      "team1": "Antwerp",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-24",
+      "team1": "Sint-Truidense",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-25",
+      "team1": "KVC Westerlo",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-01-25",
+      "team1": "Royal Charleroi SC",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-25",
+      "team1": "Club Brugge",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-26",
+      "team1": "Standard Liege",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-26",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-01-26",
+      "team1": "Anderlecht",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-01-26",
+      "team1": "OH Leuven",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-01-31",
+      "team1": "OH Leuven",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-01",
+      "team1": "Royal Charleroi SC",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-01",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-01",
+      "team1": "Racing Genk",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-02",
+      "team1": "Antwerp",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-02",
+      "team1": "Union St.-Gilloise",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-02",
+      "team1": "KAA Gent",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-02",
+      "team1": "KV Kortrijk",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-07",
+      "team1": "KV Mechelen",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-02-08",
+      "team1": "Club Brugge",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-08",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-08",
+      "team1": "Racing Genk",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-09",
+      "team1": "Anderlecht",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-09",
+      "team1": "KV Kortrijk",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-09",
+      "team1": "KVC Westerlo",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-09",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-14",
+      "team1": "Standard Liege",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-15",
+      "team1": "OH Leuven",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-15",
+      "team1": "Antwerp",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-15",
+      "team1": "Sint-Truidense",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-16",
+      "team1": "KAA Gent",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-16",
+      "team1": "Union St.-Gilloise",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-16",
+      "team1": "Royal Charleroi SC",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-16",
+      "team1": "Cercle Brugge KSV",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-21",
+      "team1": "KV Mechelen",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-22",
+      "team1": "ESPN:7878:Dender",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-22",
+      "team1": "KVC Westerlo",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-02-22",
+      "team1": "Antwerp",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-23",
+      "team1": "Club Brugge",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-23",
+      "team1": "Racing Genk",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-02-23",
+      "team1": "Anderlecht",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-02-23",
+      "team1": "KV Kortrijk",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-02-28",
+      "team1": "Royal Charleroi SC",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "team1": "KAA Gent",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "team1": "Sint-Truidense",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-01",
+      "team1": "Union St.-Gilloise",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-02",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-02",
+      "team1": "Standard Liege",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-02",
+      "team1": "OH Leuven",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-07",
+      "team1": "Sint-Truidense",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-08",
+      "team1": "KV Kortrijk",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-08",
+      "team1": "Royal Charleroi SC",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-08",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-09",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-03-09",
+      "team1": "KVC Westerlo",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-09",
+      "team1": "Antwerp",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-09",
+      "team1": "Union St.-Gilloise",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-15",
+      "team1": "Racing Genk",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "Standard Liege",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "Anderlecht",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "Club Brugge",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "KAA Gent",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "KV Mechelen",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-16",
+      "team1": "OH Leuven",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-28",
+      "team1": "OH Leuven",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-29",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-29",
+      "team1": "Standard Liege",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-29",
+      "team1": "Union St.-Gilloise",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-03-30",
+      "team1": "Club Brugge",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-30",
+      "team1": "KV Kortrijk",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-03-30",
+      "team1": "Racing Genk",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-03-30",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-04",
+      "team1": "KV Mechelen",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-05",
+      "team1": "Cercle Brugge KSV",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-05",
+      "team1": "KVC Westerlo",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-05",
+      "team1": "KAA Gent",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-04-06",
+      "team1": "Antwerp",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-04-06",
+      "team1": "Sint-Truidense",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-04-06",
+      "team1": "Anderlecht",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-06",
+      "team1": "Royal Charleroi SC",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-11",
+      "team1": "KVC Westerlo",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "team1": "KV Kortrijk",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "team1": "Sint-Truidense",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-12",
+      "team1": "Union St.-Gilloise",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "team1": "Antwerp",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "team1": "KV Mechelen",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "team1": "Club Brugge",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-13",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "team1": "OH Leuven",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "team1": "Royal Charleroi SC",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-19",
+      "team1": "Standard Liege",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "team1": "Anderlecht",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "team1": "Racing Genk",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-20",
+      "team1": "KAA Gent",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-04-22",
+      "team1": "ESPN:7878:Dender",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-22",
+      "team1": "KV Mechelen",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-04-22",
+      "team1": "Standard Liege",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-23",
+      "team1": "Anderlecht",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-23",
+      "team1": "Antwerp",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-24",
+      "team1": "Club Brugge",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-25",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "team1": "OH Leuven",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "team1": "KVC Westerlo",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "team1": "Cercle Brugge KSV",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-26",
+      "team1": "Royal Charleroi SC",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-27",
+      "team1": "KAA Gent",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-27",
+      "team1": "Racing Genk",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-04-27",
+      "team1": "Union St.-Gilloise",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "team1": "Antwerp",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-05-01",
+      "team1": "Club Brugge",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-02",
+      "team1": "KVC Westerlo",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "team1": "Cercle Brugge KSV",
+      "team2": "KV Kortrijk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "team1": "OH Leuven",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-03",
+      "team1": "Union St.-Gilloise",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-04",
+      "team1": "Standard Liege",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-04",
+      "team1": "Sint-Truidense",
+      "team2": "ESPN:991:Beerschot",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-09",
+      "team1": "Royal Charleroi SC",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-05-10",
+      "team1": "ESPN:991:Beerschot",
+      "team2": "Cercle Brugge KSV",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-10",
+      "team1": "KV Kortrijk",
+      "team2": "Sint-Truidense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-10",
+      "team1": "KV Mechelen",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-10",
+      "team1": "Anderlecht",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-11",
+      "team1": "KAA Gent",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-05-11",
+      "team1": "Racing Genk",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-11",
+      "team1": "ESPN:7878:Dender",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-16",
+      "team1": "OH Leuven",
+      "team2": "KVC Westerlo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-17",
+      "team1": "Standard Liege",
+      "team2": "ESPN:7878:Dender",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-17",
+      "team1": "Antwerp",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "team1": "Anderlecht",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "team1": "KV Mechelen",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "team1": "KAA Gent",
+      "team2": "Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "team1": "ESPN:7878:Dender",
+      "team2": "KV Mechelen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "team1": "KVC Westerlo",
+      "team2": "Standard Liege",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "team1": "Royal Charleroi SC",
+      "team2": "OH Leuven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-25",
+      "team1": "Club Brugge",
+      "team2": "Antwerp",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-25",
+      "team1": "Racing Genk",
+      "team2": "Anderlecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-25",
+      "team1": "Union St.-Gilloise",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-05-29",
+      "team1": "Antwerp",
+      "team2": "Royal Charleroi SC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,2214 @@
+{
+  "name": "Primeira Liga",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2026-08-07",
+      "team1": "Estoril",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "Maritimo",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-08",
+      "team1": "Estrela",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "FC Porto",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "Benfica",
+      "team2": "Académico de Viseu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "Gil Vicente",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-09",
+      "team1": "Moreirense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-10",
+      "team1": "Santa Clara",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-14",
+      "team1": "Sporting CP",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "Alverca",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "Académico de Viseu",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-15",
+      "team1": "Rio Ave",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "team1": "C.D. Nacional",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "team1": "Arouca",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-16",
+      "team1": "FC Famalicao",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-17",
+      "team1": "Casa Pia",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "Maritimo",
+      "team2": "Académico de Viseu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "Estoril",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-08-22",
+      "team1": "Sporting CP",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-23",
+      "team1": "Vitória de Guimaraes",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-23",
+      "team1": "Santa Clara",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-23",
+      "team1": "FC Porto",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-24",
+      "team1": "Gil Vicente",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-28",
+      "team1": "Rio Ave",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "Alverca",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "Arouca",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-29",
+      "team1": "Académico de Viseu",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "C.D. Nacional",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "Casa Pia",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-30",
+      "team1": "FC Famalicao",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "team1": "Benfica",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-08-31",
+      "team1": "Braga",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-04",
+      "team1": "FC Porto",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "Estrela",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "Alverca",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "Maritimo",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-05",
+      "team1": "Sporting CP",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "Santa Clara",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-06",
+      "team1": "Gil Vicente",
+      "team2": "Académico de Viseu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-07",
+      "team1": "Estoril",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "Moreirense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "Estrela",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "C.D. Nacional",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "Casa Pia",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-09-12",
+      "team1": "Académico de Viseu",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "Arouca",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "Benfica",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-13",
+      "team1": "FC Famalicao",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "team1": "Rio Ave",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "team1": "Moreirense",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-14",
+      "team1": "Braga",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "C.D. Nacional",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "Gil Vicente",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "Alverca",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-19",
+      "team1": "Sporting CP",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Estrela",
+      "team2": "Académico de Viseu",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Estoril",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "Santa Clara",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-20",
+      "team1": "FC Porto",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-10-09",
+      "team1": "Moreirense",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-09",
+      "team1": "Braga",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "Casa Pia",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "Maritimo",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-10",
+      "team1": "Académico de Viseu",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "Rio Ave",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "Benfica",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-11",
+      "team1": "Arouca",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-12",
+      "team1": "FC Famalicao",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-19",
+      "team1": "Braga",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-23",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "Estrela",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "Alverca",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-24",
+      "team1": "Gil Vicente",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Estoril",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "C.D. Nacional",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Rio Ave",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Sporting CP",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-26",
+      "team1": "Santa Clara",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-30",
+      "team1": "Casa Pia",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "Moreirense",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-31",
+      "team1": "FC Porto",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Arouca",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Académico de Viseu",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Maritimo",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Braga",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-02",
+      "team1": "Benfica",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-02",
+      "team1": "Gil Vicente",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-06",
+      "team1": "FC Famalicao",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "C.D. Nacional",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "Alverca",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-07",
+      "team1": "Sporting CP",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Estoril",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Santa Clara",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Estrela",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-08",
+      "team1": "Rio Ave",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-27",
+      "team1": "Maritimo",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Arouca",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Moreirense",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Académico de Viseu",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "Gil Vicente",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-29",
+      "team1": "FC Porto",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-30",
+      "team1": "Benfica",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-30",
+      "team1": "Casa Pia",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Alverca",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Braga",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "C.D. Nacional",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Estoril",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Estrela",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "FC Famalicao",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Rio Ave",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Santa Clara",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Sporting CP",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Académico de Viseu",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Benfica",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Casa Pia",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Estoril",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "FC Porto",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Gil Vicente",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Maritimo",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Moreirense",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Alverca",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Arouca",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Braga",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "C.D. Nacional",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Estrela",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "FC Famalicao",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Rio Ave",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Santa Clara",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Sporting CP",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Benfica",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Casa Pia",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Estoril",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "FC Porto",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Gil Vicente",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Maritimo",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Moreirense",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Santa Clara",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-27",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Académico de Viseu",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Alverca",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Arouca",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Braga",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "C.D. Nacional",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Estrela",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "FC Famalicao",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Rio Ave",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-10",
+      "team1": "Sporting CP",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Académico de Viseu",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Alverca",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Arouca",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Braga",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "C.D. Nacional",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Casa Pia",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "FC Famalicao",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Rio Ave",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-17",
+      "team1": "Sporting CP",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Benfica",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Estoril",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Estrela",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "FC Porto",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Gil Vicente",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Maritimo",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Moreirense",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Santa Clara",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-24",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Académico de Viseu",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Alverca",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Arouca",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Benfica",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Braga",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "C.D. Nacional",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Casa Pia",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "FC Famalicao",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-31",
+      "team1": "Rio Ave",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Estoril",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Estrela",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "FC Porto",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Gil Vicente",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Maritimo",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Moreirense",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Santa Clara",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Sporting CP",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-07",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Académico de Viseu",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Arouca",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Benfica",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Braga",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "C.D. Nacional",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Casa Pia",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "FC Famalicao",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Moreirense",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-14",
+      "team1": "Rio Ave",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Alverca",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Estoril",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Estrela",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "FC Porto",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Gil Vicente",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Maritimo",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Santa Clara",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Sporting CP",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-21",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Académico de Viseu",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Arouca",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Benfica",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Braga",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Casa Pia",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "FC Famalicao",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Maritimo",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Moreirense",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-02-28",
+      "team1": "Rio Ave",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Alverca",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "C.D. Nacional",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Estoril",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Estrela",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "FC Porto",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Gil Vicente",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Santa Clara",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Sporting CP",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-07",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Académico de Viseu",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Arouca",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Benfica",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Braga",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Casa Pia",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "FC Famalicao",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "FC Porto",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Maritimo",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-14",
+      "team1": "Moreirense",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Alverca",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "C.D. Nacional",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Estoril",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Estrela",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "FC Famalicao",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Rio Ave",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Santa Clara",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Sporting CP",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-03-21",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Académico de Viseu",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Arouca",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Benfica",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Braga",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Casa Pia",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "FC Porto",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Gil Vicente",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Maritimo",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-04",
+      "team1": "Moreirense",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Alverca",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Braga",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "C.D. Nacional",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Estoril",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Estrela",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "FC Famalicao",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Rio Ave",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Santa Clara",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-11",
+      "team1": "Sporting CP",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Académico de Viseu",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Arouca",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Benfica",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Casa Pia",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "FC Porto",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Gil Vicente",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Maritimo",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Moreirense",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Alverca",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Arouca",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Braga",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "C.D. Nacional",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Estrela",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "FC Famalicao",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Rio Ave",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Santa Clara",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-04-25",
+      "team1": "Sporting CP",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Académico de Viseu",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Benfica",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Casa Pia",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Estoril",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "FC Porto",
+      "team2": "FC Famalicao",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Gil Vicente",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Maritimo",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Moreirense",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-02",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Académico de Viseu",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Alverca",
+      "team2": "Estoril",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Arouca",
+      "team2": "Gil Vicente",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Braga",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "C.D. Nacional",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Estrela",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "FC Famalicao",
+      "team2": "Casa Pia",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Rio Ave",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-09",
+      "team1": "Sporting CP",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Benfica",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Casa Pia",
+      "team2": "Académico de Viseu",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Estoril",
+      "team2": "Estrela",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "FC Porto",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Gil Vicente",
+      "team2": "C.D. Nacional",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Maritimo",
+      "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Moreirense",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Santa Clara",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-05-16",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Famalicao",
+      "neutral": false
+    }
+  ]
+}

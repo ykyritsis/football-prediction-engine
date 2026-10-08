@@ -1,0 +1,342 @@
+{
+  "name": "Africa Cup of Nations",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2019-06-21",
+      "team1": "Egypt",
+      "team2": "Zimbabwe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-22",
+      "team1": "Congo DR",
+      "team2": "Uganda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-22",
+      "team1": "Nigeria",
+      "team2": "ESPN:5779:Burundi",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-22",
+      "team1": "ESPN:2847:Guinea",
+      "team2": "ESPN:5533:Madagascar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-23",
+      "team1": "Morocco",
+      "team2": "ESPN:6725:Namibia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-23",
+      "team1": "Senegal",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-23",
+      "team1": "Algeria",
+      "team2": "ESPN:2848:Kenya",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-24",
+      "team1": "Ivory Coast",
+      "team2": "South Africa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-24",
+      "team1": "Tunisia",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-06-24",
+      "team1": "Mali",
+      "team2": "ESPN:8940:Mauritania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-06-25",
+      "team1": "Cameroon",
+      "team2": "ESPN:8602:Guinea-Bissau",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-25",
+      "team1": "Ghana",
+      "team2": "Benin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-26",
+      "team1": "Nigeria",
+      "team2": "ESPN:2847:Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-26",
+      "team1": "Uganda",
+      "team2": "Zimbabwe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-06-26",
+      "team1": "Egypt",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-27",
+      "team1": "ESPN:5533:Madagascar",
+      "team2": "ESPN:5779:Burundi",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-27",
+      "team1": "Senegal",
+      "team2": "Algeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-06-27",
+      "team1": "ESPN:2848:Kenya",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-28",
+      "team1": "Tunisia",
+      "team2": "Mali",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-06-28",
+      "team1": "Morocco",
+      "team2": "Ivory Coast",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-28",
+      "team1": "South Africa",
+      "team2": "ESPN:6725:Namibia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-29",
+      "team1": "ESPN:8940:Mauritania",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-29",
+      "team1": "Cameroon",
+      "team2": "Ghana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-29",
+      "team1": "Benin",
+      "team2": "ESPN:8602:Guinea-Bissau",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "ESPN:5779:Burundi",
+      "team2": "ESPN:2847:Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "ESPN:5533:Madagascar",
+      "team2": "Nigeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "Uganda",
+      "team2": "Egypt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-06-30",
+      "team1": "Zimbabwe",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    }
+  ]
+}

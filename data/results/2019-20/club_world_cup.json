@@ -1,0 +1,66 @@
+{
+  "name": "Club World Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2019-12-14",
+      "team1": "Al Hilal",
+      "team2": "Esperance Sportive de Tunis",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-14",
+      "team1": "Monterrey",
+      "team2": "ESPN:7135:AL SADD",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-12-17",
+      "team1": "ESPN:7135:AL SADD",
+      "team2": "Esperance Sportive de Tunis",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2019-12-17",
+      "team1": "Flamengo",
+      "team2": "Al Hilal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-18",
+      "team1": "Monterrey",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

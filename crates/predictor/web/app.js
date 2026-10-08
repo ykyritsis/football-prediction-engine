@@ -54,6 +54,8 @@ const state = {
   sort: "totalGoals",
   home: "",
   away: "",
+  homeShape: "4-3-3",
+  awayShape: "4-3-3",
 };
 const matchLookup = new Map(),
   playerLookup = new Map();
@@ -80,9 +82,11 @@ const modelTeam = (n, l = selectedLeague()) =>
       competitions: [],
       player_stats: {},
     };
+const photoFallbacks=new Map();
+for(const t of Object.values(catalog.teams))for(const p of t.players||[])if(p.portrait?.url&&p.alternative_portrait?.url&&p.portrait.url!==p.alternative_portrait.url)photoFallbacks.set(p.portrait.url,p.alternative_portrait.url);
 function image(src, alt, cls = "") {
   return url(src)
-    ? `<img src="${url(src)}" alt="${esc(alt)}" class="${cls}" loading="lazy" referrerpolicy="no-referrer">`
+    ? `<img src="${url(src)}" alt="${esc(alt)}" class="${cls}" ${photoFallbacks.has(src)?`data-fallback-src="${url(photoFallbacks.get(src))}"`:""} loading="lazy" referrerpolicy="no-referrer">`
     : "";
 }
 function crest(n) {
@@ -129,10 +133,14 @@ function playerRows(club = null) {
 }
 function avatar(p) {
   return (
-    image(p.portrait?.url, p.name, "avatar") ||
+    image(portraitFor(p)?.url, p.name, "avatar") ||
     `<span class="avatar portrait-fallback" style="font-size:11px;letter-spacing:0">${esc(initials(p.name))}</span>`
   );
 }
+
+const localZone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+function matchTime(l,m){return kickoffInfo(fixtureMeta(l,m),m.date,localZone);}
+function portraitFor(p){return p.portrait||p.alternative_portrait;}
 function playerButton(t, p, body, cls = "") {
   return `<button class="${cls}" data-player="${esc(t.id + ":" + p.id)}">${body}</button>`;
 }
@@ -170,7 +178,7 @@ function renderNavigation() {
     data.leagues
       .map(
         (l, i) =>
-          (i === 5 ? '<div class="sidebar-section">EUROPEAN CUPS</div>' : "") +
+          (i === 0 ? '<div class="sidebar-section">DOMESTIC LEAGUES</div>' : i === 10 ? '<div class="sidebar-section">CLUB TOURNAMENTS</div>' : i === 14 ? '<div class="sidebar-section">INTERNATIONAL FOOTBALL</div>' : "") +
           `<button class="competition ${state.competition === l.key ? "active" : ""}" data-comp="${l.key}">${competitionLogo(l.key)}<span>${esc(l.name)}</span></button>`,
       )
       .join("");
@@ -203,10 +211,35 @@ function renderNavigation() {
       ? `<div class="freshness"><details><summary>Data coverage: ${issues.length === 1 ? esc(issues[0].name) + " results through " + esc(issues[0].latest_result || "unavailable") : issues.length + " competitions have older or incomplete results"}. Predictions use the available snapshot.</summary><ul>${issues.map((l) => `<li>${esc(l.name)}: latest result ${esc(l.latest_result || "unavailable")}${l.overdue ? " · " + l.overdue + " earlier fixtures without results" : ""}.</li>`).join("")}</ul></details></div>`
       : "";
 }
-function render() {
+let renderRevision=0;
+const teamLoads=new Map();
+const leagueLoads=new Map();
+async function loadLeague(l){
+ if(!l?.lazy)return;if(leagueLoads.has(l.key))return leagueLoads.get(l.key);
+ const pending=(async()=>{const r=await fetch(new URL(l.asset,document.baseURI));if(!r.ok)throw Error('Competition data is temporarily unavailable.');Object.assign(l,await r.json(),{lazy:false});})();leagueLoads.set(l.key,pending);try{await pending;}finally{leagueLoads.delete(l.key);}
+}
+async function loadTeam(t){
+ if(!t?.lazy)return;
+ if(teamLoads.has(t.name))return teamLoads.get(t.name);
+ const loading=(async()=>{const response=await fetch(new URL(t.asset,document.baseURI));if(!response.ok)throw Error('Team details are temporarily unavailable.');const detail=await response.json();Object.assign(t,detail,{lazy:false});if(detail.heritage)(tmStore().clubs??={})[t.name]=detail.heritage;for(const p of t.players||[]){playerLookup.set(t.id+':'+p.id,{t,p});if(p.portrait?.url&&p.alternative_portrait?.url&&p.portrait.url!==p.alternative_portrait.url)photoFallbacks.set(p.portrait.url,p.alternative_portrait.url);}})();
+ teamLoads.set(t.name,loading);try{await loading;}finally{teamLoads.delete(t.name);}
+}
+async function loadTeams(teams){let index=0;await Promise.all(Array.from({length:Math.min(6,teams.length)},async()=>{while(index<teams.length)await loadTeam(teams[index++]);}));}
+async function render() {
+  const revision=++renderRevision;
+  if(state.competition==='all'&&['simulator','seasons'].includes(state.view))state.competition='premier_league';
   stopReplay();
   renderNavigation();
   $("viewTools").innerHTML = "";
+  const teamViews=state.view==='players'||state.view==='simulator'||(state.view==='matches'&&state.competition!=='all');
+  const teamNames=state.view==='clubs'&&state.club?[state.club]:teamViews?[...new Set(activeLeagues().flatMap(l=>l.teams.map(t=>t.name)))]:[];
+  const neededTeams=teamNames.map(n=>catalog.teams[n]).filter(t=>t?.lazy);
+  if(neededTeams.length){$('content').innerHTML='<div class="loading-state">Opening team profiles…</div>';try{await loadTeams(neededTeams);}catch(e){if(revision===renderRevision)$('content').innerHTML=`<div class="notice">${esc(e.message)} <button data-retry>Try again</button></div>`;return;}}
+  if (["simulator","history","seasons","clubs"].includes(state.view)) {
+    const needed=activeLeagues().filter(l=>l.lazy);
+    if(needed.length){$("content").innerHTML='<div class="loading-state">Loading competition details…</div>';try{await Promise.all(needed.map(loadLeague));}catch(e){if(revision===renderRevision)$("content").innerHTML=`<div class="notice">${esc(e.message)} <button data-retry>Try again</button></div>`;return;}}
+  }
+  if(revision!==renderRevision)return;
   if (state.view === "matches") renderMatches();
   else if (state.view === "clubs")
     state.club ? renderClub(state.club) : renderClubs();
@@ -214,7 +247,9 @@ function render() {
   else if (state.view === "simulator") renderSimulator();
   else if (state.view === "history") renderHistory();
   else if (state.view === "seasons") renderSeasons();
+  else if (state.view === "table") renderTable();
   else renderAbout();
+  $("content").classList.remove('view-enter');void $("content").offsetWidth;$("content").classList.add('view-enter');
 }
 function allFixtures() {
   const end = Date.parse(data.as_of) + state.days * 86400000;
@@ -230,9 +265,7 @@ function allFixtures() {
     )
     .sort(
       (a, b) =>
-        (fixtureMeta(a.l, a.m).kickoff || a.m.date + "T23:59Z").localeCompare(
-          fixtureMeta(b.l, b.m).kickoff || b.m.date + "T23:59Z",
-        ) ||
+        ((matchTime(a.l,a.m).epoch??Date.parse(a.m.date+'T23:59Z'))-(matchTime(b.l,b.m).epoch??Date.parse(b.m.date+'T23:59Z'))) ||
         a.l.key.localeCompare(b.l.key) ||
         a.m.home.localeCompare(b.m.home),
     );
@@ -251,21 +284,17 @@ function matchRow(l, m) {
     best = Math.max(p.home_win, p.draw, p.away_win),
     label =
       p.home_win === best ? "Home" : p.away_win === best ? "Away" : "Draw",
-    kickoff = meta.kickoff
-      ? new Date(meta.kickoff).toLocaleTimeString("en-GB", {
-          hour: "2-digit",
-          minute: "2-digit",
-          timeZone: "UTC",
-        })
-      : "—";
-  return `<button class="match-row" data-match="${matchId(l, m)}"><span class="match-time">${esc(dateLabel(m.date))}<br><strong>${kickoff}</strong></span><span class="row-teams"><span class="club-line">${crest(m.home)}<span>${esc(short(m.home))}</span></span><span class="club-line">${crest(m.away)}<span>${esc(short(m.away))}</span></span></span><span class="row-score" title="Most likely score"><span>${p.most_likely_score[0]}</span><span>${p.most_likely_score[1]}</span></span><span class="row-prob"><strong>${pct(best)}</strong>${label}</span></button>`;
+    kickoff = matchTime(l,m);
+  return `<button class="match-row" data-match="${matchId(l, m)}"><span class="match-time" title="${esc(kickoff.label||'Kickoff time not supplied')}">${esc(dateLabel(kickoff.date))}<br><strong>${esc(kickoff.time)}</strong></span><span class="row-teams"><span class="club-line">${crest(m.home)}<span>${esc(short(m.home))}</span></span><span class="club-line">${crest(m.away)}<span>${esc(short(m.away))}</span></span></span><span class="row-score" title="Most likely score"><span>${p.most_likely_score[0]}</span><span>${p.most_likely_score[1]}</span></span><span class="row-prob"><strong>${pct(best)}</strong>${label}</span></button>`;
 }
 function featureHTML(r) {
   if (!r) return "";
   const { l, m } = r;
-  return `<div class="featured"><div class="eyebrow">MATCH SPOTLIGHT · ${esc(l.name)}</div><div class="versus">${crest(m.home)}<span>VS</span>${crest(m.away)}</div><div class="featured-names"><span>${esc(short(m.home))}</span><span>${esc(short(m.away))}</span></div><div class="featured-date">${esc(dateLabel(m.date))} · ${m.date.slice(0, 4)}</div><div class="feature-prediction"><span>MOST LIKELY SCORE</span><strong>${score(m.prediction.most_likely_score)}</strong></div><p class="prediction-note">${pct(m.prediction.scores[m.prediction.most_likely_score[0]][m.prediction.most_likely_score[1]])} probability of this exact score</p><button data-match="${matchId(l, m)}">Match analysis & simulation →</button></div>`;
+  const kickoff=matchTime(l,m),[h,a]=m.prediction.most_likely_score,mass=m.prediction.most_likely_probability??m.prediction.scores?.[h]?.[a];
+  return `<div class="featured"><div class="eyebrow">MATCH SPOTLIGHT · ${esc(l.name)}</div><div class="versus">${crest(m.home)}<span>VS</span>${crest(m.away)}</div><div class="featured-names"><span>${esc(short(m.home))}</span><span>${esc(short(m.away))}</span></div><div class="featured-date">${esc(dateLabel(kickoff.date))} · ${esc(kickoff.time)}</div><div class="feature-prediction"><span>MOST LIKELY SCORE</span><strong>${score(m.prediction.most_likely_score)}</strong></div>${Number.isFinite(mass)?`<p class="prediction-note">${pct(mass)} probability of this exact score</p>`:''}<button data-match="${matchId(l, m)}">Match analysis & simulation →</button></div>`;
 }
 function leadersHTML() {
+  if(state.competition==='all')return `<div class="panel panel-pad"><div class="mini-label">EXPLORE FOOTBALL</div><h2>A world of matchdays.</h2><p class="fine-print">Ten domestic leagues, club tournaments and national teams. Choose a competition to explore its players, squads and fixtures.</p><button class="text-button" data-view="simulator">Build a match →</button></div>`;
   const rows = playerRows()
     .filter((r) => r.s?.appearances > 0)
     .sort((a, b) => (b.s.totalGoals || 0) - (a.s.totalGoals || 0))
@@ -277,8 +306,8 @@ function leadersHTML() {
 function renderMatches() {
   heading(
     "MATCH CENTRE",
-    state.competition === "all" ? "Across Europe" : selectedLeague().name,
-    "Upcoming fixtures, recent form and 90-minute predictions.",
+    state.competition === "all" ? "Across world football" : selectedLeague().name,
+    "Your matchday. Fixtures, form and the story behind every game.",
   );
   $("viewTools").innerHTML = `<div class="segmented">${[
     [7, "Next 7 days"],
@@ -293,18 +322,18 @@ function renderMatches() {
   const rows = allFixtures(),
     groups = new Map();
   rows.slice(0, state.limit).forEach((r) => {
-    const k = r.l.key + "|" + r.m.date;
+    const k = r.l.key + "|" + matchTime(r.l,r.m).date;
     if (!groups.has(k)) groups.set(k, []);
     groups.get(k).push(r);
   });
   const panels = [...groups.values()]
     .map(
       (g) =>
-        `<section class="panel" style="margin-bottom:15px"><div class="panel-header">${competitionLogo(g[0].l.key)}${esc(g[0].l.name)}<span>${esc(dateLabel(g[0].m.date))}</span></div>${g.map((r) => matchRow(r.l, r.m)).join("")}</section>`,
+        `<section class="panel" style="margin-bottom:15px"><div class="panel-header">${competitionLogo(g[0].l.key)}${esc(g[0].l.name)}<span>${esc(dateLabel(matchTime(g[0].l,g[0].m).date))}</span></div>${g.map((r) => matchRow(r.l, r.m)).join("")}</section>`,
     )
     .join("");
   $("content").innerHTML =
-    `<div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches · kickoff times UTC</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or another competition.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(rows[0])}${leadersHTML()}</aside></div>`;
+    `<div class="matchday-intro"><span class="status-dot"></span><span>${data.leagues.length} competitions · ${Object.keys(catalog.teams).length} teams</span><span class="timezone-note">Your time · ${esc(localZone.replaceAll('_',' '))} · AM / PM</span></div><div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(rows[0])}${leadersHTML()}</aside></div>`;
 }
 function probabilities(p) {
   return `<div class="prob-bar" aria-hidden="true"><span style="width:${p.home_win * 100}%"></span><span style="width:${p.draw * 100}%"></span><span style="width:${p.away_win * 100}%"></span></div><div class="prob-labels"><span>Home <strong>${pct(p.home_win)}</strong></span><span>Draw <strong>${pct(p.draw)}</strong></span><span>Away <strong>${pct(p.away_win)}</strong></span></div>`;
@@ -316,12 +345,15 @@ function predictionHTML(l, m) {
       .flatMap((r, h) => r.map((v, a) => ({ h, a, v })))
       .sort((a, b) => b.v - a.v)
       .slice(0, 5);
-  return `<div class="prediction-panel"><div class="eyebrow">${esc(l.name)} · ${m.date ? esc(dateLabel(m.date)) : "HYPOTHETICAL MATCH"}</div><div class="match-title"><div>${crest(m.home)}<h3>${esc(short(m.home))}</h3></div><div class="big-score">${score(p.most_likely_score)}<small>Most likely score</small></div><div>${crest(m.away)}<h3>${esc(short(m.away))}</h3></div></div><div class="match-caption">${meta.venue ? esc(meta.venue) + " · " : ""}${m.neutral ? "Neutral venue" : "Home advantage included"} · 90 minutes</div>${probabilities(p)}<div class="forecast-stats">${statBlock(p.home_xg.toFixed(2) + " – " + p.away_xg.toFixed(2), "Model expected goals")}${statBlock(pct(p.over_2_5), "Over 2.5 goals")}${statBlock(pct(p.both_score), "Both teams to score")}</div>${simulationControlsHTML()}<div class="detail-columns"><div><h3>Recent competition form</h3>${[m.home, m.away].map((n) => `<div class="form-line"><span>${esc(short(n))}</span>${formHTML(modelTeam(n, l))}</div>${formImpact(modelTeam(n, l))}`).join("")}<p class="fine-print">Last five available results, oldest first. Attack and defence respond to opponent-adjusted recent performance, with small-sample shrinkage.</p>${[m.home, m.away].some((n) => (modelTeam(n, l)?.history_matches || 0) < 10) ? '<div class="notice">Limited history for one or both clubs. Estimates rely more on the newcomer prior.</div>' : ""}${["champions_league", "europa_league", "conference_league"].includes(l.key) ? '<p class="fine-print">European baseline: fitted only to this competition. Qualification, extra time and penalties are not predicted.</p>' : ""}</div><div><h3>Most likely scorelines</h3>${cells.map((c) => `<div class="score-line"><span>${c.h}–${c.a}</span><div class="score-track"><div style="width:${(100 * c.v) / cells[0].v}%"></div></div><small>${pct(c.v)}</small></div>`).join("")}</div></div>${playerPicksHTML(l, m)}</div>`;
+  return `<div class="prediction-panel"><div class="eyebrow">${esc(l.name)} · ${m.date ? esc(dateLabel(m.date)) : "HYPOTHETICAL MATCH"}</div><div class="match-title"><div>${crest(m.home)}<h3>${esc(short(m.home))}</h3></div><div class="big-score">${score(p.most_likely_score)}<small>Most likely score</small></div><div>${crest(m.away)}<h3>${esc(short(m.away))}</h3></div></div><div class="match-caption">${m.date?esc(matchTime(l,m).label||"Kickoff time not supplied")+" · ":""}${meta.venue ? esc(meta.venue) + " · " : ""}${(m.neutral || (!m.date && l.shared_international_model)) ? "Neutral venue" : "Home advantage included"} · 90 minutes</div>${probabilities(p)}<div class="forecast-stats">${statBlock(p.home_xg.toFixed(2) + " – " + p.away_xg.toFixed(2), "Model expected goals")}${statBlock(pct(p.over_2_5), "Over 2.5 goals")}${statBlock(pct(p.both_score), "Both teams to score")}</div>${simulationControlsHTML()}<div class="detail-columns"><div><h3>Recent competition form</h3>${[m.home, m.away].map((n) => `<div class="form-line"><span>${esc(short(n))}</span>${formHTML(modelTeam(n, l))}</div>${formImpact(modelTeam(n, l))}`).join("")}<p class="fine-print">Last five available results, oldest first. Attack and defence respond to opponent-adjusted recent performance, with small-sample shrinkage.</p>${[m.home, m.away].some((n) => (modelTeam(n, l)?.history_matches || 0) < 10) ? '<div class="notice">Limited history for one or both clubs. Estimates rely more on the newcomer prior.</div>' : ""}${["champions_league", "europa_league", "conference_league"].includes(l.key) ? '<p class="fine-print">European baseline: fitted only to this competition. Qualification, extra time and penalties are not predicted.</p>' : ""}</div><div><h3>Most likely scorelines</h3>${cells.map((c) => `<div class="score-line"><span>${c.h}–${c.a}</span><div class="score-track"><div style="width:${(100 * c.v) / cells[0].v}%"></div></div><small>${pct(c.v)}</small></div>`).join("")}</div></div>${playerPicksHTML(l, m)}</div>`;
 }
-function openMatch(l, m) {
+let matchRevision=0;
+async function openMatch(l, m) {
   if (state.view === "simulator") return;
+  const revision=++matchRevision;$('matchDetail').innerHTML='<div class="loading-state">Opening match analysis…</div>';if(!$('matchDialog').open)$('matchDialog').showModal();
+  try{await Promise.all([loadLeague(l),loadTeams([catalog.teams[m.home],catalog.teams[m.away]].filter(Boolean))]);if(!m.prediction.scores)m=l.fixtures.find(x=>x.date===m.date&&x.home===m.home&&x.away===m.away)||m;}catch(e){if(revision===matchRevision)$('matchDetail').textContent=e.message;return;}
+  if(revision!==matchRevision||!$('matchDialog').open)return;
   $("matchDetail").innerHTML = predictionHTML(l, m);
-  $("matchDialog").showModal();
   bindSimulation(m, l);
 }
 function renderSimulator() {
@@ -360,11 +392,11 @@ function renderSimulator() {
   bindSimulation(f, l);
   $("homeClub").onchange = () => {
     state.home = $("homeClub").value;
-    renderSimulator();
+    render();
   };
   $("awayClub").onchange = () => {
     state.away = $("awayClub").value;
-    renderSimulator();
+    render();
   };
 }
 function clubNames() {
@@ -377,7 +409,7 @@ function clubNames() {
 function renderClubs() {
   heading(
     "CLUB DIRECTORY",
-    state.competition === "all" ? "European clubs" : selectedLeague().name,
+    state.competition === "all" ? "Clubs & national teams" : selectedLeague().name,
     "Club profiles, squad information and season performance.",
   );
   const names = clubNames();
@@ -408,7 +440,7 @@ function renderClub(name) {
       .slice(0, 5);
   heading("CLUB PROFILE", short(name), l?.name || "Club details");
   $("content").innerHTML =
-    `<button class="back-link" data-back-clubs>← All clubs</button><div class="team-banner" style="--club-color:${color(t)}">${crest(name)}<div><div class="eyebrow">${esc(t.country || l?.name)}</div><h2>${esc(t.display_name || short(name))}</h2><p>${esc(t.nickname && t.nickname !== t.display_name ? t.nickname : "First team")}</p>${formHTML(mt)}</div><div class="team-bio">${t.coach ? "Manager · <strong>" + esc(t.coach) + "</strong><br>" : ""}${t.venue ? "Stadium · " + esc(t.venue.name) + "<br>" : ""}${esc((t.players || []).length)} players in squad<br>${t.source_url ? `<a class="text-button" href="${url(t.source_url)}" target="_blank" rel="noopener">Club source ↗</a>` : ""}</div></div><div class="stats-strip">${statBlock(mt?.played, "Played")}${statBlock(mt ? mt.wins + " / " + mt.draws + " / " + mt.losses : "—", "Won / Drawn / Lost")}${statBlock(mt?.goals_for, "Goals scored")}${statBlock(mt?.goals_against, "Goals conceded")}${statBlock(mt ? mt.wins * 3 + mt.draws : "—", "Points from available results")}</div><p class="table-caption">${esc(l?.name)} · current-season results before ${esc(data.as_of)}. Results summary, not an official ranking.</p>${featured.length ? '<div class="section-head"><h2>Players to know</h2><small>Season goals & assists</small></div><div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}${clubHistoryHTML(t)}<div class="section-head"><h2>First-team squad</h2><small>${esc(t.player_stats?.[compForTeam(t)]?.season || t.season || "Season not supplied")}</small></div>${rows.length ? playerTable(rows) : '<div class="empty">Squad data is unavailable for this club or search.</div>'}<p class="table-caption">Provider season totals, retrieved ${esc((t.profile_updated_at || catalog.updated_at || "").slice(0, 10))}. These player stats do not enter historical predictions. Missing values are —.</p><div class="content-grid"><div><div class="section-head"><h2>Next matches</h2></div><div class="panel">${fixtures.map((m) => matchRow(l, m)).join("") || '<div class="empty">No upcoming fixtures in the snapshot.</div>'}</div></div><div><div class="section-head"><h2>Recent results</h2></div><div class="panel panel-pad">${
+    `<button class="back-link" data-back-clubs>← All clubs</button><div class="team-banner" style="--club-color:${color(t)}">${crest(name)}<div><div class="eyebrow">${esc(t.country || l?.name)}</div><h2>${esc(t.display_name || short(name))}</h2><p>${esc(t.nickname && t.nickname !== t.display_name ? t.nickname : "First team")}</p>${formHTML(mt)}</div><div class="team-bio">${t.coach ? "Manager · <strong>" + esc(t.coach) + "</strong><br>" : ""}${t.venue ? "Stadium · " + esc(t.venue.name) + "<br>" : ""}${esc((t.players || []).length)} players in squad<br>${t.source_url ? `<a class="text-button" href="${url(t.source_url)}" target="_blank" rel="noopener">Club source ↗</a>` : ""}</div></div><div class="stats-strip">${statBlock(mt?.played, "Played")}${statBlock(mt ? mt.wins + " / " + mt.draws + " / " + mt.losses : "—", "Won / Drawn / Lost")}${statBlock(mt?.goals_for, "Goals scored")}${statBlock(mt?.goals_against, "Goals conceded")}${statBlock(mt ? mt.wins * 3 + mt.draws : "—", "Points from available results")}</div><p class="table-caption">${esc(l?.name)} · current-season results before ${esc(data.as_of)}. Results summary, not an official ranking.</p>${clubOverviewHTML(t)}${lineupHTML(t,l)}${featured.length ? '<div class="section-head"><h2>Players to know</h2><small>Season goals & assists</small></div><div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}${clubHistoryHTML(t)}<div class="section-head"><h2>First-team squad</h2><small>${esc(t.player_stats?.[compForTeam(t)]?.season || t.season || "Season not supplied")}</small></div>${rows.length ? playerTable(rows) : '<div class="empty">Squad data is unavailable for this club or search.</div>'}<p class="table-caption">Provider season totals, retrieved ${esc((t.profile_updated_at || catalog.updated_at || "").slice(0, 10))}. These player stats do not enter historical predictions. Missing values are —.</p><div class="content-grid"><div><div class="section-head"><h2>Next matches</h2></div><div class="panel">${fixtures.map((m) => matchRow(l, m)).join("") || '<div class="empty">No upcoming fixtures in the snapshot.</div>'}</div></div><div><div class="section-head"><h2>Recent results</h2></div><div class="panel panel-pad">${
       (mt?.form || [])
         .slice()
         .reverse()
@@ -453,34 +485,10 @@ function renderPlayers() {
     `${featured.length ? '<div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}<div class="section-head"><h2>Player statistics</h2><small>${rows.length.toLocaleString()} players</small></div>${rows.length ? playerTable(rows.slice(0, state.limit)) : '<div class="empty">No players match this search.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more players</button>' : ""}<p class="table-caption">${state.competition === "all" ? "Stats from each club’s primary competition, shown per player." : "Stats for " + esc(selectedLeague().name) + "."} Season totals as supplied by ESPN; — means unavailable. Profiles retrieved ${esc(catalog.updated_at?.slice(0, 10) || "not yet")}.</p>`;
 }
 function openPlayer(key) {
-  const r = playerLookup.get(key);
-  if (!r) return;
-  const { t, p } = r,
-    s = statsFor(t, p),
-    photo = p.portrait,
-    fields = [
-      ["Nationality", p.nationality],
-      ["Age", p.age],
-      ["Height", p.height_cm ? p.height_cm + " cm" : null],
-      ["Weight", p.weight_kg ? p.weight_kg + " kg" : null],
-      ["Shirt", p.number],
-    ],
-    stats = [
-      ["Appearances", "appearances"],
-      ["Goals", "totalGoals"],
-      ["Assists", "goalAssists"],
-      ["Shots", "totalShots"],
-      ["On target", "shotsOnTarget"],
-      ["Yellow cards", "yellowCards"],
-      ["Red cards", "redCards"],
-      ["Saves", "saves"],
-      ["Fouls committed", "foulsCommitted"],
-      ["Goals conceded", "goalsConceded"],
-    ];
-  $("playerDetail").innerHTML =
-    `<div class="profile-hero">${image(photo?.url, p.name) || `<div class="portrait-fallback" style="width:130px;height:150px;background:#edf0f4">${esc(initials(p.name))}</div>`}<div><div class="eyebrow">PLAYER PROFILE</div><h2>${esc(p.name)}</h2><div class="table-club">${crest(t.name)}${esc(short(t.name))}</div><p class="fine-print">${esc(p.position || "Position unavailable")}</p></div></div><div class="profile-meta">${fields.map(([k, v]) => `<span>${k}<strong>${val(v)}</strong></span>`).join("")}</div><div class="section-head"><h2>Season statistics</h2><small>${esc(t.player_stats?.[compForTeam(t)]?.season || "Season not supplied")}</small></div><div class="table-wrap"><table><tbody>${stats.map(([k, v]) => `<tr><td>${k}</td><td class="number"><strong>${val(s?.[v])}</strong></td></tr>`).join("")}</tbody></table></div><p class="fine-print">Retrieved ${esc((t.profile_updated_at || catalog.updated_at || "").slice(0, 10))}. ${p.source_url ? `<a class="text-button" href="${url(p.source_url)}" target="_blank" rel="noopener">ESPN player profile ↗</a>` : ""}</p>${photo ? `<div class="attribution">Photo: ${esc(photo.credit)} · ${esc(photo.license)} · <a href="${url(photo.source_url)}" target="_blank" rel="noopener">Original & attribution</a>${photo.license_url ? ' · <a href="' + url(photo.license_url) + '" target="_blank" rel="noopener">License</a>' : ""}. Displayed with a layout crop.</div>` : '<p class="attribution">No verified portrait is available for this player.</p>'}`;
-  $("playerDetail").insertAdjacentHTML("beforeend", playerHistoryShell(t, p));
-  $("playerDialog").showModal();
+ const r=playerLookup.get(key);if(!r)return;
+ $('playerDetail').innerHTML=playerProfileHTML(r.t,r.p);
+ if(!$('playerDialog').open)$('playerDialog').showModal();
+ $('playerDetail').scrollTop=0;
 }
 function renderHistory() {
   heading(
@@ -532,12 +540,13 @@ function renderAbout() {
     "Coverage, assumptions and the people behind the imagery.",
   );
   $("content").innerHTML =
-    `<article class="about panel panel-pad"><h2>Eight competitions. One match centre.</h2><p>Premier League, La Liga, Serie A, Bundesliga, Ligue 1, Champions League, Europa League and Conference League. Touchline is an independent project and is not affiliated with these competitions or clubs.</p><h2>Coverage in this snapshot</h2><div class="table-wrap"><table><thead><tr><th>Competition</th><th>Latest result</th><th>Training results</th><th>Future fixtures</th></tr></thead><tbody>${data.leagues.map((l) => `<tr><td>${esc(l.name)}</td><td>${esc(l.latest_result || "Unavailable")}</td><td>${l.history_matches}</td><td>${l.fixtures.length}</td></tr>`).join("")}</tbody></table></div><h2>The prediction model</h2><p>The Rust Dixon–Coles model fits attack, defence and home advantage separately for each competition. Recent matches receive more weight with a 365-day half-life. Where available, shots on target contribute a 30% blend to goal targets. Form badges summarize the last five available competition results. Attack and defence are adjusted by recent goals relative to opponent-adjusted expectations, with six pseudo-goals and bounded strength multipliers (0.85–1.15). The last 90 days also inform a competition scoring-level adjustment, shrunk by 40 pseudo-matches and capped at 0.90–1.15. The same procedure is applied using earlier data in each backtest. Model expected goals are scoring-rate estimates, not event-level shot xG.</p><p>European competitions are an experimental baseline fitted to their own available history, including qualifying rounds. Domestic squad quality, player statistics and injuries are not model inputs. Clubs with limited European history rely more on priors. Neutral venues remove league and club home advantage. Predictions cover 90 minutes, not aggregate ties, qualification, extra time or penalties. European results ending after extra time or penalties are omitted when a separate regulation score is unavailable.</p><h2>Simulations and backtests</h2><p>Simulations sample the normalized score distribution, with 0–10 goals per side. Each run gets a fresh random seed by default; an optional fixed seed makes the score and events repeatable. Player goals and assists use an experimental share heuristic from competition season totals and position priors, with a 70% assisted-goal assumption. It has no confirmed lineups, minutes or injury adjustments and is not a calibrated player betting model. Event times are illustrative. Historical comparisons refit weekly using only results before the displayed cutoff. Current player profiles, news and season totals never enter historical fits. Settings may have been tuned on overlapping data; these are not untouched holdout evaluations.</p><h2>Historical enrichment</h2><p>Season tables, club honours, player career totals, transfers and market-value history come through <a href="https://github.com/felipeall/transfermarkt-api" target="_blank" rel="noopener">felipeall/transfermarkt-api</a>. All 166 club identities are mapped explicitly or by unique normalized names within their competition. Player identities require a name and birth-date match. ${data.saved_only ? "This public edition includes saved history; profiles without bundled enrichment are clearly marked. More histories can be included in future editions." : "Saved history works offline; the local Node server loads additional history on demand, with provider throttling and disk caching."} Source timestamps remain visible. Player histories do not enter historical team forecasts.</p><h2>Sources and refresh</h2><p>Domestic results: <a href="https://github.com/openfootball/football.json" target="_blank" rel="noopener">openfootball</a>. Historical match statistics: <a href="https://www.football-data.co.uk/" target="_blank" rel="noopener">football-data.co.uk</a>. Club profiles, rosters, competition-specific player totals, logos and European fixtures: <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener">ESPN public football feeds</a>, retrieved ${esc(catalog.updated_at?.slice(0, 10) || "not yet")}. These public endpoints are not a supported API contract. This is a generated snapshot, not a live scores service.</p><p>Profiles can be newer than the forecast snapshot and are labeled separately. Missing player values stay —. Domestic results and provider records can differ because they are refreshed separately. Kickoff times are UTC where supplied.</p>${data.saved_only ? "<p>Data updates are published as new editions. Simulations run in your browser and do not require an account.</p>" : `<pre>node tools/sync_catalog.cjs --year=2026 --refresh<br>python tools/fetch_results.py 2026-27<br>cargo run --release -p predictor --bin dashboard -- ${esc(data.as_of)} dashboard.html</pre>`}<h2>Imagery & typography</h2><p>Club and competition marks are remotely served by ESPN for identification; ownership remains with their rights holders. Player portraits are from Wikimedia Commons, matched by name and date of birth. Each player profile links the original, creator and license. Photos are displayed with a layout crop. Internet access is needed for images and the Inter font; predictions and tables work offline.</p><p>Inter by Rasmus Andersson, served through Google Fonts, is licensed under the SIL Open Font License. Missing artwork uses a simple initials placeholder.</p>${catalog.errors?.length ? `<h2>Refresh issues</h2><p>${catalog.errors.length} source requests failed. Previous result files were retained. Refresh again to fill missing coverage.</p>` : ""}</article>`;
+    `<article class="about panel panel-pad"><h2>${data.leagues.length} competitions. One match centre.</h2><p>${data.leagues.map(l=>esc(l.name)).join(", ")}. Touchline is an independent project and is not affiliated with these competitions or clubs.</p><h2>Coverage in this snapshot</h2><div class="table-wrap"><table><thead><tr><th>Competition</th><th>Latest result</th><th>Training results</th><th>Future fixtures</th></tr></thead><tbody>${data.leagues.map((l) => `<tr><td>${esc(l.name)}</td><td>${esc(l.latest_result || "Unavailable")}</td><td>${l.history_matches}</td><td>${l.fixtures.length}</td></tr>`).join("")}</tbody></table></div><h2>The prediction model</h2><p>The Rust Dixon–Coles model fits club attack, defence and home advantage by competition. National-team tournaments share a deduplicated national-team result pool to retain meaningful history between tournament editions; club results never enter that pool. Hypothetical international simulations use a neutral venue. Recent matches receive more weight with a 365-day half-life. Where available, shots on target contribute a 30% blend to goal targets. Form badges summarize the last five available competition results. Attack and defence are adjusted by recent goals relative to opponent-adjusted expectations, with six pseudo-goals and bounded strength multipliers (0.85–1.15). The last 90 days also inform a competition scoring-level adjustment, shrunk by 40 pseudo-matches and capped at 0.90–1.15. The same procedure is applied using earlier data in each backtest. Model expected goals are scoring-rate estimates, not event-level shot xG.</p><p>European competitions are an experimental baseline fitted to their own available history, including qualifying rounds. Domestic squad quality, player statistics and injuries are not model inputs. Clubs with limited European history rely more on priors. Neutral venues remove league and club home advantage. Predictions cover 90 minutes, not aggregate ties, qualification, extra time or penalties. European results ending after extra time or penalties are omitted when a separate regulation score is unavailable.</p><h2>Simulations and backtests</h2><p>Simulations sample the normalized score distribution, with 0–10 goals per side. Each run gets a fresh random seed by default; an optional fixed seed makes the score and events repeatable. Player goals and assists use an experimental share heuristic from competition season totals and position priors, with a 70% assisted-goal assumption. The simulator can restrict contributors to an illustrative XI chosen from the current squad and selected shape. These are not confirmed upcoming lineups; formation controls do not establish a change in team winning probability. There are no injury or player-minute adjustments, and these are not calibrated player predictions. Synthetic possession, shots, cards and commentary are entertainment, separate from historical data. Event times are illustrative. Historical comparisons refit weekly using only results before the displayed cutoff. Current player profiles, news and season totals never enter historical fits. Settings may have been tuned on overlapping data; these are not untouched holdout evaluations.</p><h2>Historical enrichment</h2><p>Season tables, club honours, player career totals, transfers and market-value history come through <a href="https://github.com/felipeall/transfermarkt-api" target="_blank" rel="noopener">felipeall/transfermarkt-api</a>. Club identities are mapped explicitly or by unique normalized names within their competition. Player identities require a name and birth-date match. ${data.saved_only ? "This public edition includes saved history; profiles without bundled enrichment are clearly marked. More histories can be included in future editions." : "Saved history works offline; the local Node server loads additional history on demand, with provider throttling and disk caching."} Source timestamps remain visible. Player histories do not enter historical team forecasts.</p><h2>Sources and refresh</h2><p>Domestic results: <a href="https://github.com/openfootball/football.json" target="_blank" rel="noopener">openfootball</a>. Historical match statistics: <a href="https://www.football-data.co.uk/" target="_blank" rel="noopener">football-data.co.uk</a>. Club profiles, rosters, competition-specific player totals, logos and European fixtures: <a href="https://www.espn.com/soccer/" target="_blank" rel="noopener">ESPN public football feeds</a>, retrieved ${esc(catalog.updated_at?.slice(0, 10) || "not yet")}. These public endpoints are not a supported API contract. This is a generated snapshot, not a live scores service.</p><p>Profiles can be newer than the forecast snapshot and are labeled separately. Missing player values stay —. Domestic results and provider records can differ because they are refreshed separately. Kickoff times use your browser’s timezone in 12-hour AM/PM format, including daylight saving and local date changes. Missing kickoff times are marked Time TBC.</p>${data.saved_only ? "<p>Data updates are published as new editions. Simulations run in your browser and do not require an account.</p>" : `<pre>node tools/sync_catalog.cjs --year=2026 --refresh<br>python tools/fetch_results.py 2026-27<br>cargo run --release -p predictor --bin dashboard -- ${esc(data.as_of)} dashboard.html</pre>`}<h2>Imagery & typography</h2><p>Club and competition marks are remotely served by ESPN for identification; ownership remains with their rights holders. Player portraits use ESPN-provided images, verified Transfermarkt squad photos and credited Wikimedia Commons images. Transfermarkt identities require a name and birth-date match; source ownership and attribution remain visible. Each player profile links the original, creator and license. Photos are displayed with a layout crop. Internet access loads saved website data, remote imagery and Inter font. Simulations use downloaded forecasts without a live football API.</p><p>Inter by Rasmus Andersson, served through Google Fonts, is licensed under the SIL Open Font License. Missing artwork uses a simple initials placeholder.</p>${catalog.errors?.length ? `<h2>Refresh issues</h2><p>${catalog.errors.length} source requests failed. Previous result files were retained. Refresh again to fill missing coverage.</p>` : ""}</article>`;
 }
 document.addEventListener("click", (event) => {
   const b = event.target.closest("button");
   if (!b) return;
-  if (b.dataset.tmClub) {
+  if(b.hasAttribute("data-retry")){render();}
+  else if (b.dataset.tmClub) {
     loadClubHistory(b.dataset.tmClub);
   } else if (b.dataset.tmPlayer) {
     const r = playerLookup.get(b.dataset.tmPlayer);
@@ -560,12 +569,15 @@ document.addEventListener("click", (event) => {
     state.limit = 30;
     render();
   } else if (b.dataset.club) {
+    $("playerDialog").close();$("matchDialog").close();
     state.view = "clubs";
     state.club = b.dataset.club;
     state.query = "";
     $("search").value = "";
     render();
     window.scrollTo({ top: 0, behavior: "smooth" });
+  } else if (b.hasAttribute("data-retry")) {
+    render();
   } else if (b.hasAttribute("data-back-clubs")) {
     state.club = null;
     render();
@@ -598,6 +610,7 @@ document.addEventListener(
   "error",
   (e) => {
     if (e.target.tagName === "IMG") {
+      if(e.target.dataset.fallbackSrc){const fallback=e.target.dataset.fallbackSrc;delete e.target.dataset.fallbackSrc;e.target.src=fallback;return;}
       const span = document.createElement("span");
       span.className = e.target.classList.contains("avatar")
         ? "avatar portrait-fallback"

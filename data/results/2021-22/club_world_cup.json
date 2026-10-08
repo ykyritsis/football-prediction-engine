@@ -1,0 +1,90 @@
+{
+  "name": "Club World Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2022-02-03",
+      "team1": "ESPN:8364:Al-Jazira",
+      "team2": "ESPN:21366:AS Pirae",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-02-05",
+      "team1": "Al Ahly",
+      "team2": "Monterrey",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-02-06",
+      "team1": "Al Hilal",
+      "team2": "ESPN:8364:Al-Jazira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-02-08",
+      "team1": "Palmeiras",
+      "team2": "Al Ahly",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-02-09",
+      "team1": "Monterrey",
+      "team2": "ESPN:8364:Al-Jazira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-02-09",
+      "team1": "Al Hilal",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-02-12",
+      "team1": "Al Hilal",
+      "team2": "Al Ahly",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    }
+  ]
+}

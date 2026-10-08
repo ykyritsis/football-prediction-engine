@@ -1,0 +1,234 @@
+{
+  "name": "World Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2026-07-01",
+      "team1": "Mexico",
+      "team2": "Ecuador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-01",
+      "team1": "England",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "team1": "United States",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "team1": "Spain",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-02",
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-03",
+      "team1": "Switzerland",
+      "team2": "Algeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "team1": "Colombia",
+      "team2": "Ghana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "team1": "Canada",
+      "team2": "Morocco",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-07-04",
+      "team1": "Paraguay",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-05",
+      "team1": "Brazil",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "team1": "Mexico",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "team1": "Portugal",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "team1": "United States",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-07-07",
+      "team1": "Argentina",
+      "team2": "Egypt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-07-09",
+      "team1": "France",
+      "team2": "Morocco",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-07-10",
+      "team1": "Spain",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-07-14",
+      "team1": "France",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-07-15",
+      "team1": "England",
+      "team2": "Argentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-07-18",
+      "team1": "France",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          6
+        ]
+      }
+    }
+  ]
+}

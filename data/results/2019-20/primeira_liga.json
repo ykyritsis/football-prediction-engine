@@ -1,0 +1,3114 @@
+{
+  "name": "Primeira Liga",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2019-08-09",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-10",
+      "team1": "Santa Clara",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-08-10",
+      "team1": "Gil Vicente",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-10",
+      "team1": "Benfica",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-11",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-11",
+      "team1": "Maritimo",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-11",
+      "team1": "Braga",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-12",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-16",
+      "team1": "FC Famalicao",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-17",
+      "team1": "Moreirense",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-17",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-08-17",
+      "team1": "FC Porto",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-18",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-18",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-18",
+      "team1": "Sporting CP",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-19",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-08-23",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-23",
+      "team1": "Rio Ave",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-24",
+      "team1": "Benfica",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-08-24",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-25",
+      "team1": "Maritimo",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-08-25",
+      "team1": "Santa Clara",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-25",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-08-25",
+      "team1": "Gil Vicente",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-25",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-30",
+      "team1": "Moreirense",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-08-30",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-31",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-08-31",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-08-31",
+      "team1": "Sporting CP",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-08-31",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-01",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-01",
+      "team1": "FC Porto",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-01",
+      "team1": "Braga",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2019-09-08",
+      "team1": "Rio Ave",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-13",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "team1": "Benfica",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-14",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-15",
+      "team1": "Maritimo",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-09-15",
+      "team1": "Rio Ave",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2019-09-15",
+      "team1": "Santa Clara",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-15",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-09-15",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-20",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-21",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-09-21",
+      "team1": "Moreirense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-09-22",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-22",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-09-22",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-22",
+      "team1": "FC Porto",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "team1": "Braga",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-09-23",
+      "team1": "Sporting CP",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-09-27",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "team1": "Maritimo",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "team1": "Benfica",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-28",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "team1": "Santa Clara",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-29",
+      "team1": "Rio Ave",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-09-30",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-05",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-25",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-26",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-10-26",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-26",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-26",
+      "team1": "Moreirense",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-27",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-27",
+      "team1": "FC Porto",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-27",
+      "team1": "Sporting CP",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-28",
+      "team1": "Braga",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-30",
+      "team1": "Rio Ave",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-30",
+      "team1": "Maritimo",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-30",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-30",
+      "team1": "Benfica",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-30",
+      "team1": "FC Famalicao",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-10-31",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-10-31",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-10-31",
+      "team1": "Santa Clara",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-11-02",
+      "team1": "Benfica",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-02",
+      "team1": "Moreirense",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-11-03",
+      "team1": "Gil Vicente",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-03",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-03",
+      "team1": "FC Porto",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-03",
+      "team1": "Braga",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-04",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-04",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-11-04",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-08",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "Rio Ave",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "Santa Clara",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-09",
+      "team1": "FC Famalicao",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "Maritimo",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "Sporting CP",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-10",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-11-29",
+      "team1": "Santa Clara",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-30",
+      "team1": "Moreirense",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-11-30",
+      "team1": "Benfica",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-11-30",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-01",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-01",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-01",
+      "team1": "Gil Vicente",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-02",
+      "team1": "Braga",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-02",
+      "team1": "FC Porto",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-06",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2019-12-07",
+      "team1": "Maritimo",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-12-07",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-12-07",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-08",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-12-08",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-08",
+      "team1": "Sporting CP",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-08",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-09",
+      "team1": "Rio Ave",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-13",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-14",
+      "team1": "Maritimo",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-14",
+      "team1": "Benfica",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-14",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-12-15",
+      "team1": "Moreirense",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-15",
+      "team1": "Gil Vicente",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2019-12-15",
+      "team1": "Braga",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2019-12-16",
+      "team1": "Santa Clara",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2019-12-16",
+      "team1": "FC Porto",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-04",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-04",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-04",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          7
+        ]
+      }
+    },
+    {
+      "date": "2020-01-04",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-05",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-05",
+      "team1": "Rio Ave",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-05",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-05",
+      "team1": "Sporting CP",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-05",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-10",
+      "team1": "Benfica",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-10",
+      "team1": "Santa Clara",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-10",
+      "team1": "Moreirense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2020-01-11",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-11",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-11",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-01-12",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-12",
+      "team1": "Maritimo",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-12",
+      "team1": "Braga",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-17",
+      "team1": "FC Porto",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-17",
+      "team1": "Sporting CP",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-18",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-18",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-18",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-19",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-19",
+      "team1": "FC Famalicao",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-19",
+      "team1": "Rio Ave",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-26",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-26",
+      "team1": "FC Famalicao",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-26",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-01-26",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-26",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-27",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-27",
+      "team1": "Sporting CP",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-01-28",
+      "team1": "FC Porto",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-01-29",
+      "team1": "Moreirense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-31",
+      "team1": "Benfica",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-01-31",
+      "team1": "Rio Ave",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-01",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-01",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "team1": "Gil Vicente",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "team1": "Maritimo",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "team1": "Braga",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "team1": "Santa Clara",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-02",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-07",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-08",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-08",
+      "team1": "FC Famalicao",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "date": "2020-02-08",
+      "team1": "Braga",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-08",
+      "team1": "FC Porto",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-09",
+      "team1": "Moreirense",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-09",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-09",
+      "team1": "Sporting CP",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-09",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2020-02-14",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-15",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-15",
+      "team1": "Santa Clara",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-15",
+      "team1": "Benfica",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-15",
+      "team1": "Rio Ave",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-16",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-16",
+      "team1": "Maritimo",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-16",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-16",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-21",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-22",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-02-22",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "team1": "Moreirense",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "team1": "Sporting CP",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "team1": "Braga",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-23",
+      "team1": "FC Porto",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-24",
+      "team1": "Gil Vicente",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-02-28",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-29",
+      "team1": "Rio Ave",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-02-29",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-01",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-03-01",
+      "team1": "Maritimo",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-03-01",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-03-02",
+      "team1": "Santa Clara",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-03-02",
+      "team1": "Benfica",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-03",
+      "team1": "FC Famalicao",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-06",
+      "team1": "Braga",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-07",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-07",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-07",
+      "team1": "FC Porto",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-08",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-03-08",
+      "team1": "Moreirense",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-03-08",
+      "team1": "Gil Vicente",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-03-08",
+      "team1": "Sporting CP",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-03-08",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-03",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-03",
+      "team1": "FC Famalicao",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-04",
+      "team1": "Maritimo",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-04",
+      "team1": "Benfica",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-04",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-05",
+      "team1": "Santa Clara",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-05",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-06",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-07",
+      "team1": "Rio Ave",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-06-09",
+      "team1": "Gil Vicente",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-06-10",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-10",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-10",
+      "team1": "FC Porto",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-11",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-11",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-12",
+      "team1": "Moreirense",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-12",
+      "team1": "Sporting CP",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-13",
+      "team1": "Braga",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-15",
+      "team1": "Maritimo",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-16",
+      "team1": "Santa Clara",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-16",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-17",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-17",
+      "team1": "Rio Ave",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-18",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-18",
+      "team1": "Sporting CP",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-19",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-19",
+      "team1": "FC Famalicao",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-21",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-22",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-23",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-23",
+      "team1": "Benfica",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2020-06-23",
+      "team1": "FC Porto",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-24",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-06-24",
+      "team1": "Moreirense",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-25",
+      "team1": "Braga",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-06-26",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-06-28",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-29",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-29",
+      "team1": "Maritimo",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-29",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-30",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-06-30",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-06-30",
+      "team1": "Rio Ave",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    }
+  ]
+}
