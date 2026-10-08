@@ -312,8 +312,8 @@ pub fn build_league_with_training(
                     defence: 1.0,
                 }),
                 name: t.clone(),
-                form: recent_form(&history, t, as_of),
-                history_matches: history
+                form: recent_form(&training_history, t, as_of),
+                history_matches: training_history
                     .iter()
                     .filter(|m| m.home == *t || m.away == *t)
                     .count(),
@@ -473,6 +473,8 @@ mod tests {
         assert_eq!(base.teams.len(), 2);
         assert_eq!(base.archive.len(), 1);
         assert_eq!(base.training_pool_matches, 2);
+        assert_eq!(base.teams[0].history_matches, 2);
+        assert_eq!(base.teams[0].form.len(), 2);
         assert_eq!(base.forecasts[0].prediction.scores, later.forecasts[0].prediction.scores);
         assert!(base.shared_international_model);
     }
