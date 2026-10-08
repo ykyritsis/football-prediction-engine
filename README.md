@@ -70,6 +70,8 @@ cache behavior and source limitations.
   180 days, breaking ties by the latest use. Teams without recent records show
   their last recorded shape or an explicitly labeled suggestion. Manual changes
   stay with that team for the browser session; Reset restores its recorded default.
+  A complete recent recorded XI in the chosen shape is reused when all its players
+  remain in the saved squad; otherwise selection uses appearances and positions.
 - **Team profiles:** crests, dated managers, stadium imagery/capacity, honours,
   current-season summaries, upcoming matches, full squads, recent results and
   the latest recorded XI on a formation board.

@@ -20,6 +20,14 @@ test('manual shape changes stay with the team and reset to its own recorded defa
  const a={id:'a',last_lineup:{event_id:'1',date:'2026-10-01',formation:'4-2-3-1'}},b={id:'b',last_lineup:{event_id:'2',date:'2026-10-01',formation:'3-5-2'}},overrides=new Map();
  overrides.set('a','4-4-2');assert.equal(selectedFormation(a,overrides,'2026-10-08'),'4-4-2');assert.equal(selectedFormation(b,overrides,'2026-10-08'),'3-5-2');overrides.delete('a');assert.equal(selectedFormation(a,overrides,'2026-10-08'),'4-2-3-1');
 });
+test('matching recorded XIs retain wide forwards in attacking midfield slots',()=>{
+ const roles=['G','LB','CD-L','CD-R','RB','LM','RM','AM-L','AM','AM-R','F'];
+ const players=roles.map((code,i)=>({id:String(i),name:'Player '+i,position_code:i>=7?'F':i>=5?'M':i?'D':'G'}));
+ const sheet={date:'2026-10-01',formation:'4-2-3-1',players:players.map((p,i)=>({...p,position_code:roles[i]}))};
+ const xi=projectedXI({players,lineup_history:[sheet]},undefined,'4-2-3-1','2026-10-08');
+ assert.equal(xi.length,11);assert.equal(xi[9].id,'9');assert.equal(xi[9].match_position_code,'AM-R');assert.equal(xi.at(-1).id,'10');
+ const missing=projectedXI({players:players.filter(p=>p.id!=='9'),lineup_history:[sheet]},undefined,'4-2-3-1','2026-10-08');assert.ok(missing.every(p=>p.id!=='9'));assert.equal(new Set(missing.map(p=>p.id)).size,missing.length);
+});
 test('five-second replay clock preserves paused time and finishes despite dropped frames',()=>{
  const c=replayClock(5000);assert.equal(c.tick(100),0);assert.equal(c.tick(1100),.2);c.pause(true,1350);assert.equal(c.tick(5000),.25);c.pause(false,6000);assert.equal(c.tick(6750),.4);assert.equal(c.tick(12000),1);assert.equal(c.elapsed,5000);
  assert.equal(replayClock(0).tick(0),1);
