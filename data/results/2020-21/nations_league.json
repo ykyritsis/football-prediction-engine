@@ -1,0 +1,1950 @@
+{
+  "name": "UEFA Nations League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2020-09-03",
+      "team1": "Latvia",
+      "team2": "Andorra",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Bulgaria",
+      "team2": "Republic of Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Faroe Islands",
+      "team2": "Malta",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Finland",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Germany",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Moldova",
+      "team2": "Kosovo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "ESPN:454:Russia",
+      "team2": "Serbia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Slovenia",
+      "team2": "Greece",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Türkiye",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-03",
+      "team1": "Ukraine",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Lithuania",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Belarus",
+      "team2": "Albania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Italy",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Netherlands",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Norway",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Romania",
+      "team2": "Northern Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Scotland",
+      "team2": "Israel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-04",
+      "team1": "Slovakia",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Gibraltar",
+      "team2": "San Marino",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "North Macedonia",
+      "team2": "Armenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Azerbaijan",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Cyprus",
+      "team2": "Montenegro",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Estonia",
+      "team2": "Georgia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Iceland",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Denmark",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-05",
+      "team1": "Sweden",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Andorra",
+      "team2": "Faroe Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Wales",
+      "team2": "Bulgaria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Hungary",
+      "team2": "ESPN:454:Russia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Republic of Ireland",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Slovenia",
+      "team2": "Moldova",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Kosovo",
+      "team2": "Greece",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Malta",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Serbia",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Spain",
+      "team2": "Ukraine",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-06",
+      "team1": "Switzerland",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Kazakhstan",
+      "team2": "Belarus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Albania",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Austria",
+      "team2": "Romania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Bosnia-Herzegovina",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Czechia",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Israel",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Netherlands",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-07",
+      "team1": "Northern Ireland",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Armenia",
+      "team2": "Estonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Georgia",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Belgium",
+      "team2": "Iceland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Cyprus",
+      "team2": "Azerbaijan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Denmark",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "France",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Luxembourg",
+      "team2": "Montenegro",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "San Marino",
+      "team2": "Liechtenstein",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-09-08",
+      "team1": "Sweden",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Luxembourg",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Montenegro",
+      "team2": "Azerbaijan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Faroe Islands",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Liechtenstein",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Andorra",
+      "team2": "Malta",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Spain",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-10",
+      "team1": "Ukraine",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Kazakhstan",
+      "team2": "Albania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Republic of Ireland",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Armenia",
+      "team2": "Georgia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Bosnia-Herzegovina",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Croatia",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "England",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Estonia",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Finland",
+      "team2": "Bulgaria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Lithuania",
+      "team2": "Belarus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Norway",
+      "team2": "Romania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "France",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Greece",
+      "team2": "Moldova",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Iceland",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Israel",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Kosovo",
+      "team2": "Slovenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Northern Ireland",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Poland",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "ESPN:454:Russia",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Scotland",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-11",
+      "team1": "Serbia",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Azerbaijan",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Latvia",
+      "team2": "Malta",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Faroe Islands",
+      "team2": "Andorra",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Germany",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Liechtenstein",
+      "team2": "San Marino",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Montenegro",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-13",
+      "team1": "Ukraine",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Finland",
+      "team2": "Republic of Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Lithuania",
+      "team2": "Albania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Belarus",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Bulgaria",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Croatia",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "England",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Estonia",
+      "team2": "Armenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Greece",
+      "team2": "Kosovo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Iceland",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Italy",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Moldova",
+      "team2": "Slovenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "North Macedonia",
+      "team2": "Georgia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Norway",
+      "team2": "Northern Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Poland",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Portugal",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Romania",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "ESPN:454:Russia",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Scotland",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Slovakia",
+      "team2": "Israel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-10-14",
+      "team1": "Türkiye",
+      "team2": "Serbia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Malta",
+      "team2": "Andorra",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "San Marino",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Azerbaijan",
+      "team2": "Montenegro",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Cyprus",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Latvia",
+      "team2": "Faroe Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Germany",
+      "team2": "Ukraine",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Portugal",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Sweden",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-14",
+      "team1": "Switzerland",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "North Macedonia",
+      "team2": "Estonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Slovakia",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Albania",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Belarus",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Bulgaria",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Georgia",
+      "team2": "Armenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Netherlands",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Türkiye",
+      "team2": "ESPN:454:Russia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Wales",
+      "team2": "Republic of Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Austria",
+      "team2": "Northern Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Belgium",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Czechia",
+      "team2": "Israel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Denmark",
+      "team2": "Iceland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Hungary",
+      "team2": "Serbia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Italy",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Moldova",
+      "team2": "Greece",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Romania",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-15",
+      "team1": "Slovenia",
+      "team2": "Kosovo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Andorra",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Croatia",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "France",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Gibraltar",
+      "team2": "Liechtenstein",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Luxembourg",
+      "team2": "Azerbaijan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Malta",
+      "team2": "Faroe Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Montenegro",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Spain",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-17",
+      "team1": "Switzerland",
+      "team2": "Ukraine",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Albania",
+      "team2": "Belarus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Kazakhstan",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Armenia",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Georgia",
+      "team2": "Estonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Austria",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Belgium",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Bosnia-Herzegovina",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Czechia",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "England",
+      "team2": "Iceland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Greece",
+      "team2": "Slovenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Hungary",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Israel",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Kosovo",
+      "team2": "Moldova",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Northern Ireland",
+      "team2": "Romania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Poland",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Republic of Ireland",
+      "team2": "Bulgaria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Serbia",
+      "team2": "ESPN:454:Russia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2020-11-18",
+      "team1": "Wales",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3702 @@
+{
+  "name": "Eredivisie",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2025-08-08",
+      "team1": "Fortuna Sittard",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "NEC Nijmegen",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "Heerenveen",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "PSV Eindhoven",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "PEC Zwolle",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "Ajax Amsterdam",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "AZ Alkmaar",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "FC Utrecht",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-15",
+      "team1": "Telstar",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "Excelsior",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "FC Groningen",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Go Ahead Eagles",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "FC Twente",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Sparta Rotterdam",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "Go Ahead Eagles",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "PSV Eindhoven",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "Telstar",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "Heerenveen",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "FC Utrecht",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "NEC Nijmegen",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "Ajax Amsterdam",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-29",
+      "team1": "FC Groningen",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "Heerenveen",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "PSV Eindhoven",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "Excelsior",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "Fortuna Sittard",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "PEC Zwolle",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "Sparta Rotterdam",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "Ajax Amsterdam",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "NEC Nijmegen",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "Go Ahead Eagles",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "FC Twente",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "Excelsior",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "FC Utrecht",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "Telstar",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-19",
+      "team1": "Sparta Rotterdam",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "FC Groningen",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "Fortuna Sittard",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "PEC Zwolle",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "Heerenveen",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "PSV Eindhoven",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "AZ Alkmaar",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "AZ Alkmaar",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-26",
+      "team1": "FC Twente",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Ajax Amsterdam",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Excelsior",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "NEC Nijmegen",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "FC Groningen",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "FC Utrecht",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "Telstar",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "Sparta Rotterdam",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "Fortuna Sittard",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "PEC Zwolle",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "Heerenveen",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "FC Twente",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "AZ Alkmaar",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "Go Ahead Eagles",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "NEC Nijmegen",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "FC Utrecht",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "PSV Eindhoven",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "Ajax Amsterdam",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-18",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "team1": "Telstar",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "team1": "Excelsior",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "team1": "FC Groningen",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-19",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          7
+        ]
+      }
+    },
+    {
+      "date": "2025-10-24",
+      "team1": "Heerenveen",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "Fortuna Sittard",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "Sparta Rotterdam",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "PEC Zwolle",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "FC Twente",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "AZ Alkmaar",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "Go Ahead Eagles",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "team1": "PSV Eindhoven",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Ajax Amsterdam",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Telstar",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "FC Groningen",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "Sparta Rotterdam",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "FC Utrecht",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-07",
+      "team1": "FC Twente",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "Excelsior",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "Fortuna Sittard",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "PEC Zwolle",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "FC Utrecht",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "NEC Nijmegen",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "AZ Alkmaar",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "Go Ahead Eagles",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "team1": "Ajax Amsterdam",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-22",
+      "team1": "Sparta Rotterdam",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "team1": "Heerenveen",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "team1": "Telstar",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-23",
+      "team1": "FC Groningen",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-28",
+      "team1": "PEC Zwolle",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "Excelsior",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "Fortuna Sittard",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "NEC Nijmegen",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "PSV Eindhoven",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "Go Ahead Eagles",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "Telstar",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "FC Twente",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-02",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-05",
+      "team1": "Excelsior",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "Heerenveen",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "Fortuna Sittard",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "FC Utrecht",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "AZ Alkmaar",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "Sparta Rotterdam",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "Telstar",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "FC Groningen",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "PSV Eindhoven",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "PEC Zwolle",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "Sparta Rotterdam",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "Ajax Amsterdam",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "FC Twente",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "Excelsior",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "NEC Nijmegen",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "FC Utrecht",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "Go Ahead Eagles",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "Fortuna Sittard",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "AZ Alkmaar",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "FC Twente",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "PSV Eindhoven",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-10",
+      "team1": "FC Groningen",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "Heerenveen",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "Go Ahead Eagles",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "Telstar",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "Sparta Rotterdam",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Ajax Amsterdam",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "PEC Zwolle",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Excelsior",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Fortuna Sittard",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "Heerenveen",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "AZ Alkmaar",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "Ajax Amsterdam",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "NEC Nijmegen",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "PSV Eindhoven",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "FC Twente",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "Telstar",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "FC Groningen",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "FC Utrecht",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "AZ Alkmaar",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "PEC Zwolle",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "Sparta Rotterdam",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "Excelsior",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "PSV Eindhoven",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "Heerenveen",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-06",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "NEC Nijmegen",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "PEC Zwolle",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "FC Twente",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "Fortuna Sittard",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "FC Utrecht",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "AZ Alkmaar",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "Go Ahead Eagles",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "FC Groningen",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "team1": "Go Ahead Eagles",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-11",
+      "team1": "NEC Nijmegen",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "Excelsior",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "Ajax Amsterdam",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "FC Groningen",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "Heerenveen",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "Telstar",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "team1": "Sparta Rotterdam",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "team1": "Fortuna Sittard",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "PSV Eindhoven",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Ajax Amsterdam",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "FC Twente",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "FC Utrecht",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "Go Ahead Eagles",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "AZ Alkmaar",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "team1": "Telstar",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "Heerenveen",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "NEC Nijmegen",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "PEC Zwolle",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "FC Twente",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "FC Utrecht",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "Excelsior",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "FC Groningen",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "PSV Eindhoven",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "Excelsior",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Sparta Rotterdam",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Fortuna Sittard",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Go Ahead Eagles",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "NEC Nijmegen",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-13",
+      "team1": "PEC Zwolle",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "PSV Eindhoven",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "Heerenveen",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "Ajax Amsterdam",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "FC Twente",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "AZ Alkmaar",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "Go Ahead Eagles",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "Fortuna Sittard",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "Sparta Rotterdam",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "PEC Zwolle",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "NEC Nijmegen",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "FC Utrecht",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "FC Groningen",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "Telstar",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "PSV Eindhoven",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "Telstar",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "AZ Alkmaar",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "Excelsior",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "team1": "Go Ahead Eagles",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "team1": "Heerenveen",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-05",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "team1": "FC Twente",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "FC Utrecht",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "Sparta Rotterdam",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "FC Groningen",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "Fortuna Sittard",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "NEC Nijmegen",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "PEC Zwolle",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "AZ Alkmaar",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-22",
+      "team1": "Telstar",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "team1": "Go Ahead Eagles",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "team1": "PSV Eindhoven",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "Heerenveen",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "FC Twente",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "Excelsior",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "FC Utrecht",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "FC Groningen",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "Ajax Amsterdam",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "NEC Nijmegen",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "Fortuna Sittard",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "PEC Zwolle",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "AZ Alkmaar",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "Sparta Rotterdam",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Excelsior",
+      "team2": "ESPN:2727:FC Volendam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "FC Groningen",
+      "team2": "NEC Nijmegen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "FC Twente",
+      "team2": "Sparta Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Fortuna Sittard",
+      "team2": "PEC Zwolle",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Go Ahead Eagles",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Telstar",
+      "team2": "ESPN:3708:Heracles Almelo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "ESPN:141:NAC Breda",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "AZ Alkmaar",
+      "team2": "ESPN:141:NAC Breda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "FC Utrecht",
+      "team2": "Fortuna Sittard",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "ESPN:2727:FC Volendam",
+      "team2": "Telstar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "Heerenveen",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "ESPN:3708:Heracles Almelo",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "NEC Nijmegen",
+      "team2": "Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "PEC Zwolle",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "PSV Eindhoven",
+      "team2": "FC Twente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "team1": "Sparta Rotterdam",
+      "team2": "Excelsior",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Groningen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-21",
+      "team1": "FC Utrecht",
+      "team2": "Heerenveen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    }
+  ]
+}

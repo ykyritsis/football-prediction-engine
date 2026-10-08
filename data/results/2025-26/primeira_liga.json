@@ -1,0 +1,3678 @@
+{
+  "name": "Primeira Liga",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2025-08-08",
+      "team1": "Casa Pia",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "C.D. Nacional",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-09",
+      "team1": "Arouca",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "FC Famalicao",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "Braga",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-10",
+      "team1": "Moreirense",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-11",
+      "team1": "Estoril",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-11",
+      "team1": "FC Porto",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-15",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-16",
+      "team1": "Estrela",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Rio Ave",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Alverca",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Santa Clara",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-17",
+      "team1": "Sporting CP",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-18",
+      "team1": "Gil Vicente",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "Moreirense",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "C.D. Nacional",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "Arouca",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-08-23",
+      "team1": "Benfica",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "FC Famalicao",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "FC Porto",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-24",
+      "team1": "Braga",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-25",
+      "team1": "Estrela",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-29",
+      "team1": "Gil Vicente",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "Casa Pia",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "ESPN:22064:AVS",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-08-30",
+      "team1": "Sporting CP",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "Alverca",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "Rio Ave",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-08-31",
+      "team1": "Santa Clara",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-06",
+      "team1": "Estoril",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-12",
+      "team1": "Alverca",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-12",
+      "team1": "Benfica",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "Estoril",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "Moreirense",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "FC Porto",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-13",
+      "team1": "FC Famalicao",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "Estrela",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "Arouca",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-14",
+      "team1": "Braga",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-19",
+      "team1": "Rio Ave",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "C.D. Nacional",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "Santa Clara",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-20",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "Gil Vicente",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-21",
+      "team1": "Casa Pia",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-22",
+      "team1": "Sporting CP",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-23",
+      "team1": "Benfica",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-26",
+      "team1": "Benfica",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Moreirense",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Santa Clara",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Estrela",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-27",
+      "team1": "Estoril",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "Alverca",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "Braga",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-28",
+      "team1": "FC Famalicao",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-29",
+      "team1": "Arouca",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-03",
+      "team1": "Casa Pia",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "C.D. Nacional",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "Gil Vicente",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-04",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "Arouca",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "Rio Ave",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "Sporting CP",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-05",
+      "team1": "FC Porto",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-24",
+      "team1": "Alverca",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "Santa Clara",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "Benfica",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-25",
+      "team1": "Estrela",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "Estoril",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "FC Famalicao",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-26",
+      "team1": "Braga",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-27",
+      "team1": "Moreirense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-31",
+      "team1": "Sporting CP",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "C.D. Nacional",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Casa Pia",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Rio Ave",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-01",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "ESPN:22064:AVS",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "Arouca",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-02",
+      "team1": "FC Porto",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-03",
+      "team1": "Gil Vicente",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-07",
+      "team1": "Estoril",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "Alverca",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-08",
+      "team1": "Santa Clara",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "Estrela",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "FC Famalicao",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "Benfica",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-09",
+      "team1": "Braga",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-28",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "Casa Pia",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "Moreirense",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "C.D. Nacional",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-29",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "Rio Ave",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "Sporting CP",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-30",
+      "team1": "FC Porto",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-01",
+      "team1": "Arouca",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-12-05",
+      "team1": "Benfica",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "Santa Clara",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-06",
+      "team1": "FC Famalicao",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "Estoril",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "Alverca",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "Estrela",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-07",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-08",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "Casa Pia",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "Rio Ave",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-13",
+      "team1": "Sporting CP",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "FC Famalicao",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "Moreirense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-12-14",
+      "team1": "Arouca",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-15",
+      "team1": "C.D. Nacional",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-15",
+      "team1": "Braga",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-15",
+      "team1": "FC Porto",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-19",
+      "team1": "Estoril",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "Gil Vicente",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-20",
+      "team1": "Estrela",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "ESPN:22064:AVS",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-21",
+      "team1": "Santa Clara",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Alverca",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-22",
+      "team1": "Benfica",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-23",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "FC Famalicao",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-27",
+      "team1": "Estoril",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Arouca",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Casa Pia",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Braga",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-28",
+      "team1": "Sporting CP",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-29",
+      "team1": "FC Porto",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-02",
+      "team1": "Gil Vicente",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-02",
+      "team1": "Vitória de Guimaraes",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "Benfica",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "Estrela",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-03",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "Rio Ave",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "Santa Clara",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-04",
+      "team1": "Alverca",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "C.D. Nacional",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-11",
+      "team1": "Moreirense",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-16",
+      "team1": "Sporting CP",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Gil Vicente",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Alverca",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-17",
+      "team1": "Rio Ave",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "Santa Clara",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-19",
+      "team1": "Estrela",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2026-01-23",
+      "team1": "Casa Pia",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "Moreirense",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "Arouca",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-24",
+      "team1": "Estoril",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "C.D. Nacional",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "Benfica",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-25",
+      "team1": "Braga",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-26",
+      "team1": "FC Porto",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-30",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "Santa Clara",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "Rio Ave",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-31",
+      "team1": "Alverca",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "Gil Vicente",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "Sporting CP",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-01",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-02-02",
+      "team1": "Casa Pia",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "Estrela",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "Moreirense",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "Estoril",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-07",
+      "team1": "Arouca",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "C.D. Nacional",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "Braga",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-08",
+      "team1": "Benfica",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "team1": "FC Famalicao",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-09",
+      "team1": "FC Porto",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "team1": "Santa Clara",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-13",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "Casa Pia",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-14",
+      "team1": "Gil Vicente",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "C.D. Nacional",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-15",
+      "team1": "Sporting CP",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-16",
+      "team1": "Rio Ave",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-20",
+      "team1": "Estrela",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Alverca",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Arouca",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Benfica",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Moreirense",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-21",
+      "team1": "Braga",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "Estoril",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-22",
+      "team1": "FC Porto",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-23",
+      "team1": "FC Famalicao",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "team1": "FC Porto",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "team1": "Sporting CP",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "C.D. Nacional",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-28",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "Casa Pia",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-01",
+      "team1": "Rio Ave",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-02",
+      "team1": "Gil Vicente",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-06",
+      "team1": "FC Famalicao",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "Alverca",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "Moreirense",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "Braga",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-07",
+      "team1": "Estoril",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Estrela",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Benfica",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-08",
+      "team1": "Santa Clara",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-09",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "Gil Vicente",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-14",
+      "team1": "Arouca",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "C.D. Nacional",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "Rio Ave",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-15",
+      "team1": "FC Porto",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "team1": "Estrela",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "FC Famalicao",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "Moreirense",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "Benfica",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "Santa Clara",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-21",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "Estoril",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "Alverca",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-03-22",
+      "team1": "Braga",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "team1": "Gil Vicente",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-03",
+      "team1": "Sporting CP",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "C.D. Nacional",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "Moreirense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "Rio Ave",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-04",
+      "team1": "FC Porto",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "team1": "Arouca",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-06",
+      "team1": "Casa Pia",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-10",
+      "team1": "FC Famalicao",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "Santa Clara",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-11",
+      "team1": "Estrela",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "Alverca",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "Benfica",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "Braga",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-12",
+      "team1": "Estoril",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-13",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-17",
+      "team1": "Rio Ave",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "team1": "C.D. Nacional",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "team1": "Casa Pia",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-18",
+      "team1": "Gil Vicente",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "team1": "Arouca",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "team1": "Sporting CP",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "team1": "Braga",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-19",
+      "team1": "FC Porto",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-20",
+      "team1": "Moreirense",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-23",
+      "team1": "Casa Pia",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-24",
+      "team1": "Alverca",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "Benfica",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-25",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "Estoril",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "Estrela",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "Santa Clara",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "team1": "ESPN:22064:AVS",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-27",
+      "team1": "Gil Vicente",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "team1": "Sporting CP",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "Arouca",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "C.D. Nacional",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "Moreirense",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "FC Famalicao",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-02",
+      "team1": "FC Porto",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "Casa Pia",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "Braga",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-03",
+      "team1": "Rio Ave",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-04",
+      "team1": "Sporting CP",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "ESPN:22064:AVS",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-10",
+      "team1": "Alverca",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Benfica",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Estrela",
+      "team2": "FC Famalicao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Gil Vicente",
+      "team2": "Arouca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Rio Ave",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Santa Clara",
+      "team2": "C.D. Nacional",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-11",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Casa Pia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "FC Porto",
+      "team2": "Santa Clara",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Moreirense",
+      "team2": "ESPN:22064:AVS",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Arouca",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Braga",
+      "team2": "Estrela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "C.D. Nacional",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Casa Pia",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Estoril",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "FC Famalicao",
+      "team2": "Alverca",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "team1": "Sporting CP",
+      "team2": "Gil Vicente",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    }
+  ]
+}

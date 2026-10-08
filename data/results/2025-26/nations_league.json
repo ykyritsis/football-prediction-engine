@@ -1,0 +1,54 @@
+{
+  "name": "UEFA Nations League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2026-03-26",
+      "team1": "Gibraltar",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-26",
+      "team1": "Malta",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "team1": "Latvia",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-31",
+      "team1": "Luxembourg",
+      "team2": "Malta",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    }
+  ]
+}

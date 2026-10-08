@@ -1,6 +1,6 @@
 # Football Prediction Engine
 
-**Touchline** is a browser match centre for European football: predictions,
+**Touchline** is a browser match centre for club and international football: predictions,
 animated match simulations, club and player profiles, and historical evaluation.
 
 [Open the public website](https://ykyritsis.github.io/football-prediction-engine/)
@@ -19,13 +19,16 @@ Build the same website locally with Node 20+ and stable Rust:
 node tools/build_website.cjs
 ```
 
-The output is `dist/index.html`, with no server-side dependencies. See
+The output is `dist/index.html` and on-demand JSON files in `dist/assets/`, with
+no server-side dependencies. Preview with `node tools/serve_dashboard.cjs dist/index.html`. See
 [website publishing and data updates](docs/WEBSITE.md).
 
 ## Local dashboard
 
-Generate a browser match centre for the Premier League, La Liga, Serie A,
-Bundesliga, Ligue 1, Champions League, Europa League and Conference League:
+Generate a browser match centre for 22 competitions: ten domestic leagues,
+Champions League, Europa League, Conference League, Club World Cup and eight
+national-team competitions. The domestic additions are Portugal, Netherlands,
+Belgium, Türkiye and Czechia:
 
 ```sh
 cargo run --release -p predictor --bin dashboard -- 2026-10-08 dashboard.html
@@ -57,15 +60,19 @@ cache behavior and source limitations.
 
 - **Upcoming fixtures:** league and club filters, score probabilities, home /
   draw / away chances, model expected goals, over 2.5 goals and both teams scoring.
-- **Match simulator:** any two current-season clubs within one competition, with
-  an animated clock, progressively revealed goals/scorers/assists, pause, skip
+- **Match simulator:** two registered teams within one competition, with
+  a five-second default replay, animated pitch and ball, formation controls,
+  progressively revealed shots/goals/scorers/assists, pause, skip
   and reduced-motion support. Each run uses a new random seed; optional fixed
   seeds reproduce both score and events. A collapsible 10,000-run comparison
   distinguishes a sampled match from the forecast distribution.
-- **Club profiles:** crests, source-supplied stadium details, current-season result
-  summaries, upcoming matches, full squads and recent results.
+- **Team profiles:** crests, dated managers, stadium imagery/capacity, honours,
+  current-season summaries, upcoming matches, full squads, recent results and
+  the latest recorded XI on a formation board.
 - **Player profiles:** nationality, age, shirt number, position, available goals,
-  assists, appearances, shots, cards and goalkeeper stats. Values are scoped to
+  assists, appearances, shots, cards and goalkeeper stats, per-appearance rates,
+  shot efficiency, position-peer comparisons, recent match performances,
+  cross-competition totals and verified contract/market-value details. Values are scoped to
   the selected competition; missing stats remain missing. Verified portraits
   link the original creator, file and license. Profiles are descriptive, not
   additional inputs to the team prediction model. Upcoming matches include
@@ -116,9 +123,10 @@ statistics, transfers, honours and a market-value timeline after a verified name
 and birth-date match. The local server retrieves extra histories on demand;
 saved enrichments are included in the next generated standalone HTML.
 
-All 166 current clubs have checked Transfermarkt IDs. The bundled snapshot has
-2025/26 tables for all eight competitions plus initial Arsenal/Tottenham and
-Saka/Richarlison histories. It is not a downloaded history of every player.
+The expanded snapshot contains 392 club/national profiles, 11,411 roster entries
+and more than 6,400 portrait links, plus verified honours and stadium details
+where returned by the provider. Detailed player career histories are available
+for selected players; missing histories and photos remain clearly marked.
 Requests are serialized at least 1.65 seconds apart, and raw responses are cached
 for 24 hours. Successful normalized enrichments persist in
 `data/catalog/transfermarkt.json`; their upstream timestamps remain visible.
@@ -139,7 +147,7 @@ Validation:
 
 ```sh
 cargo test -p predictor --locked
-node --test crates/predictor/web/simulation.test.cjs
+node --test crates/predictor/web/*.test.cjs
 ```
 
 The exporter is `crates/predictor/src/bin/dashboard.rs`; its typed data assembly
@@ -150,6 +158,12 @@ For a future live-data release, add a maintained fixtures/results ingestion serv
 an immutable archive of forecasts with model versions. Lineup and injury feeds
 and additional short-term form features should be evaluated on a later holdout
 period before changing the default model.
+
+National-team competitions share a deduplicated national result pool and keep
+their own fixture/archive scope. Training and historical evaluation enforce the
+same date cutoff; domestic club results do not enter that pool. Hypothetical
+international matches use a neutral venue. These forecasts are an experimental
+baseline, not evidence of improved predictive accuracy.
 
 ## Command-line predictions
 

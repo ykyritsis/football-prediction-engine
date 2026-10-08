@@ -1,0 +1,810 @@
+{
+  "name": "Concacaf Nations League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2022-06-02",
+      "team1": "Anguilla",
+      "team2": "Dominica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "French Guiana",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Belize",
+      "team2": "Dominican Republic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Barbados",
+      "team2": "Antigua and Barbuda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Panama",
+      "team2": "Costa Rica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Guadeloupe",
+      "team2": "Cuba",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "British Virgin Islands",
+      "team2": "Cayman Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "St. Martin",
+      "team2": "Aruba",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Sint Maarten",
+      "team2": "US Virgin Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Turks and Caicos Islands",
+      "team2": "Bonaire",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Bahamas",
+      "team2": "St. Vincent and the Grenadines",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Curaçao",
+      "team2": "Honduras",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Nicaragua",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Bermuda",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Suriname",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Montserrat",
+      "team2": "Guyana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "El Salvador",
+      "team2": "Grenada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Costa Rica",
+      "team2": "Martinique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Dominica",
+      "team2": "Anguilla",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Guatemala",
+      "team2": "Belize",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Cuba",
+      "team2": "Barbados",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Antigua and Barbuda",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Dominican Republic",
+      "team2": "French Guiana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "St. Vincent and the Grenadines",
+      "team2": "Nicaragua",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Bonaire",
+      "team2": "Sint Maarten",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "US Virgin Islands",
+      "team2": "Turks and Caicos Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Cayman Islands",
+      "team2": "British Virgin Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Aruba",
+      "team2": "St. Martin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Trinidad and Tobago",
+      "team2": "Bahamas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Honduras",
+      "team2": "Curaçao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Guyana",
+      "team2": "Bermuda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Haiti",
+      "team2": "Montserrat",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Grenada",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-08",
+      "team1": "Jamaica",
+      "team2": "Suriname",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Dominica",
+      "team2": "St. Lucia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Aruba",
+      "team2": "St. Kitts and Nevis",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Barbados",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Belize",
+      "team2": "French Guiana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Cayman Islands",
+      "team2": "Puerto Rico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Antigua and Barbuda",
+      "team2": "Cuba",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Panama",
+      "team2": "Martinique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Canada",
+      "team2": "Curaçao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "St. Vincent and the Grenadines",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Bahamas",
+      "team2": "Nicaragua",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Dominican Republic",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "United States",
+      "team2": "Grenada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Guyana",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "US Virgin Islands",
+      "team2": "Bonaire",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Sint Maarten",
+      "team2": "Turks and Caicos Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          8,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Montserrat",
+      "team2": "Bermuda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Mexico",
+      "team2": "Suriname",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Cuba",
+      "team2": "Antigua and Barbuda",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Guadeloupe",
+      "team2": "Barbados",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Martinique",
+      "team2": "Panama",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Puerto Rico",
+      "team2": "British Virgin Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "St. Lucia",
+      "team2": "Anguilla",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "St. Kitts and Nevis",
+      "team2": "St. Martin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Trinidad and Tobago",
+      "team2": "St. Vincent and the Grenadines",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Guatemala",
+      "team2": "Dominican Republic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Nicaragua",
+      "team2": "Bahamas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Honduras",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Bonaire",
+      "team2": "US Virgin Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Turks and Caicos Islands",
+      "team2": "Sint Maarten",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "French Guiana",
+      "team2": "Belize",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Haiti",
+      "team2": "Guyana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-15",
+      "team1": "Jamaica",
+      "team2": "Mexico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-15",
+      "team1": "El Salvador",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

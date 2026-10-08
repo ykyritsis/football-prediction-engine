@@ -38,10 +38,26 @@ not when the source last updated every player or fixture.
   URL, displayed in the player profile. Photos are remotely loaded, not copied
   into this repository; the dashboard uses a layout crop.
 * Inter: Google Fonts, SIL Open Font License, with system-font fallbacks.
+* Expanded portraits: ESPN headshots and Transfermarkt squad images. The latter
+  require a unique normalized player name plus matching birth date. Alternate
+  portraits are tried if the primary remote image fails. These are source-owned
+  remote URLs, not a claim that every image is openly licensed.
+* Czech league results: Openfootball's `europe/czech-republic` archives, with
+  explicit team-ID mappings. Timed fixtures retain Europe/Prague civil time.
 
 The dashboard is independent and does not claim official league/club affiliation.
-The current snapshot includes 166 clubs, 5,069 roster entries and 37 verified
-portraits; counts can change with the next refresh. Not every player has a photo.
+The current snapshot includes 392 teams, 11,411 roster entries and more than
+6,400 portrait links; counts can change with the next refresh. Not every player
+has a photo, and remote image availability can change. A player represented in
+both club and national squads is counted as two roster entries.
+
+`competitions.json` is the 22-competition registry. `sync_match_centre.cjs`
+imports extra ESPN leagues and national tournaments, player season totals,
+headshots and dated match sheets. `enrich_match_centre.cjs` adds Czech coverage
+and verified Transfermarkt squad/club details. `enrich_national_teams.cjs`
+requires a unique senior-team match and provider-confirmed confederation before
+attaching national managers and honours. Import issues and source records remain
+saved alongside the snapshot.
 
 ## Model boundaries
 

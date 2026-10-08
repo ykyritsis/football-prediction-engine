@@ -95,16 +95,35 @@ fn current_model(
     (model, adjustments, factor, count)
 }
 
-pub const LEAGUES: [(&str, &str); 8] = [
+pub const LEAGUES: [(&str, &str); 22] = [
     ("premier_league", "Premier League"),
     ("la_liga", "La Liga"),
     ("serie_a", "Serie A"),
     ("bundesliga", "Bundesliga"),
     ("ligue_1", "Ligue 1"),
+    ("primeira_liga", "Primeira Liga"),
+    ("eredivisie", "Eredivisie"),
+    ("belgian_pro_league", "Belgian Pro League"),
+    ("super_lig", "Süper Lig"),
+    ("chance_liga", "Chance Liga"),
     ("champions_league", "Champions League"),
     ("europa_league", "Europa League"),
     ("conference_league", "Conference League"),
+    ("club_world_cup", "Club World Cup"),
+    ("world_cup", "World Cup"),
+    ("european_championship", "European Championship"),
+    ("nations_league", "UEFA Nations League"),
+    ("world_cup_qualifying", "European World Cup Qualifiers"),
+    ("copa_america", "Copa América"),
+    ("africa_cup", "Africa Cup of Nations"),
+    ("gold_cup", "Gold Cup"),
+    ("concacaf_nations", "Concacaf Nations League"),
 ];
+
+pub fn is_international(key: &str) -> bool {
+    matches!(key, "world_cup" | "european_championship" | "nations_league"
+        | "world_cup_qualifying" | "copa_america" | "africa_cup" | "gold_cup" | "concacaf_nations")
+}
 
 pub fn valid_date(s: &str) -> bool {
     s.len() == 10
@@ -222,6 +241,8 @@ pub struct League {
     pub scoring_factor: f64,
     pub scoring_sample: usize,
     pub archive: Vec<ArchivedMatch>,
+    pub shared_international_model: bool,
+    pub training_pool_matches: usize,
 }
 
 /// Same-season teams only; historical predictions refit in seven-day windows.
@@ -235,6 +256,15 @@ pub fn build_league(
     cfg: &ModelConfig,
     eligible: Option<&[String]>,
 ) -> League {
+    build_league_with_training(key, name, all, all, as_of, from, cfg, eligible)
+}
+
+/// National tournaments share dated national-team results, never domestic club
+/// results. Their own archive, fixtures and summaries remain competition scoped.
+pub fn build_league_with_training(
+    key: &str, name: &str, all: &[Match], training_all: &[Match], as_of: &str,
+    from: &str, cfg: &ModelConfig, eligible: Option<&[String]>,
+) -> League {
     let history: Vec<_> = all
         .iter()
         .filter(|m| m.score.is_some() && m.date.as_str() < as_of)
@@ -244,14 +274,20 @@ pub fn build_league(
     let year = if &as_of[5..7] < "07" { year - 1 } else { year };
     let season_start = format!("{year}-07-01");
     let season_end = format!("{}-07-01", year + 1);
-    let names: BTreeSet<_> = all
+    let mut names: BTreeSet<_> = all
         .iter()
         .filter(|m| m.date >= season_start && m.date < season_end)
         .flat_map(|m| [&m.home, &m.away])
         .cloned()
         .filter(|t| eligible.map_or(true, |names| names.contains(t)))
         .collect();
-    let (model, adjustments, scoring_factor, scoring_sample) = current_model(&history, as_of, cfg);
+    // A tournament between editions still supports its registered participants.
+    if let Some(registered) = eligible {
+        names = registered.iter().cloned().collect();
+    }
+    let training_history: Vec<_> = training_all.iter()
+        .filter(|m| m.score.is_some() && m.date.as_str() < as_of).cloned().collect();
+    let (model, adjustments, scoring_factor, scoring_sample) = current_model(&training_history, as_of, cfg);
     let teams = names
         .iter()
         .map(|t| {
@@ -297,7 +333,8 @@ pub fn build_league(
                 forecasts.push(Forecast {
                     home: home.clone(),
                     away: away.clone(),
-                    prediction: model.predict(home, away),
+                    prediction: if is_international(key) { model.predict_neutral(home, away) }
+                        else { model.predict(home, away) },
                 });
             }
         }
@@ -335,7 +372,7 @@ pub fn build_league(
     while i < dates.len() {
         let start = dates[i];
         let end = add_days(start, 7);
-        let training: Vec<_> = history
+        let training: Vec<_> = training_history
             .iter()
             .filter(|m| m.date.as_str() < start)
             .cloned()
@@ -390,6 +427,8 @@ pub fn build_league(
         historical,
         scoring_factor,
         scoring_sample,
+        shared_international_model: is_international(key),
+        training_pool_matches: training_history.len(),
     }
 }
 
@@ -419,6 +458,23 @@ mod tests {
             assert!(!valid_date(d), "{d}");
         }
         assert!(valid_date("2024-02-29"));
+    }
+    #[test]
+    fn national_pool_preserves_tournament_scope_and_cutoff() {
+        let own = vec![game("2026-06-01", (2, 1))];
+        let registered = vec!["A".to_string(), "B".to_string()];
+        let mut pool = own.clone();
+        pool.push(game("2026-09-01", (1, 1)));
+        let base = build_league_with_training("world_cup", "World Cup", &own, &pool,
+            "2026-10-08", "2026-07-01", &ModelConfig::default(), Some(&registered));
+        pool.push(game("2026-10-08", (9, 0)));
+        let later = build_league_with_training("world_cup", "World Cup", &own, &pool,
+            "2026-10-08", "2026-07-01", &ModelConfig::default(), Some(&registered));
+        assert_eq!(base.teams.len(), 2);
+        assert_eq!(base.archive.len(), 1);
+        assert_eq!(base.training_pool_matches, 2);
+        assert_eq!(base.forecasts[0].prediction.scores, later.forecasts[0].prediction.scores);
+        assert!(base.shared_international_model);
     }
     #[test]
     fn form_has_cutoff_and_chronological_order() {

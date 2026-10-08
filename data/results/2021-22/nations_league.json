@@ -1,0 +1,1326 @@
+{
+  "name": "UEFA Nations League",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-10-06",
+      "team1": "Italy",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-10-07",
+      "team1": "Belgium",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2021-10-10",
+      "team1": "Italy",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2021-10-10",
+      "team1": "Spain",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Estonia",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-03-24",
+      "team1": "Moldova",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-03-29",
+      "team1": "Cyprus",
+      "team2": "Estonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-01",
+      "team1": "Poland",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Bulgaria",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Cyprus",
+      "team2": "Kosovo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Estonia",
+      "team2": "San Marino",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Georgia",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Czechia",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Israel",
+      "team2": "Iceland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Northern Ireland",
+      "team2": "Greece",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Serbia",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Slovenia",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-02",
+      "team1": "Spain",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Kazakhstan",
+      "team2": "Azerbaijan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Latvia",
+      "team2": "Andorra",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Belarus",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Belgium",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Croatia",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "France",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-03",
+      "team1": "Liechtenstein",
+      "team2": "Moldova",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Armenia",
+      "team2": "Republic of Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Finland",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Hungary",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Lithuania",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Italy",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Montenegro",
+      "team2": "Romania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-04",
+      "team1": "Türkiye",
+      "team2": "Faroe Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "San Marino",
+      "team2": "Malta",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Cyprus",
+      "team2": "Northern Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Gibraltar",
+      "team2": "North Macedonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Bulgaria",
+      "team2": "Georgia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Czechia",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Kosovo",
+      "team2": "Greece",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Portugal",
+      "team2": "Switzerland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Serbia",
+      "team2": "Slovenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-05",
+      "team1": "Sweden",
+      "team2": "Norway",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Latvia",
+      "team2": "Liechtenstein",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Andorra",
+      "team2": "Moldova",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Belarus",
+      "team2": "Azerbaijan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Croatia",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Iceland",
+      "team2": "Albania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Slovakia",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-06",
+      "team1": "Austria",
+      "team2": "Denmark",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Finland",
+      "team2": "Montenegro",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Bosnia-Herzegovina",
+      "team2": "Romania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Faroe Islands",
+      "team2": "Luxembourg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Germany",
+      "team2": "England",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Italy",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-07",
+      "team1": "Lithuania",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2022-06-08",
+      "team1": "Belgium",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-08",
+      "team1": "Republic of Ireland",
+      "team2": "Ukraine",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-08",
+      "team1": "Scotland",
+      "team2": "Armenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-08",
+      "team1": "Wales",
+      "team2": "Netherlands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Gibraltar",
+      "team2": "Bulgaria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Greece",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Kosovo",
+      "team2": "Northern Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Malta",
+      "team2": "Estonia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "North Macedonia",
+      "team2": "Georgia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Norway",
+      "team2": "Slovenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Portugal",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Sweden",
+      "team2": "Serbia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-09",
+      "team1": "Switzerland",
+      "team2": "Spain",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Azerbaijan",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Moldova",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Albania",
+      "team2": "Israel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Andorra",
+      "team2": "Liechtenstein",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Austria",
+      "team2": "France",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Belarus",
+      "team2": "Kazakhstan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-10",
+      "team1": "Denmark",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Ukraine",
+      "team2": "Armenia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Faroe Islands",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Republic of Ireland",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "England",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Hungary",
+      "team2": "Germany",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Luxembourg",
+      "team2": "Türkiye",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Montenegro",
+      "team2": "Bosnia-Herzegovina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Netherlands",
+      "team2": "Poland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Romania",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-11",
+      "team1": "Wales",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Northern Ireland",
+      "team2": "Cyprus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Georgia",
+      "team2": "Bulgaria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "North Macedonia",
+      "team2": "Gibraltar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Norway",
+      "team2": "Sweden",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Greece",
+      "team2": "Kosovo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Malta",
+      "team2": "San Marino",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Slovenia",
+      "team2": "Serbia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Spain",
+      "team2": "Czechia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-12",
+      "team1": "Switzerland",
+      "team2": "Portugal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Kazakhstan",
+      "team2": "Slovakia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Azerbaijan",
+      "team2": "Belarus",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Denmark",
+      "team2": "Austria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "France",
+      "team2": "Croatia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-13",
+      "team1": "Iceland",
+      "team2": "Israel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Armenia",
+      "team2": "Scotland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Moldova",
+      "team2": "Andorra",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Bosnia-Herzegovina",
+      "team2": "Finland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "England",
+      "team2": "Hungary",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Germany",
+      "team2": "Italy",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Liechtenstein",
+      "team2": "Latvia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Luxembourg",
+      "team2": "Faroe Islands",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Netherlands",
+      "team2": "Wales",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Poland",
+      "team2": "Belgium",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Romania",
+      "team2": "Montenegro",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Türkiye",
+      "team2": "Lithuania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2022-06-14",
+      "team1": "Ukraine",
+      "team2": "Republic of Ireland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

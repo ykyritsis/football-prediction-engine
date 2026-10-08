@@ -1,0 +1,2046 @@
+{
+  "name": "Primeira Liga",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2018-01-03",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-01-03",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-03",
+      "team1": "Maritimo",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-03",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-03",
+      "team1": "Rio Ave",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-03",
+      "team1": "Benfica",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-04",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-04",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-06",
+      "team1": "Braga",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-07",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-07",
+      "team1": "Moreirense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-07",
+      "team1": "Sporting CP",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-07",
+      "team1": "FC Porto",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-08",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-08",
+      "team1": "Estoril",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-09",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-09",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-12",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-01-13",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-13",
+      "team1": "Braga",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-01-14",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-14",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-14",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-14",
+      "team1": "Sporting CP",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-15",
+      "team1": "Moreirense",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-19",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-19",
+      "team1": "FC Porto",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-20",
+      "team1": "Maritimo",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-20",
+      "team1": "Benfica",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-20",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-21",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-21",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-21",
+      "team1": "Rio Ave",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-21",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-29",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-29",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-29",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-30",
+      "team1": "Braga",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-30",
+      "team1": "Estoril",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-30",
+      "team1": "Moreirense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-01-31",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-01-31",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-01-31",
+      "team1": "Sporting CP",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-03",
+      "team1": "Benfica",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-02-03",
+      "team1": "FC Porto",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-02-04",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-04",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-04",
+      "team1": "Estoril",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-04",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-05",
+      "team1": "Maritimo",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-02-05",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-06",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-09",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-10",
+      "team1": "Rio Ave",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-10",
+      "team1": "Braga",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-02-10",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-02-11",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2018-02-11",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2018-02-11",
+      "team1": "Sporting CP",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-11",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-12",
+      "team1": "Moreirense",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-16",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-02-17",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-17",
+      "team1": "Benfica",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-17",
+      "team1": "Estoril",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-18",
+      "team1": "Moreirense",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-02-18",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-18",
+      "team1": "FC Porto",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2018-02-19",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-21",
+      "team1": "Estoril",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-02-23",
+      "team1": "Rio Ave",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-24",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-24",
+      "team1": "Maritimo",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-02-24",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-02-25",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-25",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-25",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2018-02-26",
+      "team1": "Braga",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-02-26",
+      "team1": "Sporting CP",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-02",
+      "team1": "FC Porto",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-03",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-03",
+      "team1": "Benfica",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-03",
+      "team1": "Estoril",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2018-03-04",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-04",
+      "team1": "Moreirense",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-04",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-04",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-05",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-09",
+      "team1": "Braga",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-10",
+      "team1": "Rio Ave",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-10",
+      "team1": "Benfica",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-10",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-11",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-11",
+      "team1": "Maritimo",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-03-11",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-11",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-12",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-03-16",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-17",
+      "team1": "Estoril",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-17",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-03-17",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-03-17",
+      "team1": "FC Porto",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-18",
+      "team1": "Moreirense",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-18",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-18",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2018-03-18",
+      "team1": "Sporting CP",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-29",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2018-03-30",
+      "team1": "Maritimo",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-30",
+      "team1": "Rio Ave",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-30",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-03-31",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-31",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-03-31",
+      "team1": "Benfica",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-03-31",
+      "team1": "Braga",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-02",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-06",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-07",
+      "team1": "Estoril",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-07",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-07",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-07",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-08",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-08",
+      "team1": "FC Porto",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-08",
+      "team1": "Sporting CP",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-09",
+      "team1": "Moreirense",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-13",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2018-04-14",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-14",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-14",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-04-14",
+      "team1": "Vitória de Guimaraes",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-15",
+      "team1": "Maritimo",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-15",
+      "team1": "Benfica",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-15",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2018-04-16",
+      "team1": "Rio Ave",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-20",
+      "team1": "Braga",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-21",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-21",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-21",
+      "team1": "Estoril",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-22",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-22",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-22",
+      "team1": "Moreirense",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-22",
+      "team1": "Sporting CP",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-23",
+      "team1": "FC Porto",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-27",
+      "team1": "Vitória de Guimaraes",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-28",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-28",
+      "team1": "Benfica",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-04-28",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-04-29",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-04-29",
+      "team1": "Rio Ave",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-29",
+      "team1": "Maritimo",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-29",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-04-30",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-04",
+      "team1": "Braga",
+      "team2": "ESPN:2256:Boavista",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-05",
+      "team1": "ESPN:3519:Belenenses",
+      "team2": "ESPN:3719:Portimonense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2018-05-05",
+      "team1": "ESPN:12706:Tondela",
+      "team2": "Vitória de Guimaraes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2018-05-05",
+      "team1": "Sporting CP",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-06",
+      "team1": "Estoril",
+      "team2": "ESPN:5308:Vitoria Setubal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-06",
+      "team1": "Moreirense",
+      "team2": "ESPN:18764:Desportivo Aves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-05-06",
+      "team1": "ESPN:12705:GD Chaves",
+      "team2": "Maritimo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-06",
+      "team1": "FC Porto",
+      "team2": "ESPN:3717:Feirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-07",
+      "team1": "ESPN:3713:Paços de Ferreira",
+      "team2": "Rio Ave",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-11",
+      "team1": "ESPN:18764:Desportivo Aves",
+      "team2": "ESPN:12705:GD Chaves",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2018-05-12",
+      "team1": "Vitória de Guimaraes",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-12",
+      "team1": "ESPN:2256:Boavista",
+      "team2": "ESPN:3519:Belenenses",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "Benfica",
+      "team2": "Moreirense",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "ESPN:3717:Feirense",
+      "team2": "Estoril",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "Maritimo",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "ESPN:3719:Portimonense",
+      "team2": "ESPN:3713:Paços de Ferreira",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "Rio Ave",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2018-05-13",
+      "team1": "ESPN:5308:Vitoria Setubal",
+      "team2": "ESPN:12706:Tondela",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

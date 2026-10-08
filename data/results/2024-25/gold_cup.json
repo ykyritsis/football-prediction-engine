@@ -1,0 +1,306 @@
+{
+  "name": "Gold Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2025-06-15",
+      "team1": "Mexico",
+      "team2": "Dominican Republic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-06-15",
+      "team1": "United States",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-16",
+      "team1": "Haiti",
+      "team2": "Saudi Arabia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-16",
+      "team1": "Costa Rica",
+      "team2": "Suriname",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-06-16",
+      "team1": "Panama",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-06-17",
+      "team1": "Jamaica",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-18",
+      "team1": "Curaçao",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-18",
+      "team1": "Canada",
+      "team2": "Honduras",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-18",
+      "team1": "Costa Rica",
+      "team2": "Dominican Republic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-19",
+      "team1": "Suriname",
+      "team2": "Mexico",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-06-19",
+      "team1": "Trinidad and Tobago",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-20",
+      "team1": "Saudi Arabia",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-20",
+      "team1": "Jamaica",
+      "team2": "Guadeloupe",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-21",
+      "team1": "Guatemala",
+      "team2": "Panama",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-21",
+      "team1": "Curaçao",
+      "team2": "Canada",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "Honduras",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "Saudi Arabia",
+      "team2": "Trinidad and Tobago",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-22",
+      "team1": "United States",
+      "team2": "Haiti",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-23",
+      "team1": "Dominican Republic",
+      "team2": "Suriname",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-23",
+      "team1": "Mexico",
+      "team2": "Costa Rica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Guadeloupe",
+      "team2": "Guatemala",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-06-24",
+      "team1": "Panama",
+      "team2": "Jamaica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-25",
+      "team1": "Canada",
+      "team2": "El Salvador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-06-25",
+      "team1": "Honduras",
+      "team2": "Curaçao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-06-29",
+      "team1": "Mexico",
+      "team2": "Saudi Arabia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    }
+  ]
+}

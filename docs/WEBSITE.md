@@ -21,8 +21,11 @@ Open http://127.0.0.1:8765/. To choose another output directory:
 node tools/build_website.cjs ./public-site
 ```
 
-You can also open the generated HTML directly or deploy the output folder to
-any static web host. The `--static` dashboard flag bundles saved historical
+Deploy the whole output folder, including `assets/`, to any static web host.
+The public build loads competition archives and team profiles on demand; preview
+it over HTTP rather than opening `dist/index.html` as a file. The standalone
+Rust dashboard export can still be opened directly.
+The `--static` dashboard flag bundles saved historical
 records and hides controls that would need the local historical API.
 The season picker only offers years represented by saved tables or results.
 Simulation remains interactive and uses a fresh random seed by default.
@@ -55,7 +58,40 @@ minutes; this does not subscribe to a paid hosting service.
 Saved results and profiles have different timestamps. The current edition
 clearly shows incomplete or older competition results. The site is not a
 live-score feed and does not automatically move forecasts forward each day.
-Lineups, injuries and real-time updates need a later backend/data pipeline.
+Recorded match sheets show dated historical starting XIs. Upcoming selections,
+injuries and real-time updates need a later backend/data pipeline.
+
+## Expanded match centre
+
+The registry in `data/catalog/competitions.json` covers ten domestic leagues,
+four club tournaments and eight national-team competitions. The added leagues
+are Portugal, Netherlands, Belgium, Türkiye and Czechia. National coverage
+includes the World Cup, Euros, UEFA Nations League, European World Cup qualifying,
+Copa América, AFCON, Gold Cup and CONCACAF Nations League.
+
+Refresh the expansion separately from the original results pipeline:
+
+```sh
+node tools/sync_match_centre.cjs
+node tools/enrich_match_centre.cjs
+node tools/enrich_national_teams.cjs
+```
+
+Check each command's issues and saved source records. Czech results use
+Openfootball's European text archives; current squads come through Transfermarkt.
+Portrait enrichment requires a unique name and birth-date match. The national
+profile import also requires a confirmed national confederation. These scripts
+preserve available older data when a provider fails.
+
+Kickoffs use the browser's timezone, AM/PM and the corresponding local date,
+including daylight saving. Civil Czech kickoff times carry an explicit
+Europe/Prague timezone. Missing kickoff times remain `Time TBC`.
+
+The replay defaults to five seconds. Formation controls choose an illustrative
+XI; animated passing, shot events, possession and commentary are synthetic.
+The final score is sampled from the team forecast, and contributor allocation
+uses available players in that XI. Formations do not change team winning
+probabilities. Reduced-motion users get the result without an animated replay.
 
 ## Source and artwork terms
 

@@ -1,0 +1,42 @@
+{
+  "name": "Gold Cup",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2019-07-01",
+      "team1": "United States",
+      "team2": "Curaçao",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2019-07-04",
+      "team1": "Jamaica",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2019-07-08",
+      "team1": "Mexico",
+      "team2": "United States",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

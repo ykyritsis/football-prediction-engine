@@ -34,12 +34,16 @@ fn run() -> Result<(), String> {
         Err(_) => json!({"teams":{},"competitions":[],"fixtures":{}}),
     };
     let mut leagues = Vec::new();
+    let mut national_history = Vec::new();
+    for (key, _) in LEAGUES.iter().filter(|(key, _)| dashboard::is_international(key)) {
+        national_history.extend(load_league(&dir, key)?);
+    }
+    national_history.sort_by(|a,b| (&a.date,&a.home,&a.away).cmp(&(&b.date,&b.home,&b.away)));
+    national_history.dedup_by(|a,b| a.date == b.date && a.home == b.home && a.away == b.away);
     for (key, name) in LEAGUES {
         eprintln!("Building {name}...");
         let mut all = load_league(&dir, key)?;
-        if all.is_empty()
-            && !["champions_league", "europa_league", "conference_league"].contains(&key)
-        {
+        if all.is_empty() && ["premier_league", "la_liga", "serie_a", "bundesliga", "ligue_1"].contains(&key) {
             return Err(format!("No results found for {name} in {}", dir.display()));
         }
         if all.iter().any(|m| !dashboard::valid_date(&m.date)) {
@@ -60,10 +64,11 @@ fn run() -> Result<(), String> {
                     .collect()
             })
             .filter(|v: &Vec<String>| !v.is_empty());
-        leagues.push(dashboard::build_league(
+        leagues.push(dashboard::build_league_with_training(
             key,
             name,
             &all,
+            if dashboard::is_international(key) { &national_history } else { &all },
             as_of,
             &from,
             &cfg,
@@ -85,6 +90,9 @@ fn run() -> Result<(), String> {
         .replace('>', "\\u003e")
         .replace('&', "\\u0026");
     let html = include_str!("../../web/index.html")
+        .replace("__PRESENTATION_CODE__", include_str!("../../web/presentation.js"))
+        .replace("__PROFILE_CODE__", include_str!("../../web/profiles.js"))
+        .replace("__BROADCAST_CODE__", include_str!("../../web/broadcast.js"))
         .replace("__APP_CSS__", include_str!("../../web/app.css"))
         .replace("__APP_JS__", include_str!("../../web/app.js"))
         .replace(

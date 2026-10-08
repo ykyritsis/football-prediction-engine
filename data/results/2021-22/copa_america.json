@@ -1,0 +1,66 @@
+{
+  "name": "Copa América",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2021-07-03",
+      "team1": "Brazil",
+      "team2": "Chile",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-04",
+      "team1": "Argentina",
+      "team2": "Ecuador",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-05",
+      "team1": "Brazil",
+      "team2": "Peru",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2021-07-10",
+      "team1": "Colombia",
+      "team2": "Peru",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2021-07-11",
+      "team1": "Argentina",
+      "team2": "Brazil",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    }
+  ]
+}

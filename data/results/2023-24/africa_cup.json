@@ -1,0 +1,558 @@
+{
+  "name": "Africa Cup of Nations",
+  "source": "ESPN",
+  "matches": [
+    {
+      "date": "2024-01-13",
+      "team1": "Ivory Coast",
+      "team2": "ESPN:8602:Guinea-Bissau",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Nigeria",
+      "team2": "Equatorial Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Egypt",
+      "team2": "Mozambique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-14",
+      "team1": "Ghana",
+      "team2": "Cape Verde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Senegal",
+      "team2": "ESPN:7368:Gambia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Cameroon",
+      "team2": "ESPN:2847:Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-15",
+      "team1": "Algeria",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Burkina Faso",
+      "team2": "ESPN:8940:Mauritania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Tunisia",
+      "team2": "ESPN:6725:Namibia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-16",
+      "team1": "Mali",
+      "team2": "South Africa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "Morocco",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-17",
+      "team1": "Congo DR",
+      "team2": "Zambia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Equatorial Guinea",
+      "team2": "ESPN:8602:Guinea-Bissau",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Ivory Coast",
+      "team2": "Nigeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-18",
+      "team1": "Egypt",
+      "team2": "Ghana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Cape Verde",
+      "team2": "Mozambique",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "Senegal",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-19",
+      "team1": "ESPN:2847:Guinea",
+      "team2": "ESPN:7368:Gambia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Algeria",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "ESPN:8940:Mauritania",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-20",
+      "team1": "Tunisia",
+      "team2": "Mali",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Morocco",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "Zambia",
+      "team2": "Tanzania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-21",
+      "team1": "South Africa",
+      "team2": "ESPN:6725:Namibia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Equatorial Guinea",
+      "team2": "Ivory Coast",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "ESPN:8602:Guinea-Bissau",
+      "team2": "Nigeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Cape Verde",
+      "team2": "Egypt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-22",
+      "team1": "Mozambique",
+      "team2": "Ghana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "ESPN:7368:Gambia",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "ESPN:2847:Guinea",
+      "team2": "Senegal",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "Angola",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-23",
+      "team1": "ESPN:8940:Mauritania",
+      "team2": "Algeria",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "ESPN:6725:Namibia",
+      "team2": "Mali",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "South Africa",
+      "team2": "Tunisia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Tanzania",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-24",
+      "team1": "Zambia",
+      "team2": "Morocco",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "Angola",
+      "team2": "ESPN:6725:Namibia",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-27",
+      "team1": "Nigeria",
+      "team2": "Cameroon",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-28",
+      "team1": "Equatorial Guinea",
+      "team2": "ESPN:2847:Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-29",
+      "team1": "Cape Verde",
+      "team2": "ESPN:8940:Mauritania",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Mali",
+      "team2": "Burkina Faso",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-01-30",
+      "team1": "Morocco",
+      "team2": "South Africa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Nigeria",
+      "team2": "Angola",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-02",
+      "team1": "Congo DR",
+      "team2": "ESPN:2847:Guinea",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-07",
+      "team1": "Ivory Coast",
+      "team2": "Congo DR",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-11",
+      "team1": "Nigeria",
+      "team2": "Ivory Coast",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

@@ -16,13 +16,19 @@ http
       res.end();
       return;
     }
-    if (u.pathname === "/") {
+    if (u.pathname === "/" || u.pathname === "/index.html") {
       res.writeHead(200, {
         "Content-Type": "text/html; charset=utf-8",
         "Cache-Control": "no-store",
       });
       fs.createReadStream(file).pipe(res);
       return;
+    }
+    if (/^\/assets\/(?:competition-[a-z_]+|team-(?:tm-)?\d+)\.json$/.test(u.pathname)) {
+      const asset=path.join(path.dirname(file),"assets",path.basename(u.pathname));
+      if(!fs.existsSync(asset)){res.writeHead(404);res.end();return;}
+      res.writeHead(200,{"Content-Type":"application/json; charset=utf-8","Cache-Control":"no-store"});
+      fs.createReadStream(asset).pipe(res);return;
     }
     if (!u.pathname.startsWith("/api/transfermarkt/")) {
       res.writeHead(404);
