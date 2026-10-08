@@ -8,10 +8,12 @@ use serde_json::json;
 use std::path::PathBuf;
 
 fn run() -> Result<(), String> {
-    let args: Vec<_> = std::env::args().skip(1).collect();
+    let raw: Vec<_> = std::env::args().skip(1).collect();
+    let saved_only = raw.iter().any(|a| a == "--static");
+    let args: Vec<_> = raw.into_iter().filter(|a| a != "--static").collect();
     if args.is_empty() || args.len() > 3 || !dashboard::valid_date(&args[0]) {
         return Err(
-            "usage: dashboard AS_OF [OUTPUT.html] [HISTORY_FROM] (dates: YYYY-MM-DD)".into(),
+            "usage: dashboard AS_OF [OUTPUT.html] [HISTORY_FROM] [--static] (dates: YYYY-MM-DD)".into(),
         );
     }
     let as_of = &args[0];
@@ -75,7 +77,7 @@ fn run() -> Result<(), String> {
         }
         Err(_) => json!({}),
     };
-    let data = json!({"as_of":as_of,"history_from":from,"half_life_days":cfg.half_life_days,"leagues":leagues,"catalog":catalog,"transfermarkt":transfermarkt});
+    let data = json!({"as_of":as_of,"history_from":from,"saved_only":saved_only,"half_life_days":cfg.half_life_days,"leagues":leagues,"catalog":catalog,"transfermarkt":transfermarkt});
     // Never allow a data string to terminate the inert JSON script element.
     let safe = serde_json::to_string(&data)
         .map_err(|e| e.to_string())?

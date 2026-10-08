@@ -7,7 +7,7 @@
 //! * **Star quality** is non-linear: above 0.8 an attribute counts for more
 //!   than its face value, so elite finishers, dribblers, passers and keepers
 //!   produce results the model does not predict.
-//! * **Match-day form** (`Player::form`, PES condition arrows) scales
+//! * **Match-day form** (`Player::form`, condition indicators) scales
 //!   execution up or down for the whole match. Part of it is shared by the
 //!   team (a team can have a good or bad day), part is individual, and its
 //!   size depends on the player's consistency. Fighting Spirit lifts a player
@@ -76,7 +76,7 @@ pub fn draw_form(rng: &mut SimRng, consistency: f32, team_day: f32) -> f32 {
     ((0.55 * team_day + 0.45 * own) * swing).clamp(-1.0, 1.0)
 }
 
-/// PES-style condition arrow for a form value.
+/// Condition indicator for a form value.
 pub fn condition_label(form: f32) -> &'static str {
     match form {
         f if f >= 0.5 => "excellent",

@@ -1,9 +1,10 @@
 # League files (`<league>.json`)
 
-One file per league and season. Ratings are **estimates** on the PES 40–99
-scale, written from public knowledge of how good each player was at the start
-of the season. They are not copied from any game database. When the recomp
-extracts the real PES database, those values should replace these.
+One file per league and season. Ratings are **illustrative estimates** on a
+40–99 simulation scale, written from public knowledge of each player at the
+start of the season. They are not measured player statistics or prediction
+inputs. Replace them with a documented data source before using them for
+serious tactical analysis.
 
 ```jsonc
 {
@@ -22,7 +23,7 @@ extracts the real PES database, those values should replace these.
 | `manager` | Manager at the start of the season |
 | `real_finish` | `{ "position": 2, "points": 91 }` final league table, 2011-12 |
 | `formation` | One of `F442`, `F433`, `F4231`, `F4141`, `F352`, `F532` |
-| `style` | PES game plan (enums below) |
+| `style` | Team game plan (enums below) |
 | `notes` | One sentence on how they played |
 | `xi` | 11 players, the usual starting XI (exactly one GK) |
 | `bench` | 7 players, at least one GK |
@@ -44,16 +45,16 @@ close), `defensive_style` (`FrontlinePressure` / `AllOutDefence`),
 | key | meaning |
 |---|---|
 | `name` | Full name as commonly known |
-| `pos` | PES position: `GK CB LB RB DMF CMF LMF RMF AMF LWF RWF SS CF` |
+| `pos` | Position: `GK CB LB RB DMF CMF LMF RMF AMF LWF RWF SS CF` |
 | `age`, `height` (cm), `foot` (`L`/`R`) | |
 | `r` | 17 ratings, 40–99: `att` attacking awareness, `ctl` ball control, `dri` dribbling, `pas` low pass, `lob` lofted pass, `fin` finishing, `hea` heading, `def` defensive awareness, `tkl` ball winning, `pow` kicking power, `set` place kicking, `spd` speed, `acc` explosive power, `bal` body balance, `str` physical contact, `jmp` jump, `sta` stamina |
 | `gk` | Keepers only: `{ "gk", "cat", "clr", "ref", "cov" }` (goalkeeping, catching, clearing, reflexes, coverage) |
-| `form` | Consistency 1–8 (PES "Form") |
+| `form` | Consistency 1–8 |
 | `inj` | Injury resistance 1–3 |
 | `wf` | Weak foot 1–4 |
-| `style` | Optional PES playing style |
+| `style` | Optional playing style |
 | `com` | Optional COM styles |
-| `skills` | Optional PES skills |
+| `skills` | Optional skills |
 
 The loader places the XI into formation slots by position and side, so the
 order of `xi` does not matter.

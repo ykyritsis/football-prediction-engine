@@ -1,4 +1,4 @@
-//! Match statistics: the numbers behind a PES post-match screen.
+//! Match statistics: the numbers in a match summary.
 //!
 //! [`MatchStats`] is fed by the simulation as events happen (see
 //! [`Simulation::stats`](crate::sim::Simulation::stats)): team totals
@@ -115,7 +115,7 @@ impl PlayerLine {
         }
     }
 
-    /// PES-style match rating, 3.0–10.0 with 6.0 for an anonymous game.
+    /// Simulation match rating, 3.0–10.0 with 6.0 for an anonymous game.
     /// Contributions are weighted by involvement, so a substitute who plays
     /// ten minutes is not rated on one misplaced pass.
     pub fn rating(&self) -> f32 {

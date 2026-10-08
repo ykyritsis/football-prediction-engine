@@ -219,7 +219,7 @@ pub const DUEL_IMMUNITY_SECONDS: f32 = 4.0;
 /// Dead-ball time after a goal before the kick-off.
 pub const GOAL_DEAD_BALL_SECONDS: f32 = 60.0;
 
-/// Maximum substitutions per team (PES 2018 era rules).
+/// Maximum substitutions per team (three-substitution simulation rules).
 pub const MAX_SUBSTITUTIONS: u8 = 3;
 
 fn secs(state: &MatchState, s: f32) -> u16 {

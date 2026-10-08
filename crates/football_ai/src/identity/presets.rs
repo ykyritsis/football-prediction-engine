@@ -2,9 +2,8 @@
 //!
 //! These exist so the simulation, tests and sandbox have recognisable
 //! identities to work with before real data is imported. The intended data
-//! path for the full game is to fill [`TeamStyle`] / [`PlayerProfile`]
-//! directly from the extracted PES 2018 database, which already contains the
-//! same fields (ratings, playing style, COM styles, skills, game plan).
+//! path is to fill [`TeamStyle`] / [`PlayerProfile`] from documented imports
+//! using ratings, playing style, COM styles, skills and the team game plan.
 
 use super::profile::PlayerProfile;
 use super::ratings::{Foot, Ratings};

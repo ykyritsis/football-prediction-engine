@@ -1,0 +1,62 @@
+name: Publish Touchline website
+
+on:
+  pull_request:
+    branches: ["claude/great-cerf-lgzlzb"]
+  push:
+    branches: ["claude/great-cerf-lgzlzb"]
+    paths:
+      - "crates/predictor/**"
+      - "data/**"
+      - "tools/build_website.cjs"
+      - "Cargo.toml"
+      - "Cargo.lock"
+      - ".github/workflows/website.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: touchline-pages-${{ github.event_name }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Set up Rust
+        run: rustup update stable --no-self-update && rustup default stable
+      - name: Check the prediction engine
+        run: cargo test --locked -p predictor
+      - name: Check browser simulation
+        run: node --test crates/predictor/web/simulation.test.cjs
+      - name: Build the saved-data website
+        run: node tools/build_website.cjs
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'pull_request'
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4

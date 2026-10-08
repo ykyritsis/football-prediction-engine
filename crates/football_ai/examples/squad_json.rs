@@ -5,9 +5,8 @@
 //! cargo run -p football_ai --features serde --example squad_json -- play squad.json
 //! ```
 //!
-//! The JSON schema mirrors the PES 2018 database fields (ratings, playing
-//! style, COM styles, skills, game plan), so an extractor can write squads
-//! straight into it.
+//! The JSON schema includes ratings, playing styles, COM styles, skills and
+//! the team game plan, so an importer can write squads directly into it.
 
 use football_ai::identity::presets::{self, example_messi, example_ronaldo, Squad};
 use football_ai::{MatchEvent, SimConfig, Simulation};

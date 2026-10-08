@@ -1,6 +1,6 @@
 //! Playing styles, COM playing styles and player skills.
 //!
-//! These mirror the PES 2017/2018 trait lists. Each trait has a human-readable
+//! Each trait in the simulation schema has a human-readable
 //! description and a concrete effect on the decision layer, expressed as
 //! additive tweaks to a [`Behaviour`]. Traits stack: a Creative Playmaker with
 //! the Mazing Run COM style and Double Touch is a stronger dribbler than any
@@ -8,7 +8,7 @@
 
 use crate::role::{Attributes, Behaviour};
 
-/// Primary playing style (one per player in PES).
+/// Primary playing style (one per player).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum PlayingStyle {

@@ -2,7 +2,7 @@
 //!
 //! [`Tactics`] is the *compiled* form of a team's identity: plain numbers the
 //! positioning, pressing, passing and support code read directly. Designers
-//! (and imported PES data) work with the higher level
+//! (and imported team data) work with the higher level
 //! [`crate::identity::TeamStyle`], which compiles down to this struct.
 
 /// Numeric team instructions. [`Tactics::default`] is a balanced mid-block

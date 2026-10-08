@@ -15,6 +15,10 @@ const money = (n) =>
       }).format(n)
     : "—";
 async function tmFetch(kind, params) {
+  if (data.saved_only)
+    throw new Error(
+      "This edition includes saved history. More profiles will appear in future data updates.",
+    );
   if (location.protocol === "file:")
     throw new Error(
       "Open the local server to load more history: node tools/serve_dashboard.cjs dashboard.html. Previously saved history remains available offline.",
@@ -80,7 +84,7 @@ function clubHistoryDetails(d) {
 }
 function clubHistoryHTML(t) {
   const d = tmStore().clubs?.[t.name];
-  return `<section class="history-section"><div class="section-head"><h2>Club history</h2><small>Season by season</small></div>${clubSeasonSummary(t)}<div id="clubTm">${d ? clubHistoryDetails(d) : `<button class="secondary" data-tm-club="${esc(t.name)}">Load honours & club heritage ↗</button><p class="fine-print">Historical names, trophies, manager and valuation from Transfermarkt.</p>`}</div></section>`;
+  return `<section class="history-section"><div class="section-head"><h2>Club history</h2><small>Season by season</small></div>${clubSeasonSummary(t)}<div id="clubTm">${d ? clubHistoryDetails(d) : data.saved_only ? '<p class="fine-print">Honours and heritage are not included for this club in the current edition. The available season results are shown above.</p>' : `<button class="secondary" data-tm-club="${esc(t.name)}">Load honours & club heritage ↗</button><p class="fine-print">Historical names, trophies, manager and valuation from Transfermarkt.</p>`}</div></section>`;
 }
 async function loadClubHistory(name) {
   const target = $("clubTm");
@@ -118,7 +122,7 @@ function playerHistoryDetails(d) {
 function playerHistoryShell(t, p) {
   const key = t.id + ":" + p.id,
     d = tmStore().players?.[key];
-  return `<section class="history-section"><div class="section-head"><h2>Career history</h2><small>Transfermarkt</small></div><div id="playerTm">${d ? playerHistoryDetails(d) : `<button class="secondary" data-tm-player="${esc(key)}">Explore career, transfers & honours ↗</button><p class="fine-print">Names and birth dates are verified before histories are linked. Loading an uncached profile can take a few seconds.</p>`}</div></section>`;
+  return `<section class="history-section"><div class="section-head"><h2>Career history</h2><small>Transfermarkt</small></div><div id="playerTm">${d ? playerHistoryDetails(d) : data.saved_only ? '<p class="fine-print">Career history is not included for this player in the current edition. Available competition statistics are shown above.</p>' : `<button class="secondary" data-tm-player="${esc(key)}">Explore career, transfers & honours ↗</button><p class="fine-print">Names and birth dates are verified before histories are linked. Loading an uncached profile can take a few seconds.</p>`}</div></section>`;
 }
 async function loadPlayerHistory(t, p) {
   const target = $("playerTm");
@@ -154,7 +158,11 @@ function renderSeasons() {
     years = [
       ...new Set([
         ...(l.archive || []).map((m) => seasonYear(m.date)),
-        ...(c?.seasons || []).map((s) => Number(s.id)),
+        ...(data.saved_only
+          ? Object.keys(tmStore().tables || {})
+              .filter((k) => k.startsWith(l.key + ":"))
+              .map((k) => Number(k.split(":")[1]))
+          : (c?.seasons || []).map((s) => Number(s.id))),
       ]),
     ]
       .filter((y) => y >= 1900 && y <= seasonYear(data.as_of))
@@ -177,7 +185,7 @@ function renderSeasons() {
       .sort((a, b) => b.date.localeCompare(a.date)),
     cached = tmStore().tables?.[l.key + ":" + selectedSeason];
   $("content").innerHTML =
-    `<section class="panel panel-pad"><div class="section-head"><h2>${seasonName(selectedSeason)} standings</h2><small>Transfermarkt</small></div><p class="fine-print">For cups, tables represent the group or league phase; knockout champions are not inferred from first place.</p><div id="seasonTable">${cached ? tablesHTML(cached) : '<p class="loading-state">Loading historical standings…</p>'}</div></section><div class="section-head"><h2>Results archive</h2><small>${rows.length} available matches</small></div><div class="table-wrap"><table><thead><tr><th>Date</th><th>Home</th><th>Score</th><th>Away</th></tr></thead><tbody>${rows
+    `<section class="panel panel-pad"><div class="section-head"><h2>${seasonName(selectedSeason)} standings</h2><small>Transfermarkt</small></div><p class="fine-print">For cups, tables represent the group or league phase; knockout champions are not inferred from first place.</p><div id="seasonTable">${cached ? tablesHTML(cached) : data.saved_only ? '<p class="notice">Standings for this season are not included in the current edition. Available match results are listed below.</p>' : '<p class="loading-state">Loading historical standings…</p>'}</div></section><div class="section-head"><h2>Results archive</h2><small>${rows.length} available matches</small></div><div class="table-wrap"><table><thead><tr><th>Date</th><th>Home</th><th>Score</th><th>Away</th></tr></thead><tbody>${rows
       .slice(0, state.limit)
       .map(
         (m) =>
@@ -191,7 +199,7 @@ function renderSeasons() {
     state.limit = 30;
     renderSeasons();
   };
-  if (!cached) {
+  if (!cached && !data.saved_only) {
     const target = $("seasonTable"),
       year = selectedSeason;
     tmFetch("table", { competition: l.key, season: year })
