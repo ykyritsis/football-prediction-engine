@@ -2458,6 +2458,10 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
  .shape-controls>.field { grid-column:1/-1; }
  .shape-controls>.play-button { grid-column:1/-1; justify-content:center; min-height:50px; }
  .custom-controls { gap:10px; padding:16px; }
+ .detail-columns { grid-template-columns:minmax(0,1fr); gap:24px; }
+ .detail-columns>div { min-width:0; }
+ .form-line { flex-wrap:wrap; gap:10px; }
+ .pick-row .player-link>span { min-width:0; overflow-wrap:anywhere; font-size:12px; }
  .match-team-profile h3 { font-size:13px; }
  .match-team-profile { padding:4px; min-height:100px; }
  .match-team-profile small { font-size:9px; }
