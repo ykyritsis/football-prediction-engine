@@ -1,11 +1,32 @@
 const test=require('node:test'),assert=require('node:assert/strict');
-const {kickoffInfo,zonedInstant,projectedXI,pitchPositions,recordedXI}=require('./presentation.js');
+const {kickoffInfo,zonedInstant,projectedXI,pitchPositions,recordedXI,usualFormation,selectedFormation,replayClock,motionBlend}=require('./presentation.js');
 const {sampleMatch,matchStory}=require('./simulation.js');
 test('recorded formation uses match positions rather than shirt or formation-place numbering',()=>{
  const players=['G','CD-L','CD-R','LB','RB','AM','LM','RM','F','AM-L','AM-R'].map((position_code,i)=>({id:String(i),name:'Player '+i,position_code,place:[1,6,5,3,2,10,4,8,9,11,7][i]}));
  const xi=recordedXI({formation:'4-2-3-1',players});
  assert.equal(xi[0].id,'0');assert.deepEqual(new Set(xi.slice(1,5).map(p=>p.match_position_code)),new Set(['CD-L','CD-R','LB','RB']));
  assert.deepEqual(new Set(xi.slice(5,7).map(p=>p.match_position_code)),new Set(['LM','RM']));assert.equal(xi.at(-1).match_position_code,'F');
+});
+test('usual shape uses the modal recent formation, deduplicates matches and breaks ties by recency',()=>{
+ const a={event_id:'1',date:'2026-10-06',formation:'3-4-2-1'},b={event_id:'2',date:'2026-10-02',formation:'4-2-3-1'},c={event_id:'3',date:'2026-09-28',formation:'4-2-3-1'};
+ const team={last_lineup:a,lineup_history:[a,b,c,{event_id:'future',date:'2026-10-10',formation:'4-3-3'},{event_id:'bad',date:'2026-10-05',formation:'4-4-4'},{event_id:'old',date:'2025-10-01',formation:'4-3-3'}]};
+ const f=usualFormation(team,'2026-10-08');assert.equal(f.shape,'4-2-3-1');assert.equal(f.sample,3);assert.equal(f.used,2);
+ assert.equal(usualFormation({lineup_history:[a,b]},'2026-10-08').shape,'3-4-2-1');
+ assert.equal(usualFormation({},'2026-10-08').basis,'Suggested shape');
+ assert.equal(usualFormation({last_lineup:{date:'2025-10-01',formation:'5-4-1'}},'2026-10-08').sample,0);
+ assert.equal(usualFormation({last_lineup:{date:'2025-10-01',formation:'5-4-1'}},'2026-10-08').shape,'5-4-1');
+});
+test('manual shape changes stay with the team and reset to its own recorded default',()=>{
+ const a={id:'a',last_lineup:{event_id:'1',date:'2026-10-01',formation:'4-2-3-1'}},b={id:'b',last_lineup:{event_id:'2',date:'2026-10-01',formation:'3-5-2'}},overrides=new Map();
+ overrides.set('a','4-4-2');assert.equal(selectedFormation(a,overrides,'2026-10-08'),'4-4-2');assert.equal(selectedFormation(b,overrides,'2026-10-08'),'3-5-2');overrides.delete('a');assert.equal(selectedFormation(a,overrides,'2026-10-08'),'4-2-3-1');
+});
+test('five-second replay clock preserves paused time and finishes despite dropped frames',()=>{
+ const c=replayClock(5000);assert.equal(c.tick(100),0);assert.equal(c.tick(1100),.2);c.pause(true,1350);assert.equal(c.tick(5000),.25);c.pause(false,6000);assert.equal(c.tick(6750),.4);assert.equal(c.tick(12000),1);assert.equal(c.elapsed,5000);
+ assert.equal(replayClock(0).tick(0),1);
+});
+test('pitch smoothing is independent of frame rate',()=>{
+ function travel(step){let x=0;for(let t=0;t<1000-1e-5;t+=step)x+=(1-x)*motionBlend(step);return x;}
+ assert.ok(Math.abs(travel(1000/60)-travel(1000/120))<1e-10);assert.equal(motionBlend(0),0);
 });
 test('kickoff moves to the viewer local day and uses PM',()=>{const x=kickoffInfo({kickoff:'2026-10-08T23:30:00Z'},'2026-10-08','Australia/Sydney');assert.equal(x.date,'2026-10-09');assert.equal(x.time,'10:30 AM');const p=kickoffInfo({kickoff:'2026-10-08T16:00:00Z'},'2026-10-08','Europe/London');assert.equal(p.time,'5:00 PM');});
 test('daylight saving and sourced civil times are respected',()=>{assert.equal(new Date(zonedInstant('2026-07-25','17:00','Europe/Prague')).toISOString(),'2026-07-25T15:00:00.000Z');assert.equal(new Date(zonedInstant('2026-12-25','17:00','Europe/Prague')).toISOString(),'2026-12-25T16:00:00.000Z');assert.equal(kickoffInfo({local_date:'2026-07-25',local_time:'17:00',time_zone:'Europe/Prague'},'2026-07-25','America/New_York').time,'11:00 AM');assert.equal(kickoffInfo({},'2026-10-08','UTC').time,'Time TBC');});

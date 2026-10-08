@@ -88,6 +88,7 @@ async function main(){
   const game=d.header?.competitions?.[0],teams=game?.competitors||[];
   for(const r of d.rosters||[]){const t=byId.get(r.team.id);if(!t)continue;
    const lineup={date:e.date,event_id:e.id,competition:e.key,formation:r.formation||null,source_url:teams.length?`https://www.espn.com/soccer/match/_/gameId/${e.id}`:null,players:r.roster.filter(a=>a.starter).map(a=>({id:String(a.athlete.id),name:a.athlete.displayName,number:a.jersey,position_code:a.position?.abbreviation,place:Number(a.formationPlace)||null}))};
+   if(lineup.players.length===11)t.lineup_history=[...(t.lineup_history||[]).filter(s=>s.event_id!==lineup.event_id),lineup].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,10);
    if(!t.last_lineup||lineup.date>t.last_lineup.date)t.last_lineup=lineup;
    const opponent=teams.find(x=>x.id!==t.id)?.team?.displayName;
    for(const a of r.roster){const p=t.players?.find(p=>p.id===a.athlete.id);if(!p)continue;if(!p.portrait&&portrait(a.athlete))p.portrait=portrait(a.athlete);p.recent_matches||=[];if(!p.recent_matches.some(m=>m.event_id===e.id))p.recent_matches.push({date:e.date,event_id:e.id,competition:e.key,opponent,starter:!!a.starter,stats:Object.fromEntries((a.stats||[]).map(x=>[x.name,x.value])),source_url:lineup.source_url});p.recent_matches.sort((a,b)=>b.date.localeCompare(a.date));p.recent_matches=p.recent_matches.slice(0,5);}
@@ -96,6 +97,7 @@ async function main(){
  // Reuse checked identities across club/national rosters for portrait coverage.
  const pictures=new Map();for(const t of byId.values())for(const p of t.players||[])if(p.portrait&&p.birth_date)pictures.set(p.id+'|'+p.birth_date,p.portrait);
  for(const t of byId.values())for(const p of t.players||[])if(!p.portrait&&pictures.has(p.id+'|'+p.birth_date))p.portrait=pictures.get(p.id+'|'+p.birth_date);
+ for(const t of byId.values())t.formation_profile=require('../crates/predictor/web/presentation.js').usualFormation(t,AS_OF);
  save();fs.writeFileSync(path.join(DIR,'expansion-sources.json'),JSON.stringify({as_of:AS_OF,sources,errors},null,2)+'\n');
  console.log(JSON.stringify({teams:byId.size,players:[...byId.values()].reduce((n,t)=>n+(t.players?.length||0),0),portraits:[...byId.values()].reduce((n,t)=>n+(t.players?.filter(p=>p.portrait).length||0),0),lineups:[...byId.values()].filter(t=>t.last_lineup).length,errors},null,2));
  if(errors.length)process.exitCode=1;

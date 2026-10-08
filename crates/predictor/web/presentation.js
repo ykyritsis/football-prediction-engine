@@ -31,4 +31,23 @@ function recordedXI(sheet,squad=[]){
  const ordered=players.sort((a,b)=>rank(a)-rank(b)||(a.place||99)-(b.place||99));let index=0;
  return formationRows(sheet.formation).flatMap(count=>{const row=ordered.slice(index,index+count);index+=count;return row.sort((a,b)=>side(a)-side(b));});
 }
-if(typeof module!=='undefined')module.exports={zonedInstant,kickoffInfo,formationRows,projectedXI,pitchPositions,recordedXI};
+function validFormation(shape){const rows=String(shape||'').split('-').map(Number);return rows.length>=2&&rows.every(n=>Number.isInteger(n)&&n>0)&&rows.reduce((a,b)=>a+b,0)===10;}
+function usualFormation(team,asOf){
+ const seen=new Set(),cutoff=asOf?Date.parse(asOf+'T23:59:59Z'):Infinity;
+ const sheets=[...(team.lineup_history||[]),...(team.last_lineup?[team.last_lineup]:[])].filter(s=>{
+  const id=s.event_id||s.date,day=Date.parse(s.date);if(seen.has(id)||!validFormation(s.formation)||!Number.isFinite(day)||day>cutoff)return false;seen.add(id);return true;
+ }).sort((a,b)=>b.date.localeCompare(a.date));
+ const recent=sheets.filter(s=>!asOf||cutoff-Date.parse(s.date)<=180*86400000).slice(0,5);
+ if(!recent.length)return {shape:sheets[0]?.formation||'4-3-3',sample:0,used:0,latest:sheets[0]?.date||null,counts:[],basis:sheets.length?'Last recorded shape':'Suggested shape'};
+ const counts=new Map();for(const s of recent){const row=counts.get(s.formation)||{shape:s.formation,count:0,date:s.date};row.count++;counts.set(s.formation,row);}
+ const ranked=[...counts.values()].sort((a,b)=>b.count-a.count||b.date.localeCompare(a.date));
+ return {shape:ranked[0].shape,sample:recent.length,used:ranked[0].count,latest:recent[0].date,counts:ranked,basis:recent.length===1?'Last recorded shape':'Usual shape'};
+}
+function selectedFormation(team,overrides,asOf){return overrides.get(String(team.id||team.name))||usualFormation(team,asOf).shape;}
+// One monotonic clock drives both the replay timeline and pitch. Pauses preserve elapsed time.
+function replayClock(duration){
+ let elapsed=0,last=null,paused=false;
+ return {tick(now){if(last!==null&&!paused)elapsed=Math.min(duration,elapsed+Math.max(0,now-last));last=now;return duration?elapsed/duration:1;},pause(value,now){this.tick(now);paused=value;},get elapsed(){return elapsed;},get paused(){return paused;}};
+}
+function motionBlend(delta,settle=170){return 1-Math.exp(-Math.max(0,delta)/settle);}
+if(typeof module!=='undefined')module.exports={zonedInstant,kickoffInfo,formationRows,projectedXI,pitchPositions,recordedXI,validFormation,usualFormation,selectedFormation,replayClock,motionBlend};
