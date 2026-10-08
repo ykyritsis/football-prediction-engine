@@ -21,5 +21,5 @@ test('public packaging preserves lazy profiles and normalized simulation grids w
   assert.equal(competition.archive[0].score[1],2);
   assert.ok(Math.abs(competition.fixtures[0].prediction.scores.flat().reduce((a,b)=>a+b,0)-1)<1e-6);
   assert.equal((html.match(/<\/script>/g)||[]).length,1);
- }finally{fs.rmSync(dir,{recursive:true,force:true});}
+ }finally{assert.equal(path.dirname(path.resolve(dir)),path.resolve(os.tmpdir()));assert.ok(path.basename(dir).startsWith('touchline-package-'));fs.rmSync(dir,{recursive:true,force:true});}
 });

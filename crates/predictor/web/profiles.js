@@ -9,7 +9,7 @@ function rate(n,d,scale=1,suffix=''){return Number.isFinite(n)&&Number.isFinite(
 function lineupHTML(t,l){
  const sheet=t.last_lineup;
  if(!sheet?.players?.length)return `<section class="lineup-card"><div class="section-head"><h2>Starting XI</h2></div><p class="fine-print">No dated match sheet is available for this team. The simulator can build an illustrative XI from the available squad.</p></section>`;
- const players=[...sheet.players].sort((a,b)=>(a.place||99)-(b.place||99)).map(x=>t.players.find(p=>p.id===x.id)||{...x,number:x.number});
+ const players=recordedXI(sheet,t.players);
  const positions=pitchPositions(players,sheet.formation);
  return `<section class="lineup-card"><div class="section-head"><div><div class="eyebrow">THE SHAPE OF THE TEAM</div><h2>Latest recorded starting XI</h2></div><strong class="formation-tag">${esc(sheet.formation||'Formation not supplied')}</strong></div><div class="formation-board" aria-label="${esc(t.display_name)} starting eleven">${positions.map(({player:p,x,y})=>`<div class="formation-player" style="left:${12+x*76}%;top:${12+y*76}%">${playerButton(t,p,`<span class="shirt-number" style="background:${color(t)}">${esc(p.number||'•')}</span><strong>${esc(p.name.split(' ').slice(-1)[0])}</strong>`,'formation-player-button')}</div>`).join('')}<div class="formation-circle"></div><div class="formation-goal"></div></div><p class="table-caption">${esc(dateLabel(sheet.date))} ${sheet.date.slice(0,4)} · ${esc(league(sheet.competition)?.name||'Recorded match')}. Historical lineup; upcoming selection is unconfirmed. ${sheet.source_url?`<a href="${url(sheet.source_url)}" target="_blank" rel="noopener">Match sheet ↗</a>`:''}</p></section>`;
 }

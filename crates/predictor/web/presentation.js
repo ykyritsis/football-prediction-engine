@@ -24,4 +24,11 @@ function projectedXI(team,stats={},shape='4-3-3'){
 function pitchPositions(players,shape='4-3-3'){
  const rows=formationRows(shape);let i=0;return rows.flatMap((count,row)=>Array.from({length:count},(_,col)=>({player:players[i++],x:row/(rows.length-1),y:(col+1)/(count+1)}))).filter(x=>x.player);
 }
-if(typeof module!=='undefined')module.exports={zonedInstant,kickoffInfo,formationRows,projectedXI,pitchPositions};
+function recordedXI(sheet,squad=[]){
+ const players=(sheet.players||[]).map(p=>({...p,...squad.find(x=>x.id===p.id),match_position_code:p.position_code}));
+ const rank=p=>{const code=p.match_position_code||'';return code==='G'?0:/^(CD|CB|D)(-|$)/.test(code)?1:/^(LB|RB|LWB|RWB)$/.test(code)?2:/^(DM|CM|LM|RM|M)(-|$)/.test(code)?3:/^AM/.test(code)?4:5;};
+ const side=p=>/^(L|.*-L$)/.test(p.match_position_code||'')?0:/^(R|.*-R$)/.test(p.match_position_code||'')?2:1;
+ const ordered=players.sort((a,b)=>rank(a)-rank(b)||(a.place||99)-(b.place||99));let index=0;
+ return formationRows(sheet.formation).flatMap(count=>{const row=ordered.slice(index,index+count);index+=count;return row.sort((a,b)=>side(a)-side(b));});
+}
+if(typeof module!=='undefined')module.exports={zonedInstant,kickoffInfo,formationRows,projectedXI,pitchPositions,recordedXI};

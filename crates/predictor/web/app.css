@@ -2182,9 +2182,9 @@ h1 { font-size:36px; font-weight:750; line-height:1.2; }
 .page-heading { padding-bottom:17px; }
 .panel,.club-card,.player-card,.featured { border-radius:10px; overflow:hidden; box-shadow:0 2px 7px #1a383704; }
 .panel-header { background:#fff; border-bottom:1px solid var(--line); }
-.match-row { transition:background .16s; }
+.match-row { transition:background .16s; grid-template-columns:86px minmax(0,1fr) 28px 55px; }
 .match-row:hover { background:#f0f6f4; }
-.match-time { min-width:86px; color:#75848a; }
+.match-time { min-width:0; color:#75848a; white-space:nowrap; }
 .match-time strong { font-size:12px; color:#2b4449; }
 .matchday-intro { display:flex; gap:9px; align-items:center; color:#648075; font-size:11px; border-bottom:1px solid var(--line); padding:0 0 18px; margin-bottom:24px; }
 .timezone-note { margin-left:auto; color:#77878b; text-align:right; }
