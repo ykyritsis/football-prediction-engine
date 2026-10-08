@@ -61,14 +61,22 @@ cache behavior and source limitations.
 - **Upcoming fixtures:** league and club filters, score probabilities, home /
   draw / away chances, model expected goals, over 2.5 goals and both teams scoring.
 - **Match simulator:** two registered teams within one competition, with
-  a five-second default replay, animated pitch and ball, formation controls,
+  a five-second default replay, smooth pitch and ball animation, automatic team formations,
   progressively revealed shots/goals/scorers/assists, pause, skip
   and reduced-motion support. Each run uses a new random seed; optional fixed
   seeds reproduce both score and events. A collapsible 10,000-run comparison
   distinguishes a sampled match from the forecast distribution.
+  Defaults use the most common shape in up to five recorded XIs from the last
+  180 days, breaking ties by the latest use. Teams without recent records show
+  their last recorded shape or an explicitly labeled suggestion. Manual changes
+  stay with that team for the browser session; Reset restores its recorded default.
+  A complete recent recorded XI in the chosen shape is reused when all its players
+  remain in the saved squad; otherwise selection uses appearances and positions.
 - **Team profiles:** crests, dated managers, stadium imagery/capacity, honours,
   current-season summaries, upcoming matches, full squads, recent results and
   the latest recorded XI on a formation board.
+  Overview, Squad, Tactics, History and Matches tabs keep each profile navigable;
+  squad cards open individual player profiles. Match analysis links both team profiles.
 - **Player profiles:** nationality, age, shirt number, position, available goals,
   assists, appearances, shots, cards and goalkeeper stats, per-appearance rates,
   shot efficiency, position-peer comparisons, recent match performances,
@@ -79,6 +87,8 @@ cache behavior and source limitations.
   experimental anytime-goal/assist estimates from competition-specific squad
   shares, with position smoothing and a 70% assisted-goal prior. They have no
   confirmed lineup/minutes/injury inputs and are not calibrated player forecasts.
+  Player profiles have Overview, Stats, Matches and Career tabs. On phones,
+  bottom navigation and a grouped competition selector replace the desktop menus.
 - **Recent form:** each club's last five available competition results, including
   opponent, venue and score on hover. Recency affects the underlying model
   through the base one-year half-life. The dashboard additionally applies

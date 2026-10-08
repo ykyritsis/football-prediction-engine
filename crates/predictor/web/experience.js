@@ -4,7 +4,7 @@ let previousSeed = null;
 function stopReplay() {
   replayStage?.destroy();
   replayStage=null;
-  clearInterval(replayTimer);
+  cancelAnimationFrame(replayTimer);
   replayTimer = null;
 }
 function formSignal(t) {

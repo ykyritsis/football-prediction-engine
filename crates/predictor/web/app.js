@@ -102,7 +102,7 @@ function formHTML(t) {
   return `${formBadge(t)}<span class="form">${(t?.form || []).map((m) => `<span class="${m.result}" tabindex="0" title="${esc(m.date + " · " + m.venue + " v " + short(m.opponent) + " · " + score(m.goals))}" aria-label="${esc(m.result + " " + m.date + " " + short(m.opponent) + " " + score(m.goals))}">${m.result}</span>`).join("") || '<small class="muted">No results</small>'}</span>`;
 }
 function statBlock(n, label) {
-  return `<div><strong>${val(n)}</strong><span>${esc(label)}</span></div>`;
+  return `<div class="stat-block"><strong>${val(n)}</strong><span>${esc(label)}</span></div>`;
 }
 function compForTeam(t) {
   return state.competition !== "all" &&
@@ -153,7 +153,7 @@ function playerCard({ t, p, s }) {
   );
 }
 function playerTable(rows) {
-  return `<div class="table-wrap"><table><thead><tr><th>Player</th><th>Club / competition</th><th>Position</th><th class="number">Apps</th><th class="number">Goals</th><th class="number">Assists</th><th class="number">Shots</th><th class="number">On target</th><th class="number">YC</th></tr></thead><tbody>${rows.map(({ t, p, s }) => `<tr><td>${playerButton(t, p, `${avatar(p)}<span><strong>${esc(p.name)}</strong><small>${p.number ? "#" + esc(p.number) + " · " : ""}${esc(p.nationality || "Nationality unavailable")}</small></span>`, "player-link")}</td><td><span class="table-club">${crest(t.name)}${esc(short(t.name))}</span><small class="muted">${esc(league(compForTeam(t))?.name || "")}</small></td><td>${esc(p.position_code || "—")}</td>${["appearances", "totalGoals", "goalAssists", "totalShots", "shotsOnTarget", "yellowCards"].map((k) => `<td class="number">${val(s?.[k])}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+  return `<div class="mobile-player-list">${squadCardsHTML(rows)}</div><div class="table-wrap desktop-player-table"><table><thead><tr><th>Player</th><th>Club / competition</th><th>Position</th><th class="number">Apps</th><th class="number">Goals</th><th class="number">Assists</th><th class="number">Shots</th><th class="number">On target</th><th class="number">YC</th></tr></thead><tbody>${rows.map(({ t, p, s }) => `<tr><td>${playerButton(t, p, `${avatar(p)}<span><strong>${esc(p.name)}</strong><small>${p.number ? "#" + esc(p.number) + " · " : ""}${esc(p.nationality || "Nationality unavailable")}</small></span>`, "player-link")}</td><td><span class="table-club">${crest(t.name)}${esc(short(t.name))}</span><small class="muted">${esc(league(compForTeam(t))?.name || "")}</small></td><td>${esc(p.position_code || "—")}</td>${["appearances", "totalGoals", "goalAssists", "totalShots", "shotsOnTarget", "yellowCards"].map((k) => `<td class="number">${val(s?.[k])}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 function heading(e, t, s) {
   $("eyebrow").textContent = e;
@@ -182,13 +182,20 @@ function renderNavigation() {
           `<button class="competition ${state.competition === l.key ? "active" : ""}" data-comp="${l.key}">${competitionLogo(l.key)}<span>${esc(l.name)}</span></button>`,
       )
       .join("");
-  document.querySelectorAll(".topnav [data-view]").forEach((b) => {
+  document.querySelectorAll(".topnav [data-view], .mobile-nav [data-view]").forEach((b) => {
     b.classList.toggle("active", b.dataset.view === state.view);
     b.setAttribute(
       "aria-current",
       b.dataset.view === state.view ? "page" : "false",
     );
   });
+  $('moreNavigation').classList.toggle('active',!['matches','clubs','players','simulator'].includes(state.view));
+  $('mobileCompetition').innerHTML='<option value="all">All competitions</option>'+['domestic','cup','international'].map(kind=>`<optgroup label="${({domestic:'Domestic leagues',cup:'Club tournaments',international:'International football'})[kind]}">${data.leagues.filter(l=>compInfo(l.key)?.kind===kind).map(l=>`<option value="${l.key}" ${l.key===state.competition?'selected':''}>${esc(l.name)}</option>`).join('')}</optgroup>`).join('');
+  $('mobileCompetition').value=state.competition;
+  const inProfile=state.view==='clubs'&&state.club;
+  document.querySelector('main').classList.toggle('showing-profile',!!inProfile);
+  document.querySelector('.search').hidden=['about','simulator'].includes(state.view)||!!inProfile;
+  $('clubStrip').classList.toggle('profile-hidden',!!inProfile);
   const names = [
     ...new Set(activeLeagues().flatMap((l) => l.teams.map((t) => t.name))),
   ];
@@ -345,7 +352,7 @@ function predictionHTML(l, m) {
       .flatMap((r, h) => r.map((v, a) => ({ h, a, v })))
       .sort((a, b) => b.v - a.v)
       .slice(0, 5);
-  return `<div class="prediction-panel"><div class="eyebrow">${esc(l.name)} · ${m.date ? esc(dateLabel(m.date)) : "HYPOTHETICAL MATCH"}</div><div class="match-title"><div>${crest(m.home)}<h3>${esc(short(m.home))}</h3></div><div class="big-score">${score(p.most_likely_score)}<small>Most likely score</small></div><div>${crest(m.away)}<h3>${esc(short(m.away))}</h3></div></div><div class="match-caption">${m.date?esc(matchTime(l,m).label||"Kickoff time not supplied")+" · ":""}${meta.venue ? esc(meta.venue) + " · " : ""}${(m.neutral || (!m.date && l.shared_international_model)) ? "Neutral venue" : "Home advantage included"} · 90 minutes</div>${probabilities(p)}<div class="forecast-stats">${statBlock(p.home_xg.toFixed(2) + " – " + p.away_xg.toFixed(2), "Model expected goals")}${statBlock(pct(p.over_2_5), "Over 2.5 goals")}${statBlock(pct(p.both_score), "Both teams to score")}</div>${simulationControlsHTML()}<div class="detail-columns"><div><h3>${l.shared_international_model ? "Recent national-team form" : "Recent competition form"}</h3>${[m.home, m.away].map((n) => `<div class="form-line"><span>${esc(short(n))}</span>${formHTML(modelTeam(n, l))}</div>${formImpact(modelTeam(n, l))}`).join("")}<p class="fine-print">Last five available results, oldest first. Attack and defence respond to opponent-adjusted recent performance, with small-sample shrinkage.</p>${[m.home, m.away].some((n) => (modelTeam(n, l)?.history_matches || 0) < 10) ? '<div class="notice">Limited history for one or both teams. Estimates rely more on the newcomer prior.</div>' : ""}${["champions_league", "europa_league", "conference_league"].includes(l.key) ? '<p class="fine-print">European baseline: fitted only to this competition. Qualification, extra time and penalties are not predicted.</p>' : ""}</div><div><h3>Most likely scorelines</h3>${cells.map((c) => `<div class="score-line"><span>${c.h}–${c.a}</span><div class="score-track"><div style="width:${(100 * c.v) / cells[0].v}%"></div></div><small>${pct(c.v)}</small></div>`).join("")}</div></div>${playerPicksHTML(l, m)}</div>`;
+  return `<div class="prediction-panel"><div class="eyebrow">${esc(l.name)} · ${m.date ? esc(dateLabel(m.date)) : "HYPOTHETICAL MATCH"}</div><div class="match-title"><div><button class="match-team-profile" data-club="${esc(m.home)}">${crest(m.home)}<h3>${esc(short(m.home))}</h3><small>Team profile ↗</small></button></div><div class="big-score">${score(p.most_likely_score)}<small>Most likely score</small></div><div><button class="match-team-profile" data-club="${esc(m.away)}">${crest(m.away)}<h3>${esc(short(m.away))}</h3><small>Team profile ↗</small></button></div></div><div class="match-caption">${m.date?esc(matchTime(l,m).label||"Kickoff time not supplied")+" · ":""}${meta.venue ? esc(meta.venue) + " · " : ""}${(m.neutral || (!m.date && l.shared_international_model)) ? "Neutral venue" : "Home advantage included"} · 90 minutes</div>${probabilities(p)}<div class="forecast-stats">${statBlock(p.home_xg.toFixed(2) + " – " + p.away_xg.toFixed(2), "Model expected goals")}${statBlock(pct(p.over_2_5), "Over 2.5 goals")}${statBlock(pct(p.both_score), "Both teams to score")}</div>${simulationControlsHTML(m)}<div class="detail-columns"><div><h3>${l.shared_international_model ? "Recent national-team form" : "Recent competition form"}</h3>${[m.home, m.away].map((n) => `<div class="form-line"><span>${esc(short(n))}</span>${formHTML(modelTeam(n, l))}</div>${formImpact(modelTeam(n, l))}`).join("")}<p class="fine-print">Last five available results, oldest first. Attack and defence respond to opponent-adjusted recent performance, with small-sample shrinkage.</p>${[m.home, m.away].some((n) => (modelTeam(n, l)?.history_matches || 0) < 10) ? '<div class="notice">Limited history for one or both teams. Estimates rely more on the newcomer prior.</div>' : ""}${["champions_league", "europa_league", "conference_league"].includes(l.key) ? '<p class="fine-print">European baseline: fitted only to this competition. Qualification, extra time and penalties are not predicted.</p>' : ""}</div><div><h3>Most likely scorelines</h3>${cells.map((c) => `<div class="score-line"><span>${c.h}–${c.a}</span><div class="score-track"><div style="width:${(100 * c.v) / cells[0].v}%"></div></div><small>${pct(c.v)}</small></div>`).join("")}</div></div>${playerPicksHTML(l, m)}</div>`;
 }
 let matchRevision=0;
 async function openMatch(l, m) {
@@ -378,7 +385,7 @@ function renderSimulator() {
   if (!names.includes(state.away) || state.home === state.away)
     state.away = names.find((n) => n !== state.home);
   $("content").innerHTML =
-    `<div class="custom-controls"><label class="field">Home team<select id="homeClub">${names.map((n) => `<option value="${esc(n)}" ${n === state.home ? "selected" : ""}>${esc(short(n))}</option>`).join("")}</select></label><span class="vs-divider">VS</span><label class="field">Away team<select id="awayClub">${names
+    `<div class="custom-controls"><label class="field">Home team<select id="homeClub" aria-label="Home team">${names.map((n) => `<option value="${esc(n)}" ${n === state.home ? "selected" : ""}>${esc(short(n))}</option>`).join("")}</select></label><span class="vs-divider">VS</span><label class="field">Away team<select id="awayClub" aria-label="Away team">${names
       .filter((n) => n !== state.home)
       .map(
         (n) =>
@@ -408,19 +415,19 @@ function clubNames() {
 }
 function renderClubs() {
   heading(
-    "CLUB DIRECTORY",
+    "TEAM DIRECTORY",
     state.competition === "all" ? "Clubs & national teams" : selectedLeague().name,
-    "Club profiles, squad information and season performance.",
+    "Explore team profiles, squads, tactics and history.",
   );
   const names = clubNames();
   $("viewTools").innerHTML =
-    `<span class="fine-print">${names.length} clubs</span>`;
+    `<span class="fine-print">${names.length} teams</span>`;
   $("content").innerHTML = `<div class="club-grid">${names
     .map((n) => {
       const t = profile(n),
         l = activeLeagues().find((l) => l.teams.some((t) => t.name === n)),
         mt = modelTeam(n, l);
-      return `<button class="club-card" data-club="${esc(n)}" style="--club-color:${color(t)}"><div class="club-card-top"></div><div class="club-card-main">${crest(n)}<div><h3>${esc(short(n))}</h3><small>${esc(t.country || l.name)}</small></div></div><div class="club-card-bottom"><span>${mt?.played || 0} played · ${mt?.goals_for || 0} goals</span>${formHTML(mt)}</div></button>`;
+      return `<button class="club-card" data-club="${esc(n)}" style="--club-color:${color(t)}"><div class="club-card-top"></div><div class="club-card-main">${crest(n)}<div><h3>${esc(short(n))}</h3><small>${esc(t.country || l.name)}</small><span class="club-profile-link">View team profile →</span></div></div><div class="club-card-bottom"><span>${mt?.played || 0} played · ${mt?.goals_for || 0} goals</span>${formHTML(mt)}</div></button>`;
     })
     .join("")}</div>`;
   if (!names.length)
@@ -428,28 +435,10 @@ function renderClubs() {
       '<div class="empty">No clubs match your search.</div>';
 }
 function renderClub(name) {
-  const t = profile(name),
-    l =
-      activeLeagues().find((l) => l.teams.some((t) => t.name === name)) ||
-      data.leagues.find((l) => l.teams.some((t) => t.name === name)),
-    mt = modelTeam(name, l),
-    rows = playerRows(name),
-    featured = rows.filter((r) => r.p.portrait).slice(0, 3),
-    fixtures = (l?.fixtures || [])
-      .filter((m) => m.home === name || m.away === name)
-      .slice(0, 5);
-  heading("TEAM PROFILE", short(name), l?.name || "Club details");
-  $("content").innerHTML =
-    `<button class="back-link" data-back-clubs>← All teams</button><div class="team-banner" style="--club-color:${color(t)}">${crest(name)}<div><div class="eyebrow">${esc(t.country || l?.name)}</div><h2>${esc(t.display_name || short(name))}</h2><p>${esc(t.nickname && t.nickname !== t.display_name ? t.nickname : "First team")}</p>${formHTML(mt)}</div><div class="team-bio">${t.coach ? "Manager · <strong>" + esc(t.coach) + "</strong><br>" : ""}${t.venue ? "Stadium · " + esc(t.venue.name) + "<br>" : ""}${esc((t.players || []).length)} players in squad<br>${t.source_url ? `<a class="text-button" href="${url(t.source_url)}" target="_blank" rel="noopener">Club source ↗</a>` : ""}</div></div><div class="stats-strip">${statBlock(mt?.played, "Played")}${statBlock(mt ? mt.wins + " / " + mt.draws + " / " + mt.losses : "—", "Won / Drawn / Lost")}${statBlock(mt?.goals_for, "Goals scored")}${statBlock(mt?.goals_against, "Goals conceded")}${statBlock(mt ? mt.wins * 3 + mt.draws : "—", "Points from available results")}</div><p class="table-caption">${esc(l?.name)} · current-season results before ${esc(data.as_of)}. Results summary, not an official ranking.</p>${clubOverviewHTML(t)}${lineupHTML(t,l)}${featured.length ? '<div class="section-head"><h2>Players to know</h2><small>Season goals & assists</small></div><div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}${clubHistoryHTML(t)}<div class="section-head"><h2>First-team squad</h2><small>${esc(t.player_stats?.[compForTeam(t)]?.season || t.season || "Season not supplied")}</small></div>${rows.length ? playerTable(rows) : '<div class="empty">Squad data is unavailable for this club or search.</div>'}<p class="table-caption">Provider season totals, retrieved ${esc((t.profile_updated_at || catalog.updated_at || "").slice(0, 10))}. These player stats do not enter historical predictions. Missing values are —.</p><div class="content-grid"><div><div class="section-head"><h2>Next matches</h2></div><div class="panel">${fixtures.map((m) => matchRow(l, m)).join("") || '<div class="empty">No upcoming fixtures in the snapshot.</div>'}</div></div><div><div class="section-head"><h2>Recent results</h2></div><div class="panel panel-pad">${
-      (mt?.form || [])
-        .slice()
-        .reverse()
-        .map(
-          (m) =>
-            `<div class="form-line"><span>${esc(dateLabel(m.date))} · ${esc(short(m.opponent))} (${m.venue})</span><strong>${score(m.goals)}</strong></div>`,
-        )
-        .join("") || '<p class="fine-print">No earlier results.</p>'
-    }</div></div></div>`;
+ const t=profile(name),l=activeLeagues().find(l=>l.teams.some(t=>t.name===name))||data.leagues.find(l=>l.teams.some(t=>t.name===name));
+ heading('TEAM PROFILE',short(name),l?.name||'Team details');$('viewTools').innerHTML='';
+ const fixtures=(l?.fixtures||[]).filter(m=>m.home===name||m.away===name).slice(0,8);
+ $('content').innerHTML=teamProfileHTML(t,l,modelTeam(name,l),playerRows(name),fixtures);
 }
 function renderPlayers() {
   heading(
@@ -488,7 +477,7 @@ function openPlayer(key) {
  const r=playerLookup.get(key);if(!r)return;
  $('playerDetail').innerHTML=playerProfileHTML(r.t,r.p);
  if(!$('playerDialog').open)$('playerDialog').showModal();
- $('playerDetail').scrollTop=0;
+ $('playerDialog').scrollTop=0;
 }
 function renderHistory() {
   heading(
@@ -545,13 +534,17 @@ function renderAbout() {
 document.addEventListener("click", (event) => {
   const b = event.target.closest("button");
   if (!b) return;
-  if(b.hasAttribute("data-retry")){render();}
+  if(b.dataset.profileTab){selectProfileTab(b.closest('.profile-sections'),b.dataset.profileTab);}
+  else if(b.dataset.profileSection){selectProfileTab(b.closest('.profile-sections'),b.dataset.profileSection,true);}
+  else if(b.dataset.simulateTeam){state.view='simulator';state.home=b.dataset.simulateTeam;const containing=data.leagues.find(l=>l.key===state.competition&&l.teams.some(t=>t.name===state.home))||data.leagues.find(l=>l.teams.some(t=>t.name===state.home));if(containing)state.competition=containing.key;state.club=null;render();window.scrollTo({top:0,behavior:'smooth'});}
+  else if(b.hasAttribute("data-retry")){render();}
   else if (b.dataset.tmClub) {
     loadClubHistory(b.dataset.tmClub);
   } else if (b.dataset.tmPlayer) {
     const r = playerLookup.get(b.dataset.tmPlayer);
     if (r) loadPlayerHistory(r.t, r.p);
   } else if (b.dataset.comp) {
+    window.scrollTo({top:0,behavior:'instant'});
     state.competition = b.dataset.comp;
     state.club = null;
     state.limit = 30;
@@ -559,6 +552,8 @@ document.addEventListener("click", (event) => {
     $("search").value = "";
     render();
   } else if (b.dataset.view) {
+    window.scrollTo({top:0,behavior:'instant'});
+    $("navigationDialog").close();
     $("matchDialog").close();
     $("playerDialog").close();
     $("matchDetail").innerHTML = "";
@@ -580,6 +575,7 @@ document.addEventListener("click", (event) => {
     render();
   } else if (b.hasAttribute("data-back-clubs")) {
     state.club = null;
+    window.scrollTo({top:0,behavior:"smooth"});
     render();
   } else if (b.hasAttribute("data-days")) {
     state.days = Number(b.dataset.days);
@@ -594,9 +590,18 @@ document.addEventListener("click", (event) => {
   } else if (b.dataset.player) openPlayer(b.dataset.player);
   else if (b.classList.contains("dialog-close")) b.closest("dialog").close();
 });
+$('moreNavigation').onclick=()=>$('navigationDialog').showModal();
+$('mobileCompetition').onchange=()=>{state.competition=$('mobileCompetition').value;state.club=null;state.query='';state.limit=30;$('search').value='';window.scrollTo({top:0,behavior:'instant'});render();};
+document.addEventListener('keydown',e=>{
+ const tab=e.target.closest('[role="tab"]');if(!tab||!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;
+ const root=tab.closest('.profile-sections'),tabs=[...root.querySelectorAll('[role="tab"]')],i=tabs.indexOf(tab);
+ const next=e.key==='Home'?0:e.key==='End'?tabs.length-1:(i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length;
+ e.preventDefault();selectProfileTab(root,tabs[next].dataset.profileTab,true);
+});
 $("matchDialog").addEventListener("close", stopReplay);
 document.querySelector(".wordmark").onclick = (e) => {
   e.preventDefault();
+  window.scrollTo({top:0,behavior:'instant'});
   state.view = "matches";
   state.club = null;
   render();
@@ -612,7 +617,7 @@ document.addEventListener(
     if (e.target.tagName === "IMG") {
       if(e.target.dataset.fallbackSrc){const fallback=e.target.dataset.fallbackSrc;delete e.target.dataset.fallbackSrc;e.target.src=fallback;return;}
       const span = document.createElement("span");
-      span.className = e.target.classList.contains("avatar")
+      span.className = e.target.classList.contains("avatar") || !!e.target.closest(".profile-player-identity")
         ? "avatar portrait-fallback"
         : "crest-placeholder";
       span.textContent = initials(e.target.alt || "");

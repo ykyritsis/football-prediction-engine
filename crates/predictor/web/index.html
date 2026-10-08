@@ -46,6 +46,7 @@
         </div>
       </aside>
       <main>
+        <label class="mobile-competition field">Competition<select id="mobileCompetition" aria-label="Choose competition"></select></label>
         <div class="page-heading">
           <div>
             <div class="eyebrow" id="eyebrow">MATCH CENTRE</div>
@@ -92,6 +93,18 @@
         </footer>
       </main>
     </div>
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <button data-view="matches"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M7 3v4m10-4v4M3 11h18m-13 4h2m4 0h2"/></svg><span>Matches</span></button>
+      <button data-view="clubs"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 3v6c0 4-5 8-8 9-3-1-8-5-8-9V6Z"/><path d="m8 12 3 3 5-6"/></svg><span>Teams</span></button>
+      <button data-view="players"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-3a8 8 0 0 1 16 0v3"/></svg><span>Players</span></button>
+      <button data-view="simulator"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 10 6-10 6Z"/><path d="M4 4v16"/></svg><span>Simulator</span></button>
+      <button id="moreNavigation" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>More</span></button>
+    </nav>
+    <dialog id="navigationDialog" aria-label="More football sections">
+      <button class="dialog-close" aria-label="Close navigation">×</button>
+      <div class="eyebrow">EXPLORE TOUCHLINE</div><h2>More football.</h2>
+      <div class="navigation-links"><button data-view="table"><strong>League tables</strong><span>Points, positions and form →</span></button><button data-view="history"><strong>Model results</strong><span>Predictions against final scores →</span></button><button data-view="seasons"><strong>Seasons & history</strong><span>Explore the results archive →</span></button><button data-view="about"><strong>About the data</strong><span>Sources and how predictions work →</span></button></div>
+    </dialog>
     <dialog id="matchDialog" aria-label="Match prediction">
       <button class="dialog-close" aria-label="Close match details">×</button>
       <div id="matchDetail"></div>
