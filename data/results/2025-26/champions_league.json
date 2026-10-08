@@ -1,0 +1,2239 @@
+{
+  "name": "Champions League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2025-09-16",
+      "team1": "Athletic Club",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "team1": "Benfica",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "team1": "Juventus FC",
+      "team2": "Borussia Dortmund",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "team1": "PSV Eindhoven",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "team1": "Real Madrid CF",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-16",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "FC Bayern München",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Liverpool FC",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Olympiacos",
+      "team2": "Pafos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-17",
+      "team1": "Slavia Prague",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "Club Brugge",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "Eintracht Frankfurt",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "F.C. København",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "Manchester City FC",
+      "team2": "SSC Napoli",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "Newcastle United FC",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-18",
+      "team1": "Sporting CP",
+      "team2": "Kairat Almaty",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Atalanta BC",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Bodo/Glimt",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Chelsea FC",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "FC Internazionale Milano",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Galatasaray",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Kairat Almaty",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Olympique de Marseille",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-30",
+      "team1": "Pafos",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "Arsenal FC",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "AS Monaco FC",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "Borussia Dortmund",
+      "team2": "Athletic Club",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "F.C. København",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "FC Barcelona",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "SSC Napoli",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "Union St.-Gilloise",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-01",
+      "team1": "Villarreal CF",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Arsenal FC",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          7
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "F.C. København",
+      "team2": "Borussia Dortmund",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "FC Barcelona",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Kairat Almaty",
+      "team2": "Pafos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Newcastle United FC",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "PSV Eindhoven",
+      "team2": "SSC Napoli",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Union St.-Gilloise",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-21",
+      "team1": "Villarreal CF",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "AS Monaco FC",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Atalanta BC",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Athletic Club",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Chelsea FC",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Eintracht Frankfurt",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "FC Bayern München",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Galatasaray",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Real Madrid CF",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-22",
+      "team1": "Sporting CP",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Bodo/Glimt",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Juventus FC",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Liverpool FC",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Olympiacos",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Slavia Prague",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "SSC Napoli",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-04",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "F.C. København",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Ajax Amsterdam",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Benfica",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Club Brugge",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "FC Internazionale Milano",
+      "team2": "Kairat Almaty",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Manchester City FC",
+      "team2": "Borussia Dortmund",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Newcastle United FC",
+      "team2": "Athletic Club",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Olympique de Marseille",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-05",
+      "team1": "Pafos",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Ajax Amsterdam",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Bodo/Glimt",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Borussia Dortmund",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Chelsea FC",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Galatasaray",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Manchester City FC",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Olympique de Marseille",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "Slavia Prague",
+      "team2": "Athletic Club",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-25",
+      "team1": "SSC Napoli",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Arsenal FC",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Club Atlético de Madrid",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Eintracht Frankfurt",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "F.C. København",
+      "team2": "Kairat Almaty",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Liverpool FC",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Olympiacos",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Pafos",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-26",
+      "team1": "Sporting CP",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "AS Monaco FC",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "Atalanta BC",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "FC Barcelona",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "FC Bayern München",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "FC Internazionale Milano",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "Kairat Almaty",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "PSV Eindhoven",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-09",
+      "team1": "Union St.-Gilloise",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Athletic Club",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Benfica",
+      "team2": "SSC Napoli",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Borussia Dortmund",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Club Brugge",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Juventus FC",
+      "team2": "Pafos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Real Madrid CF",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-10",
+      "team1": "Villarreal CF",
+      "team2": "F.C. København",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Bodo/Glimt",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "F.C. København",
+      "team2": "SSC Napoli",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "FC Internazionale Milano",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Kairat Almaty",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Olympiacos",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Real Madrid CF",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Sporting CP",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Borussia Dortmund",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-20",
+      "team1": "Villarreal CF",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Atalanta BC",
+      "team2": "Athletic Club",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Chelsea FC",
+      "team2": "Pafos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "FC Bayern München",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Galatasaray",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Juventus FC",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Newcastle United FC",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Olympique de Marseille",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-21",
+      "team1": "Slavia Prague",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Ajax Amsterdam",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Arsenal FC",
+      "team2": "Kairat Almaty",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "AS Monaco FC",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Athletic Club",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Benfica",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Borussia Dortmund",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Club Brugge",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Eintracht Frankfurt",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "FC Barcelona",
+      "team2": "F.C. København",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Liverpool FC",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Manchester City FC",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Pafos",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "PSV Eindhoven",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "SSC Napoli",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-28",
+      "team1": "Union St.-Gilloise",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "team1": "AS Monaco FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "team1": "Benfica",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "team1": "Borussia Dortmund",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-17",
+      "team1": "Galatasaray",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "team1": "Bodo/Glimt",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "team1": "Club Brugge",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2026-02-18",
+      "team1": "Olympiacos",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "team1": "FC Internazionale Milano",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-24",
+      "team1": "Newcastle United FC",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "team1": "Atalanta BC",
+      "team2": "Borussia Dortmund",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-25",
+      "team1": "Real Madrid CF",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "team1": "Atalanta BC",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "team1": "Galatasaray",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-10",
+      "team1": "Newcastle United FC",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "team1": "Bodo/Glimt",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Chelsea FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-11",
+      "team1": "Real Madrid CF",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "team1": "Arsenal FC",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "team1": "Chelsea FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-03-17",
+      "team1": "Manchester City FC",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "team1": "FC Barcelona",
+      "team2": "Newcastle United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "team1": "FC Bayern München",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "team1": "Liverpool FC",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "team1": "Real Madrid CF",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-07",
+      "team1": "Sporting CP",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "team1": "FC Barcelona",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "team1": "Club Atlético de Madrid",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-14",
+      "team1": "Liverpool FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "team1": "Arsenal FC",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-15",
+      "team1": "FC Bayern München",
+      "team2": "Real Madrid CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-28",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "FC Bayern München",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-04-29",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-05",
+      "team1": "Arsenal FC",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-06",
+      "team1": "FC Bayern München",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    }
+  ]
+}

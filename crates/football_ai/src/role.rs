@@ -294,7 +294,7 @@ impl Behaviour {
 /// Physical and technical attributes used by the simulation. Speeds are in
 /// m/s and m/s², everything else normalised to `[0, 1]`.
 ///
-/// These are derived from the PES-style 40–99 ratings in
+/// These are derived from the 40–99 simulation ratings in
 /// [`crate::identity::Ratings`]; [`Attributes::for_role`] provides neutral
 /// defaults for tests and quick setups.
 #[derive(Debug, Clone, Copy, PartialEq)]
@@ -319,7 +319,7 @@ pub struct Attributes {
     pub stamina: f32,
     /// Resistance to injury `0..1`.
     pub injury_resistance: f32,
-    /// How steady the player's form is from match to match `0..1` (PES "Form").
+    /// How steady the player's form is from match to match `0..1` (consistency).
     pub consistency: f32,
     /// Winning the ball in the air: heading, jump, strength and height.
     pub aerial: f32,

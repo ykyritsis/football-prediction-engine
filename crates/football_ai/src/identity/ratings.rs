@@ -1,9 +1,7 @@
-//! PES-style player ratings.
+//! Player ratings for the optional tactical simulation.
 //!
-//! Field names follow the PES 2017/2018 ability list so that values extracted
-//! from the game database can be copied across 1:1. Exact in-game labels vary
-//! slightly between versions and languages; where a field may be named
-//! differently in the extracted data, the doc comment notes the alternative.
+//! The schema uses 40–99 ability values and supports JSON imports.
+//! Some fields include alternative labels for compatibility with data sources.
 
 use crate::role::Attributes;
 
@@ -15,7 +13,7 @@ pub enum Foot {
     Right,
 }
 
-/// Ability ratings on the PES 40–99 scale (plus a few 1–N fields).
+/// Ability ratings on the 40–99 simulation scale (plus a few 1–N fields).
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct Ratings {

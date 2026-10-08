@@ -1,8 +1,7 @@
 //! Team and player identity.
 //!
 //! This layer is what makes teams feel like *teams* and players feel like
-//! *players*. It is data-oriented and mirrors PES 2017/2018 so the full game
-//! can be populated straight from the extracted database:
+//! *players*. It is data-oriented, with an importable identity schema:
 //!
 //! * [`Ratings`] – the 40–99 ability sheet.
 //! * [`PlayingStyle`], [`ComStyle`], [`Skill`] – player traits, each with a

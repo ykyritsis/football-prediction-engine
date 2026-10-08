@@ -1,0 +1,475 @@
+{
+  "name": "Europa League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2023-02-16",
+      "team1": "Ajax Amsterdam",
+      "team2": "1. FC Union Berlin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "AS Monaco FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "FC Barcelona",
+      "team2": "Manchester United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "Juventus FC",
+      "team2": "ESPN:165:Nantes",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "RB Salzburg",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "Sevilla FC",
+      "team2": "PSV Eindhoven",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Stade Rennais FC 1901",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-02-16",
+      "team1": "Sporting CP",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "1. FC Union Berlin",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "AS Roma",
+      "team2": "RB Salzburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "ESPN:165:Nantes",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "FC Midtjylland",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "Manchester United FC",
+      "team2": "FC Barcelona",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-02-23",
+      "team1": "PSV Eindhoven",
+      "team2": "Sevilla FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "1. FC Union Berlin",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "AS Roma",
+      "team2": "Real Sociedad de Fútbol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Juventus FC",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Manchester United FC",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Sevilla FC",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-03-09",
+      "team1": "Sporting CP",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Fenerbahce",
+      "team2": "Sevilla FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Ferencvaros",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Real Betis Balompié",
+      "team2": "Manchester United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Real Sociedad de Fútbol",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "SC Freiburg",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-03-16",
+      "team1": "Union St.-Gilloise",
+      "team2": "1. FC Union Berlin",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-04-13",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-04-13",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-04-13",
+      "team1": "Juventus FC",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-04-13",
+      "team1": "Manchester United FC",
+      "team2": "Sevilla FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-04-20",
+      "team1": "Sevilla FC",
+      "team2": "Manchester United FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-04-20",
+      "team1": "Sporting CP",
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-04-20",
+      "team1": "Union St.-Gilloise",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-05-11",
+      "team1": "AS Roma",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-05-11",
+      "team1": "Juventus FC",
+      "team2": "Sevilla FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-05-18",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    }
+  ]
+}

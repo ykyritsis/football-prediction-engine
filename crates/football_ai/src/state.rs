@@ -81,13 +81,13 @@ pub struct Player {
     pub energy: f32,
     /// Carrying a knock: slower, and replaced at the next dead ball.
     pub injured: bool,
-    /// Match-day form `-1..1` (PES condition arrows): scales how well the
+    /// Match-day form `-1..1` (condition indicators): scales how well the
     /// player executes, not how he decides.
     pub form: f32,
     /// In-match confidence `-0.6..0.6`, added to form: goals and big saves
     /// lift it, misses and howlers knock it, and it fades back over time.
     pub confidence: f32,
-    /// PES skills that change form during the match.
+    /// Player skills that change form during the match.
     pub fighting_spirit: bool,
     /// Top speed and acceleration when fresh (`attrs` holds the current,
     /// fatigue-adjusted values).

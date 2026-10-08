@@ -17,6 +17,7 @@
 
 pub mod counts;
 pub mod data;
+pub mod dashboard;
 pub mod model;
 pub mod season;
 pub mod stats;
@@ -52,7 +53,7 @@ pub fn backtest(all: &[Match], from: &str, cfg: &ModelConfig) -> BacktestReport 
             .filter(|m| m.date.as_str() >= start && m.date.as_str() < end.as_str())
         {
             let Some((h, a)) = m.score else { continue };
-            let p = model.predict(&m.home, &m.away);
+            let p = if m.neutral { model.predict_neutral(&m.home, &m.away) } else { model.predict(&m.home, &m.away) };
             report.add(&p, h, a);
         }
         while i < dates.len() && dates[i] < end.as_str() {

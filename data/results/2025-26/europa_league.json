@@ -1,0 +1,2215 @@
+{
+  "name": "Europa League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2025-09-24",
+      "team1": "Braga",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "Dinamo Zagreb",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "ESPN:2720:Malmö FF",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "ESPN:605:PAOK",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "FC Midtjylland",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "OGC Nice",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "Real Betis Balompié",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "Red Star Belgrade",
+      "team2": "Celtic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-24",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:989:FC Basel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "Aston Villa FC",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "ESPN:153:FC Utrecht",
+      "team2": "Olympique Lyonnais",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "ESPN:257:Rangers",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "ESPN:2722:Young Boys",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "ESPN:3706:Go Ahead Eagles",
+      "team2": "ESPN:484:FCSB",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "Ferencvaros",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "Lille OSC",
+      "team2": "SK Brann",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "RB Salzburg",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-09-25",
+      "team1": "VfB Stuttgart",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "AS Roma",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Bologna FC 1909",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Celtic",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "ESPN:484:FCSB",
+      "team2": "ESPN:2722:Young Boys",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "ESPN:989:FC Basel",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "FC Porto",
+      "team2": "Red Star Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Fenerbahce",
+      "team2": "OGC Nice",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Nottingham Forest FC",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Olympique Lyonnais",
+      "team2": "RB Salzburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Panathinaikos",
+      "team2": "ESPN:3706:Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "RC Celta de Vigo",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "SK Brann",
+      "team2": "ESPN:153:FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "SK Sturm Graz",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-02",
+      "team1": "Viktoria Plzen",
+      "team2": "ESPN:2720:Malmö FF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "AS Roma",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Braga",
+      "team2": "Red Star Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Celtic",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:2720:Malmö FF",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:2722:Young Boys",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:3706:Go Ahead Eagles",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:484:FCSB",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Fenerbahce",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Lille OSC",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Nottingham Forest FC",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "Olympique Lyonnais",
+      "team2": "ESPN:989:FC Basel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "RB Salzburg",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "RC Celta de Vigo",
+      "team2": "OGC Nice",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:153:FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-10-23",
+      "team1": "SK Brann",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Aston Villa FC",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Bologna FC 1909",
+      "team2": "SK Brann",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Braga",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Dinamo Zagreb",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "ESPN:153:FC Utrecht",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "ESPN:257:Rangers",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "ESPN:2720:Malmö FF",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "ESPN:605:PAOK",
+      "team2": "ESPN:2722:Young Boys",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "ESPN:989:FC Basel",
+      "team2": "ESPN:484:FCSB",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "FC Midtjylland",
+      "team2": "Celtic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Ferencvaros",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "OGC Nice",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "RB Salzburg",
+      "team2": "ESPN:3706:Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Real Betis Balompié",
+      "team2": "Olympique Lyonnais",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Red Star Belgrade",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "SK Sturm Graz",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "VfB Stuttgart",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-06",
+      "team1": "Viktoria Plzen",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "AS Roma",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Aston Villa FC",
+      "team2": "ESPN:2722:Young Boys",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Bologna FC 1909",
+      "team2": "RB Salzburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:257:Rangers",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:3706:Go Ahead Eagles",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "Olympique Lyonnais",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:605:PAOK",
+      "team2": "SK Brann",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "ESPN:989:FC Basel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "FC Porto",
+      "team2": "OGC Nice",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Fenerbahce",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Celtic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Lille OSC",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Nottingham Forest FC",
+      "team2": "ESPN:2720:Malmö FF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Panathinaikos",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Real Betis Balompié",
+      "team2": "ESPN:153:FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Red Star Belgrade",
+      "team2": "ESPN:484:FCSB",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-11-27",
+      "team1": "Viktoria Plzen",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "Celtic",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "Dinamo Zagreb",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "ESPN:153:FC Utrecht",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "ESPN:2722:Young Boys",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "ESPN:484:FCSB",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "ESPN:989:FC Basel",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "FC Midtjylland",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "FC Porto",
+      "team2": "ESPN:2720:Malmö FF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "Ferencvaros",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "OGC Nice",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "Olympique Lyonnais",
+      "team2": "ESPN:3706:Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "Panathinaikos",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "RC Celta de Vigo",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "SC Freiburg",
+      "team2": "RB Salzburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "SK Brann",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "SK Sturm Graz",
+      "team2": "Red Star Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2025-12-11",
+      "team1": "VfB Stuttgart",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "AS Roma",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Bologna FC 1909",
+      "team2": "Celtic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Braga",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Dinamo Zagreb",
+      "team2": "ESPN:484:FCSB",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "ESPN:153:FC Utrecht",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "ESPN:257:Rangers",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "ESPN:2720:Malmö FF",
+      "team2": "Red Star Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "ESPN:2722:Young Boys",
+      "team2": "Olympique Lyonnais",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "ESPN:605:PAOK",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Fenerbahce",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Ferencvaros",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "OGC Nice",
+      "team2": "ESPN:3706:Go Ahead Eagles",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "RB Salzburg",
+      "team2": "ESPN:989:FC Basel",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "RC Celta de Vigo",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "SK Brann",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-22",
+      "team1": "Viktoria Plzen",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Aston Villa FC",
+      "team2": "RB Salzburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Celtic",
+      "team2": "ESPN:153:FC Utrecht",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "OGC Nice",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:3706:Go Ahead Eagles",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:484:FCSB",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "ESPN:2720:Malmö FF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "ESPN:989:FC Basel",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "FC Midtjylland",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "FC Porto",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Lille OSC",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Nottingham Forest FC",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Olympique Lyonnais",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Panathinaikos",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Real Betis Balompié",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "Red Star Belgrade",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "SK Sturm Graz",
+      "team2": "SK Brann",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-01-29",
+      "team1": "VfB Stuttgart",
+      "team2": "ESPN:2722:Young Boys",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "Celtic",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "Dinamo Zagreb",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "ESPN:605:PAOK",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "Fenerbahce",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "Lille OSC",
+      "team2": "Red Star Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "Panathinaikos",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-19",
+      "team1": "SK Brann",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "Bologna FC 1909",
+      "team2": "SK Brann",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "Ferencvaros",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "Nottingham Forest FC",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "RC Celta de Vigo",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "VfB Stuttgart",
+      "team2": "Celtic",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "Bologna FC 1909",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "Ferencvaros",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "Lille OSC",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "Nottingham Forest FC",
+      "team2": "FC Midtjylland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "Panathinaikos",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "RC Celta de Vigo",
+      "team2": "Olympique Lyonnais",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-03-12",
+      "team1": "VfB Stuttgart",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-18",
+      "team1": "Braga",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "Aston Villa FC",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "FC Porto",
+      "team2": "VfB Stuttgart",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "Olympique Lyonnais",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "Real Betis Balompié",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-08",
+      "team1": "Braga",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "team1": "Bologna FC 1909",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "team1": "FC Porto",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-09",
+      "team1": "SC Freiburg",
+      "team2": "RC Celta de Vigo",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "team1": "Aston Villa FC",
+      "team2": "Bologna FC 1909",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "team1": "Nottingham Forest FC",
+      "team2": "FC Porto",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "team1": "RC Celta de Vigo",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-04-16",
+      "team1": "Real Betis Balompié",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "team1": "Braga",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-04-30",
+      "team1": "Nottingham Forest FC",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "team1": "Aston Villa FC",
+      "team2": "Nottingham Forest FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-05-07",
+      "team1": "SC Freiburg",
+      "team2": "Braga",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-05-20",
+      "team1": "SC Freiburg",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    }
+  ]
+}

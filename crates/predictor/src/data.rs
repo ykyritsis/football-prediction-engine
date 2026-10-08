@@ -11,6 +11,8 @@ pub struct Match {
     pub away: String,
     /// Full-time score, home first.
     pub score: Option<(u8, u8)>,
+    /// Neutral venue: no home advantage in the goals model.
+    pub neutral: bool,
     /// Shots, corners, cards and so on, when known (see [`crate::stats`]).
     pub stats: Option<crate::stats::Stats>,
 }
@@ -26,6 +28,8 @@ struct RawMatch {
     team1: String,
     team2: String,
     score: Option<RawScore>,
+    #[serde(default)]
+    neutral: bool,
 }
 
 #[derive(Deserialize)]
@@ -53,6 +57,7 @@ pub fn parse_season(json: &str) -> Result<Vec<Match>, String> {
                 home: m.team1,
                 away: m.team2,
                 score,
+                neutral: m.neutral,
                 stats: None,
             })
         })

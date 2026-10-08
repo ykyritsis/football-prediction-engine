@@ -1,0 +1,979 @@
+{
+  "name": "Champions League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2026-09-08",
+      "team1": "AEK Athens",
+      "team2": "LASK Linz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "team1": "Borussia Dortmund",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "team1": "Club Brugge",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "team1": "FC Porto",
+      "team2": "Manchester City FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "team1": "Lille OSC",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-09-08",
+      "team1": "Real Madrid CF",
+      "team2": "FC Internazionale Milano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "FC Barcelona",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "Liverpool FC",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Slovan Bratislava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "Sporting CP",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "SSC Napoli",
+      "team2": "Arsenal FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-09",
+      "team1": "VfB Stuttgart",
+      "team2": "Viking FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "Como 1907",
+      "team2": "RB Leipzig",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "FC Bayern München",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "Fenerbahce",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "Manchester United FC",
+      "team2": "Sabah FK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "PSV Eindhoven",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2026-09-10",
+      "team1": "Slavia Prague",
+      "team2": "Racing Club de Lens",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Arsenal FC",
+      "team2": "Lille OSC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Manchester United FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "FC Internazionale Milano",
+      "team2": "Club Brugge",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Galatasaray",
+      "team2": "FC Barcelona",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Racing Club de Lens",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "RB Leipzig",
+      "team2": "PSV Eindhoven",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Sabah FK",
+      "team2": "Slavia Prague",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Viking FK",
+      "team2": "FC Bayern München",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-13",
+      "team1": "Villarreal CF",
+      "team2": "SSC Napoli",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "AS Roma",
+      "team2": "Real Madrid CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Aston Villa FC",
+      "team2": "Fenerbahce",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Bodo/Glimt",
+      "team2": "Borussia Dortmund",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "Como 1907",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "LASK Linz",
+      "team2": "Liverpool FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Manchester City FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Real Betis Balompié",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Shakhtar Donetsk",
+      "team2": "AEK Athens",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-14",
+      "team1": "Slovan Bratislava",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "AS Roma",
+      "team2": "Slovan Bratislava",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "FC Porto",
+      "team2": "PSV Eindhoven",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "Fenerbahce",
+      "team2": "Slavia Prague",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "Liverpool FC",
+      "team2": "Villarreal CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "Manchester City FC",
+      "team2": "AEK Athens",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "FC Barcelona",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "Sabah FK",
+      "team2": "Borussia Dortmund",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "SSC Napoli",
+      "team2": "Bodo/Glimt",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-20",
+      "team1": "VfB Stuttgart",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Aston Villa FC",
+      "team2": "Viking FK",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Club Brugge",
+      "team2": "Racing Club de Lens",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Como 1907",
+      "team2": "Manchester United FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "FC Bayern München",
+      "team2": "Arsenal FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "FC Internazionale Milano",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Lille OSC",
+      "team2": "Galatasaray",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Real Betis Balompié",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Real Madrid CF",
+      "team2": "RB Leipzig",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-21",
+      "team1": "Sporting CP",
+      "team2": "LASK Linz",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Bodo/Glimt",
+      "team2": "Lille OSC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Club Atlético de Madrid",
+      "team2": "FC Bayern München",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "FC Barcelona",
+      "team2": "Aston Villa FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "FC Internazionale Milano",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Galatasaray",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "LASK Linz",
+      "team2": "Slovan Bratislava",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Manchester United FC",
+      "team2": "AS Roma",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-03",
+      "team1": "Villarreal CF",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "AEK Athens",
+      "team2": "Real Madrid CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "Borussia Dortmund",
+      "team2": "Real Betis Balompié",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "FC Porto",
+      "team2": "SSC Napoli",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "Fenerbahce",
+      "team2": "Liverpool FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "PSV Eindhoven",
+      "team2": "Club Brugge",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "Racing Club de Lens",
+      "team2": "Como 1907",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "RB Leipzig",
+      "team2": "Manchester City FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "Slavia Prague",
+      "team2": "Arsenal FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-04",
+      "team1": "Viking FK",
+      "team2": "Sabah FK",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Arsenal FC",
+      "team2": "Borussia Dortmund",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Bodo/Glimt",
+      "team2": "LASK Linz",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Como 1907",
+      "team2": "AEK Athens",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Galatasaray",
+      "team2": "Aston Villa FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Manchester City FC",
+      "team2": "SSC Napoli",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "RB Leipzig",
+      "team2": "Racing Club de Lens",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Real Madrid CF",
+      "team2": "PSV Eindhoven",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-24",
+      "team1": "Slovan Bratislava",
+      "team2": "Real Betis Balompié",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Viking FK",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Club Brugge",
+      "team2": "Liverpool FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "FC Internazionale Milano",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Lille OSC",
+      "team2": "FC Bayern München",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "AS Roma",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Sabah FK",
+      "team2": "FC Barcelona",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Fenerbahce",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Slavia Prague",
+      "team2": "Villarreal CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-25",
+      "team1": "Sporting CP",
+      "team2": "Manchester United FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "AEK Athens",
+      "team2": "Galatasaray",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "AS Roma",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "Aston Villa FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "FC Barcelona",
+      "team2": "Manchester City FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "FC Bayern München",
+      "team2": "Slavia Prague",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "Manchester United FC",
+      "team2": "RB Leipzig",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "SSC Napoli",
+      "team2": "Club Brugge",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "Viking FK",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-08",
+      "team1": "Villarreal CF",
+      "team2": "Sabah FK",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Arsenal FC",
+      "team2": "Real Madrid CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Borussia Dortmund",
+      "team2": "FC Internazionale Milano",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "LASK Linz",
+      "team2": "Fenerbahce",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Liverpool FC",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "PSV Eindhoven",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Racing Club de Lens",
+      "team2": "Bodo/Glimt",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Real Betis Balompié",
+      "team2": "Como 1907",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "Slovan Bratislava",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-09",
+      "team1": "VfB Stuttgart",
+      "team2": "Lille OSC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "AEK Athens",
+      "team2": "AS Roma",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "Aston Villa FC",
+      "team2": "Borussia Dortmund",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "Bodo/Glimt",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "FC Internazionale Milano",
+      "team2": "Liverpool FC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "FC Porto",
+      "team2": "Slavia Prague",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "Galatasaray",
+      "team2": "Feyenoord Rotterdam",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "Lille OSC",
+      "team2": "Slovan Bratislava",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "Real Madrid CF",
+      "team2": "LASK Linz",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-19",
+      "team1": "VfB Stuttgart",
+      "team2": "Club Brugge",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Como 1907",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Fenerbahce",
+      "team2": "Villarreal CF",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Manchester United FC",
+      "team2": "FC Bayern München",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Racing Club de Lens",
+      "team2": "Manchester City FC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "RB Leipzig",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Real Betis Balompié",
+      "team2": "Arsenal FC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Sabah FK",
+      "team2": "SSC Napoli",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Sporting CP",
+      "team2": "FC Barcelona",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-20",
+      "team1": "Viking FK",
+      "team2": "PSV Eindhoven",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Arsenal FC",
+      "team2": "Sabah FK",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "AS Roma",
+      "team2": "Lille OSC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Borussia Dortmund",
+      "team2": "AEK Athens",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Club Atlético de Madrid",
+      "team2": "Fenerbahce",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Club Brugge",
+      "team2": "Bodo/Glimt",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "FC Barcelona",
+      "team2": "Como 1907",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "FC Bayern München",
+      "team2": "Real Betis Balompié",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "RB Leipzig",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "LASK Linz",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Liverpool FC",
+      "team2": "Racing Club de Lens",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Manchester City FC",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Galatasaray",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "PSV Eindhoven",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Real Madrid CF",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Slavia Prague",
+      "team2": "Aston Villa FC",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Slovan Bratislava",
+      "team2": "FC Internazionale Milano",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "SSC Napoli",
+      "team2": "Viking FK",
+      "neutral": false
+    },
+    {
+      "date": "2027-01-27",
+      "team1": "Villarreal CF",
+      "team2": "Manchester United FC",
+      "neutral": false
+    }
+  ]
+}

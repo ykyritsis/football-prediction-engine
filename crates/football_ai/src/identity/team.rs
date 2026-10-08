@@ -1,7 +1,6 @@
-//! Team identity: PES-style team tactics and advanced instructions.
+//! Team identity: tactics and advanced instructions.
 //!
-//! [`TeamStyle`] mirrors the "Game Plan" screen of PES 2017/2018 (attacking
-//! style, build up, attacking area, positioning, support range, defensive
+//! [`TeamStyle`] describes the team game plan (attacking style, build up, attacking area, positioning, support range, defensive
 //! style, containment area, pressuring, defensive line, compactness, plus up
 //! to two attacking and two defensive advanced instructions). It compiles into
 //! the numeric [`Tactics`] the decision layer consumes, and can describe
@@ -63,7 +62,7 @@ pub enum Pressuring {
     Conservative,
 }
 
-/// Advanced instructions (PES allows two attacking and two defensive).
+/// Advanced instructions (The simulation allows two attacking and two defensive).
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Instruction {
@@ -163,7 +162,7 @@ pub struct TeamStyle {
     pub defensive_line: u8,
     /// 1 (stretched) – 10 (compact).
     pub compactness: u8,
-    /// Advanced instructions; PES allows up to two attacking + two defensive.
+    /// Advanced instructions; The simulation allows up to two attacking + two defensive.
     pub instructions: Vec<Instruction>,
 }
 

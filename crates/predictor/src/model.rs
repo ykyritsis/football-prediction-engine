@@ -65,7 +65,7 @@ pub struct Strength {
 }
 
 /// A predicted match.
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, serde::Serialize)]
 pub struct Prediction {
     pub home_win: f64,
     pub draw: f64,
@@ -100,8 +100,8 @@ fn poisson(k: usize, lambda: f64) -> f64 {
 }
 
 impl Model {
-    /// Fit to the played matches in `history`, weighting by age relative to
-    /// `as_of` (ISO date).
+    /// Fit to played matches strictly before `as_of` (ISO date), weighting
+    /// by age. Same-day and future scores and statistics are excluded.
     pub fn fit(history: &[Match], as_of: &str, cfg: &ModelConfig) -> Model {
         let today = day_number(as_of);
         let decay = std::f64::consts::LN_2 / cfg.half_life_days;
@@ -113,19 +113,20 @@ impl Model {
             /// Actual goals (for the low-score correction).
             goals: (u8, u8),
             w: f64,
+            home_edge: f64,
         }
         let mut index: BTreeMap<String, usize> = BTreeMap::new();
         let mut rows = Vec::new();
         // Goals per shot on target, for the shot blend.
         let (mut g_sum, mut sot_sum) = (0.0, 0.0);
-        for m in history {
+        for m in history.iter().filter(|m| m.date.as_str() < as_of) {
             if let (Some((gh, ga)), Some(s)) = (m.score, &m.stats) {
                 g_sum += (gh + ga) as f64;
                 sot_sum += (s.shots_on_target.0 + s.shots_on_target.1) as f64;
             }
         }
         let per_sot = if sot_sum > 0.0 { g_sum / sot_sum } else { 0.0 };
-        for m in history {
+        for m in history.iter().filter(|m| m.date.as_str() < as_of) {
             let Some((gh, ga)) = m.score else { continue };
             let age = (today - day_number(&m.date)).max(0) as f64;
             let w = (-decay * age).exp();
@@ -149,6 +150,7 @@ impl Model {
                 ga: ta,
                 goals: (gh, ga),
                 w,
+                home_edge: if m.neutral { 0.0 } else { 1.0 },
             });
         }
         let n = index.len();
@@ -173,7 +175,7 @@ impl Model {
             let mut g = vec![0.0; n];
             let mut hss = vec![0.0; n];
             for r in &rows {
-                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
+                let lh = (mu + r.home_edge * (home + hadv[r.h]) + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 g[r.h] += r.w * (r.gh - lh);
                 hss[r.h] += r.w * lh;
@@ -189,7 +191,7 @@ impl Model {
             let mut g = vec![0.0; n];
             let mut hss = vec![0.0; n];
             for r in &rows {
-                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
+                let lh = (mu + r.home_edge * (home + hadv[r.h]) + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 g[r.a] -= r.w * (r.gh - lh);
                 hss[r.a] += r.w * lh;
@@ -207,9 +209,9 @@ impl Model {
                 let mut g = vec![0.0; n];
                 let mut hss = vec![0.0; n];
                 for r in &rows {
-                    let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
-                    g[r.h] += r.w * (r.gh - lh);
-                    hss[r.h] += r.w * lh;
+                    let lh = (mu + r.home_edge * (home + hadv[r.h]) + att[r.h] - def[r.a]).exp();
+                    g[r.h] += r.w * r.home_edge * (r.gh - lh);
+                    hss[r.h] += r.w * r.home_edge * lh;
                 }
                 for i in 0..n {
                     let step = (g[i] - hadv[i] * prec) / (hss[i] + prec);
@@ -220,12 +222,12 @@ impl Model {
             // Global level and home advantage.
             let (mut goals, mut expect, mut hg, mut he) = (0.0, 0.0, 0.0, 0.0);
             for r in &rows {
-                let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
+                let lh = (mu + r.home_edge * (home + hadv[r.h]) + att[r.h] - def[r.a]).exp();
                 let la = (mu + att[r.a] - def[r.h]).exp();
                 goals += r.w * (r.gh + r.ga);
                 expect += r.w * (lh + la);
-                hg += r.w * r.gh;
-                he += r.w * lh;
+                hg += r.w * r.home_edge * r.gh;
+                he += r.w * r.home_edge * lh;
             }
             if expect > 0.0 {
                 let s = (goals / expect).ln();
@@ -248,7 +250,7 @@ impl Model {
             let ll: f64 = rows
                 .iter()
                 .map(|r| {
-                    let lh = (mu + home + hadv[r.h] + att[r.h] - def[r.a]).exp();
+                    let lh = (mu + r.home_edge * (home + hadv[r.h]) + att[r.h] - def[r.a]).exp();
                     let la = (mu + att[r.a] - def[r.h]).exp();
                     r.w * tau(r.goals.0, r.goals.1, lh, la, rho).max(1e-9).ln()
                 })
@@ -351,6 +353,16 @@ impl Model {
             scores,
         }
     }
+
+    /// Ninety-minute outcome at a neutral ground, with both home effects removed.
+    pub fn predict_neutral(&self, home: &str, away: &str) -> Prediction {
+        let mut neutral = self.clone();
+        neutral.home = 0.0;
+        for strength in neutral.teams.values_mut() {
+            strength.home = 0.0;
+        }
+        neutral.predict(home, away)
+    }
 }
 
 #[cfg(test)]
@@ -363,8 +375,24 @@ mod tests {
             home: h.into(),
             away: a.into(),
             score: Some((gh, ga)),
+            neutral: false,
             stats: None,
         }
+    }
+
+    #[test]
+    fn neutral_venue_removes_both_home_effects() {
+        let hist = vec![
+            m("2025-08-01", "A", "B", 3, 1),
+            m("2025-08-02", "B", "A", 2, 1),
+        ];
+        let model = Model::fit(&hist, "2025-08-03", &ModelConfig::default());
+        let p = model.predict_neutral("A", "B");
+        let q = model.predict_neutral("B", "A");
+        assert!((p.home_win - q.away_win).abs() < 1e-10);
+        assert!((p.home_xg - q.away_xg).abs() < 1e-10);
+        assert!((p.home_win + p.draw + p.away_win - 1.0).abs() < 1e-10);
+        assert_ne!(model.predict("A", "B").scores, p.scores);
     }
 
     #[test]
