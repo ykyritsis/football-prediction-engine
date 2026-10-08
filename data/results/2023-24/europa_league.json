@@ -1,0 +1,1651 @@
+{
+  "name": "Europa League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2023-09-21",
+      "team1": "Ajax Amsterdam",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Atalanta BC",
+      "team2": "ESPN:21005:Raków Czestochowa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "ESPN:7834:BK Häcken",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "AEK Athens",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "ESPN:2715:Molde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:20032:Servette",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:257:Rangers",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:371:West Ham United",
+      "team2": "ESPN:20713:FK TSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:614:Sheriff Tiraspol",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "LASK Linz",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Olympiacos",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Panathinaikos",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "SK Sturm Graz",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Sparta Prague",
+      "team2": "ESPN:21530:Aris Limassol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "ESPN:611:Maccabi Haifa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Union St.-Gilloise",
+      "team2": "Toulouse FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "AEK Athens",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "AS Roma",
+      "team2": "ESPN:20032:Servette",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:20713:FK TSC",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:21005:Raków Czestochowa",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:21530:Aris Limassol",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:2715:Molde",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:611:Maccabi Haifa",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:7834:BK Häcken",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Liverpool FC",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Olympique de Marseille",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Real Betis Balompié",
+      "team2": "Sparta Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:371:West Ham United",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Slavia Prague",
+      "team2": "ESPN:614:Sheriff Tiraspol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Sporting CP",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Toulouse FC",
+      "team2": "LASK Linz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Villarreal CF",
+      "team2": "Stade Rennais FC 1901",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "AS Roma",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:20713:FK TSC",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:21005:Raków Czestochowa",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:21530:Aris Limassol",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:2715:Molde",
+      "team2": "ESPN:7834:BK Häcken",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:614:Sheriff Tiraspol",
+      "team2": "ESPN:20032:Servette",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Liverpool FC",
+      "team2": "Toulouse FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Olympiacos",
+      "team2": "ESPN:371:West Ham United",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Olympique de Marseille",
+      "team2": "AEK Athens",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Panathinaikos",
+      "team2": "Stade Rennais FC 1901",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "SK Sturm Graz",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Sparta Prague",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Union St.-Gilloise",
+      "team2": "LASK Linz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "AEK Athens",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Ajax Amsterdam",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Atalanta BC",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:20032:Servette",
+      "team2": "ESPN:614:Sheriff Tiraspol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:257:Rangers",
+      "team2": "Sparta Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:371:West Ham United",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:611:Maccabi Haifa",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:7834:BK Häcken",
+      "team2": "ESPN:2715:Molde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "LASK Linz",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Real Betis Balompié",
+      "team2": "ESPN:21530:Aris Limassol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:20713:FK TSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Slavia Prague",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Sporting CP",
+      "team2": "ESPN:21005:Raków Czestochowa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Toulouse FC",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "AEK Athens",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Atalanta BC",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:20032:Servette",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:20713:FK TSC",
+      "team2": "ESPN:371:West Ham United",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:257:Rangers",
+      "team2": "ESPN:21530:Aris Limassol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:2715:Molde",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:611:Maccabi Haifa",
+      "team2": "Stade Rennais FC 1901",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:614:Sheriff Tiraspol",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:7834:BK Häcken",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Liverpool FC",
+      "team2": "LASK Linz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Olympique de Marseille",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "SC Freiburg",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "SK Sturm Graz",
+      "team2": "ESPN:21005:Raków Czestochowa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Sparta Prague",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Toulouse FC",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Villarreal CF",
+      "team2": "Panathinaikos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-06",
+      "team1": "Villarreal CF",
+      "team2": "ESPN:611:Maccabi Haifa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Ajax Amsterdam",
+      "team2": "AEK Athens",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "AS Roma",
+      "team2": "ESPN:614:Sheriff Tiraspol",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "ESPN:2715:Molde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "ESPN:7834:BK Häcken",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:21005:Raków Czestochowa",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:21530:Aris Limassol",
+      "team2": "Sparta Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:371:West Ham United",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "LASK Linz",
+      "team2": "Toulouse FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Olympiacos",
+      "team2": "ESPN:20713:FK TSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Panathinaikos",
+      "team2": "ESPN:611:Maccabi Haifa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Real Betis Balompié",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Slavia Prague",
+      "team2": "ESPN:20032:Servette",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Sporting CP",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Union St.-Gilloise",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "AC Milan",
+      "team2": "Stade Rennais FC 1901",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Benfica",
+      "team2": "Toulouse FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Braga",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "ESPN:2722:Young Boys",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Feyenoord Rotterdam",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Galatasaray",
+      "team2": "Sparta Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Racing Club de Lens",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Shakhtar Donetsk",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Olympique de Marseille",
+      "team2": "Shakhtar Donetsk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Sparta Prague",
+      "team2": "Galatasaray",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Sporting CP",
+      "team2": "ESPN:2722:Young Boys",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "AC Milan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Toulouse FC",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-06",
+      "team1": "Sporting CP",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "AC Milan",
+      "team2": "Slavia Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "AS Roma",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Benfica",
+      "team2": "ESPN:257:Rangers",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "ESPN:10414:FK Qarabag",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Olympique de Marseille",
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "SC Freiburg",
+      "team2": "ESPN:371:West Ham United",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Sparta Prague",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Atalanta BC",
+      "team2": "Sporting CP",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "ESPN:10414:FK Qarabag",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "ESPN:257:Rangers",
+      "team2": "Benfica",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "ESPN:371:West Ham United",
+      "team2": "SC Freiburg",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Liverpool FC",
+      "team2": "Sparta Prague",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Slavia Prague",
+      "team2": "AC Milan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Villarreal CF",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "AC Milan",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "ESPN:371:West Ham United",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Benfica",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Liverpool FC",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-04-18",
+      "team1": "AS Roma",
+      "team2": "AC Milan",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-18",
+      "team1": "Atalanta BC",
+      "team2": "Liverpool FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-18",
+      "team1": "ESPN:371:West Ham United",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-02",
+      "team1": "AS Roma",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-02",
+      "team1": "Olympique de Marseille",
+      "team2": "Atalanta BC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-09",
+      "team1": "Atalanta BC",
+      "team2": "Olympique de Marseille",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-05-09",
+      "team1": "Bayer 04 Leverkusen",
+      "team2": "AS Roma",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-22",
+      "team1": "Atalanta BC",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    }
+  ]
+}

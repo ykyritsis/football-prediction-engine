@@ -372,6 +372,7 @@ mod tests {
                     home: h.into(),
                     away: a.into(),
                     score: Some((1, 1)),
+                    neutral: false,
                     stats: Some(Stats {
                         yellows: (yh, ya),
                         ..Stats::default()

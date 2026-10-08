@@ -1,0 +1,1615 @@
+{
+  "name": "Conference League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2023-09-20",
+      "team1": "Lille OSC",
+      "team2": "ESPN:500:Olimpija Ljubljana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Club Brugge",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Dinamo Zagreb",
+      "team2": "ESPN:12124:FC Astana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Eintracht Frankfurt",
+      "team2": "ESPN:263:Aberdeen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "ESPN:3929:FC Spartak Trnava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:17520:FC Zorya Luhansk",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:502:HJK Helsinki",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:5239:Zrinjski Mostar",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "ESPN:8250:Breidablik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:555:Legia Warsaw",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "FC Lugano",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Fenerbahce",
+      "team2": "FC Nordsjælland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Ferencvaros",
+      "team2": "ESPN:8287:Cukaricki Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Slovan Bratislava",
+      "team2": "ESPN:2547:KI Klaksvik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-09-21",
+      "team1": "Viktoria Plzen",
+      "team2": "ESPN:21526:Ballkani",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ACF Fiorentina",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Aston Villa FC",
+      "team2": "ESPN:5239:Zrinjski Mostar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "AZ Alkmaar",
+      "team2": "ESPN:555:Legia Warsaw",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Besiktas",
+      "team2": "FC Lugano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "Bodo/Glimt",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:12124:FC Astana",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:21526:Ballkani",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:2547:KI Klaksvik",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:263:Aberdeen",
+      "team2": "ESPN:502:HJK Helsinki",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:3929:FC Spartak Trnava",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:500:Olimpija Ljubljana",
+      "team2": "Slovan Bratislava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:605:PAOK",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:8250:Breidablik",
+      "team2": "ESPN:17520:FC Zorya Luhansk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "ESPN:8287:Cukaricki Belgrade",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "FC Nordsjælland",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-05",
+      "team1": "KAA Gent",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ACF Fiorentina",
+      "team2": "ESPN:8287:Cukaricki Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "AZ Alkmaar",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Bodo/Glimt",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Dinamo Zagreb",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Eintracht Frankfurt",
+      "team2": "ESPN:502:HJK Helsinki",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:21526:Ballkani",
+      "team2": "ESPN:12124:FC Astana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:2547:KI Klaksvik",
+      "team2": "ESPN:500:Olimpija Ljubljana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:263:Aberdeen",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:3929:FC Spartak Trnava",
+      "team2": "FC Nordsjælland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:5239:Zrinjski Mostar",
+      "team2": "ESPN:555:Legia Warsaw",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "FC Lugano",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "KAA Gent",
+      "team2": "ESPN:8250:Breidablik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-10-26",
+      "team1": "Lille OSC",
+      "team2": "Slovan Bratislava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Aston Villa FC",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Besiktas",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Club Brugge",
+      "team2": "FC Lugano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:12124:FC Astana",
+      "team2": "ESPN:21526:Ballkani",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:17520:FC Zorya Luhansk",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:500:Olimpija Ljubljana",
+      "team2": "ESPN:2547:KI Klaksvik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:502:HJK Helsinki",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:555:Legia Warsaw",
+      "team2": "ESPN:5239:Zrinjski Mostar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:605:PAOK",
+      "team2": "ESPN:263:Aberdeen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:8250:Breidablik",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "ESPN:8287:Cukaricki Belgrade",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "FC Nordsjælland",
+      "team2": "ESPN:3929:FC Spartak Trnava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Ferencvaros",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Slovan Bratislava",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-09",
+      "team1": "Viktoria Plzen",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-25",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "ESPN:17520:FC Zorya Luhansk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ACF Fiorentina",
+      "team2": "ESPN:938:Racing Genk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Aston Villa FC",
+      "team2": "ESPN:555:Legia Warsaw",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "AZ Alkmaar",
+      "team2": "ESPN:5239:Zrinjski Mostar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Besiktas",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Bodo/Glimt",
+      "team2": "FC Lugano",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "Eintracht Frankfurt",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:12124:FC Astana",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:21526:Ballkani",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:2547:KI Klaksvik",
+      "team2": "Slovan Bratislava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:3929:FC Spartak Trnava",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:500:Olimpija Ljubljana",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:502:HJK Helsinki",
+      "team2": "ESPN:263:Aberdeen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:8250:Breidablik",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "ESPN:8287:Cukaricki Belgrade",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "FC Nordsjælland",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-11-30",
+      "team1": "KAA Gent",
+      "team2": "ESPN:17520:FC Zorya Luhansk",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Club Brugge",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Dinamo Zagreb",
+      "team2": "ESPN:21526:Ballkani",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "FC Nordsjælland",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:17520:FC Zorya Luhansk",
+      "team2": "ESPN:8250:Breidablik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:263:Aberdeen",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:5239:Zrinjski Mostar",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:524:Maccabi Tel-Aviv",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:555:Legia Warsaw",
+      "team2": "AZ Alkmaar",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:605:PAOK",
+      "team2": "ESPN:502:HJK Helsinki",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "ESPN:938:Racing Genk",
+      "team2": "ESPN:8287:Cukaricki Belgrade",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "FC Lugano",
+      "team2": "Besiktas",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Fenerbahce",
+      "team2": "ESPN:3929:FC Spartak Trnava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Ferencvaros",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Lille OSC",
+      "team2": "ESPN:2547:KI Klaksvik",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Slovan Bratislava",
+      "team2": "ESPN:500:Olimpija Ljubljana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2023-12-14",
+      "team1": "Viktoria Plzen",
+      "team2": "ESPN:12124:FC Astana",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Ajax Amsterdam",
+      "team2": "Bodo/Glimt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "ESPN:20032:Servette",
+      "team2": "ESPN:13018:Ludogorets Razgrad",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "ESPN:2715:Molde",
+      "team2": "ESPN:555:Legia Warsaw",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "ESPN:611:Maccabi Haifa",
+      "team2": "KAA Gent",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Olympiacos",
+      "team2": "Ferencvaros",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Real Betis Balompié",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "SK Sturm Graz",
+      "team2": "Slovan Bratislava",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-15",
+      "team1": "Union St.-Gilloise",
+      "team2": "Eintracht Frankfurt",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-21",
+      "team1": "KAA Gent",
+      "team2": "ESPN:611:Maccabi Haifa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Dinamo Zagreb",
+      "team2": "Real Betis Balompié",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Eintracht Frankfurt",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "ESPN:13018:Ludogorets Razgrad",
+      "team2": "ESPN:20032:Servette",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "ESPN:555:Legia Warsaw",
+      "team2": "ESPN:2715:Molde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Ferencvaros",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-02-22",
+      "team1": "Slovan Bratislava",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Ajax Amsterdam",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Dinamo Zagreb",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "ESPN:20032:Servette",
+      "team2": "Viktoria Plzen",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "ESPN:2715:Molde",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "ESPN:611:Maccabi Haifa",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Olympiacos",
+      "team2": "ESPN:524:Maccabi Tel-Aviv",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "SK Sturm Graz",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-03-07",
+      "team1": "Union St.-Gilloise",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "ACF Fiorentina",
+      "team2": "ESPN:611:Maccabi Haifa",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Aston Villa FC",
+      "team2": "Ajax Amsterdam",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Club Brugge",
+      "team2": "ESPN:2715:Molde",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "ESPN:605:PAOK",
+      "team2": "Dinamo Zagreb",
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Fenerbahce",
+      "team2": "Union St.-Gilloise",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-03-14",
+      "team1": "Lille OSC",
+      "team2": "SK Sturm Graz",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Aston Villa FC",
+      "team2": "Lille OSC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Club Brugge",
+      "team2": "ESPN:605:PAOK",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Olympiacos",
+      "team2": "Fenerbahce",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-04-11",
+      "team1": "Viktoria Plzen",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "date": "2024-04-18",
+      "team1": "ESPN:605:PAOK",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-02",
+      "team1": "ACF Fiorentina",
+      "team2": "Club Brugge",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
+    },
+    {
+      "date": "2024-05-02",
+      "team1": "Aston Villa FC",
+      "team2": "Olympiacos",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2024-05-08",
+      "team1": "Club Brugge",
+      "team2": "ACF Fiorentina",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "date": "2024-05-09",
+      "team1": "Olympiacos",
+      "team2": "Aston Villa FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
+    }
+  ]
+}

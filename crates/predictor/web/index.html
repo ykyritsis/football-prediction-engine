@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#101d35" />
+    <title>Touchline — Football intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      __APP_CSS__
+    </style>
+  </head>
+  <body>
+    <header class="masthead">
+      <a class="wordmark" href="#" aria-label="Touchline home"
+        ><svg width="27" height="30" viewBox="0 0 27 30" aria-hidden="true">
+          <path d="M2 2h23v6h-8v20h-7V8H2Z" fill="currentColor" />
+          <path d="M22 13h4v15h-4Z" fill="#f05b46" /></svg
+        >TOUCHLINE</a
+      ><span class="masthead-sub">FOOTBALL INTELLIGENCE</span>
+      <div class="masthead-date" id="snapshot"></div>
+    </header>
+    <nav class="topnav" aria-label="Main navigation">
+      <button data-view="matches" class="active">Matches</button
+      ><button data-view="clubs">Clubs</button
+      ><button data-view="players">Players</button
+      ><button data-view="simulator">Simulator</button
+      ><button data-view="history">Model results</button
+      ><button data-view="seasons">Seasons & history</button
+      ><button data-view="about">About the data</button>
+    </nav>
+    <div class="shell">
+      <aside class="sidebar">
+        <div class="sidebar-label">COMPETITIONS</div>
+        <div id="competitions"></div>
+        <div class="sidebar-note">
+          <span class="status-dot"></span> Match predictions<br /><small
+            >90 minutes · pre-match model</small
+          >
+        </div>
+      </aside>
+      <main>
+        <div class="page-heading">
+          <div>
+            <div class="eyebrow" id="eyebrow">MATCH CENTRE</div>
+            <h1 id="title">Football, in focus.</h1>
+            <p id="subtitle">
+              Fixtures, form and match predictions across Europe.
+            </p>
+          </div>
+          <div class="season-label">2026/27<span>SEASON</span></div>
+        </div>
+        <div
+          class="club-strip"
+          id="clubStrip"
+          aria-label="Clubs in this competition"
+        ></div>
+        <div class="content-toolbar">
+          <div id="viewTools"></div>
+          <label class="search"
+            ><svg
+              width="17"
+              height="17"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <circle cx="10.5" cy="10.5" r="6.5" />
+              <path d="m16 16 5 5" /></svg
+            ><input
+              id="search"
+              type="search"
+              aria-label="Search clubs or players"
+              placeholder="Search clubs or players"
+          /></label>
+        </div>
+        <div id="freshness"></div>
+        <div id="content"></div>
+        <footer>
+          <span
+            >TOUCHLINE <span class="footer-divider">/</span> Independent
+            football analysis</span
+          ><button data-view="about">Data sources & methodology ↗</button>
+        </footer>
+      </main>
+    </div>
+    <dialog id="matchDialog" aria-label="Match prediction">
+      <button class="dialog-close" aria-label="Close match details">×</button>
+      <div id="matchDetail"></div>
+    </dialog>
+    <dialog id="playerDialog" aria-label="Player profile">
+      <button class="dialog-close" aria-label="Close player details">×</button>
+      <div id="playerDetail"></div>
+    </dialog>
+    <script id="data" type="application/json">
+      __PREDICTOR_DATA__
+    </script>
+    <script>
+      __SIMULATION_CODE__;
+    </script>
+    <script>
+      __EXPERIENCE_CODE__;
+      __HISTORY_CODE__;
+      __APP_JS__;
+    </script>
+  </body>
+</html>

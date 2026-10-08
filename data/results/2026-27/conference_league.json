@@ -1,0 +1,655 @@
+{
+  "name": "Conference League",
+  "source": "ESPN",
+  "updated_at": "2026-10-08T05:07:29.736Z",
+  "matches": [
+    {
+      "date": "2026-10-15",
+      "team1": "Atalanta BC",
+      "team2": "Pafos",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "Kauno Zalgiris",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "CSKA Sofia",
+      "team2": "AS Monaco FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "CSU Craiova",
+      "team2": "Getafe CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Egnatia",
+      "team2": "FC Midtjylland",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "F.C. København",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "FC Lugano",
+      "team2": "Red Star Belgrade",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "FC Twente",
+      "team2": "FC Thun",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Hajduk Split",
+      "team2": "Ajax Amsterdam",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Heart of Midlothian",
+      "team2": "FC Nordsjælland",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "KAA Gent",
+      "team2": "AGF",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "KuPS Kuopio",
+      "team2": "Trabzonspor",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Mjällby AIF",
+      "team2": "Inter D'Escaldes",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Panathinaikos",
+      "team2": "Borac Banja Luka",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Riga FC",
+      "team2": "Kairat Almaty",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "SC Freiburg",
+      "team2": "Jablonec",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "Sint-Truidense",
+      "team2": "Iberia 1999",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-15",
+      "team1": "SK Brann",
+      "team2": "Lincoln Red Imps",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "AGF",
+      "team2": "Egnatia",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Ajax Amsterdam",
+      "team2": "Atalanta BC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "AS Monaco FC",
+      "team2": "SC Freiburg",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Borac Banja Luka",
+      "team2": "KuPS Kuopio",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Braga",
+      "team2": "KAA Gent",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "FC Midtjylland",
+      "team2": "Sint-Truidense",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "FC Nordsjælland",
+      "team2": "CSKA Sofia",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "FC Thun",
+      "team2": "Hajduk Split",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Getafe CF",
+      "team2": "FC Lugano",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Iberia 1999",
+      "team2": "Mjällby AIF",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Inter D'Escaldes",
+      "team2": "CSU Craiova",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Jablonec",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Kairat Almaty",
+      "team2": "Panathinaikos",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Kauno Zalgiris",
+      "team2": "SK Brann",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Lincoln Red Imps",
+      "team2": "FC Twente",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Pafos",
+      "team2": "Riga FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Red Star Belgrade",
+      "team2": "F.C. København",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-22",
+      "team1": "Trabzonspor",
+      "team2": "Heart of Midlothian",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "AGF",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "AS Monaco FC",
+      "team2": "FC Nordsjælland",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Atalanta BC",
+      "team2": "Kairat Almaty",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "CSU Craiova",
+      "team2": "Egnatia",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "F.C. København",
+      "team2": "Iberia 1999",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "FC Lugano",
+      "team2": "Kauno Zalgiris",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "FC Midtjylland",
+      "team2": "Ajax Amsterdam",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "FC Thun",
+      "team2": "Heart of Midlothian",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "FC Twente",
+      "team2": "Pafos",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Getafe CF",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "KuPS Kuopio",
+      "team2": "KAA Gent",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Lincoln Red Imps",
+      "team2": "Hajduk Split",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Mjällby AIF",
+      "team2": "Borac Banja Luka",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Panathinaikos",
+      "team2": "CSKA Sofia",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Red Star Belgrade",
+      "team2": "Inter D'Escaldes",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Riga FC",
+      "team2": "Jablonec",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Sint-Truidense",
+      "team2": "SK Brann",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-05",
+      "team1": "Trabzonspor",
+      "team2": "SC Freiburg",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Ajax Amsterdam",
+      "team2": "FC Thun",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Borac Banja Luka",
+      "team2": "Atalanta BC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Braga",
+      "team2": "KuPS Kuopio",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "CSU Craiova",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "CSKA Sofia",
+      "team2": "Trabzonspor",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Egnatia",
+      "team2": "Lincoln Red Imps",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "FC Nordsjælland",
+      "team2": "Panathinaikos",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Hajduk Split",
+      "team2": "Sint-Truidense",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Heart of Midlothian",
+      "team2": "AS Monaco FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Iberia 1999",
+      "team2": "Getafe CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Inter D'Escaldes",
+      "team2": "F.C. København",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Jablonec",
+      "team2": "FC Lugano",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "KAA Gent",
+      "team2": "Red Star Belgrade",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Kairat Almaty",
+      "team2": "Mjällby AIF",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Kauno Zalgiris",
+      "team2": "Riga FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "Pafos",
+      "team2": "FC Midtjylland",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "SC Freiburg",
+      "team2": "FC Twente",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-26",
+      "team1": "SK Brann",
+      "team2": "AGF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "AGF",
+      "team2": "FC Twente",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "AS Monaco FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Egnatia",
+      "team2": "Kauno Zalgiris",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "F.C. København",
+      "team2": "FC Lugano",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "FC Thun",
+      "team2": "KAA Gent",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Getafe CF",
+      "team2": "Inter D'Escaldes",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Hajduk Split",
+      "team2": "FC Nordsjælland",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Heart of Midlothian",
+      "team2": "Borac Banja Luka",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Iberia 1999",
+      "team2": "Red Star Belgrade",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Kairat Almaty",
+      "team2": "CSU Craiova",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "KuPS Kuopio",
+      "team2": "CSKA Sofia",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Lincoln Red Imps",
+      "team2": "FC Midtjylland",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Mjällby AIF",
+      "team2": "Pafos",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Riga FC",
+      "team2": "Atalanta BC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "SC Freiburg",
+      "team2": "Panathinaikos",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Sint-Truidense",
+      "team2": "Ajax Amsterdam",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "SK Brann",
+      "team2": "Braga",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-10",
+      "team1": "Trabzonspor",
+      "team2": "Jablonec",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Ajax Amsterdam",
+      "team2": "Getafe CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "AS Monaco FC",
+      "team2": "Lincoln Red Imps",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Atalanta BC",
+      "team2": "Mjällby AIF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Borac Banja Luka",
+      "team2": "Riga FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Braga",
+      "team2": "Egnatia",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "CSKA Sofia",
+      "team2": "FC Thun",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "CSU Craiova",
+      "team2": "F.C. København",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "FC Lugano",
+      "team2": "Sint-Truidense",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "FC Midtjylland",
+      "team2": "Hajduk Split",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "FC Nordsjælland",
+      "team2": "KuPS Kuopio",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "FC Twente",
+      "team2": "Kairat Almaty",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Inter D'Escaldes",
+      "team2": "AGF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Jablonec",
+      "team2": "Iberia 1999",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "KAA Gent",
+      "team2": "SK Brann",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Kauno Zalgiris",
+      "team2": "SC Freiburg",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Pafos",
+      "team2": "Heart of Midlothian",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Panathinaikos",
+      "team2": "Brighton & Hove Albion FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-17",
+      "team1": "Red Star Belgrade",
+      "team2": "Trabzonspor",
+      "neutral": false
+    }
+  ]
+}
