@@ -2572,3 +2572,5 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .title-bar i { display: block; height: 100%; background: var(--red); border-radius: 999px; }
 .title-row b { text-align: right; }
 @media (max-width: 900px) { .season-grid { grid-template-columns: 1fr; } }
+/* Constrain crests inside the history view */
+.season-table img, .title-row img, .club-cell img { width: 20px; height: 20px; object-fit: contain; flex: 0 0 20px; }
