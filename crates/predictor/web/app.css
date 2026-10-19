@@ -2522,3 +2522,18 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .watch-item.cold .watch-tag { background: rgba(215,68,54,.14); color: var(--red); }
 .watch-item p { margin: 6px 0 2px; font-size: .9rem; line-height: 1.5; }
 .watch-item small { color: var(--muted); font-size: .76rem; }
+
+/* Spotlight card: light, readable, uses the page colours */
+.featured { background: #fff; color: var(--ink); border: 1px solid var(--line); box-shadow: 0 8px 26px rgba(16,29,53,.07); }
+.featured .eyebrow { color: var(--muted); }
+.featured .versus > span { color: var(--muted); }
+.featured-names { color: var(--ink); }
+.featured-date { color: var(--muted); }
+.featured .feature-prediction { border-top: 1px solid var(--line); }
+.featured .feature-prediction span { color: var(--muted); }
+.featured .feature-prediction strong { color: var(--ink); }
+.featured .prediction-note { color: var(--muted); }
+.featured .ai-why, .featured .ai-preview { color: var(--ink); }
+.featured .ai-badge { background: var(--navy); color: #fff; }
+.featured .match-ask input { background: #f5f6f8; color: var(--ink); border: 1px solid var(--line); }
+.featured button { background: var(--navy); color: #fff; }
