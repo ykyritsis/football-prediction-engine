@@ -166,3 +166,66 @@ function matchStory(match,players,seed){
 }
 if (typeof module !== "undefined")
   module.exports = { simulate, playerForecast, sampleMatch, matchStory };
+
+// ---- Cup knockout simulator --------------------------------------------------------------
+// Each team's attack and defence are its goals scored and conceded per game relative to the
+// league average. Expected goals for a tie come from those rates; the score grid gives the
+// chance of each result. Draws go to extra time and penalties, split by expected goals.
+function poissonPmf(lambda, k) {
+  let p = Math.exp(-lambda);
+  for (let i = 1; i <= k; i++) p *= lambda / i;
+  return p;
+}
+function tieProbabilities(lambdaA, lambdaB) {
+  let winA = 0, draw = 0, winB = 0;
+  for (let a = 0; a <= 9; a++)
+    for (let b = 0; b <= 9; b++) {
+      const p = poissonPmf(lambdaA, a) * poissonPmf(lambdaB, b);
+      if (a > b) winA += p;
+      else if (a === b) draw += p;
+      else winB += p;
+    }
+  const total = winA + draw + winB || 1;
+  const share = lambdaA / (lambdaA + lambdaB || 1);
+  return { a: (winA + draw * share) / total, b: (winB + draw * (1 - share)) / total };
+}
+// Power-of-two sized knockout order, so the strongest seeds meet last.
+function bracketOrder(size) {
+  let order = [1, 2];
+  while (order.length < size) {
+    const n = order.length * 2;
+    order = order.flatMap((s) => [s, n + 1 - s]);
+  }
+  return order;
+}
+// Runs the knockout many times. teams: [{ name, attack, defence }] in seed order (best first).
+function simulateKnockout(teams, runs, seed) {
+  const size = 1 << Math.floor(Math.log2(Math.max(2, teams.length)));
+  const seeded = teams.slice(0, size);
+  const rounds = Math.log2(size);
+  const avgAttack = 1;
+  const reach = seeded.map(() => new Array(rounds + 1).fill(0));
+  const rng = seededRandom(seed >>> 0);
+  const lambda = (x, y) => Math.max(0.2, avgAttack * x.attack * y.defence * 1.35);
+  for (let r = 0; r < runs; r++) {
+    let alive = bracketOrder(size).map((s) => s - 1);
+    seeded.forEach((_, i) => reach[i][0] += 1);
+    for (let round = 1; round <= rounds; round++) {
+      const next = [];
+      for (let i = 0; i < alive.length; i += 2) {
+        const ia = alive[i], ib = alive[i + 1];
+        const a = seeded[ia], b = seeded[ib];
+        const probs = tieProbabilities(lambda(a, b), lambda(b, a));
+        const winner = rng() < probs.a ? ia : ib;
+        reach[winner][round] += 1;
+        next.push(winner);
+      }
+      alive = next;
+    }
+  }
+  return seeded.map((t, i) => ({
+    name: t.name,
+    seed: i + 1,
+    reach: reach[i].map((n) => n / runs),
+  }));
+}

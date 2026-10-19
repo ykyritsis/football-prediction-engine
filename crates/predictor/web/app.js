@@ -343,6 +343,58 @@ function headToHead(l, m) {
     .map((x) => `${x.date} ${x.home} ${x.score[0]}-${x.score[1]} ${x.away}`)
     .join("; ");
 }
+// Club cups where the knockout simulator applies.
+const CUP_KEYS = ["champions_league", "europa_league", "conference_league"];
+// Team inputs for the simulator, from each team's season record in this league.
+function cupTeams(l) {
+  const teams = (l.teams || []).map((t) => {
+    const gp = t.played || 0;
+    return { name: t.name, gp, gf: t.goals_for || 0, ga: t.goals_against || 0, pts: 3 * (t.wins || 0) + (t.draws || 0), gd: (t.goals_for || 0) - (t.goals_against || 0) };
+  }).filter((t) => t.gp > 0);
+  teams.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
+  const totalGf = teams.reduce((s, t) => s + t.gf, 0), totalGp = teams.reduce((s, t) => s + t.gp, 0) || 1;
+  const avg = totalGf / totalGp || 1;
+  return teams.map((t) => ({
+    name: t.name,
+    attack: t.gf / t.gp / avg || 0.5,
+    defence: t.ga / t.gp / avg || 0.5,
+  }));
+}
+function cupSimHTML() {
+  const l = data.leagues.find((x) => x.key === state.competition);
+  if (!l || !CUP_KEYS.includes(l.key)) return "";
+  return `<section class="panel panel-pad cup-sim"><div class="mini-label">KNOCKOUT SIMULATOR</div><p class="fine-print">Shuffles the top 16 teams in this season's table into a single-leg bracket and plays it 3,000 times. It is a what-if, not the real draw.</p><button class="primary" id="cupRun" data-cup="${esc(l.key)}">Simulate the knockout</button><div id="cupResult"></div></section>`;
+}
+function runCupSim(key) {
+  const l = data.leagues.find((x) => x.key === key);
+  if (!l) return;
+  const teams = cupTeams(l).slice(0, 16);
+  const rows = simulateKnockout(teams, 3000, 20261019);
+  const pct = (x) => Math.round(x * 100) + "%";
+  const body = rows
+    .slice()
+    .sort((a, b) => b.reach[a.reach.length - 1] - a.reach[a.reach.length - 1] || a.seed - b.seed)
+    .map((r) => `<tr><td>${r.seed}</td><td>${esc(short(r.name))}</td><td>${pct(r.reach[1])}</td><td>${pct(r.reach[2])}</td><td>${pct(r.reach[3])}</td><td>${pct(r.reach[4])}</td></tr>`)
+    .join("");
+  $("cupResult").innerHTML = `<div class="table-wrap"><table class="cup-table"><thead><tr><th>Seed</th><th>Team</th><th>Quarter-final</th><th>Semi-final</th><th>Final</th><th>Winner</th></tr></thead><tbody>${body}</tbody></table></div><p class="fine-print">Chance each team reaches each round. Rows are ordered by seed.</p>`;
+}
+document.addEventListener("click", (event) => {
+  const run = event.target.closest && event.target.closest("#cupRun");
+  if (run) runCupSim(run.dataset.cup);
+});
+// Short welcome on first visit, dismissed for good once closed.
+function onboardingHTML() {
+  let seen = false;
+  try { seen = localStorage.getItem("touchlineWelcome") === "1"; } catch {}
+  if (seen || state.competition !== "premier_league") return "";
+  return `<section class="panel panel-pad welcome"><div class="mini-label">WELCOME</div><h2>Every match, with a model's view.</h2><p class="fine-print">Pick a competition on the left. Each fixture shows the predicted winner and why. Open a match for its analysis and simulation, or try the knockout simulator in the Champions League.</p><button class="text-button" id="welcomeDismiss">Got it</button></section>`;
+}
+document.addEventListener("click", (event) => {
+  if (event.target.closest && event.target.closest("#welcomeDismiss")) {
+    try { localStorage.setItem("touchlineWelcome", "1"); } catch {}
+    document.querySelector(".welcome")?.remove();
+  }
+});
 function previewHTML(l, m) {
   const key = [l.key, m.date, m.home, m.away].join("|"),
     text = previews[key],
@@ -428,7 +480,7 @@ function renderMatches() {
     )
     .join("");
   $("content").innerHTML =
-    `<div class="matchday-intro"><span class="status-dot"></span><span>${data.leagues.length} competitions · ${Object.keys(catalog.teams).length} teams</span><span class="timezone-note">Your time · ${esc(localZone.replaceAll('_',' '))} · AM / PM</span></div><div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(anticipatedRow(rows))}${storylinesHTML()}${leadersHTML()}${recapsHTML()}</aside></div>`;
+    `${onboardingHTML()}${cupSimHTML()}<div class="matchday-intro"><span class="status-dot"></span><span>${data.leagues.length} competitions · ${Object.keys(catalog.teams).length} teams</span><span class="timezone-note">Your time · ${esc(localZone.replaceAll('_',' '))} · AM / PM</span></div><div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(anticipatedRow(rows))}${storylinesHTML()}${leadersHTML()}${recapsHTML()}</aside></div>`;
 }
 function probabilities(p) {
   return `<div class="prob-bar" aria-hidden="true"><span style="width:${p.home_win * 100}%"></span><span style="width:${p.draw * 100}%"></span><span style="width:${p.away_win * 100}%"></span></div><div class="prob-labels"><span>Home <strong>${pct(p.home_win)}</strong></span><span>Draw <strong>${pct(p.draw)}</strong></span><span>Away <strong>${pct(p.away_win)}</strong></span></div>`;

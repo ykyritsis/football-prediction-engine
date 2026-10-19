@@ -2539,3 +2539,12 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .featured button { background: var(--navy); color: #fff; }
 
 .watch-meta { color: var(--muted); font-size: .78rem; margin-top: 2px; }
+
+/* Cup simulator and welcome card */
+.cup-sim { margin-bottom: 16px; }
+.cup-sim .primary { margin-top: 10px; }
+.cup-table { width: 100%; border-collapse: collapse; font-size: .88rem; margin-top: 12px; }
+.cup-table th, .cup-table td { padding: 7px 8px; text-align: left; border-bottom: 1px solid var(--line); }
+.cup-table th { color: var(--muted); font-weight: 600; font-size: .75rem; letter-spacing: .03em; }
+.welcome { margin-bottom: 16px; border-left: 4px solid var(--red); }
+.welcome h2 { margin: 4px 0 6px; }
