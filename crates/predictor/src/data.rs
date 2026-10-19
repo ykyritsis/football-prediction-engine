@@ -15,6 +15,22 @@ pub struct Match {
     pub neutral: bool,
     /// Shots, corners, cards and so on, when known (see [`crate::stats`]).
     pub stats: Option<crate::stats::Stats>,
+    /// Which competition this match belongs to when several are fitted
+    /// together (see [`crate::model::Pooling`]). Always 0 when loaded.
+    pub comp: u16,
+}
+
+/// A club name without the feed's `ESPN:<id>:` prefix, so the same club
+/// matches across competitions whose files name it differently.
+pub fn canonical_name(name: &str) -> &str {
+    if let Some(rest) = name.strip_prefix("ESPN:") {
+        if let Some((id, club)) = rest.split_once(':') {
+            if !id.is_empty() && id.bytes().all(|c| c.is_ascii_digit()) {
+                return club;
+            }
+        }
+    }
+    name
 }
 
 #[derive(Deserialize)]
@@ -59,6 +75,7 @@ pub fn parse_season(json: &str) -> Result<Vec<Match>, String> {
                 score,
                 neutral: m.neutral,
                 stats: None,
+                comp: 0,
             })
         })
         .collect())
@@ -136,6 +153,13 @@ mod tests {
         assert_eq!(add_days("2024-02-27", 3), "2024-03-01");
         assert_eq!(add_days("2025-12-30", 5), "2026-01-04");
         assert_eq!(day_number("2026-01-04") - day_number("2025-12-30"), 5);
+    }
+
+    #[test]
+    fn canonical_names_drop_the_feed_prefix() {
+        assert_eq!(canonical_name("ESPN:153:FC Utrecht"), "FC Utrecht");
+        assert_eq!(canonical_name("ESPN:x:Odd"), "ESPN:x:Odd");
+        assert_eq!(canonical_name("Arsenal FC"), "Arsenal FC");
     }
 
     #[test]

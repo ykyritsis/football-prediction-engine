@@ -377,6 +377,7 @@ mod tests {
                         yellows: (yh, ya),
                         ..Stats::default()
                     }),
+                    comp: 0,
                 });
             }
         }

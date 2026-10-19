@@ -1,5 +1,9 @@
 //! Browser-facing forecasts. Historical rows are reconstructed, not archived forecasts.
-use crate::{data::add_days, Match, Model, ModelConfig, Prediction};
+use crate::{
+    data::{add_days, canonical_name},
+    model::Pooling,
+    Match, Model, ModelConfig, Prediction,
+};
 use serde::Serialize;
 use std::collections::{BTreeMap, BTreeSet};
 
@@ -11,37 +15,40 @@ pub struct FormAdjustment {
 
 /// Conservative residual adjustments against the base model, using only earlier
 /// results. Pseudo-goals shrink short runs; caps prevent five games dominating.
+/// With `pooling`, a club's last five games count whichever competition they
+/// were in, and the scoring level is calibrated on the target competition only.
 fn current_model(
     history: &[Match],
     before: &str,
     cfg: &ModelConfig,
+    pooling: Option<&Pooling>,
 ) -> (Model, BTreeMap<String, FormAdjustment>, f64, usize) {
-    let mut model = Model::fit(history, before, cfg);
+    let mut model = Model::fit_with(history, before, cfg, pooling);
     let base = model.clone();
+    let target = pooling.map_or(0, |p| p.target);
+    let comp_of = |m: &Match| if pooling.is_some() { m.comp as usize } else { 0 };
+    // Each club's played matches, in history order.
+    let mut by_team: BTreeMap<&str, Vec<&Match>> = BTreeMap::new();
+    for m in history
+        .iter()
+        .filter(|m| m.date.as_str() < before && m.score.is_some())
+    {
+        by_team.entry(m.home.as_str()).or_default().push(m);
+        by_team.entry(m.away.as_str()).or_default().push(m);
+    }
     let mut adjustments = BTreeMap::new();
     for name in base.teams.keys() {
-        let mut games: Vec<_> = history
-            .iter()
-            .filter(|m| {
-                m.date.as_str() < before
-                    && m.score.is_some()
-                    && (m.home == *name || m.away == *name)
-            })
-            .collect();
+        let mut games = by_team.get(name.as_str()).cloned().unwrap_or_default();
         games.sort_by(|a, b| b.date.cmp(&a.date));
         games.truncate(5);
         let mut totals = [0.0; 4];
         for m in &games {
-            let p = if m.neutral {
-                base.predict_neutral(&m.home, &m.away)
-            } else {
-                base.predict(&m.home, &m.away)
-            };
+            let (xh, xa) = base.rates_in(comp_of(m), &m.home, &m.away, m.neutral);
             let (h, a) = m.score.unwrap();
             let r = if m.home == *name {
-                [h as f64, a as f64, p.home_xg, p.away_xg]
+                [h as f64, a as f64, xh, xa]
             } else {
-                [a as f64, h as f64, p.away_xg, p.home_xg]
+                [a as f64, h as f64, xa, xh]
             };
             for i in 0..4 {
                 totals[i] += r[i];
@@ -71,18 +78,16 @@ fn current_model(
     let mut actual = 0.0;
     let mut expected = 0.0;
     let mut count = 0;
-    for m in history
-        .iter()
-        .filter(|m| m.date >= start && m.date.as_str() < before && m.score.is_some())
-    {
-        let p = if m.neutral {
-            model.predict_neutral(&m.home, &m.away)
-        } else {
-            model.predict(&m.home, &m.away)
-        };
+    for m in history.iter().filter(|m| {
+        m.date >= start
+            && m.date.as_str() < before
+            && m.score.is_some()
+            && comp_of(m) == target
+    }) {
+        let (xh, xa) = model.rates_in(target, &m.home, &m.away, m.neutral);
         let (h, a) = m.score.unwrap();
         actual += h as f64 + a as f64;
-        expected += p.home_xg + p.away_xg;
+        expected += xh + xa;
         count += 1;
     }
     let factor = if count >= 20 && expected > 0.0 {
@@ -119,6 +124,93 @@ pub const LEAGUES: [(&str, &str); 22] = [
     ("gold_cup", "Gold Cup"),
     ("concacaf_nations", "Concacaf Nations League"),
 ];
+
+/// Club cups, fitted together with the domestic leagues.
+pub fn is_club_cup(key: &str) -> bool {
+    matches!(
+        key,
+        "champions_league" | "europa_league" | "conference_league" | "club_world_cup"
+    )
+}
+
+/// Every domestic league, in `LEAGUES` order.
+fn is_domestic(key: &str) -> bool {
+    !is_international(key) && !is_club_cup(key)
+}
+
+/// All club competitions as one training set for the club cups: each domestic
+/// league and cup is a competition with its own goal level, club names are
+/// canonical so one club is one club everywhere, and each club belongs to the
+/// domestic league it plays most in (clubs from leagues outside the data share
+/// a last group).
+pub struct ClubPool {
+    pub matches: Vec<Match>,
+    comps: Vec<&'static str>,
+    groups: BTreeMap<String, usize>,
+}
+
+impl ClubPool {
+    /// `loaded` maps each competition key to its results.
+    pub fn new(loaded: &BTreeMap<String, Vec<Match>>) -> ClubPool {
+        let comps: Vec<&'static str> = LEAGUES
+            .iter()
+            .map(|(key, _)| *key)
+            .filter(|key| is_domestic(key))
+            .chain(LEAGUES.iter().map(|(key, _)| *key).filter(|key| is_club_cup(key)))
+            .collect();
+        let mut matches = Vec::new();
+        let mut played: BTreeMap<String, BTreeMap<usize, usize>> = BTreeMap::new();
+        for (index, key) in comps.iter().enumerate() {
+            for m in loaded.get(*key).map(Vec::as_slice).unwrap_or_default() {
+                let mut m = m.clone();
+                m.home = canonical_name(&m.home).to_string();
+                m.away = canonical_name(&m.away).to_string();
+                m.comp = index as u16;
+                if is_domestic(key) {
+                    for team in [&m.home, &m.away] {
+                        *played.entry(team.clone()).or_default().entry(index).or_default() += 1;
+                    }
+                }
+                matches.push(m);
+            }
+        }
+        matches.sort_by(|a, b| a.date.cmp(&b.date));
+        let groups = played
+            .into_iter()
+            .filter_map(|(team, counts)| {
+                counts
+                    .into_iter()
+                    .max_by_key(|&(index, count)| (count, std::cmp::Reverse(index)))
+                    .map(|(index, _)| (team, index))
+            })
+            .collect();
+        ClubPool { matches, comps, groups }
+    }
+
+    /// Pooling that predicts competition `key`, if it is part of the pool.
+    pub fn pooling(&self, key: &str) -> Option<Pooling> {
+        let target = self.comps.iter().position(|c| *c == key)?;
+        let other = self.comps.iter().filter(|c| is_domestic(c)).count();
+        Some(Pooling {
+            groups: self.groups.clone(),
+            default_group: other,
+            n_groups: other + 1,
+            target,
+        })
+    }
+}
+
+/// Pooled fits know clubs by canonical name; register the feed's own names too.
+fn alias_feed_names(model: &mut Model, feed_names: &BTreeSet<String>) {
+    for name in feed_names {
+        let canonical = canonical_name(name);
+        if canonical != name {
+            if let Some(strength) = model.teams.get(canonical).copied() {
+                model.teams.insert(name.clone(), strength);
+            }
+        }
+    }
+}
 
 pub fn is_international(key: &str) -> bool {
     matches!(key, "world_cup" | "european_championship" | "nations_league"
@@ -242,6 +334,8 @@ pub struct League {
     pub scoring_sample: usize,
     pub archive: Vec<ArchivedMatch>,
     pub shared_international_model: bool,
+    /// Club cup fitted together with the domestic leagues (see [`ClubPool`]).
+    pub pooled_club_model: bool,
     pub training_pool_matches: usize,
 }
 
@@ -265,6 +359,24 @@ pub fn build_league_with_training(
     key: &str, name: &str, all: &[Match], training_all: &[Match], as_of: &str,
     from: &str, cfg: &ModelConfig, eligible: Option<&[String]>,
 ) -> League {
+    build_league_pooled(key, name, all, training_all, None, as_of, from, cfg, eligible)
+}
+
+/// [`build_league_with_training`] with the model fitted on several competitions
+/// together (`training_all` then holds all of them and `pooling` says which one
+/// this league is). Archive, fixtures and season tables stay competition scoped.
+pub fn build_league_pooled(
+    key: &str, name: &str, all: &[Match], training_all: &[Match], pooling: Option<&Pooling>,
+    as_of: &str, from: &str, cfg: &ModelConfig, eligible: Option<&[String]>,
+) -> League {
+    // Pooled training data uses canonical club names.
+    let lookup = |t: &str| -> String {
+        if pooling.is_some() { canonical_name(t).to_string() } else { t.to_string() }
+    };
+    let feed_names: BTreeSet<String> = all
+        .iter()
+        .flat_map(|m| [m.home.clone(), m.away.clone()])
+        .collect();
     let history: Vec<_> = all
         .iter()
         .filter(|m| m.score.is_some() && m.date.as_str() < as_of)
@@ -287,7 +399,11 @@ pub fn build_league_with_training(
     }
     let training_history: Vec<_> = training_all.iter()
         .filter(|m| m.score.is_some() && m.date.as_str() < as_of).cloned().collect();
-    let (model, adjustments, scoring_factor, scoring_sample) = current_model(&training_history, as_of, cfg);
+    let (mut model, adjustments, scoring_factor, scoring_sample) =
+        current_model(&training_history, as_of, cfg, pooling);
+    if pooling.is_some() {
+        alias_feed_names(&mut model, &names.iter().chain(&feed_names).cloned().collect());
+    }
     let teams = names
         .iter()
         .map(|t| {
@@ -307,16 +423,19 @@ pub fn build_league_with_training(
                 })
                 .collect();
             Team {
-                form_adjustment: adjustments.get(t).copied().unwrap_or(FormAdjustment {
+                form_adjustment: adjustments.get(&lookup(t)).copied().unwrap_or(FormAdjustment {
                     attack: 1.0,
                     defence: 1.0,
                 }),
                 name: t.clone(),
-                form: recent_form(&training_history, t, as_of),
-                history_matches: training_history
-                    .iter()
-                    .filter(|m| m.home == *t || m.away == *t)
-                    .count(),
+                form: recent_form(&training_history, &lookup(t), as_of),
+                history_matches: {
+                    let t = lookup(t);
+                    training_history
+                        .iter()
+                        .filter(|m| m.home == t || m.away == t)
+                        .count()
+                },
                 played: scores.len(),
                 wins: scores.iter().filter(|(h, a)| h > a).count(),
                 draws: scores.iter().filter(|(h, a)| h == a).count(),
@@ -379,7 +498,10 @@ pub fn build_league_with_training(
             .collect();
         // Avoid reporting an unfitted prior as a measured prediction.
         if training.len() >= 100 {
-            let (fitted, _, _, _) = current_model(&training, start, cfg);
+            let (mut fitted, _, _, _) = current_model(&training, start, cfg, pooling);
+            if pooling.is_some() {
+                alias_feed_names(&mut fitted, &feed_names);
+            }
             for m in history
                 .iter()
                 .filter(|m| m.date.as_str() >= start && m.date < end)
@@ -428,6 +550,7 @@ pub fn build_league_with_training(
         scoring_factor,
         scoring_sample,
         shared_international_model: is_international(key),
+        pooled_club_model: pooling.is_some(),
         training_pool_matches: training_history.len(),
     }
 }
@@ -443,6 +566,7 @@ mod tests {
             score: Some(score),
             neutral: false,
             stats: None,
+            comp: 0,
         }
     }
     #[test]
@@ -522,7 +646,7 @@ mod tests {
             games.push(game(&add_days("2026-08-01", i), (0, 4)));
         }
         let cfg = ModelConfig::default();
-        let (first, a, factor, count) = current_model(&games, "2026-08-06", &cfg);
+        let (first, a, factor, count) = current_model(&games, "2026-08-06", &cfg, None);
         assert!(a["A"].attack < 1.0);
         assert!(a["A"].defence < 1.0);
         assert!(a
@@ -532,7 +656,7 @@ mod tests {
         assert_eq!(factor, 1.0); // Too few recent matches to calibrate the league.
         games.push(game("2026-08-06", (20, 0)));
         games.push(game("2026-09-01", (20, 0)));
-        let (second, _, _, _) = current_model(&games, "2026-08-06", &cfg);
+        let (second, _, _, _) = current_model(&games, "2026-08-06", &cfg, None);
         assert_eq!(
             first.predict("A", "B").scores,
             second.predict("A", "B").scores

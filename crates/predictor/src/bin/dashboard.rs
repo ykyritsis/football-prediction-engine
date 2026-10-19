@@ -5,6 +5,7 @@ use predictor::{
     load_league, stats, ModelConfig,
 };
 use serde_json::json;
+use std::collections::BTreeMap;
 use std::path::PathBuf;
 
 fn run() -> Result<(), String> {
@@ -40,16 +41,30 @@ fn run() -> Result<(), String> {
     }
     national_history.sort_by(|a,b| (&a.date,&a.home,&a.away).cmp(&(&b.date,&b.home,&b.away)));
     national_history.dedup_by(|a,b| a.date == b.date && a.home == b.home && a.away == b.away);
+    // Club cups are fitted together with the domestic leagues, so a club's league
+    // games count towards its European odds.
+    let mut loaded = BTreeMap::new();
+    for (key, _) in LEAGUES.iter().filter(|(key, _)| !dashboard::is_international(key)) {
+        let mut results = load_league(&dir, key)?;
+        stats::attach(&dir.parent().unwrap_or(&dir).join("stats"), key, &mut results);
+        loaded.insert(key.to_string(), results);
+    }
+    let club_pool = dashboard::ClubPool::new(&loaded);
     for (key, name) in LEAGUES {
         eprintln!("Building {name}...");
-        let mut all = load_league(&dir, key)?;
+        let mut all = match loaded.get(key) {
+            Some(results) => results.clone(),
+            None => load_league(&dir, key)?,
+        };
         if all.is_empty() && ["premier_league", "la_liga", "serie_a", "bundesliga", "ligue_1"].contains(&key) {
             return Err(format!("No results found for {name} in {}", dir.display()));
         }
         if all.iter().any(|m| !dashboard::valid_date(&m.date)) {
             return Err(format!("Invalid match date in {name}"));
         }
-        stats::attach(&dir.parent().unwrap_or(&dir).join("stats"), key, &mut all);
+        if !loaded.contains_key(key) {
+            stats::attach(&dir.parent().unwrap_or(&dir).join("stats"), key, &mut all);
+        }
         let eligible: Option<Vec<String>> = catalog["teams"]
             .as_object()
             .map(|teams| {
@@ -64,11 +79,19 @@ fn run() -> Result<(), String> {
                     .collect()
             })
             .filter(|v: &Vec<String>| !v.is_empty());
-        leagues.push(dashboard::build_league_with_training(
+        let pooling = if dashboard::is_club_cup(key) { club_pool.pooling(key) } else { None };
+        leagues.push(dashboard::build_league_pooled(
             key,
             name,
             &all,
-            if dashboard::is_international(key) { &national_history } else { &all },
+            if pooling.is_some() {
+                &club_pool.matches
+            } else if dashboard::is_international(key) {
+                &national_history
+            } else {
+                &all
+            },
+            pooling.as_ref(),
             as_of,
             &from,
             &cfg,

@@ -89,7 +89,7 @@ const outcomeOf = (h, a) => (h > a ? 0 : h === a ? 1 : 2);
 function outcomeBadge(m) {
   const probs = [m.prediction.home_win, m.prediction.draw, m.prediction.away_win],
     argmax = probs.indexOf(Math.max(...probs)),
-    scoreline = m.prediction.most_likely_score ? outcomeOf(...m.prediction.most_likely_score) : argmax,
+    scoreline = (m.prediction.predicted_score||m.prediction.most_likely_score) ? outcomeOf(...(m.prediction.predicted_score||m.prediction.most_likely_score)) : argmax,
     actual = outcomeOf(m.actual[0], m.actual[1]),
     correct = actual === argmax || actual === scoreline,
     picked = actual === scoreline ? scoreline : argmax;
