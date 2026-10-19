@@ -2548,3 +2548,27 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .cup-table th { color: var(--muted); font-weight: 600; font-size: .75rem; letter-spacing: .03em; }
 .welcome { margin-bottom: 16px; border-left: 4px solid var(--red); }
 .welcome h2 { margin: 4px 0 6px; }
+
+/* Season history and trophies */
+.season-hub { display: grid; gap: 16px; }
+.season-chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 8px; }
+.season-chip { flex: 0 0 auto; text-align: left; border: 1px solid var(--line); background: #fff; border-radius: 10px; padding: 8px 12px; cursor: pointer; display: grid; gap: 2px; min-width: 110px; }
+.season-chip span { font-size: .72rem; color: var(--muted); }
+.season-chip strong { font-size: .9rem; color: var(--ink); }
+.season-chip.active { background: var(--navy); border-color: var(--navy); }
+.season-chip.active span, .season-chip.active strong { color: #fff; }
+.season-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
+.season-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.season-table th, .season-table td { padding: 8px 6px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; }
+.season-table th:nth-child(1), .season-table td:nth-child(1), .season-table th:nth-child(2), .season-table td:nth-child(2) { text-align: left; }
+.season-table th { color: var(--muted); font-size: .72rem; font-weight: 650; letter-spacing: .03em; }
+.season-table tr.champ td { background: rgba(29,120,91,.08); }
+.season-table tr.top4 td:first-child { border-left: 3px solid var(--blue); }
+.club-cell { display: flex; align-items: center; gap: 8px; }
+.title-row { display: grid; grid-template-columns: 18px 22px minmax(0,1fr) 70px 26px; align-items: center; gap: 8px; padding: 7px 0; border-top: 1px solid var(--line); font-size: .88rem; }
+.title-row:first-of-type { border-top: 0; }
+.title-rank { color: var(--muted); font-size: .75rem; }
+.title-bar { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.title-bar i { display: block; height: 100%; background: var(--red); border-radius: 999px; }
+.title-row b { text-align: right; }
+@media (max-width: 900px) { .season-grid { grid-template-columns: 1fr; } }

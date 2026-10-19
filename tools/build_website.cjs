@@ -32,6 +32,9 @@ console.log(require("./package_website.cjs").packageWebsite(output));
 require("./ai_previews.cjs").run(output).catch((err) => console.error("previews skipped:", err.message));
 require("./ai_recaps.cjs").run(output).catch((err) => console.error("recaps skipped:", err.message));
 require("./ai_extras.cjs").run(output).catch((err) => console.error("extras skipped:", err.message));
+fs.mkdirSync(path.join(output, "assets"), { recursive: true });
+const historySource = path.join(root, "data", "history", "standings.json");
+if (fs.existsSync(historySource)) fs.copyFileSync(historySource, path.join(output, "assets", "history.json"));
 fs.writeFileSync(path.join(output, ".nojekyll"), "");
 fs.writeFileSync(
   path.join(output, "edition.json"),

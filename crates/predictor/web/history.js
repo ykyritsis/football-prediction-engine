@@ -148,7 +148,7 @@ function tablesHTML(d) {
       .join("") + tmCaption(d.updatedAt)
   );
 }
-function renderSeasons() {
+function renderSeasonsLegacy() {
   if (state.competition === "all") {
     state.competition = "premier_league";
     renderNavigation();
@@ -213,3 +213,62 @@ function renderSeasons() {
       });
   }
 }
+
+// ---- Season history and trophies (2000 to 2025), from assets/history.json ----
+let seasonHistory = {};
+const HISTORY_KEYS = ["premier_league", "la_liga", "serie_a", "bundesliga", "ligue_1", "primeira_liga", "eredivisie", "belgian_pro_league", "super_lig"];
+function seasonLabel(y) { return y + "–" + String(Number(y) + 1).slice(2); }
+function titleLeaders() {
+  const out = {};
+  for (const k of HISTORY_KEYS)
+    for (const y of Object.keys(seasonHistory[k] || {})) {
+      const champ = seasonHistory[k][y][0];
+      if (!champ) continue;
+      const e = (out[champ.team] ||= { total: 0, byLeague: {} });
+      e.total += 1;
+      e.byLeague[k] = (e.byLeague[k] || 0) + 1;
+    }
+  return Object.entries(out).sort((a, b) => b[1].total - a[1].total || a[0].localeCompare(b[0]));
+}
+function renderSeasons() {
+  if (state.competition === "all") {
+    state.competition = "premier_league";
+    renderNavigation();
+  }
+  const l = selectedLeague();
+  heading("SEASONS & TROPHIES", l.name, "Champions, final tables and title winners back to 2000.");
+  if (!HISTORY_KEYS.includes(l.key)) {
+    $("content").innerHTML = '<div class="empty">Season history is not available for this competition yet. Pick a domestic league.</div>';
+    return;
+  }
+  const byYear = seasonHistory[l.key] || {};
+  const seasons = Object.keys(byYear).sort((a, b) => b - a);
+  if (!seasons.length) {
+    $("content").innerHTML = '<div class="empty">History for this league has not loaded yet. Try again in a moment.</div>';
+    return;
+  }
+  if (!state.season || !byYear[state.season]) state.season = seasons[0];
+  const sel = state.season;
+  const rows = byYear[sel] || [];
+  const chips = seasons
+    .map((y) => {
+      const c = byYear[y][0];
+      return `<button class="season-chip ${y === sel ? "active" : ""}" data-season="${y}"><span>${seasonLabel(y)}</span><strong>${esc(short(c.team))}</strong></button>`;
+    })
+    .join("");
+  const table = `<div class="table-wrap"><table class="season-table"><thead><tr><th>#</th><th>Club</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr></thead><tbody>${rows
+    .map((r) => `<tr class="${r.pos === 1 ? "champ" : r.pos <= 4 ? "top4" : ""}"><td>${r.pos}</td><td class="club-cell">${crest(r.team)}<span>${esc(short(r.team))}</span></td><td>${r.gp}</td><td>${r.w}</td><td>${r.d}</td><td>${r.l}</td><td>${r.gf}</td><td>${r.ga}</td><td>${r.gd > 0 ? "+" : ""}${r.gd}</td><td><strong>${r.pts}</strong></td></tr>`)
+    .join("")}</tbody></table></div>`;
+  const leaders = titleLeaders().slice(0, 12);
+  const top = leaders[0] ? leaders[0][1].total : 1;
+  const board = leaders
+    .map(([team, v], i) => `<div class="title-row"><span class="title-rank">${i + 1}</span>${crest(team)}<strong>${esc(short(team))}</strong><span class="title-bar"><i style="width:${Math.round((v.total / top) * 100)}%"></i></span><b>${v.total}</b></div>`)
+    .join("");
+  $("content").innerHTML = `<div class="season-hub"><div class="panel panel-pad"><div class="mini-label">CHAMPIONS BY SEASON</div><div class="season-chips">${chips}</div></div><div class="season-grid"><section class="panel panel-pad"><div class="section-head"><h2>${seasonLabel(sel)}</h2><small>${esc(l.name)} · final table</small></div>${table}</section><aside class="panel panel-pad"><div class="mini-label">TITLE LEADERS · DOMESTIC LEAGUES, 2000–2025</div>${board}</aside></div></div>`;
+}
+document.addEventListener("click", (event) => {
+  const chip = event.target.closest && event.target.closest(".season-chip");
+  if (!chip) return;
+  state.season = chip.dataset.season;
+  render();
+});

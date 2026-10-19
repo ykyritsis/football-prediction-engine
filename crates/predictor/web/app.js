@@ -787,6 +787,7 @@ render();
 fetch(new URL("assets/previews.json", document.baseURI)).then(r => (r.ok ? r.json() : {})).then(p => { previews = p; render(); }).catch(() => {});
 fetch(new URL("assets/why.json", document.baseURI)).then(r => (r.ok ? r.json() : {})).then(p => { why = p; render(); }).catch(() => {});
 fetch(new URL("assets/storylines.json", document.baseURI)).then(r => (r.ok ? r.json() : [])).then(p => { storylines = p; render(); }).catch(() => {});
+fetch(new URL("assets/history.json", document.baseURI)).then(r => (r.ok ? r.json() : {})).then(p => { seasonHistory = p; render(); }).catch(() => {});
 
 // Ask about a match: the page sends only the facts it already shows; the server answers from those.
 document.addEventListener("submit", async (event) => {
