@@ -13,6 +13,7 @@ const cacheFile = path.join(root, "data", "ai", "extras.json");
 const site = require(path.join(root, "data", "catalog", "site.json"));
 const WINDOW_DAYS = 10;
 const MAX_NEW_PER_RUN = 16;
+const MAX_STORYLINES_PER_RUN = 24;
 
 function dashboardData(distDir) {
   const html = fs.readFileSync(path.join(distDir, "index.html"), "utf8");
@@ -117,6 +118,7 @@ async function run(distDir) {
     console.log("DEEPSEEK_API_KEY not set: using cached AI extras only");
   } else {
     let generated = 0;
+    let storyGenerated = 0;
     for (const job of whyJobs) {
       const { key, prompt } = whyPrompt(job.league, job.m);
       if (cache.why[key]?.text || generated >= MAX_NEW_PER_RUN) continue;
@@ -129,16 +131,16 @@ async function run(distDir) {
       }
     }
     for (const job of storyJobs) {
-      if (cache.storylines[job.key]?.text || generated >= MAX_NEW_PER_RUN) continue;
+      if (cache.storylines[job.key]?.text || storyGenerated >= MAX_STORYLINES_PER_RUN) continue;
       try {
         const text = await complete(storyPrompt(job.league, job.team, job.kind, job.form), apiKey);
         if (text) cache.storylines[job.key] = { text, kind: job.kind, generated_at: new Date().toISOString() };
-        generated += 1;
+        storyGenerated += 1;
       } catch (err) {
         console.error(`storyline skipped for ${job.team}: ${err.message}`);
       }
     }
-    console.log(`generated ${generated} new AI extra(s)`);
+    console.log(`generated ${generated} new match note(s) and ${storyGenerated} storyline(s)`);
   }
 
   fs.mkdirSync(path.dirname(cacheFile), { recursive: true });
