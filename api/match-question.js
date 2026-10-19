@@ -56,6 +56,8 @@ Home team: ${clean(f.home)}
 Away team: ${clean(f.away)}
 Model forecast: home win ${pct(probs.home_win)}, draw ${pct(probs.draw)}, away win ${pct(probs.away_win)}.
 Most likely score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
+Kick-off: ${clean(f.kickoff, 60) || "not available"}
+Home ground: ${clean(f.venue, 120) || "not available"}
 Head-to-head in the archive: ${clean(f.head_to_head, 400) || "no recent meetings in the archive"}
 Home team context: ${teamLine(f.home_context)}
 Away team context: ${teamLine(f.away_context)}

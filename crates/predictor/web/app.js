@@ -357,6 +357,8 @@ function previewHTML(l, m) {
       home_context: teamContext(l, m.home),
       away_context: teamContext(l, m.away),
       head_to_head: headToHead(l, m) || null,
+      kickoff: (() => { const k = matchTime(l, m); return [k.date, k.time, k.label].filter(Boolean).join(" "); })(),
+      venue: (() => { const v = Object.values(catalog.teams).find((t) => t.name === m.home)?.venue; return v ? [v.name, v.city, v.country].filter(Boolean).join(", ") : null; })(),
     };
   const whyText = why[key];
   const whyLine = whyText ? `<p class="ai-why"><span class="ai-badge">WHY</span> ${esc(whyText)}</p>` : "";
