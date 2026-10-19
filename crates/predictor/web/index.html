@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="theme-color" content="#101d35" />
+    <meta name="theme-color" content="#06140f" />
+    <meta name="description" content="Touchline: fixtures, match predictions, simulations and player data across 22 football competitions, powered by a Dixon–Coles model written in Rust." />
     <title>Touchline — Football intelligence</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2306140f'/%3E%3Cpath d='M8 8h16v4.4h-5.8V24h-4.4V12.4H8Z' fill='%23c6f36b'/%3E%3Ccircle cx='24' cy='24' r='3' fill='%23c6f36b'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;550;600;650;700;750;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,600..900&family=Inter:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style>
@@ -18,33 +20,29 @@
   <body>
     <header class="masthead">
       <a class="wordmark" href="#" aria-label="Touchline home"
-        ><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#f05b46"/><path d="M7 8h18v4.5h-6.75V24h-4.5V12.5H7Z" fill="#ffffff"/><circle cx="24.5" cy="24.5" r="3.2" fill="#ffffff"/></svg
-        >TOUCHLINE</a
-      ><span class="masthead-sub">FOOTBALL INTELLIGENCE</span>
+        ><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#c6f36b"/><path d="M8 8h16v4.4h-5.8V24h-4.4V12.4H8Z" fill="#06140f"/><circle cx="24" cy="24" r="3" fill="#06140f"/></svg
+        ><span>Touchline</span></a
+      >
+      <nav class="topnav" aria-label="Main navigation">
+        <button data-view="matches" class="active">Matches</button
+        ><button data-view="table">Tables</button
+        ><button data-view="clubs">Teams</button
+        ><button data-view="players">Players</button
+        ><button data-view="simulator">Simulator</button
+        ><button data-view="history">Accuracy</button
+        ><button data-view="seasons">History</button
+        ><button data-view="about">About</button>
+      </nav>
       <div class="masthead-date" id="snapshot"></div>
     </header>
-    <nav class="topnav" aria-label="Main navigation">
-      <button data-view="matches" class="active">Matches</button
-      ><button data-view="table">Tables</button
-      ><button data-view="clubs">Teams</button
-      ><button data-view="players">Players</button
-      ><button data-view="simulator">Simulator</button
-      ><button data-view="history">Model results</button
-      ><button data-view="seasons">Seasons & history</button
-      ><button data-view="about">About the data</button>
-    </nav>
     <div class="shell">
       <aside class="sidebar">
         <div class="sidebar-label">COMPETITIONS</div>
         <div id="competitions"></div>
-        <div class="sidebar-note">
-          <span class="status-dot"></span> Match predictions<br /><small
-            >90 minutes · pre-match model</small
-          >
-        </div>
       </aside>
       <main>
-        <label class="mobile-competition field">Competition<select id="mobileCompetition" aria-label="Choose competition"></select></label>
+        <label class="mobile-competition field" hidden>Competition<select id="mobileCompetition" aria-label="Choose competition"></select></label>
+        <nav class="comp-chips" id="compChips" aria-label="Choose competition"></nav>
         <div class="page-heading">
           <div>
             <div class="eyebrow" id="eyebrow">MATCH CENTRE</div>
@@ -52,6 +50,7 @@
             <p id="subtitle">
               Fixtures, form and match predictions across world football.
             </p>
+            <div class="hero-stats" id="heroStats"></div>
           </div>
           <div class="season-label">2026/27<span>SEASON</span></div>
         </div>
@@ -84,10 +83,11 @@
         <div id="freshness"></div>
         <div id="content"></div>
         <footer>
-          <span
-            >TOUCHLINE <span class="footer-divider">/</span> Independent
-            football analysis</span
-          ><button data-view="about">Data sources & methodology ↗</button>
+          <div class="footer-brand">
+            <strong>Touchline</strong>
+            <span>Independent football analysis. Dixon–Coles forecasts written in Rust, simulated in your browser.</span>
+          </div>
+          <button data-view="about">Data sources & methodology →</button>
         </footer>
       </main>
     </div>
@@ -101,7 +101,7 @@
     <dialog id="navigationDialog" aria-label="More football sections">
       <button class="dialog-close" aria-label="Close navigation">×</button>
       <div class="eyebrow">EXPLORE TOUCHLINE</div><h2>More football.</h2>
-      <div class="navigation-links"><button data-view="table"><strong>League tables</strong><span>Points, positions and form →</span></button><button data-view="history"><strong>Model results</strong><span>Predictions against final scores →</span></button><button data-view="seasons"><strong>Seasons & history</strong><span>Explore the results archive →</span></button><button data-view="about"><strong>About the data</strong><span>Sources and how predictions work →</span></button></div>
+      <div class="navigation-links"><button data-view="table"><strong>League tables</strong><span>Points, positions and form →</span></button><button data-view="history"><strong>Model accuracy</strong><span>Predictions against final scores →</span></button><button data-view="seasons"><strong>Seasons & history</strong><span>Explore the results archive →</span></button><button data-view="about"><strong>About the data</strong><span>Sources and how predictions work →</span></button></div>
     </dialog>
     <dialog id="matchDialog" aria-label="Match prediction">
       <button class="dialog-close" aria-label="Close match details">×</button>
