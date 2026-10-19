@@ -357,7 +357,7 @@ function renderMatches() {
     )
     .join("");
   $("content").innerHTML =
-    `<div class="matchday-intro"><span class="status-dot"></span><span>${data.leagues.length} competitions · ${Object.keys(catalog.teams).length} teams</span><span class="timezone-note">Your time · ${esc(localZone.replaceAll('_',' '))} · AM / PM</span></div><div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(rows[0])}${leadersHTML()}</aside></div>`;
+    `${recapsHTML()}<div class="matchday-intro"><span class="status-dot"></span><span>${data.leagues.length} competitions · ${Object.keys(catalog.teams).length} teams</span><span class="timezone-note">Your time · ${esc(localZone.replaceAll('_',' '))} · AM / PM</span></div><div class="section-head"><h2>Fixtures & predictions</h2><small>${rows.length} matches</small></div><div class="content-grid"><div><div class="table-label"><span>Fixture</span><span>Predicted score / favourite</span></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}</div><aside class="right-column">${featureHTML(rows[0])}${leadersHTML()}</aside></div>`;
 }
 function probabilities(p) {
   return `<div class="prob-bar" aria-hidden="true"><span style="width:${p.home_win * 100}%"></span><span style="width:${p.draw * 100}%"></span><span style="width:${p.away_win * 100}%"></span></div><div class="prob-labels"><span>Home <strong>${pct(p.home_win)}</strong></span><span>Draw <strong>${pct(p.draw)}</strong></span><span>Away <strong>${pct(p.away_win)}</strong></span></div>`;
@@ -685,3 +685,4 @@ document.addEventListener("submit", async (event) => {
     out.textContent = "Could not reach the answer service.";
   }
 });
+fetch(new URL("assets/recaps.json", document.baseURI)).then(r => (r.ok ? r.json() : {})).then(p => { recaps = p; render(); }).catch(() => {});
