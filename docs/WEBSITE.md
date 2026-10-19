@@ -1,7 +1,7 @@
 # Website publishing
 
 The public Touchline website is a static build hosted on GitHub Pages:
-https://ykyritsis.github.io/football-prediction-engine/
+https://football-prediction-engine-cyan.vercel.app/
 
 The source repository stays private. The generated browser interface and its
 saved football data are public. No API keys or server processes are included.

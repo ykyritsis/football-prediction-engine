@@ -15,7 +15,7 @@
 22 competitions in one match centre. Refreshes itself daily, with AI-written previews for upcoming fixtures.</p>
 
 <p align="center">
-  <a href="https://ykyritsis.github.io/football-prediction-engine/"><strong>Open Touchline</strong></a> &nbsp;·&nbsp;
+  <a href="https://football-prediction-engine-cyan.vercel.app/"><strong>Open Touchline</strong></a> &nbsp;·&nbsp;
   <a href="#whats-inside">What's inside</a> &nbsp;·&nbsp;
   <a href="#how-it-works">How it works</a> &nbsp;·&nbsp;
   <a href="#build-and-run">Build and run</a> &nbsp;·&nbsp;
