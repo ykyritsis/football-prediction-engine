@@ -82,12 +82,39 @@ Return only a JSON object: {"text": "..."}`,
   };
 }
 
-function storyPrompt(league, team, kind, form) {
-  return `Write two neutral sentences about a football team's recent form for a fan website.
+function storyPrompt(league, team, kind, form, table, next) {
+  const nextLine = next ? `Next fixture: ${next.home} v ${next.away} on ${next.date}.` : "No upcoming fixture in the window.";
+  return `Write two neutral sentences about a football team's form for a fan website.
 Competition: ${league.name}. Team: ${team}. The team is on a ${kind === "hot" ? "good" : "poor"} run.
+League position: ${table.position} of ${table.size}, ${table.points} points, goal difference ${table.gd >= 0 ? "+" : ""}${table.gd}, record ${table.won}W ${table.drawn}D ${table.lost}L.
 Last five results, most recent last: ${form.map(formLine).join("; ")}.
+${nextLine}
 Use only these facts. Do not mention injuries, transfers, or anything not listed.
 Return only a JSON object: {"text": "..."}`;
+}
+
+// League table from the dashboard's team records: points, then goal difference, then goals scored.
+function leagueTable(league) {
+  const rows = (league.teams || []).map((t) => ({
+    name: t.name,
+    won: t.wins || 0,
+    drawn: t.draws || 0,
+    lost: t.losses || 0,
+    points: 3 * (t.wins || 0) + (t.draws || 0),
+    gd: (t.goals_for || 0) - (t.goals_against || 0),
+    gf: t.goals_for || 0,
+  }));
+  rows.sort((a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf);
+  const byName = new Map();
+  rows.forEach((r, i) => byName.set(r.name, { ...r, position: i + 1, size: rows.length }));
+  return byName;
+}
+
+// The team's next fixture in the league within the window, if any.
+function nextFixture(league, team) {
+  return (league.fixtures || [])
+    .filter((m) => m.date >= site.as_of && (m.home === team || m.away === team))
+    .sort((a, b) => (a.date < b.date ? -1 : 1))[0] || null;
 }
 
 async function run(distDir) {
@@ -105,13 +132,21 @@ async function run(distDir) {
     for (const m of league.fixtures || []) {
       if (m.date >= site.as_of && m.date <= end) whyJobs.push({ league, m });
     }
+    const table = leagueTable(league);
+    const candidates = [];
     for (const team of league.teams || []) {
       const form = (team.form || []).slice(-5);
       const wins = form.filter((f) => f.result === "W").length;
       const losses = form.filter((f) => f.result === "L").length;
       const kind = wins >= 4 ? "hot" : losses >= 4 ? "cold" : null;
-      if (kind) storyJobs.push({ league, team: team.name, kind, form, key: `${league.key}|${team.name}|${week}` });
+      if (!kind) continue;
+      const t = table.get(team.name);
+      // Hot runs near the top and cold runs near the bottom matter most.
+      const weight = kind === "hot" ? wins * 2 + (t.size - t.position) / t.size : losses * 2 + t.position / t.size;
+      candidates.push({ weight, league, team: team.name, kind, form, table: t, next: nextFixture(league, team.name), key: `${league.key}|${team.name}|${week}` });
     }
+    candidates.sort((a, b) => b.weight - a.weight);
+    storyJobs.push(...candidates.slice(0, 3));
   }
 
   if (!apiKey) {
@@ -133,7 +168,7 @@ async function run(distDir) {
     for (const job of storyJobs) {
       if (cache.storylines[job.key]?.text || storyGenerated >= MAX_STORYLINES_PER_RUN) continue;
       try {
-        const text = await complete(storyPrompt(job.league, job.team, job.kind, job.form), apiKey);
+        const text = await complete(storyPrompt(job.league, job.team, job.kind, job.form, job.table, job.next), apiKey);
         if (text) cache.storylines[job.key] = { text, kind: job.kind, generated_at: new Date().toISOString() };
         storyGenerated += 1;
       } catch (err) {
@@ -154,7 +189,7 @@ async function run(distDir) {
   }
   const storylines = storyJobs
     .filter((job) => cache.storylines[job.key]?.text)
-    .map((job) => ({ league: job.league.name, team: job.team, kind: job.kind, text: cache.storylines[job.key].text }));
+    .map((job) => ({ league: job.league.name, team: job.team, kind: job.kind, position: job.table.position, size: job.table.size, points: job.table.points, text: cache.storylines[job.key].text }));
 
   fs.mkdirSync(path.join(distDir, "assets"), { recursive: true });
   fs.writeFileSync(path.join(distDir, "assets", "why.json"), JSON.stringify(why));

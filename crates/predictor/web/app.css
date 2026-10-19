@@ -2537,3 +2537,5 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .featured .ai-badge { background: var(--navy); color: #fff; }
 .featured .match-ask input { background: #f5f6f8; color: var(--ink); border: 1px solid var(--line); }
 .featured button { background: var(--navy); color: #fff; }
+
+.watch-meta { color: var(--muted); font-size: .78rem; margin-top: 2px; }
