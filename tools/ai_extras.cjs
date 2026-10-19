@@ -70,12 +70,12 @@ function whyPrompt(league, m) {
   const awayForm = lastFive(league, m.away).map(formLine);
   return {
     key: [league.key, m.date, m.home, m.away].join("|"),
-    prompt: `Write one or two neutral sentences explaining what the forecast numbers suggest for this football fixture, for a fan website.
+    prompt: `Write one short sentence, under 30 words, saying what drives the forecast lean for this fixture. Do not list the percentages.
 Competition: ${league.name}. Date: ${m.date}. Home: ${m.home}. Away: ${m.away}.
 Model probabilities: home win ${(p.home_win * 100).toFixed(0)}%, draw ${(p.draw * 100).toFixed(0)}%, away win ${(p.away_win * 100).toFixed(0)}%.
 Most likely score: ${Number.isInteger(h) && Number.isInteger(a) ? h + "-" + a : "not available"}.
 Recent form, most recent last: ${m.home}: ${homeForm.join("; ") || "not available"}. ${m.away}: ${awayForm.join("; ") || "not available"}.
-Use only these facts. Do not mention injuries, transfers or anything else. Say this is a model forecast, not a prediction of the result.
+Use only these facts. Do not mention injuries, transfers or anything else.
 Return only a JSON object: {"text": "..."}`,
   };
 }
