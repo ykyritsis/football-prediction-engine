@@ -75,8 +75,9 @@ async function main(){
   const newHistory=!oldKeys.has(c.key);const files=new Map();let failed=false;
   const years=newHistory?Array.from({length:YEAR-2018+2},(_,i)=>2018+i):[YEAR];
   console.log('Match archive',c.name,years.length,'years');
-  await pool(years,async year=>{try{const u=feed(c.slug,`scoreboard?dates=${year}&limit=1000`),d=await get(u);if(!Array.isArray(d.events)||d.events.length>=1000)throw Error('Missing or truncated event list');for(const e of d.events)importEvent(e,c,newHistory?files:null);sources.push({competition:c.key,url:u,fetched_at:new Date().toISOString(),events:d.events.length});}catch(e){failed=true;throw e;}},3);
-  if(newHistory&&!failed)for(const [season,m] of files){const dir=path.join(ROOT,'data/results',season);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,c.key+'.json'),JSON.stringify({name:c.name,source:'ESPN',matches:[...m.values()].sort((a,b)=>a.date.localeCompare(b.date))},null,2)+'\n');}
+  await pool(years,async year=>{try{const u=feed(c.slug,`scoreboard?dates=${year}&limit=1000`),d=await get(u);if(!Array.isArray(d.events)||d.events.length>=1000)throw Error('Missing or truncated event list');for(const e of d.events)importEvent(e,c,files);sources.push({competition:c.key,url:u,fetched_at:new Date().toISOString(),events:d.events.length});}catch(e){failed=true;throw e;}},3);
+  // Merge this season's ESPN results into the saved file, so existing competitions stay current.
+  if(!failed)for(const [season,m] of files){const dir=path.join(ROOT,'data/results',season);fs.mkdirSync(dir,{recursive:true});const file=path.join(dir,c.key+'.json');const old=fs.existsSync(file)?(JSON.parse(fs.readFileSync(file,'utf8')).matches||[]):[];const merged=new Map(old.map(x=>[x.date+'|'+x.team1+'|'+x.team2,x]));for(const x of m.values())merged.set(x.date+'|'+x.team1+'|'+x.team2,x);fs.writeFileSync(file,JSON.stringify({name:c.name,source:'ESPN',matches:[...merged.values()].sort((a,b)=>a.date.localeCompare(b.date))},null,2)+'\n');}
   save();
  }
  // Three recent match sheets per team provide actual lineups and player game logs.
