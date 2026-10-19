@@ -29,7 +29,9 @@ function teamLine(c) {
 }
 
 // Web sources for the question from DeepSeek's Search API. Returns "" if search is unavailable.
+let lastSearchError = null;
 async function webSources(apiKey, f, question) {
+  lastSearchError = null;
   const query = clean(`${f.home || ""} ${f.away || ""} ${question}`, 128).trim();
   if (query.length < 3) return "";
   try {
@@ -47,6 +49,7 @@ async function webSources(apiKey, f, question) {
       .join("\n");
   } catch (err) {
     console.error("web search skipped:", err.message);
+    lastSearchError = err.message;
     return "";
   }
 }
@@ -107,7 +110,8 @@ Question: ${question}`;
     if (!upstream.ok) throw new Error(`DeepSeek returned ${upstream.status}`);
     const data = await upstream.json();
     const parsed = JSON.parse(data?.choices?.[0]?.message?.content || "{}");
-    return res.status(200).json({ answer: String(parsed.answer || "No answer was returned.") });
+    const sourceCount = sources ? sources.split("\n").length : 0;
+    return res.status(200).json({ answer: String(parsed.answer || "No answer was returned."), sources: sourceCount, search_error: lastSearchError });
   } catch (err) {
     console.error("match-question failed", err.message);
     return res.status(502).json({ error: "The answer could not be generated. Try again later." });
