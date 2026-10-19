@@ -1,0 +1,57 @@
+name: Refresh Touchline data
+
+# Runs daily: pulls open results, moves the forecast cutoff to today, rebuilds,
+# commits any changed data and publishes the website. Needs no manual steps.
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: touchline-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/great-cerf-lgzlzb
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Set up Rust
+        run: rustup update stable --no-self-update && rustup default stable
+      - name: Fetch open results
+        run: python3 tools/fetch_results.py
+      - name: Move the forecast cutoff to today
+        run: node tools/refresh_edition.cjs
+      - name: Build the site and AI previews
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: node tools/build_website.cjs
+      - name: Commit changed data and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "touchline-bot"
+          git config user.email "touchline-bot@users.noreply.github.com"
+          git add -A data
+          if git diff --cached --quiet; then
+            echo "No data changes today."
+          else
+            git commit -m "Refresh Touchline data $(date -u +%F)"
+            git push origin HEAD:claude/great-cerf-lgzlzb
+            # Pushes made with GITHUB_TOKEN do not start other workflows, so start the publish run explicitly.
+            gh workflow run "Publish Touchline website" --ref claude/great-cerf-lgzlzb
+          fi

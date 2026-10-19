@@ -40,9 +40,20 @@ manually from Actions. In Settings → Pages, the publishing source is
 
 The workflow uses the built-in short-lived GitHub token, with repository read
 access for the build and Pages/OIDC write permissions only in the deploy job.
-It has no third-party credentials. It is not scheduled and does not refresh
-sources implicitly. GitHub Actions usage is subject to the account's included
+It has no third-party credentials. A separate scheduled workflow, `Refresh Touchline data`, runs daily. It fetches open results from openfootball, moves the forecast cutoff (`as_of`) to today, rebuilds, commits any changed data and starts this publish workflow. GitHub Actions usage is subject to the account's included
 minutes; this does not subscribe to a paid hosting service.
+
+## AI previews
+
+Fixtures in the next 10 days get a short AI-written preview from the DeepSeek API, generated during the build by `tools/ai_previews.cjs`. Previews are cached in `data/ai/previews.json`, so each fixture is only generated once. The job needs a repository secret named `DEEPSEEK_API_KEY`. Without it, the site still builds and simply shows no previews.
+
+## AI previews
+
+Fixtures in the next 10 days get a short AI-written preview from the DeepSeek API, generated during the build by `tools/ai_previews.cjs`. Previews are cached in `data/ai/previews.json`, so each fixture is only generated once. The job needs a repository secret named `DEEPSEEK_API_KEY`. Without it, the site still builds and simply shows no previews.
+
+## AI previews
+
+Fixtures in the next 10 days get a short AI-written preview from the DeepSeek API, generated during the build by `tools/ai_previews.cjs`. Previews are cached in `data/ai/previews.json`, so each fixture is only generated once. The job needs a repository secret named `DEEPSEEK_API_KEY`. Without it, the site still builds and simply shows no previews.
 
 ## Update an edition
 

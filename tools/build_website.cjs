@@ -28,6 +28,8 @@ const built = spawnSync(
 if (built.error) throw built.error;
 if (built.status !== 0) process.exit(built.status || 1);
 console.log(require("./package_website.cjs").packageWebsite(output));
+// AI previews are optional: a failure here must not stop the site from publishing.
+require("./ai_previews.cjs").run(output).catch((err) => console.error("previews skipped:", err.message));
 fs.writeFileSync(path.join(output, ".nojekyll"), "");
 fs.writeFileSync(
   path.join(output, "edition.json"),

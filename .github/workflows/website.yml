@@ -39,6 +39,8 @@ jobs:
       - name: Check browser simulation
         run: node --test crates/predictor/web/*.test.cjs
       - name: Build the saved-data website
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: node tools/build_website.cjs
       - uses: actions/configure-pages@v5
         if: github.event_name != 'pull_request'
