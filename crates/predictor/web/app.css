@@ -2488,3 +2488,13 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
  footer { padding-bottom:20px; }
 }
 @media(prefers-reduced-motion:reduce){.profile-panel{animation:none}.squad-player{transition:none}}
+
+/* Weekly recaps: compact, collapsible, sits in the right-hand column */
+.recaps { margin-top: 16px; }
+.recap { border-top: 1px solid rgba(255,255,255,.08); padding: 10px 0; }
+.recap:first-of-type { border-top: 0; }
+.recap summary { cursor: pointer; font-weight: 650; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.recap summary::-webkit-details-marker { display: none; }
+.recap summary::after { content: "+"; opacity: .6; font-weight: 400; }
+.recap[open] summary::after { content: "−"; }
+.recap p { margin: 8px 0 0; font-size: .92rem; line-height: 1.55; opacity: .85; }
