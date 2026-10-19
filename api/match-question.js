@@ -23,6 +23,11 @@ function clean(value, max = 120) {
   return String(value ?? "").replace(/[\r\n]+/g, " ").slice(0, max);
 }
 
+function teamLine(c) {
+  if (!c || typeof c !== "object") return "not available";
+  return [clean(c.name, 60), c.standing ? "league: " + clean(c.standing, 80) : null, c.form ? "last five: " + clean(c.form, 240) : null, c.top_scorers ? "top scorers: " + clean(c.top_scorers, 160) : null].filter(Boolean).join("; ");
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader("Content-Type", "application/json");
   if (req.method !== "POST") return res.status(405).json({ error: "Use POST." });
@@ -44,14 +49,16 @@ module.exports = async function handler(req, res) {
   const probs = f.probabilities || {};
   const pct = (x) => (Number.isFinite(x) ? `${Math.round(x * 100)}%` : "not available");
   const prompt = `You answer questions about one football fixture for a fan website.
-Use ONLY these facts. If the question needs anything else (injuries, form, team news, odds), say you do not have that information.
+Start from these facts. For players and teams you may also use general football knowledge, but say when squads, injuries, transfers or form may have changed since this data was compiled. Never invent exact statistics. Do not give betting advice.
 Competition: ${clean(f.competition)}
 Date: ${clean(f.date, 20)}
 Home team: ${clean(f.home)}
 Away team: ${clean(f.away)}
 Model forecast: home win ${pct(probs.home_win)}, draw ${pct(probs.draw)}, away win ${pct(probs.away_win)}.
 Most likely score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
-Say that these are model estimates, not facts about the result. Keep the answer to two or three sentences.
+Home team context: ${teamLine(f.home_context)}
+Away team context: ${teamLine(f.away_context)}
+When you talk about the forecast, say it is a model estimate, not a fact about the result. Keep the answer to two to four sentences.
 
 Return only a JSON object: {"answer": "text"}
 Question: ${question}`;
@@ -65,7 +72,7 @@ Question: ${question}`;
         messages: [{ role: "user", content: prompt }],
         response_format: { type: "json_object" },
         temperature: 0.2,
-        max_tokens: 300,
+        max_tokens: 400,
       }),
     });
     if (!upstream.ok) throw new Error(`DeepSeek returned ${upstream.status}`);
