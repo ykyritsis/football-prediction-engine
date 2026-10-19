@@ -2498,3 +2498,27 @@ dialog::backdrop { background:#0c242976; backdrop-filter:blur(3px); }
 .recap summary::after { content: "+"; opacity: .6; font-weight: 400; }
 .recap[open] summary::after { content: "−"; }
 .recap p { margin: 8px 0 0; font-size: .92rem; line-height: 1.55; opacity: .85; }
+
+/* Winner call in the spotlight card */
+.outcome { margin: 12px 0 14px; }
+.outcome-call { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.outcome-call strong { font-size: 1.02rem; }
+.outcome-call span { font-variant-numeric: tabular-nums; opacity: .75; }
+.outcome-bar { display: flex; height: 10px; border-radius: 999px; overflow: hidden; margin: 8px 0 6px; background: var(--line); }
+.outcome-bar i { display: block; min-width: 2px; }
+.outcome-bar i.home { background: var(--blue); }
+.outcome-bar i.draw { background: #b7bec9; }
+.outcome-bar i.away { background: var(--red); }
+.outcome-legend { display: flex; justify-content: space-between; gap: 8px; font-size: .8rem; color: var(--muted); }
+/* AI why note */
+.ai-why { margin: 10px 0 0; font-size: .92rem; line-height: 1.5; }
+/* Form watch panel */
+.form-watch { margin-top: 16px; }
+.watch-item { border-top: 1px solid var(--line); padding: 10px 0; }
+.watch-item:first-of-type { border-top: 0; }
+.watch-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.watch-tag { font-size: .72rem; font-weight: 650; letter-spacing: .04em; text-transform: uppercase; padding: 3px 8px; border-radius: 999px; }
+.watch-item.hot .watch-tag { background: rgba(29,120,91,.14); color: var(--green); }
+.watch-item.cold .watch-tag { background: rgba(215,68,54,.14); color: var(--red); }
+.watch-item p { margin: 6px 0 2px; font-size: .9rem; line-height: 1.5; }
+.watch-item small { color: var(--muted); font-size: .76rem; }

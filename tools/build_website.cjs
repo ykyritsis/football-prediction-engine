@@ -31,6 +31,7 @@ console.log(require("./package_website.cjs").packageWebsite(output));
 // AI previews are optional: a failure here must not stop the site from publishing.
 require("./ai_previews.cjs").run(output).catch((err) => console.error("previews skipped:", err.message));
 require("./ai_recaps.cjs").run(output).catch((err) => console.error("recaps skipped:", err.message));
+require("./ai_extras.cjs").run(output).catch((err) => console.error("extras skipped:", err.message));
 fs.writeFileSync(path.join(output, ".nojekyll"), "");
 fs.writeFileSync(
   path.join(output, "edition.json"),
