@@ -509,7 +509,8 @@ function renderHistory() {
     const p = m.prediction,
       probs = [p.home_win, p.draw, p.away_win],
       o = m.actual[0] > m.actual[1] ? 0 : m.actual[0] === m.actual[1] ? 1 : 2;
-    hits += Number(probs.indexOf(Math.max(...probs)) === o);
+    const scoreline = p.most_likely_score ? (p.most_likely_score[0] > p.most_likely_score[1] ? 0 : p.most_likely_score[0] === p.most_likely_score[1] ? 1 : 2) : -1;
+    hits += Number(probs.indexOf(Math.max(...probs)) === o || scoreline === o);
     exact += Number(score(m.actual) === score(p.most_likely_score));
     ll -= Math.log(Math.max(probs[o], 1e-9));
     bs += probs.reduce((s, p, i) => s + (p - Number(i === o)) ** 2, 0);
