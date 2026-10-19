@@ -35,7 +35,7 @@ jobs:
       - name: Fetch open results
         run: python3 tools/fetch_results.py
       - name: Sync other competitions (ESPN match centre)
-        run: node tools/sync_match_centre.cjs --as-of=$(date -u +%F) --year=$(date -u +%Y)
+        run: node tools/sync_match_centre.cjs --as-of=$(date -u +%F) --year=$(date -u +%Y) || echo "Some ESPN lookups failed; the saved data is kept and errors are recorded in the catalog."
       - name: Move the forecast cutoff to today
         run: node tools/refresh_edition.cjs
       - name: Build the site and AI previews
