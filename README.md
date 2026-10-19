@@ -1,9 +1,41 @@
-# Football Prediction Engine
+<p align="center">
+  <img src="assets/badges.svg" alt="Rust, MIT / Apache-2.0, GitHub Pages" height="28">
+</p>
 
-**Touchline** is a browser match centre for club and international football: predictions,
-animated match simulations, club and player profiles, and historical evaluation.
+<h1 align="center">Touchline</h1>
 
-[Open the public website](https://ykyritsis.github.io/football-prediction-engine/)
+<p align="center"><strong>Football predictions, match simulations and club/player history — in the browser.</strong><br>
+22 competitions, one match centre. No backend, no API key, no install.</p>
+
+<p align="center">
+  <a href="https://ykyritsis.github.io/football-prediction-engine/"><strong>Open Touchline</strong></a> &nbsp;·&nbsp;
+  <a href="#whats-inside">What's inside</a> &nbsp;·&nbsp;
+  <a href="#screenshots">Screenshots</a> &nbsp;·&nbsp;
+  <a href="#project-structure">Project structure</a>
+</p>
+
+<p align="center">
+  <img src="docs/images/touchline-home.png" alt="Touchline match centre: Premier League fixtures, predicted scores and a match spotlight" width="100%">
+  <br><sub>The match centre: fixtures, predicted scores and the match spotlight, generated from a dated data snapshot.</sub>
+</p>
+
+## What's inside
+
+- **Fixtures and forecasts** across 22 competitions: score probabilities, expected goals, over 2.5 and both-teams-to-score.
+- **A match simulator** with formations, a five-second replay, events, pause/skip, reduced motion, reproducible seeds and a 10,000-run comparison.
+- **Club and player profiles**: squads, form, managers, stadiums, honours, contracts, portraits and career histories.
+- **Honest backtests**: 1X2 and exact-score hit rates, log loss and Brier score, with the cutoff visible instead of hidden.
+- **A static build**: `dist/index.html` plus on-demand JSON, so it runs on GitHub Pages with no server.
+
+## Screenshots
+
+<p align="center">
+  <img src="docs/images/live_match.png" alt="Tactical simulation sandbox with a live pitch, player positions and passing options" width="49%">
+  <img src="docs/images/build_up_under_press.png" alt="Tactical simulation: build-up under press" width="49%">
+  <br><sub>The tactical simulation sandbox in <code>crates/football_sandbox</code> — a separate development tool, not an input to the statistical forecasts.</sub>
+</p>
+
+---
 
 ## Public website
 
