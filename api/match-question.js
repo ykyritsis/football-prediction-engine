@@ -28,6 +28,29 @@ function teamLine(c) {
   return [clean(c.name, 60), c.standing ? "league: " + clean(c.standing, 80) : null, c.form ? "last five: " + clean(c.form, 240) : null, c.top_scorers ? "top scorers: " + clean(c.top_scorers, 160) : null].filter(Boolean).join("; ");
 }
 
+// Web sources for the question from DeepSeek's Search API. Returns "" if search is unavailable.
+async function webSources(apiKey, f, question) {
+  const query = clean(`${f.home || ""} ${f.away || ""} ${question}`, 128).trim();
+  if (query.length < 3) return "";
+  try {
+    const res = await fetch("https://api.deepseek.com/v1/tools/search", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Authorization: `Bearer ${apiKey}` },
+      body: JSON.stringify({ query, count: 5, need_content: false, ori_question: clean(question, 128) }),
+    });
+    if (!res.ok) throw new Error(`search returned ${res.status}`);
+    const data = await res.json();
+    return (data.results || [])
+      .filter((r) => r.url && (r.rerank_score ?? 0) >= 1)
+      .slice(0, 5)
+      .map((r) => `- ${clean(r.title, 160)} (${clean(r.site_name || "unknown site", 60)}, ${clean(r.date || "date unknown", 30)}): ${clean(r.summary || r.snippet, 500)} [${clean(r.url, 300)}]`)
+      .join("\n");
+  } catch (err) {
+    console.error("web search skipped:", err.message);
+    return "";
+  }
+}
+
 module.exports = async function handler(req, res) {
   res.setHeader("Content-Type", "application/json");
   if (req.method !== "POST") return res.status(405).json({ error: "Use POST." });
@@ -48,14 +71,17 @@ module.exports = async function handler(req, res) {
 
   const probs = f.probabilities || {};
   const pct = (x) => (Number.isFinite(x) ? `${Math.round(x * 100)}%` : "not available");
+  const sources = await webSources(apiKey, f, question);
   const prompt = `You answer questions about one football fixture for a fan website.
-Answer any question about this match: the teams, players, venue, competition, history, head-to-head, form or what the forecast means. Start from these facts and add general football knowledge where it helps. Say when squads, injuries, managers, transfers or form may have changed since this data was compiled. Never invent exact results or statistics; if you are not sure, say so. Do not give betting advice. If a question has nothing to do with this match, say you can only help with this match.
+Answer any question about this match: the teams, players, venue, competition, history, head-to-head, form or what the forecast means. Start from these facts and the web sources, and add general football knowledge where it helps. When you use a web source, name it and include its link. Say when squads, injuries, managers, transfers or form may have changed since this data was compiled. Never invent exact results or statistics; if you are not sure, say so. Do not give betting advice. If a question has nothing to do with this match, say you can only help with this match.
 Competition: ${clean(f.competition)}
 Date: ${clean(f.date, 20)}
 Home team: ${clean(f.home)}
 Away team: ${clean(f.away)}
 Model forecast: home win ${pct(probs.home_win)}, draw ${pct(probs.draw)}, away win ${pct(probs.away_win)}.
 Most likely score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
+Web sources found for this question (may be out of date; name the source and give its link when you use one):
+${sources || "none found"}
 Kick-off: ${clean(f.kickoff, 60) || "not available"}
 Home ground: ${clean(f.venue, 120) || "not available"}
 Head-to-head in the archive: ${clean(f.head_to_head, 400) || "no recent meetings in the archive"}
