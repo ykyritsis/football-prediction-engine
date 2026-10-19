@@ -25,7 +25,8 @@
 ## What's inside
 
 - **Fixtures and forecasts** for 22 competitions: score probabilities, expected goals, over 2.5 and both teams to score.
-- **Match spotlight** with the most likely score, a plain-English note, and an AI-written preview for upcoming fixtures.
+- **Match spotlight** with the most likely score, an AI-written preview for upcoming fixtures, and a question box that answers from the forecast facts shown on the page.
+- **Weekly AI recaps** summarising the last seven days of results for each competition, using only the saved scores.
 - **Match simulator** with formations, a replay, events, pause and skip, reproducible seeds, and a 10,000-run comparison.
 - **Club and player profiles**: squads, form, managers, stadiums, honours and career histories.
 - **Honest backtests**: outcome and exact-score hit rates, log loss and Brier score, with the forecast cutoff shown.
@@ -35,7 +36,7 @@
 - **Forecasts come from a Rust model** in `crates/predictor`, built from saved match data. Every forecast is dated, so the cutoff is always visible.
 - **The site is built from saved data.** `tools/build_website.cjs` compiles the dashboard and packages it as static pages with on-demand JSON. No server is needed to view it.
 - **Results refresh daily.** A scheduled workflow pulls open results from openfootball, moves the forecast date to today, rebuilds, and republishes. It only commits when the data changes.
-- **AI previews are cached.** Fixtures in the next ten days get a short preview from the DeepSeek API. Each fixture is generated once and stored in `data/ai/previews.json`.
+- **AI features are cached.** Fixture previews (`data/ai/previews.json`) and weekly recaps (`data/ai/recaps.json`) are generated once per item by the DeepSeek API. The question box runs as a Vercel serverless function (`api/match-question.js`), with a per-visitor limit.
 
 ## Build and run
 
