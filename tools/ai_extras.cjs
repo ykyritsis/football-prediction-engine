@@ -72,6 +72,7 @@ function whyPrompt(league, m) {
     key: [league.key, m.date, m.home, m.away].join("|"),
     prompt: `Write one short sentence, under 30 words, saying what drives the forecast lean for this fixture. Do not list the percentages.
 Competition: ${league.name}. Date: ${m.date}. Home: ${m.home}. Away: ${m.away}.
+Predicted result: ${p.home_win === Math.max(p.home_win, p.draw, p.away_win) ? m.home + " to win" : p.away_win === Math.max(p.home_win, p.draw, p.away_win) ? m.away + " to win" : "a draw"}. Your sentence must agree with the predicted result.
 Model probabilities: home win ${(p.home_win * 100).toFixed(0)}%, draw ${(p.draw * 100).toFixed(0)}%, away win ${(p.away_win * 100).toFixed(0)}%.
 Most likely score: ${Number.isInteger(h) && Number.isInteger(a) ? h + "-" + a : "not available"}.
 Recent form, most recent last: ${m.home}: ${homeForm.join("; ") || "not available"}. ${m.away}: ${awayForm.join("; ") || "not available"}.
