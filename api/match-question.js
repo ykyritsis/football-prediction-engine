@@ -41,7 +41,7 @@ async function webSources(apiKey, f, question) {
     if (!res.ok) throw new Error(`search returned ${res.status}`);
     const data = await res.json();
     return (data.results || [])
-      .filter((r) => r.url && (r.rerank_score ?? 0) >= 1)
+      .filter((r) => r.url)
       .slice(0, 5)
       .map((r) => `- ${clean(r.title, 160)} (${clean(r.site_name || "unknown site", 60)}, ${clean(r.date || "date unknown", 30)}): ${clean(r.summary || r.snippet, 500)} [${clean(r.url, 300)}]`)
       .join("\n");
