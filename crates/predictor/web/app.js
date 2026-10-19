@@ -334,6 +334,15 @@ function teamContext(l, name) {
     .map((r) => `${r.p.name} (${r.s.totalGoals} goals)`);
   return { name, standing: catalogTeam?.standing || null, form: form || null, top_scorers: scorers.join(", ") || null };
 }
+// Recent meetings between the two teams from the league archive, most recent first.
+function headToHead(l, m) {
+  return (l.archive || [])
+    .filter((x) => (x.home === m.home && x.away === m.away) || (x.home === m.away && x.away === m.home))
+    .sort((a, b) => (a.date < b.date ? 1 : -1))
+    .slice(0, 5)
+    .map((x) => `${x.date} ${x.home} ${x.score[0]}-${x.score[1]} ${x.away}`)
+    .join("; ");
+}
 function previewHTML(l, m) {
   const key = [l.key, m.date, m.home, m.away].join("|"),
     text = previews[key],
@@ -347,6 +356,7 @@ function previewHTML(l, m) {
       most_likely_score: (p.most_likely_score || []).join("-"),
       home_context: teamContext(l, m.home),
       away_context: teamContext(l, m.away),
+      head_to_head: headToHead(l, m) || null,
     };
   const whyText = why[key];
   const whyLine = whyText ? `<p class="ai-why"><span class="ai-badge">WHY</span> ${esc(whyText)}</p>` : "";

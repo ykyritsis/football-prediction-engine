@@ -49,13 +49,14 @@ module.exports = async function handler(req, res) {
   const probs = f.probabilities || {};
   const pct = (x) => (Number.isFinite(x) ? `${Math.round(x * 100)}%` : "not available");
   const prompt = `You answer questions about one football fixture for a fan website.
-Start from these facts. For players and teams you may also use general football knowledge, but say when squads, injuries, transfers or form may have changed since this data was compiled. Never invent exact statistics. Do not give betting advice.
+Answer any question about this match: the teams, players, venue, competition, history, head-to-head, form or what the forecast means. Start from these facts and add general football knowledge where it helps. Say when squads, injuries, managers, transfers or form may have changed since this data was compiled. Never invent exact results or statistics; if you are not sure, say so. Do not give betting advice. If a question has nothing to do with this match, say you can only help with this match.
 Competition: ${clean(f.competition)}
 Date: ${clean(f.date, 20)}
 Home team: ${clean(f.home)}
 Away team: ${clean(f.away)}
 Model forecast: home win ${pct(probs.home_win)}, draw ${pct(probs.draw)}, away win ${pct(probs.away_win)}.
 Most likely score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
+Head-to-head in the archive: ${clean(f.head_to_head, 400) || "no recent meetings in the archive"}
 Home team context: ${teamLine(f.home_context)}
 Away team context: ${teamLine(f.away_context)}
 When you talk about the forecast, say it is a model estimate, not a fact about the result. Keep the answer to two to four sentences.
