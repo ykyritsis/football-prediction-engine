@@ -1,1 +1,62 @@
-{}
+{
+  "premier_league|2026-10-19|Tottenham Hotspur FC|Coventry City FC": {
+    "text": "Tottenham Hotspur FC host Coventry City FC in the Premier League on 2026-10-19. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-19",
+    "generated_at": "2026-10-19T07:32:40.900Z"
+  },
+  "premier_league|2026-10-23|Ipswich Town FC|Nottingham Forest FC": {
+    "text": "Ipswich Town FC host Nottingham Forest FC in the Premier League on 2026-10-23. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-23",
+    "generated_at": "2026-10-19T07:32:42.209Z"
+  },
+  "premier_league|2026-10-24|Aston Villa FC|Manchester City FC": {
+    "text": "Aston Villa FC host Manchester City FC in the Premier League on 2026-10-24. The statistical model's most likely score is a 1-1 forecast, which is not a prediction of the result.",
+    "date": "2026-10-24",
+    "generated_at": "2026-10-19T07:32:43.265Z"
+  },
+  "premier_league|2026-10-24|Arsenal FC|Everton FC": {
+    "text": "Arsenal FC host Everton FC in the Premier League on 2026-10-24. The statistical model's most likely score is 1-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-24",
+    "generated_at": "2026-10-19T07:32:44.384Z"
+  },
+  "premier_league|2026-10-24|Coventry City FC|Fulham FC": {
+    "text": "Coventry City FC host Fulham FC in the Premier League on 2026-10-24. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-24",
+    "generated_at": "2026-10-19T07:32:45.609Z"
+  },
+  "premier_league|2026-10-24|Chelsea FC|Tottenham Hotspur FC": {
+    "text": "Chelsea FC host Tottenham Hotspur FC in the Premier League on 2026-10-24. The statistical model's most likely score is 2-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-24",
+    "generated_at": "2026-10-19T07:32:46.807Z"
+  },
+  "premier_league|2026-10-25|Liverpool FC|Brighton & Hove Albion FC": {
+    "text": "Liverpool FC host Brighton & Hove Albion FC in the Premier League on 2026-10-25. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-19T07:32:47.843Z"
+  },
+  "premier_league|2026-10-25|Crystal Palace FC|Newcastle United FC": {
+    "text": "Crystal Palace FC host Newcastle United FC in the Premier League on 2026-10-25. The statistical model's most likely score for this match is a 1-1 forecast, which is not a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-19T07:32:48.727Z"
+  },
+  "premier_league|2026-10-25|Manchester United FC|AFC Bournemouth": {
+    "text": "Manchester United FC host AFC Bournemouth in the Premier League on 2026-10-25. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-19T07:32:49.811Z"
+  },
+  "premier_league|2026-10-25|Hull City AFC|Brentford FC": {
+    "text": "Hull City AFC host Brentford FC in the Premier League on 2026-10-25. The statistical model's most likely score is 1-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-19T07:32:50.989Z"
+  },
+  "premier_league|2026-10-25|Sunderland AFC|Leeds United FC": {
+    "text": "Sunderland AFC host Leeds United FC in the Premier League on 2026-10-25. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-19T07:32:52.151Z"
+  },
+  "la_liga|2026-10-19|Getafe CF|Rayo Vallecano de Madrid": {
+    "text": "La Liga fixture on 2026-10-19 sees Getafe CF host Rayo Vallecano de Madrid. The statistical model's most likely score is 1-0, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-19",
+    "generated_at": "2026-10-19T07:32:53.295Z"
+  }
+}
