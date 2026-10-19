@@ -23,7 +23,7 @@ const url = (s) => {
     return "";
   }
 };
-const pct = (x) => (x * 100).toFixed(1) + "%",
+const pct = (x) => Math.round(x * 100) + "%",
   score = (s) => s.join("–"),
   val = (n) => (n === null || n === undefined ? "—" : esc(n));
 const cleanName = (s) => s.replace(/^ESPN:\d+:/, ""),
