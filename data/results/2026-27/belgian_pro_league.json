@@ -762,55 +762,109 @@
       "date": "2026-10-09",
       "team1": "Waasland-Beveren",
       "team2": "Lommel SK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Cercle Brugge KSV",
       "team2": "Anderlecht",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "RAAL La Louvière",
       "team2": "Club Brugge",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Racing Genk",
       "team2": "KV Kortrijk",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Zulte-Waregem",
       "team2": "KAA Gent",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Standard Liege",
       "team2": "Royal Charleroi SC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Union St.-Gilloise",
       "team2": "OH Leuven",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "KVC Westerlo",
       "team2": "Antwerp",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "KV Mechelen",
       "team2": "Sint-Truidense",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-23",

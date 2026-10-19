@@ -1,7 +1,6 @@
 {
   "name": "Conference League",
   "source": "ESPN",
-  "updated_at": "2026-10-08T05:07:29.736Z",
   "matches": [
     {
       "date": "2025-10-02",
@@ -1396,6 +1395,18 @@
       }
     },
     {
+      "date": "2026-02-19",
+      "team1": "ESPN:8151:KF Shkëndija",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
+    },
+    {
       "date": "2026-02-26",
       "team1": "AZ Alkmaar",
       "team2": "ESPN:20712:FC Noah",
@@ -1476,6 +1487,18 @@
         "ft": [
           3,
           2
+        ]
+      }
+    },
+    {
+      "date": "2026-02-26",
+      "team1": "Samsunspor",
+      "team2": "ESPN:8151:KF Shkëndija",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
         ]
       }
     },
@@ -1576,6 +1599,18 @@
       }
     },
     {
+      "date": "2026-03-12",
+      "team1": "Samsunspor",
+      "team2": "Rayo Vallecano de Madrid",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
+    },
+    {
       "date": "2026-03-19",
       "team1": "1. FSV Mainz 05",
       "team2": "ESPN:609:Sigma Olomouc",
@@ -1656,6 +1691,18 @@
         "ft": [
           0,
           4
+        ]
+      }
+    },
+    {
+      "date": "2026-03-19",
+      "team1": "Rayo Vallecano de Madrid",
+      "team2": "Samsunspor",
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
         ]
       }
     },

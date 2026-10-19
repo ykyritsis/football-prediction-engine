@@ -889,6 +889,198 @@
           0
         ]
       }
+    },
+    {
+      "date": "2026-11-12",
+      "team1": "Aruba",
+      "team2": "Martinique",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-12",
+      "team1": "Barbados",
+      "team2": "Guadeloupe",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-12",
+      "team1": "Cayman Islands",
+      "team2": "Guyana",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-12",
+      "team1": "Bonaire",
+      "team2": "Cuba",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-12",
+      "team1": "Antigua and Barbuda",
+      "team2": "Trinidad and Tobago",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-13",
+      "team1": "Curaçao",
+      "team2": "Panama",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-13",
+      "team1": "Bermuda",
+      "team2": "St. Lucia",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-13",
+      "team1": "Puerto Rico",
+      "team2": "Dominica",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-13",
+      "team1": "Grenada",
+      "team2": "St. Kitts and Nevis",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-13",
+      "team1": "St. Martin",
+      "team2": "El Salvador",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-14",
+      "team1": "Montserrat",
+      "team2": "Nicaragua",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-14",
+      "team1": "Guatemala",
+      "team2": "Canada",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-14",
+      "team1": "Sint Maarten",
+      "team2": "French Guiana",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-14",
+      "team1": "Haiti",
+      "team2": "United States",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-15",
+      "team1": "St. Vincent and the Grenadines",
+      "team2": "Belize",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-15",
+      "team1": "Jamaica",
+      "team2": "Mexico",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-15",
+      "team1": "Panama",
+      "team2": "Curaçao",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-16",
+      "team1": "Guadeloupe",
+      "team2": "Bermuda",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-16",
+      "team1": "Guyana",
+      "team2": "Puerto Rico",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-16",
+      "team1": "Cuba",
+      "team2": "Grenada",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "Martinique",
+      "team2": "Aruba",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "Trinidad and Tobago",
+      "team2": "Antigua and Barbuda",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "Canada",
+      "team2": "Guatemala",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "Belize",
+      "team2": "Sint Maarten",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "Dominica",
+      "team2": "Cayman Islands",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "St. Lucia",
+      "team2": "Barbados",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-17",
+      "team1": "St. Kitts and Nevis",
+      "team2": "Bonaire",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-18",
+      "team1": "French Guiana",
+      "team2": "St. Vincent and the Grenadines",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-18",
+      "team1": "United States",
+      "team2": "Haiti",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-18",
+      "team1": "El Salvador",
+      "team2": "St. Martin",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-18",
+      "team1": "Mexico",
+      "team2": "Jamaica",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-18",
+      "team1": "Nicaragua",
+      "team2": "Montserrat",
+      "neutral": false
     }
   ]
 }

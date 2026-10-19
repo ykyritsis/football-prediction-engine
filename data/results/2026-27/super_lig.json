@@ -654,103 +654,205 @@
       "date": "2026-10-09",
       "team1": "Galatasaray",
       "team2": "Kasimpasa",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Genclerbirligi",
       "team2": "Amed SFK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Alanyaspor",
       "team2": "Erzurum BB",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Samsunspor",
       "team2": "Trabzonspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Caykur Rizespor",
       "team2": "Fenerbahce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Konyaspor",
       "team2": "Istanbul Basaksehir",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Gaziantep FK",
       "team2": "Çorum FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Besiktas",
       "team2": "Kocaelispor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-12",
       "team1": "Eyupspor",
       "team2": "Goztepe",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-16",
       "team1": "Çorum FK",
       "team2": "Caykur Rizespor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Erzurum BB",
       "team2": "Eyupspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Amed SFK",
       "team2": "Konyaspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Genclerbirligi",
       "team2": "Galatasaray",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Fenerbahce",
       "team2": "Alanyaspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "Kasimpasa",
       "team2": "Samsunspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "Kocaelispor",
       "team2": "Goztepe",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "Istanbul Basaksehir",
       "team2": "Gaziantep FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-19",

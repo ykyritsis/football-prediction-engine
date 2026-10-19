@@ -762,109 +762,217 @@
       "date": "2026-10-09",
       "team1": "PSV Eindhoven",
       "team2": "Heerenveen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Go Ahead Eagles",
       "team2": "Sparta Rotterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Feyenoord Rotterdam",
       "team2": "AZ Alkmaar",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Fortuna Sittard",
       "team2": "FC Twente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Ajax Amsterdam",
       "team2": "NEC Nijmegen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "FC Utrecht",
       "team2": "Willem II",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "PEC Zwolle",
       "team2": "SC Cambuur",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Telstar",
       "team2": "ADO Den Haag",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Excelsior",
       "team2": "FC Groningen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
     },
     {
       "date": "2026-10-16",
       "team1": "Heerenveen",
       "team2": "Excelsior",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "ADO Den Haag",
       "team2": "PSV Eindhoven",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Telstar",
       "team2": "Feyenoord Rotterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-17",
       "team1": "Sparta Rotterdam",
       "team2": "Willem II",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "PEC Zwolle",
       "team2": "Go Ahead Eagles",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "SC Cambuur",
       "team2": "AZ Alkmaar",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "FC Groningen",
       "team2": "Ajax Amsterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          5
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "FC Twente",
       "team2": "FC Utrecht",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-18",
       "team1": "NEC Nijmegen",
       "team2": "Fortuna Sittard",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-23",

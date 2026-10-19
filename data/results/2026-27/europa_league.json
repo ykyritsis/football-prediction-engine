@@ -1,7 +1,6 @@
 {
   "name": "Europa League",
   "source": "ESPN",
-  "updated_at": "2026-10-08T05:07:29.736Z",
   "matches": [
     {
       "date": "2026-09-16",
@@ -223,109 +222,217 @@
       "date": "2026-10-15",
       "team1": "AFC Bournemouth",
       "team2": "SK Sturm Graz",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "AZ Alkmaar",
       "team2": "Hapoel Be'er",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Benfica",
       "team2": "Celtic",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Dinamo Zagreb",
       "team2": "Anderlecht",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Ferencvaros",
       "team2": "Viktoria Plzen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Jagiellonia Bialystok",
       "team2": "Ararat-Armenia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Lech Poznan",
       "team2": "Bayer 04 Leverkusen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "NEC Nijmegen",
       "team2": "Levski Sofia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "NK Celje",
       "team2": "Omonia Nicosia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Olympique de Marseille",
       "team2": "Olympiacos",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Olympique Lyonnais",
       "team2": "Crystal Palace FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "RB Salzburg",
       "team2": "AC Milan",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "RC Celta de Vigo",
       "team2": "Juventus FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Sparta Prague",
       "team2": "Lillestrom",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Stade Rennais FC 1901",
       "team2": "OFI Crete",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Torreense",
       "team2": "Sunderland AFC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "TSG 1899 Hoffenheim",
       "team2": "Besiktas",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-15",
       "team1": "Union St.-Gilloise",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-22",

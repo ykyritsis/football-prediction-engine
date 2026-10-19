@@ -750,55 +750,109 @@
       "date": "2026-10-09",
       "team1": "Moreirense",
       "team2": "Gil Vicente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-09",
       "team1": "Braga",
       "team2": "Sporting CP",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Casa Pia",
       "team2": "Santa Clara",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Maritimo",
       "team2": "FC Porto",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-10",
       "team1": "Académico de Viseu",
       "team2": "Estoril",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Rio Ave",
       "team2": "C.D. Nacional",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Benfica",
       "team2": "Vitória de Guimaraes",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-11",
       "team1": "Arouca",
       "team2": "Estrela",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-12",
       "team1": "FC Famalicao",
       "team2": "Alverca",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-19",
