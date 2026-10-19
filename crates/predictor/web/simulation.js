@@ -203,10 +203,11 @@ function simulateKnockout(teams, runs, seed) {
   const size = 1 << Math.floor(Math.log2(Math.max(2, teams.length)));
   const seeded = teams.slice(0, size);
   const rounds = Math.log2(size);
-  const avgAttack = 1;
+  // Average goals per team in a knockout tie; a team attack and defence scale it up or down.
+  const BASE_GOALS = 1.35;
   const reach = seeded.map(() => new Array(rounds + 1).fill(0));
   const rng = seededRandom(seed >>> 0);
-  const lambda = (x, y) => Math.max(0.2, avgAttack * x.attack * y.defence * 1.35);
+  const lambda = (x, y) => Math.max(0.2, BASE_GOALS * x.attack * y.defence);
   for (let r = 0; r < runs; r++) {
     let alive = bracketOrder(size).map((s) => s - 1);
     seeded.forEach((_, i) => reach[i][0] += 1);

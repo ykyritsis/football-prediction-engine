@@ -346,19 +346,21 @@ function headToHead(l, m) {
 // Club cups where the knockout simulator applies.
 const CUP_KEYS = ["champions_league", "europa_league", "conference_league"];
 // Team inputs for the simulator, from each team's season record in this league.
+// Team inputs for the simulator. Rates come from each team's season goals, shrunk towards the
+// league average: a team with two games counts for little until it has more. Seeds use strength.
 function cupTeams(l) {
-  const teams = (l.teams || []).map((t) => {
-    const gp = t.played || 0;
-    return { name: t.name, gp, gf: t.goals_for || 0, ga: t.goals_against || 0, pts: 3 * (t.wins || 0) + (t.draws || 0), gd: (t.goals_for || 0) - (t.goals_against || 0) };
-  }).filter((t) => t.gp > 0);
-  teams.sort((a, b) => b.pts - a.pts || b.gd - a.gd || b.gf - a.gf);
+  const PRIOR_GAMES = 8; // games of average form added to every team before its own results count
+  const teams = (l.teams || []).map((t) => ({ name: t.name, gp: t.played || 0, gf: t.goals_for || 0, ga: t.goals_against || 0 }));
   const totalGf = teams.reduce((s, t) => s + t.gf, 0), totalGp = teams.reduce((s, t) => s + t.gp, 0) || 1;
   const avg = totalGf / totalGp || 1;
-  return teams.map((t) => ({
-    name: t.name,
-    attack: t.gf / t.gp / avg || 0.5,
-    defence: t.ga / t.gp / avg || 0.5,
-  }));
+  return teams
+    .filter((t) => t.gp > 0)
+    .map((t) => {
+      const attack = (t.gf + PRIOR_GAMES * avg) / ((t.gp + PRIOR_GAMES) * avg);
+      const defence = (t.ga + PRIOR_GAMES * avg) / ((t.gp + PRIOR_GAMES) * avg);
+      return { name: t.name, attack, defence, strength: attack / defence, gp: t.gp };
+    })
+    .sort((a, b) => b.strength - a.strength);
 }
 function cupSimHTML() {
   const l = data.leagues.find((x) => x.key === state.competition);
