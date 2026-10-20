@@ -1057,7 +1057,13 @@
       "date": "2026-10-19",
       "team1": "Getafe CF",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-21",

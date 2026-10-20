@@ -1,0 +1,190 @@
+{
+  "why": {
+    "premier_league|2026-10-23|Ipswich Town FC|Nottingham Forest FC": {
+      "text": "Nottingham Forest's higher model probability and Ipswich's three losses in five recent matches drive the lean toward an away win.",
+      "generated_at": "2026-10-20T10:05:25.719Z"
+    },
+    "premier_league|2026-10-24|Aston Villa FC|Manchester City FC": {
+      "text": "Manchester City's perfect five-win run and superior form drive the lean toward an away win at Aston Villa.",
+      "generated_at": "2026-10-20T10:05:26.837Z"
+    },
+    "premier_league|2026-10-24|Arsenal FC|Everton FC": {
+      "text": "Arsenal's strong recent form, with four wins in five, drives the lean toward a home victory over an Everton side that has won just once in five.",
+      "generated_at": "2026-10-20T10:05:27.919Z"
+    },
+    "premier_league|2026-10-24|Coventry City FC|Fulham FC": {
+      "text": "Fulham's stronger recent form and higher win probability drive the lean toward an away win despite Coventry's home advantage.",
+      "generated_at": "2026-10-20T10:05:28.898Z"
+    },
+    "premier_league|2026-10-24|Chelsea FC|Tottenham Hotspur FC": {
+      "text": "Chelsea's two straight wins and home advantage outweigh Tottenham's winless run of draws, supporting a Chelsea win.",
+      "generated_at": "2026-10-20T10:05:30.065Z"
+    },
+    "premier_league|2026-10-25|Liverpool FC|Brighton & Hove Albion FC": {
+      "text": "Brighton's dominant recent form, including five straight unbeaten with big wins, drives the lean toward an away win despite Liverpool's mixed results.",
+      "generated_at": "2026-10-20T10:05:31.178Z"
+    },
+    "premier_league|2026-10-25|Crystal Palace FC|Newcastle United FC": {
+      "text": "Crystal Palace's two home wins in their last five and Newcastle's three defeats in their last four drive the lean toward a home victory.",
+      "generated_at": "2026-10-20T10:05:32.235Z"
+    },
+    "premier_league|2026-10-25|Manchester United FC|AFC Bournemouth": {
+      "text": "Manchester United's home advantage and Bournemouth's poor away form drive the lean toward a home win.",
+      "generated_at": "2026-10-20T10:05:33.284Z"
+    },
+    "premier_league|2026-10-25|Hull City AFC|Brentford FC": {
+      "text": "Brentford's stronger recent form, including a 3-0 win over Chelsea, edges a tight away forecast despite Hull's run of draws.",
+      "generated_at": "2026-10-20T10:05:34.360Z"
+    },
+    "premier_league|2026-10-25|Sunderland AFC|Leeds United FC": {
+      "text": "Leeds United's stronger recent form, including a win and three draws, drives the forecast lean against a Sunderland side on a five-match winless run.",
+      "generated_at": "2026-10-20T10:05:35.548Z"
+    },
+    "la_liga|2026-10-21|Levante UD|Athletic Club": {
+      "text": "Athletic Club's stronger recent form, including two wins and three clean sheets, drives the lean toward an away win despite Levante's run of draws.",
+      "generated_at": "2026-10-20T10:05:36.688Z"
+    },
+    "la_liga|2026-10-23|Deportivo Alavés|Málaga CF": {
+      "text": "Alavés's stronger home win probability and Málaga's poor recent form, including a 2-5 loss, drive the lean toward an Alavés victory.",
+      "generated_at": "2026-10-20T10:05:37.670Z"
+    },
+    "la_liga|2026-10-24|Rayo Vallecano de Madrid|Elche CF": {
+      "text": "Rayo Vallecano's strong home form drives the lean toward a home win despite Elche's recent draws.",
+      "generated_at": "2026-10-20T10:05:38.734Z"
+    },
+    "la_liga|2026-10-24|Real Racing Club de Santander|RCD Espanyol de Barcelona": {
+      "text": "Espanyol's stronger overall form and Racing's heavy recent defeats drive the lean toward an away win.",
+      "generated_at": "2026-10-20T10:05:39.469Z"
+    },
+    "la_liga|2026-10-24|Valencia CF|Villarreal CF": {
+      "text": "Villarreal's stronger recent form and higher win probability drive the away lean despite Valencia's home advantage.",
+      "generated_at": "2026-10-20T10:05:40.650Z"
+    },
+    "la_liga|2026-10-24|Club Atlético de Madrid|RC Deportivo La Coruña": {
+      "text": "Atlético's five-match winning run against Deportivo's winless form drives the lean toward a home win.",
+      "generated_at": "2026-10-20T10:05:41.653Z"
+    }
+  },
+  "storylines": {
+    "premier_league|Manchester City FC|2026-10-19": {
+      "text": "Manchester City FC are top of the Premier League with 21 points from seven wins and a goal difference of +12. They have won each of their last five matches and next face Aston Villa FC on 2026-10-24.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:42.855Z"
+    },
+    "premier_league|Sunderland AFC|2026-10-19": {
+      "text": "Sunderland AFC sit 20th of 20 in the Premier League with 4 points, a goal difference of -8, and a record of 1W 1D 5L. Their last five results were a 1-1 draw away to Brentford FC, followed by a 0-2 home loss to Arsenal FC, a 3-5 away loss to Manchester City FC, a 0-2 home loss to Brighton & Hove Albion FC, and a 0-2 away loss to AFC Bournemouth, with Leeds United FC next at home on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:44.228Z"
+    },
+    "premier_league|Arsenal FC|2026-10-19": {
+      "text": "Arsenal FC sit second of 20 in the Premier League with 18 points, a goal difference of +6, and a record of 6W 0D 1L. Their last five results were a 2-1 home win vs Chelsea FC, a 2-0 away win vs Sunderland AFC, a 0-3 away loss vs Brighton & Hove Albion FC, a 2-1 home win vs Leeds United FC, and a 1-0 away win vs Nottingham Forest FC, with Everton FC next on 2026-10-24.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:45.725Z"
+    },
+    "la_liga|FC Barcelona|2026-10-19": {
+      "text": "FC Barcelona sit first in La Liga with 27 points from a 9W 0D 0L record and a goal difference of +30. They have won each of their last five matches, most recently 5-2 away to Real Betis Balompié, ahead of their 2026-10-25 fixture against Real Madrid CF.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:47.042Z"
+    },
+    "la_liga|Club Atlético de Madrid|2026-10-19": {
+      "text": "Club Atlético de Madrid is second in La Liga with 22 points from a 7W 1D 1L record and a goal difference of +11. The team has won its last five matches, most recently 1-0 away to RCD Espanyol de Barcelona, and next hosts RC Deportivo La Coruña on 2026-10-24.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:48.334Z"
+    },
+    "la_liga|Real Madrid CF|2026-10-19": {
+      "text": "Real Madrid CF sits third of 20 in La Liga with 21 points, a goal difference of +14, and a record of 7W 0D 2L. The team has won four of its last five matches, most recently a 4-1 home win over Sevilla FC, ahead of its next fixture away to FC Barcelona on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:49.663Z"
+    },
+    "serie_a|Udinese Calcio|2026-10-19": {
+      "text": "Udinese Calcio sit 16th of 20 in Serie A with 4 points, a goal difference of -7, and a record of 1W 1D 5L. They have lost their last five matches and next face AC Milan on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:50.958Z"
+    },
+    "serie_a|Venezia FC|2026-10-19": {
+      "text": "Venezia FC sit 20th of 20 in Serie A with 3 points, a goal difference of -10, and a record of 1W 0D 6L. Their last five results were L 2-3 vs Frosinone Calcio, L 2-4 vs ACF Fiorentina, L 0-2 vs SS Lazio, L 1-3 vs Atalanta BC, and W 1-0 vs SSC Napoli, ahead of their next fixture at Genoa CFC on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:52.148Z"
+    },
+    "serie_a|FC Internazionale Milano|2026-10-19": {
+      "text": "FC Internazionale Milano sits first in Serie A with 19 points from a 6W 1D 0L record and a goal difference of +12. Their last five results include four wins and one draw, with the next fixture against ACF Fiorentina on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:53.643Z"
+    },
+    "bundesliga|Borussia Mönchengladbach|2026-10-19": {
+      "text": "Borussia Mönchengladbach sit 18th of 18 in the Bundesliga with 0 points and a goal difference of -12 after a record of 0W 0D 6L. The team has lost each of its last five matches, most recently 1-2 at home to TSG 1899 Hoffenheim, ahead of the away fixture against VfB Stuttgart on 2026-10-23.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:55.104Z"
+    },
+    "bundesliga|Bayer 04 Leverkusen|2026-10-19": {
+      "text": "Bayer 04 Leverkusen sit fourth in the 18-team Bundesliga with 13 points, a goal difference of +7, and a record of 4W 1D 1L. Their last five results were a 4-0 home win over 1. FC Union Berlin, a 2-2 away draw with FC Augsburg, a 2-0 home win over RB Leipzig, a 4-3 away win over 1. FSV Mainz 05, and a 2-1 home win over SC Freiburg, with TSG 1899 Hoffenheim next on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:05:56.336Z"
+    },
+    "ligue_1|ES Troyes AC|2026-10-19": {
+      "text": "ES Troyes AC sit 17th of 18 in Ligue 1 with 4 points, a goal difference of -11, and a record of 1 win, 1 draw, and 5 losses. They have lost their last five matches and next face Toulouse FC away on 2026-10-24.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:57.485Z"
+    },
+    "ligue_1|Le Havre AC|2026-10-19": {
+      "text": "Le Havre AC sit 18th of 18 in Ligue 1 with 2 points from a record of 0 wins, 2 draws and 5 losses, and a goal difference of -6. Their last five results were a 1-2 home loss to Stade Brestois 29, a 0-0 home draw with Angers SCO, a 2-3 away loss to Toulouse FC, a 0-1 away loss to Lille OSC and a 1-3 home loss to AJ Auxerre, ahead of their 2026-10-25 fixture at Olympique de Marseille.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:05:58.973Z"
+    },
+    "ligue_1|Paris Saint-Germain FC|2026-10-19": {
+      "text": "Paris Saint-Germain FC sit second of 18 in Ligue 1 with 14 points, a goal difference of +5 and a record of 4W 2D 1L. They have won their last four matches, most recently 3-1 away to RC Strasbourg Alsace, and next face Olympique Lyonnais on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:06:00.438Z"
+    },
+    "primeira_liga|FC Porto|2026-10-19": {
+      "text": "FC Porto sit first in the Primeira Liga with 24 points from 8 wins and a goal difference of +16. They have won each of their last five league matches, most recently 2-1 away to Maritimo, ahead of their next fixture at Gil Vicente on 2026-10-24.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:06:01.594Z"
+    },
+    "primeira_liga|C.D. Nacional|2026-10-19": {
+      "text": "C.D. Nacional sits 16th of 18 in the Primeira Liga with 4 points from a 1W 1D 6L record and a goal difference of -9. The team has lost each of its last five matches and next faces Braga on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:02.698Z"
+    },
+    "primeira_liga|Estoril|2026-10-19": {
+      "text": "Estoril sit 18th of 18 in the Primeira Liga with 2 points, a goal difference of -8, and a record of 0W 2D 6L. Their last five results were a 1-2 loss at Benfica, a 0-0 draw at home to Arouca, a 0-1 loss at Braga, a 1-2 loss at home to Casa Pia, and a 1-2 loss at Académico de Viseu, ahead of their fixture against Moreirense on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:03.995Z"
+    },
+    "eredivisie|Feyenoord Rotterdam|2026-10-19": {
+      "text": "Feyenoord Rotterdam sit first in the 18-team Eredivisie with 23 points, a goal difference of +21, and a record of 7 wins and 2 draws. They have won each of their last five matches and next face PSV Eindhoven on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-20T10:06:05.312Z"
+    },
+    "eredivisie|Willem II|2026-10-19": {
+      "text": "Willem II sit 18th of 18 in the Eredivisie with 2 points, a goal difference of -17, and a record of 0W 2D 7L. Their last five results were a 1-1 draw at AZ Alkmaar, followed by losses to Ajax Amsterdam, Fortuna Sittard, FC Utrecht, and Sparta Rotterdam, with their next fixture at home to SC Cambuur on 2026-10-24.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:06.508Z"
+    },
+    "belgian_pro_league|Antwerp|2026-10-19": {
+      "text": "Antwerp sit 13th of 18 in the Belgian Pro League with 7 points, a goal difference of -8 and a record of 2W 1D 5L. They have lost each of their last five matches and next face Royal Charleroi SC on 2026-10-24.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:07.542Z"
+    },
+    "belgian_pro_league|KV Kortrijk|2026-10-19": {
+      "text": "KV Kortrijk sit 18th of 18 in the Belgian Pro League with 3 points, a goal difference of -16, and a record of 1W 0D 7L. Their last five results were losses to Anderlecht, Zulte-Waregem, RAAL La Louvière and Racing Genk, with a win over Waasland-Beveren, ahead of their fixture against KV Mechelen on 2026-10-23.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:09.360Z"
+    },
+    "belgian_pro_league|Cercle Brugge KSV|2026-10-19": {
+      "text": "Cercle Brugge KSV sit 17th of 18 in the Belgian Pro League with 3 points from a record of 0 wins, 3 draws and 5 losses, and a goal difference of -7. Their last five results were a 0-1 home loss to Lommel SK, a 0-3 home loss to KAA Gent, a 1-1 away draw with OH Leuven, a 2-3 away loss to Royal Charleroi SC and a 1-2 home loss to Anderlecht, ahead of their next fixture away to Union St.-Gilloise on 2026-10-25.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:10.885Z"
+    },
+    "super_lig|Eyupspor|2026-10-19": {
+      "text": "Eyupspor sit 18th of 18 in the Süper Lig with 3 points, a goal difference of -20, and a record of 1W 0D 7L. They have lost their last five matches, most recently 0-2 away to Erzurum BB, and next face Kasimpasa on 2026-10-24.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:12.056Z"
+    },
+    "super_lig|Samsunspor|2026-10-19": {
+      "text": "Samsunspor sit 17th of 18 in the Süper Lig with 4 points, a goal difference of -12, and a record of 1W 1D 6L. They have lost each of their last five matches and next face Amed SFK on 2026-10-24.",
+      "kind": "cold",
+      "generated_at": "2026-10-20T10:06:13.138Z"
+    }
+  }
+}

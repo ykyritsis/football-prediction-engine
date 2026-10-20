@@ -834,7 +834,13 @@
       "date": "2026-10-19",
       "team1": "Tottenham Hotspur FC",
       "team2": "Coventry City FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-23",
@@ -1249,10 +1255,17 @@
       "neutral": false
     },
     {
-      "date": "2026-12-02",
-      "team1": "Tottenham Hotspur FC",
-      "team2": "Fulham FC",
+      "date": "2026-12-01",
+      "team1": "Coventry City FC",
+      "team2": "Ipswich Town FC",
       "neutral": false
+    },
+    {
+      "round": "Matchday 13",
+      "date": "2026-12-02",
+      "time": "20:00",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Fulham FC"
     },
     {
       "date": "2026-12-02",
@@ -1285,10 +1298,11 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-02",
+      "time": "20:00",
       "team1": "Coventry City FC",
-      "team2": "Ipswich Town FC",
-      "neutral": false
+      "team2": "Ipswich Town FC"
     },
     {
       "date": "2026-12-02",
@@ -1309,10 +1323,17 @@
       "neutral": false
     },
     {
-      "date": "2026-12-05",
+      "date": "2026-12-03",
       "team1": "Tottenham Hotspur FC",
-      "team2": "Arsenal FC",
+      "team2": "Fulham FC",
       "neutral": false
+    },
+    {
+      "round": "Matchday 14",
+      "date": "2026-12-05",
+      "time": "15:00",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Arsenal FC"
     },
     {
       "date": "2026-12-05",
@@ -1327,10 +1348,11 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-05",
+      "time": "15:00",
       "team1": "Newcastle United FC",
-      "team2": "Sunderland AFC",
-      "neutral": false
+      "team2": "Sunderland AFC"
     },
     {
       "date": "2026-12-05",
@@ -1363,34 +1385,57 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-05",
+      "time": "15:00",
+      "team1": "Everton FC",
+      "team2": "Fulham FC"
+    },
+    {
+      "date": "2026-12-06",
       "team1": "Everton FC",
       "team2": "Fulham FC",
       "neutral": false
     },
     {
+      "date": "2026-12-06",
+      "team1": "Newcastle United FC",
+      "team2": "Sunderland AFC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Tottenham Hotspur FC",
+      "team2": "Arsenal FC",
+      "neutral": false
+    },
+    {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Sunderland AFC",
-      "team2": "Nottingham Forest FC",
-      "neutral": false
+      "team2": "Nottingham Forest FC"
     },
     {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Crystal Palace FC",
-      "team2": "Manchester United FC",
-      "neutral": false
+      "team2": "Manchester United FC"
     },
     {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Hull City AFC",
-      "team2": "Tottenham Hotspur FC",
-      "neutral": false
+      "team2": "Tottenham Hotspur FC"
     },
     {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Brighton & Hove Albion FC",
-      "team2": "Everton FC",
-      "neutral": false
+      "team2": "Everton FC"
     },
     {
       "date": "2026-12-12",
@@ -1399,16 +1444,18 @@
       "neutral": false
     },
     {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Coventry City FC",
-      "team2": "Aston Villa FC",
-      "neutral": false
+      "team2": "Aston Villa FC"
     },
     {
+      "round": "Matchday 15",
       "date": "2026-12-12",
+      "time": "15:00",
       "team1": "Arsenal FC",
-      "team2": "AFC Bournemouth",
-      "neutral": false
+      "team2": "AFC Bournemouth"
     },
     {
       "date": "2026-12-12",
@@ -1429,16 +1476,53 @@
       "neutral": false
     },
     {
+      "date": "2026-12-13",
+      "team1": "Arsenal FC",
+      "team2": "AFC Bournemouth",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "Everton FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Sunderland AFC",
+      "team2": "Nottingham Forest FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Coventry City FC",
+      "team2": "Aston Villa FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Crystal Palace FC",
+      "team2": "Manchester United FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-14",
+      "team1": "Hull City AFC",
+      "team2": "Tottenham Hotspur FC",
+      "neutral": false
+    },
+    {
       "date": "2026-12-19",
       "team1": "Leeds United FC",
       "team2": "Fulham FC",
       "neutral": false
     },
     {
+      "round": "Matchday 16",
       "date": "2026-12-19",
+      "time": "15:00",
       "team1": "Brighton & Hove Albion FC",
-      "team2": "Ipswich Town FC",
-      "neutral": false
+      "team2": "Ipswich Town FC"
     },
     {
       "date": "2026-12-19",
@@ -1459,10 +1543,11 @@
       "neutral": false
     },
     {
+      "round": "Matchday 16",
       "date": "2026-12-19",
+      "time": "15:00",
       "team1": "Sunderland AFC",
-      "team2": "Crystal Palace FC",
-      "neutral": false
+      "team2": "Crystal Palace FC"
     },
     {
       "date": "2026-12-19",
@@ -1471,10 +1556,11 @@
       "neutral": false
     },
     {
+      "round": "Matchday 16",
       "date": "2026-12-19",
+      "time": "15:00",
       "team1": "Arsenal FC",
-      "team2": "Manchester United FC",
-      "neutral": false
+      "team2": "Manchester United FC"
     },
     {
       "date": "2026-12-19",
@@ -1483,7 +1569,32 @@
       "neutral": false
     },
     {
+      "round": "Matchday 16",
       "date": "2026-12-19",
+      "time": "15:00",
+      "team1": "Chelsea FC",
+      "team2": "Aston Villa FC"
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Brighton & Hove Albion FC",
+      "team2": "Ipswich Town FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Sunderland AFC",
+      "team2": "Crystal Palace FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Arsenal FC",
+      "team2": "Manchester United FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-21",
       "team1": "Chelsea FC",
       "team2": "Aston Villa FC",
       "neutral": false

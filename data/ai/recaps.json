@@ -53,5 +53,60 @@
     "text": "Eyupspor 0-4 Goztepe was the biggest margin of the recent Süper Lig results. There were no draws in the listed matches.",
     "name": "Süper Lig",
     "generated_at": "2026-10-19T07:32:52.719Z"
+  },
+  "bundesliga|2026-10-20": {
+    "text": "Bayern München's 6-1 win over RB Leipzig was the biggest margin of the recent Bundesliga results. There were two draws: Union Berlin and Borussia Dortmund finished 0-0, while Werder Bremen and SC Paderborn played out a 2-2.",
+    "name": "Bundesliga",
+    "generated_at": "2026-10-20T10:05:25.658Z"
+  },
+  "champions_league|2026-10-20": {
+    "text": "Aston Villa FC recorded the biggest margin of the recent Champions League results with a 6-0 win over Fenerbahce, while Liverpool FC beat LASK Linz 3-6 and Galatasaray fell 1-4 to FC Barcelona. The only draw was Viking FK 3-3 FC Bayern München.",
+    "name": "Champions League",
+    "generated_at": "2026-10-20T10:05:26.650Z"
+  },
+  "conference_league|2026-10-20": {
+    "text": "Brighton & Hove Albion FC recorded the biggest margin of the recent Conference League results with a 4-0 win over Kauno Zalgiris. Several matches ended level, including CSU Craiova 1-1 Getafe CF, Egnatia 1-1 FC Midtjylland, Heart of Midlothian 1-1 FC Nordsjælland and Riga FC 1-1 Kairat Almaty.",
+    "name": "Conference League",
+    "generated_at": "2026-10-20T10:05:27.732Z"
+  },
+  "eredivisie|2026-10-20": {
+    "text": "Heerenveen's 4-0 win over Excelsior was the biggest margin of the recent Eredivisie results, while FC Groningen fell 2-5 to Ajax Amsterdam. SC Cambuur drew 2-2 with AZ Alkmaar and NEC Nijmegen drew 2-2 with Fortuna Sittard.",
+    "name": "Eredivisie",
+    "generated_at": "2026-10-20T10:05:28.909Z"
+  },
+  "europa_league|2026-10-20": {
+    "text": "The biggest margin of the recent Europa League results came from Lech Poznan 0-4 Bayer 04 Leverkusen and RB Salzburg 0-4 AC Milan. There were three draws: NEC Nijmegen 1-1 Levski Sofia, Sparta Prague 1-1 Lillestrom, and Union St.-Gilloise 1-1 Real Sociedad de Fútbol.",
+    "name": "Europa League",
+    "generated_at": "2026-10-20T10:05:29.949Z"
+  },
+  "la_liga|2026-10-20": {
+    "text": "Real Betis Balompié and Málaga CF both lost 2-5, to FC Barcelona and Real Sociedad de Fútbol respectively, while Real Madrid CF beat Sevilla FC 4-1. There were draws: RC Deportivo La Coruña 1-1 Levante UD, Villarreal CF 0-0 Elche CF, Valencia CF 0-0 Athletic Club, and Getafe CF 1-1 Rayo Vallecano de Madrid.",
+    "name": "La Liga",
+    "generated_at": "2026-10-20T10:05:30.924Z"
+  },
+  "ligue_1|2026-10-20": {
+    "text": "Olympique de Marseille's 5-2 win over Angers SCO was the biggest margin of the recent Ligue 1 results, while Lille OSC and Stade Brestois 29 drew 1-1. Paris FC edged Stade Rennais FC 1901 in a 4-3 result.",
+    "name": "Ligue 1",
+    "generated_at": "2026-10-20T10:05:32.348Z"
+  },
+  "premier_league|2026-10-20": {
+    "text": "Brighton & Hove Albion FC recorded the biggest margin of the recent Premier League results with a 5-0 win over Crystal Palace FC. Leeds United FC and Manchester United FC played out the only draw, finishing 1-1.",
+    "name": "Premier League",
+    "generated_at": "2026-10-20T10:05:33.626Z"
+  },
+  "primeira_liga|2026-10-20": {
+    "text": "Braga lost 1-2 at home to Gil Vicente. That was the biggest margin among the recent results, and there were no draws.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-10-20T10:05:34.789Z"
+  },
+  "serie_a|2026-10-20": {
+    "text": "AC Monza's 4-0 win over Cagliari Calcio was the biggest margin of the recent Serie A results. There were no draws across the ten matches, with Frosinone Calcio beating US Sassuolo Calcio 4-2 and AC Milan edging Atalanta BC 3-2 in the highest-scoring games.",
+    "name": "Serie A",
+    "generated_at": "2026-10-20T10:05:35.843Z"
+  },
+  "super_lig|2026-10-20": {
+    "text": "Recent Süper Lig results included a 4-1 win for Kasimpasa over Samsunspor, the biggest margin of the round. Fenerbahce beat Alanyaspor 3-0, while Erzurum BB and Trabzonspor each won 2-0. There were no draws in these matches.",
+    "name": "Süper Lig",
+    "generated_at": "2026-10-20T10:05:36.887Z"
   }
 }

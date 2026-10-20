@@ -858,7 +858,13 @@
       "date": "2026-10-19",
       "team1": "Trabzonspor",
       "team2": "Besiktas",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-23",

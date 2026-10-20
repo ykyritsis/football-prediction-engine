@@ -858,7 +858,13 @@
       "date": "2026-10-19",
       "team1": "Braga",
       "team2": "Gil Vicente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-23",

@@ -822,13 +822,25 @@
       "date": "2026-10-19",
       "team1": "AC Monza",
       "team2": "Cagliari Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-19",
       "team1": "Parma Calcio 1913",
       "team2": "Torino FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-23",
