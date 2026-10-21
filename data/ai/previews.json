@@ -118,5 +118,65 @@
     "text": "La Liga's FC Barcelona host Real Madrid CF on 2026-10-25. The statistical model's most likely score is 2-1, which is a model forecast and not a prediction of the result.",
     "date": "2026-10-25",
     "generated_at": "2026-10-20T10:05:37.916Z"
+  },
+  "premier_league|2026-10-31|Chelsea FC|Manchester United FC": {
+    "text": "Chelsea FC host Manchester United FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:54.294Z"
+  },
+  "premier_league|2026-10-31|Manchester City FC|Brighton & Hove Albion FC": {
+    "text": "Manchester City FC host Brighton & Hove Albion FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:55.267Z"
+  },
+  "premier_league|2026-10-31|AFC Bournemouth|Leeds United FC": {
+    "text": "AFC Bournemouth host Leeds United FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:56.538Z"
+  },
+  "premier_league|2026-10-31|Coventry City FC|Sunderland AFC": {
+    "text": "Coventry City FC host Sunderland AFC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:57.475Z"
+  },
+  "premier_league|2026-10-31|Hull City AFC|Ipswich Town FC": {
+    "text": "Hull City AFC host Ipswich Town FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:58.606Z"
+  },
+  "premier_league|2026-10-31|Brentford FC|Nottingham Forest FC": {
+    "text": "Brentford FC host Nottingham Forest FC in the Premier League on 2026-10-31. The statistical model's most likely score forecast for this match is 1-1, which is not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:08:59.873Z"
+  },
+  "premier_league|2026-10-31|Tottenham Hotspur FC|Crystal Palace FC": {
+    "text": "Tottenham Hotspur FC host Crystal Palace FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:09:01.101Z"
+  },
+  "premier_league|2026-10-31|Aston Villa FC|Fulham FC": {
+    "text": "Aston Villa FC host Fulham FC in the Premier League on 2026-10-31. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-21T10:09:01.930Z"
+  },
+  "la_liga|2026-10-25|Club Atlético de Madrid|RC Deportivo La Coruña": {
+    "text": "La Liga fixture on 2026-10-25 sees Club Atlético de Madrid host RC Deportivo La Coruña. The statistical model's most likely score is 2-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-21T10:09:03.371Z"
+  },
+  "la_liga|2026-10-25|RC Celta de Vigo|Real Betis Balompié": {
+    "text": "La Liga's RC Celta de Vigo host Real Betis Balompié on 2026-10-25. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-21T10:09:04.511Z"
+  },
+  "la_liga|2026-10-25|Real Sociedad de Fútbol|Levante UD": {
+    "text": "La Liga's 2026-10-25 fixture sees Real Sociedad de Fútbol host Levante UD. The statistical model's most likely score is 2-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-21T10:09:05.709Z"
+  },
+  "la_liga|2026-10-25|Real Racing Club de Santander|RCD Espanyol de Barcelona": {
+    "text": "La Liga fixture on 2026-10-25 sees Real Racing Club de Santander host RCD Espanyol de Barcelona. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-21T10:09:06.870Z"
   }
 }

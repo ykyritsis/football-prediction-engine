@@ -1029,6 +1029,12 @@
       "neutral": false
     },
     {
+      "date": "2026-12-04",
+      "team1": "Toulouse FC",
+      "team2": "Paris Saint-Germain FC",
+      "neutral": false
+    },
+    {
       "date": "2026-12-05",
       "team1": "ES Troyes AC",
       "team2": "Olympique Lyonnais",
@@ -1053,22 +1059,22 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-05",
       "team1": "Olympique de Marseille",
-      "team2": "OGC Nice",
-      "neutral": false
+      "team2": "OGC Nice"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-05",
       "team1": "Stade Rennais FC 1901",
-      "team2": "Stade Brestois 29",
-      "neutral": false
+      "team2": "Stade Brestois 29"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-05",
       "team1": "Toulouse FC",
-      "team2": "Paris Saint-Germain FC",
-      "neutral": false
+      "team2": "Paris Saint-Germain FC"
     },
     {
       "date": "2026-12-05",
@@ -1080,6 +1086,18 @@
       "date": "2026-12-05",
       "team1": "Paris FC",
       "team2": "Le Mans FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "Stade Brestois 29",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "Olympique de Marseille",
+      "team2": "OGC Nice",
       "neutral": false
     },
     {
@@ -1119,10 +1137,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-12",
       "team1": "FC Lorient",
-      "team2": "Lille OSC",
-      "neutral": false
+      "team2": "Lille OSC"
     },
     {
       "date": "2026-12-12",
@@ -1134,6 +1152,12 @@
       "date": "2026-12-13",
       "team1": "Olympique Lyonnais",
       "team2": "Olympique de Marseille",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "FC Lorient",
+      "team2": "Lille OSC",
       "neutral": false
     },
     {
