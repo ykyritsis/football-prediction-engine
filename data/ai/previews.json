@@ -178,5 +178,65 @@
     "text": "La Liga fixture on 2026-10-25 sees Real Racing Club de Santander host RCD Espanyol de Barcelona. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
     "date": "2026-10-25",
     "generated_at": "2026-10-21T10:09:06.870Z"
+  },
+  "premier_league|2026-11-01|Liverpool FC|Arsenal FC": {
+    "text": "Liverpool FC host Arsenal FC in the Premier League on 2026-11-01. The statistical model's most likely score is 1-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:28.889Z"
+  },
+  "la_liga|2026-10-26|Sevilla FC|CA Osasuna": {
+    "text": "Sevilla FC host CA Osasuna in La Liga on 2026-10-26. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-26",
+    "generated_at": "2026-10-22T10:11:30.099Z"
+  },
+  "la_liga|2026-10-30|Villarreal CF|RCD Espanyol de Barcelona": {
+    "text": "La Liga action on 2026-10-30 features Villarreal CF hosting RCD Espanyol de Barcelona. The statistical model's most likely score is a 2-0 forecast, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-22T10:11:31.345Z"
+  },
+  "la_liga|2026-10-31|Levante UD|Club Atlético de Madrid": {
+    "text": "La Liga action on 2026-10-31 features Levante UD hosting Club Atlético de Madrid. The statistical model's most likely score is 1-2, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-22T10:11:32.650Z"
+  },
+  "la_liga|2026-10-31|Rayo Vallecano de Madrid|RC Celta de Vigo": {
+    "text": "La Liga fixture on 2026-10-31 sees Rayo Vallecano de Madrid host RC Celta de Vigo. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-22T10:11:33.758Z"
+  },
+  "la_liga|2026-10-31|Real Betis Balompié|Málaga CF": {
+    "text": "Real Betis Balompié host Málaga CF in La Liga on 2026-10-31. The statistical model's most likely score is 3-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-22T10:11:35.188Z"
+  },
+  "la_liga|2026-10-31|FC Barcelona|Deportivo Alavés": {
+    "text": "La Liga action on 2026-10-31 features FC Barcelona hosting Deportivo Alavés. The statistical model's most likely score is a 3-0 forecast, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-22T10:11:36.191Z"
+  },
+  "la_liga|2026-11-01|Real Betis Balompié|Málaga CF": {
+    "text": "La Liga fixture on 2026-11-01 sees Real Betis Balompié host Málaga CF. The statistical model's most likely score is 3-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:37.196Z"
+  },
+  "la_liga|2026-11-01|Villarreal CF|RCD Espanyol de Barcelona": {
+    "text": "La Liga action on 2026-11-01 features Villarreal CF hosting RCD Espanyol de Barcelona. The statistical model's most likely score is 2-0, a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:38.442Z"
+  },
+  "la_liga|2026-11-01|Elche CF|Valencia CF": {
+    "text": "Elche CF host Valencia CF in La Liga on 2026-11-01. The statistical model's most likely score is 1-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:39.428Z"
+  },
+  "la_liga|2026-11-01|Athletic Club|Real Sociedad de Fútbol": {
+    "text": "La Liga's match on 2026-11-01 sees Athletic Club host Real Sociedad de Fútbol. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:40.662Z"
+  },
+  "la_liga|2026-11-01|Levante UD|Club Atlético de Madrid": {
+    "text": "La Liga fixture on 2026-11-01 sees Levante UD host Club Atlético de Madrid. The statistical model's most likely score is 1-2, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-22T10:11:41.709Z"
   }
 }

@@ -765,10 +765,11 @@
       "neutral": false
     },
     {
+      "round": "Matchday 8",
       "date": "2026-10-24",
+      "time": "17:15",
       "team1": "Toulouse FC",
-      "team2": "ES Troyes AC",
-      "neutral": false
+      "team2": "ES Troyes AC"
     },
     {
       "date": "2026-10-24",
@@ -810,6 +811,12 @@
       "date": "2026-10-25",
       "team1": "Paris Saint-Germain FC",
       "team2": "Olympique Lyonnais",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-25",
+      "team1": "Toulouse FC",
+      "team2": "ES Troyes AC",
       "neutral": false
     },
     {
@@ -1035,10 +1042,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-05",
       "team1": "ES Troyes AC",
-      "team2": "Olympique Lyonnais",
-      "neutral": false
+      "team2": "Olympique Lyonnais"
     },
     {
       "date": "2026-12-05",
@@ -1086,6 +1093,12 @@
       "date": "2026-12-05",
       "team1": "Paris FC",
       "team2": "Le Mans FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "ES Troyes AC",
+      "team2": "Olympique Lyonnais",
       "neutral": false
     },
     {

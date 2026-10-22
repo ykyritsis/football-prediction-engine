@@ -1069,7 +1069,13 @@
       "date": "2026-10-21",
       "team1": "Levante UD",
       "team2": "Athletic Club",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-23",
@@ -1354,10 +1360,40 @@
       "neutral": false
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-11-20",
       "team1": "Athletic Club",
       "team2": "RCD Espanyol de Barcelona",
       "neutral": false
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "Deportivo Alavés",
+      "team2": "RC Deportivo La Coruña",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "Rayo Vallecano de Madrid",
+      "team2": "Valencia CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "Sevilla FC",
+      "team2": "Real Betis Balompié",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-21",
+      "team1": "Real Madrid CF",
+      "team2": "RC Celta de Vigo",
+      "neutral": false
+    },
+    {
+      "round": "Matchday 13",
+      "date": "2026-11-22",
+      "team1": "Athletic Club",
+      "team2": "RCD Espanyol de Barcelona"
     },
     {
       "date": "2026-11-22",
@@ -1372,10 +1408,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-11-22",
       "team1": "Rayo Vallecano de Madrid",
-      "team2": "Valencia CF",
-      "neutral": false
+      "team2": "Valencia CF"
     },
     {
       "date": "2026-11-22",
@@ -1390,25 +1426,31 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-11-22",
       "team1": "Real Madrid CF",
-      "team2": "RC Celta de Vigo",
-      "neutral": false
+      "team2": "RC Celta de Vigo"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-11-22",
       "team1": "Deportivo Alavés",
-      "team2": "RC Deportivo La Coruña",
-      "neutral": false
+      "team2": "RC Deportivo La Coruña"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-11-22",
       "team1": "Sevilla FC",
-      "team2": "Real Betis Balompié",
-      "neutral": false
+      "team2": "Real Betis Balompié"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-11-22",
+      "team1": "Levante UD",
+      "team2": "Elche CF"
+    },
+    {
+      "date": "2026-11-23",
       "team1": "Levante UD",
       "team2": "Elche CF",
       "neutral": false

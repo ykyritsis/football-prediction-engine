@@ -546,55 +546,109 @@
       "date": "2026-10-21",
       "team1": "Aston Villa FC",
       "team2": "Viking FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Club Brugge",
       "team2": "Racing Club de Lens",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Como 1907",
       "team2": "Manchester United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "FC Bayern München",
       "team2": "Arsenal FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "FC Internazionale Milano",
       "team2": "Shakhtar Donetsk",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Lille OSC",
       "team2": "Galatasaray",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Real Betis Balompié",
       "team2": "Feyenoord Rotterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Real Madrid CF",
       "team2": "RB Leipzig",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-21",
       "team1": "Sporting CP",
       "team2": "LASK Linz",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-03",

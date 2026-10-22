@@ -127,6 +127,70 @@
     "la_liga|2026-10-25|RC Celta de Vigo|Real Betis Balompié": {
       "text": "Celta's strong home form, including recent wins over Racing and Alavés, drives the lean toward a home victory.",
       "generated_at": "2026-10-21T10:09:09.990Z"
+    },
+    "premier_league|2026-11-01|Liverpool FC|Arsenal FC": {
+      "text": "Arsenal's stronger recent form, with four wins in five, drives the lean toward an away win.",
+      "generated_at": "2026-10-22T10:11:28.720Z"
+    },
+    "la_liga|2026-10-25|Real Sociedad de Fútbol|Levante UD": {
+      "text": "Real Sociedad's strong recent form, with four wins in five, drives the lean toward a home victory over a Levante side that has struggled defensively.",
+      "generated_at": "2026-10-22T10:11:29.834Z"
+    },
+    "la_liga|2026-10-25|Real Racing Club de Santander|RCD Espanyol de Barcelona": {
+      "text": "Espanyol's stronger recent form and Racing Santander's heavy recent defeats drive the lean toward an away win.",
+      "generated_at": "2026-10-22T10:11:30.818Z"
+    },
+    "la_liga|2026-10-26|Sevilla FC|CA Osasuna": {
+      "text": "Sevilla's two recent home wins and Osasuna's poor away form drive the lean toward a Sevilla victory.",
+      "generated_at": "2026-10-22T10:11:31.787Z"
+    },
+    "la_liga|2026-10-30|Villarreal CF|RCD Espanyol de Barcelona": {
+      "text": "Villarreal's strong home form and Espanyol's poor recent run drive the lean toward a Villarreal win.",
+      "generated_at": "2026-10-22T10:11:32.785Z"
+    },
+    "la_liga|2026-10-31|Levante UD|Club Atlético de Madrid": {
+      "text": "Atlético's five-match winning run against Levante's leaky defense drives the away-win lean.",
+      "generated_at": "2026-10-22T10:11:33.506Z"
+    },
+    "la_liga|2026-10-31|Rayo Vallecano de Madrid|RC Celta de Vigo": {
+      "text": "Rayo's strong home form, with two wins in their last three home matches, drives the lean toward a home win.",
+      "generated_at": "2026-10-22T10:11:34.732Z"
+    },
+    "la_liga|2026-10-31|Real Betis Balompié|Málaga CF": {
+      "text": "Real Betis's strong home form and Málaga's poor recent run drive the lean toward a home win.",
+      "generated_at": "2026-10-22T10:11:35.837Z"
+    },
+    "la_liga|2026-10-31|FC Barcelona|Deportivo Alavés": {
+      "text": "Barcelona's five straight wins and Alavés' poor recent form drive the lean toward a Barcelona victory.",
+      "generated_at": "2026-10-22T10:11:36.863Z"
+    },
+    "la_liga|2026-11-01|Real Betis Balompié|Málaga CF": {
+      "text": "Real Betis's strong home form and Málaga's poor recent run drive the lean toward a home win.",
+      "generated_at": "2026-10-22T10:11:37.582Z"
+    },
+    "la_liga|2026-11-01|Villarreal CF|RCD Espanyol de Barcelona": {
+      "text": "Villarreal's stronger recent form and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-10-22T10:11:38.710Z"
+    },
+    "la_liga|2026-11-01|Elche CF|Valencia CF": {
+      "text": "Elche's solid recent form and home advantage against a Valencia side with recent losses drive the lean toward an Elche win.",
+      "generated_at": "2026-10-22T10:11:40.054Z"
+    },
+    "la_liga|2026-11-01|Athletic Club|Real Sociedad de Fútbol": {
+      "text": "Athletic Club's home advantage and stronger home form drive the lean toward a home win despite Real Sociedad's recent winning run.",
+      "generated_at": "2026-10-22T10:11:41.209Z"
+    },
+    "la_liga|2026-11-01|Levante UD|Club Atlético de Madrid": {
+      "text": "Atlético's five-match winning run against Levante's leaky, win-shy form drives the away-win lean.",
+      "generated_at": "2026-10-22T10:11:42.097Z"
+    },
+    "la_liga|2026-11-01|RC Deportivo La Coruña|CA Osasuna": {
+      "text": "Osasuna's poor recent form, with four losses in five, drives the lean toward a Deportivo home win.",
+      "generated_at": "2026-10-22T10:11:43.210Z"
+    },
+    "la_liga|2026-11-01|FC Barcelona|Deportivo Alavés": {
+      "text": "Barcelona's five straight wins and prolific scoring against Alavés's four losses in five drive the lean to a home win.",
+      "generated_at": "2026-10-22T10:11:44.198Z"
     }
   },
   "storylines": {
@@ -369,6 +433,81 @@
       "text": "North Macedonia sit 53rd of 54 in the UEFA Nations League with 0 points and a goal difference of -10, having recorded 0W 0D 4L. Their last five results were all defeats, most recently a 0-3 loss away to Switzerland, ahead of their next fixture away to Scotland on 2026-11-13.",
       "kind": "cold",
       "generated_at": "2026-10-21T10:09:37.699Z"
+    },
+    "champions_league|Club Brugge|2026-10-19": {
+      "text": "Club Brugge sit 11th of 36 in the Champions League with 6 points, a goal difference of +3 and a record of 2W 0D 1L. They have won each of their last five matches, most recently 3-0 at home against Racing Club de Lens, and next face PSV Eindhoven away on 2026-11-04.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:11:45.168Z"
+    },
+    "nations_league|Switzerland|2026-10-19": {
+      "text": "Switzerland sits first of 54 teams in the UEFA Nations League with 12 points, a goal difference of +10, and a record of 4 wins, 0 draws, and 0 losses. Their last five results were wins against Algeria (2-0, home), North Macedonia (3-0, away), Scotland (3-0, away), Slovenia (2-1, home), and North Macedonia (3-0, home), with Slovenia v Switzerland next on 2026-11-13.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:11:46.527Z"
+    },
+    "world_cup_qualifying|San Marino|2026-10-19": {
+      "text": "San Marino sits 44th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently a 1-2 away defeat to Albania on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:47.632Z"
+    },
+    "world_cup_qualifying|Romania|2026-10-19": {
+      "text": "Romania sits 43rd of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. Their last five results were all losses: 0-1 away to Türkiye, 1-2 away to Sweden, 2-4 at home to Bosnia-Herzegovina, 0-6 away to Poland, and 0-1 at home to Sweden.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:48.564Z"
+    },
+    "world_cup_qualifying|North Macedonia|2026-10-19": {
+      "text": "North Macedonia sits 37th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-3 away to Switzerland on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:49.463Z"
+    },
+    "copa_america|Argentina|2026-10-19": {
+      "text": "Argentina sit first of 16 in the Copa América standings and have won each of their last five matches. Their most recent result was a 2-1 away win against England on 2026-07-15.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:11:50.496Z"
+    },
+    "copa_america|Bolivia|2026-10-19": {
+      "text": "Bolivia has lost each of its last five matches, including a 0-5 defeat to Uruguay and a 1-3 loss to Panama. The team sits second of 16 in the Copa América standings with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:51.650Z"
+    },
+    "copa_america|Peru|2026-10-19": {
+      "text": "Peru sits 13th of 16 in the Copa América standings with 0 points and a goal difference of +0. Their last five results include a 0-0 draw with Chile and losses to Brazil, Colombia, Canada, and Argentina.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:52.621Z"
+    },
+    "africa_cup|Nigeria|2026-10-19": {
+      "text": "Nigeria have won each of their last five matches, most recently a 2-0 away win against Algeria on 2026-01-10. The team currently sits 16th of 24 with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:11:53.835Z"
+    },
+    "africa_cup|Uganda|2026-10-19": {
+      "text": "Uganda sit 22nd of 24 with 0 points and a goal difference of +0. Their last five results include a 1-1 draw with Tanzania and a 1-3 loss to Nigeria.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:54.724Z"
+    },
+    "africa_cup|Tunisia|2026-10-19": {
+      "text": "Tunisia sit 21st of 24 with 0 points and a goal difference of +0. Their last five results were a 2-3 loss to Nigeria, a 1-1 draw with Tanzania, a 1-5 loss to Sweden, a 0-4 loss to Japan, and a 1-3 loss to the Netherlands.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:55.694Z"
+    },
+    "gold_cup|Mexico|2026-10-19": {
+      "text": "Mexico has won four of its last five matches, most recently a 2-3 loss to England at home. The team sits 11th of 16 in the league with 0 points and a goal difference of +0.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:11:56.951Z"
+    },
+    "concacaf_nations|Bahamas|2026-10-19": {
+      "text": "The Bahamas sit 37th of 37 with 0 points and a goal difference of -17 after a record of 0W 0D 4L. Their last five results were all losses: 2-6 away to Barbados, 0-8 at home to St. Martin, 1-3 away to the US Virgin Islands, 2-3 at home to the US Virgin Islands, and 0-6 away to St. Martin.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:58.316Z"
+    },
+    "concacaf_nations|British Virgin Islands|2026-10-19": {
+      "text": "The British Virgin Islands sit 36th of 37 in the Concacaf Nations League with 0 points and a goal difference of -11. Their last five matches have all ended in defeat, including a 0-1 loss to the Cayman Islands and 0-3 losses to Montserrat and the Turks and Caicos Islands.",
+      "kind": "cold",
+      "generated_at": "2026-10-22T10:11:59.471Z"
+    },
+    "concacaf_nations|Guyana|2026-10-19": {
+      "text": "Guyana sit first of 37 in the Concacaf Nations League with 12 points, a +14 goal difference and a record of four wins from four. Their last five results were wins over Barbados, Puerto Rico, Cayman Islands and Dominica twice, ahead of a fixture against Cayman Islands on 2026-11-12.",
+      "kind": "hot",
+      "generated_at": "2026-10-22T10:12:00.677Z"
     }
   }
 }
