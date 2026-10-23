@@ -191,6 +191,70 @@
     "la_liga|2026-11-01|FC Barcelona|Deportivo Alavés": {
       "text": "Barcelona's five straight wins and prolific scoring against Alavés's four losses in five drive the lean to a home win.",
       "generated_at": "2026-10-22T10:11:44.198Z"
+    },
+    "premier_league|2026-11-02|Newcastle United FC|Everton FC": {
+      "text": "Newcastle's home advantage and Everton's tendency to draw away games drive the lean toward a narrow home win.",
+      "generated_at": "2026-10-23T10:04:32.763Z"
+    },
+    "la_liga|2026-11-01|Getafe CF|Sevilla FC": {
+      "text": "Getafe's home solidity and Sevilla's heavy recent away defeats drive the lean toward a narrow home win.",
+      "generated_at": "2026-10-23T10:04:33.975Z"
+    },
+    "la_liga|2026-11-01|Real Racing Club de Santander|Real Madrid CF": {
+      "text": "Real Madrid's strong recent form and Santander's heavy defeats drive the away-win forecast.",
+      "generated_at": "2026-10-23T10:04:34.933Z"
+    },
+    "la_liga|2026-11-01|Rayo Vallecano de Madrid|RC Celta de Vigo": {
+      "text": "Rayo Vallecano's strong home form, with two wins in their last three home matches, drives the lean toward a home win.",
+      "generated_at": "2026-10-23T10:04:36.088Z"
+    },
+    "la_liga|2026-11-02|RC Deportivo La Coruña|CA Osasuna": {
+      "text": "Deportivo's home edge and Osasuna's poor recent form drive the lean toward a home win.",
+      "generated_at": "2026-10-23T10:04:37.165Z"
+    },
+    "serie_a|2026-10-23|Torino FC|AC Monza": {
+      "text": "Torino's strong recent form, with three wins in their last three, drives the lean toward a home victory over Monza.",
+      "generated_at": "2026-10-23T10:04:38.163Z"
+    },
+    "serie_a|2026-10-24|Cagliari Calcio|Bologna FC 1909": {
+      "text": "Bologna's higher win probability and Cagliari's heavy recent home loss to Monza drive the lean toward an away win.",
+      "generated_at": "2026-10-23T10:04:39.007Z"
+    },
+    "serie_a|2026-10-24|Como 1907|US Sassuolo Calcio": {
+      "text": "Como's strong recent form, including three wins in five, drives the lean toward a home victory over a struggling Sassuolo side.",
+      "generated_at": "2026-10-23T10:04:40.132Z"
+    },
+    "serie_a|2026-10-24|SSC Napoli|AS Roma": {
+      "text": "Roma's stronger recent form, including three wins and two draws, drives the lean toward an away win.",
+      "generated_at": "2026-10-23T10:04:41.351Z"
+    },
+    "serie_a|2026-10-24|SS Lazio|Parma Calcio 1913": {
+      "text": "Lazio's four wins in five, including a 3-0 away win over Juventus, against Parma's three losses in their last three matches drives the lean.",
+      "generated_at": "2026-10-23T10:04:42.466Z"
+    },
+    "serie_a|2026-10-25|FC Internazionale Milano|ACF Fiorentina": {
+      "text": "Inter's strong recent form, with four wins in five, drives the lean toward a home victory over a struggling Fiorentina side.",
+      "generated_at": "2026-10-23T10:04:43.408Z"
+    },
+    "serie_a|2026-10-25|Atalanta BC|Frosinone Calcio": {
+      "text": "Atalanta's home win over Venezia and Frosinone's away loss to Napoli drive the lean toward an Atalanta victory.",
+      "generated_at": "2026-10-23T10:04:44.198Z"
+    },
+    "serie_a|2026-10-25|Genoa CFC|Venezia FC": {
+      "text": "Genoa's home win over Fiorentina and Venezia's poor away form drive the lean toward a narrow Genoa victory.",
+      "generated_at": "2026-10-23T10:04:45.278Z"
+    },
+    "serie_a|2026-10-25|US Lecce|Juventus FC": {
+      "text": "Juventus's stronger overall profile and Lecce's three losses in five games drive the lean toward an away win.",
+      "generated_at": "2026-10-23T10:04:46.370Z"
+    },
+    "serie_a|2026-10-25|Udinese Calcio|AC Milan": {
+      "text": "AC Milan's stronger recent form, including two wins, against Udinese's five straight losses drives the lean toward an away win.",
+      "generated_at": "2026-10-23T10:04:47.566Z"
+    },
+    "serie_a|2026-10-27|US Sassuolo Calcio|SS Lazio": {
+      "text": "Lazio's four wins in five matches and Sassuolo's leaky defense drive the away-win lean.",
+      "generated_at": "2026-10-23T10:04:48.713Z"
     }
   },
   "storylines": {
@@ -508,6 +572,16 @@
       "text": "Guyana sit first of 37 in the Concacaf Nations League with 12 points, a +14 goal difference and a record of four wins from four. Their last five results were wins over Barbados, Puerto Rico, Cayman Islands and Dominica twice, ahead of a fixture against Cayman Islands on 2026-11-12.",
       "kind": "hot",
       "generated_at": "2026-10-22T10:12:00.677Z"
+    },
+    "conference_league|Lincoln Red Imps|2026-10-19": {
+      "text": "Lincoln Red Imps sit 34th of 36 in the Conference League with 0 points and a goal difference of -4, having recorded 0 wins, 0 draws and 2 losses. Their last five results include a 2-1 home win over Sigma Olomouc, and they next face Hajduk Split at home on 2026-11-05.",
+      "kind": "cold",
+      "generated_at": "2026-10-23T10:04:49.844Z"
+    },
+    "conference_league|KuPS Kuopio|2026-10-19": {
+      "text": "KuPS Kuopio sit 33rd of 36 in the Conference League with 0 points and a goal difference of -4, having recorded 0W 0D 2L. Their last five results read D 2-2 vs Crystal Palace FC, L 0-2 vs Lech Poznan, L 0-1 vs Lech Poznan, L 2-4 vs Trabzonspor and L 0-2 vs Borac Banja Luka, ahead of their next fixture against KAA Gent on 2026-11-05.",
+      "kind": "cold",
+      "generated_at": "2026-10-23T10:04:51.217Z"
     }
   }
 }

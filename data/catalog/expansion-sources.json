@@ -1,130 +1,130 @@
 {
-  "as_of": "2026-10-22",
+  "as_of": "2026-10-23",
   "sources": [
     {
       "competition": "premier_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:45.446Z",
+      "fetched_at": "2026-10-23T10:03:40.414Z",
       "events": 374
     },
     {
       "competition": "la_liga",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:45.916Z",
+      "fetched_at": "2026-10-23T10:03:41.292Z",
       "events": 379
     },
     {
       "competition": "serie_a",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:46.364Z",
+      "fetched_at": "2026-10-23T10:03:41.768Z",
       "events": 374
     },
     {
       "competition": "bundesliga",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:46.836Z",
+      "fetched_at": "2026-10-23T10:03:42.347Z",
       "events": 297
     },
     {
       "competition": "ligue_1",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:47.283Z",
+      "fetched_at": "2026-10-23T10:03:42.803Z",
       "events": 288
     },
     {
       "competition": "primeira_liga",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:47.817Z",
+      "fetched_at": "2026-10-23T10:03:43.304Z",
       "events": 308
     },
     {
       "competition": "eredivisie",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:48.307Z",
+      "fetched_at": "2026-10-23T10:03:43.813Z",
       "events": 309
     },
     {
       "competition": "belgian_pro_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bel.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:48.756Z",
+      "fetched_at": "2026-10-23T10:03:44.250Z",
       "events": 297
     },
     {
       "competition": "super_lig",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:49.243Z",
+      "fetched_at": "2026-10-23T10:03:44.743Z",
       "events": 297
     },
     {
       "competition": "champions_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:49.664Z",
+      "fetched_at": "2026-10-23T10:03:45.154Z",
       "events": 189
     },
     {
       "competition": "europa_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:50.130Z",
+      "fetched_at": "2026-10-23T10:03:45.619Z",
       "events": 189
     },
     {
       "competition": "conference_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:50.607Z",
+      "fetched_at": "2026-10-23T10:03:46.026Z",
       "events": 153
     },
     {
       "competition": "club_world_cup",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.cwc/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:51.014Z",
+      "fetched_at": "2026-10-23T10:03:46.433Z",
       "events": 0
     },
     {
       "competition": "world_cup",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:51.445Z",
+      "fetched_at": "2026-10-23T10:03:46.925Z",
       "events": 104
     },
     {
       "competition": "european_championship",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:51.904Z",
+      "fetched_at": "2026-10-23T10:03:47.323Z",
       "events": 0
     },
     {
       "competition": "nations_league",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:52.316Z",
+      "fetched_at": "2026-10-23T10:03:48.516Z",
       "events": 160
     },
     {
       "competition": "world_cup_qualifying",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.uefa/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:52.746Z",
+      "fetched_at": "2026-10-23T10:03:48.991Z",
       "events": 12
     },
     {
       "competition": "copa_america",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:53.166Z",
+      "fetched_at": "2026-10-23T10:03:49.382Z",
       "events": 0
     },
     {
       "competition": "africa_cup",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:53.589Z",
+      "fetched_at": "2026-10-23T10:03:49.773Z",
       "events": 16
     },
     {
       "competition": "gold_cup",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:54.074Z",
+      "fetched_at": "2026-10-23T10:03:50.209Z",
       "events": 0
     },
     {
       "competition": "concacaf_nations",
       "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-10-22T10:10:54.489Z",
+      "fetched_at": "2026-10-23T10:03:50.648Z",
       "events": 106
     }
   ],
@@ -143,35 +143,35 @@
     },
     {
       "item": "7922",
-      "error": "404 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/7922/roster"
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/7922/roster"
     },
     {
       "item": "tm-2311",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-2311/roster"
     },
     {
-      "item": "tm-697",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-697/roster"
-    },
-    {
       "item": "tm-377",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-377/roster"
+    },
+    {
+      "item": "tm-697",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-697/roster"
     },
     {
       "item": "tm-1897",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1897/roster"
     },
     {
-      "item": "tm-5225",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
+      "item": "tm-1496",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
     },
     {
       "item": "tm-24325",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-24325/roster"
     },
     {
-      "item": "tm-1496",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
+      "item": "tm-5225",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
     },
     {
       "item": "tm-5546",
@@ -186,12 +186,12 @@
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-715/roster"
     },
     {
-      "item": "tm-814",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-814/roster"
-    },
-    {
       "item": "tm-5545",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5545/roster"
+    },
+    {
+      "item": "tm-814",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-814/roster"
     }
   ]
 }

@@ -218,5 +218,60 @@
     "text": "Recent Süper Lig results saw Fenerbahce beat Alanyaspor 3-0 and Trabzonspor defeat Besiktas 2-0, while Kasimpasa's 4-1 win over Samsunspor was the biggest margin. There were no draws in the listed matches.",
     "name": "Süper Lig",
     "generated_at": "2026-10-22T10:11:40.195Z"
+  },
+  "bundesliga|2026-10-23": {
+    "text": "Bayern München's 6-1 win over RB Leipzig was the biggest margin of the recent Bundesliga results. There were two draws: Union Berlin and Borussia Dortmund finished 0-0, while Werder Bremen and SC Paderborn 07 played out a 2-2.",
+    "name": "Bundesliga",
+    "generated_at": "2026-10-23T10:04:33.062Z"
+  },
+  "champions_league|2026-10-23": {
+    "text": "Manchester City's 5-1 win over AEK Athens was the biggest margin of the recent Champions League results, while AS Roma also impressed with a 4-0 victory against Slovan Bratislava. Fenerbahce drew 2-2 with Slavia Prague, VfB Stuttgart drew 1-1 with Club Atlético de Madrid, and FC Bayern München drew 2-2 with Arsenal FC.",
+    "name": "Champions League",
+    "generated_at": "2026-10-23T10:04:34.246Z"
+  },
+  "conference_league|2026-10-23": {
+    "text": "The biggest margin of the recent Conference League results was Kairat Almaty's 1-5 defeat to Panathinaikos. There were several draws: AGF 1-1 Egnatia, FC Nordsjælland 2-2 CSKA Sofia, Iberia 1999 1-1 Mjällby AIF, Jablonec 0-0 Brighton & Hove Albion FC, Pafos 1-1 Riga FC, and Red Star Belgrade 2-2 F.C. København.",
+    "name": "Conference League",
+    "generated_at": "2026-10-23T10:04:35.523Z"
+  },
+  "eredivisie|2026-10-23": {
+    "text": "Heerenveen's 4-0 win over Excelsior was the biggest margin of the recent Eredivisie round, while FC Groningen lost 2-5 to Ajax Amsterdam. There were two draws: SC Cambuur 2-2 AZ Alkmaar and NEC Nijmegen 2-2 Fortuna Sittard.",
+    "name": "Eredivisie",
+    "generated_at": "2026-10-23T10:04:36.721Z"
+  },
+  "europa_league|2026-10-23": {
+    "text": "The biggest margin of the recent Europa League results was Lillestrom's 0-6 defeat to Real Sociedad. There were several draws: Besiktas 2-2 Crystal Palace, Juventus 2-2 Stade Rennais, Lech Poznan 1-1 Sunderland, and NK Celje 2-2 RB Salzburg.",
+    "name": "Europa League",
+    "generated_at": "2026-10-23T10:04:37.998Z"
+  },
+  "la_liga|2026-10-23": {
+    "text": "Recent La Liga results included draws between RC Deportivo La Coruña and Levante UD, Villarreal CF and Elche CF, Valencia CF and Athletic Club, and Getafe CF and Rayo Vallecano de Madrid. The biggest margin was FC Barcelona's 5-2 win over Real Betis Balompié, matched by Real Sociedad de Fútbol's 5-2 victory at Málaga CF.",
+    "name": "La Liga",
+    "generated_at": "2026-10-23T10:04:39.320Z"
+  },
+  "ligue_1|2026-10-23": {
+    "text": "Angers SCO's 2-5 defeat to Olympique de Marseille was the biggest margin of the recent Ligue 1 results. Lille OSC and Stade Brestois 29 played out a 1-1 draw, the only draw in the set.",
+    "name": "Ligue 1",
+    "generated_at": "2026-10-23T10:04:40.539Z"
+  },
+  "premier_league|2026-10-23": {
+    "text": "Brighton & Hove Albion's 5-0 win over Crystal Palace was the biggest margin of the recent Premier League results. Leeds United and Manchester United played out a 1-1 draw, the only draw in the set of matches.",
+    "name": "Premier League",
+    "generated_at": "2026-10-23T10:04:41.755Z"
+  },
+  "primeira_liga|2026-10-23": {
+    "text": "Braga lost 1-2 to Gil Vicente in the only recent Primeira Liga result. That two-goal margin was the biggest of the round, and there were no draws.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-10-23T10:04:42.622Z"
+  },
+  "serie_a|2026-10-23": {
+    "text": "The biggest margin of the recent Serie A results came in AC Monza's 4-0 win over Cagliari Calcio. There were no draws across the listed fixtures, with AC Milan's 3-2 win over Atalanta BC the closest contest.",
+    "name": "Serie A",
+    "generated_at": "2026-10-23T10:04:43.664Z"
+  },
+  "super_lig|2026-10-23": {
+    "text": "Recent Süper Lig results saw Fenerbahce beat Alanyaspor 3-0 and Kasimpasa defeat Samsunspor 4-1, the biggest margin of the round. There were no draws across the listed matches, with Trabzonspor also beating Besiktas 2-0.",
+    "name": "Süper Lig",
+    "generated_at": "2026-10-23T10:04:44.929Z"
   }
 }
