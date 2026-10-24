@@ -1,10 +1,11 @@
 name: Refresh Touchline data
 
-# Runs daily: pulls open results, moves the forecast cutoff to today, rebuilds,
+# Runs twice a day (05:17 and 17:17 UTC): pulls open results, moves the forecast cutoff to today, rebuilds,
 # commits any changed data and publishes the website. Needs no manual steps.
 on:
   schedule:
     - cron: "17 5 * * *"
+    - cron: "17 17 * * *"
   workflow_dispatch:
 
 permissions:
