@@ -669,13 +669,22 @@ function renderHistory() {
   let hits = 0,
     exact = 0,
     ll = 0,
-    bs = 0;
+    bs = 0,
+    winCalls = 0,
+    winHits = 0,
+    drawCalls = 0,
+    drawHits = 0;
   rows.forEach(({ m }) => {
     const p = m.prediction,
       probs = [p.home_win, p.draw, p.away_win],
       o = m.actual[0] > m.actual[1] ? 0 : m.actual[0] === m.actual[1] ? 1 : 2;
     const scoreline = p.most_likely_score ? (p.most_likely_score[0] > p.most_likely_score[1] ? 0 : p.most_likely_score[0] === p.most_likely_score[1] ? 1 : 2) : -1;
-    hits += Number(probs.indexOf(Math.max(...probs)) === o || scoreline === o);
+    const favourite = probs.indexOf(Math.max(...probs));
+    hits += Number(favourite === o || scoreline === o);
+    // A draw is its own call, never a win for either side: wins are judged on the favourite alone,
+    // draws on the model's most likely exact score being a draw.
+    if (favourite !== 1) { winCalls++; winHits += Number(favourite === o); }
+    if (favourite === 1 || scoreline === 1) { drawCalls++; drawHits += Number(o === 1); }
     exact += Number(score(m.actual) === score(p.most_likely_score));
     ll -= Math.log(Math.max(probs[o], 1e-9));
     bs += probs.reduce((s, p, i) => s + (p - Number(i === o)) ** 2, 0);
@@ -684,7 +693,7 @@ function renderHistory() {
   $("viewTools").innerHTML =
     `<span class="fine-print">${esc(dateLabel(data.history_from))} – ${esc(dateLabel(data.as_of))} · ${n} matches</span>`;
   $("content").innerHTML =
-    `<div class="model-metrics">${statBlock(n ? pct(hits / n) : "—", "Outcome hit rate")}${statBlock(n ? pct(exact / n) : "—", "Exact score hit rate")}${statBlock(n ? (ll / n).toFixed(3) : "—", "Log loss · lower is better")}${statBlock(n ? (bs / n).toFixed(3) : "—", "Brier score · lower is better")}</div><div class="table-wrap"><table><thead><tr><th>Date / competition</th><th>Match</th><th>Most likely score</th><th>Actual score</th><th>Outcome check</th><th>Home / Draw / Away</th><th>Training cutoff</th></tr></thead><tbody>${rows
+    `<div class="model-metrics">${statBlock(n ? pct(hits / n) : "—", "Result called right")}${statBlock(winCalls ? pct(winHits / winCalls) : "—", "Win calls right · " + winCalls + " matches")}${statBlock(drawCalls ? pct(drawHits / drawCalls) : "—", "Draw calls right · " + drawCalls + " matches")}${statBlock(n ? pct(exact / n) : "—", "Exact score hit rate")}${statBlock(n ? (ll / n).toFixed(3) : "—", "Log loss · lower is better")}${statBlock(n ? (bs / n).toFixed(3) : "—", "Brier score · lower is better")}</div><div class="table-wrap"><table><thead><tr><th>Date / competition</th><th>Match</th><th>Most likely score</th><th>Actual score</th><th>Outcome check</th><th>Home / Draw / Away</th><th>Training cutoff</th></tr></thead><tbody>${rows
       .slice(0, state.limit)
       .map(
         ({ l, m }) =>
@@ -692,7 +701,7 @@ function renderHistory() {
       )
       .join(
         "",
-      )}</tbody></table></div>${!n ? '<div class="empty">No evaluated matches for these filters. At least 100 earlier competition results are required.</div>' : ""}${n > state.limit ? '<button class="more" data-more>Show more results</button>' : ""}<p class="table-caption">A result counts as called when it is the favourite, or when the most likely exact score was a draw and the match was drawn. Gold marks an exact-score match. Reconstructed backtests, not archived forecasts. Weekly fits exclude results on or after the cutoff. Fixed settings may have been tuned using overlapping history.</p>`;
+      )}</tbody></table></div>${!n ? '<div class="empty">No evaluated matches for these filters. At least 100 earlier competition results are required.</div>' : ""}${n > state.limit ? '<button class="more" data-more>Show more results</button>' : ""}<p class="table-caption">A result counts as called when the favourite won, or when the most likely exact score was a draw and the match was drawn. Win calls only count a team winning; a draw is never a win for either side and is scored under draw calls. Gold marks an exact-score match. Reconstructed backtests, not archived forecasts. Weekly fits exclude results on or after the cutoff. Fixed settings may have been tuned using overlapping history.</p>`;
 }
 function renderAbout() {
   heading(
