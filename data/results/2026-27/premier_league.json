@@ -846,7 +846,13 @@
       "date": "2026-10-23",
       "team1": "Ipswich Town FC",
       "team2": "Nottingham Forest FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",

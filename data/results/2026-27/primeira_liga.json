@@ -870,7 +870,13 @@
       "date": "2026-10-23",
       "team1": "Vitória de Guimaraes",
       "team2": "Maritimo",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-24",

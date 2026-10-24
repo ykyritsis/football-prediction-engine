@@ -762,7 +762,13 @@
       "date": "2026-10-23",
       "team1": "Stade Brestois 29",
       "team2": "OGC Nice",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "round": "Matchday 8",
@@ -808,15 +814,22 @@
       "neutral": false
     },
     {
+      "round": "Matchday 8",
       "date": "2026-10-25",
+      "time": "20:45",
       "team1": "Paris Saint-Germain FC",
-      "team2": "Olympique Lyonnais",
-      "neutral": false
+      "team2": "Olympique Lyonnais"
     },
     {
       "date": "2026-10-25",
       "team1": "Toulouse FC",
       "team2": "ES Troyes AC",
+      "neutral": false
+    },
+    {
+      "date": "2026-10-26",
+      "team1": "Paris Saint-Germain FC",
+      "team2": "Olympique Lyonnais",
       "neutral": false
     },
     {

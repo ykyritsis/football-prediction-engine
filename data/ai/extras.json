@@ -255,6 +255,70 @@
     "serie_a|2026-10-27|US Sassuolo Calcio|SS Lazio": {
       "text": "Lazio's four wins in five matches and Sassuolo's leaky defense drive the away-win lean.",
       "generated_at": "2026-10-23T10:04:48.713Z"
+    },
+    "serie_a|2026-10-27|AS Roma|Cagliari Calcio": {
+      "text": "Roma's strong recent home form and Cagliari's heavy away loss to Monza drive the lean toward a Roma win.",
+      "generated_at": "2026-10-24T09:33:19.621Z"
+    },
+    "serie_a|2026-10-27|Torino FC|Como 1907": {
+      "text": "Como's strong recent form, including three wins in five, drives the lean toward an away win at Torino.",
+      "generated_at": "2026-10-24T09:33:20.752Z"
+    },
+    "serie_a|2026-10-28|AC Milan|Bologna FC 1909": {
+      "text": "AC Milan's home wins and Bologna's recent away losses drive the lean toward a Milan victory.",
+      "generated_at": "2026-10-24T09:33:21.832Z"
+    },
+    "serie_a|2026-10-28|Venezia FC|FC Internazionale Milano": {
+      "text": "Inter's four wins in five and Venezia's four losses in five drive the away-win lean.",
+      "generated_at": "2026-10-24T09:33:22.891Z"
+    },
+    "serie_a|2026-10-28|Parma Calcio 1913|Udinese Calcio": {
+      "text": "Udinese's higher win probability and Parma's recent home losses drive the lean toward an away win.",
+      "generated_at": "2026-10-24T09:33:23.684Z"
+    },
+    "serie_a|2026-10-28|Genoa CFC|Juventus FC": {
+      "text": "Juventus's stronger overall form and Genoa's recent defensive struggles drive the lean toward an away win.",
+      "generated_at": "2026-10-24T09:33:24.918Z"
+    },
+    "serie_a|2026-10-28|AC Monza|SSC Napoli": {
+      "text": "Napoli's stronger overall form and higher win probability drive the forecast lean toward an away win at Monza.",
+      "generated_at": "2026-10-24T09:33:25.943Z"
+    },
+    "serie_a|2026-10-29|Frosinone Calcio|US Lecce": {
+      "text": "Frosinone's strong home form, with three home wins in recent matches, drives the lean toward a home victory over a Lecce side inconsistent on the road.",
+      "generated_at": "2026-10-24T09:33:26.998Z"
+    },
+    "serie_a|2026-10-29|ACF Fiorentina|Atalanta BC": {
+      "text": "Atalanta's higher win probability and Fiorentina's three losses in their last five matches drive the away-win lean.",
+      "generated_at": "2026-10-24T09:33:28.059Z"
+    },
+    "serie_a|2026-10-31|Bologna FC 1909|AC Monza": {
+      "text": "Bologna's home advantage and Monza's poor away form drive the lean toward a Bologna win.",
+      "generated_at": "2026-10-24T09:33:29.037Z"
+    },
+    "serie_a|2026-10-31|Udinese Calcio|AS Roma": {
+      "text": "Roma's unbeaten recent form against Udinese's five straight losses drives the away-win lean.",
+      "generated_at": "2026-10-24T09:33:29.908Z"
+    },
+    "serie_a|2026-10-31|AC Milan|FC Internazionale Milano": {
+      "text": "Inter's stronger recent form, with four wins in five, drives the lean toward an away win.",
+      "generated_at": "2026-10-24T09:33:30.892Z"
+    },
+    "serie_a|2026-11-01|Como 1907|Venezia FC": {
+      "text": "Como's strong recent form, including three wins in five, against Venezia's four losses in five, drives the lean toward a home win.",
+      "generated_at": "2026-10-24T09:33:32.032Z"
+    },
+    "serie_a|2026-11-01|Frosinone Calcio|Torino FC": {
+      "text": "Frosinone's strong home form, with three wins in their last three home matches, drives the lean toward a home win.",
+      "generated_at": "2026-10-24T09:33:32.849Z"
+    },
+    "serie_a|2026-11-01|SS Lazio|Cagliari Calcio": {
+      "text": "Lazio's four wins in five, including a 3-0 win at Juventus, outweigh Cagliari's heavy recent away defeat.",
+      "generated_at": "2026-10-24T09:33:33.895Z"
+    },
+    "serie_a|2026-11-01|US Lecce|Genoa CFC": {
+      "text": "Lecce's recent home win and Genoa's poor away form support a narrow Lecce victory.",
+      "generated_at": "2026-10-24T09:33:34.817Z"
     }
   },
   "storylines": {
@@ -582,6 +646,11 @@
       "text": "KuPS Kuopio sit 33rd of 36 in the Conference League with 0 points and a goal difference of -4, having recorded 0W 0D 2L. Their last five results read D 2-2 vs Crystal Palace FC, L 0-2 vs Lech Poznan, L 0-1 vs Lech Poznan, L 2-4 vs Trabzonspor and L 0-2 vs Borac Banja Luka, ahead of their next fixture against KAA Gent on 2026-11-05.",
       "kind": "cold",
       "generated_at": "2026-10-23T10:04:51.217Z"
+    },
+    "bundesliga|VfB Stuttgart|2026-10-19": {
+      "text": "VfB Stuttgart sit 14th in the Bundesliga with 6 points from a record of 2 wins and 5 losses, giving them a goal difference of -3. They have lost four of their last five matches, most recently a 2-3 home defeat to Borussia Mönchengladbach, ahead of their away fixture against Bayer 04 Leverkusen on 2026-10-31.",
+      "kind": "cold",
+      "generated_at": "2026-10-24T09:33:36.003Z"
     }
   }
 }

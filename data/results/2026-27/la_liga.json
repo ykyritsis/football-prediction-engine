@@ -1081,7 +1081,13 @@
       "date": "2026-10-23",
       "team1": "Deportivo Alavés",
       "team2": "Málaga CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",

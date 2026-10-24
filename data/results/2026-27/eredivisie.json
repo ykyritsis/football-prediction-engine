@@ -978,7 +978,13 @@
       "date": "2026-10-23",
       "team1": "Go Ahead Eagles",
       "team2": "Telstar",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",

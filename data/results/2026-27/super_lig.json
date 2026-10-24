@@ -870,7 +870,13 @@
       "date": "2026-10-23",
       "team1": "Alanyaspor",
       "team2": "Kocaelispor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",

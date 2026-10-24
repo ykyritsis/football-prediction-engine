@@ -846,7 +846,13 @@
       "date": "2026-10-23",
       "team1": "Torino FC",
       "team2": "AC Monza",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",

@@ -298,5 +298,65 @@
     "text": "Serie A's 2026-10-24 fixture sees SS Lazio host Parma Calcio 1913. The statistical model's most likely score is 1-0, which is a model forecast rather than a prediction of the result.",
     "date": "2026-10-24",
     "generated_at": "2026-10-23T10:04:44.471Z"
+  },
+  "serie_a|2026-10-25|FC Internazionale Milano|ACF Fiorentina": {
+    "text": "Serie A's 2026-10-25 fixture sees FC Internazionale Milano host ACF Fiorentina. The statistical model's most likely score is 3-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-24T09:33:19.141Z"
+  },
+  "serie_a|2026-10-25|Atalanta BC|Frosinone Calcio": {
+    "text": "Serie A's 2026-10-25 fixture sees Atalanta BC host Frosinone Calcio. The statistical model's most likely score is a 2-1 forecast, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-24T09:33:20.302Z"
+  },
+  "serie_a|2026-10-25|Genoa CFC|Venezia FC": {
+    "text": "Serie A's Genoa CFC host Venezia FC on 2026-10-25. The statistical model's most likely score is 1-0, a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-24T09:33:21.306Z"
+  },
+  "serie_a|2026-10-25|US Lecce|Juventus FC": {
+    "text": "Serie A's 2026-10-25 fixture sees US Lecce host Juventus FC. The statistical model's most likely score is a 0-1 forecast, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-24T09:33:22.460Z"
+  },
+  "serie_a|2026-10-25|Udinese Calcio|AC Milan": {
+    "text": "Udinese Calcio host AC Milan in Serie A on 2026-10-25. The statistical model's most likely score is 0-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-24T09:33:23.678Z"
+  },
+  "serie_a|2026-10-27|US Sassuolo Calcio|SS Lazio": {
+    "text": "Serie A action on 2026-10-27 features US Sassuolo Calcio hosting SS Lazio. The statistical model's most likely score is 1-2, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-27",
+    "generated_at": "2026-10-24T09:33:24.833Z"
+  },
+  "serie_a|2026-10-27|AS Roma|Cagliari Calcio": {
+    "text": "Serie A fixture on 2026-10-27 sees AS Roma host Cagliari Calcio. The statistical model's most likely score is 1-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-27",
+    "generated_at": "2026-10-24T09:33:25.834Z"
+  },
+  "serie_a|2026-10-27|Torino FC|Como 1907": {
+    "text": "Torino FC host Como 1907 in Serie A on 2026-10-27. The statistical model's most likely score is 0-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-27",
+    "generated_at": "2026-10-24T09:33:26.904Z"
+  },
+  "serie_a|2026-10-28|AC Milan|Bologna FC 1909": {
+    "text": "AC Milan host Bologna FC 1909 in Serie A on 2026-10-28. The statistical model's most likely score is 1-0, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-28",
+    "generated_at": "2026-10-24T09:33:28.037Z"
+  },
+  "serie_a|2026-10-28|Venezia FC|FC Internazionale Milano": {
+    "text": "Serie A action on 2026-10-28 features Venezia FC hosting FC Internazionale Milano at their home ground. The statistical model's most likely score for this match is 0-3, offered as a model forecast rather than a prediction of the result.",
+    "date": "2026-10-28",
+    "generated_at": "2026-10-24T09:33:29.166Z"
+  },
+  "serie_a|2026-10-28|Parma Calcio 1913|Udinese Calcio": {
+    "text": "Serie A fixture on 2026-10-28 sees Parma Calcio 1913 host Udinese Calcio. The statistical model's most likely score is 1-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-28",
+    "generated_at": "2026-10-24T09:33:30.262Z"
+  },
+  "serie_a|2026-10-28|Genoa CFC|Juventus FC": {
+    "text": "Serie A fixture on 2026-10-28 sees Genoa CFC host Juventus FC. The statistical model's most likely score is 0-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-28",
+    "generated_at": "2026-10-24T09:33:31.300Z"
   }
 }

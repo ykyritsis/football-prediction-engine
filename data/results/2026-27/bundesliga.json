@@ -654,7 +654,13 @@
       "date": "2026-10-23",
       "team1": "VfB Stuttgart",
       "team2": "Borussia Mönchengladbach",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-24",
