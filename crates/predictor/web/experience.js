@@ -83,15 +83,13 @@ function playerPicksHTML(l, m) {
       "",
     )}</div><p class="fine-print">Experimental squad-share estimates from competition goals, shots on target, appearances and position priors. Assumes usual roles and availability; lineups are unconfirmed. Assist allocation assumes 70% of goals have an assist. These probabilities are not yet calibrated against player outcomes.</p></section>`;
 }
-// 0 = home win, 1 = draw, 2 = away win. A predicted score counts as a pick too, so a predicted draw
-// is right when the match is drawn, even if a win was the single most likely outcome.
+// 0 = home win, 1 = draw, 2 = away win. A match has one call, the model's most likely result,
+// and it is right only when that is what happened: a draw is not a win for either side.
 const outcomeOf = (h, a) => (h > a ? 0 : h === a ? 1 : 2);
 function outcomeBadge(m) {
   const probs = [m.prediction.home_win, m.prediction.draw, m.prediction.away_win],
-    argmax = probs.indexOf(Math.max(...probs)),
-    scoreline = m.prediction.most_likely_score ? outcomeOf(...m.prediction.most_likely_score) : argmax,
+    picked = probs.indexOf(Math.max(...probs)),
     actual = outcomeOf(m.actual[0], m.actual[1]),
-    correct = actual === argmax || actual === scoreline,
-    picked = actual === scoreline ? scoreline : argmax;
+    correct = actual === picked;
   return `<span class="outcome-badge ${correct ? "correct" : "incorrect"}">${correct ? "✓ Correct" : "✕ Incorrect"}</span><small class="outcome-pick">Picked ${["home win", "draw", "away win"][picked]}</small>`;
 }
