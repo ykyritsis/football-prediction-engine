@@ -35,6 +35,8 @@ jobs:
         run: rustup update stable --no-self-update && rustup default stable
       - name: Fetch open results
         run: python3 tools/fetch_results.py
+      - name: Save bookmaker odds (big five leagues)
+        run: python3 tools/fetch_odds.py || echo "Odds unavailable today; forecasts use the model alone."
       - name: Sync other competitions (ESPN match centre)
         run: node tools/sync_match_centre.cjs --as-of=$(date -u +%F) --year=$(date -u +%Y) || echo "Some ESPN lookups failed; the saved data is kept and errors are recorded in the catalog."
       - name: Move the forecast cutoff to today

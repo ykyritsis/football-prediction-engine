@@ -50,6 +50,12 @@ fn run() -> Result<(), String> {
         loaded.insert(key.to_string(), results);
     }
     let club_pool = dashboard::ClubPool::new(&loaded);
+    // Bookmaker odds saved by tools/fetch_odds.py, by league (optional).
+    let odds_path = dir.parent().unwrap_or(&dir).join("odds/odds.json");
+    let odds: BTreeMap<String, dashboard::Market> = match std::fs::read_to_string(&odds_path) {
+        Ok(text) => serde_json::from_str(&text).map_err(|e| format!("{}: {e}", odds_path.display()))?,
+        Err(_) => BTreeMap::new(),
+    };
     for (key, name) in LEAGUES {
         eprintln!("Building {name}...");
         let mut all = match loaded.get(key) {
@@ -96,6 +102,7 @@ fn run() -> Result<(), String> {
             &from,
             &cfg,
             eligible.as_deref(),
+            odds.get(key),
         ));
     }
     let tm_path = catalog_path.with_file_name("transfermarkt.json");

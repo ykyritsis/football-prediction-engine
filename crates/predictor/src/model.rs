@@ -108,8 +108,96 @@ pub struct Prediction {
     pub predicted_score: (u8, u8),
     pub over_2_5: f64,
     pub both_score: f64,
+    /// Share of the bookmaker market in the result probabilities (0 = model only).
+    pub market_weight: f64,
     /// `scores[h][a]` = P(home h, away a), 0..=10 goals each.
     pub scores: Vec<Vec<f64>>,
+}
+
+impl Prediction {
+    /// Normalise a scoreline distribution and derive every summary from it.
+    fn from_scores(mut scores: Vec<Vec<f64>>, home_xg: f64, away_xg: f64) -> Prediction {
+        let total: f64 = scores.iter().flatten().sum();
+        let (mut hw, mut dr, mut aw, mut over, mut btts) = (0.0, 0.0, 0.0, 0.0, 0.0);
+        let mut best = (0.0, (0u8, 0u8));
+        let mut cells = Vec::new();
+        for (h, row) in scores.iter_mut().enumerate() {
+            for (a, cell) in row.iter_mut().enumerate() {
+                *cell /= total;
+                let p = *cell;
+                match h.cmp(&a) {
+                    std::cmp::Ordering::Greater => hw += p,
+                    std::cmp::Ordering::Equal => dr += p,
+                    std::cmp::Ordering::Less => aw += p,
+                }
+                if h + a > 2 {
+                    over += p;
+                }
+                if h > 0 && a > 0 {
+                    btts += p;
+                }
+                if p > best.0 {
+                    best = (p, (h as u8, a as u8));
+                }
+                cells.push((p, h, a));
+            }
+        }
+        // Most probable scoreline among those that give the most likely result.
+        let top = if hw >= dr && hw >= aw {
+            std::cmp::Ordering::Greater
+        } else if dr >= aw {
+            std::cmp::Ordering::Equal
+        } else {
+            std::cmp::Ordering::Less
+        };
+        let mut predicted = (0.0, (0u8, 0u8));
+        for &(p, h, a) in &cells {
+            if h.cmp(&a) == top && p > predicted.0 {
+                predicted = (p, (h as u8, a as u8));
+            }
+        }
+        Prediction {
+            home_win: hw,
+            draw: dr,
+            away_win: aw,
+            home_xg,
+            away_xg,
+            most_likely_score: best.1,
+            predicted_score: predicted.1,
+            over_2_5: over,
+            both_score: btts,
+            market_weight: 0.0,
+            scores,
+        }
+    }
+
+    /// Blend the home, draw and away probabilities with a bookmaker market's
+    /// (margin removed), `weight` being the market's share. The scoreline
+    /// distribution is rescaled within each result, so its shape is kept and
+    /// every figure derived from it stays consistent with the blended odds.
+    pub fn blend_market(&self, market: [f64; 3], weight: f64) -> Prediction {
+        let w = weight.clamp(0.0, 1.0);
+        let ours = [self.home_win, self.draw, self.away_win];
+        let sum: f64 = market.iter().sum();
+        if w == 0.0 || !(sum > 0.0) || ours.iter().any(|p| !(*p > 0.0)) {
+            return self.clone();
+        }
+        let blended: Vec<f64> = (0..3).map(|k| (1.0 - w) * ours[k] + w * market[k] / sum).collect();
+        let mut scores = self.scores.clone();
+        for (h, row) in scores.iter_mut().enumerate() {
+            for (a, cell) in row.iter_mut().enumerate() {
+                let k = match h.cmp(&a) {
+                    std::cmp::Ordering::Greater => 0,
+                    std::cmp::Ordering::Equal => 1,
+                    std::cmp::Ordering::Less => 2,
+                };
+                *cell *= blended[k] / ours[k];
+            }
+        }
+        let mut out = Prediction::from_scores(scores, self.home_xg, self.away_xg);
+        out.market_weight = w;
+        out
+    }
 }
 
 const MAX_GOALS: usize = 10;
@@ -471,64 +559,13 @@ impl Model {
     pub fn predict(&self, home: &str, away: &str) -> Prediction {
         let (lh, la) = self.rates(home, away);
         let mut scores = vec![vec![0.0; MAX_GOALS + 1]; MAX_GOALS + 1];
-        let mut total = 0.0;
         for (h, row) in scores.iter_mut().enumerate() {
             for (a, cell) in row.iter_mut().enumerate() {
                 let p = poisson(h, lh) * poisson(a, la) * tau(h as u8, a as u8, lh, la, self.rho);
                 *cell = p.max(0.0);
-                total += *cell;
             }
         }
-        let (mut hw, mut dr, mut aw, mut over, mut btts) = (0.0, 0.0, 0.0, 0.0, 0.0);
-        let mut best = (0.0, (0u8, 0u8));
-        let mut cells = Vec::new();
-        for (h, row) in scores.iter_mut().enumerate() {
-            for (a, cell) in row.iter_mut().enumerate() {
-                *cell /= total;
-                let p = *cell;
-                match h.cmp(&a) {
-                    std::cmp::Ordering::Greater => hw += p,
-                    std::cmp::Ordering::Equal => dr += p,
-                    std::cmp::Ordering::Less => aw += p,
-                }
-                if h + a > 2 {
-                    over += p;
-                }
-                if h > 0 && a > 0 {
-                    btts += p;
-                }
-                if p > best.0 {
-                    best = (p, (h as u8, a as u8));
-                }
-                cells.push((p, h, a));
-            }
-        }
-        // Most probable scoreline among those that give the most likely result.
-        let top = if hw >= dr && hw >= aw {
-            std::cmp::Ordering::Greater
-        } else if dr >= aw {
-            std::cmp::Ordering::Equal
-        } else {
-            std::cmp::Ordering::Less
-        };
-        let mut predicted = (0.0, (0u8, 0u8));
-        for &(p, h, a) in &cells {
-            if h.cmp(&a) == top && p > predicted.0 {
-                predicted = (p, (h as u8, a as u8));
-            }
-        }
-        Prediction {
-            home_win: hw,
-            draw: dr,
-            away_win: aw,
-            home_xg: lh,
-            away_xg: la,
-            most_likely_score: best.1,
-            predicted_score: predicted.1,
-            over_2_5: over,
-            both_score: btts,
-            scores,
-        }
+        Prediction::from_scores(scores, lh, la)
     }
 
     /// Ninety-minute outcome at a neutral ground, with both home effects removed.
@@ -643,5 +680,40 @@ mod tests {
         let pooled = Model::fit_with(&hist, "2026-01-01", &cfg, Some(&pooling)).predict("Strong", "Weak");
         assert!((alone.home_win - alone.away_win).abs() < 0.05, "{alone:?}");
         assert!(pooled.home_win > 0.7, "{pooled:?}");
+    }
+
+    #[test]
+    fn blending_the_market_keeps_the_distribution_consistent() {
+        let mut hist = Vec::new();
+        for k in 0..20 {
+            let d = crate::data::add_days("2025-08-01", k * 7);
+            hist.push(m(&d, "Strong", "Weak", 3, 0));
+            hist.push(m(&d, "Weak", "Strong", 0, 2));
+            hist.push(m(&d, "Mid", "Weak", 1, 0));
+            hist.push(m(&d, "Strong", "Mid", 2, 1));
+        }
+        let model = Model::fit(&hist, "2026-01-01", &ModelConfig::default());
+        let ours = model.predict("Mid", "Weak");
+        let market = [0.2, 0.3, 0.5];
+        let half = ours.blend_market(market, 0.5);
+        let total: f64 = half.scores.iter().flatten().sum();
+        assert!((total - 1.0).abs() < 1e-9);
+        assert!((half.home_win + half.draw + half.away_win - 1.0).abs() < 1e-9);
+        for (blended, (own, theirs)) in [half.home_win, half.draw, half.away_win]
+            .into_iter()
+            .zip([ours.home_win, ours.draw, ours.away_win].into_iter().zip(market))
+        {
+            assert!((blended - 0.5 * (own + theirs)).abs() < 1e-9);
+        }
+        assert_eq!(half.market_weight, 0.5);
+        // Weight 0 changes nothing; weight 1 is the market (a scaled copy of the shape).
+        assert_eq!(ours.blend_market(market, 0.0).scores, ours.scores);
+        let all = ours.blend_market(market, 1.0);
+        assert!((all.away_win - 0.5).abs() < 1e-9 && (all.home_win - 0.2).abs() < 1e-9);
+        // The predicted score still agrees with the (blended) most likely result.
+        let (h, a) = half.predicted_score;
+        let top = if half.home_win >= half.draw && half.home_win >= half.away_win { 0 } else if half.draw >= half.away_win { 1 } else { 2 };
+        let shown = match h.cmp(&a) { std::cmp::Ordering::Greater => 0, std::cmp::Ordering::Equal => 1, _ => 2 };
+        assert_eq!(top, shown);
     }
 }
