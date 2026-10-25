@@ -5098,3 +5098,130 @@ tr.zone-rel td:first-child { box-shadow: inset 3px 0 0 var(--loss); }
 :root[data-theme="dark"] .row-comp img { background: #f1f5f3; border-radius: 7px; padding: 2px; }
 :root[data-theme="dark"] .club-line img,
 :root[data-theme="dark"] .table-club img { background: #f1f5f3; border-radius: 50%; padding: 2px; }
+
+/* ---------- Calmer layout: compact heading, quieter notices and side panels ---------- */
+.page-heading {
+  padding: 26px 32px 24px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.page-heading h1 {
+  margin: 6px 0 6px;
+  font-size: 36px;
+}
+.page-heading p {
+  font-size: 14.5px;
+}
+.page-heading .season-label {
+  font-size: 18px;
+  padding: 8px 14px;
+}
+.hero-stats {
+  gap: 4px 22px;
+  margin-top: 14px;
+}
+.hero-stats > div {
+  flex-direction: row;
+  align-items: baseline;
+  gap: 7px;
+  padding-left: 0;
+  border-left: 0;
+}
+.hero-stats strong {
+  font-size: 17px;
+  color: var(--lime);
+}
+.hero-stats span {
+  margin: 0;
+  font-size: 13px;
+}
+.freshness {
+  margin: 0 0 14px;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.freshness summary {
+  display: inline-block;
+}
+.freshness summary::marker {
+  color: var(--muted);
+}
+.content-toolbar {
+  margin-bottom: 14px;
+}
+.match-more {
+  margin-top: 12px;
+}
+.match-more > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 650;
+  color: rgb(255 255 255 / 0.78);
+  list-style: none;
+}
+.match-more > summary::-webkit-details-marker {
+  display: none;
+}
+.match-more > summary::after {
+  content: "+";
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: rgb(255 255 255 / 0.1);
+  font-weight: 500;
+}
+.match-more[open] > summary::after {
+  content: "\2212";
+}
+.featured .ai-why {
+  margin-top: 12px;
+}
+.watch-item {
+  padding: 10px 0;
+}
+.watch-item p {
+  -webkit-line-clamp: 2;
+  font-size: 13px;
+}
+.featured {
+  padding: 22px 26px;
+  margin-bottom: 18px;
+}
+.featured .versus img,
+.featured-team img,
+.featured-team .crest-placeholder {
+  width: 72px;
+  height: 72px;
+}
+.row-bar {
+  height: 4px;
+}
+@media (max-width: 700px) {
+  .page-heading {
+    padding: 20px 20px 18px;
+    gap: 10px;
+  }
+  .page-heading h1 {
+    font-size: 28px;
+  }
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 16px;
+    margin-top: 10px;
+  }
+  .hero-stats strong {
+    font-size: 15px;
+  }
+  .hero-stats span {
+    font-size: 12px;
+  }
+}

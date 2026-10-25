@@ -224,7 +224,7 @@ function renderNavigation() {
         `<button data-club="${esc(n)}" title="${esc(short(n))}" aria-label="View ${esc(short(n))}">${crest(n)}</button>`,
     )
     .join("");
-  $("clubStrip").hidden = ["about", "history", "seasons"].includes(state.view);
+  $("clubStrip").hidden = !["clubs", "players"].includes(state.view);
   const issues = activeLeagues().filter(
     (l) =>
       !l.latest_result ||
@@ -455,7 +455,7 @@ function previewHTML(l, m) {
   const whyText = why[key];
   const whyLine = whyText ? `<p class="ai-why"><span class="ai-badge">WHY</span> ${esc(whyText)}</p>` : "";
   const preview = text ? `<p class="ai-preview"><span class="ai-badge">AI preview</span> ${esc(text)}</p>` : "";
-  return `${whyLine}${preview}<form class="match-ask" data-facts="${esc(JSON.stringify(facts))}"><input name="question" maxlength="200" placeholder="Ask about the teams, players or this match" aria-label="Ask about the teams, players or this match"><button type="submit">Ask</button></form><p class="match-ask-answer" aria-live="polite"></p>`;
+  return `${whyLine}<details class="match-more"><summary>Preview and ask a question</summary>${preview}<form class="match-ask" data-facts="${esc(JSON.stringify(facts))}"><input name="question" maxlength="200" placeholder="Ask about the teams, players or this match" aria-label="Ask about the teams, players or this match"><button type="submit">Ask</button></form><p class="match-ask-answer" aria-live="polite"></p></details>`;
 }
 // League position of a team from its standing text, e.g. "17th in English Premier League".
 function leaguePosition(name) {
@@ -526,8 +526,7 @@ function renderMatches() {
   $("heroStats").innerHTML = [
     [rows.length, state.days ? `fixtures · next ${state.days} days` : "fixtures scheduled"],
     [teamNames.length, "teams"],
-    [players, "players tracked"],
-    [data.leagues.length, "competitions"],
+    [players, "players"],
   ]
     .filter(([n]) => n > 0)
     .map(([n, label]) => `<div><strong>${n.toLocaleString()}</strong><span>${label}</span></div>`)
