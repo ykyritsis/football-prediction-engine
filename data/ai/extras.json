@@ -319,6 +319,70 @@
     "serie_a|2026-11-01|US Lecce|Genoa CFC": {
       "text": "Lecce's recent home win and Genoa's poor away form support a narrow Lecce victory.",
       "generated_at": "2026-10-24T09:33:34.817Z"
+    },
+    "serie_a|2026-11-01|Juventus FC|SSC Napoli": {
+      "text": "Juventus's home advantage and solid home form, including a 2-0 win over Atalanta, edge out Napoli's inconsistent away results.",
+      "generated_at": "2026-10-25T09:49:45.601Z"
+    },
+    "serie_a|2026-11-02|US Sassuolo Calcio|ACF Fiorentina": {
+      "text": "Sassuolo's home win over Juventus and Fiorentina's three losses in their last four drive the lean toward a home victory.",
+      "generated_at": "2026-10-25T09:49:46.375Z"
+    },
+    "serie_a|2026-11-02|Atalanta BC|Parma Calcio 1913": {
+      "text": "Atalanta's home win over Venezia and Parma's four losses in five games drive the lean toward an Atalanta victory.",
+      "generated_at": "2026-10-25T09:49:47.255Z"
+    },
+    "bundesliga|2026-10-25|TSG 1899 Hoffenheim|Bayer 04 Leverkusen": {
+      "text": "Leverkusen's four wins in five recent matches against Hoffenheim's three losses in five drives the away lean.",
+      "generated_at": "2026-10-25T09:49:48.274Z"
+    },
+    "bundesliga|2026-10-25|SC Freiburg|FC Bayern München": {
+      "text": "Bayern's dominant recent form, including a 6-1 win over RB Leipzig, drives the lean toward an away victory at Freiburg.",
+      "generated_at": "2026-10-25T09:49:49.192Z"
+    },
+    "bundesliga|2026-10-30|SV 07 Elversberg|1. FSV Mainz 05": {
+      "text": "Elversberg's home win over Augsburg and Mainz's leaky defense in recent losses drive the lean toward a home victory.",
+      "generated_at": "2026-10-25T09:49:50.202Z"
+    },
+    "bundesliga|2026-10-31|Borussia Mönchengladbach|SC Paderborn 07": {
+      "text": "Gladbach's recent 3-2 away win over Stuttgart gives them momentum at home against a Paderborn side that has been inconsistent.",
+      "generated_at": "2026-10-25T09:49:51.210Z"
+    },
+    "bundesliga|2026-10-31|FC Schalke 04|RB Leipzig": {
+      "text": "Leipzig's strong recent wins and Schalke's winless run drive the forecast lean toward an away victory.",
+      "generated_at": "2026-10-25T09:49:52.284Z"
+    },
+    "bundesliga|2026-10-31|FC Augsburg|SC Freiburg": {
+      "text": "Freiburg's strong recent form, with three wins in five, drives the lean toward an away win over an Augsburg side without a victory in that stretch.",
+      "generated_at": "2026-10-25T09:49:53.294Z"
+    },
+    "bundesliga|2026-10-31|SV Werder Bremen|TSG 1899 Hoffenheim": {
+      "text": "Werder Bremen's strong recent form, including two wins and three draws, drives the lean toward a home victory over inconsistent Hoffenheim.",
+      "generated_at": "2026-10-25T09:49:54.435Z"
+    },
+    "bundesliga|2026-10-31|Bayer 04 Leverkusen|VfB Stuttgart": {
+      "text": "Leverkusen's strong recent form, with four wins in five, drives the lean toward a home win over struggling Stuttgart.",
+      "generated_at": "2026-10-25T09:49:55.636Z"
+    },
+    "bundesliga|2026-10-31|FC Bayern München|Borussia Dortmund": {
+      "text": "Bayern's dominant home scoring form, including 7-0 and 6-1 wins, drives the lean toward a home victory.",
+      "generated_at": "2026-10-25T09:49:56.904Z"
+    },
+    "bundesliga|2026-11-01|1. FC Union Berlin|1. FC Köln": {
+      "text": "Union Berlin's home solidity and Köln's away struggles drive the lean toward a narrow home win.",
+      "generated_at": "2026-10-25T09:49:57.955Z"
+    },
+    "bundesliga|2026-11-01|Eintracht Frankfurt|Hamburger SV": {
+      "text": "Frankfurt's home advantage and stronger overall form drive the lean toward a home win.",
+      "generated_at": "2026-10-25T09:49:59.087Z"
+    },
+    "ligue_1|2026-10-25|AS Monaco FC|Lille OSC": {
+      "text": "Monaco's strong home form and win over PSG drive the lean toward a home victory.",
+      "generated_at": "2026-10-25T09:50:00.084Z"
+    },
+    "ligue_1|2026-10-25|Olympique de Marseille|Le Havre AC": {
+      "text": "Marseille's two straight wins and Le Havre's four losses in five drive the lean to a home win.",
+      "generated_at": "2026-10-25T09:50:01.343Z"
     }
   },
   "storylines": {
@@ -651,6 +715,26 @@
       "text": "VfB Stuttgart sit 14th in the Bundesliga with 6 points from a record of 2 wins and 5 losses, giving them a goal difference of -3. They have lost four of their last five matches, most recently a 2-3 home defeat to Borussia Mönchengladbach, ahead of their away fixture against Bayer 04 Leverkusen on 2026-10-31.",
       "kind": "cold",
       "generated_at": "2026-10-24T09:33:36.003Z"
+    },
+    "la_liga|RCD Espanyol de Barcelona|2026-10-19": {
+      "text": "RCD Espanyol de Barcelona sit 18th of 20 in La Liga with 8 points from a 2W 2D 6L record and a goal difference of -2. Their last five results were a 1-2 away loss to Rayo Vallecano de Madrid, a 1-3 home loss to Elche CF, a 1-1 away draw with Málaga CF, a 0-1 home loss to Club Atlético de Madrid, and a 1-2 away loss to Real Racing Club de Santander.",
+      "kind": "cold",
+      "generated_at": "2026-10-25T09:50:02.608Z"
+    },
+    "serie_a|Parma Calcio 1913|2026-10-19": {
+      "text": "Parma Calcio 1913 sit 19th of 20 in Serie A with 4 points, a goal difference of -10, and a record of 1W 1D 6L. Their last five results were a 1-2 loss at Como 1907, a 2-1 home win over Genoa CFC, a 0-3 loss at FC Internazionale Milano, a 0-3 home loss to Torino FC, and a 1-2 loss at SS Lazio, ahead of their 2026-10-28 fixture against Udinese Calcio.",
+      "kind": "cold",
+      "generated_at": "2026-10-25T09:50:03.966Z"
+    },
+    "belgian_pro_league|KAA Gent|2026-10-19": {
+      "text": "KAA Gent sit first in the 18-team Belgian Pro League with 22 points from a record of 7 wins, 1 draw and 0 losses, and a goal difference of +11. Their last five results were a 1-0 home win over OH Leuven, a 3-0 away win at Cercle Brugge KSV, a 1-1 away draw with Racing Genk, a 2-1 home win over Standard Liege and a 2-0 away win at Zulte-Waregem, ahead of their next fixture against Anderlecht on 2026-10-25.",
+      "kind": "hot",
+      "generated_at": "2026-10-25T09:50:05.259Z"
+    },
+    "super_lig|Amed SFK|2026-10-19": {
+      "text": "Amed SFK sit first in the 18-team Süper Lig with 20 points from a record of 6 wins, 2 draws and 1 loss, and a goal difference of +10. They have won four of their last five matches, most recently a 2-1 away victory over Samsunspor, and next face Eyupspor on 2026-11-01.",
+      "kind": "hot",
+      "generated_at": "2026-10-25T09:50:06.911Z"
     }
   }
 }

@@ -1093,25 +1093,49 @@
       "date": "2026-10-24",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Elche CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Real Racing Club de Santander",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Valencia CF",
       "team2": "Villarreal CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Club Atlético de Madrid",
       "team2": "RC Deportivo La Coruña",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 10",

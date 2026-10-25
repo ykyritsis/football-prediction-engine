@@ -781,7 +781,13 @@
       "date": "2026-10-24",
       "team1": "Racing Club de Lens",
       "team2": "Paris FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",

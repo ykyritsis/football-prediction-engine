@@ -858,25 +858,49 @@
       "date": "2026-10-24",
       "team1": "Aston Villa FC",
       "team2": "Manchester City FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Arsenal FC",
       "team2": "Everton FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Coventry City FC",
       "team2": "Fulham FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Chelsea FC",
       "team2": "Tottenham Hotspur FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-25",

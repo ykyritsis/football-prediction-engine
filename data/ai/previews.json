@@ -358,5 +358,65 @@
     "text": "Serie A fixture on 2026-10-28 sees Genoa CFC host Juventus FC. The statistical model's most likely score is 0-1, which is a model forecast rather than a prediction of the result.",
     "date": "2026-10-28",
     "generated_at": "2026-10-24T09:33:31.300Z"
+  },
+  "serie_a|2026-10-28|AC Monza|SSC Napoli": {
+    "text": "Serie A sides AC Monza and SSC Napoli meet on 2026-10-28 at Monza's home ground. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-28",
+    "generated_at": "2026-10-25T09:49:45.652Z"
+  },
+  "serie_a|2026-10-29|Frosinone Calcio|US Lecce": {
+    "text": "Serie A fixture on 2026-10-29 sees Frosinone Calcio host US Lecce. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-29",
+    "generated_at": "2026-10-25T09:49:46.619Z"
+  },
+  "serie_a|2026-10-29|ACF Fiorentina|Atalanta BC": {
+    "text": "Serie A fixture on 2026-10-29 sees ACF Fiorentina host Atalanta BC. The statistical model's forecast score is 1-2, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-29",
+    "generated_at": "2026-10-25T09:49:47.581Z"
+  },
+  "serie_a|2026-10-31|Bologna FC 1909|AC Monza": {
+    "text": "Bologna FC 1909 host AC Monza in Serie A on 2026-10-31. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T09:49:48.682Z"
+  },
+  "serie_a|2026-10-31|Udinese Calcio|AS Roma": {
+    "text": "Serie A action on 2026-10-31 features Udinese Calcio hosting AS Roma at home. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T09:49:49.599Z"
+  },
+  "serie_a|2026-10-31|AC Milan|FC Internazionale Milano": {
+    "text": "AC Milan host FC Internazionale Milano in Serie A on 2026-10-31. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T09:49:50.364Z"
+  },
+  "serie_a|2026-11-01|Como 1907|Venezia FC": {
+    "text": "Serie A fixture on 2026-11-01 sees Como 1907 host Venezia FC. The statistical model forecasts a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T09:49:51.346Z"
+  },
+  "serie_a|2026-11-01|Frosinone Calcio|Torino FC": {
+    "text": "Serie A fixture on 2026-11-01 sees Frosinone Calcio host Torino FC. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T09:49:52.606Z"
+  },
+  "serie_a|2026-11-01|SS Lazio|Cagliari Calcio": {
+    "text": "Serie A sides SS Lazio and Cagliari Calcio meet on 2026-11-01, with Lazio as the home team. The statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T09:49:53.575Z"
+  },
+  "serie_a|2026-11-01|US Lecce|Genoa CFC": {
+    "text": "Serie A fixture on 2026-11-01 sees US Lecce host Genoa CFC. The statistical model forecasts a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T09:49:54.796Z"
+  },
+  "serie_a|2026-11-01|Juventus FC|SSC Napoli": {
+    "text": "Serie A fixture on 2026-11-01 sees Juventus FC host SSC Napoli. The statistical model forecasts a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T09:49:55.674Z"
+  },
+  "serie_a|2026-11-02|US Sassuolo Calcio|ACF Fiorentina": {
+    "text": "Serie A action on 2026-11-02 features US Sassuolo Calcio hosting ACF Fiorentina. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-02",
+    "generated_at": "2026-10-25T09:49:56.521Z"
   }
 }

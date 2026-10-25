@@ -876,25 +876,49 @@
       "date": "2026-10-24",
       "team1": "Antwerp",
       "team2": "Royal Charleroi SC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "OH Leuven",
       "team2": "Lommel SK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "KVC Westerlo",
       "team2": "Waasland-Beveren",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "RAAL La Louvière",
       "team2": "Zulte-Waregem",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",

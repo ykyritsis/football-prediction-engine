@@ -990,19 +990,37 @@
       "date": "2026-10-24",
       "team1": "FC Utrecht",
       "team2": "PEC Zwolle",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Willem II",
       "team2": "SC Cambuur",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          6
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "ADO Den Haag",
       "team2": "Heerenveen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-25",

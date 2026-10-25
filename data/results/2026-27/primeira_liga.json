@@ -882,19 +882,37 @@
       "date": "2026-10-24",
       "team1": "Estrela",
       "team2": "Casa Pia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Alverca",
       "team2": "Arouca",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-24",
       "team1": "Gil Vicente",
       "team2": "FC Porto",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",

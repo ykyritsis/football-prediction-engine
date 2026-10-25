@@ -328,5 +328,65 @@
     "text": "Recent Süper Lig results saw Kasimpasa beat Samsunspor 4-1, the biggest margin of the listed matches, while Fenerbahce also won 3-0 against Alanyaspor. There were no draws in these results, with other wins including Erzurum BB 2-0 over Eyupspor, Amed SFK 1-0 against Konyaspor, Galatasaray 1-0 at Genclerbirligi, Goztepe 2-1 at Kocaelispor, Istanbul Basaksehir 2-1 over Gaziantep FK, Trabzonspor 2-0 against Besiktas, and Kocaelispor 2-1 at Alanyaspor.",
     "name": "Süper Lig",
     "generated_at": "2026-10-24T09:33:31.657Z"
+  },
+  "belgian_pro_league|2026-10-25": {
+    "text": "Antwerp beat Royal Charleroi SC 3-0 and RAAL La Louvière beat Zulte-Waregem 3-0, the joint-biggest margins of the recent Belgian Pro League results. OH Leuven drew 2-2 with Lommel SK, while KVC Westerlo and Waasland-Beveren played out a 4-4 draw.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-10-25T09:49:45.809Z"
+  },
+  "bundesliga|2026-10-25": {
+    "text": "RB Leipzig's 4-0 win over SV 07 Elversberg was the biggest margin among recent Bundesliga results. There were two draws: 1. FC Köln and FC Schalke 04 finished 0-0, while FC Augsburg and 1. FC Union Berlin drew 1-1.",
+    "name": "Bundesliga",
+    "generated_at": "2026-10-25T09:49:46.877Z"
+  },
+  "champions_league|2026-10-25": {
+    "text": "Manchester City's 5-1 win over AEK Athens was the biggest margin of the recent Champions League results, while AS Roma also cruised to a 4-0 victory against Slovan Bratislava. Draws were played out between Fenerbahce and Slavia Prague (2-2), VfB Stuttgart and Club Atlético de Madrid (1-1), and FC Bayern München and Arsenal FC (2-2).",
+    "name": "Champions League",
+    "generated_at": "2026-10-25T09:49:48.209Z"
+  },
+  "conference_league|2026-10-25": {
+    "text": "The biggest margin of the recent Conference League results came in Kairat Almaty's 1-5 defeat to Panathinaikos. There were several draws: AGF 1-1 Egnatia, FC Nordsjælland 2-2 CSKA Sofia, Iberia 1999 1-1 Mjällby AIF, Jablonec 0-0 Brighton & Hove Albion FC, Pafos 1-1 Riga FC, and Red Star Belgrade 2-2 F.C. København.",
+    "name": "Conference League",
+    "generated_at": "2026-10-25T09:49:49.420Z"
+  },
+  "eredivisie|2026-10-25": {
+    "text": "SC Cambuur's 6-1 win at Willem II was the biggest margin of the recent Eredivisie results. There were draws as SC Cambuur held AZ Alkmaar 2-2, NEC Nijmegen drew 2-2 with Fortuna Sittard, and FC Utrecht finished 1-1 with PEC Zwolle.",
+    "name": "Eredivisie",
+    "generated_at": "2026-10-25T09:49:50.651Z"
+  },
+  "europa_league|2026-10-25": {
+    "text": "The biggest margin of the recent Europa League results was Lillestrom's 0-6 defeat to Real Sociedad, while Union St.-Gilloise beat Hapoel Be'er 4-0 and Ararat-Armenia lost 0-4 to AZ Alkmaar. Several matches ended level, including Besiktas 2-2 Crystal Palace, Juventus 2-2 Stade Rennais, NK Celje 2-2 RB Salzburg, and Lech Poznan 1-1 Sunderland.",
+    "name": "Europa League",
+    "generated_at": "2026-10-25T09:49:52.163Z"
+  },
+  "la_liga|2026-10-25": {
+    "text": "Real Sociedad's 5-2 win at Málaga was the biggest margin of the recent La Liga results, while Real Madrid beat Sevilla 4-1. Getafe and Rayo Vallecano drew 1-1, and Deportivo Alavés and Málaga also drew 1-1.",
+    "name": "La Liga",
+    "generated_at": "2026-10-25T09:49:53.434Z"
+  },
+  "ligue_1|2026-10-25": {
+    "text": "Angers SCO suffered the biggest margin of the recent Ligue 1 results, losing 2-5 to Olympique de Marseille. Paris FC edged Stade Rennais FC 1901 in a 4-3 thriller, while Le Havre AC fell 1-3 to AJ Auxerre. There were no draws in this set of matches.",
+    "name": "Ligue 1",
+    "generated_at": "2026-10-25T09:49:54.432Z"
+  },
+  "premier_league|2026-10-25": {
+    "text": "Brighton & Hove Albion FC recorded the biggest margin of the recent Premier League results with a 5-0 win over Crystal Palace FC. Leeds United FC drew 1-1 with Manchester United FC, and Ipswich Town FC drew 1-1 with Nottingham Forest FC. Other results included AFC Bournemouth beating Sunderland AFC 2-0, Arsenal FC defeating Nottingham Forest FC 0-1 and Everton FC 2-0, Tottenham Hotspur FC beating Coventry City FC 3-1 and Chelsea FC 0-2, Aston Villa FC edging Manchester City FC 2-1, and Fulham FC winning 0-1 at Coventry City FC.",
+    "name": "Premier League",
+    "generated_at": "2026-10-25T09:49:55.673Z"
+  },
+  "primeira_liga|2026-10-25": {
+    "text": "Vitória de Guimaraes' 5-0 win over Maritimo was the biggest margin in the recent Primeira Liga results. Braga lost 1-2 to Gil Vicente, Estrela fell 0-2 to Casa Pia, Alverca lost 0-1 to Arouca, and Gil Vicente were beaten 0-1 by FC Porto. There were no draws.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-10-25T09:49:56.963Z"
+  },
+  "serie_a|2026-10-25": {
+    "text": "Recent Serie A results saw AC Monza beat Cagliari Calcio 4-0, the biggest margin of the matches listed. There was one draw, with SSC Napoli and AS Roma finishing 3-3.",
+    "name": "Serie A",
+    "generated_at": "2026-10-25T09:49:58.014Z"
+  },
+  "super_lig|2026-10-25": {
+    "text": "Kasimpasa's 4-1 win over Samsunspor was the biggest margin among the recent Süper Lig results. Kocaelispor beat Alanyaspor 2-1 after earlier losing 2-1 to Goztepe, while Kasimpasa also won 1-0 at Eyupspor. There were no draws in the listed matches.",
+    "name": "Süper Lig",
+    "generated_at": "2026-10-25T09:49:59.093Z"
   }
 }
