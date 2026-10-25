@@ -4769,3 +4769,332 @@ dialog::backdrop {
 .featured .market-note {
   color: rgb(255 255 255 / 0.55);
 }
+
+/* ---------- Polish: today tags, table zones, loading shimmer ---------- */
+.day-tag {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--lime);
+  color: var(--pitch-950);
+  font-family: var(--font);
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: 2px;
+}
+tr.zone-ucl td:first-child,
+tr.zone-uel td:first-child,
+tr.zone-playoff td:first-child,
+tr.zone-rel td:first-child {
+  font-weight: 800;
+}
+tr.zone-ucl td:first-child { box-shadow: inset 3px 0 0 var(--win); }
+tr.zone-uel td:first-child { box-shadow: inset 3px 0 0 var(--away); }
+tr.zone-playoff td:first-child { box-shadow: inset 3px 0 0 var(--gold); }
+tr.zone-rel td:first-child { box-shadow: inset 3px 0 0 var(--loss); }
+.zone-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  padding: 12px 18px;
+  border-top: 1px solid var(--line);
+  font-size: 12px;
+  color: var(--muted);
+}
+.zone-key span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.zone-key i {
+  width: 4px;
+  height: 14px;
+  border-radius: 2px;
+}
+.zone-key .zone-ucl { background: var(--win); }
+.zone-key .zone-uel { background: var(--away); }
+.zone-key .zone-playoff { background: var(--gold); }
+.zone-key .zone-rel { background: var(--loss); }
+.loading-state {
+  position: relative;
+  min-height: 130px;
+  padding: 0;
+  font-size: 0;
+  animation: none;
+  border-radius: var(--r);
+  background:
+    linear-gradient(100deg, transparent 20%, rgb(255 255 255 / 0.55) 50%, transparent 80%) 0 0 / 200% 100%,
+    var(--surface-3);
+  animation: shimmer 1.3s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: -200% 0, 0 0;
+  }
+}
+
+/* ---------- Dark theme: follows the device unless the visitor picks one ---------- */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --bg: #07110d;
+      --surface: #0e1c15;
+      --surface-2: #11231a;
+      --surface-3: #162a20;
+      --line: #1d3227;
+      --line-strong: #2b4638;
+      --ink: #e8f2ec;
+      --ink-2: #bdd0c5;
+      --muted: #8da398;
+      --brand: #35b585;
+      --brand-hover: #4cc79a;
+      --brand-soft: #123225;
+      --lime-soft: #1c2d12;
+      --home: #35b585;
+      --draw: #55685d;
+      --away: #6f8cff;
+      --win: #35b585;
+      --loss: #ef6b61;
+      --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+      --shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 14px 34px -14px rgb(0 0 0 / 0.6);
+  }
+  :root:not([data-theme="light"]) .freshness,
+  :root:not([data-theme="light"]) .notice {
+      color: #e3d3a0;
+      background: #2a2412;
+      border-color: #4a3f1c;
+  }
+  :root:not([data-theme="light"]) .form-status.good,
+  :root:not([data-theme="light"]) .outcome-badge.correct,
+  :root:not([data-theme="light"]) .watch-item.hot .watch-tag { background: #12392a; color: #7be0b0;
+  }
+  :root:not([data-theme="light"]) .form-status.poor,
+  :root:not([data-theme="light"]) .outcome-badge.incorrect,
+  :root:not([data-theme="light"]) .watch-item.cold .watch-tag { background: #3d1a18; color: #ff9d94;
+  }
+  :root:not([data-theme="light"]) .form-status.mixed { background: #3a3012; color: #f0cf7a;
+  }
+  :root:not([data-theme="light"]) td,
+  :root:not([data-theme="light"]) .match-row,
+  :root:not([data-theme="light"]) .leader-row { border-color: var(--line);
+  }
+  :root:not([data-theme="light"]) .match-row:hover { background: var(--surface-2);
+  }
+  :root:not([data-theme="light"]) tbody tr:hover { background: var(--surface-2);
+  }
+  :root:not([data-theme="light"]) .day-header { background: rgb(17 35 26 / 0.94);
+  }
+  :root:not([data-theme="light"]) .welcome { border-color: #2c4416; background: linear-gradient(100deg, var(--lime-soft), var(--surface) 70%);
+  }
+  :root:not([data-theme="light"]) .welcome li b { background: var(--lime); color: var(--pitch-950);
+  }
+  :root:not([data-theme="light"]) .club-card { background: linear-gradient(180deg, color-mix(in srgb, var(--club-color, var(--brand)) 14%, var(--surface)), var(--surface) 62%);
+  }
+  :root:not([data-theme="light"]) .club-card-bottom { background: rgb(0 0 0 / 0.18);
+  }
+  :root:not([data-theme="light"]) .club-strip button,
+  :root:not([data-theme="light"]) .featured-team img,
+  :root:not([data-theme="light"]) .match-title img,
+  :root:not([data-theme="light"]) .broadcast-scoreboard img { background-color: #f4f7f5;
+  }
+  :root:not([data-theme="light"]) .row-score { background: var(--surface-3);
+  }
+  :root:not([data-theme="light"]) .trophy-card { background: linear-gradient(140deg, #2a2412, var(--surface)); border-color: #4a3f1c;
+  }
+  :root:not([data-theme="light"]) .trophy-card small { color: #cdb878;
+  }
+  :root:not([data-theme="light"]) .replay-event.goal { background: #14301f;
+  }
+  :root:not([data-theme="light"]) .replay-event.goal strong { color: #7be0b0;
+  }
+  :root:not([data-theme="light"]) .full-time-card { background: linear-gradient(110deg, #14301f, var(--surface) 70%); border-color: #2c4416;
+  }
+  :root:not([data-theme="light"]) .search,
+  :root:not([data-theme="light"]) input,
+  :root:not([data-theme="light"]) select { background-color: var(--surface);
+  }
+  :root:not([data-theme="light"]) .segmented .active { background: var(--surface-3); color: var(--ink);
+  }
+  :root:not([data-theme="light"]) .profile-tabs button[aria-selected="true"] { background: var(--surface);
+  }
+  :root:not([data-theme="light"]) .stat-block strong,
+  :root:not([data-theme="light"]) .stats-strip strong,
+  :root:not([data-theme="light"]) .metric-grid strong,
+  :root:not([data-theme="light"]) .forecast-stats strong { color: var(--ink);
+  }
+  :root:not([data-theme="light"]) .loading-state { background: linear-gradient(100deg, transparent 20%, rgb(255 255 255 / 0.06) 50%, transparent 80%) 0 0 / 200% 100%, var(--surface-3);
+  }
+  :root:not([data-theme="light"]) dialog { background: var(--surface);
+  }
+  :root:not([data-theme="light"]) dialog::backdrop { background: rgb(0 0 0 / 0.65);
+  }
+  :root:not([data-theme="light"]) .dialog-close { background: var(--surface-3);
+  }
+  :root:not([data-theme="light"]) .exact-badge { color: #3a2a06;
+  }
+  :root:not([data-theme="light"]) .mobile-nav { background: rgb(14 28 21 / 0.92);
+  }
+  :root:not([data-theme="light"]) footer button { background: var(--surface);
+  }
+  :root:not([data-theme="light"]) .primary { color: #04130c;
+  }
+}
+:root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #07110d;
+    --surface: #0e1c15;
+    --surface-2: #11231a;
+    --surface-3: #162a20;
+    --line: #1d3227;
+    --line-strong: #2b4638;
+    --ink: #e8f2ec;
+    --ink-2: #bdd0c5;
+    --muted: #8da398;
+    --brand: #35b585;
+    --brand-hover: #4cc79a;
+    --brand-soft: #123225;
+    --lime-soft: #1c2d12;
+    --home: #35b585;
+    --draw: #55685d;
+    --away: #6f8cff;
+    --win: #35b585;
+    --loss: #ef6b61;
+    --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.35), 0 14px 34px -14px rgb(0 0 0 / 0.6);
+}
+:root[data-theme="dark"] .freshness,
+:root[data-theme="dark"] .notice {
+    color: #e3d3a0;
+    background: #2a2412;
+    border-color: #4a3f1c;
+}
+:root[data-theme="dark"] .form-status.good,
+:root[data-theme="dark"] .outcome-badge.correct,
+:root[data-theme="dark"] .watch-item.hot .watch-tag { background: #12392a; color: #7be0b0;
+}
+:root[data-theme="dark"] .form-status.poor,
+:root[data-theme="dark"] .outcome-badge.incorrect,
+:root[data-theme="dark"] .watch-item.cold .watch-tag { background: #3d1a18; color: #ff9d94;
+}
+:root[data-theme="dark"] .form-status.mixed { background: #3a3012; color: #f0cf7a;
+}
+:root[data-theme="dark"] td,
+:root[data-theme="dark"] .match-row,
+:root[data-theme="dark"] .leader-row { border-color: var(--line);
+}
+:root[data-theme="dark"] .match-row:hover { background: var(--surface-2);
+}
+:root[data-theme="dark"] tbody tr:hover { background: var(--surface-2);
+}
+:root[data-theme="dark"] .day-header { background: rgb(17 35 26 / 0.94);
+}
+:root[data-theme="dark"] .welcome { border-color: #2c4416; background: linear-gradient(100deg, var(--lime-soft), var(--surface) 70%);
+}
+:root[data-theme="dark"] .welcome li b { background: var(--lime); color: var(--pitch-950);
+}
+:root[data-theme="dark"] .club-card { background: linear-gradient(180deg, color-mix(in srgb, var(--club-color, var(--brand)) 14%, var(--surface)), var(--surface) 62%);
+}
+:root[data-theme="dark"] .club-card-bottom { background: rgb(0 0 0 / 0.18);
+}
+:root[data-theme="dark"] .club-strip button,
+:root[data-theme="dark"] .featured-team img,
+:root[data-theme="dark"] .match-title img,
+:root[data-theme="dark"] .broadcast-scoreboard img { background-color: #f4f7f5;
+}
+:root[data-theme="dark"] .row-score { background: var(--surface-3);
+}
+:root[data-theme="dark"] .trophy-card { background: linear-gradient(140deg, #2a2412, var(--surface)); border-color: #4a3f1c;
+}
+:root[data-theme="dark"] .trophy-card small { color: #cdb878;
+}
+:root[data-theme="dark"] .replay-event.goal { background: #14301f;
+}
+:root[data-theme="dark"] .replay-event.goal strong { color: #7be0b0;
+}
+:root[data-theme="dark"] .full-time-card { background: linear-gradient(110deg, #14301f, var(--surface) 70%); border-color: #2c4416;
+}
+:root[data-theme="dark"] .search,
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select { background-color: var(--surface);
+}
+:root[data-theme="dark"] .segmented .active { background: var(--surface-3); color: var(--ink);
+}
+:root[data-theme="dark"] .profile-tabs button[aria-selected="true"] { background: var(--surface);
+}
+:root[data-theme="dark"] .stat-block strong,
+:root[data-theme="dark"] .stats-strip strong,
+:root[data-theme="dark"] .metric-grid strong,
+:root[data-theme="dark"] .forecast-stats strong { color: var(--ink);
+}
+:root[data-theme="dark"] .loading-state { background: linear-gradient(100deg, transparent 20%, rgb(255 255 255 / 0.06) 50%, transparent 80%) 0 0 / 200% 100%, var(--surface-3);
+}
+:root[data-theme="dark"] dialog { background: var(--surface);
+}
+:root[data-theme="dark"] dialog::backdrop { background: rgb(0 0 0 / 0.65);
+}
+:root[data-theme="dark"] .dialog-close { background: var(--surface-3);
+}
+:root[data-theme="dark"] .exact-badge { color: #3a2a06;
+}
+:root[data-theme="dark"] .mobile-nav { background: rgb(14 28 21 / 0.92);
+}
+:root[data-theme="dark"] footer button { background: var(--surface);
+}
+:root[data-theme="dark"] .primary { color: #04130c;
+}
+
+.theme-toggle {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(255 255 255 / 0.14);
+  color: rgb(255 255 255 / 0.8);
+  transition: background 0.15s, color 0.15s;
+}
+.theme-toggle:hover {
+  background: rgb(255 255 255 / 0.1);
+  color: #fff;
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.theme-toggle .sun { display: none; }
+:root[data-theme="dark"] .theme-toggle .sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .moon { display: none; }
+}
+@media (max-width: 700px) {
+  .theme-toggle { width: 34px; height: 34px; }
+}
+
+/* Dark theme: badges sit on a light backing so dark crests and logos stay readable. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .competition img,
+  :root:not([data-theme="light"]) .comp-chip img,
+  :root:not([data-theme="light"]) .panel-header img,
+  :root:not([data-theme="light"]) .row-comp img { background: #f1f5f3; border-radius: 7px; padding: 2px; }
+  :root:not([data-theme="light"]) .club-line img,
+  :root:not([data-theme="light"]) .table-club img,
+  :root:not([data-theme="light"]) .leader-row img.crest { background: #f1f5f3; border-radius: 50%; padding: 2px; }
+}
+:root[data-theme="dark"] .competition img,
+:root[data-theme="dark"] .comp-chip img,
+:root[data-theme="dark"] .panel-header img,
+:root[data-theme="dark"] .row-comp img { background: #f1f5f3; border-radius: 7px; padding: 2px; }
+:root[data-theme="dark"] .club-line img,
+:root[data-theme="dark"] .table-club img { background: #f1f5f3; border-radius: 50%; padding: 2px; }

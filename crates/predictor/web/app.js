@@ -23,6 +23,19 @@ const url = (s) => {
     return "";
   }
 };
+// Colour theme: the device setting until the visitor picks one with the header button.
+(() => {
+  const root = document.documentElement;
+  let saved = null;
+  try { saved = localStorage.getItem("touchlineTheme"); } catch {}
+  if (saved === "dark" || saved === "light") root.dataset.theme = saved;
+  const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+  document.getElementById("themeToggle").addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.dataset.theme = next;
+    try { localStorage.setItem("touchlineTheme", next); } catch {}
+  });
+})();
 const predScore = (p) => p.predicted_score || p.most_likely_score;
 const marketNote = (p) => (p.market_weight > 0 ? '<small class="market-note">Includes bookmaker odds</small>' : "");
 const pct = (x) => Math.round(x * 100) + "%",
@@ -224,6 +237,7 @@ function renderNavigation() {
       : "";
 }
 let renderRevision=0;
+let lastViewKey='';
 const teamLoads=new Map();
 const leagueLoads=new Map();
 async function loadLeague(l){
@@ -261,7 +275,8 @@ async function render() {
   else if (state.view === "seasons") renderSeasons();
   else if (state.view === "table") renderTable();
   else renderAbout();
-  $("content").classList.remove('view-enter');void $("content").offsetWidth;$("content").classList.add('view-enter');
+  const viewKey=[state.view,state.competition,state.club,state.days].join('|');
+  if(viewKey!==lastViewKey){lastViewKey=viewKey;$("content").classList.remove('view-enter');void $("content").offsetWidth;$("content").classList.add('view-enter');}
 }
 function allFixtures() {
   const end = Date.parse(data.as_of) + state.days * 86400000;
@@ -297,6 +312,12 @@ const dayLabel = (s) =>
     month: "long",
     timeZone: "UTC",
   });
+// "Today" / "Tomorrow" for a local kickoff date, else nothing.
+function relativeDay(date) {
+  const iso = (d) => d.getFullYear() + "-" + String(d.getMonth() + 1).padStart(2, "0") + "-" + String(d.getDate()).padStart(2, "0");
+  const now = new Date(), next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+  return date === iso(now) ? "Today" : date === iso(next) ? "Tomorrow" : "";
+}
 function matchRow(l, m, { inDay = false, comp = false } = {}) {
   const p = m.prediction,
     meta = fixtureMeta(l, m),
@@ -497,7 +518,7 @@ function renderMatches() {
   const panels = [...groups]
     .map(
       ([day, g]) =>
-        `<section class="panel day-panel"><div class="panel-header day-header"><strong>${esc(dayLabel(day))}</strong><span>${g.length} ${g.length === 1 ? "match" : "matches"}</span></div>${g.map((r) => matchRow(r.l, r.m, { inDay: true, comp: mixed })).join("")}</section>`,
+        `<section class="panel day-panel"><div class="panel-header day-header"><strong>${relativeDay(day) ? `<em class="day-tag">${relativeDay(day)}</em>` : ""}${esc(dayLabel(day))}</strong><span>${g.length} ${g.length === 1 ? "match" : "matches"}</span></div>${g.map((r) => matchRow(r.l, r.m, { inDay: true, comp: mixed })).join("")}</section>`,
     )
     .join("");
   const teamNames = [...new Set(activeLeagues().flatMap((l) => l.teams.map((t) => t.name)))],

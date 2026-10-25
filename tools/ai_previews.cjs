@@ -40,11 +40,11 @@ function upcomingFixtures(data) {
 
 async function generate(fixture, apiKey) {
   const { league, m } = fixture;
-  const [h, a] = m.prediction?.most_likely_score || [];
+  const [h, a] = m.prediction?.predicted_score || m.prediction?.most_likely_score || [];
   const forecast = Number.isInteger(h) && Number.isInteger(a) ? `${h}-${a}` : "not available";
   const prompt = `Write a two-sentence neutral match preview for a football fan website.
 Use only these facts: competition ${league.name}, date ${m.date}, home team ${m.home}, away team ${m.away}.
-The statistical model's most likely score is ${forecast}. Say it is a model forecast, not a prediction of the result.
+The statistical model's predicted score is ${forecast}. Say it is a model forecast, not a prediction of the result.
 Do not mention injuries, form, recent results, transfers or any other facts.
 Return only a JSON object: {"preview": "text"}`;
 

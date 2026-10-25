@@ -82,7 +82,7 @@ Date: ${clean(f.date, 20)}
 Home team: ${clean(f.home)}
 Away team: ${clean(f.away)}
 Model forecast: home win ${pct(probs.home_win)}, draw ${pct(probs.draw)}, away win ${pct(probs.away_win)}.
-Most likely score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
+Predicted score in the model: ${clean(f.most_likely_score, 20) || "not available"}.
 Web sources found for this question (may be out of date; name the source and give its link when you use one):
 ${sources || "none found"}
 Kick-off: ${clean(f.kickoff, 60) || "not available"}

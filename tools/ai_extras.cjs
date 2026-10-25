@@ -66,7 +66,7 @@ async function complete(prompt, apiKey) {
 
 function whyPrompt(league, m) {
   const p = m.prediction || {};
-  const [h, a] = p.most_likely_score || [];
+  const [h, a] = p.predicted_score || p.most_likely_score || [];
   const homeForm = lastFive(league, m.home).map(formLine);
   const awayForm = lastFive(league, m.away).map(formLine);
   return {
