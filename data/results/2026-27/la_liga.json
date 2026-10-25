@@ -1153,7 +1153,13 @@
       "date": "2026-10-25",
       "team1": "Athletic Club",
       "team2": "Getafe CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 10",
@@ -1183,13 +1189,25 @@
       "date": "2026-10-25",
       "team1": "RC Celta de Vigo",
       "team2": "Real Betis Balompié",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Levante UD",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "round": "Matchday 10",

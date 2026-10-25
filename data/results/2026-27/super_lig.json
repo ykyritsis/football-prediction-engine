@@ -918,13 +918,25 @@
       "date": "2026-10-25",
       "team1": "Konyaspor",
       "team2": "Genclerbirligi",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Goztepe",
       "team2": "Çorum FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-26",

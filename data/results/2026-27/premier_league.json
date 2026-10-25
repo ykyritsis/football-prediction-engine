@@ -906,31 +906,61 @@
       "date": "2026-10-25",
       "team1": "Liverpool FC",
       "team2": "Brighton & Hove Albion FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Crystal Palace FC",
       "team2": "Newcastle United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Manchester United FC",
       "team2": "AFC Bournemouth",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Hull City AFC",
       "team2": "Brentford FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Sunderland AFC",
       "team2": "Leeds United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",

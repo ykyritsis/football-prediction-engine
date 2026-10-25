@@ -924,19 +924,37 @@
       "date": "2026-10-25",
       "team1": "Racing Genk",
       "team2": "Standard Liege",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Club Brugge",
       "team2": "Sint-Truidense",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "KAA Gent",
       "team2": "Anderlecht",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",

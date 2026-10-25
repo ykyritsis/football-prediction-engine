@@ -793,31 +793,61 @@
       "date": "2026-10-25",
       "team1": "AS Monaco FC",
       "team2": "Lille OSC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Olympique de Marseille",
       "team2": "Le Havre AC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Stade Rennais FC 1901",
       "team2": "RC Strasbourg Alsace",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Angers SCO",
       "team2": "FC Lorient",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "AJ Auxerre",
       "team2": "Le Mans FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "round": "Matchday 8",
@@ -830,7 +860,13 @@
       "date": "2026-10-25",
       "team1": "Toulouse FC",
       "team2": "ES Troyes AC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-26",

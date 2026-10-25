@@ -383,6 +383,70 @@
     "ligue_1|2026-10-25|Olympique de Marseille|Le Havre AC": {
       "text": "Marseille's two straight wins and Le Havre's four losses in five drive the lean to a home win.",
       "generated_at": "2026-10-25T09:50:01.343Z"
+    },
+    "ligue_1|2026-10-25|Paris Saint-Germain FC|Olympique Lyonnais": {
+      "text": "Paris Saint-Germain's strong recent form, with four straight wins, drives the lean toward a home victory over Lyon.",
+      "generated_at": "2026-10-25T19:37:41.478Z"
+    },
+    "ligue_1|2026-10-26|Paris Saint-Germain FC|Olympique Lyonnais": {
+      "text": "PSG's strong recent form, with four straight wins, drives the lean toward a home victory over Lyon.",
+      "generated_at": "2026-10-25T19:37:42.156Z"
+    },
+    "ligue_1|2026-10-30|Le Havre AC|Paris Saint-Germain FC": {
+      "text": "Paris Saint-Germain's four straight wins and Le Havre's five-match winless run drive the away-win forecast.",
+      "generated_at": "2026-10-25T19:37:42.948Z"
+    },
+    "ligue_1|2026-10-30|Lille OSC|Racing Club de Lens": {
+      "text": "Lille's strong home form and solid recent wins drive the lean toward a narrow home victory.",
+      "generated_at": "2026-10-25T19:37:43.776Z"
+    },
+    "ligue_1|2026-10-31|OGC Nice|Stade Rennais FC 1901": {
+      "text": "Nice's strong home form, with recent home wins over Lille and Strasbourg, drives the lean toward a home victory.",
+      "generated_at": "2026-10-25T19:37:44.902Z"
+    },
+    "ligue_1|2026-10-31|Olympique Lyonnais|Angers SCO": {
+      "text": "Lyon's strong home form and Angers' heavy recent defeats drive the lean toward a home win.",
+      "generated_at": "2026-10-25T19:37:45.800Z"
+    },
+    "ligue_1|2026-10-31|FC Lorient|Stade Brestois 29": {
+      "text": "Lorient's strong home form, with three straight 1-0 wins, drives the lean toward a home victory.",
+      "generated_at": "2026-10-25T19:37:46.778Z"
+    },
+    "ligue_1|2026-10-31|ES Troyes AC|Le Mans FC": {
+      "text": "Troyes' five straight losses and leaky defense drive the lean toward a Le Mans away win.",
+      "generated_at": "2026-10-25T19:37:47.890Z"
+    },
+    "ligue_1|2026-11-01|RC Strasbourg Alsace|AJ Auxerre": {
+      "text": "Strasbourg's home advantage and stronger overall form, despite recent losses, drive the lean toward a home win over inconsistent Auxerre.",
+      "generated_at": "2026-10-25T19:37:48.906Z"
+    },
+    "ligue_1|2026-11-01|Paris FC|AS Monaco FC": {
+      "text": "Paris FC's strong home form, including recent wins, drives the lean toward a home victory over a Monaco side that has struggled away.",
+      "generated_at": "2026-10-25T19:37:50.001Z"
+    },
+    "ligue_1|2026-11-01|Olympique de Marseille|Toulouse FC": {
+      "text": "Marseille's recent away wins and attacking form, plus home advantage, drive the lean toward a home victory.",
+      "generated_at": "2026-10-25T19:37:50.926Z"
+    },
+    "primeira_liga|2026-10-25|C.D. Nacional|Braga": {
+      "text": "Nacional's five straight losses and Braga's stronger overall form drive the lean toward an away win.",
+      "generated_at": "2026-10-25T19:37:52.166Z"
+    },
+    "primeira_liga|2026-10-25|Rio Ave|FC Famalicao": {
+      "text": "Famalicao's stronger recent form and Rio Ave's defensive struggles drive the away-win lean.",
+      "generated_at": "2026-10-25T19:37:52.872Z"
+    },
+    "primeira_liga|2026-10-25|Sporting CP|Académico de Viseu": {
+      "text": "Sporting CP's strong recent form, including a 3-1 win at Braga, drives the lean toward a home victory.",
+      "generated_at": "2026-10-25T19:37:53.765Z"
+    },
+    "primeira_liga|2026-10-26|Santa Clara|Benfica": {
+      "text": "Benfica's strong recent form, including four wins in five, drives the lean toward an away win at Santa Clara.",
+      "generated_at": "2026-10-25T19:37:54.567Z"
+    },
+    "primeira_liga|2026-10-30|Casa Pia|Sporting CP": {
+      "text": "Sporting CP's strong recent form, including three wins and two draws, drives the forecast lean against Casa Pia.",
+      "generated_at": "2026-10-25T19:37:55.379Z"
     }
   },
   "storylines": {

@@ -418,5 +418,65 @@
     "text": "Serie A action on 2026-11-02 features US Sassuolo Calcio hosting ACF Fiorentina. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-02",
     "generated_at": "2026-10-25T09:49:56.521Z"
+  },
+  "serie_a|2026-11-02|Atalanta BC|Parma Calcio 1913": {
+    "text": "Serie A fixture on 2026-11-02 sees Atalanta BC host Parma Calcio 1913. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-02",
+    "generated_at": "2026-10-25T19:37:41.419Z"
+  },
+  "bundesliga|2026-10-30|SV 07 Elversberg|1. FSV Mainz 05": {
+    "text": "SV 07 Elversberg host 1. FSV Mainz 05 in the Bundesliga on 2026-10-30. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-25T19:37:42.449Z"
+  },
+  "bundesliga|2026-10-31|Borussia Mönchengladbach|SC Paderborn 07": {
+    "text": "Borussia Mönchengladbach host SC Paderborn 07 in the Bundesliga on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:43.426Z"
+  },
+  "bundesliga|2026-10-31|FC Schalke 04|RB Leipzig": {
+    "text": "FC Schalke 04 host RB Leipzig in the Bundesliga on 2026-10-31. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:44.275Z"
+  },
+  "bundesliga|2026-10-31|FC Augsburg|SC Freiburg": {
+    "text": "FC Augsburg host SC Freiburg in the Bundesliga on 2026-10-31. A statistical model forecasts a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:45.147Z"
+  },
+  "bundesliga|2026-10-31|SV Werder Bremen|TSG 1899 Hoffenheim": {
+    "text": "SV Werder Bremen host TSG 1899 Hoffenheim in the Bundesliga on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:45.967Z"
+  },
+  "bundesliga|2026-10-31|Bayer 04 Leverkusen|VfB Stuttgart": {
+    "text": "Bayer 04 Leverkusen host VfB Stuttgart in the Bundesliga on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:46.833Z"
+  },
+  "bundesliga|2026-10-31|FC Bayern München|Borussia Dortmund": {
+    "text": "FC Bayern München host Borussia Dortmund in the Bundesliga on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-25T19:37:47.764Z"
+  },
+  "bundesliga|2026-11-01|1. FC Union Berlin|1. FC Köln": {
+    "text": "1. FC Union Berlin host 1. FC Köln in the Bundesliga on 2026-11-01. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T19:37:48.611Z"
+  },
+  "bundesliga|2026-11-01|Eintracht Frankfurt|Hamburger SV": {
+    "text": "Eintracht Frankfurt host Hamburger SV in the Bundesliga on 2026-11-01. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-25T19:37:49.825Z"
+  },
+  "ligue_1|2026-10-25|Paris Saint-Germain FC|Olympique Lyonnais": {
+    "text": "Ligue 1 action on 2026-10-25 features Paris Saint-Germain FC hosting Olympique Lyonnais. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-25",
+    "generated_at": "2026-10-25T19:37:50.858Z"
+  },
+  "ligue_1|2026-10-26|Paris Saint-Germain FC|Olympique Lyonnais": {
+    "text": "Ligue 1 fixture on 2026-10-26 sees Paris Saint-Germain FC host Olympique Lyonnais. The statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-26",
+    "generated_at": "2026-10-25T19:37:51.860Z"
   }
 }

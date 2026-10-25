@@ -1026,25 +1026,49 @@
       "date": "2026-10-25",
       "team1": "Fortuna Sittard",
       "team2": "Excelsior",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "NEC Nijmegen",
       "team2": "FC Groningen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "PSV Eindhoven",
       "team2": "Feyenoord Rotterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Sparta Rotterdam",
       "team2": "Ajax Amsterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-25",
