@@ -966,7 +966,13 @@
       "date": "2026-10-26",
       "team1": "Santa Clara",
       "team2": "Benfica",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-30",

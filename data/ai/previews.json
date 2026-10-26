@@ -538,5 +538,65 @@
     "text": "Moreirense host Estrela in the Primeira Liga on 2026-10-31. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-10-31",
     "generated_at": "2026-10-26T11:08:06.816Z"
+  },
+  "primeira_liga|2026-10-31|FC Porto|Estoril": {
+    "text": "FC Porto host Estoril in the Primeira Liga on 2026-10-31. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:01.710Z"
+  },
+  "primeira_liga|2026-11-01|Arouca|C.D. Nacional": {
+    "text": "Arouca host C.D. Nacional in the Primeira Liga on 2026-11-01. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T21:40:02.382Z"
+  },
+  "primeira_liga|2026-11-01|Académico de Viseu|Rio Ave": {
+    "text": "Académico de Viseu host Rio Ave in the Primeira Liga on 2026-11-01. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T21:40:03.459Z"
+  },
+  "primeira_liga|2026-11-01|Maritimo|Santa Clara": {
+    "text": "Maritimo host Santa Clara in the Primeira Liga on 2026-11-01. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T21:40:04.463Z"
+  },
+  "primeira_liga|2026-11-01|Braga|FC Famalicao": {
+    "text": "Braga host FC Famalicao in the Primeira Liga on 2026-11-01. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T21:40:05.448Z"
+  },
+  "primeira_liga|2026-11-02|Benfica|Alverca": {
+    "text": "Benfica host Alverca in the Primeira Liga on 2026-11-02. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-02",
+    "generated_at": "2026-10-26T21:40:06.385Z"
+  },
+  "primeira_liga|2026-11-02|Gil Vicente|Vitória de Guimaraes": {
+    "text": "Gil Vicente host Vitória de Guimaraes in the Primeira Liga on 2026-11-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-02",
+    "generated_at": "2026-10-26T21:40:07.184Z"
+  },
+  "eredivisie|2026-10-31|Feyenoord Rotterdam|Fortuna Sittard": {
+    "text": "Feyenoord Rotterdam host Fortuna Sittard in the Eredivisie on 2026-10-31. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:08.277Z"
+  },
+  "eredivisie|2026-10-31|Heerenveen|NEC Nijmegen": {
+    "text": "Heerenveen host NEC Nijmegen in the Eredivisie on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:09.192Z"
+  },
+  "eredivisie|2026-10-31|PSV Eindhoven|Willem II": {
+    "text": "PSV Eindhoven host Willem II in the Eredivisie on 2026-10-31. The statistical model's forecast for this match is a 5-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:10.183Z"
+  },
+  "eredivisie|2026-10-31|Ajax Amsterdam|AZ Alkmaar": {
+    "text": "Ajax Amsterdam host AZ Alkmaar in the Eredivisie on 2026-10-31. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:11.093Z"
+  },
+  "eredivisie|2026-10-31|SC Cambuur|Go Ahead Eagles": {
+    "text": "SC Cambuur host Go Ahead Eagles in the Eredivisie on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T21:40:11.974Z"
   }
 }

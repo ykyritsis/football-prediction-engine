@@ -872,7 +872,13 @@
       "date": "2026-10-26",
       "team1": "Paris Saint-Germain FC",
       "team2": "Olympique Lyonnais",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-30",

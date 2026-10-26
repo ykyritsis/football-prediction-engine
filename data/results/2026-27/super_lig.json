@@ -942,19 +942,37 @@
       "date": "2026-10-26",
       "team1": "Besiktas",
       "team2": "Istanbul Basaksehir",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-26",
       "team1": "Caykur Rizespor",
       "team2": "Trabzonspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-26",
       "team1": "Galatasaray",
       "team2": "Fenerbahce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-30",
