@@ -1074,7 +1074,13 @@
       "date": "2026-10-25",
       "team1": "AZ Alkmaar",
       "team2": "FC Twente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",

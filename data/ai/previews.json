@@ -478,5 +478,65 @@
     "text": "Ligue 1 fixture on 2026-10-26 sees Paris Saint-Germain FC host Olympique Lyonnais. The statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
     "date": "2026-10-26",
     "generated_at": "2026-10-25T19:37:51.860Z"
+  },
+  "ligue_1|2026-10-30|Le Havre AC|Paris Saint-Germain FC": {
+    "text": "Le Havre AC host Paris Saint-Germain FC in Ligue 1 on 2026-10-30. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-26T11:07:53.829Z"
+  },
+  "ligue_1|2026-10-30|Lille OSC|Racing Club de Lens": {
+    "text": "Lille OSC host Racing Club de Lens in Ligue 1 on 2026-10-30. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-26T11:07:55.096Z"
+  },
+  "ligue_1|2026-10-31|OGC Nice|Stade Rennais FC 1901": {
+    "text": "Ligue 1 action on 2026-10-31 features OGC Nice hosting Stade Rennais FC 1901. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T11:07:56.134Z"
+  },
+  "ligue_1|2026-10-31|Olympique Lyonnais|Angers SCO": {
+    "text": "Ligue 1 fixture on 2026-10-31 sees Olympique Lyonnais host Angers SCO. The statistical model forecasts a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T11:07:57.220Z"
+  },
+  "ligue_1|2026-10-31|FC Lorient|Stade Brestois 29": {
+    "text": "FC Lorient host Stade Brestois 29 in Ligue 1 on 2026-10-31. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T11:07:58.470Z"
+  },
+  "ligue_1|2026-10-31|ES Troyes AC|Le Mans FC": {
+    "text": "Ligue 1 fixture on 2026-10-31 sees ES Troyes AC host Le Mans FC. The statistical model's forecast is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T11:07:59.518Z"
+  },
+  "ligue_1|2026-11-01|RC Strasbourg Alsace|AJ Auxerre": {
+    "text": "Ligue 1 fixture on 2026-11-01 sees RC Strasbourg Alsace host AJ Auxerre. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T11:08:00.724Z"
+  },
+  "ligue_1|2026-11-01|Paris FC|AS Monaco FC": {
+    "text": "Ligue 1 action on 2026-11-01 sees Paris FC host AS Monaco FC. The statistical model's forecast of a 2-1 scoreline is a model forecast, not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T11:08:02.019Z"
+  },
+  "ligue_1|2026-11-01|Olympique de Marseille|Toulouse FC": {
+    "text": "Ligue 1 action on 2026-11-01 sees Olympique de Marseille host Toulouse FC. A statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-26T11:08:03.247Z"
+  },
+  "primeira_liga|2026-10-26|Santa Clara|Benfica": {
+    "text": "Santa Clara host Benfica in the Primeira Liga on 2026-10-26. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-26",
+    "generated_at": "2026-10-26T11:08:04.481Z"
+  },
+  "primeira_liga|2026-10-30|Casa Pia|Sporting CP": {
+    "text": "Casa Pia host Sporting CP in the Primeira Liga on 2026-10-30. The statistical model's forecast for this match is a 0-2 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-26T11:08:05.650Z"
+  },
+  "primeira_liga|2026-10-31|Moreirense|Estrela": {
+    "text": "Moreirense host Estrela in the Primeira Liga on 2026-10-31. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-26T11:08:06.816Z"
   }
 }

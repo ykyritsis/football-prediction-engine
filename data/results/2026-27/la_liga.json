@@ -1177,7 +1177,13 @@
       "date": "2026-10-25",
       "team1": "FC Barcelona",
       "team2": "Real Madrid CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "round": "Matchday 10",

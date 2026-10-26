@@ -954,7 +954,13 @@
       "date": "2026-10-25",
       "team1": "Udinese Calcio",
       "team2": "AC Milan",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-27",

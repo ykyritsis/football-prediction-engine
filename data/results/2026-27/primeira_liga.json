@@ -930,19 +930,37 @@
       "date": "2026-10-25",
       "team1": "C.D. Nacional",
       "team2": "Braga",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Rio Ave",
       "team2": "FC Famalicao",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-25",
       "team1": "Sporting CP",
       "team2": "Académico de Viseu",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-26",

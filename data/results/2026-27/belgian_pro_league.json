@@ -960,7 +960,13 @@
       "date": "2026-10-25",
       "team1": "Union St.-Gilloise",
       "team2": "Cercle Brugge KSV",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-30",
