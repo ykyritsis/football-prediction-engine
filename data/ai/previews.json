@@ -598,5 +598,65 @@
     "text": "SC Cambuur host Go Ahead Eagles in the Eredivisie on 2026-10-31. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-10-31",
     "generated_at": "2026-10-26T21:40:11.974Z"
+  },
+  "premier_league|2026-11-06|Everton FC|Coventry City FC": {
+    "text": "Everton FC host Coventry City FC in the Premier League on 2026-11-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:44.231Z"
+  },
+  "la_liga|2026-11-06|Sevilla FC|Deportivo Alavés": {
+    "text": "La Liga fixture on 2026-11-06 sees Sevilla FC host Deportivo Alavés. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:45.354Z"
+  },
+  "serie_a|2026-11-06|Venezia FC|Udinese Calcio": {
+    "text": "Serie A fixture on 2026-11-06 sees Venezia FC host Udinese Calcio. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:46.396Z"
+  },
+  "bundesliga|2026-11-06|Hamburger SV|Borussia Mönchengladbach": {
+    "text": "Hamburger SV host Borussia Mönchengladbach in the Bundesliga on 2026-11-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:47.445Z"
+  },
+  "ligue_1|2026-10-30|OGC Nice|Stade Rennais FC 1901": {
+    "text": "Ligue 1 fixture on 2026-10-30 sees OGC Nice host Stade Rennais FC 1901. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-27T10:34:48.686Z"
+  },
+  "ligue_1|2026-11-06|Toulouse FC|RC Strasbourg Alsace": {
+    "text": "Toulouse FC host RC Strasbourg Alsace in Ligue 1 on 2026-11-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:50.005Z"
+  },
+  "primeira_liga|2026-11-06|FC Famalicao|Arouca": {
+    "text": "FC Famalicao host Arouca in the Primeira Liga on 2026-11-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:51.262Z"
+  },
+  "eredivisie|2026-11-01|PEC Zwolle|ADO Den Haag": {
+    "text": "PEC Zwolle host ADO Den Haag in the Eredivisie on 2026-11-01. The statistical model forecasts a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T10:34:52.391Z"
+  },
+  "eredivisie|2026-11-01|Excelsior|FC Twente": {
+    "text": "Excelsior host FC Twente in the Eredivisie on 2026-11-01. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T10:34:53.361Z"
+  },
+  "eredivisie|2026-11-01|Telstar|FC Utrecht": {
+    "text": "Telstar host FC Utrecht in the Eredivisie on 2026-11-01. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T10:34:54.307Z"
+  },
+  "eredivisie|2026-11-01|FC Groningen|Sparta Rotterdam": {
+    "text": "FC Groningen host Sparta Rotterdam in the Eredivisie on 2026-11-01. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T10:34:55.344Z"
+  },
+  "eredivisie|2026-11-06|Willem II|PEC Zwolle": {
+    "text": "Willem II host PEC Zwolle in the Eredivisie on 2026-11-06. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-27T10:34:56.526Z"
   }
 }
