@@ -906,16 +906,18 @@
       "team2": "Stade Rennais FC 1901"
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-31",
+      "time": "20:45",
       "team1": "Olympique Lyonnais",
-      "team2": "Angers SCO",
-      "neutral": false
+      "team2": "Angers SCO"
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-31",
+      "time": "20:45",
       "team1": "FC Lorient",
-      "team2": "Stade Brestois 29",
-      "neutral": false
+      "team2": "Stade Brestois 29"
     },
     {
       "date": "2026-10-31",
@@ -939,6 +941,18 @@
       "date": "2026-11-01",
       "team1": "Olympique de Marseille",
       "team2": "Toulouse FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-01",
+      "team1": "Olympique Lyonnais",
+      "team2": "Angers SCO",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-02",
+      "team1": "FC Lorient",
+      "team2": "Stade Brestois 29",
       "neutral": false
     },
     {
@@ -1182,6 +1196,12 @@
       "neutral": false
     },
     {
+      "date": "2026-12-11",
+      "team1": "AJ Auxerre",
+      "team2": "Toulouse FC",
+      "neutral": false
+    },
+    {
       "date": "2026-12-12",
       "team1": "OGC Nice",
       "team2": "Racing Club de Lens",
@@ -1212,10 +1232,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-12",
       "team1": "Stade Rennais FC 1901",
-      "team2": "AS Monaco FC",
-      "neutral": false
+      "team2": "AS Monaco FC"
     },
     {
       "round": "Matchday 14",
@@ -1224,10 +1244,10 @@
       "team2": "Lille OSC"
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-12",
       "team1": "AJ Auxerre",
-      "team2": "Toulouse FC",
-      "neutral": false
+      "team2": "Toulouse FC"
     },
     {
       "date": "2026-12-13",
@@ -1239,6 +1259,12 @@
       "date": "2026-12-13",
       "team1": "FC Lorient",
       "team2": "Lille OSC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "Stade Rennais FC 1901",
+      "team2": "AS Monaco FC",
       "neutral": false
     },
     {

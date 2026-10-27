@@ -639,6 +639,70 @@
     "chance_liga|2026-10-31|FK Pardubice|FC Slovan Liberec": {
       "text": "Liberec's four straight wins and unbeaten run drive the away-win lean against Pardubice's inconsistent form.",
       "generated_at": "2026-10-27T10:35:00.648Z"
+    },
+    "ligue_1|2026-11-01|Olympique Lyonnais|Angers SCO": {
+      "text": "Lyon's strong home wins and Angers' heavy recent defeats drive the lean toward a Lyon victory.",
+      "generated_at": "2026-10-27T21:19:02.777Z"
+    },
+    "ligue_1|2026-11-02|FC Lorient|Stade Brestois 29": {
+      "text": "Lorient's strong home form, including recent wins over Paris FC and Monaco, drives the lean toward a home victory.",
+      "generated_at": "2026-10-27T21:19:03.808Z"
+    },
+    "chance_liga|2026-10-31|SK Artis Brno|FC Zlin": {
+      "text": "Zlin's slightly stronger overall form and Brno's poor home record drive the lean toward an away win.",
+      "generated_at": "2026-10-27T21:19:04.669Z"
+    },
+    "chance_liga|2026-10-31|Jablonec|Slavia Prague": {
+      "text": "Slavia Prague's dominant recent form, with four straight wins, drives the lean toward an away victory at Jablonec.",
+      "generated_at": "2026-10-27T21:19:05.436Z"
+    },
+    "chance_liga|2026-10-31|SK Sigma Olomouc|FC Zbrojovka Brno": {
+      "text": "Sigma Olomouc's strong home form and Brno's away struggles drive the lean toward a home win.",
+      "generated_at": "2026-10-27T21:19:06.398Z"
+    },
+    "chance_liga|2026-11-01|FK Mlada Boleslav|FC Hradec Kralove": {
+      "text": "Mlada Boleslav's strong home form, with three wins and clean sheets, drives the lean toward a home victory.",
+      "generated_at": "2026-10-27T21:19:07.484Z"
+    },
+    "chance_liga|2026-11-01|FC Banik Ostrava|Viktoria Plzen": {
+      "text": "Viktoria Plzen's stronger recent form and Banik Ostrava's poor run of results drive the lean toward an away win.",
+      "generated_at": "2026-10-27T21:19:08.660Z"
+    },
+    "chance_liga|2026-11-01|Bohemians Prague 1905|Sparta Prague": {
+      "text": "Sparta Prague's stronger recent form, including three wins in their last five, drives the lean toward an away win.",
+      "generated_at": "2026-10-27T21:19:09.690Z"
+    },
+    "champions_league|2026-11-03|Bodo/Glimt|Lille OSC": {
+      "text": "Bodo/Glimt's strong home form, including a win over Borussia Dortmund, drives the lean for a home victory.",
+      "generated_at": "2026-10-27T21:19:10.497Z"
+    },
+    "champions_league|2026-11-03|Club Atlético de Madrid|FC Bayern München": {
+      "text": "Atlético's five-match unbeaten run and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-10-27T21:19:11.416Z"
+    },
+    "champions_league|2026-11-03|FC Barcelona|Aston Villa FC": {
+      "text": "Barcelona's strong home scoring form and higher win probability drive the forecast lean despite Aston Villa's recent winning run.",
+      "generated_at": "2026-10-27T21:19:12.512Z"
+    },
+    "champions_league|2026-11-03|Feyenoord Rotterdam|FC Internazionale Milano": {
+      "text": "Inter's strong recent form and higher win probability drive the forecast lean toward an away win.",
+      "generated_at": "2026-10-27T21:19:13.330Z"
+    },
+    "champions_league|2026-11-03|Galatasaray|VfB Stuttgart": {
+      "text": "Galatasaray's strong recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-10-27T21:19:14.051Z"
+    },
+    "champions_league|2026-11-03|LASK Linz|Slovan Bratislava": {
+      "text": "LASK Linz's recent 3-2 away win over Sporting CP contrasts with Slovan Bratislava's run of heavy defeats, driving the home-win lean.",
+      "generated_at": "2026-10-27T21:19:14.961Z"
+    },
+    "champions_league|2026-11-03|Manchester United FC|AS Roma": {
+      "text": "Manchester United's home advantage and Roma's leaky defense drive the lean toward a home win.",
+      "generated_at": "2026-10-27T21:19:15.998Z"
+    },
+    "champions_league|2026-11-03|Shakhtar Donetsk|Sporting CP": {
+      "text": "Sporting CP's stronger recent form and higher model probability drive the away-win lean.",
+      "generated_at": "2026-10-27T21:19:16.822Z"
     }
   },
   "storylines": {

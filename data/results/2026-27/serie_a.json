@@ -966,19 +966,27 @@
       "date": "2026-10-27",
       "team1": "US Sassuolo Calcio",
       "team2": "SS Lazio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          6
+        ]
+      }
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-27",
+      "time": "20:45",
       "team1": "AS Roma",
-      "team2": "Cagliari Calcio",
-      "neutral": false
+      "team2": "Cagliari Calcio"
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-27",
+      "time": "20:45",
       "team1": "Torino FC",
-      "team2": "Como 1907",
-      "neutral": false
+      "team2": "Como 1907"
     },
     {
       "date": "2026-10-28",

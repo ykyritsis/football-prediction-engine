@@ -658,5 +658,65 @@
     "text": "Willem II host PEC Zwolle in the Eredivisie on 2026-11-06. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
     "date": "2026-11-06",
     "generated_at": "2026-10-27T10:34:56.526Z"
+  },
+  "ligue_1|2026-11-01|Olympique Lyonnais|Angers SCO": {
+    "text": "Ligue 1 fixture on 2026-11-01 sees Olympique Lyonnais host Angers SCO. The statistical model forecasts a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T21:19:02.594Z"
+  },
+  "ligue_1|2026-11-02|FC Lorient|Stade Brestois 29": {
+    "text": "FC Lorient host Stade Brestois 29 in Ligue 1 on 2026-11-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-02",
+    "generated_at": "2026-10-27T21:19:03.504Z"
+  },
+  "belgian_pro_league|2026-10-30|Zulte-Waregem|Club Brugge": {
+    "text": "Zulte-Waregem host Club Brugge in the Belgian Pro League on 2026-10-30. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-30",
+    "generated_at": "2026-10-27T21:19:04.680Z"
+  },
+  "belgian_pro_league|2026-10-31|KV Mechelen|Racing Genk": {
+    "text": "KV Mechelen host Racing Genk in the Belgian Pro League on 2026-10-31. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-27T21:19:05.561Z"
+  },
+  "belgian_pro_league|2026-10-31|Standard Liege|KV Kortrijk": {
+    "text": "Standard Liege host KV Kortrijk in the Belgian Pro League on 2026-10-31. The statistical model forecasts a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-27T21:19:06.614Z"
+  },
+  "belgian_pro_league|2026-10-31|Anderlecht|KVC Westerlo": {
+    "text": "Anderlecht host KVC Westerlo in the Belgian Pro League on 2026-10-31. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-27T21:19:07.427Z"
+  },
+  "belgian_pro_league|2026-10-31|Waasland-Beveren|Union St.-Gilloise": {
+    "text": "Waasland-Beveren host Union St.-Gilloise in the Belgian Pro League on 2026-10-31. The statistical model's forecast for this match is a 0-3 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-27T21:19:08.337Z"
+  },
+  "belgian_pro_league|2026-11-01|Cercle Brugge KSV|Antwerp": {
+    "text": "Cercle Brugge KSV host Antwerp in the Belgian Pro League on 2026-11-01. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T21:19:09.168Z"
+  },
+  "belgian_pro_league|2026-11-01|Sint-Truidense|OH Leuven": {
+    "text": "Sint-Truidense host OH Leuven in the Belgian Pro League on 2026-11-01. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T21:19:10.347Z"
+  },
+  "belgian_pro_league|2026-11-01|Lommel SK|KAA Gent": {
+    "text": "Lommel SK host KAA Gent in the Belgian Pro League on 2026-11-01. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T21:19:11.245Z"
+  },
+  "belgian_pro_league|2026-11-01|Royal Charleroi SC|RAAL La Louvière": {
+    "text": "Royal Charleroi SC host RAAL La Louvière in the Belgian Pro League on 2026-11-01. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-27T21:19:12.291Z"
+  },
+  "belgian_pro_league|2026-11-04|KV Kortrijk|KV Mechelen": {
+    "text": "KV Kortrijk host KV Mechelen in the Belgian Pro League on 2026-11-04. A statistical model forecasts a 0-1 scoreline for this fixture, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-10-27T21:19:13.172Z"
   }
 }
