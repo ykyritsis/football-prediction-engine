@@ -975,18 +975,28 @@
       }
     },
     {
-      "round": "Matchday 9",
       "date": "2026-10-27",
-      "time": "20:45",
       "team1": "AS Roma",
-      "team2": "Cagliari Calcio"
+      "team2": "Cagliari Calcio",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
     },
     {
-      "round": "Matchday 9",
       "date": "2026-10-27",
-      "time": "20:45",
       "team1": "Torino FC",
-      "team2": "Como 1907"
+      "team2": "Como 1907",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-28",
