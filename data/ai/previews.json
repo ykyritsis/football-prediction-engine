@@ -778,5 +778,65 @@
     "text": "RCD Espanyol de Barcelona host RC Deportivo La Coruña in La Liga on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-07",
     "generated_at": "2026-10-28T11:22:10.467Z"
+  },
+  "la_liga|2026-11-07|CA Osasuna|Athletic Club": {
+    "text": "CA Osasuna host Athletic Club in La Liga on 2026-11-07. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:21.913Z"
+  },
+  "la_liga|2026-11-07|Valencia CF|Real Madrid CF": {
+    "text": "Valencia CF host Real Madrid CF in La Liga on 2026-11-07. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:22.923Z"
+  },
+  "serie_a|2026-11-07|Torino FC|US Lecce": {
+    "text": "Torino FC host US Lecce in Serie A on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:23.622Z"
+  },
+  "serie_a|2026-11-07|Cagliari Calcio|Frosinone Calcio": {
+    "text": "Serie A fixture on 2026-11-07 sees Cagliari Calcio host Frosinone Calcio. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:24.628Z"
+  },
+  "serie_a|2026-11-07|Parma Calcio 1913|Bologna FC 1909": {
+    "text": "Serie A fixture on 2026-11-07 sees Parma Calcio 1913 host Bologna FC 1909. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:25.711Z"
+  },
+  "serie_a|2026-11-07|AS Roma|US Sassuolo Calcio": {
+    "text": "Serie A fixture on 2026-11-07 sees AS Roma host US Sassuolo Calcio. The statistical model's forecast is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:26.712Z"
+  },
+  "bundesliga|2026-11-07|RB Leipzig|FC Augsburg": {
+    "text": "RB Leipzig host FC Augsburg in the Bundesliga on 2026-11-07. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:27.561Z"
+  },
+  "bundesliga|2026-11-07|Borussia Dortmund|SV 07 Elversberg": {
+    "text": "Borussia Dortmund host SV 07 Elversberg in the Bundesliga on 2026-11-07. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:28.369Z"
+  },
+  "bundesliga|2026-11-07|1. FSV Mainz 05|FC Bayern München": {
+    "text": "In the Bundesliga on 2026-11-07, 1. FSV Mainz 05 will host FC Bayern München. The statistical model's forecast for this match is a 1-3 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:29.372Z"
+  },
+  "bundesliga|2026-11-07|SC Paderborn 07|Eintracht Frankfurt": {
+    "text": "SC Paderborn 07 host Eintracht Frankfurt in the Bundesliga on 2026-11-07. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:30.192Z"
+  },
+  "bundesliga|2026-11-07|VfB Stuttgart|SV Werder Bremen": {
+    "text": "VfB Stuttgart host SV Werder Bremen in the Bundesliga on 2026-11-07. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:31.018Z"
+  },
+  "ligue_1|2026-11-07|AJ Auxerre|Paris FC": {
+    "text": "Ligue 1 fixture on 2026-11-07 sees AJ Auxerre host Paris FC. A statistical model forecasts a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-28T21:40:31.992Z"
   }
 }

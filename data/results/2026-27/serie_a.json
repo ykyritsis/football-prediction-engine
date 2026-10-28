@@ -1002,31 +1002,56 @@
       "date": "2026-10-28",
       "team1": "AC Milan",
       "team2": "Bologna FC 1909",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-28",
       "team1": "Venezia FC",
       "team2": "FC Internazionale Milano",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-28",
       "team1": "Parma Calcio 1913",
       "team2": "Udinese Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-28",
+      "time": "20:45",
       "team1": "Genoa CFC",
-      "team2": "Juventus FC",
-      "neutral": false
+      "team2": "Juventus FC"
     },
     {
       "date": "2026-10-28",
       "team1": "AC Monza",
       "team2": "SSC Napoli",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-29",

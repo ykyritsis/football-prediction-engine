@@ -767,6 +767,70 @@
     "serie_a|2026-11-07|Cagliari Calcio|Frosinone Calcio": {
       "text": "Frosinone's stronger recent form, with two wins and two draws, drives the lean toward an away win over struggling Cagliari.",
       "generated_at": "2026-10-28T11:22:14.960Z"
+    },
+    "serie_a|2026-11-07|Parma Calcio 1913|Bologna FC 1909": {
+      "text": "Bologna's stronger recent form, including two wins in their last three, drives the lean toward an away win at struggling Parma.",
+      "generated_at": "2026-10-28T21:40:21.787Z"
+    },
+    "serie_a|2026-11-07|AS Roma|US Sassuolo Calcio": {
+      "text": "Roma's strong home form and scoring drive the lean against a Sassuolo side that has lost four of five.",
+      "generated_at": "2026-10-28T21:40:22.627Z"
+    },
+    "bundesliga|2026-11-07|RB Leipzig|FC Augsburg": {
+      "text": "Leipzig's dominant home form, including three high-scoring home wins, drives the forecast for a home victory.",
+      "generated_at": "2026-10-28T21:40:23.502Z"
+    },
+    "bundesliga|2026-11-07|Borussia Dortmund|SV 07 Elversberg": {
+      "text": "Dortmund's strong recent form, including three wins in five, drives the lean toward a home victory over struggling Elversberg.",
+      "generated_at": "2026-10-28T21:40:24.575Z"
+    },
+    "bundesliga|2026-11-07|1. FSV Mainz 05|FC Bayern München": {
+      "text": "Bayern's dominant recent form, with four wins in five and high-scoring performances, drives the lean toward an away win at Mainz.",
+      "generated_at": "2026-10-28T21:40:25.564Z"
+    },
+    "bundesliga|2026-11-07|SC Paderborn 07|Eintracht Frankfurt": {
+      "text": "Eintracht Frankfurt's stronger recent form and higher model probability drive the lean toward an away win.",
+      "generated_at": "2026-10-28T21:40:26.390Z"
+    },
+    "bundesliga|2026-11-07|VfB Stuttgart|SV Werder Bremen": {
+      "text": "Stuttgart's home advantage and stronger win probability drive the lean toward a home victory despite recent form.",
+      "generated_at": "2026-10-28T21:40:27.241Z"
+    },
+    "ligue_1|2026-11-07|AJ Auxerre|Paris FC": {
+      "text": "Paris FC's stronger away form and higher model probability drive the lean toward an away win.",
+      "generated_at": "2026-10-28T21:40:28.158Z"
+    },
+    "ligue_1|2026-11-07|Paris Saint-Germain FC|ES Troyes AC": {
+      "text": "PSG's five straight wins and Troyes' winless run of four losses and a draw drive the forecast lean toward a home win.",
+      "generated_at": "2026-10-28T21:40:29.150Z"
+    },
+    "primeira_liga|2026-11-07|C.D. Nacional|Académico de Viseu": {
+      "text": "Académico de Viseu's five-match winning run against Nacional's poor form drives the away-win forecast.",
+      "generated_at": "2026-10-28T21:40:30.214Z"
+    },
+    "primeira_liga|2026-11-07|Alverca|Casa Pia": {
+      "text": "Alverca's strong recent home form and Casa Pia's inconsistency away drive the lean toward an Alverca win.",
+      "generated_at": "2026-10-28T21:40:31.365Z"
+    },
+    "primeira_liga|2026-11-07|Sporting CP|Moreirense": {
+      "text": "Sporting CP's strong home form and superior recent results drive the forecast lean toward a home win.",
+      "generated_at": "2026-10-28T21:40:32.243Z"
+    },
+    "eredivisie|2026-11-07|Fortuna Sittard|Telstar": {
+      "text": "Fortuna Sittard's stronger recent form, including two wins, drives the lean toward a home victory over a Telstar side on a losing run.",
+      "generated_at": "2026-10-28T21:40:33.149Z"
+    },
+    "eredivisie|2026-11-07|ADO Den Haag|Sparta Rotterdam": {
+      "text": "ADO Den Haag's home win over PSV Eindhoven and Sparta Rotterdam's poor recent form drive the lean toward a home victory.",
+      "generated_at": "2026-10-28T21:40:33.981Z"
+    },
+    "eredivisie|2026-11-07|Excelsior|Go Ahead Eagles": {
+      "text": "Go Ahead Eagles' recent win and scoring form contrasts with Excelsior's five-match winless run, driving the away-win lean.",
+      "generated_at": "2026-10-28T21:40:34.822Z"
+    },
+    "belgian_pro_league|2026-11-07|KVC Westerlo|Royal Charleroi SC": {
+      "text": "Westerlo's five-match unbeaten run and high-scoring home form drive the lean toward a home win.",
+      "generated_at": "2026-10-28T21:40:35.964Z"
     }
   },
   "storylines": {
