@@ -838,5 +838,65 @@
     "text": "Ligue 1 fixture on 2026-11-07 sees AJ Auxerre host Paris FC. A statistical model forecasts a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
     "date": "2026-11-07",
     "generated_at": "2026-10-28T21:40:31.992Z"
+  },
+  "premier_league|2026-11-08|Brighton & Hove Albion FC|Brentford FC": {
+    "text": "Brighton & Hove Albion FC host Brentford FC in the Premier League on 2026-11-08. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:04.411Z"
+  },
+  "premier_league|2026-11-08|Crystal Palace FC|Liverpool FC": {
+    "text": "Crystal Palace FC host Liverpool FC in the Premier League on 2026-11-08. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:05.410Z"
+  },
+  "premier_league|2026-11-08|Ipswich Town FC|AFC Bournemouth": {
+    "text": "Ipswich Town FC host AFC Bournemouth in the Premier League on 2026-11-08. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:06.587Z"
+  },
+  "premier_league|2026-11-08|Sunderland AFC|Chelsea FC": {
+    "text": "Sunderland AFC host Chelsea FC in the Premier League on 2026-11-08. The statistical model forecasts a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:07.465Z"
+  },
+  "premier_league|2026-11-08|Manchester United FC|Aston Villa FC": {
+    "text": "Manchester United FC host Aston Villa FC in the Premier League on 2026-11-08. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:08.560Z"
+  },
+  "la_liga|2026-11-08|Elche CF|Real Betis Balompié": {
+    "text": "La Liga's 2026-11-08 fixture sees Elche CF host Real Betis Balompié. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:09.351Z"
+  },
+  "la_liga|2026-11-08|CA Osasuna|Athletic Club": {
+    "text": "La Liga fixture on 2026-11-08 sees CA Osasuna host Athletic Club. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:10.445Z"
+  },
+  "la_liga|2026-11-08|Sevilla FC|Deportivo Alavés": {
+    "text": "Sevilla FC host Deportivo Alavés in La Liga on 2026-11-08. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:11.693Z"
+  },
+  "la_liga|2026-11-08|Valencia CF|Real Madrid CF": {
+    "text": "Valencia CF host Real Madrid CF in La Liga on 2026-11-08. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:12.834Z"
+  },
+  "la_liga|2026-11-08|RC Celta de Vigo|Levante UD": {
+    "text": "La Liga fixture on 2026-11-08 sees RC Celta de Vigo host Levante UD. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:13.740Z"
+  },
+  "la_liga|2026-11-08|Real Sociedad de Fútbol|Rayo Vallecano de Madrid": {
+    "text": "La Liga action on 2026-11-08 features Real Sociedad de Fútbol hosting Rayo Vallecano de Madrid. The statistical model forecasts a 2-1 scoreline, though this is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:14.906Z"
+  },
+  "la_liga|2026-11-08|Málaga CF|Real Racing Club de Santander": {
+    "text": "La Liga fixture on 2026-11-08 sees Málaga CF host Real Racing Club de Santander. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-29T11:33:16.047Z"
   }
 }

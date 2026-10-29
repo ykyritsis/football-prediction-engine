@@ -1035,11 +1035,16 @@
       }
     },
     {
-      "round": "Matchday 9",
       "date": "2026-10-28",
-      "time": "20:45",
       "team1": "Genoa CFC",
-      "team2": "Juventus FC"
+      "team2": "Juventus FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-28",
