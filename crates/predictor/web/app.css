@@ -302,7 +302,7 @@ small {
 }
 .sidebar-section {
   margin: 20px 10px 8px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   color: #8a9790;
@@ -478,7 +478,7 @@ footer button:hover {
   display: block;
   margin-top: 4px;
   font-family: var(--font);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 650;
   letter-spacing: 0.14em;
   color: rgb(255 255 255 / 0.6);
@@ -756,7 +756,7 @@ footer button:hover {
   border-radius: 50%;
   border: 1px solid var(--line-strong);
   background: var(--surface-3);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--muted);
 }
@@ -881,7 +881,7 @@ footer button:hover {
   border-radius: 6px;
   background: var(--draw);
   color: var(--ink);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 800;
 }
 .form .W {
@@ -1363,7 +1363,7 @@ button.table-club:hover strong {
 }
 .featured .eyebrow {
   color: var(--lime);
-  font-size: 10.5px;
+  font-size: 11px;
 }
 .featured-main {
   display: flex;
@@ -1434,7 +1434,7 @@ button.table-club:hover strong {
 }
 .featured-score span {
   margin-top: 8px;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1578,7 +1578,7 @@ button.table-club:hover strong {
   border-radius: 999px;
   background: var(--lime);
   color: var(--pitch-950);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.06em;
   vertical-align: 1px;
@@ -1681,7 +1681,7 @@ button.table-club:hover strong {
 .watch-tag {
   padding: 3px 9px;
   border-radius: 999px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 750;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -2125,7 +2125,7 @@ button.table-club:hover strong {
   display: block;
   margin-top: 1px;
   font-family: var(--font);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 550;
   color: var(--muted);
 }
@@ -2409,7 +2409,7 @@ button.table-club:hover strong {
   font-weight: 850;
 }
 .player-card-stats span {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -2796,7 +2796,7 @@ dialog .prediction-panel {
   display: block;
   margin-top: 8px;
   font-family: var(--font);
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 650;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -2913,7 +2913,7 @@ dialog .prediction-panel {
   border-radius: 999px;
   background: var(--pitch-900);
   color: var(--lime);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 750;
   letter-spacing: 0.1em;
 }
@@ -3121,7 +3121,7 @@ dialog .prediction-panel {
 .broadcast-score > span {
   display: block;
   margin-top: 10px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.16em;
   color: var(--lime);
@@ -3362,7 +3362,7 @@ dialog .prediction-panel {
 }
 .match-star small {
   margin-bottom: 3px;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--muted);
@@ -4105,7 +4105,7 @@ dialog::backdrop {
     padding: 4px;
     border-radius: 16px;
     color: rgb(255 255 255 / 0.6);
-    font-size: 10.5px;
+    font-size: 11px;
     font-weight: 600;
     transition: color 0.15s, background 0.15s;
   }
@@ -4152,7 +4152,7 @@ dialog::backdrop {
   }
   .season-label span {
     margin: 0;
-    font-size: 9px;
+    font-size: 11px;
   }
   .club-strip {
     display: none;
@@ -4263,7 +4263,7 @@ dialog::backdrop {
     font-size: 34px;
   }
   .featured-score span {
-    font-size: 8.5px;
+    font-size: 11px;
   }
   .day-header {
     top: var(--header-h);
@@ -4417,7 +4417,7 @@ dialog::backdrop {
     width: 66px;
   }
   .formation-player strong {
-    font-size: 10px;
+    font-size: 11px;
   }
   .shirt-number {
     width: 30px;
@@ -4493,7 +4493,7 @@ dialog::backdrop {
     width: 34px;
     height: 34px;
     margin-bottom: 4px;
-    font-size: 10px;
+    font-size: 11px;
   }
   .prediction-panel {
     padding: 18px;
@@ -4521,7 +4521,7 @@ dialog::backdrop {
     padding: 12px 4px;
   }
   .match-title .big-score small {
-    font-size: 8.5px;
+    font-size: 11px;
   }
   .forecast-stats > div {
     padding: 12px;
@@ -4591,7 +4591,7 @@ dialog::backdrop {
   }
   .broadcast-caption {
     bottom: 5px;
-    font-size: 10px;
+    font-size: 11px;
   }
   .full-time-card {
     flex-direction: column;
@@ -4733,7 +4733,7 @@ dialog::backdrop {
   color: #fff;
 }
 .build-card span {
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -5224,4 +5224,245 @@ tr.zone-rel td:first-child { box-shadow: inset 3px 0 0 var(--loss); }
   .hero-stats span {
     font-size: 12px;
   }
+}
+
+/* ---------- Contrast and size floor (impeccable audit) ---------- */
+:root {
+  --muted: #56655e;
+  --win: #11774f;
+  --loss: #c1362c;
+}
+.leader-rank {
+  color: var(--muted);
+}
+.form span {
+  font-size: 11px;
+}
+
+/* ---------- Page heading without kicker, glow or nested pill ---------- */
+.page-heading {
+  background: linear-gradient(135deg, var(--pitch-900), var(--pitch-950));
+}
+.page-heading h1 {
+  margin-top: 0;
+}
+.page-subtitle strong {
+  color: var(--lime);
+  font-weight: 650;
+}
+.page-heading .season-label {
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
+  backdrop-filter: none;
+  font-size: 15px;
+  color: rgb(255 255 255 / 0.85);
+}
+.page-heading .season-label span {
+  display: inline;
+  margin-left: 6px;
+}
+
+/* ---------- More menu ---------- */
+.nav-more {
+  position: relative;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+.nav-more-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  height: 38px;
+  padding: 0 12px 0 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 550;
+  color: rgb(255 255 255 / 0.72);
+  transition: color 0.15s, background 0.15s;
+}
+.nav-more-button svg {
+  width: 15px;
+  height: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.nav-more-button:hover,
+.nav-more-button[aria-expanded="true"] {
+  color: #fff;
+  background: rgb(255 255 255 / 0.07);
+}
+.nav-more-button.active {
+  color: var(--pitch-950);
+  background: var(--lime);
+  font-weight: 650;
+}
+.nav-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  z-index: 30;
+  width: 290px;
+  padding: 6px;
+  border-radius: var(--r);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-lg);
+}
+.nav-menu button {
+  width: 100%;
+  display: block;
+  padding: 10px 12px;
+  border-radius: var(--r-sm);
+  text-align: left;
+  color: var(--ink);
+}
+.nav-menu button:hover,
+.nav-menu button.active {
+  background: var(--surface-3);
+}
+.nav-menu strong,
+.nav-menu span {
+  display: block;
+}
+.nav-menu strong {
+  font-size: 14px;
+}
+.nav-menu span {
+  margin-top: 1px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.topnav {
+  flex: 0 1 auto;
+}
+@media (max-width: 700px) {
+  .nav-more { display: none; }
+}
+
+/* ---------- Collapsible competition groups ---------- */
+.comp-group > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 18px 0 6px;
+  padding: 6px 10px;
+  border-radius: var(--r-sm);
+  cursor: pointer;
+  list-style: none;
+  font-size: 11px;
+  color: var(--muted);
+}
+.comp-group > summary::-webkit-details-marker {
+  display: none;
+}
+.comp-group > summary::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: auto;
+  border-right: 1.6px solid currentColor;
+  border-bottom: 1.6px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.2s var(--ease);
+}
+.comp-group[open] > summary::after {
+  transform: rotate(45deg);
+}
+.comp-group > summary:hover {
+  background: var(--surface-3);
+  color: var(--ink);
+}
+.comp-group > summary small {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+
+/* ---------- Form watch and recaps below the fixtures ---------- */
+.more-reading {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+}
+.more-reading > summary {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 16px 20px;
+  cursor: pointer;
+  list-style: none;
+}
+.more-reading > summary::-webkit-details-marker {
+  display: none;
+}
+.more-reading > summary strong {
+  font-family: var(--display);
+  font-size: 17px;
+}
+.more-reading > summary span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.more-reading-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  padding: 0 16px 16px;
+}
+.more-reading-body > .panel {
+  box-shadow: none;
+}
+
+/* ---------- Detector follow-ups ---------- */
+.comp-group > summary {
+  font-size: 12.5px;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  text-transform: none;
+}
+.featured-score,
+.featured .outcome {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.featured .outcome {
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.12);
+}
+.team-country {
+  margin: -8px 0 12px;
+  font-size: 14px;
+  color: rgb(255 255 255 / 0.7);
+}
+.page-heading h1 {
+  text-wrap: balance;
+}
+.page-subtitle,
+.table-caption,
+.fine-print {
+  text-wrap: pretty;
+}
+.table-caption {
+  max-width: 75ch;
+}
+@media (min-width: 1001px) {
+  .content-grid > .right-column {
+    position: sticky;
+    top: calc(var(--header-h) + 16px);
+  }
+}
+.masthead > .masthead-date {
+  margin-left: auto;
+}
+.masthead > .nav-more {
+  margin-left: -24px;
 }

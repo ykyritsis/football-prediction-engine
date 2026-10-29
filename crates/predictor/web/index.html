@@ -29,11 +29,16 @@
         ><button data-view="table">Tables</button
         ><button data-view="clubs">Teams</button
         ><button data-view="players">Players</button
-        ><button data-view="simulator">Simulator</button
-        ><button data-view="history">Accuracy</button
-        ><button data-view="seasons">History</button
-        ><button data-view="about">About</button>
+        ><button data-view="simulator">Simulator</button>
       </nav>
+      <div class="nav-more">
+        <button class="nav-more-button" id="navMore" type="button" aria-haspopup="true" aria-expanded="false">More<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <div class="nav-menu" id="navMenu" hidden>
+          <button data-view="history"><strong>Model accuracy</strong><span>Predictions against final scores</span></button>
+          <button data-view="seasons"><strong>History</strong><span>Champions and tables since 2000</span></button>
+          <button data-view="about"><strong>About the data</strong><span>Sources and how the model works</span></button>
+        </div>
+      </div>
       <div class="masthead-date" id="snapshot"></div>
       <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch between light and dark">
         <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"/></svg>
@@ -50,9 +55,8 @@
         <nav class="comp-chips" id="compChips" aria-label="Choose competition"></nav>
         <div class="page-heading">
           <div>
-            <div class="eyebrow" id="eyebrow">MATCH CENTRE</div>
             <h1 id="title">Football, in focus.</h1>
-            <p id="subtitle">
+            <p id="subtitle" class="page-subtitle">
               Fixtures, form and match predictions across world football.
             </p>
             <div class="hero-stats" id="heroStats"></div>

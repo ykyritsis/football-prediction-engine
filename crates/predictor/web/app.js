@@ -171,9 +171,10 @@ function playerTable(rows) {
   return `<div class="mobile-player-list">${squadCardsHTML(rows)}</div><div class="table-wrap desktop-player-table"><table><thead><tr><th>Player</th><th>Club / competition</th><th>Position</th><th class="number">Apps</th><th class="number">Goals</th><th class="number">Assists</th><th class="number">Shots</th><th class="number">On target</th><th class="number">YC</th></tr></thead><tbody>${rows.map(({ t, p, s }) => `<tr><td>${playerButton(t, p, `${avatar(p)}<span><strong>${esc(p.name)}</strong><small>${p.number ? "#" + esc(p.number) + " · " : ""}${esc(p.nationality || "Nationality unavailable")}</small></span>`, "player-link")}</td><td><span class="table-club">${crest(t.name)}${esc(short(t.name))}</span><small class="muted">${esc(league(compForTeam(t))?.name || "")}</small></td><td>${esc(p.position_code || "—")}</td>${["appearances", "totalGoals", "goalAssists", "totalShots", "shotsOnTarget", "yellowCards"].map((k) => `<td class="number">${val(s?.[k])}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 function heading(e, t, s) {
-  $("eyebrow").textContent = e;
+  // The view name leads the subtitle in sentence case, rather than a kicker above the title.
+  const view = e.charAt(0) + e.slice(1).toLowerCase();
   $("title").textContent = t;
-  $("subtitle").textContent = s;
+  $("subtitle").innerHTML = `<strong>${esc(view)}</strong> · ${esc(s)}`;
 }
 function renderNavigation() {
   document.querySelector(".search").hidden = ["about", "simulator"].includes(
@@ -188,16 +189,23 @@ function renderNavigation() {
     Number(data.as_of.slice(0, 4)) - (data.as_of.slice(5, 7) < "07" ? 1 : 0);
   document.querySelector(".season-label").innerHTML =
     y + "/" + String(y + 1).slice(-2) + "<span>SEASON</span>";
+  // Competitions in three collapsible groups; the group holding the current one stays open.
+  const groups = [["domestic", "Domestic leagues", 0, 10], ["cup", "Club tournaments", 10, 14], ["international", "International football", 14, data.leagues.length]];
   $("competitions").innerHTML =
     `<button class="competition ${state.competition === "all" ? "active" : ""}" data-comp="all"><span class="all-symbol">≡</span>All competitions</button>` +
-    data.leagues
-      .map(
-        (l, i) =>
-          (i === 0 ? '<div class="sidebar-section">DOMESTIC LEAGUES</div>' : i === 10 ? '<div class="sidebar-section">CLUB TOURNAMENTS</div>' : i === 14 ? '<div class="sidebar-section">INTERNATIONAL FOOTBALL</div>' : "") +
-          `<button class="competition ${state.competition === l.key ? "active" : ""}" data-comp="${l.key}">${competitionLogo(l.key)}<span>${esc(l.name)}</span></button>`,
-      )
+    groups
+      .map(([id, label, from, to]) => {
+        const items = data.leagues.slice(from, to);
+        const open = openGroups.has(id) || items.some((l) => l.key === state.competition);
+        return `<details class="comp-group" data-group="${id}" ${open ? "open" : ""}><summary class="sidebar-section">${label}<small>${items.length}</small></summary>${items
+          .map((l) => `<button class="competition ${state.competition === l.key ? "active" : ""}" data-comp="${l.key}">${competitionLogo(l.key)}<span>${esc(l.name)}</span></button>`)
+          .join("")}</details>`;
+      })
       .join("");
-  document.querySelectorAll(".topnav [data-view], .mobile-nav [data-view]").forEach((b) => {
+  $("navMenu").hidden = true;
+  $("navMore").setAttribute("aria-expanded", "false");
+  $("navMore").classList.toggle("active", ["history", "seasons", "about"].includes(state.view));
+  document.querySelectorAll(".topnav [data-view], .mobile-nav [data-view], .nav-menu [data-view]").forEach((b) => {
     b.classList.toggle("active", b.dataset.view === state.view);
     b.setAttribute(
       "aria-current",
@@ -237,6 +245,12 @@ function renderNavigation() {
       : "";
 }
 let renderRevision=0;
+const openGroups=new Set(["domestic"]);
+document.addEventListener("toggle",(e)=>{const g=e.target.closest&&e.target.closest(".comp-group");if(g&&e.target===g){g.open?openGroups.add(g.dataset.group):openGroups.delete(g.dataset.group);}},true);
+// The More menu in the header: secondary pages.
+$("navMore").addEventListener("click",(e)=>{e.stopPropagation();const open=$("navMenu").hidden;$("navMenu").hidden=!open;$("navMore").setAttribute("aria-expanded",String(open));});
+document.addEventListener("click",(e)=>{if(!$("navMenu").hidden&&!e.target.closest(".nav-more")){$("navMenu").hidden=true;$("navMore").setAttribute("aria-expanded","false");}});
+document.addEventListener("keydown",(e)=>{if(e.key==="Escape"&&!$("navMenu").hidden){$("navMenu").hidden=true;$("navMore").setAttribute("aria-expanded","false");$("navMore").focus();}});
 let lastViewKey='';
 const teamLoads=new Map();
 const leagueLoads=new Map();
@@ -344,6 +358,11 @@ function outcomeHTML(m) {
   const call = p.home_win === best ? `${hn} predicted to win` : p.away_win === best ? `${an} predicted to win` : 'Draw predicted';
   const seg = (w, cls) => `<i class="${cls}" style="flex:${Math.max(w, 0.001)}"></i>`;
   return `<div class="outcome"><div class="outcome-call"><strong>${call}</strong><span>${pct(best)}</span></div><div class="outcome-bar" role="img" aria-label="${hn} ${pct(p.home_win)}, draw ${pct(p.draw)}, ${an} ${pct(p.away_win)}">${seg(p.home_win, 'home')}${seg(p.draw, 'draw')}${seg(p.away_win, 'away')}</div><div class="outcome-legend"><span>${hn} ${pct(p.home_win)}</span><span>Draw ${pct(p.draw)}</span><span>${an} ${pct(p.away_win)}</span></div>${marketNote(p)}</div>`;
+}
+// Form watch and weekly recaps, folded below the fixtures.
+function moreReadingHTML() {
+  const body = storylinesHTML() + recapsHTML();
+  return body ? `<details class="more-reading"><summary><strong>Form watch & weekly recaps</strong><span>Who is hot, who is not, and last week in brief</span></summary><div class="more-reading-body">${body}</div></details>` : "";
 }
 function storylinesHTML() {
   const current = state.competition === "all" ? null : selectedLeague()?.name;
@@ -532,7 +551,7 @@ function renderMatches() {
     .map(([n, label]) => `<div><strong>${n.toLocaleString()}</strong><span>${label}</span></div>`)
     .join("");
   $("content").innerHTML =
-    `${onboardingHTML()}${featureHTML(anticipatedRow(rows))}${cupSimHTML()}<div class="content-grid"><div><div class="section-head"><h2>Fixtures & predictions</h2><div class="bar-key" aria-label="Probability bar colours"><span><i class="home"></i>Home</span><span><i class="draw"></i>Draw</span><span><i class="away"></i>Away</span></div></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}<p class="table-caption">Kickoffs in your time (${esc(localZone.replaceAll("_", " "))}). The chip shows the most likely score; the bar splits home, draw and away chances.</p></div><aside class="right-column">${storylinesHTML()}${leadersHTML()}${recapsHTML()}</aside></div>`;
+    `${onboardingHTML()}${featureHTML(anticipatedRow(rows))}${cupSimHTML()}<div class="content-grid"><div><div class="section-head"><h2>Fixtures & predictions</h2><div class="bar-key" aria-label="Probability bar colours"><span><i class="home"></i>Home</span><span><i class="draw"></i>Draw</span><span><i class="away"></i>Away</span></div></div>${panels || '<div class="empty">No fixtures in this date range. Try the full schedule or explore a match in the simulator.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more fixtures</button>' : ""}<p class="table-caption">Kickoffs in your time (${esc(localZone.replaceAll("_", " "))}). The chip shows the most likely score; the bar splits home, draw and away chances.</p></div><aside class="right-column">${leadersHTML()}</aside></div>${moreReadingHTML()}`;
 }
 function probabilities(p) {
   return `<div class="prob-bar" aria-hidden="true"><span style="width:${p.home_win * 100}%"></span><span style="width:${p.draw * 100}%"></span><span style="width:${p.away_win * 100}%"></span></div><div class="prob-labels"><span>Home <strong>${pct(p.home_win)}</strong></span><span>Draw <strong>${pct(p.draw)}</strong></span><span>Away <strong>${pct(p.away_win)}</strong></span></div>${marketNote(p)}`;
@@ -663,7 +682,7 @@ function renderPlayers() {
     .filter((r) => r.p.portrait && r.s?.appearances > 0)
     .slice(0, 3);
   $("content").innerHTML =
-    `${featured.length ? '<div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}<div class="section-head"><h2>Player statistics</h2><small>${rows.length.toLocaleString()} players</small></div>${rows.length ? playerTable(rows.slice(0, state.limit)) : '<div class="empty">No players match this search.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more players</button>' : ""}<p class="table-caption">${state.competition === "all" ? "Stats from each club’s primary competition, shown per player." : "Stats for " + esc(selectedLeague().name) + "."} Season totals as supplied by ESPN; — means unavailable. Profiles retrieved ${esc(catalog.updated_at?.slice(0, 10) || "not yet")}.</p>`;
+    `${featured.length ? '<div class="section-head"><h2>Leading players</h2></div><div class="player-highlights">' + featured.map(playerCard).join("") + "</div>" : ""}<div class="section-head"><h2>Player statistics</h2><small>${rows.length.toLocaleString()} players</small></div>${rows.length ? playerTable(rows.slice(0, state.limit)) : '<div class="empty">No players match this search.</div>'}${rows.length > state.limit ? '<button class="more" data-more>Show more players</button>' : ""}<p class="table-caption">${state.competition === "all" ? "Stats from each club’s primary competition, shown per player." : "Stats for " + esc(selectedLeague().name) + "."} Season totals as supplied by ESPN; — means unavailable. Profiles retrieved ${esc(catalog.updated_at?.slice(0, 10) || "not yet")}.</p>`;
 }
 function openPlayer(key) {
  const r=playerLookup.get(key);if(!r)return;
