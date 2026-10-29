@@ -957,23 +957,16 @@
       "neutral": false
     },
     {
-      "date": "2026-11-28",
-      "team1": "TSG 1899 Hoffenheim",
-      "team2": "FC Augsburg",
-      "neutral": false
-    },
-    {
       "date": "2026-11-29",
       "team1": "SC Freiburg",
       "team2": "RB Leipzig",
       "neutral": false
     },
     {
-      "round": "Matchday 11",
       "date": "2026-11-29",
-      "time": "17:30",
       "team1": "TSG 1899 Hoffenheim",
-      "team2": "FC Augsburg"
+      "team2": "FC Augsburg",
+      "neutral": false
     },
     {
       "date": "2026-11-29",

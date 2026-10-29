@@ -1062,13 +1062,25 @@
       "date": "2026-10-29",
       "team1": "Frosinone Calcio",
       "team2": "US Lecce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-29",
       "team1": "ACF Fiorentina",
       "team2": "Atalanta BC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",
