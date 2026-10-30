@@ -1023,6 +1023,70 @@
     "super_lig|2026-11-07|Samsunspor|Konyaspor": {
       "text": "Konyaspor's recent wins and solid defense contrast with Samsunspor's five straight losses, driving the away-win lean.",
       "generated_at": "2026-10-30T11:25:42.108Z"
+    },
+    "super_lig|2026-11-07|Galatasaray|Amed SFK": {
+      "text": "Galatasaray's strong recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-10-30T21:30:57.310Z"
+    },
+    "super_lig|2026-11-07|Goztepe|Istanbul Basaksehir": {
+      "text": "Goztepe's three straight wins and strong home form drive the lean toward a home victory.",
+      "generated_at": "2026-10-30T21:30:58.398Z"
+    },
+    "super_lig|2026-11-08|Caykur Rizespor|Erzurum BB": {
+      "text": "Caykur Rizespor's home advantage and Erzurum BB's stronger recent form still tilt the forecast toward a narrow home win.",
+      "generated_at": "2026-10-30T21:30:59.361Z"
+    },
+    "super_lig|2026-11-08|Çorum FK|Fenerbahce": {
+      "text": "Fenerbahce's dominant recent form, including three straight wins before a narrow loss to Galatasaray, drives the away-win lean.",
+      "generated_at": "2026-10-30T21:31:00.418Z"
+    },
+    "super_lig|2026-11-08|Alanyaspor|Trabzonspor": {
+      "text": "Trabzonspor's five-match winning run, including wins over Galatasaray and Besiktas, drives the away-win lean against an Alanyaspor side with two losses in three.",
+      "generated_at": "2026-10-30T21:31:01.416Z"
+    },
+    "super_lig|2026-11-08|Besiktas|Genclerbirligi": {
+      "text": "Besiktas's strong home form, including three home wins, against Genclerbirligi's five-match winless run drives the lean to a Besiktas victory.",
+      "generated_at": "2026-10-30T21:31:02.406Z"
+    },
+    "chance_liga|2026-11-07|FC Zlin|1.FC Slovacko": {
+      "text": "FC Zlin's home advantage and Slovacko's winless run of draws and losses drive the lean toward a narrow Zlin win.",
+      "generated_at": "2026-10-30T21:31:03.289Z"
+    },
+    "chance_liga|2026-11-07|FC Hradec Kralove|SK Sigma Olomouc": {
+      "text": "Hradec Kralove's home wins over Sparta Prague and FC Zlin, plus a home draw with Viktoria Plzen, drive the lean toward a home victory.",
+      "generated_at": "2026-10-30T21:31:04.192Z"
+    },
+    "chance_liga|2026-11-07|FC Slovan Liberec|Bohemians Prague 1905": {
+      "text": "Liberec's five-match unbeaten run and four straight wins before a draw drive the lean for a home win.",
+      "generated_at": "2026-10-30T21:31:04.868Z"
+    },
+    "chance_liga|2026-11-07|FC Zbrojovka Brno|FC Banik Ostrava": {
+      "text": "Brno's strong home form and Ostrava's poor recent run drive the lean toward a Brno win.",
+      "generated_at": "2026-10-30T21:31:05.832Z"
+    },
+    "chance_liga|2026-11-08|FK Teplice|FK Pardubice": {
+      "text": "Teplice's strong home form and Pardubice's leaky away defense drive the lean toward a narrow home win.",
+      "generated_at": "2026-10-30T21:31:06.801Z"
+    },
+    "chance_liga|2026-11-08|Jablonec|FK Mlada Boleslav": {
+      "text": "Jablonec's home wins and Mlada Boleslav's away loss to Liberec support a narrow home victory.",
+      "generated_at": "2026-10-30T21:31:07.693Z"
+    },
+    "chance_liga|2026-11-08|Slavia Prague|SK Artis Brno": {
+      "text": "Slavia Prague's dominant recent form, including four straight wins, drives the forecast lean toward a home victory.",
+      "generated_at": "2026-10-30T21:31:08.591Z"
+    },
+    "chance_liga|2026-11-08|Viktoria Plzen|Sparta Prague": {
+      "text": "Sparta Prague's three wins in their last four, including a 3-0 away victory, outweigh Viktoria Plzen's winless and leaky recent run.",
+      "generated_at": "2026-10-30T21:31:09.648Z"
+    },
+    "champions_league|2026-11-03|Villarreal CF|Paris Saint-Germain FC": {
+      "text": "PSG's perfect five-match winning run, including wins over Manchester City and Barcelona, drives the away-win lean against a Villarreal side that has lost twice recently.",
+      "generated_at": "2026-10-30T21:31:10.783Z"
+    },
+    "champions_league|2026-11-04|AEK Athens|Real Madrid CF": {
+      "text": "Real Madrid's five-match winning run against AEK Athens' three recent heavy defeats drives the away-win forecast.",
+      "generated_at": "2026-10-30T21:31:11.631Z"
     }
   },
   "storylines": {

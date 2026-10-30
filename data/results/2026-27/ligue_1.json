@@ -884,19 +884,32 @@
       "date": "2026-10-30",
       "team1": "Le Havre AC",
       "team2": "Paris Saint-Germain FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-30",
+      "time": "21:05",
       "team1": "Lille OSC",
-      "team2": "Racing Club de Lens",
-      "neutral": false
+      "team2": "Racing Club de Lens"
     },
     {
       "date": "2026-10-30",
       "team1": "OGC Nice",
       "team2": "Stade Rennais FC 1901",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
     },
     {
       "round": "Matchday 9",

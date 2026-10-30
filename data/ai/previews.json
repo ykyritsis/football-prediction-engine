@@ -1018,5 +1018,65 @@
     "text": "Vitória de Guimaraes host FC Porto in the Primeira Liga on 2026-11-08. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-08",
     "generated_at": "2026-10-30T11:25:38.927Z"
+  },
+  "primeira_liga|2026-11-08|Estrela|Benfica": {
+    "text": "Estrela host Benfica in the Primeira Liga on 2026-11-08. The statistical model forecasts a 0-3 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:30:57.072Z"
+  },
+  "primeira_liga|2026-11-08|Rio Ave|Braga": {
+    "text": "Rio Ave host Braga in the Primeira Liga on 2026-11-08. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:30:58.048Z"
+  },
+  "eredivisie|2026-11-07|Fortuna Sittard|Telstar": {
+    "text": "Fortuna Sittard host Telstar in the Eredivisie on 2026-11-07. A statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T21:30:59.057Z"
+  },
+  "eredivisie|2026-11-07|ADO Den Haag|Sparta Rotterdam": {
+    "text": "ADO Den Haag host Sparta Rotterdam in the Eredivisie on 2026-11-07. A statistical model forecasts a 2-1 scoreline for this match.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T21:30:59.883Z"
+  },
+  "eredivisie|2026-11-07|Excelsior|Go Ahead Eagles": {
+    "text": "Excelsior host Go Ahead Eagles in the Eredivisie on 2026-11-07. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T21:31:00.929Z"
+  },
+  "eredivisie|2026-11-08|Heerenveen|Feyenoord Rotterdam": {
+    "text": "Heerenveen host Feyenoord Rotterdam in the Eredivisie on 2026-11-08. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:31:01.825Z"
+  },
+  "eredivisie|2026-11-08|FC Twente|Ajax Amsterdam": {
+    "text": "FC Twente host Ajax Amsterdam in the Eredivisie on 2026-11-08. A statistical model forecasts a 2-1 scoreline for this match, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:31:02.920Z"
+  },
+  "eredivisie|2026-11-08|AZ Alkmaar|FC Groningen": {
+    "text": "AZ Alkmaar host FC Groningen in the Eredivisie on 2026-11-08. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:31:03.857Z"
+  },
+  "eredivisie|2026-11-08|SC Cambuur|PSV Eindhoven": {
+    "text": "SC Cambuur host PSV Eindhoven in the Eredivisie on 2026-11-08. A statistical model forecasts a score of 1-3 for this match, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:31:04.750Z"
+  },
+  "eredivisie|2026-11-08|FC Utrecht|NEC Nijmegen": {
+    "text": "FC Utrecht host NEC Nijmegen in the Eredivisie on 2026-11-08. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T21:31:05.690Z"
+  },
+  "belgian_pro_league|2026-11-06|Standard Liege|Waasland-Beveren": {
+    "text": "Standard Liege host Waasland-Beveren in the Belgian Pro League on 2026-11-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-06",
+    "generated_at": "2026-10-30T21:31:06.746Z"
+  },
+  "belgian_pro_league|2026-11-07|KVC Westerlo|Royal Charleroi SC": {
+    "text": "KVC Westerlo host Royal Charleroi SC in the Belgian Pro League on 2026-11-07. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T21:31:07.619Z"
   }
 }
