@@ -959,6 +959,70 @@
     "primeira_liga|2026-11-08|Vitória de Guimaraes|FC Porto": {
       "text": "FC Porto's perfect five-win run and superior form drive the lean toward an away victory at Vitória de Guimaraes.",
       "generated_at": "2026-10-29T21:50:37.133Z"
+    },
+    "primeira_liga|2026-11-08|Estrela|Benfica": {
+      "text": "Benfica's strong recent form and Estrela's poor run of losses drive the forecast lean toward an away win.",
+      "generated_at": "2026-10-30T11:25:27.868Z"
+    },
+    "primeira_liga|2026-11-08|Rio Ave|Braga": {
+      "text": "Braga's stronger overall profile and Rio Ave's poor recent form, including heavy home defeats, drive the lean toward an away win.",
+      "generated_at": "2026-10-30T11:25:28.802Z"
+    },
+    "eredivisie|2026-11-08|Heerenveen|Feyenoord Rotterdam": {
+      "text": "Feyenoord's perfect five-match unbeaten run, including four wins, drives the lean for an away victory at Heerenveen.",
+      "generated_at": "2026-10-30T11:25:29.820Z"
+    },
+    "eredivisie|2026-11-08|FC Twente|Ajax Amsterdam": {
+      "text": "FC Twente's strong home form, including wins over ADO Den Haag and PSV Eindhoven, drives the lean toward a home victory.",
+      "generated_at": "2026-10-30T11:25:30.857Z"
+    },
+    "eredivisie|2026-11-08|AZ Alkmaar|FC Groningen": {
+      "text": "AZ Alkmaar's home advantage and stronger overall win probability drive the lean toward a home victory.",
+      "generated_at": "2026-10-30T11:25:31.663Z"
+    },
+    "eredivisie|2026-11-08|SC Cambuur|PSV Eindhoven": {
+      "text": "PSV Eindhoven's stronger overall form and attacking output drive the away-win lean despite Cambuur's recent wins.",
+      "generated_at": "2026-10-30T11:25:32.548Z"
+    },
+    "eredivisie|2026-11-08|FC Utrecht|NEC Nijmegen": {
+      "text": "FC Utrecht's strong recent form, with three wins in five, drives the lean toward a home victory over a NEC side that has drawn four straight.",
+      "generated_at": "2026-10-30T11:25:33.520Z"
+    },
+    "belgian_pro_league|2026-11-07|OH Leuven|KV Mechelen": {
+      "text": "OH Leuven's stronger recent form and home advantage drive the lean toward a narrow home win.",
+      "generated_at": "2026-10-30T11:25:34.573Z"
+    },
+    "belgian_pro_league|2026-11-07|Antwerp|Lommel SK": {
+      "text": "Antwerp's recent 3-0 home win over Charleroi and Lommel's weaker away form support the home-win lean.",
+      "generated_at": "2026-10-30T11:25:35.458Z"
+    },
+    "belgian_pro_league|2026-11-07|RAAL La Louvière|Cercle Brugge KSV": {
+      "text": "RAAL La Louvière's strong home wins and Cercle Brugge's five-match winless run drive the lean toward a home victory.",
+      "generated_at": "2026-10-30T11:25:36.451Z"
+    },
+    "belgian_pro_league|2026-11-08|Club Brugge|Anderlecht": {
+      "text": "Club Brugge's perfect five-match winning run and Anderlecht's heavy recent away defeat drive the lean toward a home win.",
+      "generated_at": "2026-10-30T11:25:37.515Z"
+    },
+    "belgian_pro_league|2026-11-08|KAA Gent|KV Kortrijk": {
+      "text": "Gent's strong recent form, including four wins in five, against Kortrijk's poor run drives the lean to a home win.",
+      "generated_at": "2026-10-30T11:25:38.399Z"
+    },
+    "belgian_pro_league|2026-11-08|Union St.-Gilloise|Racing Genk": {
+      "text": "Union St.-Gilloise's strong recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-10-30T11:25:39.180Z"
+    },
+    "belgian_pro_league|2026-11-08|Sint-Truidense|Zulte-Waregem": {
+      "text": "Sint-Truidense's home advantage and Zulte-Waregem's five-match losing run drive the lean toward a home win.",
+      "generated_at": "2026-10-30T11:25:40.029Z"
+    },
+    "super_lig|2026-11-07|Eyupspor|Kocaelispor": {
+      "text": "Eyupspor's five straight losses and Kocaelispor's two wins in their last five drive the away lean.",
+      "generated_at": "2026-10-30T11:25:41.186Z"
+    },
+    "super_lig|2026-11-07|Samsunspor|Konyaspor": {
+      "text": "Konyaspor's recent wins and solid defense contrast with Samsunspor's five straight losses, driving the away-win lean.",
+      "generated_at": "2026-10-30T11:25:42.108Z"
     }
   },
   "storylines": {

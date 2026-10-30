@@ -958,5 +958,65 @@
     "text": "Ligue 1 fixture on 2026-11-07 sees Paris Saint-Germain FC host ES Troyes AC. The statistical model forecasts a 3-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-07",
     "generated_at": "2026-10-29T21:50:33.300Z"
+  },
+  "ligue_1|2026-11-08|Stade Rennais FC 1901|Lille OSC": {
+    "text": "Ligue 1 fixture on 2026-11-08 sees Stade Rennais FC 1901 host Lille OSC. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:27.513Z"
+  },
+  "ligue_1|2026-11-08|Le Mans FC|AS Monaco FC": {
+    "text": "Ligue 1 fixture on 2026-11-08 sees Le Mans FC host AS Monaco FC. The statistical model forecasts a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:28.405Z"
+  },
+  "ligue_1|2026-11-08|Stade Brestois 29|Olympique Lyonnais": {
+    "text": "Ligue 1 fixture on 2026-11-08 sees Stade Brestois 29 host Olympique Lyonnais. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:29.472Z"
+  },
+  "ligue_1|2026-11-08|Le Havre AC|FC Lorient": {
+    "text": "Le Havre AC host FC Lorient in Ligue 1 on 2026-11-08. The statistical model forecasts a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:30.386Z"
+  },
+  "ligue_1|2026-11-08|Angers SCO|OGC Nice": {
+    "text": "Ligue 1 fixture on 2026-11-08 sees Angers SCO host OGC Nice. The statistical model's forecast of a 0-1 scoreline is a model forecast, not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:31.415Z"
+  },
+  "ligue_1|2026-11-08|Racing Club de Lens|Olympique de Marseille": {
+    "text": "Ligue 1 fixture on 2026-11-08 sees Racing Club de Lens host Olympique de Marseille. The statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:32.627Z"
+  },
+  "primeira_liga|2026-11-07|C.D. Nacional|Académico de Viseu": {
+    "text": "C.D. Nacional host Académico de Viseu in the Primeira Liga on 2026-11-07. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T11:25:33.767Z"
+  },
+  "primeira_liga|2026-11-07|Alverca|Casa Pia": {
+    "text": "Alverca host Casa Pia in the Primeira Liga on 2026-11-07. The statistical model forecasts a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T11:25:34.870Z"
+  },
+  "primeira_liga|2026-11-07|Sporting CP|Moreirense": {
+    "text": "Sporting CP host Moreirense in the Primeira Liga on 2026-11-07. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-30T11:25:35.963Z"
+  },
+  "primeira_liga|2026-11-08|Estoril|Maritimo": {
+    "text": "Estoril host Maritimo in the Primeira Liga on 2026-11-08. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:36.919Z"
+  },
+  "primeira_liga|2026-11-08|Santa Clara|Gil Vicente": {
+    "text": "Santa Clara host Gil Vicente in the Primeira Liga on 2026-11-08. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:37.866Z"
+  },
+  "primeira_liga|2026-11-08|Vitória de Guimaraes|FC Porto": {
+    "text": "Vitória de Guimaraes host FC Porto in the Primeira Liga on 2026-11-08. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-30T11:25:38.927Z"
   }
 }
