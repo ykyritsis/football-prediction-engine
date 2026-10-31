@@ -978,7 +978,13 @@
       "date": "2026-10-30",
       "team1": "Casa Pia",
       "team2": "Sporting CP",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",

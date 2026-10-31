@@ -1087,6 +1087,70 @@
     "champions_league|2026-11-04|AEK Athens|Real Madrid CF": {
       "text": "Real Madrid's five-match winning run against AEK Athens' three recent heavy defeats drives the away-win forecast.",
       "generated_at": "2026-10-30T21:31:11.631Z"
+    },
+    "champions_league|2026-11-04|Borussia Dortmund|Real Betis Balompié": {
+      "text": "Dortmund's home advantage and recent home wins, combined with Betis's away draw and loss, drive the lean toward a Dortmund victory.",
+      "generated_at": "2026-10-31T10:56:55.876Z"
+    },
+    "champions_league|2026-11-04|FC Porto|SSC Napoli": {
+      "text": "Porto's strong home form and Napoli's leaky away defense drive the lean toward a Porto win.",
+      "generated_at": "2026-10-31T10:56:57.000Z"
+    },
+    "champions_league|2026-11-04|Fenerbahce|Liverpool FC": {
+      "text": "Liverpool's four wins in their last five, including a strong away record, drive the lean toward an away win.",
+      "generated_at": "2026-10-31T10:56:57.863Z"
+    },
+    "champions_league|2026-11-04|PSV Eindhoven|Club Brugge": {
+      "text": "PSV's home advantage and stronger home form drive the lean toward a narrow win despite Club Brugge's winning run.",
+      "generated_at": "2026-10-31T10:56:58.778Z"
+    },
+    "champions_league|2026-11-04|Racing Club de Lens|Como 1907": {
+      "text": "Como's four straight wins and strong scoring form outweigh Lens's inconsistent recent results, driving the away-win lean.",
+      "generated_at": "2026-10-31T10:56:59.685Z"
+    },
+    "champions_league|2026-11-04|RB Leipzig|Manchester City FC": {
+      "text": "Manchester City's stronger overall form and Leipzig's heavy away defeats to Bayern and Real Madrid drive the lean toward an away win.",
+      "generated_at": "2026-10-31T10:57:00.596Z"
+    },
+    "champions_league|2026-11-04|Slavia Prague|Arsenal FC": {
+      "text": "Arsenal's strong recent form and Slavia Prague's defensive lapses drive the forecast lean toward an away win.",
+      "generated_at": "2026-10-31T10:57:01.877Z"
+    },
+    "champions_league|2026-11-04|Viking FK|Sabah FK": {
+      "text": "Viking FK's home advantage and stronger recent scoring form, including a 3-3 draw with Bayern, drive the lean for a home win.",
+      "generated_at": "2026-10-31T10:57:02.910Z"
+    },
+    "europa_league|2026-11-04|Stade Rennais FC 1901|Olympiacos": {
+      "text": "Rennes' strong home form, including a 3-0 win over Strasbourg, drives the lean toward a home victory.",
+      "generated_at": "2026-10-31T10:57:03.801Z"
+    },
+    "europa_league|2026-11-05|AC Milan|Ferencvaros": {
+      "text": "AC Milan's strong recent scoring form and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-10-31T10:57:04.896Z"
+    },
+    "europa_league|2026-11-05|Anderlecht|RB Salzburg": {
+      "text": "Anderlecht's strong home form and Salzburg's leaky away defense drive the lean toward a home win.",
+      "generated_at": "2026-10-31T10:57:05.826Z"
+    },
+    "europa_league|2026-11-05|AZ Alkmaar|Juventus FC": {
+      "text": "Juventus's stronger away form and AZ's recent home defeats drive the lean toward an away win.",
+      "generated_at": "2026-10-31T10:57:06.996Z"
+    },
+    "europa_league|2026-11-05|Bayer 04 Leverkusen|Olympique de Marseille": {
+      "text": "Leverkusen's four wins in five and strong home form against Marseille's inconsistent away results drive the home-win forecast.",
+      "generated_at": "2026-10-31T10:57:08.169Z"
+    },
+    "europa_league|2026-11-05|Benfica|Lech Poznan": {
+      "text": "Benfica's strong recent form and Lech Poznan's heavy defeats drive the forecast for a Benfica win.",
+      "generated_at": "2026-10-31T10:57:09.104Z"
+    },
+    "europa_league|2026-11-05|Celtic|Besiktas": {
+      "text": "Besiktas's strong recent form, including wins over Hoffenheim and Basaksehir, drives the lean against a Celtic side on a four-match losing run.",
+      "generated_at": "2026-10-31T10:57:10.145Z"
+    },
+    "europa_league|2026-11-05|Crystal Palace FC|TSG 1899 Hoffenheim": {
+      "text": "Crystal Palace's home advantage and Hoffenheim's strong recent form still favor a narrow Palace win.",
+      "generated_at": "2026-10-31T10:57:11.178Z"
     }
   },
   "storylines": {
@@ -1774,6 +1838,16 @@
       "text": "SS Lazio are top of Serie A with 25 points from 9 matches, holding a record of 8 wins, 1 draw and 0 losses with a goal difference of +15. They have won each of their last five league games, most recently 6-2 away at US Sassuolo Calcio, and next face Cagliari Calcio on 2026-11-01.",
       "kind": "hot",
       "generated_at": "2026-10-28T11:22:16.287Z"
+    },
+    "la_liga|Real Madrid CF|2026-10-26": {
+      "text": "Real Madrid CF sits third of 20 in La Liga with 24 points, a goal difference of +15, and a record of 8W 0D 2L. The team has won four of its last five matches, most recently a 2-1 away victory over FC Barcelona, and next faces Real Racing Club de Santander away on 2026-11-01.",
+      "kind": "hot",
+      "generated_at": "2026-10-31T10:57:12.303Z"
+    },
+    "belgian_pro_league|Zulte-Waregem|2026-10-26": {
+      "text": "Zulte-Waregem sit 10th of 18 in the Belgian Pro League with 11 points, a goal difference of -4 and a record of 3W 2D 5L. The team has lost each of their last five matches and next face Sint-Truidense on 2026-11-08.",
+      "kind": "cold",
+      "generated_at": "2026-10-31T10:57:13.455Z"
     }
   }
 }

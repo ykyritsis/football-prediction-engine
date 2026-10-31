@@ -1078,5 +1078,65 @@
     "text": "KVC Westerlo host Royal Charleroi SC in the Belgian Pro League on 2026-11-07. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-07",
     "generated_at": "2026-10-30T21:31:07.619Z"
+  },
+  "belgian_pro_league|2026-11-07|OH Leuven|KV Mechelen": {
+    "text": "OH Leuven host KV Mechelen in the Belgian Pro League on 2026-11-07. A statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-31T10:56:55.970Z"
+  },
+  "belgian_pro_league|2026-11-07|Antwerp|Lommel SK": {
+    "text": "Antwerp host Lommel SK in the Belgian Pro League on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-31T10:56:56.984Z"
+  },
+  "belgian_pro_league|2026-11-07|RAAL La Louvière|Cercle Brugge KSV": {
+    "text": "RAAL La Louvière host Cercle Brugge KSV in the Belgian Pro League on 2026-11-07. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-10-31T10:56:57.999Z"
+  },
+  "belgian_pro_league|2026-11-08|Club Brugge|Anderlecht": {
+    "text": "Club Brugge host Anderlecht in the Belgian Pro League on 2026-11-08. The statistical model's forecast for this match is a 2-0 scoreline.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-31T10:56:58.966Z"
+  },
+  "belgian_pro_league|2026-11-08|KAA Gent|KV Kortrijk": {
+    "text": "KAA Gent host KV Kortrijk in the Belgian Pro League on 2026-11-08. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-31T10:57:00.165Z"
+  },
+  "belgian_pro_league|2026-11-08|Union St.-Gilloise|Racing Genk": {
+    "text": "Union St.-Gilloise host Racing Genk in the Belgian Pro League on 2026-11-08. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-31T10:57:01.223Z"
+  },
+  "belgian_pro_league|2026-11-08|Sint-Truidense|Zulte-Waregem": {
+    "text": "Sint-Truidense host Zulte-Waregem in the Belgian Pro League on 2026-11-08. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-10-31T10:57:02.051Z"
+  },
+  "super_lig|2026-10-31|Erzurum BB|Çorum FK": {
+    "text": "Erzurum BB host Çorum FK in the Süper Lig on 2026-10-31. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-31T10:57:03.028Z"
+  },
+  "super_lig|2026-10-31|Kocaelispor|Caykur Rizespor": {
+    "text": "Kocaelispor host Caykur Rizespor in the Süper Lig on 2026-10-31. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-31T10:57:04.005Z"
+  },
+  "super_lig|2026-10-31|Fenerbahce|Goztepe": {
+    "text": "Fenerbahce host Goztepe in the Süper Lig on 2026-10-31. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-10-31",
+    "generated_at": "2026-10-31T10:57:05.224Z"
+  },
+  "super_lig|2026-11-01|Amed SFK|Eyupspor": {
+    "text": "Amed SFK host Eyupspor in the Süper Lig on 2026-11-01. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-31T10:57:06.397Z"
+  },
+  "super_lig|2026-11-01|Istanbul Basaksehir|Samsunspor": {
+    "text": "Istanbul Basaksehir host Samsunspor in the Süper Lig on 2026-11-01. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-10-31T10:57:07.432Z"
   }
 }
