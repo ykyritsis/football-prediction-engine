@@ -990,19 +990,37 @@
       "date": "2026-10-31",
       "team1": "Erzurum BB",
       "team2": "Çorum FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Kocaelispor",
       "team2": "Caykur Rizespor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Fenerbahce",
       "team2": "Goztepe",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",

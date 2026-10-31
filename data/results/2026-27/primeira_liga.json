@@ -990,7 +990,13 @@
       "date": "2026-10-31",
       "team1": "Moreirense",
       "team2": "Estrela",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",

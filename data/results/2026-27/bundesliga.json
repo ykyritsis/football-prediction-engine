@@ -774,37 +774,73 @@
       "date": "2026-10-31",
       "team1": "Borussia Mönchengladbach",
       "team2": "SC Paderborn 07",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "FC Schalke 04",
       "team2": "RB Leipzig",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "FC Augsburg",
       "team2": "SC Freiburg",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "SV Werder Bremen",
       "team2": "TSG 1899 Hoffenheim",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Bayer 04 Leverkusen",
       "team2": "VfB Stuttgart",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          4
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "FC Bayern München",
       "team2": "Borussia Dortmund",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",

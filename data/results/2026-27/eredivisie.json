@@ -1086,19 +1086,37 @@
       "date": "2026-10-31",
       "team1": "Feyenoord Rotterdam",
       "team2": "Fortuna Sittard",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Heerenveen",
       "team2": "NEC Nijmegen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "PSV Eindhoven",
       "team2": "Willem II",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",

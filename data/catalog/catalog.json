@@ -843,7 +843,7 @@
       "nickname": "Bournemouth",
       "standing": "17th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:21Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 2,
@@ -6898,7 +6898,7 @@
       "nickname": "Gunners",
       "standing": "2nd in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "venue": {
         "name": "Emirates Stadium",
         "city": "London",
@@ -13094,7 +13094,7 @@
       "nickname": "Aston Villa",
       "standing": "16th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "venue": {
         "name": "Villa Park",
         "city": "Birmingham",
@@ -19579,7 +19579,7 @@
       "nickname": "Brentford",
       "standing": "4th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -24844,7 +24844,7 @@
       "nickname": "Seagulls",
       "standing": "3rd in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:16Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 1,
@@ -31082,7 +31082,7 @@
       "nickname": "Blues",
       "standing": "10th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Stamford Bridge",
         "city": "London",
@@ -37535,7 +37535,7 @@
       "nickname": "Sky Blues",
       "standing": "18th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Coventry Building Society Arena",
         "city": "Coventry",
@@ -37728,8 +37728,8 @@
           "name": "Ben Wilson",
           "number": "13",
           "age": 34,
-          "position": "Goalkeeper",
-          "position_code": "G",
+          "position": "Midfielder",
+          "position_code": "M",
           "nationality": "England",
           "height_cm": 185,
           "weight_kg": 69,
@@ -42810,7 +42810,7 @@
       "nickname": "Eagles",
       "standing": "15th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Selhurst Park",
         "city": "London",
@@ -45121,7 +45121,7 @@
         {
           "id": "400110",
           "name": "George King",
-          "number": null,
+          "number": "60",
           "age": 19,
           "position": "Defender",
           "position_code": "D",
@@ -49713,7 +49713,7 @@
       "nickname": "Toffees",
       "standing": "7th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -54574,7 +54574,7 @@
       "nickname": "Fulham",
       "standing": "19th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -59707,7 +59707,7 @@
       "nickname": "Tigers",
       "standing": "8th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "MKM Stadium",
         "city": "Hull",
@@ -65130,7 +65130,7 @@
       "nickname": "Tractor Boys",
       "standing": "11th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:02Z",
       "venue": {
         "name": "Portman Road",
         "city": "Ipswich",
@@ -70316,7 +70316,7 @@
       "nickname": "Leeds",
       "standing": "5th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -75353,7 +75353,7 @@
       "nickname": "Reds",
       "standing": "6th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:20Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Anfield",
         "city": "Liverpool",
@@ -81748,7 +81748,7 @@
       "nickname": "Sky Blues",
       "standing": "1st in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -88469,7 +88469,7 @@
       "nickname": "Red Devils",
       "standing": "12th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Old Trafford",
         "city": "Manchester",
@@ -95208,7 +95208,7 @@
       "nickname": "Magpies/Toon",
       "standing": "9th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 1,
@@ -100516,7 +100516,7 @@
       "nickname": "Nottingham F.",
       "standing": "13th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:20Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 2,
@@ -105533,7 +105533,7 @@
       "nickname": "Black Cats/Wearsiders",
       "standing": "14th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:18Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Stadium of Light",
         "city": "Sunderland",
@@ -112100,7 +112100,7 @@
       "nickname": "Spurs",
       "standing": "20th in English Premier League",
       "season": "2026-27 English Premier League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -117429,7 +117429,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/96/alaves",
       "standing": "6th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Mendizorroza",
         "city": "Vitoria-Gasteiz",
@@ -122815,7 +122815,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/93/athletic-club",
       "standing": "10th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 6,
         "losses": 2,
@@ -128504,7 +128504,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/1068/atletico-madrid",
       "standing": "2nd in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 1,
@@ -135427,7 +135427,7 @@
       "nickname": "Barça",
       "standing": "1st in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "venue": {
         "name": "Spotify Camp Nou",
         "city": "Barcelona",
@@ -137564,6 +137564,20 @@
           }
         },
         {
+          "id": "403583",
+          "name": "Guillem Víctor",
+          "number": "40",
+          "age": 19,
+          "position": "Defender",
+          "position_code": "D",
+          "nationality": "Spain",
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": "2007-05-03",
+          "source_url": "https://www.espn.com/soccer/player/_/id/403583/guillem-victor",
+          "stats": null
+        },
+        {
           "id": "416511",
           "name": "Jordi Pesquer",
           "number": "33",
@@ -139048,6 +139062,20 @@
               "source_url": "https://www.espn.com/soccer/match/_/gameId/401882832"
             }
           ]
+        },
+        {
+          "id": "416502",
+          "name": "Ebrima Tunkara",
+          "number": "30",
+          "age": 16,
+          "position": "Midfielder",
+          "position_code": "M",
+          "nationality": "Spain",
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": "2010-03-10",
+          "source_url": "https://www.espn.com/soccer/player/_/id/416502/ebrima-tunkara",
+          "stats": null
         },
         {
           "id": "217289",
@@ -140713,6 +140741,7 @@
               "shotsFaced": 0,
               "goalsConceded": 5
             },
+            "403583": null,
             "403587": {
               "foulsCommitted": 0,
               "foulsSuffered": 0,
@@ -140747,6 +140776,7 @@
               "shotsFaced": 0,
               "goalsConceded": 0
             },
+            "416502": null,
             "416511": {
               "foulsCommitted": 0,
               "foulsSuffered": 0,
@@ -141214,8 +141244,10 @@
               "shotsFaced": 0,
               "goalsConceded": 2
             },
+            "403583": null,
             "403587": null,
             "416496": null,
+            "416502": null,
             "416511": null
           }
         }
@@ -142207,7 +142239,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/85/celta-vigo",
       "standing": "14th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 2,
@@ -148789,7 +148821,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/90/deportivo",
       "standing": "7th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 1,
@@ -154511,7 +154543,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3751/elche",
       "standing": "18th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:06Z",
       "venue": {
         "name": "Manuel Martínez Valero",
         "city": "Elche",
@@ -160060,7 +160092,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/88/espanyol",
       "standing": "15th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 4,
@@ -165790,7 +165822,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2922/getafe",
       "standing": "11th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 3,
@@ -172174,7 +172206,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/1538/levante",
       "standing": "17th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:24Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "Ciutat de València",
         "city": "Manises",
@@ -177584,7 +177616,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/99/malaga",
       "standing": "20th in Spanish LALIGA 2",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "La Rosaleda",
         "city": "Malaga",
@@ -183384,7 +183416,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/97/osasuna",
       "standing": "13th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:23Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 3,
@@ -188873,7 +188905,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/87/racing-santander",
       "standing": "16th in Spanish LALIGA 2",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "El Sardinero",
         "city": "Santander",
@@ -194398,7 +194430,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/101/rayo-vallecano",
       "standing": "12th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "Estadio de Vallecas",
         "city": "Madrid",
@@ -200408,7 +200440,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/244/real-betis",
       "standing": "3rd in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "La Cartuja",
         "city": "Sevilla",
@@ -207049,7 +207081,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/86/real-madrid",
       "standing": "4th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "Santiago Bernabéu",
         "city": "Madrid",
@@ -214401,7 +214433,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/89/real-sociedad",
       "standing": "8th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:54:56Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "venue": {
         "name": "Anoeta",
         "city": "San Sebastian",
@@ -220803,7 +220835,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/243/sevilla",
       "standing": "5th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:54:56Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 2,
@@ -226561,7 +226593,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/94/valencia",
       "standing": "19th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:54:56Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 5,
@@ -232325,7 +232357,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/102/villarreal",
       "standing": "9th in Spanish LALIGA",
       "season": "2026-27 Spanish LALIGA",
-      "profile_updated_at": "2026-10-31T10:54:56Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 7,
         "losses": 3,
@@ -238959,7 +238991,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/103/ac-milan",
       "standing": "5th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -246137,7 +246169,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/104/as-roma",
       "standing": "1st in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:26Z",
+      "profile_updated_at": "2026-10-31T20:26:49Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -252719,7 +252751,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/105/atalanta",
       "standing": "11th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:50Z",
       "venue": {
         "name": "New Balance Arena - Bergamo",
         "city": "Bergamo",
@@ -259291,7 +259323,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/107/bologna",
       "standing": "18th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:26:52Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -265720,7 +265752,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2925/cagliari",
       "standing": "4th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:58Z",
       "venue": {
         "name": "Unipol Domus",
         "city": "Cagliari",
@@ -271927,7 +271959,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2572/como",
       "standing": "8th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:54Z",
       "venue": {
         "name": "Giuseppe Sinigaglia",
         "city": "Como",
@@ -278757,7 +278789,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/109/fiorentina",
       "standing": "17th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:55Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -284493,7 +284525,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/4057/frosinone",
       "standing": "6th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:06Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 1,
@@ -290511,7 +290543,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3263/genoa",
       "standing": "19th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:06Z",
       "venue": {
         "name": "Luigi Ferraris",
         "city": "Genova",
@@ -296841,7 +296873,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/110/internazionale",
       "standing": "2nd in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:59Z",
       "venue": {
         "name": "Giuseppe Meazza",
         "city": "Milano",
@@ -297410,6 +297442,20 @@
             "source_url": "https://www.transfermarkt.com/-/profil/spieler/388516",
             "provider": "Transfermarkt"
           }
+        },
+        {
+          "id": "400734",
+          "name": "Alain Taho",
+          "number": "40",
+          "age": 19,
+          "position": "Goalkeeper",
+          "position_code": "G",
+          "nationality": "Albania",
+          "height_cm": 193,
+          "weight_kg": null,
+          "birth_date": "2007-04-30",
+          "source_url": "https://www.espn.com/soccer/player/_/id/400734/alain-taho",
+          "stats": null
         },
         {
           "id": "157974",
@@ -299895,13 +299941,13 @@
           "id": "240109",
           "name": "Aleksandar Stankovic",
           "number": "5",
-          "age": 28,
-          "position": "Goalkeeper",
-          "position_code": "G",
+          "age": 21,
+          "position": "Midfielder",
+          "position_code": "M",
           "nationality": "Serbia",
           "height_cm": 188,
           "weight_kg": 82,
-          "birth_date": "1998-02-17",
+          "birth_date": "2005-08-03",
           "source_url": "https://www.espn.com/soccer/player/_/id/240109/aleksandar-stankovic",
           "stats": {
             "foulsCommitted": 3,
@@ -302008,6 +302054,7 @@
               "goalsConceded": 0
             },
             "387837": null,
+            "400734": null,
             "402778": {
               "foulsCommitted": 0,
               "foulsSuffered": 0,
@@ -302508,6 +302555,7 @@
               "shotsFaced": 0,
               "goalsConceded": 0
             },
+            "400734": null,
             "402778": null,
             "403808": {
               "foulsCommitted": 0,
@@ -304024,7 +304072,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/111/juventus",
       "standing": "7th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 1,
@@ -311791,7 +311839,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/112/lazio",
       "standing": "3rd in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Olimpico di Roma",
         "city": "Roma",
@@ -317904,7 +317952,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/113/lecce",
       "standing": "12th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:07Z",
       "venue": {
         "name": "Via del Mare - Ettore Giardiniero",
         "city": "Lecce",
@@ -324108,7 +324156,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/4007/monza",
       "standing": "16th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:25Z",
+      "profile_updated_at": "2026-10-31T20:27:04Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -330188,7 +330236,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/114/napoli",
       "standing": "9th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:05Z",
       "venue": {
         "name": "Diego Armando Maradona",
         "city": "Napoli",
@@ -336603,7 +336651,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/115/parma",
       "standing": "15th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:06Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -342672,7 +342720,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3997/sassuolo",
       "standing": "10th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:27Z",
+      "profile_updated_at": "2026-10-31T20:27:07Z",
       "venue": {
         "name": "Mapei Stadium - Città del Tricolore",
         "city": "Reggio Emilia",
@@ -349063,7 +349111,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/239/torino",
       "standing": "14th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:54:09Z",
+      "profile_updated_at": "2026-10-31T20:26:55Z",
       "venue": {
         "name": "Olimpico Grande Torino",
         "city": "Torino",
@@ -355218,7 +355266,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/118/udinese",
       "standing": "13th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:55:27Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -360986,7 +361034,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/17530/venezia",
       "standing": "20th in Italian Serie A",
       "season": "2026-27 Italian Serie A",
-      "profile_updated_at": "2026-10-31T10:54:13Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 5,
@@ -367619,7 +367667,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/598/1-fc-union-berlin",
       "standing": "17th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:59Z",
       "venue": {
         "name": "Stadion An der Alten Försterei",
         "city": "Berlin",
@@ -372856,7 +372904,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/131/bayer-leverkusen",
       "standing": "5th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:29Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 1,
@@ -375921,7 +375969,7 @@
         {
           "id": "422968",
           "name": "Kenan Doganay",
-          "number": null,
+          "number": "39",
           "age": 17,
           "position": "Midfielder",
           "position_code": "M",
@@ -377283,6 +377331,20 @@
             "source_url": "https://www.transfermarkt.com/-/profil/spieler/1364454",
             "provider": "Transfermarkt"
           }
+        },
+        {
+          "id": "5327243",
+          "name": "Dustin Buck",
+          "number": "37",
+          "age": null,
+          "position": "Forward",
+          "position_code": "F",
+          "nationality": null,
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": null,
+          "source_url": "https://www.espn.com/soccer/player/_/id/5327243/dustin-buck",
+          "stats": null
         }
       ],
       "player_stats": {
@@ -377686,7 +377748,8 @@
             "408246": null,
             "408703": null,
             "422968": null,
-            "5325769": null
+            "5325769": null,
+            "5327243": null
           }
         },
         "europa_league": {
@@ -378105,7 +378168,8 @@
               "saves": 0,
               "shotsFaced": 0,
               "goalsConceded": 0
-            }
+            },
+            "5327243": null
           }
         }
       },
@@ -379098,7 +379162,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/132/bayern-munich",
       "standing": "2nd in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 0,
@@ -385917,7 +385981,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/124/borussia-dortmund",
       "standing": "1st in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "SIGNAL IDUNA PARK",
         "city": "Aue",
@@ -392826,7 +392890,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/268/borussia-monchengladbach",
       "standing": "18th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:23Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 4,
@@ -398277,7 +398341,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/125/eintracht-frankfurt",
       "standing": "10th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 1,
@@ -403368,7 +403432,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3841/fc-augsburg",
       "standing": "4th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:28Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "WWK ARENA",
         "city": "Augsburg",
@@ -406577,7 +406641,7 @@
         {
           "id": "413727",
           "name": "Loris Husic",
-          "number": null,
+          "number": "38",
           "age": 18,
           "position": "Midfielder",
           "position_code": "M",
@@ -408373,7 +408437,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/122/fc-cologne",
       "standing": "13th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "RheinEnergieSTADION",
         "city": "Cologne",
@@ -413716,7 +413780,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/127/hamburg-sv",
       "standing": "16th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:02Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 3,
@@ -419147,7 +419211,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2950/mainz",
       "standing": "6th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "Mewa Arena",
         "city": "Mainz",
@@ -424383,7 +424447,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/11420/rb-leipzig",
       "standing": "9th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "Red Bull Arena",
         "city": "Leipzig",
@@ -430741,7 +430805,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/126/sc-freiburg",
       "standing": "3rd in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:28Z",
+      "profile_updated_at": "2026-10-31T20:27:00Z",
       "venue": {
         "name": "Europa-Park Stadion",
         "city": "Freiburg im Breisgau",
@@ -436611,7 +436675,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3307/sc-paderborn-07",
       "standing": "12th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "Home Deluxe Arena",
         "city": "Paderborn",
@@ -441817,7 +441881,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/10388/sv-elversberg",
       "standing": "7th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 1,
@@ -446987,7 +447051,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/133/schalke-04",
       "standing": "11th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 1,
@@ -449902,7 +449966,7 @@
         {
           "id": "409974",
           "name": "Edion Gashi",
-          "number": null,
+          "number": "40",
           "age": 20,
           "position": "Midfielder",
           "position_code": "M",
@@ -452161,7 +452225,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/7911/tsg-hoffenheim",
       "standing": "14th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "venue": {
         "name": "SNP Arena",
         "city": "Sinsheim",
@@ -454436,6 +454500,20 @@
           "stats": null
         },
         {
+          "id": "208608",
+          "name": "Klaus Gjasula",
+          "number": "52",
+          "age": 36,
+          "position": "Midfielder",
+          "position_code": "M",
+          "nationality": "Albania",
+          "height_cm": 191,
+          "weight_kg": 84,
+          "birth_date": "1989-12-14",
+          "source_url": "https://www.espn.com/soccer/player/_/id/208608/klaus-gjasula",
+          "stats": null
+        },
+        {
           "id": "274860",
           "name": "Wouter Burger",
           "number": "18",
@@ -455494,6 +455572,20 @@
             "source_url": "https://www.transfermarkt.com/-/profil/spieler/1047136",
             "provider": "Transfermarkt"
           }
+        },
+        {
+          "id": "3111134",
+          "name": "Oskar Hencke",
+          "number": "41",
+          "age": null,
+          "position": "Midfielder",
+          "position_code": "M",
+          "nationality": null,
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": null,
+          "source_url": "https://www.espn.com/soccer/player/_/id/3111134/oskar-hencke",
+          "stats": null
         },
         {
           "id": "139520",
@@ -456562,6 +456654,34 @@
             "source_url": "https://www.transfermarkt.com/-/profil/spieler/923595",
             "provider": "Transfermarkt"
           }
+        },
+        {
+          "id": "3099575",
+          "name": "Jykese Fields",
+          "number": "46",
+          "age": null,
+          "position": "Forward",
+          "position_code": "F",
+          "nationality": null,
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": null,
+          "source_url": "https://www.espn.com/soccer/player/_/id/3099575/jykese-fields",
+          "stats": null
+        },
+        {
+          "id": "3105981",
+          "name": "Muhammed Yasin Batuhan Zor",
+          "number": "55",
+          "age": null,
+          "position": "Forward",
+          "position_code": "F",
+          "nationality": null,
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": null,
+          "source_url": "https://www.espn.com/soccer/player/_/id/3105981/muhammed-yasin-batuhan-zor",
+          "stats": null
         }
       ],
       "player_stats": {
@@ -456619,6 +456739,7 @@
               "shotsFaced": 0,
               "goalsConceded": 14
             },
+            "208608": null,
             "218980": {
               "foulsCommitted": 3,
               "foulsSuffered": 0,
@@ -456996,7 +457117,10 @@
               "goalsConceded": 0
             },
             "3098291": null,
-            "3111131": null
+            "3099575": null,
+            "3105981": null,
+            "3111131": null,
+            "3111134": null
           }
         },
         "europa_league": {
@@ -457053,6 +457177,7 @@
               "shotsFaced": 0,
               "goalsConceded": 5
             },
+            "208608": null,
             "218980": {
               "foulsCommitted": 0,
               "foulsSuffered": 1,
@@ -457446,7 +457571,10 @@
               "goalsConceded": 0
             },
             "3098291": null,
-            "3111131": null
+            "3099575": null,
+            "3105981": null,
+            "3111131": null,
+            "3111134": null
           }
         }
       },
@@ -458265,7 +458393,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/134/vfb-stuttgart",
       "standing": "15th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:29Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 3,
@@ -464825,7 +464953,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/137/werder-bremen",
       "standing": "8th in German Bundesliga",
       "season": "2026-27 German Bundesliga",
-      "profile_updated_at": "2026-10-31T10:55:12Z",
+      "profile_updated_at": "2026-10-31T20:27:01Z",
       "record": {
         "gamesPlayed": 4,
         "losses": 1,
@@ -470039,7 +470167,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/172/aj-auxerre",
       "standing": "10th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:11Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -475337,7 +475465,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/174/as-monaco",
       "standing": "1st in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:57Z",
       "venue": {
         "name": "Stade Louis-II",
         "city": "Monaco",
@@ -481627,7 +481755,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/7868/angers",
       "standing": "7th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:53Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 2,
@@ -486589,7 +486717,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/6997/brest",
       "standing": "11th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:07Z",
       "venue": {
         "name": "Stade Francis-Le Blé",
         "city": "Brest",
@@ -491515,7 +491643,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3236/le-havre-ac",
       "standing": "18th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:38Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 3,
@@ -496789,7 +496917,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2697/le-mans",
       "standing": "9th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:09Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 1,
@@ -502033,7 +502161,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/175/lens",
       "standing": "15th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:25:38Z",
       "venue": {
         "name": "Stade Bollaert-Delelis",
         "city": "Lens",
@@ -508544,7 +508672,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/166/lille",
       "standing": "4th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:38Z",
       "venue": {
         "name": "Decathlon Arena-Stade Pierre-Mauroy",
         "city": "Lille",
@@ -514861,7 +514989,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/273/lorient",
       "standing": "12th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:08Z",
       "venue": {
         "name": "Stade du Moustoir",
         "city": "Lorient",
@@ -519903,7 +520031,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/167/lyon",
       "standing": "2nd in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:49Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -526238,7 +526366,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/176/marseille",
       "standing": "17th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:08Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 4,
@@ -532472,7 +532600,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2502/nice",
       "standing": "14th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:50Z",
       "venue": {
         "name": "Allianz Riviera",
         "city": "Nice",
@@ -537850,7 +537978,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/6851/paris-fc",
       "standing": "3rd in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:53Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 0,
@@ -542949,7 +543077,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/160/paris-saint-germain",
       "standing": "6th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:28Z",
+      "profile_updated_at": "2026-10-31T20:27:09Z",
       "venue": {
         "name": "Parc des Princes",
         "city": "Paris",
@@ -549495,7 +549623,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/169/stade-rennais",
       "standing": "5th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:38Z",
       "venue": {
         "name": "Roazhon Park",
         "city": "Rennes",
@@ -555700,7 +555828,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/180/strasbourg",
       "standing": "8th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:09Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 2,
@@ -560988,7 +561116,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/179/toulouse",
       "standing": "13th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:54:32Z",
+      "profile_updated_at": "2026-10-31T20:26:09Z",
       "record": {
         "gamesPlayed": 5,
         "losses": 2,
@@ -566018,7 +566146,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/170/troyes",
       "standing": "16th in French Ligue 1",
       "season": "2026-27 French Ligue 1",
-      "profile_updated_at": "2026-10-31T10:54:39Z",
+      "profile_updated_at": "2026-10-31T20:26:09Z",
       "venue": {
         "name": "Stade de l'Aube",
         "city": "Paris",
@@ -571037,7 +571165,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/887/aek-athens",
       "standing": "16th in Greek Super League",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -576238,7 +576366,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2980/bodoglimt",
       "standing": "36th in Norwegian Eliteserien",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:32Z",
+      "profile_updated_at": "2026-10-31T20:26:51Z",
       "venue": {
         "name": "Aspmyra Stadion",
         "city": "Bodø/Glimt",
@@ -580973,7 +581101,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/570/club-brugge",
       "standing": "22nd in Belgian Pro League",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -587457,7 +587585,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/437/fc-porto",
       "standing": "31st in Portuguese Primeira Liga",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -594866,7 +594994,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/436/fenerbahce",
       "standing": "19th in Turkish Super Lig",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:19Z",
+      "profile_updated_at": "2026-10-31T20:27:06Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -600587,7 +600715,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/142/feyenoord-rotterdam",
       "standing": "33rd in Dutch Eredivisie",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Stadion Feijenoord \"De Kuip\"",
         "city": "Rotterdam",
@@ -607092,7 +607220,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/432/galatasaray",
       "standing": "29th in Turkish Super Lig",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "venue": {
         "name": "Ali Sami Yen Spor Kompleksi RAMS Park",
         "city": "Istanbul",
@@ -613436,7 +613564,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/4411/lask-linz",
       "standing": "27th in Austrian Bundesliga",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "venue": {
         "name": "Raiffeisen Arena",
         "city": "Linz",
@@ -617283,7 +617411,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/148/psv-eindhoven",
       "standing": "20th in Dutch Eredivisie",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:23Z",
+      "profile_updated_at": "2026-10-31T20:27:10Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -623604,7 +623732,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/21922/sabah-fk",
       "standing": "34th in Club Friendly",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:12Z",
+      "profile_updated_at": "2026-10-31T20:26:59Z",
       "venue": {
         "name": "Bank Respublika Arena",
         "city": "Baku",
@@ -627644,7 +627772,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/493/shakhtar-donetsk",
       "standing": "18th in Club Friendly",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:23Z",
+      "profile_updated_at": "2026-10-31T20:27:10Z",
       "venue": {
         "name": "Arena Lviv",
         "city": "London",
@@ -633366,7 +633494,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/494/slavia-prague",
       "standing": "24th in UEFA Champions League",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:16Z",
+      "profile_updated_at": "2026-10-31T20:27:03Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -638400,7 +638528,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/521/slovan-bratislava",
       "standing": "35th in Club Friendly",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "venue": {
         "name": "NFS - Tehelné Pole",
         "city": "Bratislava",
@@ -642549,7 +642677,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2250/sporting-cp",
       "standing": "6th in Portuguese Primeira Liga",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:08Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -649274,7 +649402,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/510/viking-fk",
       "standing": "30th in Norwegian Eliteserien",
       "season": "2026-27 UEFA Champions League",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:24:52Z",
       "venue": {
         "name": "Lyse Arena",
         "city": "Stavanger",
@@ -653326,7 +653454,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/140/az-alkmaar",
       "standing": "25th in Dutch Eredivisie",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:14Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "AFAS Stadion",
         "city": "Alkmaar",
@@ -660296,7 +660424,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/441/anderlecht",
       "standing": "22nd in Belgian Pro League",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:14Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -666996,7 +667124,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/20024/ararat-armenia",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:14Z",
+      "profile_updated_at": "2026-10-31T20:19:31Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -670649,7 +670777,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/1929/benfica",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:15Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Estádio da Luz",
         "city": "Lisbon",
@@ -677902,7 +678030,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/1895/besiktas",
       "standing": "4th in Turkish Super Lig",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:15Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -683995,7 +684123,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/256/celtic",
       "standing": "28th in Scottish Premiership",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:15Z",
+      "profile_updated_at": "2026-10-31T20:20:49Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -688962,7 +689090,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/597/dinamo-zagreb",
       "standing": "17th in Club Friendly",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:15Z",
+      "profile_updated_at": "2026-10-31T20:20:50Z",
       "venue": {
         "name": "Maksimir",
         "city": "Zagreb",
@@ -693938,7 +694066,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/622/ferencvaros",
       "standing": "6th in Club Friendly",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:54:26Z",
+      "profile_updated_at": "2026-10-31T20:23:58Z",
       "venue": {
         "name": "Groupama Aréna",
         "city": "Budapest",
@@ -698972,7 +699100,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/13083/hapoel-beer",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:54:46Z",
+      "profile_updated_at": "2026-10-31T20:26:50Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -702737,7 +702865,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/11505/jagiellonia-bialystok",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:16Z",
+      "profile_updated_at": "2026-10-31T20:21:18Z",
       "venue": {
         "name": "Chorten Arena",
         "city": "Bialystok",
@@ -707209,7 +707337,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/2990/lech-poznan",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:16Z",
+      "profile_updated_at": "2026-10-31T20:20:52Z",
       "venue": {
         "name": "Enea Poznań",
         "city": "Poznan",
@@ -712280,7 +712408,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/490/levski-sofia",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:54:26Z",
+      "profile_updated_at": "2026-10-31T20:21:18Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -715999,7 +716127,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/987/lillestrom",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:53Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -719646,7 +719774,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/147/nec-nijmegen",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:54Z",
       "venue": {
         "name": "Goffertstadion",
         "city": "Nijmegen",
@@ -726398,7 +726526,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/3362/nk-celje",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:54Z",
       "venue": {
         "name": "Stadion Z'dežele",
         "city": "Celje",
@@ -731193,7 +731321,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/1010/ofi-crete",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -735214,7 +735342,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/435/olympiacos",
       "standing": "13th in Greek Super League",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:55Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -739909,7 +740037,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/617/omonia-nicosia",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:55Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -744568,7 +744696,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/2790/rb-salzburg",
       "standing": "14th in Austrian Bundesliga",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Red Bull Arena Salzburg",
         "city": "Salzburg",
@@ -750107,7 +750235,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3746/sk-sturm-graz",
       "standing": "20th in Austrian Bundesliga",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:56Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 0,
@@ -754832,7 +754960,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/433/sparta-prague",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:23:58Z",
       "venue": {
         "name": "epet Arena",
         "city": "Prague",
@@ -759606,7 +759734,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/21615/torreense",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:58Z",
       "venue": {
         "name": "Estádio Manuel Marques",
         "city": "Leiria",
@@ -763852,7 +763980,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/5807/union-st-gilloise",
       "standing": "5th in Belgian Pro League",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Stade Joseph Mariën",
         "city": "Leuven",
@@ -770035,7 +770163,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/11706/viktoria-plzen",
       "standing": "34th in Club Friendly",
       "season": "2026-27 UEFA Europa League",
-      "profile_updated_at": "2026-10-31T10:52:17Z",
+      "profile_updated_at": "2026-10-31T20:20:59Z",
       "record": {
         "gamesPlayed": 1,
         "losses": 1,
@@ -774901,7 +775029,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/7853/agf",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:06Z",
+      "profile_updated_at": "2026-10-31T20:16:10Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -778108,7 +778236,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/139/ajax-amsterdam",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:07Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -784621,7 +784749,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/20710/borac-banja-luka",
       "standing": "4th in Club Friendly",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:54:58Z",
+      "profile_updated_at": "2026-10-31T20:16:28Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -787856,7 +787984,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/2994/braga",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:09Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -794251,7 +794379,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/10834/cska-sofia",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:10Z",
+      "profile_updated_at": "2026-10-31T20:16:18Z",
       "venue": {
         "name": "Vasil Levski",
         "city": "Sofia",
@@ -797289,7 +797417,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/8089/csu-craiova",
       "standing": "36th in Romanian Liga 1",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:10Z",
+      "profile_updated_at": "2026-10-31T20:16:25Z",
       "venue": {
         "name": "Ion Oblemenco (2017)",
         "city": "Craiova",
@@ -800382,7 +800510,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/21943/egnatia",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:11Z",
+      "profile_updated_at": "2026-10-31T20:16:11Z",
       "venue": {
         "name": "Arena Egnatia",
         "city": "Tirana",
@@ -803369,7 +803497,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/909/fc-københavn",
       "standing": "9th in Danish Superliga",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:11Z",
+      "profile_updated_at": "2026-10-31T20:16:26Z",
       "venue": {
         "name": "Parken - connected by 3",
         "city": "Copenhagen",
@@ -807365,7 +807493,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/7672/fc-lugano",
       "standing": "22nd in Swiss Super League",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:12Z",
+      "profile_updated_at": "2026-10-31T20:16:29Z",
       "venue": {
         "name": "AIL Arena",
         "city": "Lugano",
@@ -810566,7 +810694,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/572/fc-midtjylland",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:12Z",
+      "profile_updated_at": "2026-10-31T20:16:21Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -814679,7 +814807,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/3101/fc-nordsjælland",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:13Z",
+      "profile_updated_at": "2026-10-31T20:16:18Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -817942,7 +818070,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/3024/fc-thun",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:13Z",
+      "profile_updated_at": "2026-10-31T20:16:16Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -821303,7 +821431,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/152/fc-twente",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:14Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "De Grolsch Veste",
         "city": "Enschede",
@@ -827573,7 +827701,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/489/hajduk-split",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:15Z",
+      "profile_updated_at": "2026-10-31T20:16:21Z",
       "venue": {
         "name": "Poljud",
         "city": "Split",
@@ -830864,7 +830992,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/262/heart-of-midlothian",
       "standing": "14th in Scottish Premiership",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:15Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Tynecastle Park",
         "city": "Edinburgh",
@@ -831111,46 +831239,6 @@
               "source_url": "https://www.espn.com/soccer/match/_/gameId/401915850"
             }
           ]
-        },
-        {
-          "id": "239312",
-          "name": "Kieran Wright",
-          "number": "34",
-          "age": 27,
-          "position": "Goalkeeper",
-          "position_code": "G",
-          "nationality": "Scotland",
-          "height_cm": 188,
-          "weight_kg": 76,
-          "birth_date": "1999-04-01",
-          "source_url": "https://www.espn.com/soccer/player/_/id/239312/kieran-wright",
-          "stats": null,
-          "transfermarkt": {
-            "id": "369523",
-            "foot": "right",
-            "market_value": 50000,
-            "joined": "2026-08-14",
-            "contract": "2027-01-01",
-            "from": "Rangers FC",
-            "captain": false,
-            "position": "Goalkeeper",
-            "source_url": "https://www.transfermarkt.com/-/profil/spieler/369523",
-            "updated_at": "2026-10-08T10:34:23.882581"
-          },
-          "alternative_portrait": {
-            "url": "https://img.a.transfermarkt.technology/portrait/big/369523-1663162547.jpg",
-            "credit": "Transfermarkt player photography",
-            "license": "Provider image · rights retained by source",
-            "source_url": "https://www.transfermarkt.com/-/profil/spieler/369523",
-            "provider": "Transfermarkt"
-          },
-          "portrait": {
-            "url": "https://img.a.transfermarkt.technology/portrait/big/369523-1663162547.jpg",
-            "credit": "Transfermarkt player photography",
-            "license": "Provider image · rights retained by source",
-            "source_url": "https://www.transfermarkt.com/-/profil/spieler/369523",
-            "provider": "Transfermarkt"
-          }
         },
         {
           "id": "277882",
@@ -833716,7 +833804,6 @@
               "shotsFaced": 0,
               "goalsConceded": 1
             },
-            "239312": null,
             "252741": {
               "foulsCommitted": 2,
               "foulsSuffered": 2,
@@ -834329,7 +834416,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/20025/iberia-1999",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:16Z",
+      "profile_updated_at": "2026-10-31T20:16:09Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -837540,7 +837627,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/20703/inter-descaldes",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:16Z",
+      "profile_updated_at": "2026-10-31T20:24:16Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -840397,7 +840484,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/7922/jablonec",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:17Z",
+      "profile_updated_at": "2026-10-31T20:24:38Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -843682,7 +843769,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/3611/kaa-gent",
       "standing": "11th in Belgian Pro League",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:17Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Planet Group arena",
         "city": "Ghent",
@@ -849653,7 +849740,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/2528/kairat-almaty",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:18Z",
+      "profile_updated_at": "2026-10-31T20:20:10Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -853378,7 +853465,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/20028/kauno-zalgiris",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:18Z",
+      "profile_updated_at": "2026-10-31T20:25:28Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -856645,7 +856732,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/8169/kups-kuopio",
       "standing": "20th in UEFA Conference League",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:54:59Z",
+      "profile_updated_at": "2026-10-31T20:16:18Z",
       "venue": {
         "name": "Väre Areena",
         "city": "Tampere",
@@ -860945,7 +861032,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/17856/lincoln-red-imps",
       "standing": "21st in UEFA Conference League",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:19Z",
+      "profile_updated_at": "2026-10-31T20:16:29Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -863905,7 +863992,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/20301/mjallby-aif",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:20Z",
+      "profile_updated_at": "2026-10-31T20:16:27Z",
       "venue": {
         "name": "Strandvallen",
         "city": "Helsingborg",
@@ -866949,7 +867036,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/22281/pafos",
       "standing": "27th in Cypriot First Division",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:54:26Z",
+      "profile_updated_at": "2026-10-31T20:20:06Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -870917,7 +871004,7 @@
       "source_url": "https://www.espn.com/soccer/club/_/id/443/panathinaikos",
       "standing": "28th in Greek Super League",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:21Z",
+      "profile_updated_at": "2026-10-31T20:16:25Z",
       "venue": {
         "name": "Olympiako Stadio Athinon \"Spyros Louis\"",
         "city": "Athens",
@@ -875533,7 +875620,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/2290/red-star-belgrade",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:21Z",
+      "profile_updated_at": "2026-10-31T20:16:31Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -880080,7 +880167,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/19246/riga-fc",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:22Z",
+      "profile_updated_at": "2026-10-31T20:16:28Z",
       "venue": {
         "name": "Skonto",
         "city": "Riga",
@@ -883064,7 +883151,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/620/sk-brann",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:23Z",
+      "profile_updated_at": "2026-10-31T20:16:16Z",
       "venue": {
         "name": "Brann Stadion",
         "city": "Bergen",
@@ -887329,7 +887416,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/936/sint-truidense",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:23Z",
+      "profile_updated_at": "2026-10-31T20:25:08Z",
       "venue": {
         "name": "Daio Wasabi Stayen Stadium",
         "city": "Sint-Truiden",
@@ -892935,7 +893022,7 @@
       "country": "Europe",
       "source_url": "https://www.espn.com/soccer/club/_/id/997/trabzonspor",
       "season": "2026-27 UEFA Conference League",
-      "profile_updated_at": "2026-10-31T10:48:24Z",
+      "profile_updated_at": "2026-10-31T20:16:20Z",
       "record": {
         "gamesPlayed": 0,
         "losses": 0,
@@ -904110,7 +904197,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/21607/academico-de-viseu",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:02Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885413",
@@ -909583,7 +909670,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/21613/alverca",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401885420",
@@ -914752,7 +914839,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/15784/arouca",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401885420",
@@ -919996,7 +920083,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3472/cd-nacional",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885416",
@@ -925405,7 +925492,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/21581/casa-pia",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:33Z",
       "last_lineup": {
         "date": "2026-10-30",
         "event_id": "401885408",
@@ -930205,7 +930292,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/12216/estoril",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:02Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885418",
@@ -935027,7 +935114,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/21610/estrela",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:33Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401885419",
@@ -940318,7 +940405,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/12698/fc-famalicao",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885415",
@@ -945847,7 +945934,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3699/gil-vicente",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401885417",
@@ -950453,7 +950540,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/552/maritimo",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:01Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401885412",
@@ -955823,7 +955910,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3696/moreirense",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:08Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885418",
@@ -961388,7 +961475,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3822/rio-ave",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401885415",
@@ -966399,7 +966486,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/12215/santa-clara",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-26",
         "event_id": "401885414",
@@ -971767,7 +971854,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/5309/vitoria-de-guimaraes",
       "season": "2026-27 Portuguese Primeira Liga",
-      "profile_updated_at": "2026-10-31T10:55:29Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401885412",
@@ -977356,7 +977443,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/2726/ado-den-haag",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:00Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875571",
@@ -981981,7 +982068,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/2566/excelsior",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:37Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401875570",
@@ -987486,7 +987573,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/145/fc-groningen",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:43Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401875569",
@@ -993198,7 +993285,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/153/fc-utrecht",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:27:13Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875573",
@@ -998356,7 +998443,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/143/fortuna-sittard",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:21Z",
+      "profile_updated_at": "2026-10-31T20:25:19Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401875570",
@@ -1003898,7 +1003985,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3706/go-ahead-eagles",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:51Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401875574",
@@ -1009220,7 +1009307,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/146/heerenveen",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:21Z",
+      "profile_updated_at": "2026-10-31T20:25:47Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875571",
@@ -1014685,7 +1014772,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/2565/pec-zwolle",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:12Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875573",
@@ -1019813,7 +1019900,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3736/sc-cambuur",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:51Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875572",
@@ -1024970,7 +1025057,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/151/sparta-rotterdam",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:16Z",
+      "profile_updated_at": "2026-10-31T20:25:43Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401875567",
@@ -1030367,7 +1030454,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3735/telstar",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:28Z",
+      "profile_updated_at": "2026-10-31T20:25:17Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401875574",
@@ -1035682,7 +1035769,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/156/willem-ii",
       "season": "2026-27 Dutch Eredivisie",
-      "profile_updated_at": "2026-10-31T10:55:28Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401875572",
@@ -1040072,7 +1040159,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/17544/antwerp",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878968",
@@ -1045123,7 +1045210,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3610/cercle-brugge-ksv",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401878961",
@@ -1049642,7 +1049729,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/5786/kv-kortrijk",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:35Z",
       "last_lineup": {
         "date": "2026-10-10",
         "event_id": "401878973",
@@ -1050489,7 +1050576,7 @@
         {
           "id": "407340",
           "name": "Tijn Van Ingelgom",
-          "number": "15",
+          "number": "32",
           "age": 19,
           "position": "Goalkeeper",
           "position_code": "G",
@@ -1054384,7 +1054471,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/7879/kv-mechelen",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:25:35Z",
       "last_lineup": {
         "date": "2026-10-11",
         "event_id": "401878972",
@@ -1059159,7 +1059246,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/606/kvc-westerlo",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878965",
@@ -1064218,7 +1064305,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/22269/lommel-sk",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878969",
@@ -1068844,7 +1068931,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/5579/oud-heverlee-leuven",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878969",
@@ -1073600,7 +1073687,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/131235/raal-la-louviere",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878966",
@@ -1078019,7 +1078106,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/938/racing-genk",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:35Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401878963",
@@ -1082696,7 +1082783,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/3616/royal-charleroi-sc",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:03Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878968",
@@ -1083642,6 +1083729,20 @@
             "source_url": "https://www.transfermarkt.com/-/profil/spieler/680218",
             "provider": "Transfermarkt"
           }
+        },
+        {
+          "id": "403184",
+          "name": "Quentin Durka",
+          "number": "46",
+          "age": 19,
+          "position": "Goalkeeper",
+          "position_code": "G",
+          "nationality": "Belgium",
+          "height_cm": null,
+          "weight_kg": null,
+          "birth_date": "2007-02-27",
+          "source_url": "https://www.espn.com/soccer/player/_/id/403184/quentin-durka",
+          "stats": null
         },
         {
           "id": "248673",
@@ -1087419,6 +1087520,7 @@
               "shotsFaced": 0,
               "goalsConceded": 6
             },
+            "403184": null,
             "416555": {
               "foulsCommitted": 3,
               "foulsSuffered": 7,
@@ -1087479,7 +1087581,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/559/standard-liege",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:25:35Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401878963",
@@ -1091828,7 +1091930,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/13450/waasland-beveren",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:35Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401878965",
@@ -1096804,7 +1096906,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/4691/zulte-waregem",
       "season": "2026-27 Belgian Pro League",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:25:34Z",
       "last_lineup": {
         "date": "2026-10-30",
         "event_id": "401878956",
@@ -1101953,7 +1102055,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/9078/alanyaspor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401888268",
@@ -1106471,7 +1106573,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/132335/amed-sfk",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888375",
@@ -1111669,7 +1111771,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/7656/caykur-rizespor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-26",
         "event_id": "401888267",
@@ -1116137,7 +1116239,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/19267/erzurum-bb",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888270",
@@ -1121116,7 +1121218,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/20729/eyupspor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:14Z",
+      "profile_updated_at": "2026-10-31T20:26:37Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888269",
@@ -1126403,7 +1126505,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/20070/gaziantep-fk",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888270",
@@ -1131108,7 +1131210,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/996/genclerbirligi",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401888266",
@@ -1135338,7 +1135440,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/789/goztepe",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:37Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401888376",
@@ -1139960,7 +1140062,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/7914/istanbul-basaksehir",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-26",
         "event_id": "401888264",
@@ -1145240,7 +1145342,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/6870/kasimpasa",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888269",
@@ -1150544,7 +1150646,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/995/kocaelispor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-23",
         "event_id": "401888268",
@@ -1155867,7 +1155969,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/7648/konyaspor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-30",
         "event_id": "401888259",
@@ -1160919,7 +1161021,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/11429/samsunspor",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:15Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-24",
         "event_id": "401888375",
@@ -1166108,7 +1166210,7 @@
       "kind": "domestic",
       "source_url": "https://www.espn.com/soccer/club/_/id/132334/corum-fk",
       "season": "2026-27 Turkish Super Lig",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:38Z",
       "last_lineup": {
         "date": "2026-10-25",
         "event_id": "401888376",
@@ -1170199,7 +1170301,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/10207/al-ahly",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:48Z",
+      "profile_updated_at": "2026-10-31T20:01:09Z",
       "last_lineup": {
         "date": "2025-06-24",
         "event_id": "724457",
@@ -1173523,7 +1173625,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/7128/al-ain",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:48Z",
+      "profile_updated_at": "2026-10-31T19:47:50Z",
       "last_lineup": {
         "date": "2025-06-26",
         "event_id": "724467",
@@ -1177136,7 +1177238,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/929/al-hilal",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:49Z",
+      "profile_updated_at": "2026-10-31T19:47:51Z",
       "last_lineup": {
         "date": "2025-07-04",
         "event_id": "735952",
@@ -1177515,7 +1177617,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/227/america",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:49Z",
+      "profile_updated_at": "2026-10-31T19:47:51Z",
       "lineup_history": [],
       "formation_profile": {
         "shape": "4-3-3",
@@ -1180888,7 +1180990,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/7279/auckland-city",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:50Z",
+      "profile_updated_at": "2026-10-31T20:19:07Z",
       "last_lineup": {
         "date": "2025-06-24",
         "event_id": "724459",
@@ -1185011,7 +1185113,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/5/boca-juniors",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:52Z",
+      "profile_updated_at": "2026-10-31T19:47:54Z",
       "last_lineup": {
         "date": "2025-06-24",
         "event_id": "724459",
@@ -1188944,7 +1189046,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/6086/botafogo",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:53Z",
+      "profile_updated_at": "2026-10-31T19:47:55Z",
       "last_lineup": {
         "date": "2025-06-23",
         "event_id": "724455",
@@ -1192460,7 +1192562,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/8377/esperance-sportive-de-tunis",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:54Z",
+      "profile_updated_at": "2026-10-31T19:47:56Z",
       "last_lineup": {
         "date": "2025-06-25",
         "event_id": "724462",
@@ -1196971,7 +1197073,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/819/flamengo",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:55Z",
+      "profile_updated_at": "2026-10-31T19:51:03Z",
       "last_lineup": {
         "date": "2025-06-29",
         "event_id": "735947",
@@ -1202291,7 +1202393,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/3445/fluminense",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:55Z",
+      "profile_updated_at": "2026-10-31T19:47:57Z",
       "last_lineup": {
         "date": "2025-07-08",
         "event_id": "735956",
@@ -1206295,7 +1206397,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/20232/inter-miami-cf",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:56Z",
+      "profile_updated_at": "2026-10-31T19:47:58Z",
       "last_lineup": {
         "date": "2025-06-29",
         "event_id": "735946",
@@ -1210270,7 +1210372,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/7084/mamelodi-sundowns",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:57Z",
+      "profile_updated_at": "2026-10-31T19:49:01Z",
       "last_lineup": {
         "date": "2025-06-25",
         "event_id": "724464",
@@ -1213945,7 +1214047,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/220/monterrey",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:58Z",
+      "profile_updated_at": "2026-10-31T19:48:00Z",
       "last_lineup": {
         "date": "2025-07-02",
         "event_id": "735951",
@@ -1216971,7 +1217073,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/234/pachuca",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:59Z",
+      "profile_updated_at": "2026-10-31T19:48:01Z",
       "last_lineup": {
         "date": "2025-06-27",
         "event_id": "724469",
@@ -1220745,7 +1220847,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/2029/palmeiras",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:53:59Z",
+      "profile_updated_at": "2026-10-31T19:48:01Z",
       "last_lineup": {
         "date": "2025-07-05",
         "event_id": "735953",
@@ -1224779,7 +1224881,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/16/river-plate",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:54:01Z",
+      "profile_updated_at": "2026-10-31T19:48:03Z",
       "last_lineup": {
         "date": "2025-06-26",
         "event_id": "724466",
@@ -1228503,7 +1228605,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/9726/seattle-sounders-fc",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:54:02Z",
+      "profile_updated_at": "2026-10-31T19:48:04Z",
       "last_lineup": {
         "date": "2025-06-23",
         "event_id": "724456",
@@ -1232018,7 +1232120,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/7120/ulsan-hd",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:54:02Z",
+      "profile_updated_at": "2026-10-31T19:48:04Z",
       "last_lineup": {
         "date": "2025-06-25",
         "event_id": "724463",
@@ -1235457,7 +1235559,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/3385/urawa-red-diamonds",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:54:03Z",
+      "profile_updated_at": "2026-10-31T19:48:05Z",
       "last_lineup": {
         "date": "2025-06-26",
         "event_id": "724465",
@@ -1239200,7 +1239302,7 @@
       "kind": "cup",
       "source_url": "https://www.espn.com/soccer/club/_/id/8625/wydad-ac",
       "season": "2025 FIFA Club World Cup",
-      "profile_updated_at": "2026-10-31T10:54:03Z",
+      "profile_updated_at": "2026-10-31T19:48:05Z",
       "last_lineup": {
         "date": "2025-06-26",
         "event_id": "724467",
@@ -1244343,7 +1244445,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/624/algeria",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-03",
         "event_id": "760498",
@@ -1249959,7 +1250061,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/202/argentina",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-15",
         "event_id": "760515",
@@ -1253843,7 +1253945,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/628/australia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:55:02Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-26",
         "event_id": "760469",
@@ -1259662,7 +1259764,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/474/austria",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861121",
@@ -1266308,7 +1266410,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/459/belgium",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861129",
@@ -1267034,16 +1267136,16 @@
       "players": [
         {
           "id": "79941",
-          "name": "Nikola Vasilj",
+          "name": "Nikola Vasiljevic",
           "number": "1",
           "age": 30,
           "position": "Goalkeeper",
           "position_code": "G",
-          "nationality": "Bosnia and Herzegovina",
-          "height_cm": 193,
+          "nationality": "Serbia",
+          "height_cm": 196,
           "weight_kg": 86,
-          "birth_date": "1995-12-02",
-          "source_url": "https://www.espn.com/soccer/player/_/id/79941/nikola-vasilj",
+          "birth_date": "1996-06-24",
+          "source_url": "https://www.espn.com/soccer/player/_/id/79941/nikola-vasiljevic",
           "stats": {
             "foulsCommitted": 0,
             "foulsSuffered": 0,
@@ -1272037,7 +1272139,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/452/bosnia-herzegovina",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861133",
@@ -1272394,7 +1272496,7 @@
           "players": [
             {
               "id": "79941",
-              "name": "Nikola Vasilj",
+              "name": "Nikola Vasiljevic",
               "number": "1",
               "position_code": "G",
               "place": 1
@@ -1272480,7 +1272582,7 @@
           "players": [
             {
               "id": "79941",
-              "name": "Nikola Vasilj",
+              "name": "Nikola Vasiljevic",
               "number": "1",
               "position_code": "G",
               "place": 1
@@ -1276443,7 +1276545,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/205/brazil",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-05",
         "event_id": "760504",
@@ -1282220,7 +1282322,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/206/canada",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-04",
         "event_id": "760502",
@@ -1286149,7 +1286251,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2597/cape-verde",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760478",
@@ -1291004,7 +1291106,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/208/colombia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-04",
         "event_id": "760501",
@@ -1296436,7 +1296538,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2850/congo-dr",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-01",
         "event_id": "760495",
@@ -1302848,7 +1302950,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/477/croatia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861137",
@@ -1308166,7 +1308268,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/club/_/id/11678/curacao",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900574",
@@ -1314128,7 +1314230,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/450/czechia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861142",
@@ -1318992,7 +1319094,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/209/ecuador",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-01",
         "event_id": "760491",
@@ -1323900,7 +1324002,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2620/egypt",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-07",
         "event_id": "760509",
@@ -1330732,7 +1330834,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/448/england",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861142",
@@ -1337471,7 +1337573,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/478/france",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861129",
@@ -1343013,7 +1343115,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/481/germany",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861123",
@@ -1347617,7 +1347719,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4469/ghana",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:33Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-04",
         "event_id": "760501",
@@ -1352164,7 +1352266,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2654/haiti",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900575",
@@ -1355802,7 +1355904,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/469/iran",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:55:17Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760476",
@@ -1359434,7 +1359536,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4375/iraq",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-26",
         "event_id": "760474",
@@ -1364933,7 +1365035,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4789/ivory-coast",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:34Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-30",
         "event_id": "760490",
@@ -1368999,7 +1369101,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/627/japan",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:36Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-29",
         "event_id": "760487",
@@ -1372560,7 +1372662,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2917/jordan",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:36Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-28",
         "event_id": "760483",
@@ -1378121,7 +1378223,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/203/mexico",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:37Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-06",
         "event_id": "760505",
@@ -1383580,7 +1383682,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2869/morocco",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:37Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-09",
         "event_id": "760510",
@@ -1389258,7 +1389360,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/449/netherlands",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:38Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861122",
@@ -1392896,7 +1392998,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2666/new-zealand",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:38Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760477",
@@ -1398919,7 +1399021,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/464/norway",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:39Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861126",
@@ -1404142,7 +1404244,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2659/panama",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:39Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760485",
@@ -1408322,7 +1408424,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/210/paraguay",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:40Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-04",
         "event_id": "760503",
@@ -1414353,7 +1414455,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/482/portugal",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:55:02Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861126",
@@ -1416427,8 +1416529,8 @@
           "name": "Ahmed Fathy",
           "number": "20",
           "age": 33,
-          "position": "Midfielder",
-          "position_code": "M",
+          "position": "Defender",
+          "position_code": "D",
           "nationality": "Qatar",
           "height_cm": 170,
           "weight_kg": 67,
@@ -1418022,7 +1418124,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4398/qatar",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:41Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-24",
         "event_id": "760462",
@@ -1422029,7 +1422131,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/655/saudi-arabia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:41Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760478",
@@ -1426642,7 +1426744,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/580/scotland",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:42Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861143",
@@ -1432326,7 +1432428,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/654/senegal",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:42Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-26",
         "event_id": "760474",
@@ -1437484,7 +1437586,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/467/south-africa",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:43Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-28",
         "event_id": "760486",
@@ -1441320,7 +1441422,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/451/south-korea",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:55:05Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-25",
         "event_id": "760466",
@@ -1447644,7 +1447746,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/164/spain",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:44Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861137",
@@ -1453067,7 +1453169,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/466/sweden",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:44Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861128",
@@ -1459344,7 +1459446,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/475/switzerland",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:45Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861139",
@@ -1464462,7 +1464564,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/659/tunisia",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:45Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-25",
         "event_id": "760472",
@@ -1470891,7 +1470993,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/465/turkiye",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:46Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861131",
@@ -1474676,8 +1474778,8 @@
           "name": "Max Arfsten",
           "number": "18",
           "age": 25,
-          "position": "Forward",
-          "position_code": "F",
+          "position": "Defender",
+          "position_code": "D",
           "nationality": "USA",
           "height_cm": 185,
           "weight_kg": 78,
@@ -1476991,7 +1477093,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/660/united-states",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:46Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-07-07",
         "event_id": "760507",
@@ -1481778,7 +1481880,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/212/uruguay",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:47Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760479",
@@ -1485322,7 +1485424,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2570/uzbekistan",
       "season": "2026 FIFA World Cup",
-      "profile_updated_at": "2026-10-31T10:53:47Z",
+      "profile_updated_at": "2026-10-31T20:26:48Z",
       "last_lineup": {
         "date": "2026-06-27",
         "event_id": "760482",
@@ -1488993,7 +1489095,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/585/albania",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T19:24:45Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861140",
@@ -1492444,7 +1492546,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/479/denmark",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T18:40:45Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861125",
@@ -1496359,7 +1496461,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/584/georgia",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:53:20Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861132",
@@ -1499460,7 +1499562,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/480/hungary",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861134",
@@ -1503371,7 +1503473,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/162/italy",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T19:25:02Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861131",
@@ -1507158,7 +1507260,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/471/poland",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861133",
@@ -1510773,7 +1510875,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/473/romania",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:55Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861128",
@@ -1514553,7 +1514655,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/6757/serbia",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:19:56Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861122",
@@ -1518428,7 +1518530,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/468/slovakia",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:52:35Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861144",
@@ -1522062,7 +1522164,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/472/slovenia",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:34:31Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861143",
@@ -1525632,7 +1525734,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/457/ukraine",
       "season": "2024 European Championship",
-      "profile_updated_at": "2026-10-31T10:20:43Z",
+      "profile_updated_at": "2026-10-31T18:33:40Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861134",
@@ -1529350,7 +1529452,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/587/andorra",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:48:34Z",
+      "profile_updated_at": "2026-10-31T20:11:58Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861120",
@@ -1533238,7 +1533340,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/579/armenia",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:51:57Z",
+      "profile_updated_at": "2026-10-31T20:11:51Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861130",
@@ -1537166,7 +1537268,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/581/azerbaijan",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:48:35Z",
+      "profile_updated_at": "2026-10-31T20:16:49Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861119",
@@ -1540950,7 +1541052,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/583/belarus",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:49Z",
+      "profile_updated_at": "2026-10-31T20:11:55Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861138",
@@ -1544723,7 +1544825,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/462/bulgaria",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:52Z",
+      "profile_updated_at": "2026-10-31T20:18:53Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861141",
@@ -1548706,7 +1548808,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/445/cyprus",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:51:58Z",
+      "profile_updated_at": "2026-10-31T20:11:35Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861127",
@@ -1552427,7 +1552529,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/444/estonia",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:59Z",
+      "profile_updated_at": "2026-10-31T20:19:39Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861136",
@@ -1556060,7 +1556162,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/447/faroe-islands",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:54:18Z",
+      "profile_updated_at": "2026-10-31T20:19:04Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861135",
@@ -1559970,7 +1560072,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/458/finland",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:15Z",
+      "profile_updated_at": "2026-10-31T20:11:39Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861138",
@@ -1563682,7 +1563784,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/16721/gibraltar",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:51Z",
+      "profile_updated_at": "2026-10-31T20:11:36Z",
       "last_lineup": {
         "date": "2026-10-01",
         "event_id": "401861099",
@@ -1567768,7 +1567870,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/455/greece",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:53:04Z",
+      "profile_updated_at": "2026-10-31T20:17:52Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861123",
@@ -1571406,7 +1571508,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/470/iceland",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:53Z",
+      "profile_updated_at": "2026-10-31T20:11:43Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861136",
@@ -1575461,7 +1575563,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/461/israel",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:54:50Z",
+      "profile_updated_at": "2026-10-31T20:19:16Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861124",
@@ -1579436,7 +1579538,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2619/kazakhstan",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:50Z",
+      "profile_updated_at": "2026-10-31T20:20:15Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861135",
@@ -1583392,7 +1583494,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/18272/kosovo",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:54:45Z",
+      "profile_updated_at": "2026-10-31T20:11:36Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861121",
@@ -1587564,7 +1587666,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/456/latvia",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:47Z",
+      "profile_updated_at": "2026-10-31T20:11:36Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861127",
@@ -1591239,7 +1591341,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/589/liechtenstein",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:53:04Z",
+      "profile_updated_at": "2026-10-31T20:11:58Z",
       "last_lineup": {
         "date": "2026-10-01",
         "event_id": "401861093",
@@ -1594933,7 +1595035,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/460/lithuania",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:54:13Z",
+      "profile_updated_at": "2026-10-31T20:11:36Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861119",
@@ -1598780,7 +1598882,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/582/luxembourg",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:53:16Z",
+      "profile_updated_at": "2026-10-31T20:11:54Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861141",
@@ -1602674,7 +1602776,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/453/malta",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:48:49Z",
+      "profile_updated_at": "2026-10-31T20:11:36Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861120",
@@ -1606429,7 +1606531,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/483/moldova",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:49Z",
+      "profile_updated_at": "2026-10-31T20:11:50Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861144",
@@ -1608201,11 +1608303,11 @@
         },
         {
           "id": "236598",
-          "name": "Marko Janković",
+          "name": "Marko Jankovic",
           "number": null,
           "age": 31,
-          "position": "Defender",
-          "position_code": "D",
+          "position": "Midfielder",
+          "position_code": "M",
           "nationality": "Montenegro",
           "height_cm": 173,
           "weight_kg": 67,
@@ -1610421,7 +1610523,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/6775/montenegro",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:52:45Z",
+      "profile_updated_at": "2026-10-31T20:22:28Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861130",
@@ -1610567,7 +1610669,7 @@
             },
             {
               "id": "236598",
-              "name": "Marko Janković",
+              "name": "Marko Jankovic",
               "number": "8",
               "position_code": "RM",
               "place": 7
@@ -1610653,7 +1610755,7 @@
             },
             {
               "id": "236598",
-              "name": "Marko Janković",
+              "name": "Marko Jankovic",
               "number": "8",
               "position_code": "RM",
               "place": 7
@@ -1610711,7 +1610813,7 @@
             },
             {
               "id": "236598",
-              "name": "Marko Janković",
+              "name": "Marko Jankovic",
               "number": "8",
               "position_code": "SW",
               "place": 4
@@ -1614434,7 +1614536,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/463/north-macedonia",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:53:49Z",
+      "profile_updated_at": "2026-10-31T20:11:41Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861139",
@@ -1618373,7 +1618475,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/586/northern-ireland",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:55:39Z",
+      "profile_updated_at": "2026-10-31T20:18:08Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401861132",
@@ -1622292,7 +1622394,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/476/republic-of-ireland",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:55:30Z",
+      "profile_updated_at": "2026-10-31T20:13:58Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861124",
@@ -1625848,7 +1625950,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/588/san-marino",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:54:18Z",
+      "profile_updated_at": "2026-10-31T20:11:58Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401861140",
@@ -1630053,7 +1630155,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/578/wales",
       "season": "2026-27 UEFA Nations League",
-      "profile_updated_at": "2026-10-31T10:55:18Z",
+      "profile_updated_at": "2026-10-31T20:11:51Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401861125",
@@ -1633593,7 +1633695,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/204/bolivia",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:43:35Z",
+      "profile_updated_at": "2026-10-31T19:54:01Z",
       "last_lineup": {
         "date": "2024-07-02",
         "event_id": "690726",
@@ -1637141,7 +1637243,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/207/chile",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:19:29Z",
+      "profile_updated_at": "2026-10-31T20:12:44Z",
       "last_lineup": {
         "date": "2024-06-30",
         "event_id": "690722",
@@ -1640433,7 +1640535,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/214/costa-rica",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:28:53Z",
+      "profile_updated_at": "2026-10-31T18:25:46Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900575",
@@ -1644029,7 +1644131,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/1038/jamaica",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:28:48Z",
+      "profile_updated_at": "2026-10-31T18:25:46Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900582",
@@ -1647718,7 +1647820,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/211/peru",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:47:53Z",
+      "profile_updated_at": "2026-10-31T18:25:46Z",
       "last_lineup": {
         "date": "2024-06-30",
         "event_id": "690721",
@@ -1651377,7 +1651479,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/213/venezuela",
       "season": "2024 Copa América",
-      "profile_updated_at": "2026-10-31T10:21:20Z",
+      "profile_updated_at": "2026-10-31T18:25:46Z",
       "last_lineup": {
         "date": "2024-07-01",
         "event_id": "690724",
@@ -1655204,7 +1655306,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/653/angola",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:33Z",
+      "profile_updated_at": "2026-10-31T19:45:36Z",
       "last_lineup": {
         "date": "2025-12-29",
         "event_id": "732157",
@@ -1658738,7 +1658840,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2844/benin",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:34Z",
+      "profile_updated_at": "2026-10-31T19:45:36Z",
       "last_lineup": {
         "date": "2025-12-30",
         "event_id": "732161",
@@ -1662265,7 +1662367,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4245/botswana",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:34Z",
+      "profile_updated_at": "2026-10-31T19:45:37Z",
       "last_lineup": {
         "date": "2025-12-30",
         "event_id": "732162",
@@ -1666481,7 +1666583,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2845/burkina-faso",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:35Z",
+      "profile_updated_at": "2026-10-31T19:45:37Z",
       "last_lineup": {
         "date": "2026-01-06",
         "event_id": "732176",
@@ -1671031,7 +1671133,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/656/cameroon",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:35Z",
+      "profile_updated_at": "2026-10-31T19:45:38Z",
       "last_lineup": {
         "date": "2026-01-09",
         "event_id": "732178",
@@ -1674684,7 +1674786,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/8601/comoros",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:36Z",
+      "profile_updated_at": "2026-10-31T19:45:38Z",
       "last_lineup": {
         "date": "2025-12-29",
         "event_id": "732158",
@@ -1678320,7 +1678422,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/8938/equatorial-guinea",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:37Z",
+      "profile_updated_at": "2026-10-31T19:45:40Z",
       "last_lineup": {
         "date": "2025-12-31",
         "event_id": "732165",
@@ -1681933,7 +1682035,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4231/gabon",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:38Z",
+      "profile_updated_at": "2026-10-31T19:45:40Z",
       "last_lineup": {
         "date": "2025-12-31",
         "event_id": "732167",
@@ -1686520,7 +1686622,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2849/mali",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:39Z",
+      "profile_updated_at": "2026-10-31T19:45:41Z",
       "last_lineup": {
         "date": "2026-01-09",
         "event_id": "732177",
@@ -1690205,7 +1690307,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/8939/mozambique",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:40Z",
+      "profile_updated_at": "2026-10-31T19:45:42Z",
       "last_lineup": {
         "date": "2026-01-05",
         "event_id": "732174",
@@ -1694375,7 +1694477,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/657/nigeria",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:40Z",
+      "profile_updated_at": "2026-10-31T19:45:43Z",
       "last_lineup": {
         "date": "2026-01-10",
         "event_id": "732180",
@@ -1697868,7 +1697970,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4319/sudan",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:42Z",
+      "profile_updated_at": "2026-10-31T19:45:44Z",
       "last_lineup": {
         "date": "2026-01-03",
         "event_id": "732170",
@@ -1701362,7 +1701464,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/5778/tanzania",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:42Z",
+      "profile_updated_at": "2026-10-31T19:45:45Z",
       "last_lineup": {
         "date": "2026-01-04",
         "event_id": "732171",
@@ -1704971,7 +1705073,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4211/uganda",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:43Z",
+      "profile_updated_at": "2026-10-31T19:45:46Z",
       "last_lineup": {
         "date": "2025-12-30",
         "event_id": "732164",
@@ -1708650,7 +1708752,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/4277/zambia",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:44Z",
+      "profile_updated_at": "2026-10-31T19:45:46Z",
       "last_lineup": {
         "date": "2025-12-29",
         "event_id": "732160",
@@ -1712250,7 +1712352,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/club/_/id/4214/zimbabwe",
       "season": "2025 Africa Cup of Nations",
-      "profile_updated_at": "2026-10-31T10:51:44Z",
+      "profile_updated_at": "2026-10-31T19:45:47Z",
       "last_lineup": {
         "date": "2025-12-29",
         "event_id": "732159",
@@ -1715236,7 +1715338,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2649/dominican-republic",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:34:32Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900573",
@@ -1718160,7 +1718262,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2650/el-salvador",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:34:49Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900580",
@@ -1720428,7 +1720530,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/7657/guadeloupe",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:35:10Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900579",
@@ -1723677,7 +1723779,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2652/guatemala",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:35:29Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900581",
@@ -1726463,7 +1726565,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/215/honduras",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:36:00Z",
+      "profile_updated_at": "2026-10-31T19:56:56Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900582",
@@ -1729812,7 +1729914,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2664/suriname",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:36:52Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900581",
@@ -1732422,7 +1732524,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2627/trinidad-and-tobago",
       "season": "2025 Concacaf Gold Cup",
-      "profile_updated_at": "2026-10-31T10:37:10Z",
+      "profile_updated_at": "2026-10-31T18:25:49Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900574",
@@ -1736149,7 +1736251,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/8942/anguilla",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:22Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900586",
@@ -1739665,7 +1739767,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2638/antigua-and-barbuda",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:23Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900571",
@@ -1742799,7 +1742901,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2642/aruba",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:23Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900571",
@@ -1745532,7 +1745634,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2640/bahamas",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:24Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900570",
@@ -1748732,7 +1748834,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2637/barbados",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:24Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900578",
@@ -1751963,7 +1752065,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2641/belize",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:25Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-07",
         "event_id": "401900569",
@@ -1755158,7 +1755260,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2643/bermuda",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:25Z",
+      "profile_updated_at": "2026-10-31T20:17:36Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900578",
@@ -1758133,7 +1758235,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/19314/bonaire",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:26Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900576",
@@ -1761735,7 +1761837,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2644/british-virgin-islands",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:26Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900587",
@@ -1764659,7 +1764761,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2646/cayman-islands",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:27Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900583",
@@ -1767713,7 +1767815,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2647/cuba",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:28Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900577",
@@ -1770488,7 +1770590,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/13582/dominica",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:29Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900584",
@@ -1773422,7 +1773524,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/club/_/id/10532/french-guiana",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:31Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-07",
         "event_id": "401900569",
@@ -1776518,7 +1776620,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2651/grenada",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:31Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900576",
@@ -1779596,7 +1779698,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2653/guyana",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:33Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900584",
@@ -1782998,7 +1783100,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2728/martinique",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:35Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900580",
@@ -1786149,7 +1786251,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2655/montserrat",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:36Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900572",
@@ -1789464,7 +1789566,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2658/nicaragua",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:36Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900573",
@@ -1792550,7 +1792652,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/club/_/id/11766/puerto-rico",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:37Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900583",
@@ -1795515,7 +1795617,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/18243/sint-maarten",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:38Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900568",
@@ -1796338,13 +1796440,13 @@
           "id": "277524",
           "name": "Jay Williams",
           "number": "15",
-          "age": 26,
+          "age": 23,
           "position": "Defender",
           "position_code": "D",
-          "nationality": "England",
+          "nationality": "Wales",
           "height_cm": 188,
           "weight_kg": 74,
-          "birth_date": "2000-10-04",
+          "birth_date": "2003-02-26",
           "source_url": "https://www.espn.com/soccer/player/_/id/277524/jay-williams",
           "stats": null
         },
@@ -1798511,7 +1798613,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2662/st-kitts-and-nevis",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:38Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900577",
@@ -1801734,7 +1801836,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2661/st-lucia",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:39Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-05",
         "event_id": "401900579",
@@ -1804387,7 +1804489,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/10596/st-martin",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:39Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900570",
@@ -1807514,7 +1807616,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/13584/st-vincent-and-the-grenadines",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:40Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900568",
@@ -1810782,7 +1810884,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2665/turks-and-caicos-islands",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:41Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-06",
         "event_id": "401900572",
@@ -1814360,7 +1814462,7 @@
       "kind": "international",
       "source_url": "https://www.espn.com/soccer/team/_/id/2645/us-virgin-islands",
       "season": "2026-27 Concacaf Nations League",
-      "profile_updated_at": "2026-10-31T10:50:42Z",
+      "profile_updated_at": "2026-10-31T20:17:37Z",
       "last_lineup": {
         "date": "2026-10-04",
         "event_id": "401900585",
@@ -1830430,7 +1830532,7 @@
       "venue": "Stamford Bridge",
       "event_id": "401879248",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401879248/manchester-united-chelsea"
     },
@@ -1830439,7 +1830541,7 @@
       "venue": "Vitality Stadium",
       "event_id": "401879251",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401879251/leeds-united-afc-bournemouth"
     },
@@ -1830448,7 +1830550,7 @@
       "venue": "Gtech Community Stadium",
       "event_id": "401879249",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401879249/nottingham-forest-brentford"
     },
@@ -1830457,7 +1830559,7 @@
       "venue": "Coventry Building Society Arena",
       "event_id": "401879247",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401879247/sunderland-coventry-city"
     },
@@ -1830466,7 +1830568,7 @@
       "venue": "The MKM Stadium",
       "event_id": "401878763",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401878763/ipswich-town-hull-city"
     },
@@ -1830475,7 +1830577,7 @@
       "venue": "Etihad Stadium",
       "event_id": "401879245",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401879245/brighton-hove-albion-manchester-city"
     },
@@ -1830484,7 +1830586,7 @@
       "venue": "Tottenham Hotspur Stadium",
       "event_id": "401878761",
       "stage": "English Premier League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401878761/crystal-palace-tottenham-hotspur"
     },
@@ -1836459,7 +1836561,7 @@
       "venue": "Estadi Ciutat de València",
       "event_id": "401882820",
       "stage": "LALIGA",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401882820/atletico-madrid-levante"
     },
@@ -1836468,7 +1836570,7 @@
       "venue": "Estadio de Vallecas",
       "event_id": "401882818",
       "stage": "LALIGA",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401882818/celta-vigo-rayo-vallecano"
     },
@@ -1836477,7 +1836579,7 @@
       "venue": "Estadio La Cartuja",
       "event_id": "401882825",
       "stage": "LALIGA",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401882825/malaga-real-betis"
     },
@@ -1840807,7 +1840909,7 @@
       "venue": "Renato Dall'Ara",
       "event_id": "401874798",
       "stage": "Serie A",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401874798/monza-bologna"
     },
@@ -1840816,7 +1840918,7 @@
       "venue": "Stadio Friuli",
       "event_id": "401874990",
       "stage": "Serie A",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401874990/as-roma-udinese"
     },
@@ -1843075,7 +1843177,7 @@
       "venue": "BayArena",
       "event_id": "401884753",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884753/vfb-stuttgart-bayer-leverkusen"
     },
@@ -1843084,7 +1843186,7 @@
       "venue": "BORUSSIA-PARK",
       "event_id": "401884749",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884749/sc-paderborn-07-borussia-monchengladbach"
     },
@@ -1843093,7 +1843195,7 @@
       "venue": "WWK Arena",
       "event_id": "401884751",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884751/sc-freiburg-fc-augsburg"
     },
@@ -1843102,7 +1843204,7 @@
       "venue": "Veltins Arena",
       "event_id": "401884747",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884747/rb-leipzig-schalke-04"
     },
@@ -1843111,7 +1843213,7 @@
       "venue": "Weserstadion",
       "event_id": "401884748",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884748/tsg-hoffenheim-werder-bremen"
     },
@@ -1843120,7 +1843222,7 @@
       "venue": "Allianz Arena",
       "event_id": "401884754",
       "stage": "Bundesliga",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401884754/borussia-dortmund-bayern-munich"
     },
@@ -1892484,7 +1892586,7 @@
       "venue": "Estádio Comendador Joaquim de Almeida Freitas",
       "event_id": "401885405",
       "stage": "Liga Portugal",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401885405/estrela-moreirense"
     },
@@ -1915425,7 +1915527,7 @@
       "venue": "De Kuip",
       "event_id": "401875565",
       "stage": "Eredivisie",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401875565/fortuna-sittard-feyenoord-rotterdam"
     },
@@ -1915434,7 +1915536,7 @@
       "venue": "Abe Lenstra Stadion",
       "event_id": "401875563",
       "stage": "Eredivisie",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401875563/nec-nijmegen-heerenveen"
     },
@@ -1915443,7 +1915545,7 @@
       "venue": "Philips Stadion",
       "event_id": "401875564",
       "stage": "Eredivisie",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401875564/willem-ii-psv-eindhoven"
     },
@@ -1942029,7 +1942131,7 @@
       "venue": "AFAS Stadion",
       "event_id": "401878958",
       "stage": "Belgian Pro League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401878958/racing-genk-kv-mechelen"
     },
@@ -1942038,7 +1942140,7 @@
       "venue": "Stade Maurice Dufrasne",
       "event_id": "401878953",
       "stage": "Belgian Pro League",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401878953/kv-kortrijk-standard-liege"
     },
@@ -1966212,7 +1966314,7 @@
       "venue": "Erzurum Kazim Karabekir",
       "event_id": "401888373",
       "stage": "Turkish Super Lig",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401888373/corum-fk-erzurum-bb"
     },
@@ -1966221,7 +1966323,7 @@
       "venue": "Yildiz Entegre Kocaeli Stadyumu",
       "event_id": "401888257",
       "stage": "Turkish Super Lig",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401888257/caykur-rizespor-kocaelispor"
     },
@@ -1966230,7 +1966332,7 @@
       "venue": "Şükrü Saracoğlu Stadium",
       "event_id": "401888258",
       "stage": "Turkish Super Lig",
-      "status": "Scheduled",
+      "status": "Full Time",
       "neutral": false,
       "source_url": "https://www.espn.com/soccer/match/_/gameId/401888258/goztepe-fenerbahce"
     },
@@ -2003209,7 +2003311,7 @@
   },
   "unmapped": [],
   "errors": [],
-  "expansion_updated_at": "2026-10-31T10:56:27.351Z",
+  "expansion_updated_at": "2026-10-31T20:27:58.600Z",
   "expansion_errors": [
     {
       "item": "494",
@@ -2003252,8 +2003354,8 @@
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5546/roster"
     },
     {
-      "item": "tm-1496",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
+      "item": "tm-5225",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
     },
     {
       "item": "tm-814",
@@ -2003264,16 +2003366,16 @@
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5544/roster"
     },
     {
-      "item": "tm-5225",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
-    },
-    {
-      "item": "tm-715",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-715/roster"
+      "item": "tm-1496",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
     },
     {
       "item": "tm-5545",
       "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5545/roster"
+    },
+    {
+      "item": "tm-715",
+      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-715/roster"
     }
   ],
   "enrichment_updated_at": "2026-10-08T11:10:50.513Z",

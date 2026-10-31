@@ -938,10 +938,11 @@
       "team2": "Stade Brestois 29"
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-31",
+      "time": "20:45",
       "team1": "ES Troyes AC",
-      "team2": "Le Mans FC",
-      "neutral": false
+      "team2": "Le Mans FC"
     },
     {
       "date": "2026-11-01",

@@ -1086,19 +1086,32 @@
       "date": "2026-10-31",
       "team1": "Bologna FC 1909",
       "team2": "AC Monza",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Udinese Calcio",
       "team2": "AS Roma",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          5
+        ]
+      }
     },
     {
+      "round": "Matchday 10",
       "date": "2026-10-31",
+      "time": "20:45",
       "team1": "AC Milan",
-      "team2": "FC Internazionale Milano",
-      "neutral": false
+      "team2": "FC Internazionale Milano"
     },
     {
       "date": "2026-11-01",

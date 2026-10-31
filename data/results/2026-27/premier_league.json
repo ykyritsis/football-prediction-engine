@@ -966,49 +966,92 @@
       "date": "2026-10-31",
       "team1": "Chelsea FC",
       "team2": "Manchester United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Manchester City FC",
       "team2": "Brighton & Hove Albion FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "AFC Bournemouth",
       "team2": "Leeds United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Coventry City FC",
       "team2": "Sunderland AFC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Hull City AFC",
       "team2": "Ipswich Town FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Brentford FC",
       "team2": "Nottingham Forest FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Tottenham Hotspur FC",
       "team2": "Crystal Palace FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
+      "round": "Matchday 9",
       "date": "2026-10-31",
+      "time": "20:00",
       "team1": "Aston Villa FC",
-      "team2": "Fulham FC",
-      "neutral": false
+      "team2": "Fulham FC"
     },
     {
       "date": "2026-11-01",
