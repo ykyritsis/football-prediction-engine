@@ -1146,25 +1146,49 @@
       "date": "2026-11-01",
       "team1": "PEC Zwolle",
       "team2": "ADO Den Haag",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Excelsior",
       "team2": "FC Twente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          9
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Telstar",
       "team2": "FC Utrecht",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "FC Groningen",
       "team2": "Sparta Rotterdam",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-06",

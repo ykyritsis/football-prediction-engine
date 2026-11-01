@@ -953,25 +953,44 @@
       "date": "2026-11-01",
       "team1": "RC Strasbourg Alsace",
       "team2": "AJ Auxerre",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Paris FC",
       "team2": "AS Monaco FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
+      "round": "Matchday 9",
       "date": "2026-11-01",
+      "time": "20:45",
       "team1": "Olympique de Marseille",
-      "team2": "Toulouse FC",
-      "neutral": false
+      "team2": "Toulouse FC"
     },
     {
       "date": "2026-11-01",
       "team1": "Olympique Lyonnais",
       "team2": "Angers SCO",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-02",

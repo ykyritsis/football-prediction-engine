@@ -1032,25 +1032,49 @@
       "date": "2026-11-01",
       "team1": "Cercle Brugge KSV",
       "team2": "Antwerp",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Sint-Truidense",
       "team2": "OH Leuven",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Lommel SK",
       "team2": "KAA Gent",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Royal Charleroi SC",
       "team2": "RAAL La Louvière",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-04",

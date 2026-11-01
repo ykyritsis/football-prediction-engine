@@ -1309,13 +1309,19 @@
       "date": "2026-11-01",
       "team1": "Elche CF",
       "team2": "Valencia CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
+      "round": "Matchday 11",
       "date": "2026-11-01",
       "team1": "Athletic Club",
-      "team2": "Real Sociedad de Fútbol",
-      "neutral": false
+      "team2": "Real Sociedad de Fútbol"
     },
     {
       "round": "Matchday 11",
@@ -1339,13 +1345,25 @@
       "date": "2026-11-01",
       "team1": "Getafe CF",
       "team2": "Sevilla FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Real Racing Club de Santander",
       "team2": "Real Madrid CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "round": "Matchday 11",

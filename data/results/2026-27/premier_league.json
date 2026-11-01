@@ -1062,7 +1062,13 @@
       "date": "2026-11-01",
       "team1": "Liverpool FC",
       "team2": "Arsenal FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-02",

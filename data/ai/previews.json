@@ -1258,5 +1258,65 @@
     "text": "Bodo/Glimt host Lille OSC in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-03",
     "generated_at": "2026-11-01T11:51:51.407Z"
+  },
+  "champions_league|2026-11-03|Club Atlético de Madrid|FC Bayern München": {
+    "text": "Club Atlético de Madrid host FC Bayern München in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:30.984Z"
+  },
+  "champions_league|2026-11-03|FC Barcelona|Aston Villa FC": {
+    "text": "FC Barcelona host Aston Villa FC in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:32.280Z"
+  },
+  "champions_league|2026-11-03|Feyenoord Rotterdam|FC Internazionale Milano": {
+    "text": "Feyenoord Rotterdam host FC Internazionale Milano in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:33.292Z"
+  },
+  "champions_league|2026-11-03|Galatasaray|VfB Stuttgart": {
+    "text": "Galatasaray host VfB Stuttgart in the Champions League on 2026-11-03. The statistical model's forecast score is 2-1, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:34.043Z"
+  },
+  "champions_league|2026-11-03|LASK Linz|Slovan Bratislava": {
+    "text": "LASK Linz host Slovan Bratislava in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:34.960Z"
+  },
+  "champions_league|2026-11-03|Manchester United FC|AS Roma": {
+    "text": "Manchester United FC host AS Roma in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:36.128Z"
+  },
+  "champions_league|2026-11-03|Shakhtar Donetsk|Sporting CP": {
+    "text": "Shakhtar Donetsk host Sporting CP in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:36.965Z"
+  },
+  "champions_league|2026-11-03|Villarreal CF|Paris Saint-Germain FC": {
+    "text": "Villarreal CF host Paris Saint-Germain FC in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T21:12:38.187Z"
+  },
+  "champions_league|2026-11-04|AEK Athens|Real Madrid CF": {
+    "text": "AEK Athens host Real Madrid CF in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 1-3 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-01T21:12:38.919Z"
+  },
+  "champions_league|2026-11-04|Borussia Dortmund|Real Betis Balompié": {
+    "text": "Borussia Dortmund host Real Betis Balompié in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-01T21:12:39.663Z"
+  },
+  "champions_league|2026-11-04|FC Porto|SSC Napoli": {
+    "text": "FC Porto host SSC Napoli in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 2-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-01T21:12:40.527Z"
+  },
+  "champions_league|2026-11-04|Fenerbahce|Liverpool FC": {
+    "text": "Fenerbahce host Liverpool FC in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 1-3 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-01T21:12:41.565Z"
   }
 }

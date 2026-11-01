@@ -1014,19 +1014,37 @@
       "date": "2026-11-01",
       "team1": "Arouca",
       "team2": "C.D. Nacional",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Académico de Viseu",
       "team2": "Rio Ave",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-01",
       "team1": "Maritimo",
       "team2": "Santa Clara",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",
