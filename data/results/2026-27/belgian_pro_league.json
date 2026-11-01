@@ -1008,13 +1008,25 @@
       "date": "2026-10-31",
       "team1": "Anderlecht",
       "team2": "KVC Westerlo",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-10-31",
       "team1": "Waasland-Beveren",
       "team2": "Union St.-Gilloise",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-01",

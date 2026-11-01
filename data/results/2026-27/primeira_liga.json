@@ -1002,7 +1002,13 @@
       "date": "2026-10-31",
       "team1": "FC Porto",
       "team2": "Estoril",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-01",

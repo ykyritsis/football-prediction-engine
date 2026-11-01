@@ -1282,6 +1282,18 @@
       }
     },
     {
+      "date": "2026-10-31",
+      "team1": "FC Barcelona",
+      "team2": "Deportivo Alavés",
+      "neutral": false,
+      "score": {
+        "ft": [
+          6,
+          1
+        ]
+      }
+    },
+    {
       "round": "Matchday 11",
       "date": "2026-11-01",
       "team1": "Real Betis Balompié",

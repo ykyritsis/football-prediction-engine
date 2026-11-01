@@ -1198,5 +1198,65 @@
     "text": "Besiktas host Genclerbirligi in the Süper Lig on 2026-11-08. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
     "date": "2026-11-08",
     "generated_at": "2026-10-31T20:28:26.754Z"
+  },
+  "chance_liga|2026-11-01|FK Mlada Boleslav|FC Hradec Kralove": {
+    "text": "Chance Liga fixture on 2026-11-01 sees FK Mlada Boleslav host FC Hradec Kralove. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-11-01T11:51:39.760Z"
+  },
+  "chance_liga|2026-11-01|FC Banik Ostrava|Viktoria Plzen": {
+    "text": "In the Chance Liga match on 2026-11-01, FC Banik Ostrava will host Viktoria Plzen. The statistical model's forecast for this game is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-11-01T11:51:40.756Z"
+  },
+  "chance_liga|2026-11-01|Bohemians Prague 1905|Sparta Prague": {
+    "text": "Bohemians Prague 1905 host Sparta Prague in Chance Liga on 2026-11-01. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-01",
+    "generated_at": "2026-11-01T11:51:41.893Z"
+  },
+  "chance_liga|2026-11-07|FC Zlin|1.FC Slovacko": {
+    "text": "FC Zlin host 1.FC Slovacko in Chance Liga on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-11-01T11:51:42.917Z"
+  },
+  "chance_liga|2026-11-07|FC Hradec Kralove|SK Sigma Olomouc": {
+    "text": "FC Hradec Kralove host SK Sigma Olomouc in Chance Liga on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-11-01T11:51:44.112Z"
+  },
+  "chance_liga|2026-11-07|FC Slovan Liberec|Bohemians Prague 1905": {
+    "text": "FC Slovan Liberec host Bohemians Prague 1905 in the Chance Liga on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-11-01T11:51:45.088Z"
+  },
+  "chance_liga|2026-11-07|FC Zbrojovka Brno|FC Banik Ostrava": {
+    "text": "FC Zbrojovka Brno host FC Banik Ostrava in the Chance Liga on 2026-11-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-07",
+    "generated_at": "2026-11-01T11:51:46.190Z"
+  },
+  "chance_liga|2026-11-08|FK Teplice|FK Pardubice": {
+    "text": "In the Chance Liga match on 2026-11-08, FK Teplice will host FK Pardubice. The statistical model's forecast is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-11-01T11:51:47.312Z"
+  },
+  "chance_liga|2026-11-08|Jablonec|FK Mlada Boleslav": {
+    "text": "Jablonec host FK Mlada Boleslav in the Chance Liga on 2026-11-08. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-11-01T11:51:48.219Z"
+  },
+  "chance_liga|2026-11-08|Slavia Prague|SK Artis Brno": {
+    "text": "Slavia Prague host SK Artis Brno in the Chance Liga on 2026-11-08. The statistical model's forecast for this match is a 3-0 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-11-01T11:51:49.282Z"
+  },
+  "chance_liga|2026-11-08|Viktoria Plzen|Sparta Prague": {
+    "text": "Viktoria Plzen host Sparta Prague in the Chance Liga on 2026-11-08. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-08",
+    "generated_at": "2026-11-01T11:51:50.350Z"
+  },
+  "champions_league|2026-11-03|Bodo/Glimt|Lille OSC": {
+    "text": "Bodo/Glimt host Lille OSC in the Champions League on 2026-11-03. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-03",
+    "generated_at": "2026-11-01T11:51:51.407Z"
   }
 }

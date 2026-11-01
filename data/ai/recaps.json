@@ -713,5 +713,50 @@
     "text": "Recent Süper Lig results saw Konyaspor beat Genclerbirligi 2-0 before falling 0-4 to Galatasaray, the biggest margin of the listed matches. Goztepe, Besiktas and Kasimpasa each won without conceding, while Caykur Rizespor lost 3-4 to Trabzonspor and Galatasaray edged Fenerbahce 2-1. There were no draws in these results.",
     "name": "Süper Lig",
     "generated_at": "2026-10-31T10:57:05.468Z"
+  },
+  "belgian_pro_league|2026-11-01": {
+    "text": "Recent Belgian Pro League results saw KAA Gent record the biggest margin with a 4-0 win over Anderlecht, while Union St.-Gilloise beat Cercle Brugge KSV 5-2. The only draw was Standard Liege's 1-1 result against KV Kortrijk. Other wins included Club Brugge over Sint-Truidense and Zulte-Waregem, KV Mechelen over Racing Genk, Anderlecht over KVC Westerlo, and Union St.-Gilloise over Waasland-Beveren.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-01T11:51:40.252Z"
+  },
+  "bundesliga|2026-11-01": {
+    "text": "SV 07 Elversberg's 4-1 win over 1. FSV Mainz 05 was the biggest margin among recent results. There were draws as Borussia Mönchengladbach and SC Paderborn 07 finished 0-0, while FC Bayern München and Borussia Dortmund drew 2-2.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-01T11:51:41.446Z"
+  },
+  "eredivisie|2026-11-01": {
+    "text": "PSV Eindhoven's 7-0 win over Willem II was the biggest margin in the recent Eredivisie results, while SC Cambuur also recorded a 4-0 victory against Go Ahead Eagles. There were draws as NEC Nijmegen and FC Groningen finished 2-2, and both PSV Eindhoven vs Feyenoord Rotterdam and Feyenoord Rotterdam vs Fortuna Sittard ended 1-1.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-01T11:51:42.968Z"
+  },
+  "la_liga|2026-11-01": {
+    "text": "Athletic Club's 4-0 win over Getafe CF was the biggest margin of the recent La Liga results, while FC Barcelona's 6-1 victory over Deportivo Alavés also stood out. RC Celta de Vigo and Real Betis Balompié played out a 0-0 draw.",
+    "name": "La Liga",
+    "generated_at": "2026-11-01T11:51:44.117Z"
+  },
+  "ligue_1|2026-11-01": {
+    "text": "Paris Saint-Germain recorded the biggest margin with a 5-1 win at Le Havre AC. There were draws between AS Monaco and Lille OSC, Angers SCO and FC Lorient, AJ Auxerre and Le Mans FC, and Toulouse FC and ES Troyes AC.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-01T11:51:45.098Z"
+  },
+  "premier_league|2026-11-01": {
+    "text": "Manchester United's 0-3 defeat to AFC Bournemouth was the biggest margin across the recent results. There were also draws: Hull City 1-1 Brentford and Sunderland 0-0 Leeds United, followed by Hull City 2-2 Ipswich Town and Aston Villa 1-1 Fulham.",
+    "name": "Premier League",
+    "generated_at": "2026-11-01T11:51:46.371Z"
+  },
+  "primeira_liga|2026-11-01": {
+    "text": "Recent Primeira Liga results saw FC Famalicao beat Rio Ave 0-4 and FC Porto defeat Estoril 4-0, the biggest margins. Estoril lost 1-3 to Moreirense, C.D. Nacional edged Braga 1-0, Sporting CP fell 1-2 to Académico de Viseu, Santa Clara lost 1-2 to Benfica, Casa Pia lost 0-2 to Sporting CP, and Moreirense beat Estrela 2-1. There were no draws.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-11-01T11:51:47.752Z"
+  },
+  "serie_a|2026-11-01": {
+    "text": "Sassuolo's 2-6 defeat to Lazio was the biggest margin among recent Serie A results, while Atalanta and Frosinone played out a 4-4 draw and Parma vs Udinese and Fiorentina vs Atalanta both ended level at 0-0 and 2-2 respectively.",
+    "name": "Serie A",
+    "generated_at": "2026-11-01T11:51:48.921Z"
+  },
+  "super_lig|2026-11-01": {
+    "text": "Recent Süper Lig results saw Konyaspor beat Genclerbirligi 2-0, Goztepe beat Çorum FK 2-0, Besiktas beat Istanbul Basaksehir 2-0, Trabzonspor beat Caykur Rizespor 3-4, and Galatasaray beat Fenerbahce 2-1. Konyaspor then lost 0-4 to Galatasaray, the biggest margin, while Erzurum BB lost 1-3 to Çorum FK and Fenerbahce lost 1-2 to Goztepe. The only draw was Kocaelispor 0-0 Caykur Rizespor.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-01T11:51:50.271Z"
   }
 }

@@ -1215,6 +1215,58 @@
     "conference_league|2026-11-05|F.C. København|Iberia 1999": {
       "text": "København's strong home form and superior recent results against tougher opposition drive the lean toward a home win.",
       "generated_at": "2026-10-31T20:28:30.579Z"
+    },
+    "conference_league|2026-11-05|FC Lugano|Kauno Zalgiris": {
+      "text": "FC Lugano's strong recent form, including wins over Red Star Belgrade and Getafe, drives the forecast lean against a Kauno Zalgiris side on a losing streak.",
+      "generated_at": "2026-11-01T11:51:39.768Z"
+    },
+    "conference_league|2026-11-05|FC Midtjylland|Ajax Amsterdam": {
+      "text": "Midtjylland's strong home form and solid recent results drive the lean toward a narrow home win over Ajax.",
+      "generated_at": "2026-11-01T11:51:40.746Z"
+    },
+    "conference_league|2026-11-05|FC Thun|Heart of Midlothian": {
+      "text": "FC Thun's home advantage and Hearts' poor recent away form drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-01T11:51:41.896Z"
+    },
+    "conference_league|2026-11-05|FC Twente|Pafos": {
+      "text": "FC Twente's strong recent home and away form, including wins over Thun, Lincoln Red Imps and AZ, drives the lean to a home win.",
+      "generated_at": "2026-11-01T11:51:42.891Z"
+    },
+    "conference_league|2026-11-05|Getafe CF|Brighton & Hove Albion FC": {
+      "text": "Brighton's strong recent form, including a win at Manchester City, contrasts with Getafe's poor run of heavy defeats, driving the away-win lean.",
+      "generated_at": "2026-11-01T11:51:43.919Z"
+    },
+    "conference_league|2026-11-05|KuPS Kuopio|KAA Gent": {
+      "text": "Gent's strong recent form, including four wins in five, contrasts with KuPS's five-match winless run, driving the away-win forecast.",
+      "generated_at": "2026-11-01T11:51:44.886Z"
+    },
+    "conference_league|2026-11-05|Lincoln Red Imps|Hajduk Split": {
+      "text": "Hajduk Split's strong recent form and Lincoln Red Imps' poor defensive record drive the away-win forecast.",
+      "generated_at": "2026-11-01T11:51:45.775Z"
+    },
+    "conference_league|2026-11-05|Mjällby AIF|Borac Banja Luka": {
+      "text": "Mjällby's home win over Inter D'Escaldes and solid draw, combined with Borac's mixed away form, drive the lean toward a narrow home victory.",
+      "generated_at": "2026-11-01T11:51:46.883Z"
+    },
+    "conference_league|2026-11-05|Panathinaikos|CSKA Sofia": {
+      "text": "Panathinaikos's strong recent home form and three wins in their last four drive the lean toward a home victory.",
+      "generated_at": "2026-11-01T11:51:47.969Z"
+    },
+    "conference_league|2026-11-05|Red Star Belgrade|Inter D'Escaldes": {
+      "text": "Red Star Belgrade's stronger recent form and home advantage drive the forecast lean toward a home win.",
+      "generated_at": "2026-11-01T11:51:48.877Z"
+    },
+    "conference_league|2026-11-05|Riga FC|Jablonec": {
+      "text": "Riga FC's solid recent draws and home advantage drive the lean toward a narrow win over Jablonec.",
+      "generated_at": "2026-11-01T11:51:49.750Z"
+    },
+    "conference_league|2026-11-05|Sint-Truidense|SK Brann": {
+      "text": "Sint-Truidense's recent home wins and Brann's weak away form drive the lean toward a home victory.",
+      "generated_at": "2026-11-01T11:51:50.781Z"
+    },
+    "conference_league|2026-11-05|Trabzonspor|SC Freiburg": {
+      "text": "Trabzonspor's five-match winning run and Freiburg's three losses in four drive the lean toward a home win.",
+      "generated_at": "2026-11-01T11:51:51.942Z"
     }
   },
   "storylines": {
@@ -1912,6 +1964,21 @@
       "text": "Zulte-Waregem sit 10th of 18 in the Belgian Pro League with 11 points, a goal difference of -4 and a record of 3W 2D 5L. The team has lost each of their last five matches and next face Sint-Truidense on 2026-11-08.",
       "kind": "cold",
       "generated_at": "2026-10-31T10:57:13.455Z"
+    },
+    "premier_league|Nottingham Forest FC|2026-10-26": {
+      "text": "Nottingham Forest sit 19th in the Premier League with 6 points from a record of 1 win, 3 draws and 5 losses, and a goal difference of -6. Their last five results were a 0-1 home loss to Coventry City, a 1-3 away loss to Crystal Palace, a 0-1 home loss to Arsenal, a 1-1 away draw with Ipswich Town, and a 0-2 away loss to Brentford, ahead of their 2026-11-07 fixture against Manchester City.",
+      "kind": "cold",
+      "generated_at": "2026-11-01T11:51:53.016Z"
+    },
+    "eredivisie|Heerenveen|2026-10-26": {
+      "text": "Heerenveen sit seventh in the Eredivisie with 18 points from a record of 5 wins, 3 draws and 3 losses, giving them a goal difference of +6. They have won four of their last five matches, most recently a 1-0 home victory over NEC Nijmegen, and next face Feyenoord Rotterdam at home on 2026-11-08.",
+      "kind": "hot",
+      "generated_at": "2026-11-01T11:51:54.402Z"
+    },
+    "europa_league|AFC Bournemouth|2026-10-26": {
+      "text": "AFC Bournemouth sit third of 36 in the Europa League with 9 points, a goal difference of +7, and a record of 3 wins, 0 draws, and 0 losses. Their last five results were all wins, most recently 2-0 at home against Leeds United FC, and their next fixture is away to Sparta Prague on 2026-11-05.",
+      "kind": "hot",
+      "generated_at": "2026-11-01T11:51:55.590Z"
     }
   }
 }
