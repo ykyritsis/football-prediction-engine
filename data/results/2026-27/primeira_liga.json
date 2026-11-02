@@ -1050,19 +1050,37 @@
       "date": "2026-11-01",
       "team1": "Braga",
       "team2": "FC Famalicao",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-02",
       "team1": "Benfica",
       "team2": "Alverca",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-02",
       "team1": "Gil Vicente",
       "team2": "Vitória de Guimaraes",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-06",

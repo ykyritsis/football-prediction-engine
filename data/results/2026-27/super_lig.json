@@ -1074,7 +1074,13 @@
       "date": "2026-11-02",
       "team1": "Genclerbirligi",
       "team2": "Alanyaspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-06",

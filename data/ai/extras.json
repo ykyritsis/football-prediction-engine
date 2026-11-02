@@ -2151,6 +2151,126 @@
       "text": "Zulte-Waregem sit 10th of 18 in the Belgian Pro League with 11 points, a goal difference of -4 and a record of 3W 2D 5L. The team have lost each of their last five matches and next face Sint-Truidense on 2026-11-08.",
       "kind": "cold",
       "generated_at": "2026-11-02T13:31:08.256Z"
+    },
+    "premier_league|Sunderland AFC|2026-11-02": {
+      "text": "Sunderland AFC sit 20th of 20 in the Premier League with 5 points, a goal difference of -10, and a record of 1W 2D 6L. The team's last five results were a 3-5 loss away to Manchester City FC, a 0-2 home loss to Brighton & Hove Albion FC, a 0-2 away loss to AFC Bournemouth, a 0-0 home draw with Leeds United FC, and a 1-3 away loss to Coventry City FC, ahead of their next fixture against Chelsea FC on 2026-11-07.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:53:54.433Z"
+    },
+    "premier_league|Nottingham Forest FC|2026-11-02": {
+      "text": "Nottingham Forest sit 19th of 20 in the Premier League with 6 points from a record of 1 win, 3 draws and 5 losses, and a goal difference of -6. Their last five results were a 0-1 home loss to Coventry City, a 1-3 away loss to Crystal Palace, a 0-1 home loss to Arsenal, a 1-1 away draw with Ipswich Town, and a 0-2 away loss to Brentford, ahead of a home fixture against Manchester City on 2026-11-07.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:53:55.519Z"
+    },
+    "la_liga|Real Madrid CF|2026-11-02": {
+      "text": "Real Madrid CF sit third in La Liga with 27 points and a goal difference of +18 from a 9W 0D 2L record. They have won their last four matches, most recently a 3-0 away win over Real Racing Club de Santander, ahead of their 2026-11-07 fixture at Valencia CF.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:53:56.491Z"
+    },
+    "serie_a|SS Lazio|2026-11-02": {
+      "text": "SS Lazio are top of Serie A with 28 points from 10 matches, holding a record of 9 wins and 1 draw with a goal difference of +16. They have won each of their last five league games, most recently 2-1 at home against Cagliari Calcio, and next face SSC Napoli away on 2026-11-08.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:53:57.536Z"
+    },
+    "serie_a|Udinese Calcio|2026-11-02": {
+      "text": "Udinese Calcio sits 19th of 20 in Serie A with 5 points, a goal difference of -12, and a record of 1W 2D 7L. The team's last five results were L 1-2 vs Torino FC, L 0-3 vs US Lecce, L 0-2 vs AC Milan, D 0-0 vs Parma Calcio 1913, and L 2-5 vs AS Roma, with the next fixture Venezia FC v Udinese Calcio on 2026-11-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:53:58.776Z"
+    },
+    "ligue_1|Le Havre AC|2026-11-02": {
+      "text": "Le Havre AC sit 18th of 18 in Ligue 1 with 2 points, a goal difference of -11, and a record of 0W 2D 7L. They have lost each of their last five matches and next face FC Lorient on 2026-11-08.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:53:59.983Z"
+    },
+    "ligue_1|Paris Saint-Germain FC|2026-11-02": {
+      "text": "Paris Saint-Germain FC are first in Ligue 1 with 20 points from a record of 6W 2D 1L and a goal difference of +11. They have won each of their last five matches, most recently 5-1 away to Le Havre AC, and next face ES Troyes AC at home on 2026-11-07.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:01.048Z"
+    },
+    "super_lig|Eyupspor|2026-11-02": {
+      "text": "Eyupspor sit 18th of 18 in the Süper Lig with 3 points, a goal difference of -25, and a record of 1W 0D 9L. They have lost each of their last five matches, most recently 1-5 away to Amed SFK, and next host Kocaelispor on 2026-11-07.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:01.839Z"
+    },
+    "super_lig|Samsunspor|2026-11-02": {
+      "text": "Samsunspor sit 17th of 18 in the Süper Lig with 4 points, a goal difference of -16, and a record of 1W 1D 8L. They have lost each of their last five matches and next face Konyaspor on 2026-11-07.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:02.889Z"
+    },
+    "super_lig|Gaziantep FK|2026-11-02": {
+      "text": "Gaziantep FK sit 15th of 18 in the Süper Lig with 8 points, a goal difference of -8, and a record of 2W 2D 6L. The team has lost each of their last five matches and next face Kasimpasa on 2026-11-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:03.858Z"
+    },
+    "chance_liga|FC Zlin|2026-11-02": {
+      "text": "FC Zlin sits 16th of 16 in the Chance Liga with 1 point, a goal difference of -11, and a record of 0W 1D 8L. Their last five results were four losses followed by a 1-1 draw away to Jablonec, and their next fixture is at home against 1.FC Slovacko on 2026-11-07.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:05.005Z"
+    },
+    "chance_liga|Slavia Prague|2026-11-02": {
+      "text": "Slavia Prague sit first of 16 in the Chance Liga with 23 points, a goal difference of +19, and a record of 7 wins, 2 draws, and 0 losses. Their last five results were a 2-2 home draw against Bohemians Prague 1905, followed by wins of 3-0 away to Sparta Prague, 4-0 at home to FC Zbrojovka Brno, 2-0 away to FK Teplice, and 2-1 at home to Viktoria Plzen, with SK Artis Brno next on 2026-11-08.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:06.402Z"
+    },
+    "chance_liga|FC Slovan Liberec|2026-11-02": {
+      "text": "FC Slovan Liberec sits second in the Chance Liga with 20 points from a 6W 2D 1L record and a goal difference of +9. The team is unbeaten in its last five matches, with four wins followed by a 0-0 draw away to SK Artis Brno, and next faces Bohemians Prague 1905 on 2026-11-07.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:07.706Z"
+    },
+    "champions_league|Paris Saint-Germain FC|2026-11-02": {
+      "text": "Paris Saint-Germain FC sit first of 36 in the Champions League with 9 points, a goal difference of +9 and a record of 3 wins, 0 draws and 0 losses. Their last five results were all wins, most recently 5-1 away to Le Havre AC on 2026-10-30, ahead of their next fixture away to Villarreal CF on 2026-11-03.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:08.914Z"
+    },
+    "champions_league|Real Madrid CF|2026-11-02": {
+      "text": "Real Madrid CF sit fourth of 36 in the Champions League with 9 points and a goal difference of +5 from a 3W 0D 0L record. They have won each of their last five matches, most recently 3-0 away to Real Racing Club de Santander, ahead of their next fixture away to AEK Athens on 2026-11-04.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:10.117Z"
+    },
+    "champions_league|Como 1907|2026-11-02": {
+      "text": "Como 1907 sit ninth of 36 in the Champions League with 6 points, a goal difference of +5, and a record of 2 wins, 0 draws, and 1 loss. The team has won each of its last five matches, most recently 1-0 at home against Venezia FC, and next faces Racing Club de Lens away on 2026-11-04.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:11.318Z"
+    },
+    "europa_league|AFC Bournemouth|2026-11-02": {
+      "text": "AFC Bournemouth sit third of 36 in the Europa League with 9 points, a goal difference of +7, and a record of 3 wins, 0 draws, and 0 losses. Their last five results were all wins: 3-0 vs SK Sturm Graz, 2-0 vs Sunderland AFC, 3-0 vs AC Milan, 3-0 vs Manchester United FC, and 2-0 vs Leeds United FC, with their next fixture being Sparta Prague v AFC Bournemouth on 2026-11-05.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:12.454Z"
+    },
+    "europa_league|Viktoria Plzen|2026-11-02": {
+      "text": "Viktoria Plzen sit 33rd of 36 in the Europa League with 0 points and a goal difference of -5 after a record of 0W 0D 3L. The team has lost each of their last five matches, most recently 1-2 at home to Levski Sofia, ahead of their next fixture away to Lillestrom on 2026-11-05.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:13.848Z"
+    },
+    "europa_league|Benfica|2026-11-02": {
+      "text": "Benfica sit first of 36 in the Europa League with 9 points, a goal difference of +8 and a record of 3 wins, 0 draws and 0 losses. Their last five results were a 1-3 loss away to FC Porto, followed by a 2-0 home win over Vitória de Guimaraes, a 4-1 home win over Celtic, a 4-1 away win over Omonia Nicosia and a 2-1 away win over Santa Clara, with their next fixture being Benfica v Lech Poznan on 2026-11-05.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:15.216Z"
+    },
+    "conference_league|Trabzonspor|2026-11-02": {
+      "text": "Trabzonspor sit fourth of 36 in the Conference League with 6 points, a goal difference of +4, and a record of 2 wins, 0 draws, and 0 losses. They have won each of their last five matches, most recently 2-0 at home against Gaziantep FK, and next face SC Freiburg on 2026-11-05.",
+      "kind": "hot",
+      "generated_at": "2026-11-02T23:54:16.466Z"
+    },
+    "conference_league|Lincoln Red Imps|2026-11-02": {
+      "text": "Lincoln Red Imps sit 34th of 36 in the Conference League with 0 points, a goal difference of -4, and a record of 0W 0D 2L. Their last five results include a 2-1 home win over Sigma Olomouc and four defeats, most recently a 1-4 home loss to FC Twente, ahead of their next fixture against Hajduk Split on 2026-11-05.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:17.718Z"
+    },
+    "conference_league|KuPS Kuopio|2026-11-02": {
+      "text": "KuPS Kuopio sit 33rd of 36 in the Conference League with 0 points and a goal difference of -4 from a record of 0W 0D 2L. Their last five results read D 2-2 vs Crystal Palace FC, L 0-2 vs Lech Poznan, L 0-1 vs Lech Poznan, L 2-4 vs Trabzonspor and L 0-2 vs Borac Banja Luka, ahead of facing KAA Gent on 2026-11-05.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:18.893Z"
+    },
+    "club_world_cup|Urawa Red Diamonds|2026-11-02": {
+      "text": "Urawa Red Diamonds sit 31st of 32 in the Club World Cup standings with 0 points and a goal difference of +0. Their last five results were all losses, most recently a 0-4 defeat to Monterrey at home.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:20.192Z"
+    },
+    "club_world_cup|Ulsan HD|2026-11-02": {
+      "text": "Ulsan HD sits 30th of 32 in the Club World Cup standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 away to Borussia Dortmund on 2025-06-25.",
+      "kind": "cold",
+      "generated_at": "2026-11-02T23:54:20.992Z"
     }
   }
 }

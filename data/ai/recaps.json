@@ -778,5 +778,30 @@
     "text": "Galatasaray's 4-0 win at Konyaspor was the biggest margin of the recent Süper Lig results, while Kocaelispor 0-0 Caykur Rizespor and Kasimpasa 2-2 Besiktas were the draws. Other results included Besiktas 2-0 Istanbul Basaksehir, Caykur Rizespor 3-4 Trabzonspor, Galatasaray 2-1 Fenerbahce, Erzurum BB 1-3 Çorum FK, Fenerbahce 1-2 Goztepe, Amed SFK 5-1 Eyupspor, Istanbul Basaksehir 5-2 Samsunspor and Trabzonspor 2-0 Gaziantep FK.",
     "name": "Süper Lig",
     "generated_at": "2026-11-02T13:30:29.151Z"
+  },
+  "bundesliga|2026-11-02": {
+    "text": "SV 07 Elversberg's 4-1 win over 1. FSV Mainz 05 was the biggest margin of the recent Bundesliga results. Borussia Mönchengladbach and SC Paderborn 07 drew 0-0, while FC Bayern München and Borussia Dortmund drew 2-2 and 1. FC Union Berlin and 1. FC Köln drew 1-1.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-02T23:53:54.250Z"
+  },
+  "la_liga|2026-11-02": {
+    "text": "FC Barcelona's 6-1 win over Deportivo Alavés was the biggest margin of the recent La Liga results. There were no draws in this set of matches.",
+    "name": "La Liga",
+    "generated_at": "2026-11-02T23:53:55.187Z"
+  },
+  "ligue_1|2026-11-02": {
+    "text": "Paris Saint-Germain beat Le Havre AC 5-1, the biggest margin of the recent Ligue 1 results, while OGC Nice also won 5-2 against Stade Rennais FC 1901 and RC Strasbourg Alsace defeated AJ Auxerre 5-1. There were no draws in this set of matches.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-02T23:53:56.333Z"
+  },
+  "premier_league|2026-11-02": {
+    "text": "Chelsea, Bournemouth, Brentford and Tottenham all won 2-0, while Coventry City's 3-1 win over Sunderland was the biggest margin of the recent results. Hull City drew 2-2 with Ipswich Town and Aston Villa drew 1-1 with Fulham.",
+    "name": "Premier League",
+    "generated_at": "2026-11-02T23:53:57.428Z"
+  },
+  "serie_a|2026-11-02": {
+    "text": "Lazio's 6-2 win over Sassuolo was the biggest margin of the recent Serie A results. There were two draws: Parma 0-0 Udinese and Fiorentina 2-2 Atalanta.",
+    "name": "Serie A",
+    "generated_at": "2026-11-02T23:53:58.329Z"
   }
 }
