@@ -1,133 +1,6 @@
 {
-  "as_of": "2026-11-01",
-  "sources": [
-    {
-      "competition": "premier_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:28.642Z",
-      "events": 374
-    },
-    {
-      "competition": "la_liga",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:29.308Z",
-      "events": 379
-    },
-    {
-      "competition": "serie_a",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:29.982Z",
-      "events": 374
-    },
-    {
-      "competition": "bundesliga",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:30.656Z",
-      "events": 297
-    },
-    {
-      "competition": "ligue_1",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:31.377Z",
-      "events": 288
-    },
-    {
-      "competition": "primeira_liga",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:31.996Z",
-      "events": 308
-    },
-    {
-      "competition": "eredivisie",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:32.758Z",
-      "events": 309
-    },
-    {
-      "competition": "belgian_pro_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/bel.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:33.406Z",
-      "events": 297
-    },
-    {
-      "competition": "super_lig",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:34.137Z",
-      "events": 297
-    },
-    {
-      "competition": "champions_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:34.766Z",
-      "events": 189
-    },
-    {
-      "competition": "europa_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:35.443Z",
-      "events": 189
-    },
-    {
-      "competition": "conference_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:36.033Z",
-      "events": 153
-    },
-    {
-      "competition": "club_world_cup",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.cwc/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:36.617Z",
-      "events": 0
-    },
-    {
-      "competition": "world_cup",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:37.194Z",
-      "events": 104
-    },
-    {
-      "competition": "european_championship",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:37.766Z",
-      "events": 0
-    },
-    {
-      "competition": "nations_league",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:38.497Z",
-      "events": 160
-    },
-    {
-      "competition": "world_cup_qualifying",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.uefa/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:39.150Z",
-      "events": 12
-    },
-    {
-      "competition": "copa_america",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:39.703Z",
-      "events": 0
-    },
-    {
-      "competition": "africa_cup",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:40.283Z",
-      "events": 16
-    },
-    {
-      "competition": "gold_cup",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:40.864Z",
-      "events": 0
-    },
-    {
-      "competition": "concacaf_nations",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/scoreboard?dates=2026&limit=1000",
-      "fetched_at": "2026-11-01T21:11:41.439Z",
-      "events": 106
-    }
-  ],
+  "as_of": "2026-11-02",
+  "sources": [],
   "errors": [
     {
       "item": "494",
@@ -146,52 +19,584 @@
       "error": "404 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/7922/roster"
     },
     {
-      "item": "tm-2311",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-2311/roster"
+      "item": "2659",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/2659/roster"
+    },
+    {
+      "item": "449",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/449/roster"
+    },
+    {
+      "item": "203",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/203/roster"
+    },
+    {
+      "item": "464",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/464/roster"
+    },
+    {
+      "item": "210",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/210/roster"
+    },
+    {
+      "item": "482",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/482/roster"
+    },
+    {
+      "item": "580",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/580/roster"
+    },
+    {
+      "item": "654",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/654/roster"
+    },
+    {
+      "item": "467",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/467/roster"
+    },
+    {
+      "item": "451",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/451/roster"
+    },
+    {
+      "item": "466",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/466/roster"
+    },
+    {
+      "item": "164",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/164/roster"
+    },
+    {
+      "item": "655",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/655/roster"
+    },
+    {
+      "item": "475",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/475/roster"
+    },
+    {
+      "item": "659",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/659/roster"
+    },
+    {
+      "item": "465",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/465/roster"
+    },
+    {
+      "item": "212",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/212/roster"
+    },
+    {
+      "item": "2570",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/2570/roster"
+    },
+    {
+      "item": "660",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/teams/660/roster"
+    },
+    {
+      "item": "479",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/479/roster"
+    },
+    {
+      "item": "584",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/584/roster"
+    },
+    {
+      "item": "585",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/585/roster"
+    },
+    {
+      "item": "480",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/480/roster"
+    },
+    {
+      "item": "471",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/471/roster"
+    },
+    {
+      "item": "162",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/162/roster"
+    },
+    {
+      "item": "473",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/473/roster"
+    },
+    {
+      "item": "6757",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/6757/roster"
+    },
+    {
+      "item": "468",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/468/roster"
+    },
+    {
+      "item": "457",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/457/roster"
+    },
+    {
+      "item": "587",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/587/roster"
+    },
+    {
+      "item": "472",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/teams/472/roster"
+    },
+    {
+      "item": "581",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/581/roster"
+    },
+    {
+      "item": "583",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/583/roster"
+    },
+    {
+      "item": "579",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/579/roster"
+    },
+    {
+      "item": "462",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/462/roster"
+    },
+    {
+      "item": "445",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/445/roster"
+    },
+    {
+      "item": "447",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/447/roster"
+    },
+    {
+      "item": "444",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/444/roster"
+    },
+    {
+      "item": "458",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/458/roster"
+    },
+    {
+      "item": "16721",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/16721/roster"
+    },
+    {
+      "item": "455",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/455/roster"
+    },
+    {
+      "item": "461",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/461/roster"
+    },
+    {
+      "item": "470",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/470/roster"
+    },
+    {
+      "item": "2619",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/2619/roster"
+    },
+    {
+      "item": "18272",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/18272/roster"
+    },
+    {
+      "item": "456",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/456/roster"
+    },
+    {
+      "item": "589",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/589/roster"
+    },
+    {
+      "item": "582",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/582/roster"
+    },
+    {
+      "item": "460",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/460/roster"
+    },
+    {
+      "item": "453",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/453/roster"
+    },
+    {
+      "item": "483",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/483/roster"
+    },
+    {
+      "item": "463",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/463/roster"
+    },
+    {
+      "item": "6775",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/6775/roster"
+    },
+    {
+      "item": "476",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/476/roster"
+    },
+    {
+      "item": "586",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/586/roster"
+    },
+    {
+      "item": "578",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/578/roster"
+    },
+    {
+      "item": "588",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/teams/588/roster"
+    },
+    {
+      "item": "204",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/204/roster"
+    },
+    {
+      "item": "207",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/207/roster"
+    },
+    {
+      "item": "214",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/214/roster"
+    },
+    {
+      "item": "1038",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/1038/roster"
+    },
+    {
+      "item": "211",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/211/roster"
+    },
+    {
+      "item": "213",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/teams/213/roster"
+    },
+    {
+      "item": "653",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/653/roster"
+    },
+    {
+      "item": "2844",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/2844/roster"
+    },
+    {
+      "item": "2845",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/2845/roster"
+    },
+    {
+      "item": "4245",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4245/roster"
+    },
+    {
+      "item": "656",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/656/roster"
+    },
+    {
+      "item": "8601",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/8601/roster"
+    },
+    {
+      "item": "8938",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/8938/roster"
+    },
+    {
+      "item": "4231",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4231/roster"
+    },
+    {
+      "item": "2849",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/2849/roster"
+    },
+    {
+      "item": "657",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/657/roster"
+    },
+    {
+      "item": "8939",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/8939/roster"
+    },
+    {
+      "item": "4319",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4319/roster"
+    },
+    {
+      "item": "5778",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/5778/roster"
+    },
+    {
+      "item": "4211",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4211/roster"
+    },
+    {
+      "item": "4277",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4277/roster"
+    },
+    {
+      "item": "4214",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/teams/4214/roster"
+    },
+    {
+      "item": "2649",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/2649/roster"
+    },
+    {
+      "item": "7657",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/7657/roster"
+    },
+    {
+      "item": "2652",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/2652/roster"
+    },
+    {
+      "item": "2650",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/2650/roster"
+    },
+    {
+      "item": "215",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/215/roster"
+    },
+    {
+      "item": "2664",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/2664/roster"
+    },
+    {
+      "item": "2627",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/teams/2627/roster"
+    },
+    {
+      "item": "8942",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/8942/roster"
+    },
+    {
+      "item": "2638",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2638/roster"
+    },
+    {
+      "item": "2642",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2642/roster"
+    },
+    {
+      "item": "2640",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2640/roster"
+    },
+    {
+      "item": "2637",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2637/roster"
+    },
+    {
+      "item": "2641",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2641/roster"
+    },
+    {
+      "item": "2643",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2643/roster"
+    },
+    {
+      "item": "19314",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/19314/roster"
+    },
+    {
+      "item": "2644",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2644/roster"
+    },
+    {
+      "item": "2646",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2646/roster"
+    },
+    {
+      "item": "2647",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2647/roster"
+    },
+    {
+      "item": "13582",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/13582/roster"
+    },
+    {
+      "item": "10532",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/10532/roster"
+    },
+    {
+      "item": "2651",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2651/roster"
+    },
+    {
+      "item": "2653",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2653/roster"
+    },
+    {
+      "item": "2728",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2728/roster"
+    },
+    {
+      "item": "2655",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2655/roster"
+    },
+    {
+      "item": "2658",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2658/roster"
+    },
+    {
+      "item": "11766",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/11766/roster"
+    },
+    {
+      "item": "18243",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/18243/roster"
+    },
+    {
+      "item": "2662",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2662/roster"
+    },
+    {
+      "item": "2661",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2661/roster"
+    },
+    {
+      "item": "10596",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/10596/roster"
+    },
+    {
+      "item": "13584",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/13584/roster"
+    },
+    {
+      "item": "2665",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2665/roster"
+    },
+    {
+      "item": "2645",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/teams/2645/roster"
     },
     {
       "item": "tm-697",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-697/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-697/roster"
     },
     {
       "item": "tm-377",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-377/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-377/roster"
     },
     {
-      "item": "tm-24325",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-24325/roster"
-    },
-    {
-      "item": "tm-1897",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1897/roster"
+      "item": "tm-2311",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-2311/roster"
     },
     {
       "item": "tm-1496",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1496/roster"
     },
     {
-      "item": "tm-5546",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5546/roster"
+      "item": "tm-1897",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-1897/roster"
+    },
+    {
+      "item": "tm-24325",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-24325/roster"
     },
     {
       "item": "tm-5225",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
-    },
-    {
-      "item": "tm-5544",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5544/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5225/roster"
     },
     {
       "item": "tm-814",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-814/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-814/roster"
     },
     {
-      "item": "tm-5545",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5545/roster"
+      "item": "tm-5546",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5546/roster"
+    },
+    {
+      "item": "tm-5544",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5544/roster"
     },
     {
       "item": "tm-715",
-      "error": "400 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-715/roster"
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-715/roster"
+    },
+    {
+      "item": "tm-5545",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/cze.1/teams/tm-5545/roster"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/esp.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/ita.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/ger.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fra.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/por.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/ned.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/bel.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/tur.1/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.champions/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.europa.conf/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.cwc/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.euro/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/uefa.nations/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.worldq.uefa/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/conmebol.america/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/caf.nations/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.gold/scoreboard?dates=2026&limit=1000"
+    },
+    {
+      "item": "2026",
+      "error": "403 https://site.api.espn.com/apis/site/v2/sports/soccer/concacaf.nations.league/scoreboard?dates=2026&limit=1000"
     }
   ]
 }

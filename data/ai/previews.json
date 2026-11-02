@@ -1318,5 +1318,65 @@
     "text": "Fenerbahce host Liverpool FC in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 1-3 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-04",
     "generated_at": "2026-11-01T21:12:41.565Z"
+  },
+  "champions_league|2026-11-04|PSV Eindhoven|Club Brugge": {
+    "text": "PSV Eindhoven host Club Brugge in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:24.441Z"
+  },
+  "champions_league|2026-11-04|Racing Club de Lens|Como 1907": {
+    "text": "Champions League action on 2026-11-04 features Racing Club de Lens hosting Como 1907. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:25.702Z"
+  },
+  "champions_league|2026-11-04|RB Leipzig|Manchester City FC": {
+    "text": "RB Leipzig host Manchester City FC in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:26.781Z"
+  },
+  "champions_league|2026-11-04|Slavia Prague|Arsenal FC": {
+    "text": "Slavia Prague host Arsenal FC in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 0-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:28.029Z"
+  },
+  "champions_league|2026-11-04|Viking FK|Sabah FK": {
+    "text": "Viking FK host Sabah FK in the Champions League on 2026-11-04. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:29.240Z"
+  },
+  "europa_league|2026-11-04|Stade Rennais FC 1901|Olympiacos": {
+    "text": "Stade Rennais FC 1901 host Olympiacos in the Europa League on 2026-11-04. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-04",
+    "generated_at": "2026-11-02T13:30:30.181Z"
+  },
+  "europa_league|2026-11-05|AC Milan|Ferencvaros": {
+    "text": "AC Milan host Ferencvaros in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:31.176Z"
+  },
+  "europa_league|2026-11-05|Anderlecht|RB Salzburg": {
+    "text": "Anderlecht host RB Salzburg in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:32.277Z"
+  },
+  "europa_league|2026-11-05|AZ Alkmaar|Juventus FC": {
+    "text": "AZ Alkmaar host Juventus FC in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:33.250Z"
+  },
+  "europa_league|2026-11-05|Bayer 04 Leverkusen|Olympique de Marseille": {
+    "text": "Bayer 04 Leverkusen host Olympique de Marseille in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:34.116Z"
+  },
+  "europa_league|2026-11-05|Benfica|Lech Poznan": {
+    "text": "Benfica host Lech Poznan in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:35.239Z"
+  },
+  "europa_league|2026-11-05|Celtic|Besiktas": {
+    "text": "Celtic host Besiktas in the Europa League on 2026-11-05. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-02T13:30:36.316Z"
   }
 }

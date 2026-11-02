@@ -758,5 +758,25 @@
     "text": "Recent Süper Lig results saw Konyaspor beat Genclerbirligi 2-0, Goztepe beat Çorum FK 2-0, Besiktas beat Istanbul Basaksehir 2-0, Trabzonspor beat Caykur Rizespor 3-4, and Galatasaray beat Fenerbahce 2-1. Konyaspor then lost 0-4 to Galatasaray, the biggest margin, while Erzurum BB lost 1-3 to Çorum FK and Fenerbahce lost 1-2 to Goztepe. The only draw was Kocaelispor 0-0 Caykur Rizespor.",
     "name": "Süper Lig",
     "generated_at": "2026-11-01T11:51:50.271Z"
+  },
+  "belgian_pro_league|2026-11-02": {
+    "text": "Recent Belgian Pro League results saw Royal Charleroi SC record the biggest margin with a 5-2 win over RAAL La Louvière, while Anderlecht beat KVC Westerlo 4-1 and Club Brugge won 4-2 at Zulte-Waregem. The only draw was Standard Liege's 1-1 result against KV Kortrijk. Other wins included KV Mechelen over Racing Genk, Union St.-Gilloise at Waasland-Beveren, Cercle Brugge KSV over Antwerp, OH Leuven at Sint-Truidense, and Lommel SK over KAA Gent.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-02T13:30:24.825Z"
+  },
+  "eredivisie|2026-11-02": {
+    "text": "FC Twente's 9-0 win at Excelsior was the biggest margin of the recent Eredivisie round, while PSV Eindhoven also cruised to a 7-0 victory over Willem II. Feyenoord Rotterdam drew 1-1 with Fortuna Sittard, the only draw across the listed results.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-02T13:30:26.291Z"
+  },
+  "primeira_liga|2026-11-02": {
+    "text": "FC Porto's 4-0 win over Estoril was the biggest margin in the recent Primeira Liga results. There were no draws across the listed matches, with Santa Clara, Casa Pia, Moreirense, Arouca, and Académico de Viseu also picking up wins.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-11-02T13:30:27.534Z"
+  },
+  "super_lig|2026-11-02": {
+    "text": "Galatasaray's 4-0 win at Konyaspor was the biggest margin of the recent Süper Lig results, while Kocaelispor 0-0 Caykur Rizespor and Kasimpasa 2-2 Besiktas were the draws. Other results included Besiktas 2-0 Istanbul Basaksehir, Caykur Rizespor 3-4 Trabzonspor, Galatasaray 2-1 Fenerbahce, Erzurum BB 1-3 Çorum FK, Fenerbahce 1-2 Goztepe, Amed SFK 5-1 Eyupspor, Istanbul Basaksehir 5-2 Samsunspor and Trabzonspor 2-0 Gaziantep FK.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-02T13:30:29.151Z"
   }
 }

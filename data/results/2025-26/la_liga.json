@@ -1,6 +1,5 @@
 {
-  "name": "La Liga",
-  "source": "ESPN",
+  "name": "Spain Primera División 2025/26",
   "matches": [
     {
       "round": "Matchday 1",
@@ -2856,86 +2855,121 @@
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-02",
+      "time": "21:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-03",
+      "time": "14:00",
       "team1": "RC Celta de Vigo",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-03",
+      "time": "16:15",
       "team1": "CA Osasuna",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-03",
+      "time": "18:30",
       "team1": "Elche CF",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           3
-        ]
-      }
-    },
-    {
-      "date": "2026-01-03",
-      "team1": "RCD Espanyol de Barcelona",
-      "team2": "FC Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
+        ],
+        "ht": [
+          1,
           2
         ]
       }
     },
     {
-      "date": "2026-01-04",
-      "team1": "Sevilla FC",
-      "team2": "Levante UD",
-      "neutral": false,
+      "round": "Matchday 18",
+      "date": "2026-01-03",
+      "time": "21:00",
+      "team1": "RCD Espanyol de Barcelona",
+      "team2": "FC Barcelona",
       "score": {
         "ft": [
           0,
-          3
+          2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-04",
+      "time": "14:00",
+      "team1": "Sevilla FC",
+      "team2": "Levante UD",
+      "score": {
+        "ft": [
+          0,
+          3
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 18",
+      "date": "2026-01-04",
+      "time": "16:15",
       "team1": "Real Madrid CF",
       "team2": "Real Betis Balompié",
-      "neutral": false,
       "score": {
         "ft": [
           5,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
@@ -2974,50 +3008,36 @@
       }
     },
     {
+      "round": "Matchday 18",
       "date": "2026-01-04",
+      "time": "21:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
-      "date": "2026-01-04",
-      "team1": "Deportivo Alavés",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-01-04",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          2
-        ]
-      }
-    },
-    {
+      "round": "Matchday 19",
       "date": "2026-01-09",
+      "time": "21:00",
       "team1": "Getafe CF",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -3039,14 +3059,19 @@
       }
     },
     {
+      "round": "Matchday 19",
       "date": "2026-01-10",
+      "time": "16:15",
       "team1": "Villarreal CF",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -3068,37 +3093,18 @@
       }
     },
     {
+      "round": "Matchday 19",
       "date": "2026-01-10",
+      "time": "21:00",
       "team1": "Valencia CF",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-01-10",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-01-10",
-      "team1": "ESPN:9812:Girona",
-      "team2": "CA Osasuna",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+        ],
+        "ht": [
+          0,
           0
         ]
       }
@@ -3121,38 +3127,36 @@
       }
     },
     {
+      "round": "Matchday 19",
       "date": "2026-01-11",
+      "time": "16:15",
       "team1": "Levante UD",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
-      "date": "2026-01-11",
-      "team1": "Rayo Vallecano de Madrid",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 19",
       "date": "2026-01-12",
+      "time": "21:00",
       "team1": "Sevilla FC",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -3174,25 +3178,18 @@
       }
     },
     {
-      "date": "2026-01-16",
-      "team1": "RCD Espanyol de Barcelona",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          2
-        ]
-      }
-    },
-    {
+      "round": "Matchday 20",
       "date": "2026-01-17",
+      "time": "14:00",
       "team1": "Real Madrid CF",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
@@ -3232,158 +3229,189 @@
       }
     },
     {
+      "round": "Matchday 20",
       "date": "2026-01-17",
+      "time": "21:00",
       "team1": "Real Betis Balompié",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
-      "date": "2026-01-17",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Athletic Club",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-01-17",
-      "team1": "CA Osasuna",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          2
-        ]
-      }
-    },
-    {
+      "round": "Matchday 20",
       "date": "2026-01-18",
+      "time": "14:00",
       "team1": "Getafe CF",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 20",
       "date": "2026-01-18",
+      "time": "16:15",
       "team1": "Club Atlético de Madrid",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 20",
+      "date": "2026-01-18",
+      "time": "18:30",
+      "team1": "RC Celta de Vigo",
+      "team2": "Rayo Vallecano de Madrid",
+      "score": {
+        "ft": [
+          3,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 20",
       "date": "2026-01-18",
-      "team1": "RC Celta de Vigo",
-      "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
+      "time": "21:00",
+      "team1": "Real Sociedad de Fútbol",
+      "team2": "FC Barcelona",
       "score": {
         "ft": [
-          3,
+          2,
+          1
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
-      "date": "2026-01-18",
-      "team1": "Real Sociedad de Fútbol",
-      "team2": "FC Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 20",
       "date": "2026-01-19",
+      "time": "21:00",
       "team1": "Elche CF",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 21",
       "date": "2026-01-23",
+      "time": "21:00",
       "team1": "Levante UD",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-01-24",
-      "team1": "Rayo Vallecano de Madrid",
-      "team2": "CA Osasuna",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "date": "2026-01-24",
-      "team1": "Valencia CF",
-      "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-01-24",
-      "team1": "Sevilla FC",
-      "team2": "Athletic Club",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
+        ],
+        "ht": [
+          0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 21",
       "date": "2026-01-24",
+      "time": "14:00",
+      "team1": "Rayo Vallecano de Madrid",
+      "team2": "CA Osasuna",
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 21",
+      "date": "2026-01-24",
+      "time": "16:15",
+      "team1": "Valencia CF",
+      "team2": "RCD Espanyol de Barcelona",
+      "score": {
+        "ft": [
+          3,
+          2
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 21",
+      "date": "2026-01-24",
+      "time": "18:30",
+      "team1": "Sevilla FC",
+      "team2": "Athletic Club",
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 21",
+      "date": "2026-01-24",
+      "time": "21:00",
       "team1": "Villarreal CF",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -3422,49 +3450,35 @@
       }
     },
     {
+      "round": "Matchday 21",
       "date": "2026-01-25",
+      "time": "18:30",
       "team1": "Real Sociedad de Fútbol",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-01-25",
-      "team1": "Deportivo Alavés",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-01-25",
-      "team1": "Club Atlético de Madrid",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 21",
       "date": "2026-01-25",
-      "team1": "FC Barcelona",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
+      "time": "21:00",
+      "team1": "Deportivo Alavés",
+      "team2": "Real Betis Balompié",
       "score": {
         "ft": [
-          3,
+          2,
+          1
+        ],
+        "ht": [
+          1,
           0
         ]
       }
@@ -3487,26 +3501,19 @@
       }
     },
     {
-      "date": "2026-01-26",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Getafe CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 22",
       "date": "2026-01-30",
+      "time": "21:00",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
+        ],
+        "ht": [
+          1,
+          1
         ]
       }
     },
@@ -3528,97 +3535,108 @@
       }
     },
     {
+      "round": "Matchday 22",
       "date": "2026-01-31",
+      "time": "16:15",
       "team1": "CA Osasuna",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          2
+        ],
+        "ht": [
+          2,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 22",
+      "date": "2026-01-31",
+      "time": "18:30",
+      "team1": "Levante UD",
+      "team2": "Club Atlético de Madrid",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "round": "Matchday 22",
+      "date": "2026-01-31",
+      "time": "21:00",
+      "team1": "Elche CF",
+      "team2": "FC Barcelona",
+      "score": {
+        "ft": [
+          1,
+          3
+        ],
+        "ht": [
+          1,
           2
         ]
       }
     },
     {
-      "date": "2026-01-31",
-      "team1": "Levante UD",
-      "team2": "Club Atlético de Madrid",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          0
-        ]
-      }
-    },
-    {
-      "date": "2026-01-31",
-      "team1": "Elche CF",
-      "team2": "FC Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          3
-        ]
-      }
-    },
-    {
-      "date": "2026-01-31",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          0
-        ]
-      }
-    },
-    {
+      "round": "Matchday 22",
       "date": "2026-02-01",
+      "time": "14:00",
       "team1": "Real Madrid CF",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-02-01",
-      "team1": "Real Betis Balompié",
-      "team2": "Valencia CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-02-01",
-      "team1": "Getafe CF",
-      "team2": "RC Celta de Vigo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 22",
       "date": "2026-02-01",
+      "time": "16:15",
+      "team1": "Real Betis Balompié",
+      "team2": "Valencia CF",
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 22",
+      "date": "2026-02-01",
+      "time": "18:30",
+      "team1": "Getafe CF",
+      "team2": "RC Celta de Vigo",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "round": "Matchday 22",
+      "date": "2026-02-01",
+      "time": "21:00",
       "team1": "Athletic Club",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          1
+        ],
+        "ht": [
+          0,
           1
         ]
       }
@@ -3641,26 +3659,19 @@
       }
     },
     {
-      "date": "2026-02-02",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Sevilla FC",
-      "neutral": false,
-      "score": {
-        "ft": [
-          4,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 23",
       "date": "2026-02-06",
+      "time": "21:00",
       "team1": "RC Celta de Vigo",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -3682,50 +3693,53 @@
       }
     },
     {
+      "round": "Matchday 23",
       "date": "2026-02-07",
+      "time": "21:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           3,
+          1
+        ],
+        "ht": [
+          2,
           1
         ]
       }
     },
     {
-      "date": "2026-02-07",
-      "team1": "FC Barcelona",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
+      "round": "Matchday 23",
+      "date": "2026-02-08",
+      "time": "14:00",
+      "team1": "Deportivo Alavés",
+      "team2": "Getafe CF",
       "score": {
         "ft": [
-          3,
+          0,
+          2
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 23",
       "date": "2026-02-08",
-      "team1": "Deportivo Alavés",
-      "team2": "Getafe CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-02-08",
+      "time": "16:15",
       "team1": "Athletic Club",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           2
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
@@ -3747,109 +3761,131 @@
       }
     },
     {
+      "round": "Matchday 23",
       "date": "2026-02-08",
+      "time": "18:30",
       "team1": "Club Atlético de Madrid",
       "team2": "Real Betis Balompié",
-      "neutral": false,
       "score": {
         "ft": [
+          0,
+          1
+        ],
+        "ht": [
           0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 23",
       "date": "2026-02-08",
+      "time": "21:00",
       "team1": "Valencia CF",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
-      "date": "2026-02-08",
-      "team1": "Sevilla FC",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 23",
       "date": "2026-02-09",
+      "time": "21:00",
       "team1": "Villarreal CF",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-02-13",
-      "team1": "Elche CF",
-      "team2": "CA Osasuna",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
+        ],
+        "ht": [
+          2,
           0
         ]
       }
     },
     {
+      "round": "Matchday 24",
+      "date": "2026-02-13",
+      "time": "21:00",
+      "team1": "Elche CF",
+      "team2": "CA Osasuna",
+      "score": [
+        0,
+        0
+      ]
+    },
+    {
+      "round": "Matchday 24",
       "date": "2026-02-14",
+      "time": "14:00",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
     {
+      "round": "Matchday 24",
       "date": "2026-02-14",
+      "time": "16:15",
       "team1": "Getafe CF",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 24",
       "date": "2026-02-14",
+      "time": "18:30",
       "team1": "Sevilla FC",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 24",
       "date": "2026-02-14",
+      "time": "21:00",
       "team1": "Real Madrid CF",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           4,
+          1
+        ],
+        "ht": [
+          3,
           1
         ]
       }
@@ -3872,26 +3908,36 @@
       }
     },
     {
+      "round": "Matchday 24",
       "date": "2026-02-15",
+      "time": "16:15",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           3,
+          0
+        ],
+        "ht": [
+          2,
           0
         ]
       }
     },
     {
+      "round": "Matchday 24",
       "date": "2026-02-15",
+      "time": "18:30",
       "team1": "Levante UD",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -3908,30 +3954,6 @@
         ],
         "ht": [
           0,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-02-15",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Athletic Club",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-02-15",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
           2
         ]
       }
@@ -3954,38 +3976,36 @@
       }
     },
     {
-      "date": "2026-02-16",
-      "team1": "ESPN:9812:Girona",
-      "team2": "FC Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 16",
       "date": "2026-02-18",
+      "time": "20:00",
       "team1": "Levante UD",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-20",
+      "time": "21:00",
       "team1": "Athletic Club",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -4007,73 +4027,86 @@
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-21",
+      "time": "16:15",
       "team1": "Real Betis Balompié",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          1
+        ],
+        "ht": [
           1,
           1
         ]
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-21",
+      "time": "18:30",
       "team1": "CA Osasuna",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-21",
+      "time": "21:00",
       "team1": "Club Atlético de Madrid",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-02-21",
-      "team1": "Real Sociedad de Fútbol",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          3
-        ]
-      }
-    },
-    {
-      "date": "2026-02-22",
-      "team1": "Getafe CF",
-      "team2": "Sevilla FC",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
+        ],
+        "ht": [
+          1,
           1
         ]
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-22",
+      "time": "14:00",
+      "team1": "Getafe CF",
+      "team2": "Sevilla FC",
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 25",
+      "date": "2026-02-22",
+      "time": "16:15",
       "team1": "FC Barcelona",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           3,
+          0
+        ],
+        "ht": [
+          2,
           0
         ]
       }
@@ -4096,26 +4129,19 @@
       }
     },
     {
+      "round": "Matchday 25",
       "date": "2026-02-22",
+      "time": "21:00",
       "team1": "Villarreal CF",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-02-22",
-      "team1": "RC Celta de Vigo",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           2,
-          0
+          1
         ]
       }
     },
@@ -4137,50 +4163,53 @@
       }
     },
     {
-      "date": "2026-02-23",
-      "team1": "Deportivo Alavés",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          2
-        ]
-      }
-    },
-    {
+      "round": "Matchday 26",
       "date": "2026-02-27",
+      "time": "21:00",
       "team1": "Levante UD",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 26",
       "date": "2026-02-28",
+      "time": "14:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 26",
       "date": "2026-02-28",
+      "time": "16:15",
       "team1": "FC Barcelona",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           1
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
@@ -4219,62 +4248,53 @@
       }
     },
     {
-      "date": "2026-02-28",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-02-28",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Club Atlético de Madrid",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 26",
       "date": "2026-03-01",
+      "time": "14:00",
       "team1": "Elche CF",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
+        ],
+        "ht": [
+          1,
+          1
         ]
       }
     },
     {
+      "round": "Matchday 26",
       "date": "2026-03-01",
+      "time": "16:15",
       "team1": "Valencia CF",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 26",
       "date": "2026-03-01",
+      "time": "18:30",
       "team1": "Real Betis Balompié",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
@@ -4296,24 +4316,17 @@
       }
     },
     {
-      "date": "2026-03-01",
-      "team1": "ESPN:9812:Girona",
-      "team2": "RC Celta de Vigo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          2
-        ]
-      }
-    },
-    {
+      "round": "Matchday 26",
       "date": "2026-03-02",
+      "time": "21:00",
       "team1": "Real Madrid CF",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
+          0,
+          1
+        ],
+        "ht": [
           0,
           1
         ]
@@ -4337,26 +4350,19 @@
       }
     },
     {
-      "date": "2026-03-04",
-      "team1": "Rayo Vallecano de Madrid",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          0
-        ]
-      }
-    },
-    {
+      "round": "Matchday 27",
       "date": "2026-03-06",
+      "time": "21:00",
       "team1": "RC Celta de Vigo",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
+        ],
+        "ht": [
+          1,
+          1
         ]
       }
     },
@@ -4395,98 +4401,104 @@
       }
     },
     {
+      "round": "Matchday 27",
       "date": "2026-03-07",
+      "time": "18:30",
       "team1": "Club Atlético de Madrid",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-03-07",
-      "team1": "Athletic Club",
-      "team2": "FC Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-03-07",
-      "team1": "CA Osasuna",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-03-07",
-      "team1": "Levante UD",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           1,
           1
         ]
       }
     },
     {
-      "date": "2026-03-08",
-      "team1": "Villarreal CF",
-      "team2": "Elche CF",
-      "neutral": false,
+      "round": "Matchday 27",
+      "date": "2026-03-07",
+      "time": "21:00",
+      "team1": "Athletic Club",
+      "team2": "FC Barcelona",
       "score": {
         "ft": [
-          2,
+          0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 27",
       "date": "2026-03-08",
-      "team1": "Getafe CF",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
+      "time": "14:00",
+      "team1": "Villarreal CF",
+      "team2": "Elche CF",
       "score": {
         "ft": [
+          2,
+          1
+        ],
+        "ht": [
           2,
           0
         ]
       }
     },
     {
+      "round": "Matchday 27",
       "date": "2026-03-08",
-      "team1": "Sevilla FC",
-      "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
+      "time": "16:15",
+      "team1": "Getafe CF",
+      "team2": "Real Betis Balompié",
       "score": {
         "ft": [
-          1,
-          1
+          2,
+          0
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 27",
       "date": "2026-03-08",
+      "time": "18:30",
+      "team1": "Sevilla FC",
+      "team2": "Rayo Vallecano de Madrid",
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 27",
+      "date": "2026-03-08",
+      "time": "21:00",
       "team1": "Valencia CF",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -4508,26 +4520,19 @@
       }
     },
     {
-      "date": "2026-03-09",
-      "team1": "RCD Espanyol de Barcelona",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 28",
       "date": "2026-03-13",
+      "time": "21:00",
       "team1": "Deportivo Alavés",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
@@ -4549,12 +4554,17 @@
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-14",
+      "time": "16:15",
       "team1": "Club Atlético de Madrid",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
@@ -4578,37 +4588,18 @@
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-14",
+      "time": "21:00",
       "team1": "Real Madrid CF",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-03-14",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Athletic Club",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          0
-        ]
-      }
-    },
-    {
-      "date": "2026-03-14",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Valencia CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+        ],
+        "ht": [
+          2,
           0
         ]
       }
@@ -4631,74 +4622,87 @@
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-15",
+      "time": "16:15",
       "team1": "FC Barcelona",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           5,
           2
+        ],
+        "ht": [
+          3,
+          1
         ]
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-15",
+      "time": "18:30",
       "team1": "Real Betis Balompié",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          1
+        ],
+        "ht": [
+          0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-15",
+      "time": "21:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-03-15",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           2,
-          1
+          0
         ]
       }
     },
     {
+      "round": "Matchday 28",
       "date": "2026-03-16",
+      "time": "21:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
     {
+      "round": "Matchday 29",
       "date": "2026-03-20",
+      "time": "21:00",
       "team1": "Villarreal CF",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
+        ],
+        "ht": [
+          3,
+          0
         ]
       }
     },
@@ -4720,13 +4724,18 @@
       }
     },
     {
+      "round": "Matchday 29",
       "date": "2026-03-21",
+      "time": "16:15",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          2
+        ],
+        "ht": [
+          0,
           2
         ]
       }
@@ -4766,121 +4775,120 @@
       }
     },
     {
+      "round": "Matchday 29",
       "date": "2026-03-21",
+      "time": "21:00",
       "team1": "Sevilla FC",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
+          0,
+          2
+        ],
+        "ht": [
           0,
           2
         ]
       }
     },
     {
-      "date": "2026-03-21",
-      "team1": "Elche CF",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-03-21",
-      "team1": "Levante UD",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          4,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-03-21",
-      "team1": "CA Osasuna",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          0
-        ]
-      }
-    },
-    {
+      "round": "Matchday 29",
       "date": "2026-03-22",
+      "time": "14:00",
       "team1": "FC Barcelona",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 29",
       "date": "2026-03-22",
+      "time": "16:15",
       "team1": "RC Celta de Vigo",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           4
-        ]
-      }
-    },
-    {
-      "date": "2026-03-22",
-      "team1": "Athletic Club",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
+        ],
+        "ht": [
+          3,
           1
         ]
       }
     },
     {
+      "round": "Matchday 29",
       "date": "2026-03-22",
-      "team1": "Real Madrid CF",
-      "team2": "Club Atlético de Madrid",
-      "neutral": false,
+      "time": "18:30",
+      "team1": "Athletic Club",
+      "team2": "Real Betis Balompié",
       "score": {
         "ft": [
-          3,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-04-03",
-      "team1": "Rayo Vallecano de Madrid",
-      "team2": "Elche CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+          2,
+          1
+        ],
+        "ht": [
+          2,
           0
         ]
       }
     },
     {
+      "round": "Matchday 29",
+      "date": "2026-03-22",
+      "time": "21:00",
+      "team1": "Real Madrid CF",
+      "team2": "Club Atlético de Madrid",
+      "score": {
+        "ft": [
+          3,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 30",
+      "date": "2026-04-03",
+      "time": "21:00",
+      "team1": "Rayo Vallecano de Madrid",
+      "team2": "Elche CF",
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 30",
       "date": "2026-04-04",
+      "time": "14:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          1,
           0
         ]
       }
@@ -4903,62 +4911,64 @@
       }
     },
     {
+      "round": "Matchday 30",
       "date": "2026-04-04",
+      "time": "18:30",
       "team1": "Real Betis Balompié",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          0
-        ]
-      }
+      "score": [
+        0,
+        0
+      ]
     },
     {
+      "round": "Matchday 30",
       "date": "2026-04-04",
+      "time": "21:00",
       "team1": "Club Atlético de Madrid",
       "team2": "FC Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-04-04",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Real Madrid CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
+        ],
+        "ht": [
+          1,
           1
         ]
       }
     },
     {
+      "round": "Matchday 30",
       "date": "2026-04-05",
+      "time": "14:00",
       "team1": "Getafe CF",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 30",
       "date": "2026-04-05",
+      "time": "16:15",
       "team1": "Valencia CF",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           3
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
@@ -4980,26 +4990,19 @@
       }
     },
     {
+      "round": "Matchday 30",
       "date": "2026-04-05",
+      "time": "21:00",
       "team1": "Deportivo Alavés",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-04-05",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Sevilla FC",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           1,
-          0
+          1
         ]
       }
     },
@@ -5015,18 +5018,6 @@
           0
         ],
         "ht": [
-          1,
-          0
-        ]
-      }
-    },
-    {
-      "date": "2026-04-06",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Villarreal CF",
-      "neutral": false,
-      "score": {
-        "ft": [
           1,
           0
         ]
@@ -5050,72 +5041,85 @@
       }
     },
     {
-      "date": "2026-04-10",
-      "team1": "Real Madrid CF",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 31",
       "date": "2026-04-11",
+      "time": "14:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           3
+        ],
+        "ht": [
+          2,
+          2
         ]
       }
     },
     {
+      "round": "Matchday 31",
       "date": "2026-04-11",
+      "time": "16:15",
       "team1": "Elche CF",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 31",
       "date": "2026-04-11",
+      "time": "18:30",
       "team1": "FC Barcelona",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           1
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 31",
       "date": "2026-04-11",
+      "time": "21:00",
       "team1": "Sevilla FC",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
+          2,
+          1
+        ],
+        "ht": [
           2,
           1
         ]
       }
     },
     {
+      "round": "Matchday 31",
       "date": "2026-04-12",
+      "time": "14:00",
       "team1": "CA Osasuna",
       "team2": "Real Betis Balompié",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          1
+        ],
+        "ht": [
           1,
           1
         ]
@@ -5156,60 +5160,51 @@
       }
     },
     {
+      "round": "Matchday 31",
       "date": "2026-04-12",
+      "time": "21:00",
       "team1": "Athletic Club",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          2
+        ],
+        "ht": [
+          0,
           2
         ]
       }
     },
     {
-      "date": "2026-04-12",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          0
-        ]
-      }
-    },
-    {
-      "date": "2026-04-12",
-      "team1": "RC Celta de Vigo",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          3
-        ]
-      }
-    },
-    {
+      "round": "Matchday 31",
       "date": "2026-04-13",
+      "time": "21:00",
       "team1": "Levante UD",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           0
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-21",
+      "time": "19:00",
       "team1": "Athletic Club",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
@@ -5233,14 +5228,19 @@
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-21",
+      "time": "21:30",
       "team1": "Real Madrid CF",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
@@ -5262,85 +5262,86 @@
       }
     },
     {
-      "date": "2026-04-21",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Valencia CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-04-21",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Real Betis Balompié",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          3
-        ]
-      }
-    },
-    {
+      "round": "Matchday 33",
       "date": "2026-04-22",
+      "time": "19:00",
       "team1": "Elche CF",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           3,
+          2
+        ],
+        "ht": [
+          2,
           2
         ]
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-22",
+      "time": "20:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
+          0,
+          1
+        ],
+        "ht": [
           0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-22",
+      "time": "21:30",
       "team1": "FC Barcelona",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-23",
+      "time": "19:00",
       "team1": "Levante UD",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           0
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 33",
       "date": "2026-04-23",
+      "time": "20:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
@@ -5363,25 +5364,18 @@
       }
     },
     {
-      "date": "2026-04-23",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Villarreal CF",
-      "neutral": false,
+      "round": "Matchday 32",
+      "date": "2026-04-24",
+      "time": "21:00",
+      "team1": "Real Betis Balompié",
+      "team2": "Real Madrid CF",
       "score": {
         "ft": [
           1,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-04-24",
-      "team1": "Real Betis Balompié",
-      "team2": "Real Madrid CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+        ],
+        "ht": [
+          0,
           1
         ]
       }
@@ -5404,14 +5398,19 @@
       }
     },
     {
+      "round": "Matchday 32",
       "date": "2026-04-25",
+      "time": "16:15",
       "team1": "Getafe CF",
       "team2": "FC Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -5433,50 +5432,36 @@
       }
     },
     {
+      "round": "Matchday 32",
       "date": "2026-04-25",
+      "time": "21:00",
       "team1": "Club Atlético de Madrid",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-04-25",
-      "team1": "Deportivo Alavés",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
+        ],
+        "ht": [
+          0,
           1
         ]
       }
     },
     {
-      "date": "2026-04-25",
-      "team1": "Valencia CF",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 32",
       "date": "2026-04-26",
+      "time": "14:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           3
+        ],
+        "ht": [
+          1,
+          1
         ]
       }
     },
@@ -5498,52 +5483,49 @@
       }
     },
     {
+      "round": "Matchday 32",
       "date": "2026-04-26",
+      "time": "18:30",
       "team1": "CA Osasuna",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-04-26",
-      "team1": "Villarreal CF",
-      "team2": "RC Celta de Vigo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-04-26",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Elche CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-04-27",
-      "team1": "RCD Espanyol de Barcelona",
-      "team2": "Levante UD",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           0,
           0
         ]
       }
+    },
+    {
+      "round": "Matchday 32",
+      "date": "2026-04-26",
+      "time": "21:00",
+      "team1": "Villarreal CF",
+      "team2": "RC Celta de Vigo",
+      "score": {
+        "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          2,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 32",
+      "date": "2026-04-27",
+      "time": "21:00",
+      "team1": "RCD Espanyol de Barcelona",
+      "team2": "Levante UD",
+      "score": [
+        0,
+        0
+      ]
     },
     {
       "round": "Matchday 34",
@@ -5563,86 +5545,104 @@
       }
     },
     {
-      "date": "2026-05-01",
-      "team1": "ESPN:9812:Girona",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 34",
       "date": "2026-05-02",
+      "time": "14:00",
       "team1": "Villarreal CF",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           5,
           1
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-02",
+      "time": "16:15",
       "team1": "Valencia CF",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-02",
+      "time": "18:30",
       "team1": "Deportivo Alavés",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           4
+        ],
+        "ht": [
+          1,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-02",
+      "time": "21:00",
       "team1": "CA Osasuna",
       "team2": "FC Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-03",
+      "time": "14:00",
       "team1": "RC Celta de Vigo",
       "team2": "Elche CF",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
+        ],
+        "ht": [
+          2,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-03",
+      "time": "16:15",
       "team1": "Getafe CF",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -5664,98 +5664,121 @@
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-03",
+      "time": "21:00",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-05-03",
-      "team1": "Real Betis Balompié",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 34",
       "date": "2026-05-04",
+      "time": "21:00",
       "team1": "Sevilla FC",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
       "score": {
         "ft": [
           1,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-08",
+      "time": "21:00",
       "team1": "Levante UD",
       "team2": "CA Osasuna",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           2
+        ],
+        "ht": [
+          2,
+          2
         ]
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-09",
+      "time": "14:00",
       "team1": "Elche CF",
       "team2": "Deportivo Alavés",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-09",
+      "time": "16:15",
       "team1": "Sevilla FC",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-09",
+      "time": "18:30",
       "team1": "Club Atlético de Madrid",
       "team2": "RC Celta de Vigo",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-09",
+      "time": "21:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Real Betis Balompié",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           2
+        ],
+        "ht": [
+          0,
+          1
         ]
       }
     },
@@ -5777,14 +5800,19 @@
       }
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-10",
+      "time": "16:15",
       "team1": "Athletic Club",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           0,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -5800,37 +5828,18 @@
       ]
     },
     {
+      "round": "Matchday 35",
       "date": "2026-05-10",
+      "time": "21:00",
       "team1": "FC Barcelona",
       "team2": "Real Madrid CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           0
-        ]
-      }
-    },
-    {
-      "date": "2026-05-10",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "Villarreal CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-10",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Getafe CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          0,
+        ],
+        "ht": [
+          2,
           0
         ]
       }
@@ -5853,84 +5862,102 @@
       }
     },
     {
-      "date": "2026-05-11",
-      "team1": "Rayo Vallecano de Madrid",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 36",
       "date": "2026-05-12",
+      "time": "19:00",
       "team1": "RC Celta de Vigo",
       "team2": "Levante UD",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           3
-        ]
-      }
-    },
-    {
-      "date": "2026-05-12",
-      "team1": "Real Betis Balompié",
-      "team2": "Elche CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
+        ],
+        "ht": [
+          1,
           1
         ]
       }
     },
     {
+      "round": "Matchday 36",
       "date": "2026-05-12",
-      "team1": "CA Osasuna",
-      "team2": "Club Atlético de Madrid",
-      "neutral": false,
+      "time": "20:00",
+      "team1": "Real Betis Balompié",
+      "team2": "Elche CF",
       "score": {
         "ft": [
+          2,
+          1
+        ],
+        "ht": [
           1,
-          2
+          1
         ]
       }
     },
     {
+      "round": "Matchday 36",
+      "date": "2026-05-12",
+      "time": "21:30",
+      "team1": "CA Osasuna",
+      "team2": "Club Atlético de Madrid",
+      "score": {
+        "ft": [
+          1,
+          2
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 36",
       "date": "2026-05-13",
+      "time": "19:00",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          0,
           0
         ]
       }
     },
     {
+      "round": "Matchday 36",
       "date": "2026-05-13",
+      "time": "19:00",
       "team1": "Villarreal CF",
       "team2": "Sevilla FC",
-      "neutral": false,
       "score": {
         "ft": [
           2,
           3
+        ],
+        "ht": [
+          2,
+          2
         ]
       }
     },
     {
+      "round": "Matchday 36",
       "date": "2026-05-13",
+      "time": "21:30",
       "team1": "Deportivo Alavés",
       "team2": "FC Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
@@ -5954,24 +5981,17 @@
       }
     },
     {
-      "date": "2026-05-13",
-      "team1": "Getafe CF",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          1
-        ]
-      }
-    },
-    {
+      "round": "Matchday 36",
       "date": "2026-05-14",
+      "time": "19:00",
       "team1": "Valencia CF",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          1
+        ],
+        "ht": [
           1,
           1
         ]
@@ -6012,37 +6032,18 @@
       }
     },
     {
-      "date": "2026-05-14",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
+      "round": "Matchday 37",
+      "date": "2026-05-17",
+      "time": "19:00",
+      "team1": "Athletic Club",
+      "team2": "RC Celta de Vigo",
       "score": {
         "ft": [
           1,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-14",
-      "team1": "Real Madrid CF",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          0
-        ]
-      }
-    },
-    {
-      "date": "2026-05-17",
-      "team1": "Athletic Club",
-      "team2": "RC Celta de Vigo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+        ],
+        "ht": [
+          0,
           1
         ]
       }
@@ -6065,12 +6066,17 @@
       }
     },
     {
+      "round": "Matchday 37",
       "date": "2026-05-17",
+      "time": "19:00",
       "team1": "Elche CF",
       "team2": "Getafe CF",
-      "neutral": false,
       "score": {
         "ft": [
+          1,
+          0
+        ],
+        "ht": [
           1,
           0
         ]
@@ -6094,26 +6100,36 @@
       }
     },
     {
+      "round": "Matchday 37",
       "date": "2026-05-17",
+      "time": "19:00",
       "team1": "Rayo Vallecano de Madrid",
       "team2": "Villarreal CF",
-      "neutral": false,
       "score": {
         "ft": [
           2,
+          0
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
+      "round": "Matchday 37",
       "date": "2026-05-17",
+      "time": "19:00",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Valencia CF",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           4
+        ],
+        "ht": [
+          1,
+          2
         ]
       }
     },
@@ -6135,133 +6151,137 @@
       }
     },
     {
+      "round": "Matchday 37",
       "date": "2026-05-17",
+      "time": "19:00",
       "team1": "CA Osasuna",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           1,
           2
-        ]
-      }
-    },
-    {
-      "date": "2026-05-17",
-      "team1": "Sevilla FC",
-      "team2": "Real Madrid CF",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 37",
       "date": "2026-05-17",
+      "time": "19:00",
+      "team1": "Sevilla FC",
+      "team2": "Real Madrid CF",
+      "score": {
+        "ft": [
+          0,
+          1
+        ],
+        "ht": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 37",
+      "date": "2026-05-17",
+      "time": "21:15",
       "team1": "FC Barcelona",
       "team2": "Real Betis Balompié",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-17",
-      "team1": "Club Atlético de Madrid",
-      "team2": "ESPN:9812:Girona",
-      "neutral": false,
-      "score": {
-        "ft": [
+        ],
+        "ht": [
           1,
           0
         ]
       }
     },
     {
-      "date": "2026-05-17",
-      "team1": "Levante UD",
-      "team2": "ESPN:84:Mallorca",
-      "neutral": false,
+      "round": "Matchday 38",
+      "date": "2026-05-23",
+      "time": "21:00",
+      "team1": "Deportivo Alavés",
+      "team2": "Rayo Vallecano de Madrid",
       "score": {
         "ft": [
-          2,
+          1,
+          2
+        ],
+        "ht": [
+          1,
           0
         ]
       }
     },
     {
-      "date": "2026-05-17",
-      "team1": "ESPN:92:Real Oviedo",
-      "team2": "Deportivo Alavés",
-      "neutral": false,
+      "round": "Matchday 38",
+      "date": "2026-05-23",
+      "time": "21:00",
+      "team1": "Real Betis Balompié",
+      "team2": "Levante UD",
       "score": {
         "ft": [
+          2,
+          1
+        ],
+        "ht": [
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "round": "Matchday 38",
+      "date": "2026-05-23",
+      "time": "21:00",
+      "team1": "RC Celta de Vigo",
+      "team2": "Sevilla FC",
+      "score": {
+        "ft": [
+          1,
+          0
+        ],
+        "ht": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "round": "Matchday 38",
+      "date": "2026-05-23",
+      "time": "21:00",
+      "team1": "RCD Espanyol de Barcelona",
+      "team2": "Real Sociedad de Fútbol",
+      "score": {
+        "ft": [
+          1,
+          1
+        ],
+        "ht": [
           0,
           1
         ]
       }
     },
     {
+      "round": "Matchday 38",
       "date": "2026-05-23",
-      "team1": "Deportivo Alavés",
-      "team2": "Rayo Vallecano de Madrid",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          2
-        ]
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "team1": "Real Betis Balompié",
-      "team2": "Levante UD",
-      "neutral": false,
-      "score": {
-        "ft": [
-          2,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "team1": "RC Celta de Vigo",
-      "team2": "Sevilla FC",
-      "neutral": false,
+      "time": "21:00",
+      "team1": "Getafe CF",
+      "team2": "CA Osasuna",
       "score": {
         "ft": [
           1,
           0
-        ]
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "team1": "RCD Espanyol de Barcelona",
-      "team2": "Real Sociedad de Fútbol",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "team1": "Getafe CF",
-      "team2": "CA Osasuna",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
+        ],
+        "ht": [
+          0,
           0
         ]
       }
@@ -6284,26 +6304,36 @@
       }
     },
     {
+      "round": "Matchday 38",
       "date": "2026-05-23",
+      "time": "21:00",
       "team1": "Real Madrid CF",
       "team2": "Athletic Club",
-      "neutral": false,
       "score": {
         "ft": [
           4,
           2
+        ],
+        "ht": [
+          2,
+          1
         ]
       }
     },
     {
+      "round": "Matchday 38",
       "date": "2026-05-23",
+      "time": "21:00",
       "team1": "Valencia CF",
       "team2": "FC Barcelona",
-      "neutral": false,
       "score": {
         "ft": [
           3,
           1
+        ],
+        "ht": [
+          0,
+          0
         ]
       }
     },
@@ -6325,37 +6355,18 @@
       }
     },
     {
-      "date": "2026-05-23",
-      "team1": "ESPN:9812:Girona",
-      "team2": "Elche CF",
-      "neutral": false,
-      "score": {
-        "ft": [
-          1,
-          1
-        ]
-      }
-    },
-    {
-      "date": "2026-05-23",
-      "team1": "ESPN:84:Mallorca",
-      "team2": "ESPN:92:Real Oviedo",
-      "neutral": false,
-      "score": {
-        "ft": [
-          3,
-          0
-        ]
-      }
-    },
-    {
+      "round": "Matchday 38",
       "date": "2026-05-24",
+      "time": "21:00",
       "team1": "Villarreal CF",
       "team2": "Club Atlético de Madrid",
-      "neutral": false,
       "score": {
         "ft": [
           5,
+          1
+        ],
+        "ht": [
+          4,
           1
         ]
       }
