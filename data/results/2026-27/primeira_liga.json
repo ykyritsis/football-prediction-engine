@@ -1191,6 +1191,30 @@
       "neutral": false
     },
     {
+      "date": "2026-12-04",
+      "team1": "Sporting CP",
+      "team2": "Maritimo",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "C.D. Nacional",
+      "team2": "Benfica",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "Santa Clara",
+      "team2": "FC Porto",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-05",
+      "team1": "Braga",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
       "date": "2026-12-06",
       "team1": "Alverca",
       "team2": "Moreirense",
@@ -1245,6 +1269,36 @@
       "neutral": false
     },
     {
+      "date": "2026-12-07",
+      "team1": "Alverca",
+      "team2": "Moreirense",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-11",
+      "team1": "Académico de Viseu",
+      "team2": "Arouca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "Estoril",
+      "team2": "Santa Clara",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "Maritimo",
+      "team2": "Rio Ave",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-12",
+      "team1": "Gil Vicente",
+      "team2": "Sporting CP",
+      "neutral": false
+    },
+    {
       "date": "2026-12-13",
       "team1": "Académico de Viseu",
       "team2": "Arouca",
@@ -1296,6 +1350,12 @@
       "date": "2026-12-13",
       "team1": "Vitória de Guimaraes",
       "team2": "Alverca",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-14",
+      "team1": "Benfica",
+      "team2": "Braga",
       "neutral": false
     },
     {
