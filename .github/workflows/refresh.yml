@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: claude/great-cerf-lgzlzb
+          ref: main
           persist-credentials: true
       - uses: actions/setup-python@v5
         with:
@@ -56,7 +56,7 @@ jobs:
             echo "No data changes today."
           else
             git commit -m "Refresh Touchline data $(date -u +%F)"
-            git push origin HEAD:claude/great-cerf-lgzlzb
+            git push origin HEAD:main
             # Pushes made with GITHUB_TOKEN do not start other workflows, so start the publish run explicitly.
-            gh workflow run "Publish Touchline website" --ref claude/great-cerf-lgzlzb
+            gh workflow run "Publish Touchline website" --ref main
           fi

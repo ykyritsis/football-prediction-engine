@@ -34,7 +34,7 @@ Simulation remains interactive and uses a fresh random seed by default.
 
 The `Publish Touchline website` GitHub Actions workflow tests the predictor,
 builds from committed data and deploys only `dist/` to GitHub Pages. It runs on
-changes to the default branch `claude/great-cerf-lgzlzb`, or can be started
+changes to the default branch `main`, or can be started
 manually from Actions. In Settings → Pages, the publishing source is
 **GitHub Actions**. The public project URL uses the new repository name.
 

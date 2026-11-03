@@ -2,9 +2,9 @@ name: Publish Touchline website
 
 on:
   pull_request:
-    branches: ["claude/great-cerf-lgzlzb"]
+    branches: ["main"]
   push:
-    branches: ["claude/great-cerf-lgzlzb"]
+    branches: ["main"]
     paths:
       - "crates/predictor/**"
       - "data/**"
