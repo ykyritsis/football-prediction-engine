@@ -1498,5 +1498,65 @@
     "text": "Lincoln Red Imps host Hajduk Split in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-05",
     "generated_at": "2026-11-03T02:01:30.662Z"
+  },
+  "conference_league|2026-11-05|Mjällby AIF|Borac Banja Luka": {
+    "text": "Mjällby AIF host Borac Banja Luka in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:35.888Z"
+  },
+  "conference_league|2026-11-05|Panathinaikos|CSKA Sofia": {
+    "text": "Panathinaikos host CSKA Sofia in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:36.991Z"
+  },
+  "conference_league|2026-11-05|Red Star Belgrade|Inter D'Escaldes": {
+    "text": "Red Star Belgrade host Inter D'Escaldes in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:38.370Z"
+  },
+  "conference_league|2026-11-05|Riga FC|Jablonec": {
+    "text": "Riga FC host Jablonec in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 1-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:39.583Z"
+  },
+  "conference_league|2026-11-05|Sint-Truidense|SK Brann": {
+    "text": "Sint-Truidense host SK Brann in the Conference League on 2026-11-05. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:40.776Z"
+  },
+  "conference_league|2026-11-05|Trabzonspor|SC Freiburg": {
+    "text": "Trabzonspor host SC Freiburg in the Conference League on 2026-11-05. A statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-05",
+    "generated_at": "2026-11-03T12:49:42.007Z"
+  },
+  "nations_league|2026-11-12|Armenia|Cyprus": {
+    "text": "Armenia host Cyprus in the UEFA Nations League on 2026-11-12. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:43.033Z"
+  },
+  "nations_league|2026-11-12|Türkiye|Belgium": {
+    "text": "Türkiye host Belgium in the UEFA Nations League on 2026-11-12. The statistical model forecasts a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:43.946Z"
+  },
+  "nations_league|2026-11-12|Albania|Finland": {
+    "text": "Albania host Finland in the UEFA Nations League on 2026-11-12. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:45.232Z"
+  },
+  "nations_league|2026-11-12|Czechia|Spain": {
+    "text": "Czechia host Spain in the UEFA Nations League on 2026-11-12. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:46.371Z"
+  },
+  "nations_league|2026-11-12|England|Croatia": {
+    "text": "England host Croatia in the UEFA Nations League on 2026-11-12. The statistical model's forecast for this match is a 3-1 scoreline.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:47.188Z"
+  },
+  "nations_league|2026-11-12|Italy|France": {
+    "text": "Italy host France in the UEFA Nations League on 2026-11-12. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-03T12:49:48.402Z"
   }
 }
