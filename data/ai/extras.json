@@ -1319,6 +1319,62 @@
     "concacaf_nations|2026-11-12|Antigua and Barbuda|Trinidad and Tobago": {
       "text": "Antigua and Barbuda's four wins in their last five, including three straight, against Trinidad and Tobago's winless five-match run drives the lean to a home win.",
       "generated_at": "2026-11-02T13:30:36.968Z"
+    },
+    "nations_league|2026-11-13|Moldova|Kazakhstan": {
+      "text": "Kazakhstan's stronger overall form and Moldova's heavy recent defeats drive the lean toward an away win.",
+      "generated_at": "2026-11-03T02:01:19.049Z"
+    },
+    "nations_league|2026-11-13|Andorra|Gibraltar": {
+      "text": "Andorra's home advantage and Gibraltar's weak recent form drive the lean toward an Andorra win.",
+      "generated_at": "2026-11-03T02:01:20.074Z"
+    },
+    "nations_league|2026-11-13|Bulgaria|Iceland": {
+      "text": "Iceland's recent 3-0 win over Bulgaria and stronger overall form drive the away-win forecast.",
+      "generated_at": "2026-11-03T02:01:21.078Z"
+    },
+    "nations_league|2026-11-13|Liechtenstein|Azerbaijan": {
+      "text": "Liechtenstein's five straight winless games and Azerbaijan's recent win over Lithuania drive the lean toward an away victory.",
+      "generated_at": "2026-11-03T02:01:22.249Z"
+    },
+    "nations_league|2026-11-13|Luxembourg|Estonia": {
+      "text": "Estonia's three draws in their last four and Luxembourg's recent struggles point to a tight, low-scoring draw.",
+      "generated_at": "2026-11-03T02:01:23.334Z"
+    },
+    "nations_league|2026-11-13|Netherlands|Greece": {
+      "text": "Netherlands' strong recent form and home advantage drive the lean toward a narrow win over Greece.",
+      "generated_at": "2026-11-03T02:01:24.449Z"
+    },
+    "nations_league|2026-11-13|Scotland|North Macedonia": {
+      "text": "Scotland's recent 2-0 win over North Macedonia and North Macedonia's five straight losses drive the lean toward a Scotland home win.",
+      "generated_at": "2026-11-03T02:01:25.562Z"
+    },
+    "nations_league|2026-11-13|Serbia|Germany": {
+      "text": "Germany's recent 2-0 win over Serbia and Serbia's four straight losses drive the away-win lean.",
+      "generated_at": "2026-11-03T02:01:26.546Z"
+    },
+    "nations_league|2026-11-13|Slovakia|Faroe Islands": {
+      "text": "Slovakia's strong home form and superior recent results drive the lean toward a home win.",
+      "generated_at": "2026-11-03T02:01:27.709Z"
+    },
+    "nations_league|2026-11-13|Slovenia|Switzerland": {
+      "text": "Switzerland's perfect recent form, including a win over Slovenia, drives the away-win forecast.",
+      "generated_at": "2026-11-03T02:01:28.679Z"
+    },
+    "concacaf_nations|2026-11-13|Bermuda|St. Lucia": {
+      "text": "St. Lucia's three straight wins, including a 5-2 rout of Bermuda, against Bermuda's five-match losing run drive the away-win lean.",
+      "generated_at": "2026-11-03T02:01:29.854Z"
+    },
+    "concacaf_nations|2026-11-13|Puerto Rico|Dominica": {
+      "text": "Puerto Rico's three straight wins and clean sheets, including a 2-0 victory over Dominica, drive the lean for a home win.",
+      "generated_at": "2026-11-03T02:01:31.169Z"
+    },
+    "concacaf_nations|2026-11-13|Grenada|St. Kitts and Nevis": {
+      "text": "St. Kitts and Nevis's recent form, including a 3-0 win over Grenada, drives the forecast lean toward an away win.",
+      "generated_at": "2026-11-03T02:01:32.353Z"
+    },
+    "concacaf_nations|2026-11-13|St. Martin|El Salvador": {
+      "text": "St. Martin's strong recent scoring form, including four wins, drives the lean toward a home victory over a struggling El Salvador side.",
+      "generated_at": "2026-11-03T02:01:33.329Z"
     }
   },
   "storylines": {
@@ -2271,6 +2327,126 @@
       "text": "Ulsan HD sits 30th of 32 in the Club World Cup standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 away to Borussia Dortmund on 2025-06-25.",
       "kind": "cold",
       "generated_at": "2026-11-02T23:54:20.992Z"
+    },
+    "ligue_1|RC Strasbourg Alsace|2026-11-02": {
+      "text": "RC Strasbourg Alsace sits 13th of 18 in Ligue 1 with 10 points, a goal difference of -2, and a record of 3 wins, 1 draw, and 5 losses. The team has lost four of its last five matches, most recently a 5-1 home win against AJ Auxerre, and next faces Toulouse FC away on 2026-11-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:34.568Z"
+    },
+    "club_world_cup|Benfica|2026-11-02": {
+      "text": "Benfica sit 6th of 32 in the Club World Cup with 0 points and a goal difference of +0. They are on a good run, having won their last five matches, most recently 1-0 at home against Alverca.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:35.657Z"
+    },
+    "world_cup|Spain|2026-11-02": {
+      "text": "Spain sit first of 48 with 12 points and a goal difference of +7, having won all four matches. Their last five results were all wins, most recently a 2-1 away victory over Croatia.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:36.855Z"
+    },
+    "world_cup|Argentina|2026-11-02": {
+      "text": "Argentina sits third of 48 with 6 points and a goal difference of +2, having won both of their matches so far. Their last five results are all wins, most recently a 2-1 victory away to England on 2026-07-15.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:37.932Z"
+    },
+    "world_cup|Switzerland|2026-11-02": {
+      "text": "Switzerland sits sixth of 48 with 3 points, a +2 goal difference, and a 1W 0D 0L record. The team has won its last five matches, most recently 3-0 at home against North Macedonia on 2026-10-06.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:39.116Z"
+    },
+    "european_championship|Romania|2026-11-02": {
+      "text": "Romania sits 16th of 24 in the European Championship standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 at home to Sweden.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:40.130Z"
+    },
+    "european_championship|Czechia|2026-11-02": {
+      "text": "Czechia sits 5th of 24 in the European Championship with 0 points and a goal difference of +0. Their last five matches have all ended in defeat, most recently a 0-3 loss away to England on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:41.135Z"
+    },
+    "european_championship|Spain|2026-11-02": {
+      "text": "Spain has won each of its last five matches, most recently a 2-1 away win against Croatia on 2026-10-06. The team sits 21st of 24 with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:42.595Z"
+    },
+    "nations_league|San Marino|2026-11-02": {
+      "text": "San Marino sit 54th of 54 in the UEFA Nations League with 0 points and a goal difference of -15, having recorded 0W 0D 4L. Their last five results were all losses, most recently a 1-2 defeat away to Albania, and they next face Belarus on 2026-11-12.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:43.840Z"
+    },
+    "nations_league|North Macedonia|2026-11-02": {
+      "text": "North Macedonia sit 53rd of 54 in the UEFA Nations League with 0 points and a goal difference of -10, having recorded 0W 0D 4L. Their last five results were all defeats, most recently a 0-3 loss away to Switzerland, and they next face Scotland away on 2026-11-13.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:45.008Z"
+    },
+    "nations_league|Switzerland|2026-11-02": {
+      "text": "Switzerland sits first of 54 teams in the UEFA Nations League with 12 points, a goal difference of +10, and a record of 4 wins, 0 draws, and 0 losses. The team has won its last five matches, most recently 3-0 at home against North Macedonia on 2026-10-06, and next faces Slovenia away on 2026-11-13.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:46.413Z"
+    },
+    "world_cup_qualifying|San Marino|2026-11-02": {
+      "text": "San Marino sits 44th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently a 1-2 away defeat to Albania on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:47.487Z"
+    },
+    "world_cup_qualifying|Romania|2026-11-02": {
+      "text": "Romania sits 43rd of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team's last five results were all losses: 0-1 away to Türkiye, 1-2 away to Sweden, 2-4 at home to Bosnia-Herzegovina, 0-6 away to Poland, and 0-1 at home to Sweden.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:48.752Z"
+    },
+    "world_cup_qualifying|North Macedonia|2026-11-02": {
+      "text": "North Macedonia sits 37th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. Their last five results were all defeats: 0-4 away to Denmark, 0-3 at home to Switzerland, 0-2 away to Slovenia, 0-2 at home to Scotland, and 0-3 away to Switzerland.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:49.829Z"
+    },
+    "copa_america|Argentina|2026-11-02": {
+      "text": "Argentina sit first of 16 in the Copa América table and have won each of their last five matches. Their most recent result was a 2-1 away win against England on 2026-07-15.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:50.619Z"
+    },
+    "copa_america|Bolivia|2026-11-02": {
+      "text": "Bolivia has lost each of its last five matches, including a 0-5 defeat to Uruguay and a 1-3 loss to Panama. The team sits second of 16 in the Copa América standings with 0 points and a goal difference of +0.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:51.900Z"
+    },
+    "copa_america|Peru|2026-11-02": {
+      "text": "Peru sits 13th of 16 in the Copa América standings with 0 points and a goal difference of +0. Their last five results include losses to Brazil, Colombia, Canada and Argentina, along with a 0-0 draw against Chile.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:53.112Z"
+    },
+    "africa_cup|Nigeria|2026-11-02": {
+      "text": "Nigeria have won each of their last five matches, most recently a 2-0 away victory over Algeria on 2026-01-10. The team currently sits 16th of 24 in the Africa Cup of Nations standings with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:54.485Z"
+    },
+    "africa_cup|Uganda|2026-11-02": {
+      "text": "Uganda sits 22nd of 24 in the Africa Cup of Nations standings with 0 points and a goal difference of +0. Their last five results include losses to Egypt, Senegal, Tunisia and Nigeria, along with a draw against Tanzania.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:55.717Z"
+    },
+    "africa_cup|Tunisia|2026-11-02": {
+      "text": "Tunisia sits 21st of 24 in the Africa Cup of Nations standings with 0 points and a goal difference of +0. Their last five results were a 2-3 loss to Nigeria, a 1-1 draw with Tanzania, a 1-5 loss to Sweden, a 0-4 loss to Japan, and a 1-3 loss to the Netherlands.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:56.903Z"
+    },
+    "gold_cup|Mexico|2026-11-02": {
+      "text": "Mexico has won four of its last five matches, most recently a 2-3 loss to England at home. The team sits 11th of 16 in the league standings with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:01:58.163Z"
+    },
+    "concacaf_nations|Bahamas|2026-11-02": {
+      "text": "The Bahamas sits 37th of 37 in the Concacaf Nations League with 0 points and a goal difference of -17. Their last five matches have all ended in defeat, most recently a 0-6 loss away to St. Martin on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:01:59.253Z"
+    },
+    "concacaf_nations|British Virgin Islands|2026-11-02": {
+      "text": "The British Virgin Islands sit 36th of 37 with 0 points, a goal difference of -11, and a record of 0W 0D 4L. Their last five results were all defeats: 0-1 away to the Cayman Islands, 0-3 away to Montserrat, 0-3 at home to Turks and Caicos Islands, 0-2 at home to Montserrat, and 0-3 away to Turks and Caicos Islands.",
+      "kind": "cold",
+      "generated_at": "2026-11-03T02:02:00.663Z"
+    },
+    "concacaf_nations|Guyana|2026-11-02": {
+      "text": "Guyana sit first of 37 teams with 12 points, a +14 goal difference and a 4W 0D 0L record. They have won each of their last five matches, most recently 8-1 at home to Dominica, and next face Cayman Islands away on 2026-11-12.",
+      "kind": "hot",
+      "generated_at": "2026-11-03T02:02:02.001Z"
     }
   }
 }
