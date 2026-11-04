@@ -1645,10 +1645,11 @@
       "team2": "Ipswich Town FC"
     },
     {
+      "round": "Matchday 16",
       "date": "2026-12-19",
+      "time": "15:00",
       "team1": "Nottingham Forest FC",
-      "team2": "Everton FC",
-      "neutral": false
+      "team2": "Everton FC"
     },
     {
       "date": "2026-12-19",
@@ -1699,6 +1700,12 @@
       "date": "2026-12-20",
       "team1": "Brighton & Hove Albion FC",
       "team2": "Ipswich Town FC",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "Nottingham Forest FC",
+      "team2": "Everton FC",
       "neutral": false
     },
     {

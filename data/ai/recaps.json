@@ -853,5 +853,55 @@
     "text": "The biggest margin came from Paris Saint-Germain FC's 6-0 win at Villarreal CF, while LASK Linz also won comfortably 4-0 against Slovan Bratislava. The only draw was Bodo/Glimt 0-0 Lille OSC. Other results included FC Barcelona 3-0 Aston Villa FC, Feyenoord Rotterdam 0-3 FC Internazionale Milano, and Manchester United FC 3-2 AS Roma.",
     "name": "Champions League",
     "generated_at": "2026-11-03T22:19:45.069Z"
+  },
+  "belgian_pro_league|2026-11-04": {
+    "text": "Recent Belgian Pro League results saw Anderlecht beat KVC Westerlo 4-1, while Royal Charleroi SC defeated RAAL La Louvière 5-2 for the biggest margin. Standard Liege drew 1-1 with KV Kortrijk. Other wins included Club Brugge over Zulte-Waregem, KV Mechelen over Racing Genk, Union St.-Gilloise over Waasland-Beveren, Cercle Brugge KSV over Antwerp, OH Leuven over Sint-Truidense, and Lommel SK over KAA Gent.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-04T13:00:26.559Z"
+  },
+  "bundesliga|2026-11-04": {
+    "text": "SV 07 Elversberg's 4-1 win over 1. FSV Mainz 05 was the biggest margin of the recent Bundesliga results. Borussia Mönchengladbach and SC Paderborn 07 drew 0-0, while FC Bayern München and Borussia Dortmund drew 2-2 and 1. FC Union Berlin and 1. FC Köln drew 1-1.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-04T13:00:28.242Z"
+  },
+  "champions_league|2026-11-04": {
+    "text": "Paris Saint-Germain's 6-0 win at Villarreal was the biggest margin of the recent Champions League results, while LASK Linz also won 4-0 against Slovan Bratislava. Bodo/Glimt and Lille OSC played out a 0-0 draw, the only draw among the matches.",
+    "name": "Champions League",
+    "generated_at": "2026-11-04T13:00:29.883Z"
+  },
+  "eredivisie|2026-11-04": {
+    "text": "FC Twente's 9-0 win at Excelsior was the biggest margin of the recent Eredivisie round, while PSV Eindhoven also cruised to a 7-0 victory over Willem II. Feyenoord Rotterdam drew 1-1 with Fortuna Sittard, the only draw among the listed results.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-04T13:00:31.584Z"
+  },
+  "la_liga|2026-11-04": {
+    "text": "Barcelona's 6-1 win over Deportivo Alavés was the biggest margin of the recent La Liga results. Rayo Vallecano beat Celta Vigo 3-0 and Real Madrid won 3-0 at Racing Santander, while no matches ended in a draw.",
+    "name": "La Liga",
+    "generated_at": "2026-11-04T13:00:33.136Z"
+  },
+  "ligue_1|2026-11-04": {
+    "text": "Paris Saint-Germain's 5-1 win at Le Havre AC was the biggest margin of the recent Ligue 1 results, matched in scoreline by RC Strasbourg Alsace's 5-1 victory over AJ Auxerre. OGC Nice also won comfortably, 5-2 against Stade Rennais FC 1901. There were no draws in this set of results.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-04T13:00:34.716Z"
+  },
+  "premier_league|2026-11-04": {
+    "text": "Chelsea, Bournemouth, Brentford and Tottenham all won 2-0, while Coventry City's 3-1 win over Sunderland was the biggest margin of the recent results. Hull City drew 2-2 with Ipswich Town and Aston Villa drew 1-1 with Fulham.",
+    "name": "Premier League",
+    "generated_at": "2026-11-04T13:00:36.354Z"
+  },
+  "primeira_liga|2026-11-04": {
+    "text": "FC Porto recorded the biggest margin of the recent Primeira Liga round with a 4-0 win over Estoril, while Braga also impressed in a 3-0 victory against FC Famalicao. The only draw came between Gil Vicente and Vitória de Guimaraes, who played out a 0-0 stalemate.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-11-04T13:00:37.956Z"
+  },
+  "serie_a|2026-11-04": {
+    "text": "Frosinone Calcio's 5-1 win over US Lecce was the biggest margin among recent Serie A results. There were two draws: Parma Calcio 1913 and Udinese Calcio finished 0-0, while ACF Fiorentina and Atalanta BC played out a 2-2.",
+    "name": "Serie A",
+    "generated_at": "2026-11-04T13:00:39.523Z"
+  },
+  "super_lig|2026-11-04": {
+    "text": "Genclerbirligi's 5-0 win over Alanyaspor was the biggest margin in the recent Süper Lig results, while Konyaspor 0-4 Galatasaray and Amed SFK 5-1 Eyupspor also produced lopsided scorelines. The round featured draws as Kocaelispor and Caykur Rizespor finished 0-0, and Kasimpasa and Besiktas played out a 2-2.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-04T13:00:41.388Z"
   }
 }

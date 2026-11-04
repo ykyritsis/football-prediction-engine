@@ -1618,5 +1618,65 @@
     "text": "Slovenia host Switzerland in the UEFA Nations League on 2026-11-13. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-13",
     "generated_at": "2026-11-03T22:19:55.309Z"
+  },
+  "nations_league|2026-11-14|Kosovo|Israel": {
+    "text": "Kosovo host Israel in the UEFA Nations League on 2026-11-14. A statistical model forecasts a 1-0 scoreline, though this is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:26.204Z"
+  },
+  "nations_league|2026-11-14|Georgia|Hungary": {
+    "text": "Georgia host Hungary in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:27.674Z"
+  },
+  "nations_league|2026-11-14|Norway|Wales": {
+    "text": "Norway host Wales in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:29.034Z"
+  },
+  "nations_league|2026-11-14|Austria|Republic of Ireland": {
+    "text": "Austria host the Republic of Ireland in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:30.642Z"
+  },
+  "nations_league|2026-11-14|Northern Ireland|Ukraine": {
+    "text": "Northern Ireland host Ukraine in the UEFA Nations League on 2026-11-14. The statistical model's forecast is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:32.085Z"
+  },
+  "nations_league|2026-11-14|Portugal|Denmark": {
+    "text": "Portugal host Denmark in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:33.485Z"
+  },
+  "nations_league|2026-11-14|Romania|Poland": {
+    "text": "Romania host Poland in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:34.920Z"
+  },
+  "nations_league|2026-11-14|Sweden|Bosnia-Herzegovina": {
+    "text": "Sweden host Bosnia-Herzegovina in the UEFA Nations League on 2026-11-14. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T13:00:36.515Z"
+  },
+  "concacaf_nations|2026-11-12|Aruba|Martinique": {
+    "text": "Aruba host Martinique in the Concacaf Nations League on 2026-11-12. The statistical model's forecast for this match is a 1-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-04T13:00:37.968Z"
+  },
+  "concacaf_nations|2026-11-12|Barbados|Guadeloupe": {
+    "text": "Barbados host Guadeloupe in the Concacaf Nations League on 2026-11-12. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-04T13:00:39.502Z"
+  },
+  "concacaf_nations|2026-11-12|Cayman Islands|Guyana": {
+    "text": "The Cayman Islands host Guyana in the Concacaf Nations League on 2026-11-12. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-04T13:00:40.912Z"
+  },
+  "concacaf_nations|2026-11-12|Bonaire|Cuba": {
+    "text": "Bonaire host Cuba in the Concacaf Nations League on 2026-11-12. A statistical model forecasts a 1-2 scoreline for this match, which is not a prediction of the result.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-04T13:00:42.362Z"
   }
 }
