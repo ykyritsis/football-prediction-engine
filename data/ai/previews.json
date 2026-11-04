@@ -1678,5 +1678,40 @@
     "text": "Bonaire host Cuba in the Concacaf Nations League on 2026-11-12. A statistical model forecasts a 1-2 scoreline for this match, which is not a prediction of the result.",
     "date": "2026-11-12",
     "generated_at": "2026-11-04T13:00:42.362Z"
+  },
+  "concacaf_nations|2026-11-12|Antigua and Barbuda|Trinidad and Tobago": {
+    "text": "Antigua and Barbuda host Trinidad and Tobago in the Concacaf Nations League on 2026-11-12. A statistical model forecasts a 1-0 scoreline for this match.",
+    "date": "2026-11-12",
+    "generated_at": "2026-11-04T22:38:39.302Z"
+  },
+  "concacaf_nations|2026-11-13|Bermuda|St. Lucia": {
+    "text": "Bermuda host St. Lucia in the Concacaf Nations League on 2026-11-13. A statistical model forecasts a 1-2 scoreline, though this is a model forecast and not a prediction of the result.",
+    "date": "2026-11-13",
+    "generated_at": "2026-11-04T22:38:40.276Z"
+  },
+  "concacaf_nations|2026-11-13|Puerto Rico|Dominica": {
+    "text": "Puerto Rico host Dominica in the Concacaf Nations League on 2026-11-13. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-13",
+    "generated_at": "2026-11-04T22:38:41.601Z"
+  },
+  "concacaf_nations|2026-11-13|Grenada|St. Kitts and Nevis": {
+    "text": "Grenada host St. Kitts and Nevis in the Concacaf Nations League on 2026-11-13. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-13",
+    "generated_at": "2026-11-04T22:38:42.868Z"
+  },
+  "concacaf_nations|2026-11-13|St. Martin|El Salvador": {
+    "text": "St. Martin host El Salvador in the Concacaf Nations League on 2026-11-13. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-13",
+    "generated_at": "2026-11-04T22:38:44.268Z"
+  },
+  "concacaf_nations|2026-11-14|Montserrat|Nicaragua": {
+    "text": "Montserrat face Nicaragua in the Concacaf Nations League on 2026-11-14. The statistical model's forecast for this match is a 2-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T22:38:45.328Z"
+  },
+  "concacaf_nations|2026-11-14|Sint Maarten|French Guiana": {
+    "text": "Sint Maarten host French Guiana in the Concacaf Nations League on 2026-11-14. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-14",
+    "generated_at": "2026-11-04T22:38:46.368Z"
   }
 }

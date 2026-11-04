@@ -762,55 +762,109 @@
       "date": "2026-11-04",
       "team1": "AEK Athens",
       "team2": "Real Madrid CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "Borussia Dortmund",
       "team2": "Real Betis Balompié",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "FC Porto",
       "team2": "SSC Napoli",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "Fenerbahce",
       "team2": "Liverpool FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "PSV Eindhoven",
       "team2": "Club Brugge",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "Racing Club de Lens",
       "team2": "Como 1907",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          9
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "RB Leipzig",
       "team2": "Manchester City FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "Slavia Prague",
       "team2": "Arsenal FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-04",
       "team1": "Viking FK",
       "team2": "Sabah FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-24",
