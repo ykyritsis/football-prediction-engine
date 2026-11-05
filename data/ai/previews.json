@@ -1713,5 +1713,50 @@
     "text": "Sint Maarten host French Guiana in the Concacaf Nations League on 2026-11-14. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-14",
     "generated_at": "2026-11-04T22:38:46.368Z"
+  },
+  "nations_league|2026-11-15|Cyprus|Montenegro": {
+    "text": "Cyprus host Montenegro in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:36.258Z"
+  },
+  "nations_league|2026-11-15|Latvia|Armenia": {
+    "text": "Latvia host Armenia in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:37.177Z"
+  },
+  "nations_league|2026-11-15|Belarus|Albania": {
+    "text": "Belarus host Albania in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 0-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:38.456Z"
+  },
+  "nations_league|2026-11-15|Finland|San Marino": {
+    "text": "Finland host San Marino in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 4-0 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:39.472Z"
+  },
+  "nations_league|2026-11-15|Belgium|Italy": {
+    "text": "Belgium host Italy in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:40.469Z"
+  },
+  "nations_league|2026-11-15|Croatia|Czechia": {
+    "text": "Croatia host Czechia in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 2-1 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:41.541Z"
+  },
+  "nations_league|2026-11-15|France|Türkiye": {
+    "text": "France host Türkiye in the UEFA Nations League on 2026-11-15. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:42.676Z"
+  },
+  "nations_league|2026-11-15|Spain|England": {
+    "text": "Spain host England in the UEFA Nations League on 2026-11-15. A statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:43.489Z"
+  },
+  "concacaf_nations|2026-11-15|St. Vincent and the Grenadines|Belize": {
+    "text": "St. Vincent and the Grenadines host Belize in the Concacaf Nations League on 2026-11-15. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-15",
+    "generated_at": "2026-11-05T13:13:44.631Z"
   }
 }
