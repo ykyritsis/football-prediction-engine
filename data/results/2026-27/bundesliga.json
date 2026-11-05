@@ -1029,16 +1029,22 @@
       "neutral": false
     },
     {
+      "date": "2026-12-04",
+      "team1": "FC Bayern München",
+      "team2": "SC Paderborn 07",
+      "neutral": false
+    },
+    {
       "date": "2026-12-05",
       "team1": "1. FC Union Berlin",
       "team2": "Hamburger SV",
       "neutral": false
     },
     {
+      "round": "Matchday 12",
       "date": "2026-12-05",
       "team1": "FC Schalke 04",
-      "team2": "Borussia Dortmund",
-      "neutral": false
+      "team2": "Borussia Dortmund"
     },
     {
       "date": "2026-12-05",
@@ -1059,10 +1065,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 12",
       "date": "2026-12-05",
       "team1": "SV 07 Elversberg",
-      "team2": "VfB Stuttgart",
-      "neutral": false
+      "team2": "VfB Stuttgart"
     },
     {
       "date": "2026-12-05",
@@ -1071,15 +1077,33 @@
       "neutral": false
     },
     {
+      "round": "Matchday 12",
       "date": "2026-12-05",
       "team1": "FC Bayern München",
-      "team2": "SC Paderborn 07",
-      "neutral": false
+      "team2": "SC Paderborn 07"
     },
     {
       "date": "2026-12-05",
       "team1": "FC Augsburg",
       "team2": "1. FC Köln",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "FC Schalke 04",
+      "team2": "Borussia Dortmund",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-06",
+      "team1": "SV 07 Elversberg",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-11",
+      "team1": "Hamburger SV",
+      "team2": "FC Schalke 04",
       "neutral": false
     },
     {
@@ -1089,10 +1113,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-12",
       "team1": "SV Werder Bremen",
-      "team2": "Bayer 04 Leverkusen",
-      "neutral": false
+      "team2": "Bayer 04 Leverkusen"
     },
     {
       "date": "2026-12-12",
@@ -1107,16 +1131,16 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-12",
       "team1": "Hamburger SV",
-      "team2": "FC Schalke 04",
-      "neutral": false
+      "team2": "FC Schalke 04"
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-12",
       "team1": "1. FSV Mainz 05",
-      "team2": "SC Freiburg",
-      "neutral": false
+      "team2": "SC Freiburg"
     },
     {
       "date": "2026-12-12",
@@ -1125,10 +1149,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 13",
       "date": "2026-12-12",
       "team1": "TSG 1899 Hoffenheim",
-      "team2": "FC Bayern München",
-      "neutral": false
+      "team2": "FC Bayern München"
     },
     {
       "date": "2026-12-12",
@@ -1137,16 +1161,40 @@
       "neutral": false
     },
     {
-      "date": "2026-12-19",
-      "team1": "FC Schalke 04",
-      "team2": "Borussia Mönchengladbach",
+      "date": "2026-12-13",
+      "team1": "1. FSV Mainz 05",
+      "team2": "SC Freiburg",
       "neutral": false
     },
     {
-      "date": "2026-12-19",
+      "date": "2026-12-13",
+      "team1": "TSG 1899 Hoffenheim",
+      "team2": "FC Bayern München",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-13",
+      "team1": "SV Werder Bremen",
+      "team2": "Bayer 04 Leverkusen",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-18",
       "team1": "FC Bayern München",
       "team2": "SV Werder Bremen",
       "neutral": false
+    },
+    {
+      "round": "Matchday 14",
+      "date": "2026-12-19",
+      "team1": "FC Schalke 04",
+      "team2": "Borussia Mönchengladbach"
+    },
+    {
+      "round": "Matchday 14",
+      "date": "2026-12-19",
+      "team1": "FC Bayern München",
+      "team2": "SV Werder Bremen"
     },
     {
       "date": "2026-12-19",
@@ -1161,10 +1209,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-19",
       "team1": "SC Freiburg",
-      "team2": "VfB Stuttgart",
-      "neutral": false
+      "team2": "VfB Stuttgart"
     },
     {
       "date": "2026-12-19",
@@ -1179,15 +1227,33 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-12-19",
       "team1": "1. FC Union Berlin",
-      "team2": "TSG 1899 Hoffenheim",
-      "neutral": false
+      "team2": "TSG 1899 Hoffenheim"
     },
     {
       "date": "2026-12-19",
       "team1": "FC Augsburg",
       "team2": "SC Paderborn 07",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "SC Freiburg",
+      "team2": "VfB Stuttgart",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "1. FC Union Berlin",
+      "team2": "TSG 1899 Hoffenheim",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-20",
+      "team1": "FC Schalke 04",
+      "team2": "Borussia Mönchengladbach",
       "neutral": false
     },
     {

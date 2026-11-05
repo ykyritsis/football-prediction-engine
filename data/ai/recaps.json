@@ -963,5 +963,10 @@
     "text": "Recent Süper Lig results saw Konyaspor lose 0-4 to Galatasaray, while Genclerbirligi beat Alanyaspor 5-0 for the biggest margin. Kocaelispor and Caykur Rizespor drew 0-0, and Kasimpasa and Besiktas drew 2-2.",
     "name": "Süper Lig",
     "generated_at": "2026-11-05T13:13:48.032Z"
+  },
+  "conference_league|2026-11-05": {
+    "text": "The biggest margin of the recent Conference League results was Ajax Amsterdam's 6-1 win at FC Midtjylland. There were four draws: AGF 0-0 Braga, Atalanta BC 1-1 Kairat Almaty, KuPS Kuopio 0-0 KAA Gent, Riga FC 1-1 Jablonec, and Sint-Truidense 1-1 SK Brann.",
+    "name": "Conference League",
+    "generated_at": "2026-11-05T22:41:50.521Z"
   }
 }
