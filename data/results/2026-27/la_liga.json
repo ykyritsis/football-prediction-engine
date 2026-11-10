@@ -1393,37 +1393,73 @@
       "date": "2026-11-06",
       "team1": "Sevilla FC",
       "team2": "Deportivo Alavés",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Málaga CF",
       "team2": "Real Racing Club de Santander",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "RCD Espanyol de Barcelona",
       "team2": "RC Deportivo La Coruña",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "CA Osasuna",
       "team2": "Athletic Club",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Valencia CF",
       "team2": "Real Madrid CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Elche CF",
       "team2": "Real Betis Balompié",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "round": "Matchday 12",
@@ -1447,13 +1483,25 @@
       "date": "2026-11-08",
       "team1": "RC Celta de Vigo",
       "team2": "Levante UD",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Real Sociedad de Fútbol",
       "team2": "Rayo Vallecano de Madrid",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 12",
@@ -1471,13 +1519,25 @@
       "date": "2026-11-08",
       "team1": "Club Atlético de Madrid",
       "team2": "FC Barcelona",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Villarreal CF",
       "team2": "Getafe CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-20",
@@ -1576,22 +1636,52 @@
       "neutral": false
     },
     {
+      "date": "2026-11-27",
+      "team1": "Levante UD",
+      "team2": "Real Racing Club de Santander",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Real Betis Balompié",
+      "team2": "Rayo Vallecano de Madrid",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Málaga CF",
+      "team2": "Athletic Club",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Elche CF",
+      "team2": "Club Atlético de Madrid",
+      "neutral": false
+    },
+    {
+      "date": "2026-11-28",
+      "team1": "Real Madrid CF",
+      "team2": "Deportivo Alavés",
+      "neutral": false
+    },
+    {
       "date": "2026-11-29",
       "team1": "RC Celta de Vigo",
       "team2": "Villarreal CF",
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "Elche CF",
-      "team2": "Club Atlético de Madrid",
-      "neutral": false
+      "team2": "Club Atlético de Madrid"
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "Real Betis Balompié",
-      "team2": "Rayo Vallecano de Madrid",
-      "neutral": false
+      "team2": "Rayo Vallecano de Madrid"
     },
     {
       "date": "2026-11-29",
@@ -1600,16 +1690,16 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "Real Madrid CF",
-      "team2": "Deportivo Alavés",
-      "neutral": false
+      "team2": "Deportivo Alavés"
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "RCD Espanyol de Barcelona",
-      "team2": "Getafe CF",
-      "neutral": false
+      "team2": "Getafe CF"
     },
     {
       "date": "2026-11-29",
@@ -1618,10 +1708,10 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "Levante UD",
-      "team2": "Real Racing Club de Santander",
-      "neutral": false
+      "team2": "Real Racing Club de Santander"
     },
     {
       "date": "2026-11-29",
@@ -1630,9 +1720,27 @@
       "neutral": false
     },
     {
+      "round": "Matchday 14",
       "date": "2026-11-29",
       "team1": "Málaga CF",
-      "team2": "Athletic Club",
+      "team2": "Athletic Club"
+    },
+    {
+      "date": "2026-11-30",
+      "team1": "RCD Espanyol de Barcelona",
+      "team2": "Getafe CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-02",
+      "team1": "Real Sociedad de Fútbol",
+      "team2": "Real Madrid CF",
+      "neutral": false
+    },
+    {
+      "date": "2026-12-02",
+      "team1": "FC Barcelona",
+      "team2": "Club Atlético de Madrid",
       "neutral": false
     },
     {

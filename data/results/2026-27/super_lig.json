@@ -1086,55 +1086,109 @@
       "date": "2026-11-06",
       "team1": "Gaziantep FK",
       "team2": "Kasimpasa",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Eyupspor",
       "team2": "Kocaelispor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Samsunspor",
       "team2": "Konyaspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Galatasaray",
       "team2": "Amed SFK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Goztepe",
       "team2": "Istanbul Basaksehir",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Caykur Rizespor",
       "team2": "Erzurum BB",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Çorum FK",
       "team2": "Fenerbahce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Alanyaspor",
       "team2": "Trabzonspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Besiktas",
       "team2": "Genclerbirligi",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-21",

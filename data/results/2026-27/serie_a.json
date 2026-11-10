@@ -1206,61 +1206,121 @@
       "date": "2026-11-06",
       "team1": "Venezia FC",
       "team2": "Udinese Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Torino FC",
       "team2": "US Lecce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Cagliari Calcio",
       "team2": "Frosinone Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "Parma Calcio 1913",
       "team2": "Bologna FC 1909",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-07",
       "team1": "AS Roma",
       "team2": "US Sassuolo Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "SSC Napoli",
       "team2": "SS Lazio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "Genoa CFC",
       "team2": "AC Milan",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "AC Monza",
       "team2": "Atalanta BC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "FC Internazionale Milano",
       "team2": "Como 1907",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-08",
       "team1": "ACF Fiorentina",
       "team2": "Juventus FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-21",
