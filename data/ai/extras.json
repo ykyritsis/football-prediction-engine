@@ -1779,6 +1779,70 @@
     "serie_a|2026-11-22|Atalanta BC|FC Internazionale Milano": {
       "text": "Inter's four wins in five, including two clean-sheet away victories, outweigh Atalanta's leaky defense and poor recent home form.",
       "generated_at": "2026-11-12T13:47:47.873Z"
+    },
+    "serie_a|2026-11-22|Juventus FC|Venezia FC": {
+      "text": "Juventus's stronger recent form and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-11-12T22:45:28.250Z"
+    },
+    "bundesliga|2026-11-22|FC Augsburg|1. FSV Mainz 05": {
+      "text": "Augsburg's home draws and Mainz's five-game losing run with heavy goals conceded drive the lean to a home win.",
+      "generated_at": "2026-11-12T22:45:29.008Z"
+    },
+    "bundesliga|2026-11-22|SV Werder Bremen|Hamburger SV": {
+      "text": "Werder Bremen's strong home form and recent wins drive the lean toward a home victory.",
+      "generated_at": "2026-11-12T22:45:30.094Z"
+    },
+    "ligue_1|2026-11-22|Paris FC|Angers SCO": {
+      "text": "Paris FC's strong home form and Angers' poor recent run of defeats drive the lean toward a home win.",
+      "generated_at": "2026-11-12T22:45:31.297Z"
+    },
+    "ligue_1|2026-11-22|FC Lorient|Stade Rennais FC 1901": {
+      "text": "Lorient's strong home form and Rennes' recent away defeats drive the lean toward a home win.",
+      "generated_at": "2026-11-12T22:45:32.247Z"
+    },
+    "ligue_1|2026-11-22|Olympique de Marseille|Le Mans FC": {
+      "text": "Marseille's five straight wins against Le Mans' winless run drive the lean to a home victory.",
+      "generated_at": "2026-11-12T22:45:32.995Z"
+    },
+    "eredivisie|2026-11-21|FC Groningen|Heerenveen": {
+      "text": "Heerenveen's four straight wins and Groningen's four losses in five drive the away lean.",
+      "generated_at": "2026-11-12T22:45:33.886Z"
+    },
+    "eredivisie|2026-11-21|Telstar|PEC Zwolle": {
+      "text": "Telstar's strong home scoring form, including a 4-2 win over FC Utrecht, drives the lean toward a home victory.",
+      "generated_at": "2026-11-12T22:45:34.960Z"
+    },
+    "eredivisie|2026-11-22|FC Twente|Willem II": {
+      "text": "FC Twente's strong recent form, including a 9-0 win, against Willem II's five-match winless run drives the lean to a home win.",
+      "generated_at": "2026-11-12T22:45:36.195Z"
+    },
+    "eredivisie|2026-11-22|Ajax Amsterdam|ADO Den Haag": {
+      "text": "Ajax's strong recent form, with three wins in their last five, drives the lean toward a home victory over an inconsistent ADO Den Haag side.",
+      "generated_at": "2026-11-12T22:45:36.959Z"
+    },
+    "eredivisie|2026-11-22|Sparta Rotterdam|AZ Alkmaar": {
+      "text": "AZ Alkmaar's higher model probability and Sparta Rotterdam's leaky defense, conceding in every recent match, drive the away-win lean.",
+      "generated_at": "2026-11-12T22:45:38.035Z"
+    },
+    "eredivisie|2026-11-22|Go Ahead Eagles|Fortuna Sittard": {
+      "text": "Go Ahead Eagles' home wins and scoring form outweigh Fortuna Sittard's draw-heavy run, supporting a narrow home victory.",
+      "generated_at": "2026-11-12T22:45:38.773Z"
+    },
+    "belgian_pro_league|2026-11-21|Royal Charleroi SC|Sint-Truidense": {
+      "text": "Charleroi's strong recent form, including four wins in five, drives the lean toward a home victory over struggling Sint-Truidense.",
+      "generated_at": "2026-11-12T22:45:39.664Z"
+    },
+    "belgian_pro_league|2026-11-21|Racing Genk|RAAL La Louvière": {
+      "text": "Genk's strong home wins and La Louvière's poor away form drive the lean toward a home victory.",
+      "generated_at": "2026-11-12T22:45:40.424Z"
+    },
+    "belgian_pro_league|2026-11-21|KV Mechelen|Club Brugge": {
+      "text": "Club Brugge's dominant recent form, unbeaten with four wins and a draw, drives the away-win lean over Mechelen.",
+      "generated_at": "2026-11-12T22:45:41.305Z"
+    },
+    "belgian_pro_league|2026-11-21|Zulte-Waregem|Antwerp": {
+      "text": "Antwerp's stronger recent form, including a 3-0 win, outweighs Zulte-Waregem's five straight losses, driving the away-win lean.",
+      "generated_at": "2026-11-12T22:45:42.076Z"
     }
   },
   "storylines": {

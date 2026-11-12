@@ -1143,5 +1143,15 @@
     "text": "Fenerbahce's 5-0 win at Çorum FK was the biggest margin of the recent Süper Lig round, while Galatasaray edged Amed SFK 4-3 in a high-scoring affair. There were no draws across the listed results.",
     "name": "Süper Lig",
     "generated_at": "2026-11-12T13:47:42.308Z"
+  },
+  "concacaf_nations|2026-11-12": {
+    "text": "In recent Concacaf Nations League results, Cuba recorded the biggest margin with a 7-1 win over Bonaire, while Guyana beat the Cayman Islands 6-0 and Guadeloupe defeated Barbados 3-0. There were no draws among these results.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-12T22:45:28.718Z"
+  },
+  "nations_league|2026-11-12": {
+    "text": "Recent UEFA Nations League results included a 1-1 draw between Armenia and Cyprus. The biggest margin was Albania's 2-0 win over Finland, matched by Czechia 0-2 Spain and San Marino 0-2 Belarus. Other results saw Türkiye lose 1-2 to Belgium, England beat Croatia 2-1, Italy beat France 3-1, and Montenegro beat Latvia 2-1.",
+    "name": "UEFA Nations League",
+    "generated_at": "2026-11-12T22:45:29.757Z"
   }
 }

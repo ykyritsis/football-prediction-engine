@@ -900,19 +900,37 @@
       "date": "2026-11-12",
       "team1": "Barbados",
       "team2": "Guadeloupe",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-12",
       "team1": "Cayman Islands",
       "team2": "Guyana",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      }
     },
     {
       "date": "2026-11-12",
       "team1": "Bonaire",
       "team2": "Cuba",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          7
+        ]
+      }
     },
     {
       "date": "2026-11-12",

@@ -2108,5 +2108,65 @@
     "text": "Levante UD host Elche CF in La Liga on 2026-11-22. The statistical model's forecast for this match is a 1-0 scoreline, which is not a prediction of the result.",
     "date": "2026-11-22",
     "generated_at": "2026-11-12T13:47:41.258Z"
+  },
+  "serie_a|2026-11-22|US Sassuolo Calcio|Genoa CFC": {
+    "text": "Serie A fixture on 2026-11-22 sees US Sassuolo Calcio host Genoa CFC. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:28.352Z"
+  },
+  "serie_a|2026-11-22|AC Milan|Frosinone Calcio": {
+    "text": "Serie A fixture on 2026-11-22 sees AC Milan host Frosinone Calcio at San Siro. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:29.312Z"
+  },
+  "serie_a|2026-11-22|Bologna FC 1909|Udinese Calcio": {
+    "text": "Serie A's Bologna FC 1909 host Udinese Calcio on 2026-11-22. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:30.653Z"
+  },
+  "serie_a|2026-11-22|Atalanta BC|FC Internazionale Milano": {
+    "text": "Serie A fixture on 2026-11-22 sees Atalanta BC host FC Internazionale Milano. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:31.705Z"
+  },
+  "serie_a|2026-11-22|Juventus FC|Venezia FC": {
+    "text": "Serie A fixture on 2026-11-22 sees Juventus FC host Venezia FC. The statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:32.413Z"
+  },
+  "bundesliga|2026-11-22|FC Augsburg|1. FSV Mainz 05": {
+    "text": "FC Augsburg host 1. FSV Mainz 05 in the Bundesliga on 2026-11-22. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:33.281Z"
+  },
+  "bundesliga|2026-11-22|SV Werder Bremen|Hamburger SV": {
+    "text": "SV Werder Bremen host Hamburger SV in the Bundesliga on 2026-11-22. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-12T22:45:34.549Z"
+  },
+  "ligue_1|2026-11-21|OGC Nice|Paris Saint-Germain FC": {
+    "text": "Ligue 1 action on 2026-11-21 features OGC Nice hosting Paris Saint-Germain FC. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-12T22:45:35.336Z"
+  },
+  "ligue_1|2026-11-21|AS Monaco FC|AJ Auxerre": {
+    "text": "Ligue 1 action on 2026-11-21 features AS Monaco FC hosting AJ Auxerre. A statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-12T22:45:36.674Z"
+  },
+  "ligue_1|2026-11-21|Racing Club de Lens|Toulouse FC": {
+    "text": "Ligue 1 fixture on 2026-11-21 sees Racing Club de Lens host Toulouse FC. A statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-12T22:45:37.427Z"
+  },
+  "ligue_1|2026-11-21|Lille OSC|Olympique Lyonnais": {
+    "text": "Lille OSC host Olympique Lyonnais in Ligue 1 on 2026-11-21. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-12T22:45:38.426Z"
+  },
+  "ligue_1|2026-11-21|RC Strasbourg Alsace|Stade Brestois 29": {
+    "text": "RC Strasbourg Alsace host Stade Brestois 29 in Ligue 1 on 2026-11-21. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-12T22:45:39.447Z"
   }
 }
