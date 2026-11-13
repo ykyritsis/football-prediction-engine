@@ -894,7 +894,13 @@
       "date": "2026-11-12",
       "team1": "Aruba",
       "team2": "Martinique",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-12",
@@ -936,13 +942,25 @@
       "date": "2026-11-12",
       "team1": "Antigua and Barbuda",
       "team2": "Trinidad and Tobago",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Curaçao",
       "team2": "Panama",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-13",
