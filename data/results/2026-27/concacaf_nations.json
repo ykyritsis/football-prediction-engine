@@ -966,19 +966,37 @@
       "date": "2026-11-13",
       "team1": "Bermuda",
       "team2": "St. Lucia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Puerto Rico",
       "team2": "Dominica",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Grenada",
       "team2": "St. Kitts and Nevis",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-13",

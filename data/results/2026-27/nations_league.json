@@ -1350,61 +1350,121 @@
       "date": "2026-11-13",
       "team1": "Moldova",
       "team2": "Kazakhstan",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Andorra",
       "team2": "Gibraltar",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Bulgaria",
       "team2": "Iceland",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          5
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Liechtenstein",
       "team2": "Azerbaijan",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Luxembourg",
       "team2": "Estonia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Netherlands",
       "team2": "Greece",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Scotland",
       "team2": "North Macedonia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Serbia",
       "team2": "Germany",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Slovakia",
       "team2": "Faroe Islands",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-13",
       "team1": "Slovenia",
       "team2": "Switzerland",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-14",
