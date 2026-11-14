@@ -1002,19 +1002,37 @@
       "date": "2026-11-13",
       "team1": "St. Martin",
       "team2": "El Salvador",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Montserrat",
       "team2": "Nicaragua",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Guatemala",
       "team2": "Canada",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-14",

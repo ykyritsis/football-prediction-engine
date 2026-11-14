@@ -1943,6 +1943,42 @@
     "chance_liga|2026-11-22|Sparta Prague|FC Slovan Liberec": {
       "text": "Sparta Prague's strong recent home form and scoring edge drive the lean toward a home win.",
       "generated_at": "2026-11-13T22:37:59.306Z"
+    },
+    "champions_league|2026-11-24|Arsenal FC|Borussia Dortmund": {
+      "text": "Arsenal's four straight wins and home advantage drive the lean toward an Arsenal win.",
+      "generated_at": "2026-11-14T12:11:54.089Z"
+    },
+    "champions_league|2026-11-24|Bodo/Glimt|LASK Linz": {
+      "text": "Bodo/Glimt's strong home form and LASK Linz's leaky away defense drive the forecast for a home win.",
+      "generated_at": "2026-11-14T12:11:55.159Z"
+    },
+    "champions_league|2026-11-24|Como 1907|AEK Athens": {
+      "text": "Como's dominant recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-11-14T12:11:56.379Z"
+    },
+    "champions_league|2026-11-24|Feyenoord Rotterdam|FC Porto": {
+      "text": "Porto's four straight wins and Feyenoord's winless, leaky run drive the lean toward an away victory.",
+      "generated_at": "2026-11-14T12:11:57.494Z"
+    },
+    "champions_league|2026-11-24|Galatasaray|Aston Villa FC": {
+      "text": "Galatasaray's perfect five-match winning run and home advantage drive the lean for a home win.",
+      "generated_at": "2026-11-14T12:11:58.388Z"
+    },
+    "champions_league|2026-11-24|Manchester City FC|SSC Napoli": {
+      "text": "Manchester City's home win probability and Napoli's poor recent form drive the forecast lean toward a City victory.",
+      "generated_at": "2026-11-14T12:11:59.080Z"
+    },
+    "champions_league|2026-11-24|RB Leipzig|Racing Club de Lens": {
+      "text": "RB Leipzig's strong home scoring form against Lens's heavy recent defeats drives the lean to a home win.",
+      "generated_at": "2026-11-14T12:12:00.349Z"
+    },
+    "champions_league|2026-11-24|Real Madrid CF|PSV Eindhoven": {
+      "text": "Real Madrid's perfect recent form and home advantage drive the forecast lean toward a win.",
+      "generated_at": "2026-11-14T12:12:01.644Z"
+    },
+    "champions_league|2026-11-24|Slovan Bratislava|Real Betis Balompié": {
+      "text": "Real Betis's strong recent form and Slovan Bratislava's heavy recent defeats drive the away-win lean.",
+      "generated_at": "2026-11-14T12:12:02.508Z"
     }
   },
   "storylines": {
@@ -3350,6 +3386,21 @@
       "text": "Türkiye sit 52nd of 54 with 0 points and a goal difference of +0, having recorded 0W 0D 0L. Their last five results were all defeats: 0-1 vs France at home, 1-4 vs Italy at home, 0-3 vs Belgium away, 1-3 vs Italy away, and 1-2 vs Belgium at home.",
       "kind": "cold",
       "generated_at": "2026-11-13T13:08:05.930Z"
+    },
+    "world_cup|Türkiye|2026-11-09": {
+      "text": "Türkiye sits 35th of 48 with 0 points and a goal difference of +0, having recorded 0W 0D 0L. The team's last five results were all losses: 0-1 vs France, 1-4 vs Italy, 0-3 vs Belgium, 1-3 vs Italy, and 1-2 vs Belgium.",
+      "kind": "cold",
+      "generated_at": "2026-11-14T12:12:03.630Z"
+    },
+    "european_championship|Serbia|2026-11-09": {
+      "text": "Serbia sits 18th of 24 in the European Championship with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently a 1-3 home defeat to Germany on 2026-11-13.",
+      "kind": "cold",
+      "generated_at": "2026-11-14T12:12:04.831Z"
+    },
+    "world_cup_qualifying|Serbia|2026-11-09": {
+      "text": "Serbia sits 46th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 1-3 at home to Germany on 2026-11-13.",
+      "kind": "cold",
+      "generated_at": "2026-11-14T12:12:05.946Z"
     }
   }
 }

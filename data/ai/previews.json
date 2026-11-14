@@ -2288,5 +2288,65 @@
     "text": "Lommel SK host Standard Liege in the Belgian Pro League on 2026-11-22. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-22",
     "generated_at": "2026-11-13T22:38:02.627Z"
+  },
+  "super_lig|2026-11-21|Genclerbirligi|Gaziantep FK": {
+    "text": "Genclerbirligi host Gaziantep FK in the Süper Lig on 2026-11-21. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:11:54.098Z"
+  },
+  "super_lig|2026-11-21|Amed SFK|Caykur Rizespor": {
+    "text": "Amed SFK host Caykur Rizespor in the Süper Lig on 2026-11-21. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:11:55.157Z"
+  },
+  "super_lig|2026-11-21|Galatasaray|Samsunspor": {
+    "text": "Galatasaray host Samsunspor in the Süper Lig on 2026-11-21. The statistical model forecasts a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:11:56.352Z"
+  },
+  "super_lig|2026-11-21|Kocaelispor|Fenerbahce": {
+    "text": "Kocaelispor host Fenerbahce in the Süper Lig on 2026-11-21. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:11:57.459Z"
+  },
+  "super_lig|2026-11-22|Erzurum BB|Goztepe": {
+    "text": "Erzurum BB host Goztepe in the Süper Lig on 2026-11-22. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T12:11:58.737Z"
+  },
+  "super_lig|2026-11-22|Kasimpasa|Alanyaspor": {
+    "text": "Kasimpasa host Alanyaspor in the Süper Lig on 2026-11-22. The statistical model's forecast for this match is a 2-0 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T12:11:59.746Z"
+  },
+  "super_lig|2026-11-22|Konyaspor|Besiktas": {
+    "text": "Konyaspor host Besiktas in the Süper Lig on 2026-11-22. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T12:12:00.603Z"
+  },
+  "super_lig|2026-11-22|Trabzonspor|Eyupspor": {
+    "text": "Trabzonspor host Eyupspor in the Süper Lig on 2026-11-22. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T12:12:01.654Z"
+  },
+  "super_lig|2026-11-23|Istanbul Basaksehir|Çorum FK": {
+    "text": "Istanbul Basaksehir host Çorum FK in the Süper Lig on 2026-11-23. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-23",
+    "generated_at": "2026-11-14T12:12:02.540Z"
+  },
+  "chance_liga|2026-11-21|FK Mlada Boleslav|FC Zlin": {
+    "text": "Chance Liga fixture on 2026-11-21 sees FK Mlada Boleslav host FC Zlin. The statistical model's forecast is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:12:03.514Z"
+  },
+  "chance_liga|2026-11-21|SK Artis Brno|Jablonec": {
+    "text": "SK Artis Brno host Jablonec in the Chance Liga on 2026-11-21. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:12:04.804Z"
+  },
+  "chance_liga|2026-11-21|FC Banik Ostrava|FK Teplice": {
+    "text": "FC Banik Ostrava host FK Teplice in the Chance Liga on 2026-11-21. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T12:12:06.155Z"
   }
 }

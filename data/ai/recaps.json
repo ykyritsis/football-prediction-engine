@@ -1208,5 +1208,60 @@
     "text": "Fenerbahce's 5-0 win at Çorum FK was the biggest margin of the recent Süper Lig round, while Galatasaray edged Amed SFK 4-3 in a high-scoring affair. There were no draws in the listed results.",
     "name": "Süper Lig",
     "generated_at": "2026-11-13T13:07:58.988Z"
+  },
+  "belgian_pro_league|2026-11-14": {
+    "text": "The biggest margin in the recent Belgian Pro League results was KVC Westerlo's 1-5 defeat to Royal Charleroi SC. There were two draws: Antwerp 2-2 Lommel SK and Club Brugge 1-1 Anderlecht.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-14T12:11:53.743Z"
+  },
+  "bundesliga|2026-11-14": {
+    "text": "RB Leipzig's 5-2 win over FC Augsburg was the biggest margin of the recent Bundesliga results. SC Paderborn 07 and Eintracht Frankfurt played out a 2-2 draw, the only draw in the set.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-14T12:11:54.734Z"
+  },
+  "concacaf_nations|2026-11-14": {
+    "text": "Recent Concacaf Nations League results included goalless draws between Aruba and Martinique, and Curaçao and Panama. The biggest margin was Cayman Islands' 0-6 defeat to Guyana, while Bonaire also lost heavily 1-7 to Cuba.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-14T12:11:55.845Z"
+  },
+  "eredivisie|2026-11-14": {
+    "text": "Heerenveen's 5-3 win over Feyenoord Rotterdam was the biggest margin among the recent Eredivisie results. Fortuna Sittard drew 2-2 with Telstar and FC Twente drew 2-2 with Ajax Amsterdam.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-14T12:11:56.725Z"
+  },
+  "la_liga|2026-11-14": {
+    "text": "Valencia CF's 0-3 defeat to Real Madrid CF was the biggest margin of the recent La Liga results. There were two draws: RCD Espanyol de Barcelona 0-0 RC Deportivo La Coruña and RC Celta de Vigo 0-0 Levante UD, while CA Osasuna and Athletic Club drew 1-1.",
+    "name": "La Liga",
+    "generated_at": "2026-11-14T12:11:58.058Z"
+  },
+  "ligue_1|2026-11-14": {
+    "text": "Recent Ligue 1 results saw Stade Brestois 29 beat Olympique Lyonnais 2-0, the biggest margin of the round, while Le Havre AC lost 0-2 to FC Lorient and Angers SCO fell 0-2 to OGC Nice. Le Mans FC and AS Monaco FC drew 1-1, the only draw among the listed matches.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-14T12:11:59.442Z"
+  },
+  "nations_league|2026-11-14": {
+    "text": "Recent UEFA Nations League results included a 1-1 draw between Armenia and Cyprus, a 2-2 draw between Slovakia and Faroe Islands, and a 0-0 draw between Slovenia and Switzerland. The biggest margin was the Netherlands' 7-0 win over Greece.",
+    "name": "UEFA Nations League",
+    "generated_at": "2026-11-14T12:12:00.642Z"
+  },
+  "premier_league|2026-11-14": {
+    "text": "Nottingham Forest beat Manchester City 3-1, while Manchester United and Aston Villa played out a 4-4 draw. Fulham and Newcastle United also drew 1-1. The biggest margin of victory was Brighton & Hove Albion's 2-0 win over Brentford.",
+    "name": "Premier League",
+    "generated_at": "2026-11-14T12:12:01.590Z"
+  },
+  "primeira_liga|2026-11-14": {
+    "text": "In the latest Primeira Liga round, Alverca and Casa Pia played out a 1-1 draw. The biggest margin of the results was Estrela's 2-3 loss to Benfica, while Sporting CP, Braga, C.D. Nacional, Gil Vicente and FC Porto all picked up wins.",
+    "name": "Primeira Liga",
+    "generated_at": "2026-11-14T12:12:02.988Z"
+  },
+  "serie_a|2026-11-14": {
+    "text": "Torino drew 1-1 with Lecce, Napoli drew 1-1 with Lazio, and Fiorentina drew 2-2 with Juventus. Roma's 3-0 win over Sassuolo was the biggest margin of the recent Serie A results.",
+    "name": "Serie A",
+    "generated_at": "2026-11-14T12:12:04.056Z"
+  },
+  "super_lig|2026-11-14": {
+    "text": "Fenerbahce's 5-0 win at Çorum FK was the biggest margin of the recent Süper Lig round, while Galatasaray edged Amed SFK 4-3 and Besiktas beat Genclerbirligi 3-0. Eyupspor, Alanyaspor and Çorum FK all lost without scoring, and there were no draws in the listed results.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-14T12:12:05.101Z"
   }
 }
