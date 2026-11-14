@@ -2348,5 +2348,65 @@
     "text": "FC Banik Ostrava host FK Teplice in the Chance Liga on 2026-11-21. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-21",
     "generated_at": "2026-11-14T12:12:06.155Z"
+  },
+  "chance_liga|2026-11-21|SK Sigma Olomouc|Slavia Prague": {
+    "text": "SK Sigma Olomouc host Slavia Prague in the Chance Liga on 2026-11-21. The statistical model forecasts a 0-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T21:29:36.408Z"
+  },
+  "chance_liga|2026-11-21|Bohemians Prague 1905|Viktoria Plzen": {
+    "text": "Bohemians Prague 1905 host Viktoria Plzen in the Chance Liga on 2026-11-21. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-21",
+    "generated_at": "2026-11-14T21:29:37.439Z"
+  },
+  "chance_liga|2026-11-22|FK Pardubice|FC Zbrojovka Brno": {
+    "text": "Chance Liga fixture on 2026-11-22 sees FK Pardubice host FC Zbrojovka Brno. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T21:29:38.435Z"
+  },
+  "chance_liga|2026-11-22|1.FC Slovacko|FC Hradec Kralove": {
+    "text": "Chance Liga fixture on 2026-11-22 sees 1.FC Slovacko host FC Hradec Kralove. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T21:29:39.188Z"
+  },
+  "chance_liga|2026-11-22|Sparta Prague|FC Slovan Liberec": {
+    "text": "Sparta Prague host FC Slovan Liberec in the Chance Liga on 2026-11-22. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-22",
+    "generated_at": "2026-11-14T21:29:40.487Z"
+  },
+  "champions_league|2026-11-24|Arsenal FC|Borussia Dortmund": {
+    "text": "Arsenal FC host Borussia Dortmund in the Champions League on 2026-11-24. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:41.353Z"
+  },
+  "champions_league|2026-11-24|Bodo/Glimt|LASK Linz": {
+    "text": "Bodo/Glimt host LASK Linz in the Champions League on 2026-11-24. A statistical model forecasts a 3-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:42.297Z"
+  },
+  "champions_league|2026-11-24|Como 1907|AEK Athens": {
+    "text": "Como 1907 host AEK Athens in the Champions League on 2026-11-24. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:43.553Z"
+  },
+  "champions_league|2026-11-24|Feyenoord Rotterdam|FC Porto": {
+    "text": "Feyenoord Rotterdam host FC Porto in the Champions League on 2026-11-24. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:44.643Z"
+  },
+  "champions_league|2026-11-24|Galatasaray|Aston Villa FC": {
+    "text": "Galatasaray host Aston Villa FC in the Champions League on 2026-11-24. The statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:45.659Z"
+  },
+  "champions_league|2026-11-24|Manchester City FC|SSC Napoli": {
+    "text": "Manchester City FC host SSC Napoli in the Champions League on 2026-11-24. The statistical model forecasts a 3-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:46.631Z"
+  },
+  "champions_league|2026-11-24|RB Leipzig|Racing Club de Lens": {
+    "text": "RB Leipzig host Racing Club de Lens in the Champions League on 2026-11-24. The statistical model forecasts a 3-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-14T21:29:47.617Z"
   }
 }

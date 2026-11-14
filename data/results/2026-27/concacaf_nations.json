@@ -1038,7 +1038,13 @@
       "date": "2026-11-14",
       "team1": "Sint Maarten",
       "team2": "French Guiana",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
     },
     {
       "date": "2026-11-14",
