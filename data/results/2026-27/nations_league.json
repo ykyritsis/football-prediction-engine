@@ -1566,49 +1566,97 @@
       "date": "2026-11-15",
       "team1": "Cyprus",
       "team2": "Montenegro",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Latvia",
       "team2": "Armenia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Belarus",
       "team2": "Albania",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Finland",
       "team2": "San Marino",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          7,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Belgium",
       "team2": "Italy",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Croatia",
       "team2": "Czechia",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "France",
       "team2": "Türkiye",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Spain",
       "team2": "England",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-16",
