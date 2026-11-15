@@ -1979,6 +1979,42 @@
     "champions_league|2026-11-24|Slovan Bratislava|Real Betis Balompié": {
       "text": "Real Betis's strong recent form and Slovan Bratislava's heavy recent defeats drive the away-win lean.",
       "generated_at": "2026-11-14T12:12:02.508Z"
+    },
+    "champions_league|2026-11-25|Club Atlético de Madrid|Viking FK": {
+      "text": "Atlético's home strength and superior recent form against Viking FK drive the lean toward a home win.",
+      "generated_at": "2026-11-15T12:44:53.183Z"
+    },
+    "champions_league|2026-11-25|Club Brugge|Liverpool FC": {
+      "text": "Liverpool's stronger away form and higher overall quality drive the lean toward an away win despite Club Brugge's unbeaten run.",
+      "generated_at": "2026-11-15T12:44:54.215Z"
+    },
+    "champions_league|2026-11-25|FC Internazionale Milano|VfB Stuttgart": {
+      "text": "Inter's strong recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-11-15T12:44:55.094Z"
+    },
+    "champions_league|2026-11-25|Lille OSC|FC Bayern München": {
+      "text": "Bayern's stronger recent form and higher win probability drive the forecast for an away victory.",
+      "generated_at": "2026-11-15T12:44:55.867Z"
+    },
+    "champions_league|2026-11-25|Paris Saint-Germain FC|AS Roma": {
+      "text": "PSG's perfect five-match winning run, including a 6-0 away win, drives the lean toward a home victory.",
+      "generated_at": "2026-11-15T12:44:56.732Z"
+    },
+    "champions_league|2026-11-25|Sabah FK|FC Barcelona": {
+      "text": "Barcelona's strong recent form and Sabah's heavy losses drive the forecast lean toward an away win.",
+      "generated_at": "2026-11-15T12:44:57.496Z"
+    },
+    "champions_league|2026-11-25|Shakhtar Donetsk|Fenerbahce": {
+      "text": "Fenerbahce's recent wins, including a 3-2 victory over Liverpool, and Shakhtar's three losses in their last four matches drive the lean toward an away win.",
+      "generated_at": "2026-11-15T12:44:58.654Z"
+    },
+    "champions_league|2026-11-25|Slavia Prague|Villarreal CF": {
+      "text": "Slavia Prague's home advantage and Villarreal's heavy recent defeats drive the lean toward a home win.",
+      "generated_at": "2026-11-15T12:44:59.522Z"
+    },
+    "champions_league|2026-11-25|Sporting CP|Manchester United FC": {
+      "text": "Sporting CP's three straight wins and clean sheets outweigh Manchester United's poor recent form and leaky defense.",
+      "generated_at": "2026-11-15T12:45:00.554Z"
     }
   },
   "storylines": {
@@ -3401,6 +3437,11 @@
       "text": "Serbia sits 46th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 1-3 at home to Germany on 2026-11-13.",
       "kind": "cold",
       "generated_at": "2026-11-14T12:12:05.946Z"
+    },
+    "concacaf_nations|Sint Maarten|2026-11-09": {
+      "text": "Sint Maarten sit 36th of 37 in the Concacaf Nations League with 0 points and a goal difference of -12 after a record of 0W 0D 5L. Their last five results were all defeats, most recently a 1-5 home loss to French Guiana, and they next face Belize away on 2026-11-17.",
+      "kind": "cold",
+      "generated_at": "2026-11-15T12:45:01.756Z"
     }
   }
 }

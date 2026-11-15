@@ -1506,31 +1506,61 @@
       "date": "2026-11-14",
       "team1": "Austria",
       "team2": "Republic of Ireland",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Northern Ireland",
       "team2": "Ukraine",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Portugal",
       "team2": "Denmark",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Romania",
       "team2": "Poland",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-14",
       "team1": "Sweden",
       "team2": "Bosnia-Herzegovina",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-15",

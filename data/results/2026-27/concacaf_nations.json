@@ -1050,19 +1050,37 @@
       "date": "2026-11-14",
       "team1": "Haiti",
       "team2": "United States",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          6
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "St. Vincent and the Grenadines",
       "team2": "Belize",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-15",
       "team1": "Jamaica",
       "team2": "Mexico",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-15",

@@ -2408,5 +2408,60 @@
     "text": "RB Leipzig host Racing Club de Lens in the Champions League on 2026-11-24. The statistical model forecasts a 3-1 scoreline, which is a model forecast and not a prediction of the result.",
     "date": "2026-11-24",
     "generated_at": "2026-11-14T21:29:47.617Z"
+  },
+  "champions_league|2026-11-24|Real Madrid CF|PSV Eindhoven": {
+    "text": "Real Madrid CF host PSV Eindhoven in the Champions League on 2026-11-24. The statistical model's forecast for this match is a 3-1 scoreline.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-15T12:44:53.721Z"
+  },
+  "champions_league|2026-11-24|Slovan Bratislava|Real Betis Balompié": {
+    "text": "Slovan Bratislava host Real Betis Balompié in the Champions League on 2026-11-24. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-24",
+    "generated_at": "2026-11-15T12:44:54.806Z"
+  },
+  "champions_league|2026-11-25|Club Atlético de Madrid|Viking FK": {
+    "text": "Club Atlético de Madrid host Viking FK in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:44:56.005Z"
+  },
+  "champions_league|2026-11-25|Club Brugge|Liverpool FC": {
+    "text": "Club Brugge host Liverpool FC in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:44:56.992Z"
+  },
+  "champions_league|2026-11-25|FC Internazionale Milano|VfB Stuttgart": {
+    "text": "FC Internazionale Milano host VfB Stuttgart in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:44:58.042Z"
+  },
+  "champions_league|2026-11-25|Lille OSC|FC Bayern München": {
+    "text": "Lille OSC host FC Bayern München in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:44:59.199Z"
+  },
+  "champions_league|2026-11-25|Paris Saint-Germain FC|AS Roma": {
+    "text": "Paris Saint-Germain FC host AS Roma in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:45:00.042Z"
+  },
+  "champions_league|2026-11-25|Sabah FK|FC Barcelona": {
+    "text": "Sabah FK host FC Barcelona in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 0-4 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:45:01.103Z"
+  },
+  "champions_league|2026-11-25|Shakhtar Donetsk|Fenerbahce": {
+    "text": "Shakhtar Donetsk host Fenerbahce in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:45:02.251Z"
+  },
+  "champions_league|2026-11-25|Slavia Prague|Villarreal CF": {
+    "text": "Slavia Prague host Villarreal CF in the Champions League on 2026-11-25. The statistical model's forecast for this match is a 2-1 scoreline.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:45:03.007Z"
+  },
+  "champions_league|2026-11-25|Sporting CP|Manchester United FC": {
+    "text": "Sporting CP host Manchester United FC in the Champions League on 2026-11-25. The statistical model forecasts a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-25",
+    "generated_at": "2026-11-15T12:45:04.054Z"
   }
 }
