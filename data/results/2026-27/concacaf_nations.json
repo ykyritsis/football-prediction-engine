@@ -1170,25 +1170,49 @@
       "date": "2026-11-17",
       "team1": "Belize",
       "team2": "Sint Maarten",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-17",
       "team1": "Dominica",
       "team2": "Cayman Islands",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-17",
       "team1": "St. Lucia",
       "team2": "Barbados",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-17",
       "team1": "St. Kitts and Nevis",
       "team2": "Bonaire",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-18",
