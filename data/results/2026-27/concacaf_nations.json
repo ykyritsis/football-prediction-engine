@@ -1134,19 +1134,37 @@
       "date": "2026-11-17",
       "team1": "Martinique",
       "team2": "Aruba",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-17",
       "team1": "Trinidad and Tobago",
       "team2": "Antigua and Barbuda",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-17",
       "team1": "Canada",
       "team2": "Guatemala",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-17",
