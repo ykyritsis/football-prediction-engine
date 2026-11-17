@@ -1098,19 +1098,37 @@
       "date": "2026-11-16",
       "team1": "Guadeloupe",
       "team2": "Bermuda",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-16",
       "team1": "Guyana",
       "team2": "Puerto Rico",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-16",
       "team1": "Cuba",
       "team2": "Grenada",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          9,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-17",

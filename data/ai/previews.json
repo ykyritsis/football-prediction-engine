@@ -2523,5 +2523,65 @@
     "text": "RC Celta de Vigo host AFC Bournemouth in the Europa League on 2026-11-26. The statistical model's forecast for this match is a 0-1 scoreline.",
     "date": "2026-11-26",
     "generated_at": "2026-11-16T13:40:53.164Z"
+  },
+  "premier_league|2026-11-27|Nottingham Forest FC|Chelsea FC": {
+    "text": "Nottingham Forest FC host Chelsea FC in the Premier League on 2026-11-27. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:37.675Z"
+  },
+  "la_liga|2026-11-27|Levante UD|Real Racing Club de Santander": {
+    "text": "La Liga's Levante UD hosts Real Racing Club de Santander on 2026-11-27. The statistical model's forecast score is 2-1, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:38.721Z"
+  },
+  "serie_a|2026-11-27|Venezia FC|Bologna FC 1909": {
+    "text": "Venezia FC host Bologna FC 1909 in Serie A on 2026-11-27. The statistical model forecasts a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:39.674Z"
+  },
+  "bundesliga|2026-11-27|SV Werder Bremen|Borussia Mönchengladbach": {
+    "text": "SV Werder Bremen host Borussia Mönchengladbach in the Bundesliga on 2026-11-27. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:40.646Z"
+  },
+  "ligue_1|2026-11-27|Stade Brestois 29|Paris FC": {
+    "text": "Ligue 1 action on 2026-11-27 features Stade Brestois 29 hosting Paris FC. The statistical model forecasts a 2-1 scoreline, though this is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:41.916Z"
+  },
+  "primeira_liga|2026-11-27|Maritimo|C.D. Nacional": {
+    "text": "Maritimo host C.D. Nacional in the Primeira Liga on 2026-11-27. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:42.893Z"
+  },
+  "eredivisie|2026-11-27|FC Groningen|Willem II": {
+    "text": "FC Groningen host Willem II in the Eredivisie on 2026-11-27. A statistical model forecasts a 3-1 scoreline for this match, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:43.880Z"
+  },
+  "belgian_pro_league|2026-11-27|OH Leuven|KV Kortrijk": {
+    "text": "OH Leuven host KV Kortrijk in the Belgian Pro League on 2026-11-27. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:45.271Z"
+  },
+  "super_lig|2026-11-27|Alanyaspor|Konyaspor": {
+    "text": "Alanyaspor host Konyaspor in the Süper Lig on 2026-11-27. The statistical model's forecast for this match is a 0-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:46.502Z"
+  },
+  "super_lig|2026-11-27|Caykur Rizespor|Kasimpasa": {
+    "text": "Caykur Rizespor host Kasimpasa in the Süper Lig on 2026-11-27. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:47.770Z"
+  },
+  "chance_liga|2026-11-27|SK Artis Brno|1.FC Slovacko": {
+    "text": "SK Artis Brno host 1.FC Slovacko in the Chance Liga on 2026-11-27. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-27",
+    "generated_at": "2026-11-17T00:49:49.119Z"
+  },
+  "europa_league|2026-11-26|Sparta Prague|AZ Alkmaar": {
+    "text": "Sparta Prague host AZ Alkmaar in the Europa League on 2026-11-26. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-26",
+    "generated_at": "2026-11-17T00:49:50.296Z"
   }
 }

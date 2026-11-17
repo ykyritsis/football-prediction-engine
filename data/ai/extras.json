@@ -2079,6 +2079,70 @@
     "europa_league|2026-11-26|TSG 1899 Hoffenheim|SK Sturm Graz": {
       "text": "Hoffenheim's strong home form, including recent wins over Lyon and Leverkusen, drives the lean toward a home victory.",
       "generated_at": "2026-11-16T13:40:56.436Z"
+    },
+    "premier_league|2026-11-27|Nottingham Forest FC|Chelsea FC": {
+      "text": "Chelsea's stronger recent form and Nottingham Forest's four losses in five matches drive the lean toward an away win.",
+      "generated_at": "2026-11-17T00:49:37.625Z"
+    },
+    "la_liga|2026-11-27|Levante UD|Real Racing Club de Santander": {
+      "text": "Levante's home advantage and stronger overall form drive the lean toward a home win.",
+      "generated_at": "2026-11-17T00:49:38.608Z"
+    },
+    "serie_a|2026-11-27|Venezia FC|Bologna FC 1909": {
+      "text": "Bologna's four straight wins and strong away form drive the lean toward an away victory over a struggling Venezia side.",
+      "generated_at": "2026-11-17T00:49:39.539Z"
+    },
+    "bundesliga|2026-11-27|SV Werder Bremen|Borussia Mönchengladbach": {
+      "text": "Werder Bremen's strong home form and Gladbach's poor recent run drive the lean toward a home win.",
+      "generated_at": "2026-11-17T00:49:41.095Z"
+    },
+    "ligue_1|2026-11-27|Stade Brestois 29|Paris FC": {
+      "text": "Brest's strong recent home form, including wins over Lyon and Angers, drives the lean toward a home victory.",
+      "generated_at": "2026-11-17T00:49:42.234Z"
+    },
+    "primeira_liga|2026-11-27|Maritimo|C.D. Nacional": {
+      "text": "Maritimo's five-match winless run and leaky defense favor C.D. Nacional, whose recent home wins show better form.",
+      "generated_at": "2026-11-17T00:49:43.326Z"
+    },
+    "eredivisie|2026-11-27|FC Groningen|Willem II": {
+      "text": "Willem II's five-match winless run with heavy defeats drives the lean toward a Groningen home win.",
+      "generated_at": "2026-11-17T00:49:44.648Z"
+    },
+    "belgian_pro_league|2026-11-27|OH Leuven|KV Kortrijk": {
+      "text": "OH Leuven's strong recent form, including three wins in five, drives the lean toward a home victory over a struggling KV Kortrijk side.",
+      "generated_at": "2026-11-17T00:49:45.919Z"
+    },
+    "super_lig|2026-11-27|Alanyaspor|Konyaspor": {
+      "text": "Both sides' poor recent form and low-scoring tendencies point to a tight, even contest ending in a draw.",
+      "generated_at": "2026-11-17T00:49:46.818Z"
+    },
+    "super_lig|2026-11-27|Caykur Rizespor|Kasimpasa": {
+      "text": "Kasimpasa's strong recent form, including three wins in their last five, drives the lean toward an away win.",
+      "generated_at": "2026-11-17T00:49:47.818Z"
+    },
+    "chance_liga|2026-11-27|SK Artis Brno|1.FC Slovacko": {
+      "text": "Slovacko's stronger overall form and Brno's poor recent run, including heavy home defeats, drive the lean toward an away win.",
+      "generated_at": "2026-11-17T00:49:49.055Z"
+    },
+    "europa_league|2026-11-26|Union St.-Gilloise|Lech Poznan": {
+      "text": "Union St.-Gilloise's five-match winning run and Lech Poznan's heavy recent defeats drive the lean toward a home win.",
+      "generated_at": "2026-11-17T00:49:50.027Z"
+    },
+    "europa_league|2026-11-26|Viktoria Plzen|Benfica": {
+      "text": "Benfica's five-match winning run against Viktoria Plzen's four losses in five drives the away-win lean.",
+      "generated_at": "2026-11-17T00:49:51.162Z"
+    },
+    "conference_league|2026-11-26|Ajax Amsterdam|FC Thun": {
+      "text": "Ajax's five-match unbeaten run and Thun's two losses in three drive the lean toward a home win.",
+      "generated_at": "2026-11-17T00:49:52.234Z"
+    },
+    "conference_league|2026-11-26|Borac Banja Luka|Atalanta BC": {
+      "text": "Atalanta's superior quality and recent away win drive the lean toward an away victory despite Borac's home advantage.",
+      "generated_at": "2026-11-17T00:49:53.612Z"
+    },
+    "conference_league|2026-11-26|Braga|KuPS Kuopio": {
+      "text": "Braga's strong home form and KuPS's winless, low-scoring run drive the lean toward a Braga victory.",
+      "generated_at": "2026-11-17T00:49:54.612Z"
     }
   },
   "storylines": {
@@ -3626,6 +3690,126 @@
       "text": "Union St.-Gilloise sit first in the Belgian Pro League with 29 points from a record of 9 wins, 2 draws and 0 losses, and a goal difference of +23. Their last five results include four wins and one draw, with the most recent a 1-0 home win against Racing Genk ahead of their away fixture at KV Kortrijk on 2026-11-22.",
       "kind": "hot",
       "generated_at": "2026-11-16T13:41:25.664Z"
+    },
+    "super_lig|Eyupspor|2026-11-16": {
+      "text": "Eyupspor sit 18th of 18 in the Süper Lig with 3 points, a goal difference of -27, and a record of 1W 0D 10L. They have lost their last five matches and next face Trabzonspor on 2026-11-22.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:49:55.609Z"
+    },
+    "super_lig|Galatasaray|2026-11-16": {
+      "text": "Galatasaray sit first in the 18-team Süper Lig with 28 points and a goal difference of +12, having recorded 9 wins, 1 draw and 1 loss. They have won each of their last five matches, most recently 4-3 at home to Amed SFK, and are next scheduled to host Samsunspor on 2026-11-21.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:49:56.884Z"
+    },
+    "super_lig|Gaziantep FK|2026-11-16": {
+      "text": "Gaziantep FK sit 16th of 18 in the Süper Lig with 8 points, a goal difference of -10, and a record of 2W 2D 7L. The team has lost each of their last five matches and next face Genclerbirligi away on 2026-11-21.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:49:57.888Z"
+    },
+    "chance_liga|FC Zlin|2026-11-16": {
+      "text": "FC Zlin sit 16th of 16 in the Chance Liga with 1 point, a goal difference of -11 and a record of 0W 1D 8L. Their last five results were four defeats followed by a 1-1 draw away at Jablonec, and their next fixture is away to FK Mlada Boleslav on 2026-11-21.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:49:59.109Z"
+    },
+    "chance_liga|Slavia Prague|2026-11-16": {
+      "text": "Slavia Prague sit first in the Chance Liga with 23 points from 7 wins and 2 draws, and a goal difference of +19. Their last five league results include a 2-2 draw with Bohemians Prague 1905 followed by four straight wins, and their next fixture is away to SK Sigma Olomouc on 2026-11-21.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:00.306Z"
+    },
+    "chance_liga|FC Slovan Liberec|2026-11-16": {
+      "text": "FC Slovan Liberec sits second in the Chance Liga with 20 points from a 6W 2D 1L record and a goal difference of +9. The team is unbeaten in its last five matches, with four wins followed by a 0-0 draw away to SK Artis Brno.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:01.598Z"
+    },
+    "champions_league|Paris Saint-Germain FC|2026-11-16": {
+      "text": "Paris Saint-Germain FC sit first of 36 in the Champions League with 12 points, a goal difference of +15, and a record of 4 wins, 0 draws, and 0 losses. The team has won each of its last five matches, most recently 1-0 at home against ES Troyes AC, and next faces AS Roma at home on 2026-11-25.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:03.057Z"
+    },
+    "champions_league|Real Madrid CF|2026-11-16": {
+      "text": "Real Madrid CF are second of 36 in the Champions League with 12 points, a goal difference of +6 and a record of four wins from four. They have won each of their last five matches, most recently 3-0 away to Valencia CF, and next face PSV Eindhoven at home on 2026-11-24.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:04.264Z"
+    },
+    "champions_league|Galatasaray|2026-11-16": {
+      "text": "Galatasaray sit 18th of 36 in the Champions League with 6 points, a goal difference of -1, and a record of 2 wins, 0 draws, and 2 losses. They have won each of their last five matches, most recently 4-3 at home to Amed SFK, and next face Aston Villa FC at home on 2026-11-24.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:05.895Z"
+    },
+    "europa_league|Benfica|2026-11-16": {
+      "text": "Benfica sit first of 36 in the Europa League with 12 points and a goal difference of +10 from a 4W 0D 0L record. They have won each of their last five matches, most recently 3-2 away to Estrela, ahead of their next fixture away to Viktoria Plzen on 2026-11-26.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:07.329Z"
+    },
+    "europa_league|AFC Bournemouth|2026-11-16": {
+      "text": "AFC Bournemouth sit second of 36 in the Europa League with 12 points and a goal difference of +9 from a record of 4 wins, 0 draws and 0 losses. They have won each of their last five matches, most recently 2-1 away to Ipswich Town FC, and next face RC Celta de Vigo away on 2026-11-26.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:08.590Z"
+    },
+    "europa_league|Union St.-Gilloise|2026-11-16": {
+      "text": "Union St.-Gilloise sit fourth of 36 in the Europa League with 10 points and a goal difference of +8 from a record of 3 wins, 1 draw and 0 losses. They have won each of their last five matches across all competitions, most recently 1-0 at home against Racing Genk, ahead of their fixture against Lech Poznan on 2026-11-26.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:10.030Z"
+    },
+    "conference_league|Panathinaikos|2026-11-16": {
+      "text": "Panathinaikos sit second of 36 in the Conference League with 9 points, a goal difference of +6 and a record of 3 wins, 0 draws and 0 losses. Their last five results include a 1-0 home win over Real Betis Balompié, a 0-4 away loss to Real Betis Balompié, a 2-1 home win over Borac Banja Luka, a 5-1 away win over Kairat Almaty and a 2-1 home win over CSKA Sofia, ahead of their next fixture away to FC Nordsjælland on 2026-11-26.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:11.469Z"
+    },
+    "conference_league|FC Twente|2026-11-16": {
+      "text": "FC Twente sit third of 36 in the Conference League with 9 points, a goal difference of +6 and a record of 3 wins, 0 draws and 0 losses. Their last five results were a 4-1 away win over Lincoln Red Imps, a 2-0 away win over AZ Alkmaar, a 9-0 away win over Excelsior, a 3-1 home win over Pafos and a 2-2 home draw with Ajax Amsterdam, ahead of their next fixture away to SC Freiburg on 2026-11-26.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:12.964Z"
+    },
+    "conference_league|KuPS Kuopio|2026-11-16": {
+      "text": "KuPS Kuopio sit 33rd of 36 in the Conference League with 1 point, a goal difference of -4 and a record of 0W 1D 2L. Their last five results were L 0-2 vs Lech Poznan, L 0-1 vs Lech Poznan, L 2-4 vs Trabzonspor, L 0-2 vs Borac Banja Luka and D 0-0 vs KAA Gent, with Braga v KuPS Kuopio next on 2026-11-26.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:14.484Z"
+    },
+    "club_world_cup|Urawa Red Diamonds|2026-11-16": {
+      "text": "Urawa Red Diamonds sit 31st of 32 in the Club World Cup standings with 0 points and a goal difference of +0. Their last five results were all losses: 0-3 vs Manchester City FC, 2-4 vs Al Ahly, 1-3 vs River Plate, 1-2 vs FC Internazionale Milano, and 0-4 vs Monterrey.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:15.554Z"
+    },
+    "club_world_cup|Ulsan HD|2026-11-16": {
+      "text": "Ulsan HD sits 30th of 32 in the Club World Cup standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 away to Borussia Dortmund on 2025-06-25.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:17.010Z"
+    },
+    "club_world_cup|Benfica|2026-11-16": {
+      "text": "Benfica are on a good run of form, having won each of their last five matches. They currently sit 6th of 32 in the Club World Cup standings with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:18.296Z"
+    },
+    "world_cup|England|2026-11-16": {
+      "text": "England sit second of 48 with 9 points and a goal difference of +3, having recorded 3 wins and 1 loss. Their last five results were all wins, most recently a 3-2 away victory over Spain on 2026-11-15.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:19.334Z"
+    },
+    "world_cup|Argentina|2026-11-16": {
+      "text": "Argentina sit third of 48 with 6 points and a goal difference of +2, having won both of their matches so far. Their last five results were all wins, most recently a 2-1 victory away to England on 2026-07-15.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:20.353Z"
+    },
+    "world_cup|Türkiye|2026-11-16": {
+      "text": "Türkiye sits 35th of 48 with 0 points and a goal difference of +0, having recorded 0W 0D 0L. The team's last five results were all losses: 1-4 vs Italy, 0-3 vs Belgium, 1-3 vs Italy, 1-2 vs Belgium, and 1-2 vs France.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:21.383Z"
+    },
+    "european_championship|Türkiye|2026-11-16": {
+      "text": "Türkiye sit 23rd of 24 with 0 points and a goal difference of +0, having recorded 0W 0D 0L. Their last five results were all defeats: 1-4 vs Italy, 0-3 vs Belgium, 1-3 vs Italy, 1-2 vs Belgium, and 1-2 vs France.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:22.359Z"
+    },
+    "european_championship|Serbia|2026-11-16": {
+      "text": "Serbia sits 18th of 24 in the European Championship with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 away to Greece on 2026-11-16.",
+      "kind": "cold",
+      "generated_at": "2026-11-17T00:50:23.672Z"
+    },
+    "european_championship|England|2026-11-16": {
+      "text": "England have won each of their last five matches, most recently a 3-2 away win against Spain on 2026-11-15. The team sits 7th of 24 in the European Championship standings with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-17T00:50:24.953Z"
     }
   }
 }
