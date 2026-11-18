@@ -2267,6 +2267,70 @@
     "serie_a|2026-11-28|Torino FC|SS Lazio": {
       "text": "Lazio's four wins and a draw in their last five, including a 3-0 win at Juventus, outweigh Torino's three defeats in that span.",
       "generated_at": "2026-11-18T13:59:03.312Z"
+    },
+    "serie_a|2026-11-28|FC Internazionale Milano|Genoa CFC": {
+      "text": "Inter's strong recent form and home advantage drive the forecast for an Inter win.",
+      "generated_at": "2026-11-18T23:24:36.592Z"
+    },
+    "bundesliga|2026-11-28|1. FC Köln|SV 07 Elversberg": {
+      "text": "Elversberg's two wins in their last five, including a 4-1 home victory, outweigh Köln's winless run of two draws and two losses in their last four.",
+      "generated_at": "2026-11-18T23:24:37.554Z"
+    },
+    "bundesliga|2026-11-28|1. FSV Mainz 05|1. FC Union Berlin": {
+      "text": "Mainz's home advantage and Union Berlin's winless recent run support a narrow home win.",
+      "generated_at": "2026-11-18T23:24:38.437Z"
+    },
+    "bundesliga|2026-11-28|SC Paderborn 07|FC Schalke 04": {
+      "text": "Paderborn's stronger recent form and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-11-18T23:24:39.120Z"
+    },
+    "bundesliga|2026-11-28|Hamburger SV|FC Bayern München": {
+      "text": "Bayern's strong recent form and Hamburger SV's defensive lapses drive the away-win forecast.",
+      "generated_at": "2026-11-18T23:24:39.981Z"
+    },
+    "bundesliga|2026-11-28|VfB Stuttgart|Eintracht Frankfurt": {
+      "text": "Stuttgart's strong home form and recent wins drive the lean toward a home victory over inconsistent Frankfurt.",
+      "generated_at": "2026-11-18T23:24:41.123Z"
+    },
+    "ligue_1|2026-11-28|Angers SCO|Racing Club de Lens": {
+      "text": "Lens's strong recent form and Angers' five-match winless run with heavy defeats drive the away-win lean.",
+      "generated_at": "2026-11-18T23:24:41.953Z"
+    },
+    "ligue_1|2026-11-28|Le Mans FC|Lille OSC": {
+      "text": "Lille's strong recent form and Le Mans' winless run drive the forecast toward an away win.",
+      "generated_at": "2026-11-18T23:24:42.831Z"
+    },
+    "ligue_1|2026-11-28|OGC Nice|ES Troyes AC": {
+      "text": "Nice's strong recent form, with four wins in five, against Troyes' poor run drives the lean toward a home win.",
+      "generated_at": "2026-11-18T23:24:43.757Z"
+    },
+    "ligue_1|2026-11-28|Le Havre AC|RC Strasbourg Alsace": {
+      "text": "Le Havre's five straight losses and Strasbourg's stronger recent form drive the away-win lean.",
+      "generated_at": "2026-11-18T23:24:44.502Z"
+    },
+    "ligue_1|2026-11-28|Paris Saint-Germain FC|FC Lorient": {
+      "text": "Paris Saint-Germain's five-match winning run and Lorient's inconsistent form drive the lean toward a home win.",
+      "generated_at": "2026-11-18T23:24:45.452Z"
+    },
+    "primeira_liga|2026-11-28|Arouca|Rio Ave": {
+      "text": "Arouca's three home wins and Rio Ave's four straight losses drive the lean toward an Arouca win.",
+      "generated_at": "2026-11-18T23:24:46.734Z"
+    },
+    "primeira_liga|2026-11-28|Moreirense|Santa Clara": {
+      "text": "Santa Clara's stronger away form and Moreirense's recent home loss to Gil Vicente drive the lean toward an away win.",
+      "generated_at": "2026-11-18T23:24:47.786Z"
+    },
+    "primeira_liga|2026-11-28|Académico de Viseu|Alverca": {
+      "text": "Académico de Viseu's strong recent form, with four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-11-18T23:24:48.878Z"
+    },
+    "primeira_liga|2026-11-28|Vitória de Guimaraes|Estrela": {
+      "text": "Vitória de Guimaraes's home advantage and Estrela's five straight losses drive the lean toward a home win.",
+      "generated_at": "2026-11-18T23:24:49.725Z"
+    },
+    "eredivisie|2026-11-28|Excelsior|Telstar": {
+      "text": "Excelsior's five straight losses, including heavy home defeats, drive the lean toward a Telstar away win.",
+      "generated_at": "2026-11-18T23:24:50.795Z"
     }
   },
   "storylines": {
