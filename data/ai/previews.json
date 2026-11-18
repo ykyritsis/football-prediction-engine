@@ -2698,5 +2698,65 @@
     "text": "SK Brann host AGF in the Conference League on 2026-11-26. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-26",
     "generated_at": "2026-11-17T23:52:47.345Z"
+  },
+  "premier_league|2026-11-28|Leeds United FC|Coventry City FC": {
+    "text": "Leeds United FC host Coventry City FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:47.169Z"
+  },
+  "premier_league|2026-11-28|Ipswich Town FC|Aston Villa FC": {
+    "text": "Ipswich Town FC host Aston Villa FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:48.049Z"
+  },
+  "premier_league|2026-11-28|Arsenal FC|Manchester City FC": {
+    "text": "Arsenal FC host Manchester City FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:49.011Z"
+  },
+  "premier_league|2026-11-28|Manchester United FC|Brentford FC": {
+    "text": "Manchester United FC host Brentford FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:50.131Z"
+  },
+  "premier_league|2026-11-28|Everton FC|Liverpool FC": {
+    "text": "Everton FC host Liverpool FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:51.555Z"
+  },
+  "premier_league|2026-11-28|Fulham FC|AFC Bournemouth": {
+    "text": "Fulham FC host AFC Bournemouth in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:52.930Z"
+  },
+  "premier_league|2026-11-28|Nottingham Forest FC|Chelsea FC": {
+    "text": "Nottingham Forest FC host Chelsea FC in the Premier League on 2026-11-28. The statistical model forecasts a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:54.243Z"
+  },
+  "premier_league|2026-11-28|Brighton & Hove Albion FC|Newcastle United FC": {
+    "text": "Brighton & Hove Albion FC host Newcastle United FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:55.430Z"
+  },
+  "premier_league|2026-11-28|Sunderland AFC|Tottenham Hotspur FC": {
+    "text": "Sunderland AFC host Tottenham Hotspur FC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:56.234Z"
+  },
+  "premier_league|2026-11-28|Crystal Palace FC|Hull City AFC": {
+    "text": "Crystal Palace FC host Hull City AFC in the Premier League on 2026-11-28. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:57.439Z"
+  },
+  "la_liga|2026-11-28|Real Betis Balompié|Rayo Vallecano de Madrid": {
+    "text": "La Liga action on 2026-11-28 features Real Betis Balompié hosting Rayo Vallecano de Madrid. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:58.292Z"
+  },
+  "la_liga|2026-11-28|Málaga CF|Athletic Club": {
+    "text": "La Liga fixture on 2026-11-28 sees Málaga CF host Athletic Club at home. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-18T13:58:59.339Z"
   }
 }

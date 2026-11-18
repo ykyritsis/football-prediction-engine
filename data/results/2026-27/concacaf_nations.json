@@ -1218,31 +1218,61 @@
       "date": "2026-11-18",
       "team1": "French Guiana",
       "team2": "St. Vincent and the Grenadines",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-18",
       "team1": "United States",
       "team2": "Haiti",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-18",
       "team1": "El Salvador",
       "team2": "St. Martin",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-18",
       "team1": "Mexico",
       "team2": "Jamaica",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-18",
       "team1": "Nicaragua",
       "team2": "Montserrat",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     }
   ]
 }
