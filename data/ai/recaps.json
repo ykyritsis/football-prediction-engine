@@ -1348,5 +1348,15 @@
     "text": "Recent UEFA Nations League results included draws such as Armenia 1-1 Cyprus, Slovakia 2-2 Faroe Islands, Slovenia 0-0 Switzerland, Kosovo 0-0 Israel, Latvia 0-0 Armenia, Kazakhstan 2-2 Slovakia, Gibraltar 1-1 Malta, Hungary 1-1 Northern Ireland, Israel 1-1 Austria, and Poland 1-1 Sweden. The biggest margin was Netherlands 7-0 Greece, with Bulgaria 0-5 Iceland and Germany 5-0 Netherlands also standing out.",
     "name": "UEFA Nations League",
     "generated_at": "2026-11-18T13:58:48.652Z"
+  },
+  "concacaf_nations|2026-11-19": {
+    "text": "Recent Concacaf Nations League results included draws between Aruba and Martinique (0-0 and 1-1), Curaçao and Panama (0-0), and Trinidad and Tobago and Antigua and Barbuda (1-1). The biggest margin was Cuba's 9-0 win over Grenada, followed by Guyana's 6-0 win over the Cayman Islands and the United States' 6-0 win over Haiti.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-19T14:27:36.042Z"
+  },
+  "nations_league|2026-11-19": {
+    "text": "Recent UEFA Nations League results included several draws, such as Armenia 1-1 Cyprus, Slovakia 2-2 Faroe Islands, Slovenia 0-0 Switzerland, Kosovo 0-0 Israel, Latvia 0-0 Armenia, Kazakhstan 2-2 Slovakia, Gibraltar 1-1 Malta, Hungary 1-1 Northern Ireland, Israel 1-1 Austria, and Poland 1-1 Sweden. The biggest margin was Netherlands 7-0 Greece, while Germany also beat Netherlands 5-0 and Bulgaria lost 0-5 to Iceland.",
+    "name": "UEFA Nations League",
+    "generated_at": "2026-11-19T14:27:37.070Z"
   }
 }

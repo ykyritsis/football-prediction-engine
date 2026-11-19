@@ -2818,5 +2818,65 @@
     "text": "Ligue 1 fixture on 2026-11-28 sees Le Mans FC host Lille OSC. The statistical model's forecast is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-28",
     "generated_at": "2026-11-18T23:24:48.001Z"
+  },
+  "premier_league|2026-11-29|Everton FC|Liverpool FC": {
+    "text": "Everton FC host Liverpool FC in the Premier League on 2026-11-29. The statistical model's forecast for this match is a 0-1 scoreline.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:36.026Z"
+  },
+  "premier_league|2026-11-29|Brighton & Hove Albion FC|Newcastle United FC": {
+    "text": "Brighton & Hove Albion FC host Newcastle United FC in the Premier League on 2026-11-29. A statistical model forecasts a 2-0 scoreline for this fixture, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:36.801Z"
+  },
+  "premier_league|2026-11-29|Crystal Palace FC|Hull City AFC": {
+    "text": "Crystal Palace FC host Hull City AFC in the Premier League on 2026-11-29. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:37.756Z"
+  },
+  "premier_league|2026-11-29|Fulham FC|AFC Bournemouth": {
+    "text": "Fulham FC host AFC Bournemouth in the Premier League on 2026-11-29. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:38.767Z"
+  },
+  "premier_league|2026-11-29|Sunderland AFC|Tottenham Hotspur FC": {
+    "text": "Sunderland AFC host Tottenham Hotspur FC in the Premier League on 2026-11-29. A statistical model forecasts a 0-1 scoreline for this match, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:39.640Z"
+  },
+  "premier_league|2026-11-29|Arsenal FC|Manchester City FC": {
+    "text": "Arsenal FC host Manchester City FC in the Premier League on 2026-11-29. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:40.466Z"
+  },
+  "la_liga|2026-11-29|RC Celta de Vigo|Villarreal CF": {
+    "text": "La Liga's RC Celta de Vigo host Villarreal CF on 2026-11-29. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:41.395Z"
+  },
+  "la_liga|2026-11-29|Elche CF|Club Atlético de Madrid": {
+    "text": "La Liga action on 2026-11-29 sees Elche CF host Club Atlético de Madrid. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:42.329Z"
+  },
+  "la_liga|2026-11-29|Real Betis Balompié|Rayo Vallecano de Madrid": {
+    "text": "La Liga action on 2026-11-29 features Real Betis Balompié hosting Rayo Vallecano de Madrid. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:43.353Z"
+  },
+  "la_liga|2026-11-29|Valencia CF|CA Osasuna": {
+    "text": "Valencia CF host CA Osasuna in La Liga on 2026-11-29. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:44.611Z"
+  },
+  "la_liga|2026-11-29|Real Madrid CF|Deportivo Alavés": {
+    "text": "Real Madrid CF host Deportivo Alavés in La Liga on 2026-11-29. The statistical model's forecast for this match is a 2-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:45.528Z"
+  },
+  "la_liga|2026-11-29|RCD Espanyol de Barcelona|Getafe CF": {
+    "text": "La Liga action on 2026-11-29 features RCD Espanyol de Barcelona hosting Getafe CF. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T14:27:46.529Z"
   }
 }
