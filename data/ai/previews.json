@@ -2878,5 +2878,65 @@
     "text": "La Liga action on 2026-11-29 features RCD Espanyol de Barcelona hosting Getafe CF. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-29",
     "generated_at": "2026-11-19T14:27:46.529Z"
+  },
+  "la_liga|2026-11-29|Real Sociedad de Fútbol|Sevilla FC": {
+    "text": "La Liga's Real Sociedad de Fútbol host Sevilla FC on 2026-11-29. A statistical model forecasts a 2-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:48.916Z"
+  },
+  "la_liga|2026-11-29|Levante UD|Real Racing Club de Santander": {
+    "text": "Levante UD host Real Racing Club de Santander in La Liga on 2026-11-29. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:49.704Z"
+  },
+  "la_liga|2026-11-29|RC Deportivo La Coruña|FC Barcelona": {
+    "text": "La Liga action on 2026-11-29 features RC Deportivo La Coruña hosting FC Barcelona at the Estadio Riazor. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:50.677Z"
+  },
+  "la_liga|2026-11-29|Málaga CF|Athletic Club": {
+    "text": "La Liga fixture on 2026-11-29 sees Málaga CF host Athletic Club at home. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:51.521Z"
+  },
+  "serie_a|2026-11-29|US Sassuolo Calcio|SSC Napoli": {
+    "text": "Serie A fixture on 2026-11-29 sees US Sassuolo Calcio host SSC Napoli. The statistical model forecasts a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:52.346Z"
+  },
+  "serie_a|2026-11-29|Cagliari Calcio|AC Milan": {
+    "text": "Cagliari Calcio host AC Milan in Serie A on 2026-11-29. The statistical model forecasts a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:53.112Z"
+  },
+  "serie_a|2026-11-29|Como 1907|Juventus FC": {
+    "text": "Serie A fixture on 2026-11-29 sees Como 1907 host Juventus FC. The statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:54.021Z"
+  },
+  "serie_a|2026-11-29|AS Roma|AC Monza": {
+    "text": "Serie A fixture on 2026-11-29 sees AS Roma host AC Monza at the Stadio Olimpico. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:54.838Z"
+  },
+  "serie_a|2026-11-29|Frosinone Calcio|Parma Calcio 1913": {
+    "text": "Serie A's 2026-11-29 fixture sees Frosinone Calcio host Parma Calcio 1913. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:55.647Z"
+  },
+  "serie_a|2026-11-29|Torino FC|SS Lazio": {
+    "text": "Torino FC host SS Lazio in Serie A on 2026-11-29. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:56.397Z"
+  },
+  "serie_a|2026-11-29|Venezia FC|Bologna FC 1909": {
+    "text": "Venezia FC host Bologna FC 1909 in Serie A on 2026-11-29. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:57.171Z"
+  },
+  "serie_a|2026-11-29|US Lecce|Atalanta BC": {
+    "text": "Serie A fixture on 2026-11-29 sees US Lecce host Atalanta BC. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-19T23:35:57.990Z"
   }
 }
