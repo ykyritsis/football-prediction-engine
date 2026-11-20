@@ -2938,5 +2938,65 @@
     "text": "Serie A fixture on 2026-11-29 sees US Lecce host Atalanta BC. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
     "date": "2026-11-29",
     "generated_at": "2026-11-19T23:35:57.990Z"
+  },
+  "la_liga|2026-11-30|RCD Espanyol de Barcelona|Getafe CF": {
+    "text": "La Liga action on 2026-11-30 features RCD Espanyol de Barcelona hosting Getafe CF. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-30",
+    "generated_at": "2026-11-20T14:01:29.570Z"
+  },
+  "serie_a|2026-11-29|Udinese Calcio|ACF Fiorentina": {
+    "text": "Serie A sides Udinese Calcio and ACF Fiorentina meet on 2026-11-29, with Udinese Calcio hosting the fixture. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:30.551Z"
+  },
+  "serie_a|2026-11-29|FC Internazionale Milano|Genoa CFC": {
+    "text": "FC Internazionale Milano host Genoa CFC in Serie A on 2026-11-29. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:31.584Z"
+  },
+  "serie_a|2026-11-30|US Lecce|Atalanta BC": {
+    "text": "US Lecce host Atalanta BC in Serie A on 2026-11-30. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-30",
+    "generated_at": "2026-11-20T14:01:32.493Z"
+  },
+  "serie_a|2026-11-30|Cagliari Calcio|AC Milan": {
+    "text": "Cagliari Calcio host AC Milan in Serie A on 2026-11-30. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-30",
+    "generated_at": "2026-11-20T14:01:33.441Z"
+  },
+  "bundesliga|2026-11-29|SC Freiburg|RB Leipzig": {
+    "text": "SC Freiburg host RB Leipzig in the Bundesliga on 2026-11-29. The statistical model's forecast for this match is a 1-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:34.241Z"
+  },
+  "bundesliga|2026-11-29|TSG 1899 Hoffenheim|FC Augsburg": {
+    "text": "TSG 1899 Hoffenheim host FC Augsburg in the Bundesliga on 2026-11-29. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:35.032Z"
+  },
+  "bundesliga|2026-11-29|Borussia Dortmund|Bayer 04 Leverkusen": {
+    "text": "Borussia Dortmund host Bayer 04 Leverkusen in the Bundesliga on 2026-11-29. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:36.070Z"
+  },
+  "ligue_1|2026-11-28|OGC Nice|ES Troyes AC": {
+    "text": "Ligue 1 fixture on 2026-11-28 sees OGC Nice host ES Troyes AC. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-20T14:01:37.239Z"
+  },
+  "ligue_1|2026-11-28|Le Havre AC|RC Strasbourg Alsace": {
+    "text": "Le Havre AC host RC Strasbourg Alsace in Ligue 1 on 2026-11-28. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-20T14:01:38.365Z"
+  },
+  "ligue_1|2026-11-28|Paris Saint-Germain FC|FC Lorient": {
+    "text": "Ligue 1 action on 2026-11-28 features Paris Saint-Germain FC hosting FC Lorient. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-20T14:01:39.722Z"
+  },
+  "ligue_1|2026-11-29|AJ Auxerre|Olympique de Marseille": {
+    "text": "Ligue 1 fixture on 2026-11-29 sees AJ Auxerre host Olympique de Marseille at home. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-20T14:01:40.711Z"
   }
 }

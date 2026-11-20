@@ -2459,6 +2459,70 @@
     "ligue_1|2026-11-29|Olympique Lyonnais|AS Monaco FC": {
       "text": "Lyon's home wins and Monaco's winless run of draws and losses drive the lean toward a home victory.",
       "generated_at": "2026-11-19T23:36:01.742Z"
+    },
+    "la_liga|2026-11-30|RCD Espanyol de Barcelona|Getafe CF": {
+      "text": "Espanyol's recent home solidity and Getafe's heavy away defeats drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-20T14:01:29.942Z"
+    },
+    "serie_a|2026-11-30|US Lecce|Atalanta BC": {
+      "text": "Atalanta's higher win probability and Lecce's poor recent form, with four losses in five, drive the lean toward an away win.",
+      "generated_at": "2026-11-20T14:01:31.148Z"
+    },
+    "serie_a|2026-11-30|Cagliari Calcio|AC Milan": {
+      "text": "AC Milan's four wins in five recent matches against Cagliari's four losses in five drives the away-win forecast.",
+      "generated_at": "2026-11-20T14:01:32.556Z"
+    },
+    "primeira_liga|2026-11-29|Gil Vicente|Estoril": {
+      "text": "Gil Vicente's strong recent form, including three wins in five, against Estoril's five straight losses drives the lean to a home win.",
+      "generated_at": "2026-11-20T14:01:33.740Z"
+    },
+    "primeira_liga|2026-11-29|FC Porto|Sporting CP": {
+      "text": "FC Porto's five-match winning run and home advantage drive the lean toward a Porto win.",
+      "generated_at": "2026-11-20T14:01:34.637Z"
+    },
+    "primeira_liga|2026-11-30|Benfica|FC Famalicao": {
+      "text": "Benfica's strong recent form, including four straight wins, drives the forecast for a home victory over Famalicao.",
+      "generated_at": "2026-11-20T14:01:35.796Z"
+    },
+    "primeira_liga|2026-11-30|Casa Pia|Braga": {
+      "text": "Braga's back-to-back wins and stronger overall form outweigh Casa Pia's inconsistency, favoring a narrow away victory.",
+      "generated_at": "2026-11-20T14:01:37.144Z"
+    },
+    "eredivisie|2026-11-28|PSV Eindhoven|Go Ahead Eagles": {
+      "text": "PSV's dominant home scoring form and Go Ahead Eagles' heavy away defeats drive the lean toward a PSV win.",
+      "generated_at": "2026-11-20T14:01:38.018Z"
+    },
+    "eredivisie|2026-11-28|SC Cambuur|Sparta Rotterdam": {
+      "text": "SC Cambuur's strong recent home form and three wins in their last four drive the lean toward a home victory.",
+      "generated_at": "2026-11-20T14:01:38.968Z"
+    },
+    "eredivisie|2026-11-29|ADO Den Haag|FC Utrecht": {
+      "text": "FC Utrecht's stronger recent form, including two wins, drives the lean toward an away victory despite ADO Den Haag's home threat.",
+      "generated_at": "2026-11-20T14:01:39.738Z"
+    },
+    "eredivisie|2026-11-29|Feyenoord Rotterdam|Ajax Amsterdam": {
+      "text": "Feyenoord's home advantage and stronger recent home form drive the lean toward a home win.",
+      "generated_at": "2026-11-20T14:01:40.685Z"
+    },
+    "eredivisie|2026-11-29|Fortuna Sittard|Heerenveen": {
+      "text": "Heerenveen's five-match winning run drives the away-win lean against a Fortuna Sittard side that has drawn four of its last five.",
+      "generated_at": "2026-11-20T14:01:41.695Z"
+    },
+    "eredivisie|2026-11-29|PEC Zwolle|AZ Alkmaar": {
+      "text": "AZ Alkmaar's higher model probability and win over FC Groningen drive the away lean despite PEC Zwolle's strong home form.",
+      "generated_at": "2026-11-20T14:01:42.684Z"
+    },
+    "eredivisie|2026-11-29|NEC Nijmegen|FC Twente": {
+      "text": "FC Twente's strong recent form, including a 9-0 win and an away draw at Ajax, drives the lean toward an away win over a NEC side that has drawn frequently.",
+      "generated_at": "2026-11-20T14:01:43.900Z"
+    },
+    "belgian_pro_league|2026-11-28|KVC Westerlo|RAAL La Louvière": {
+      "text": "Westerlo's stronger recent form and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-11-20T14:01:44.721Z"
+    },
+    "belgian_pro_league|2026-11-28|Cercle Brugge KSV|KV Mechelen": {
+      "text": "Cercle Brugge's back-to-back wins and home advantage edge out Mechelen's stronger overall form, supporting a narrow home win.",
+      "generated_at": "2026-11-20T14:01:45.903Z"
     }
   },
   "storylines": {
