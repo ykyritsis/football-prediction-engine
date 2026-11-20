@@ -1368,5 +1368,25 @@
     "text": "Recent UEFA Nations League results included a 7-0 Netherlands win over Greece and a 7-2 Finland win over San Marino, with the Netherlands' match the biggest margin. Draws included Slovakia 2-2 Faroe Islands, Slovenia 0-0 Switzerland, Kosovo 0-0 Israel, Latvia 0-0 Armenia, Gibraltar 1-1 Malta, Hungary 1-1 Northern Ireland, Israel 1-1 Austria, and Poland 1-1 Sweden.",
     "name": "UEFA Nations League",
     "generated_at": "2026-11-20T14:01:30.746Z"
+  },
+  "belgian_pro_league|2026-11-20": {
+    "text": "Cercle Brugge KSV beat KVC Westerlo 1-0. That one-goal margin was the biggest of the recent results, and there were no draws.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-20T23:06:05.457Z"
+  },
+  "bundesliga|2026-11-20": {
+    "text": "FC Bayern München and 1. FC Köln played out a 1-1 draw. That was the only result, so it was also the biggest margin of the round.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-20T23:06:06.395Z"
+  },
+  "la_liga|2026-11-20": {
+    "text": "RCD Espanyol de Barcelona beat Athletic Club 1-0. It was the only result provided, so it stands as the biggest margin, and there were no draws.",
+    "name": "La Liga",
+    "generated_at": "2026-11-20T23:06:07.154Z"
+  },
+  "ligue_1|2026-11-20": {
+    "text": "ES Troyes AC beat Le Havre AC 3-1, the biggest margin among the recent results. No matches ended in a draw.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-20T23:06:07.853Z"
   }
 }

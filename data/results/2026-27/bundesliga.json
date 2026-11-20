@@ -978,7 +978,13 @@
       "date": "2026-11-20",
       "team1": "FC Bayern München",
       "team2": "1. FC Köln",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",

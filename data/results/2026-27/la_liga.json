@@ -1543,7 +1543,13 @@
       "date": "2026-11-20",
       "team1": "Athletic Club",
       "team2": "RCD Espanyol de Barcelona",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",
