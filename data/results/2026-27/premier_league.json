@@ -1248,20 +1248,37 @@
       "date": "2026-11-21",
       "team1": "Chelsea FC",
       "team2": "Leeds United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
-      "round": "Matchday 11",
       "date": "2026-11-21",
-      "time": "15:00",
       "team1": "Manchester City FC",
-      "team2": "Fulham FC"
+      "team2": "Fulham FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Aston Villa FC",
       "team2": "Sunderland AFC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 11",
@@ -1281,13 +1298,25 @@
       "date": "2026-11-21",
       "team1": "AFC Bournemouth",
       "team2": "Nottingham Forest FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Tottenham Hotspur FC",
       "team2": "Ipswich Town FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 11",
@@ -1300,13 +1329,25 @@
       "date": "2026-11-21",
       "team1": "Coventry City FC",
       "team2": "Crystal Palace FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Newcastle United FC",
       "team2": "Arsenal FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-22",

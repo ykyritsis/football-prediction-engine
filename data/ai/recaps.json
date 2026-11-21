@@ -1423,5 +1423,20 @@
     "text": "Genclerbirligi beat Gaziantep FK 1-0. That was the biggest margin among the recent results, and there were no draws.",
     "name": "Süper Lig",
     "generated_at": "2026-11-21T13:29:23.070Z"
+  },
+  "eredivisie|2026-11-21": {
+    "text": "PSV Eindhoven recorded the biggest margin of the recent Eredivisie results with a 4-1 win at NEC Nijmegen. SC Cambuur won 3-2 at FC Utrecht, Excelsior won 3-2 at Feyenoord Rotterdam, Heerenveen won 3-1 at FC Groningen, and PEC Zwolle won 3-1 at Telstar. There were no draws in these matches.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-21T22:12:06.690Z"
+  },
+  "premier_league|2026-11-21": {
+    "text": "Leeds United FC recorded the biggest margin of the recent Premier League results with a 4-1 win at Chelsea FC. Manchester City FC drew 1-1 with Fulham FC, Aston Villa FC played out a 0-0 draw with Sunderland AFC, and Newcastle United FC drew 2-2 with Arsenal FC.",
+    "name": "Premier League",
+    "generated_at": "2026-11-21T22:12:07.941Z"
+  },
+  "serie_a|2026-11-21": {
+    "text": "AS Roma's 5-1 win at Parma Calcio 1913 was the biggest margin among the recent Serie A results. SS Lazio also won comfortably, beating US Lecce 3-0, while Como 1907 defeated Cagliari Calcio 2-0 and SSC Napoli edged Torino FC 1-0. There were no draws in these matches.",
+    "name": "Serie A",
+    "generated_at": "2026-11-21T22:12:09.218Z"
   }
 }

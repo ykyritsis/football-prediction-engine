@@ -1133,31 +1133,61 @@
       "date": "2026-11-21",
       "team1": "OGC Nice",
       "team2": "Paris Saint-Germain FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "AS Monaco FC",
       "team2": "AJ Auxerre",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Racing Club de Lens",
       "team2": "Toulouse FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Lille OSC",
       "team2": "Olympique Lyonnais",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "RC Strasbourg Alsace",
       "team2": "Stade Brestois 29",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-22",

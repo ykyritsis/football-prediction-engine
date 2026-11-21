@@ -1302,31 +1302,61 @@
       "date": "2026-11-21",
       "team1": "NEC Nijmegen",
       "team2": "PSV Eindhoven",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "FC Utrecht",
       "team2": "SC Cambuur",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Feyenoord Rotterdam",
       "team2": "Excelsior",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "FC Groningen",
       "team2": "Heerenveen",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-21",
       "team1": "Telstar",
       "team2": "PEC Zwolle",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-22",
