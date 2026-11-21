@@ -1194,7 +1194,13 @@
       "date": "2026-11-21",
       "team1": "Genclerbirligi",
       "team2": "Gaziantep FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-21",

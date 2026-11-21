@@ -1388,5 +1388,40 @@
     "text": "ES Troyes AC beat Le Havre AC 3-1, the biggest margin among the recent results. No matches ended in a draw.",
     "name": "Ligue 1",
     "generated_at": "2026-11-20T23:06:07.853Z"
+  },
+  "belgian_pro_league|2026-11-21": {
+    "text": "Cercle Brugge KSV beat KVC Westerlo 1-0. That one-goal margin was the biggest of the recent results, and there were no draws.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-21T13:29:16.995Z"
+  },
+  "bundesliga|2026-11-21": {
+    "text": "FC Bayern München drew 1-1 with 1. FC Köln. That was the only result, so it was also the biggest margin and the only draw.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-21T13:29:17.813Z"
+  },
+  "concacaf_nations|2026-11-21": {
+    "text": "Cuba's 9-0 win over Grenada was the biggest margin of the recent Concacaf Nations League results, while Haiti's 0-6 loss to the United States was also a wide result. Martinique 1-1 Aruba and Trinidad and Tobago 1-1 Antigua and Barbuda were the draws.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-21T13:29:18.800Z"
+  },
+  "la_liga|2026-11-21": {
+    "text": "Athletic Club lost 0-1 to RCD Espanyol de Barcelona. That was the biggest margin among the recent results, and there were no draws.",
+    "name": "La Liga",
+    "generated_at": "2026-11-21T13:29:19.809Z"
+  },
+  "ligue_1|2026-11-21": {
+    "text": "ES Troyes AC beat Le Havre AC 3-1, the biggest margin among the recent results. No matches ended in a draw.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-21T13:29:20.762Z"
+  },
+  "nations_league|2026-11-21": {
+    "text": "Recent UEFA Nations League results included draws between Kosovo and Israel, Latvia and Armenia, Kazakhstan and Slovakia, Gibraltar and Malta, Hungary and Northern Ireland, Israel and Austria, and Poland and Sweden. The biggest margin was Finland's 7-2 win over San Marino, while Germany also beat the Netherlands 5-0 and Switzerland defeated Scotland 4-0.",
+    "name": "UEFA Nations League",
+    "generated_at": "2026-11-21T13:29:22.015Z"
+  },
+  "super_lig|2026-11-21": {
+    "text": "Genclerbirligi beat Gaziantep FK 1-0. That was the biggest margin among the recent results, and there were no draws.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-21T13:29:23.070Z"
   }
 }
