@@ -1362,7 +1362,13 @@
       "date": "2026-11-22",
       "team1": "FC Twente",
       "team2": "Willem II",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-22",

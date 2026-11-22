@@ -1438,5 +1438,55 @@
     "text": "AS Roma's 5-1 win at Parma Calcio 1913 was the biggest margin among the recent Serie A results. SS Lazio also won comfortably, beating US Lecce 3-0, while Como 1907 defeated Cagliari Calcio 2-0 and SSC Napoli edged Torino FC 1-0. There were no draws in these matches.",
     "name": "Serie A",
     "generated_at": "2026-11-21T22:12:09.218Z"
+  },
+  "belgian_pro_league|2026-11-22": {
+    "text": "Recent Belgian Pro League results saw Cercle Brugge KSV beat KVC Westerlo 1-0, while Royal Charleroi SC drew 2-2 with Sint-Truidense and Zulte-Waregem drew 2-2 with Antwerp. The biggest margin was KV Mechelen's 1-5 loss to Club Brugge, and Racing Genk also won 3-0 against RAAL La Louvière.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-22T13:22:25.673Z"
+  },
+  "bundesliga|2026-11-22": {
+    "text": "Bayer 04 Leverkusen's 4-0 win over SC Paderborn 07 was the biggest margin of the recent Bundesliga results. FC Bayern München drew 1-1 with 1. FC Köln, and FC Schalke 04 played out a 0-0 draw with VfB Stuttgart.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-22T13:22:26.362Z"
+  },
+  "concacaf_nations|2026-11-22": {
+    "text": "Cuba's 9-0 win over Grenada was the biggest margin of the recent Concacaf Nations League results. Martinique drew 1-1 with Aruba and Trinidad and Tobago drew 1-1 with Antigua and Barbuda.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-22T13:22:27.061Z"
+  },
+  "eredivisie|2026-11-22": {
+    "text": "PSV Eindhoven's 4-1 win at NEC Nijmegen was the biggest margin among the recent Eredivisie results. There were no draws, with FC Utrecht losing 3-2 to SC Cambuur, Feyenoord Rotterdam falling 3-2 to Excelsior, Heerenveen beating FC Groningen 3-1, PEC Zwolle winning 3-1 at Telstar, and FC Twente defeating Willem II 2-1.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-22T13:22:27.877Z"
+  },
+  "la_liga|2026-11-22": {
+    "text": "Recent La Liga action saw Deportivo Alavés beat RC Deportivo La Coruña 3-1, the biggest margin among these results. Sevilla FC and Real Betis Balompié drew 1-1, while Athletic Club lost 0-1 to RCD Espanyol de Barcelona, Rayo Vallecano de Madrid fell 0-1 to Valencia CF, and Real Madrid CF edged RC Celta de Vigo 2-1.",
+    "name": "La Liga",
+    "generated_at": "2026-11-22T13:22:28.820Z"
+  },
+  "ligue_1|2026-11-22": {
+    "text": "ES Troyes AC beat Le Havre AC 3-1 for the biggest margin among the recent Ligue 1 results. There were two draws: AS Monaco FC and AJ Auxerre finished 1-1, and Racing Club de Lens and Toulouse FC also drew 1-1. Other results saw Paris Saint-Germain FC win 3-2 at OGC Nice, Olympique Lyonnais win 1-0 at Lille OSC, and Stade Brestois 29 win 1-0 at RC Strasbourg Alsace.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-22T13:22:29.784Z"
+  },
+  "nations_league|2026-11-22": {
+    "text": "Finland's 7-2 win over San Marino was the biggest margin of the recent UEFA Nations League results, while Germany also impressed with a 5-0 victory over the Netherlands. The matches also produced several draws, including Latvia 0-0 Armenia, Kazakhstan 2-2 Slovakia, Gibraltar 1-1 Malta, Hungary 1-1 Northern Ireland, Israel 1-1 Austria, and Poland 1-1 Sweden.",
+    "name": "UEFA Nations League",
+    "generated_at": "2026-11-22T13:22:30.585Z"
+  },
+  "premier_league|2026-11-22": {
+    "text": "Leeds United FC recorded the biggest margin of the recent Premier League results with a 4-1 win at Chelsea FC. Manchester City FC drew 1-1 with Fulham FC, Aston Villa FC played out a 0-0 draw with Sunderland AFC, and Newcastle United FC drew 2-2 with Arsenal FC.",
+    "name": "Premier League",
+    "generated_at": "2026-11-22T13:22:31.310Z"
+  },
+  "serie_a|2026-11-22": {
+    "text": "AS Roma's 5-1 win at Parma Calcio 1913 was the biggest margin among the recent Serie A results. Como 1907 beat Cagliari Calcio 2-0, SS Lazio defeated US Lecce 3-0, and SSC Napoli edged Torino FC 1-0, with no draws in the set.",
+    "name": "Serie A",
+    "generated_at": "2026-11-22T13:22:32.351Z"
+  },
+  "super_lig|2026-11-22": {
+    "text": "Recent Süper Lig results saw Genclerbirligi beat Gaziantep FK 1-0, Caykur Rizespor win 2-0 at Amed SFK, Galatasaray edge Samsunspor 2-1, and Goztepe win 1-0 at Erzurum BB. The biggest margin was Caykur Rizespor's 2-0 victory. The only draw was Kocaelispor 2-2 Fenerbahce.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-22T13:22:33.176Z"
   }
 }

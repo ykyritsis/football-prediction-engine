@@ -3178,5 +3178,65 @@
     "text": "In the Chance Liga, FK Teplice will host FC Slovan Liberec on 2026-11-28. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-28",
     "generated_at": "2026-11-21T22:12:16.550Z"
+  },
+  "premier_league|2026-12-02|Tottenham Hotspur FC|Fulham FC": {
+    "text": "Tottenham Hotspur FC host Fulham FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:25.149Z"
+  },
+  "premier_league|2026-12-02|Liverpool FC|Sunderland AFC": {
+    "text": "Liverpool FC host Sunderland AFC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:25.828Z"
+  },
+  "premier_league|2026-12-02|Hull City AFC|Nottingham Forest FC": {
+    "text": "Hull City AFC host Nottingham Forest FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:26.822Z"
+  },
+  "premier_league|2026-12-02|Chelsea FC|Crystal Palace FC": {
+    "text": "Chelsea FC host Crystal Palace FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:27.474Z"
+  },
+  "premier_league|2026-12-02|Aston Villa FC|Everton FC": {
+    "text": "Aston Villa FC host Everton FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:28.128Z"
+  },
+  "premier_league|2026-12-02|Brentford FC|Arsenal FC": {
+    "text": "Brentford FC host Arsenal FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:28.965Z"
+  },
+  "premier_league|2026-12-02|Coventry City FC|Ipswich Town FC": {
+    "text": "Coventry City FC host Ipswich Town FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:29.650Z"
+  },
+  "premier_league|2026-12-02|Manchester City FC|Leeds United FC": {
+    "text": "Manchester City FC host Leeds United FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:30.333Z"
+  },
+  "premier_league|2026-12-02|Newcastle United FC|Manchester United FC": {
+    "text": "Newcastle United FC host Manchester United FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:31.170Z"
+  },
+  "premier_league|2026-12-02|AFC Bournemouth|Brighton & Hove Albion FC": {
+    "text": "AFC Bournemouth host Brighton & Hove Albion FC in the Premier League on 2026-12-02. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:31.929Z"
+  },
+  "la_liga|2026-12-02|Real Sociedad de Fútbol|Real Madrid CF": {
+    "text": "La Liga action on 2026-12-02 features Real Sociedad de Fútbol hosting Real Madrid CF. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:32.598Z"
+  },
+  "la_liga|2026-12-02|FC Barcelona|Club Atlético de Madrid": {
+    "text": "FC Barcelona host Club Atlético de Madrid in La Liga on 2026-12-02. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-02",
+    "generated_at": "2026-11-22T13:22:33.308Z"
   }
 }

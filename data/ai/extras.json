@@ -2607,6 +2607,54 @@
     "chance_liga|2026-11-29|FC Zlin|Sparta Prague": {
       "text": "Sparta Prague's three wins in their last five, including 3-0 at Sigma Olomouc, against Zlin's five-match winless run drive the away-win lean.",
       "generated_at": "2026-11-21T13:29:21.174Z"
+    },
+    "premier_league|2026-12-02|Tottenham Hotspur FC|Fulham FC": {
+      "text": "Tottenham's strong home form and superior win probability drive the forecast lean toward a home victory.",
+      "generated_at": "2026-11-22T13:22:25.001Z"
+    },
+    "premier_league|2026-12-02|Liverpool FC|Sunderland AFC": {
+      "text": "Liverpool's stronger recent form and home advantage drive the forecast lean toward a home win.",
+      "generated_at": "2026-11-22T13:22:25.610Z"
+    },
+    "premier_league|2026-12-02|Hull City AFC|Nottingham Forest FC": {
+      "text": "Hull's home draws and Forest's poor away form drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-22T13:22:26.294Z"
+    },
+    "premier_league|2026-12-02|Chelsea FC|Crystal Palace FC": {
+      "text": "Chelsea's home advantage and Crystal Palace's five straight losses drive the lean toward a Chelsea win.",
+      "generated_at": "2026-11-22T13:22:26.939Z"
+    },
+    "premier_league|2026-12-02|Aston Villa FC|Everton FC": {
+      "text": "Aston Villa's unbeaten run and strong home form against Everton's inconsistent away record drive the lean toward a home win.",
+      "generated_at": "2026-11-22T13:22:27.616Z"
+    },
+    "premier_league|2026-12-02|Brentford FC|Arsenal FC": {
+      "text": "Arsenal's five-match unbeaten run and superior form drive the lean toward an away win at Brentford.",
+      "generated_at": "2026-11-22T13:22:28.243Z"
+    },
+    "premier_league|2026-12-02|Coventry City FC|Ipswich Town FC": {
+      "text": "Coventry's strong home form, with recent wins over Sunderland and Crystal Palace, drives the lean for a home victory.",
+      "generated_at": "2026-11-22T13:22:28.900Z"
+    },
+    "premier_league|2026-12-02|Manchester City FC|Leeds United FC": {
+      "text": "Manchester City's home advantage and superior overall quality drive the lean toward a narrow win despite their poor recent form.",
+      "generated_at": "2026-11-22T13:22:29.579Z"
+    },
+    "premier_league|2026-12-02|Newcastle United FC|Manchester United FC": {
+      "text": "Newcastle's home advantage and Manchester United's winless recent form drive the lean toward a Newcastle win.",
+      "generated_at": "2026-11-22T13:22:30.186Z"
+    },
+    "premier_league|2026-12-02|AFC Bournemouth|Brighton & Hove Albion FC": {
+      "text": "Brighton's strong recent form, including wins over Manchester City and Crystal Palace, drives the lean toward an away win.",
+      "generated_at": "2026-11-22T13:22:30.870Z"
+    },
+    "la_liga|2026-12-02|Real Sociedad de Fútbol|Real Madrid CF": {
+      "text": "Real Madrid's perfect five-match winning run, including away wins over Barcelona and Valencia, drives the lean toward an away victory.",
+      "generated_at": "2026-11-22T13:22:31.567Z"
+    },
+    "la_liga|2026-12-02|FC Barcelona|Club Atlético de Madrid": {
+      "text": "Barcelona's strong recent form, including a 2-1 win at Atlético, drives the lean toward a home victory.",
+      "generated_at": "2026-11-22T13:22:32.208Z"
     }
   },
   "storylines": {
@@ -4354,6 +4402,16 @@
       "text": "Bermuda sit 36th of 37 with 0 points and a goal difference of -12 after a record of 0W 0D 6L. Their last five results were all defeats, most recently a 1-4 loss away to Guadeloupe on 2026-11-16.",
       "kind": "cold",
       "generated_at": "2026-11-18T13:59:04.444Z"
+    },
+    "premier_league|AFC Bournemouth|2026-11-16": {
+      "text": "AFC Bournemouth sit 4th in the Premier League with 18 points from a record of 5 wins, 3 draws and 3 losses, and a goal difference of +4. They have won each of their last five matches, most recently a 2-0 home win over Nottingham Forest, ahead of their fixture at Fulham on 2026-11-28.",
+      "kind": "hot",
+      "generated_at": "2026-11-22T13:22:33.029Z"
+    },
+    "belgian_pro_league|Club Brugge|2026-11-16": {
+      "text": "Club Brugge sit first of 18 in the Belgian Pro League with 31 points, a goal difference of +22 and a record of 10W 1D 1L. Their last five results read W 4-1 at RAAL La Louvière, W 3-2 vs Sint-Truidense, W 4-2 at Zulte-Waregem, D 1-1 vs Anderlecht and W 5-1 at KV Mechelen, ahead of their 2026-11-29 fixture at Standard Liege.",
+      "kind": "hot",
+      "generated_at": "2026-11-22T13:22:33.902Z"
     }
   }
 }
