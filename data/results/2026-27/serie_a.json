@@ -1374,25 +1374,61 @@
       "date": "2026-11-22",
       "team1": "US Sassuolo Calcio",
       "team2": "Genoa CFC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "AC Milan",
       "team2": "Frosinone Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          5,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Bologna FC 1909",
       "team2": "Udinese Calcio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Atalanta BC",
       "team2": "FC Internazionale Milano",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          4
+        ]
+      }
+    },
+    {
+      "date": "2026-11-22",
+      "team1": "Juventus FC",
+      "team2": "Venezia FC",
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-23",

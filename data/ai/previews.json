@@ -3238,5 +3238,30 @@
     "text": "FC Barcelona host Club Atlético de Madrid in La Liga on 2026-12-02. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-12-02",
     "generated_at": "2026-11-22T13:22:33.308Z"
+  },
+  "chance_liga|2026-11-28|FC Hradec Kralove|Bohemians Prague 1905": {
+    "text": "FC Hradec Kralove host Bohemians Prague 1905 in Chance Liga on 2026-11-28. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-28",
+    "generated_at": "2026-11-22T22:29:12.187Z"
+  },
+  "chance_liga|2026-11-29|Slavia Prague|FC Banik Ostrava": {
+    "text": "Slavia Prague host FC Banik Ostrava in the Chance Liga on 2026-11-29. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-22T22:29:12.998Z"
+  },
+  "chance_liga|2026-11-29|Jablonec|FK Pardubice": {
+    "text": "Jablonec host FK Pardubice in the Chance Liga on 2026-11-29. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-22T22:29:13.936Z"
+  },
+  "chance_liga|2026-11-29|FC Zbrojovka Brno|Viktoria Plzen": {
+    "text": "Chance Liga fixture on 2026-11-29 sees FC Zbrojovka Brno host Viktoria Plzen. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-22T22:29:15.067Z"
+  },
+  "chance_liga|2026-11-29|FC Zlin|Sparta Prague": {
+    "text": "FC Zlin host Sparta Prague in the Chance Liga on 2026-11-29. A statistical model forecasts a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-11-29",
+    "generated_at": "2026-11-22T22:29:15.996Z"
   }
 }

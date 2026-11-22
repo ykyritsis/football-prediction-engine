@@ -1374,19 +1374,37 @@
       "date": "2026-11-22",
       "team1": "Ajax Amsterdam",
       "team2": "ADO Den Haag",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Sparta Rotterdam",
       "team2": "AZ Alkmaar",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          5
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Go Ahead Eagles",
       "team2": "Fortuna Sittard",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-27",

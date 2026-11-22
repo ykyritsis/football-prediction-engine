@@ -1606,16 +1606,28 @@
       "team2": "RCD Espanyol de Barcelona"
     },
     {
-      "round": "Matchday 13",
       "date": "2026-11-22",
       "team1": "FC Barcelona",
-      "team2": "Villarreal CF"
+      "team2": "Villarreal CF",
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Real Racing Club de Santander",
       "team2": "Real Sociedad de Fútbol",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "round": "Matchday 13",
@@ -1627,13 +1639,25 @@
       "date": "2026-11-22",
       "team1": "CA Osasuna",
       "team2": "Málaga CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Getafe CF",
       "team2": "Club Atlético de Madrid",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "round": "Matchday 13",

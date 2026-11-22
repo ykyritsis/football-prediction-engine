@@ -1193,19 +1193,37 @@
       "date": "2026-11-22",
       "team1": "Paris FC",
       "team2": "Angers SCO",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "FC Lorient",
       "team2": "Stade Rennais FC 1901",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-22",
       "team1": "Olympique de Marseille",
       "team2": "Le Mans FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-27",
