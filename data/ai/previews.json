@@ -3263,5 +3263,10 @@
     "text": "FC Zlin host Sparta Prague in the Chance Liga on 2026-11-29. A statistical model forecasts a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-11-29",
     "generated_at": "2026-11-22T22:29:15.996Z"
+  },
+  "premier_league|2026-12-03|Tottenham Hotspur FC|Fulham FC": {
+    "text": "Tottenham Hotspur FC host Fulham FC in the Premier League on 2026-12-03. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-03",
+    "generated_at": "2026-11-23T15:59:22.088Z"
   }
 }
