@@ -4688,6 +4688,76 @@
       "text": "San Marino sit 54th of 54 in the UEFA Nations League with 0 points and a goal difference of -22, having lost all six matches. Their last five results were defeats to Albania, Belarus, Albania, Belarus and Finland, most recently a 2-7 loss away to Finland.",
       "kind": "cold",
       "generated_at": "2026-11-24T03:21:59.098Z"
+    },
+    "nations_league|North Macedonia|2026-11-23": {
+      "text": "North Macedonia sits 53rd of 54 in the UEFA Nations League with 0 points and a goal difference of -14. The team has lost all six matches, including its last five results against Slovenia, Scotland, and Switzerland.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:34.197Z"
+    },
+    "nations_league|Czechia|2026-11-23": {
+      "text": "Czechia sits 52nd of 54 in the UEFA Nations League with 0 points and a goal difference of -11, having recorded 0 wins, 0 draws, and 6 losses. Their last five results were all defeats: 0-2 vs England at home, 1-3 vs Spain away, 0-3 vs England away, 0-2 vs Spain at home, and 1-2 vs Croatia away.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:35.289Z"
+    },
+    "world_cup_qualifying|Türkiye|2026-11-23": {
+      "text": "Türkiye sits 52nd of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 1-2 away to France on 2026-11-15.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:36.611Z"
+    },
+    "world_cup_qualifying|Serbia|2026-11-23": {
+      "text": "Serbia sits 46th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0. The team has lost each of its last five matches, most recently 0-1 away to Greece on 2026-11-16.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:37.979Z"
+    },
+    "world_cup_qualifying|San Marino|2026-11-23": {
+      "text": "San Marino sits 44th of 54 in the European World Cup Qualifiers standings with 0 points and a goal difference of +0, having recorded 0W 0D 0L. Their last five results were all losses: 0-3 vs Albania at home, 0-4 vs Belarus away, 1-2 vs Albania away, 0-2 vs Belarus at home, and 2-7 vs Finland away.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:39.192Z"
+    },
+    "copa_america|Argentina|2026-11-23": {
+      "text": "Argentina sit first of 16 in the Copa América standings and have won each of their last five matches. Their most recent result was a 2-1 away win against England on 2026-07-15.",
+      "kind": "hot",
+      "generated_at": "2026-11-24T15:54:40.684Z"
+    },
+    "copa_america|Bolivia|2026-11-23": {
+      "text": "Bolivia has lost each of its last five matches, including a 0-5 defeat to Uruguay and a 1-3 loss to Panama. The team sits second of 16 in the Copa América standings with 0 points and a goal difference of +0.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:41.675Z"
+    },
+    "copa_america|Peru|2026-11-23": {
+      "text": "Peru sits 13th of 16 in the Copa América standings with 0 points and a goal difference of +0. Their last five results include a 0-0 draw with Chile and losses to Brazil, Colombia, Canada, and Argentina.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:42.474Z"
+    },
+    "africa_cup|Nigeria|2026-11-23": {
+      "text": "Nigeria has won each of its last five matches, most recently a 2-0 away result against Algeria on 2026-01-10. The team currently sits 16th of 24 with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
+      "kind": "hot",
+      "generated_at": "2026-11-24T15:54:43.694Z"
+    },
+    "africa_cup|Uganda|2026-11-23": {
+      "text": "Uganda sits 22nd of 24 in the Africa Cup of Nations standings with 0 points and a goal difference of +0. Their last five results include four losses and one draw, most recently a 1-3 defeat to Nigeria at home.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:44.513Z"
+    },
+    "africa_cup|Tunisia|2026-11-23": {
+      "text": "Tunisia sits 21st of 24 in the Africa Cup of Nations standings with 0 points and a goal difference of +0. The team's last five results were a 2-3 loss to Nigeria, a 1-1 draw with Tanzania, a 1-5 loss to Sweden, a 0-4 loss to Japan, and a 1-3 loss to the Netherlands.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:45.651Z"
+    },
+    "concacaf_nations|Bahamas|2026-11-23": {
+      "text": "The Bahamas sit 37th of 37 in the Concacaf Nations League with 0 points and a goal difference of -17, having recorded 0W 0D 4L. Their last five results were all defeats, most recently a 0-6 loss away to St. Martin on 2026-10-06.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:47.025Z"
+    },
+    "concacaf_nations|Bermuda|2026-11-23": {
+      "text": "Bermuda sits 36th of 37 in the Concacaf Nations League with 0 points and a goal difference of -12 from a record of 0W 0D 6L. The team's last five results were all losses: 2-5 away to St. Lucia, 1-4 away to Barbados, 1-2 at home to Barbados, 1-2 at home to St. Lucia, and 1-4 away to Guadeloupe.",
+      "kind": "cold",
+      "generated_at": "2026-11-24T15:54:47.980Z"
+    },
+    "concacaf_nations|Guyana|2026-11-23": {
+      "text": "Guyana sits first of 37 teams with 18 points, a +22 goal difference, and a 6W 0D 0L record in the Concacaf Nations League. The team has won its last five matches, most recently a 4-2 home victory over Puerto Rico on 2026-11-16.",
+      "kind": "hot",
+      "generated_at": "2026-11-24T15:54:48.949Z"
     }
   }
 }
