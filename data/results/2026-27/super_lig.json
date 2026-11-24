@@ -1290,7 +1290,13 @@
       "date": "2026-11-23",
       "team1": "Istanbul Basaksehir",
       "team2": "Çorum FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-27",

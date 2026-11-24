@@ -1687,7 +1687,13 @@
       "date": "2026-11-23",
       "team1": "Levante UD",
       "team2": "Elche CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-27",

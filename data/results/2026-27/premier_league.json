@@ -1377,7 +1377,13 @@
       "date": "2026-11-23",
       "team1": "Brentford FC",
       "team2": "Everton FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-27",

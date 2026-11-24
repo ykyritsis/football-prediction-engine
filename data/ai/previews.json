@@ -3268,5 +3268,45 @@
     "text": "Tottenham Hotspur FC host Fulham FC in the Premier League on 2026-12-03. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-12-03",
     "generated_at": "2026-11-23T15:59:22.088Z"
+  },
+  "la_liga|2026-12-04|Deportivo Alavés|RCD Espanyol de Barcelona": {
+    "text": "Deportivo Alavés host RCD Espanyol de Barcelona in La Liga on 2026-12-04. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:24.949Z"
+  },
+  "serie_a|2026-12-04|Bologna FC 1909|AS Roma": {
+    "text": "Bologna FC 1909 host AS Roma in Serie A on 2026-12-04. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:26.445Z"
+  },
+  "bundesliga|2026-12-04|FC Bayern München|SC Paderborn 07": {
+    "text": "FC Bayern München host SC Paderborn 07 in the Bundesliga on 2026-12-04. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:27.876Z"
+  },
+  "ligue_1|2026-12-04|Toulouse FC|Paris Saint-Germain FC": {
+    "text": "Toulouse FC host Paris Saint-Germain FC in Ligue 1 on 2026-12-04. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:29.122Z"
+  },
+  "primeira_liga|2026-12-04|Sporting CP|Maritimo": {
+    "text": "Sporting CP host Maritimo in the Primeira Liga on 2026-12-04. The statistical model's forecast for this match is a 3-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:30.032Z"
+  },
+  "eredivisie|2026-12-04|Telstar|FC Groningen": {
+    "text": "Telstar host FC Groningen in the Eredivisie on 2026-12-04. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:31.179Z"
+  },
+  "super_lig|2026-12-04|Galatasaray|Caykur Rizespor": {
+    "text": "Galatasaray host Caykur Rizespor in the Süper Lig on 2026-12-04. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:32.114Z"
+  },
+  "chance_liga|2026-12-04|FK Pardubice|Slavia Prague": {
+    "text": "FK Pardubice host Slavia Prague in the Chance Liga on 2026-12-04. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-04",
+    "generated_at": "2026-11-24T03:21:33.004Z"
   }
 }

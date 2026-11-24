@@ -1434,7 +1434,13 @@
       "date": "2026-11-23",
       "team1": "AC Monza",
       "team2": "ACF Fiorentina",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          0
+        ]
+      }
     },
     {
       "round": "Matchday 12",
