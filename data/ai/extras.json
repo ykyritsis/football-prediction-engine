@@ -2691,6 +2691,70 @@
     "chance_liga|2026-12-04|FK Pardubice|Slavia Prague": {
       "text": "Slavia Prague's four straight wins and dominant scoring form outweigh Pardubice's mid-table inconsistency, driving the away-win lean.",
       "generated_at": "2026-11-24T03:21:31.075Z"
+    },
+    "premier_league|2026-12-05|Tottenham Hotspur FC|Arsenal FC": {
+      "text": "Arsenal's stronger recent form, including wins over Liverpool and Everton, drives the forecast lean toward an away win.",
+      "generated_at": "2026-11-25T01:26:47.142Z"
+    },
+    "premier_league|2026-12-05|Manchester United FC|Coventry City FC": {
+      "text": "Manchester United's home advantage and Coventry's weaker away form drive the lean toward a home win.",
+      "generated_at": "2026-11-25T01:26:48.053Z"
+    },
+    "premier_league|2026-12-05|Leeds United FC|Ipswich Town FC": {
+      "text": "Leeds United's recent home wins and Ipswich Town's poor away form drive the forecast lean toward a Leeds victory.",
+      "generated_at": "2026-11-25T01:26:49.145Z"
+    },
+    "premier_league|2026-12-05|Newcastle United FC|Sunderland AFC": {
+      "text": "Newcastle's home advantage and Sunderland's weak recent away form drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-25T01:26:50.028Z"
+    },
+    "premier_league|2026-12-05|Chelsea FC|Liverpool FC": {
+      "text": "Liverpool's strong recent form, including four wins in five, drives the forecast lean toward an away win at Chelsea.",
+      "generated_at": "2026-11-25T01:26:50.906Z"
+    },
+    "premier_league|2026-12-05|Brentford FC|Manchester City FC": {
+      "text": "Brentford's strong home form, including a 4-0 win over Everton, drives the lean against a Manchester City side winless in four.",
+      "generated_at": "2026-11-25T01:26:51.783Z"
+    },
+    "premier_league|2026-12-05|AFC Bournemouth|Hull City AFC": {
+      "text": "Bournemouth's five straight wins and Hull's inconsistent form drive the lean toward a home victory.",
+      "generated_at": "2026-11-25T01:26:53.086Z"
+    },
+    "premier_league|2026-12-05|Aston Villa FC|Crystal Palace FC": {
+      "text": "Aston Villa's unbeaten run and Crystal Palace's five straight losses drive the lean toward an Aston Villa win.",
+      "generated_at": "2026-11-25T01:26:54.221Z"
+    },
+    "premier_league|2026-12-05|Nottingham Forest FC|Brighton & Hove Albion FC": {
+      "text": "Brighton's strong recent form, including wins over Manchester City and Brentford, drives the lean toward an away win at Nottingham Forest.",
+      "generated_at": "2026-11-25T01:26:55.509Z"
+    },
+    "premier_league|2026-12-05|Everton FC|Fulham FC": {
+      "text": "Fulham's unbeaten five-match run against Everton's inconsistent form and heavy recent home defeat drives the lean toward an away win.",
+      "generated_at": "2026-11-25T01:26:56.637Z"
+    },
+    "la_liga|2026-12-05|Real Racing Club de Santander|RC Deportivo La Coruña": {
+      "text": "Racing's strong home form, including recent wins over Espanyol and Real Sociedad, drives the lean toward a home victory.",
+      "generated_at": "2026-11-25T01:26:57.464Z"
+    },
+    "la_liga|2026-12-05|Rayo Vallecano de Madrid|Levante UD": {
+      "text": "Rayo's home win over Celta and Levante's winless away run drive the lean toward a narrow home victory.",
+      "generated_at": "2026-11-25T01:26:58.743Z"
+    },
+    "la_liga|2026-12-05|Villarreal CF|Real Sociedad de Fútbol": {
+      "text": "Villarreal's strong home form and superior win probability drive the forecast for a home victory.",
+      "generated_at": "2026-11-25T01:27:00.114Z"
+    },
+    "la_liga|2026-12-05|FC Barcelona|RC Celta de Vigo": {
+      "text": "Barcelona's strong recent scoring form and Celta's struggles away from home drive the lean toward a Barcelona win.",
+      "generated_at": "2026-11-25T01:27:00.903Z"
+    },
+    "serie_a|2026-12-05|AC Monza|Como 1907": {
+      "text": "Como's four wins in five recent matches against Monza's four losses in five drives the away-win forecast.",
+      "generated_at": "2026-11-25T01:27:01.714Z"
+    },
+    "serie_a|2026-12-05|Frosinone Calcio|FC Internazionale Milano": {
+      "text": "Inter's stronger recent form and Frosinone's heavy loss to Milan drive the away-win forecast.",
+      "generated_at": "2026-11-25T01:27:02.650Z"
     }
   },
   "storylines": {
@@ -4758,6 +4822,11 @@
       "text": "Guyana sits first of 37 teams with 18 points, a +22 goal difference, and a 6W 0D 0L record in the Concacaf Nations League. The team has won its last five matches, most recently a 4-2 home victory over Puerto Rico on 2026-11-16.",
       "kind": "hot",
       "generated_at": "2026-11-24T15:54:48.949Z"
+    },
+    "champions_league|Slovan Bratislava|2026-11-23": {
+      "text": "Slovan Bratislava sit 36th of 36 in the Champions League with 0 points and a goal difference of -18 after a record of 0W 0D 5L. Their last five results were all defeats, most recently a 0-2 home loss to Real Betis Balompié, ahead of their next fixture against Shakhtar Donetsk on 2026-12-09.",
+      "kind": "cold",
+      "generated_at": "2026-11-25T01:27:03.899Z"
     }
   }
 }

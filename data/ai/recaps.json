@@ -1588,5 +1588,55 @@
     "text": "Recent Süper Lig results included a 2-2 draw between Kocaelispor and Fenerbahce, while Istanbul Basaksehir's 4-2 win over Çorum FK was the biggest margin. Other results saw Genclerbirligi beat Gaziantep FK 1-0, Caykur Rizespor win 2-0 at Amed SFK, Galatasaray edge Samsunspor 2-1, Goztepe win 1-0 at Erzurum BB, Kasimpasa beat Alanyaspor 2-1, Besiktas win 4-2 at Konyaspor, and Trabzonspor beat Eyupspor 1-0.",
     "name": "Süper Lig",
     "generated_at": "2026-11-24T03:21:36.730Z"
+  },
+  "belgian_pro_league|2026-11-25": {
+    "text": "Club Brugge's 5-1 win at KV Mechelen was the biggest margin of the recent Belgian Pro League results. There were draws as Royal Charleroi SC and Sint-Truidense finished 2-2, and Zulte-Waregem and Antwerp also drew 2-2.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-25T01:26:47.087Z"
+  },
+  "bundesliga|2026-11-25": {
+    "text": "Bayer 04 Leverkusen and SV Werder Bremen each recorded 4-0 wins, the biggest margins of the recent Bundesliga results. FC Bayern München drew 1-1 with 1. FC Köln, and FC Schalke 04 played out a 0-0 draw with VfB Stuttgart.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-25T01:26:48.174Z"
+  },
+  "champions_league|2026-11-25": {
+    "text": "Real Madrid CF recorded the biggest margin of the recent Champions League results with a 5-1 win over PSV Eindhoven, while RB Leipzig beat Racing Club de Lens 3-1. Two matches ended level: Arsenal FC drew 1-1 with Borussia Dortmund and Manchester City FC drew 2-2 with SSC Napoli.",
+    "name": "Champions League",
+    "generated_at": "2026-11-25T01:26:49.550Z"
+  },
+  "concacaf_nations|2026-11-25": {
+    "text": "El Salvador's 3-1 win over St. Martin was the biggest margin among the recent Concacaf Nations League results. French Guiana beat St. Vincent and the Grenadines 1-0, the United States defeated Haiti 2-0, Mexico edged Jamaica 1-0, and Nicaragua beat Montserrat 2-0. There were no draws in these matches.",
+    "name": "Concacaf Nations League",
+    "generated_at": "2026-11-25T01:26:50.485Z"
+  },
+  "eredivisie|2026-11-25": {
+    "text": "AZ Alkmaar recorded the biggest margin of the recent Eredivisie round with a 5-1 win at Sparta Rotterdam, while PSV Eindhoven also won comfortably 4-1 at NEC Nijmegen. There were no draws in the listed results.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-25T01:26:51.374Z"
+  },
+  "la_liga|2026-11-25": {
+    "text": "Getafe CF suffered the biggest margin of the recent La Liga results, losing 0-3 at home to Club Atlético de Madrid. Sevilla FC and Real Betis Balompié drew 1-1, as did Levante UD and Elche CF.",
+    "name": "La Liga",
+    "generated_at": "2026-11-25T01:26:52.498Z"
+  },
+  "ligue_1|2026-11-25": {
+    "text": "Paris FC's 4-0 win over Angers SCO was the biggest margin of the recent Ligue 1 results. There were draws between AS Monaco and AJ Auxerre, Racing Club de Lens and Toulouse FC, and FC Lorient and Stade Rennais, all finishing 1-1.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-25T01:26:53.479Z"
+  },
+  "premier_league|2026-11-25": {
+    "text": "Liverpool FC and Brentford FC each recorded 4-0 wins, over Manchester United FC and Everton FC respectively, while Chelsea FC's 1-4 loss to Leeds United FC matched that margin. There were draws as Manchester City FC and Fulham FC finished 1-1, Aston Villa FC and Sunderland AFC played out 0-0, and Newcastle United FC drew 2-2 with Arsenal FC.",
+    "name": "Premier League",
+    "generated_at": "2026-11-25T01:26:55.057Z"
+  },
+  "serie_a|2026-11-25": {
+    "text": "The biggest margin of the recent Serie A results came from Parma Calcio 1913's 1-5 loss to AS Roma, while AC Milan also won 5-1 against Frosinone Calcio and Juventus FC beat Venezia FC 4-0. There were two draws: Bologna FC 1909 and Udinese Calcio finished 1-1, and Atalanta BC and FC Internazionale Milano played out a 4-4 draw.",
+    "name": "Serie A",
+    "generated_at": "2026-11-25T01:26:56.482Z"
+  },
+  "super_lig|2026-11-25": {
+    "text": "Recent Süper Lig results included a 4-2 win for Istanbul Basaksehir over Çorum FK, the biggest margin of the round, while Kocaelispor and Fenerbahce played out a 2-2 draw. Other results saw Genclerbirligi beat Gaziantep FK 1-0, Caykur Rizespor win 2-0 at Amed SFK, Galatasaray edge Samsunspor 2-1, Goztepe win 1-0 at Erzurum BB, Kasimpasa beat Alanyaspor 2-1, Besiktas win 4-2 at Konyaspor, and Trabzonspor beat Eyupspor 1-0.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-25T01:26:58.568Z"
   }
 }
