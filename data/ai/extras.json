@@ -2755,6 +2755,70 @@
     "serie_a|2026-12-05|Frosinone Calcio|FC Internazionale Milano": {
       "text": "Inter's stronger recent form and Frosinone's heavy loss to Milan drive the away-win forecast.",
       "generated_at": "2026-11-25T01:27:02.650Z"
+    },
+    "serie_a|2026-12-05|SSC Napoli|US Lecce": {
+      "text": "Napoli's strong home form and Lecce's five-match winless run with heavy recent defeats drive the lean toward a Napoli win.",
+      "generated_at": "2026-11-25T15:37:35.994Z"
+    },
+    "bundesliga|2026-12-05|1. FC Union Berlin|Hamburger SV": {
+      "text": "Union Berlin's home advantage and Hamburg's poor away form drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-25T15:37:36.976Z"
+    },
+    "bundesliga|2026-12-05|FC Schalke 04|Borussia Dortmund": {
+      "text": "Dortmund's three wins in their last five and Schalke's winless, low-scoring run drive the lean toward an away victory.",
+      "generated_at": "2026-11-25T15:37:38.310Z"
+    },
+    "bundesliga|2026-12-05|Bayer 04 Leverkusen|Borussia Mönchengladbach": {
+      "text": "Leverkusen's strong home form, including a 4-0 win, against Mönchengladbach's recent struggles drives the lean toward a home win.",
+      "generated_at": "2026-11-25T15:37:39.698Z"
+    },
+    "bundesliga|2026-12-05|Eintracht Frankfurt|SV Werder Bremen": {
+      "text": "Frankfurt's strong home form, with three home wins in their last five, drives the lean toward a home victory.",
+      "generated_at": "2026-11-25T15:37:41.329Z"
+    },
+    "bundesliga|2026-12-05|RB Leipzig|1. FSV Mainz 05": {
+      "text": "RB Leipzig's four straight wins and prolific scoring, contrasted with Mainz's four-game losing run, drive the lean toward a home victory.",
+      "generated_at": "2026-11-25T15:37:42.297Z"
+    },
+    "bundesliga|2026-12-05|SV 07 Elversberg|VfB Stuttgart": {
+      "text": "Stuttgart's stronger recent form, including wins over Leverkusen and Werder Bremen, drives the lean toward an away win.",
+      "generated_at": "2026-11-25T15:37:43.281Z"
+    },
+    "bundesliga|2026-12-05|SC Freiburg|TSG 1899 Hoffenheim": {
+      "text": "Freiburg's three straight wins and home advantage drive the lean toward a home victory.",
+      "generated_at": "2026-11-25T15:37:44.149Z"
+    },
+    "bundesliga|2026-12-05|FC Bayern München|SC Paderborn 07": {
+      "text": "Bayern's strong recent scoring form against Paderborn's winless and heavy loss record drives the home win forecast.",
+      "generated_at": "2026-11-25T15:37:44.895Z"
+    },
+    "bundesliga|2026-12-05|FC Augsburg|1. FC Köln": {
+      "text": "Augsburg's home win over Mainz and Köln's winless run of draws and losses drive the lean toward a home victory.",
+      "generated_at": "2026-11-25T15:37:46.045Z"
+    },
+    "ligue_1|2026-12-05|ES Troyes AC|Olympique Lyonnais": {
+      "text": "Lyon's stronger recent form and Troyes' inconsistency at home drive the lean toward an away win.",
+      "generated_at": "2026-11-25T15:37:46.847Z"
+    },
+    "ligue_1|2026-12-05|AS Monaco FC|Angers SCO": {
+      "text": "Monaco's home advantage and Angers' five-match winless run with heavy recent defeats drive the lean toward a Monaco win.",
+      "generated_at": "2026-11-25T15:37:48.006Z"
+    },
+    "ligue_1|2026-12-05|Racing Club de Lens|Le Havre AC": {
+      "text": "Lens's strong home form and Le Havre's five straight losses drive the forecast toward a home win.",
+      "generated_at": "2026-11-25T15:37:49.072Z"
+    },
+    "ligue_1|2026-12-05|Lille OSC|AJ Auxerre": {
+      "text": "Lille's stronger recent form and home advantage drive the lean toward a narrow home win.",
+      "generated_at": "2026-11-25T15:37:49.918Z"
+    },
+    "ligue_1|2026-12-05|Olympique de Marseille|OGC Nice": {
+      "text": "Marseille's strong recent form, including four straight wins before a narrow loss, drives the lean toward a home victory.",
+      "generated_at": "2026-11-25T15:37:51.036Z"
+    },
+    "ligue_1|2026-12-05|Stade Rennais FC 1901|Stade Brestois 29": {
+      "text": "Rennes' home advantage and higher model probability drive the lean toward a home win despite Brest's stronger recent form.",
+      "generated_at": "2026-11-25T15:37:51.926Z"
     }
   },
   "storylines": {
