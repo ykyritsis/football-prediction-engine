@@ -978,55 +978,109 @@
       "date": "2026-11-25",
       "team1": "Club Atlético de Madrid",
       "team2": "Viking FK",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Club Brugge",
       "team2": "Liverpool FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "FC Internazionale Milano",
       "team2": "VfB Stuttgart",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Lille OSC",
       "team2": "FC Bayern München",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Paris Saint-Germain FC",
       "team2": "AS Roma",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Sabah FK",
       "team2": "FC Barcelona",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Shakhtar Donetsk",
       "team2": "Fenerbahce",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Slavia Prague",
       "team2": "Villarreal CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-25",
       "team1": "Sporting CP",
       "team2": "Manchester United FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-12-08",

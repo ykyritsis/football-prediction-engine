@@ -3428,5 +3428,65 @@
     "text": "SC Freiburg host TSG 1899 Hoffenheim in the Bundesliga on 2026-12-05. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-12-05",
     "generated_at": "2026-11-25T15:37:49.228Z"
+  },
+  "premier_league|2026-12-06|Everton FC|Fulham FC": {
+    "text": "Everton FC host Fulham FC in the Premier League on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:47.080Z"
+  },
+  "premier_league|2026-12-06|Newcastle United FC|Sunderland AFC": {
+    "text": "Newcastle United FC host Sunderland AFC in the Premier League on 2026-12-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:48.346Z"
+  },
+  "premier_league|2026-12-06|Tottenham Hotspur FC|Arsenal FC": {
+    "text": "Tottenham Hotspur FC host Arsenal FC in the Premier League on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:50.832Z"
+  },
+  "la_liga|2026-12-06|CA Osasuna|Elche CF": {
+    "text": "La Liga action on 2026-12-06 features CA Osasuna hosting Elche CF. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:52.198Z"
+  },
+  "la_liga|2026-12-06|Sevilla FC|Málaga CF": {
+    "text": "La Liga fixture on 2026-12-06 sees Sevilla FC host Málaga CF. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:53.926Z"
+  },
+  "la_liga|2026-12-06|Deportivo Alavés|RCD Espanyol de Barcelona": {
+    "text": "Deportivo Alavés host RCD Espanyol de Barcelona in La Liga on 2026-12-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:55.213Z"
+  },
+  "la_liga|2026-12-06|Club Atlético de Madrid|Real Betis Balompié": {
+    "text": "La Liga action on 2026-12-06 features Club Atlético de Madrid hosting Real Betis Balompié. The statistical model's forecast for this match is a 2-0 scoreline.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:56.620Z"
+  },
+  "la_liga|2026-12-06|Real Racing Club de Santander|RC Deportivo La Coruña": {
+    "text": "La Liga's fixture on 2026-12-06 sees Real Racing Club de Santander host RC Deportivo La Coruña. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:58.097Z"
+  },
+  "la_liga|2026-12-06|FC Barcelona|RC Celta de Vigo": {
+    "text": "FC Barcelona host RC Celta de Vigo in La Liga on 2026-12-06. The statistical model's forecast for this match is a 3-0 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:00:59.553Z"
+  },
+  "la_liga|2026-12-06|Getafe CF|Valencia CF": {
+    "text": "Getafe CF host Valencia CF in La Liga on 2026-12-06. The statistical model forecasts a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:01:00.982Z"
+  },
+  "la_liga|2026-12-06|Athletic Club|Real Madrid CF": {
+    "text": "La Liga action on 2026-12-06 sees Athletic Club host Real Madrid CF at San Mamés. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:01:02.382Z"
+  },
+  "la_liga|2026-12-06|Villarreal CF|Real Sociedad de Fútbol": {
+    "text": "La Liga action on 2026-12-06 features Villarreal CF hosting Real Sociedad de Fútbol. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-26T01:01:03.711Z"
   }
 }
