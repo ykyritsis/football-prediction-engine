@@ -2883,6 +2883,70 @@
     "serie_a|2026-12-06|Frosinone Calcio|FC Internazionale Milano": {
       "text": "Inter's strong recent form and Frosinone's heavy loss to AC Milan drive the away-win forecast.",
       "generated_at": "2026-11-26T01:01:09.048Z"
+    },
+    "serie_a|2026-12-06|Bologna FC 1909|AS Roma": {
+      "text": "Roma's dominant recent form, including four straight wins with heavy scoring, drives the lean toward an away victory.",
+      "generated_at": "2026-11-26T15:15:25.264Z"
+    },
+    "serie_a|2026-12-06|ACF Fiorentina|Cagliari Calcio": {
+      "text": "Fiorentina's home advantage and Cagliari's poor recent form drive the lean toward a home win.",
+      "generated_at": "2026-11-26T15:15:26.084Z"
+    },
+    "serie_a|2026-12-06|SS Lazio|Atalanta BC": {
+      "text": "Lazio's strong recent form, including four wins in five, drives the lean toward a home win.",
+      "generated_at": "2026-11-26T15:15:27.099Z"
+    },
+    "serie_a|2026-12-06|AC Milan|Parma Calcio 1913": {
+      "text": "AC Milan's strong recent form, including four wins in five, drives the forecast lean toward a home victory over struggling Parma.",
+      "generated_at": "2026-11-26T15:15:28.224Z"
+    },
+    "serie_a|2026-12-06|Venezia FC|US Sassuolo Calcio": {
+      "text": "Sassuolo's higher win probability and Venezia's four losses in five games drive the lean toward an away win.",
+      "generated_at": "2026-11-26T15:15:28.921Z"
+    },
+    "serie_a|2026-12-06|AC Monza|Como 1907": {
+      "text": "Como's strong recent form, with four wins in five, drives the lean toward an away win over a struggling Monza side.",
+      "generated_at": "2026-11-26T15:15:29.998Z"
+    },
+    "serie_a|2026-12-06|SSC Napoli|US Lecce": {
+      "text": "Napoli's strong home form and Lecce's five-match winless run with heavy defeats drive the lean toward a Napoli win.",
+      "generated_at": "2026-11-26T15:15:30.768Z"
+    },
+    "bundesliga|2026-12-06|FC Schalke 04|Borussia Dortmund": {
+      "text": "Dortmund's three wins in their last five and Schalke's winless run of three losses and two draws drive the away-win lean.",
+      "generated_at": "2026-11-26T15:15:31.844Z"
+    },
+    "bundesliga|2026-12-06|SV 07 Elversberg|VfB Stuttgart": {
+      "text": "Stuttgart's stronger recent form, including wins over Leverkusen and Werder Bremen, drives the lean toward an away win.",
+      "generated_at": "2026-11-26T15:15:32.835Z"
+    },
+    "ligue_1|2026-12-05|Toulouse FC|Paris Saint-Germain FC": {
+      "text": "Paris Saint-Germain's five straight wins and Toulouse's mixed form drive the lean toward an away victory.",
+      "generated_at": "2026-11-26T15:15:33.855Z"
+    },
+    "ligue_1|2026-12-05|RC Strasbourg Alsace|FC Lorient": {
+      "text": "Strasbourg's home win probability leads the model, supported by their 5-1 home win over Auxerre and Lorient's mixed away form.",
+      "generated_at": "2026-11-26T15:15:34.797Z"
+    },
+    "ligue_1|2026-12-05|Paris FC|Le Mans FC": {
+      "text": "Paris FC's strong recent form, with four wins in five, drives the forecast lean toward a home victory.",
+      "generated_at": "2026-11-26T15:15:35.559Z"
+    },
+    "ligue_1|2026-12-06|ES Troyes AC|Olympique Lyonnais": {
+      "text": "Lyon's stronger recent form and Troyes' inconsistency at home drive the lean toward an away win.",
+      "generated_at": "2026-11-26T15:15:36.322Z"
+    },
+    "ligue_1|2026-12-06|Stade Rennais FC 1901|Stade Brestois 29": {
+      "text": "Rennes' home advantage and stronger overall win probability edge out Brest's better recent form.",
+      "generated_at": "2026-11-26T15:15:37.081Z"
+    },
+    "ligue_1|2026-12-06|Olympique de Marseille|OGC Nice": {
+      "text": "Marseille's four wins in five recent matches and strong home scoring form drive the lean toward a home victory.",
+      "generated_at": "2026-11-26T15:15:37.974Z"
+    },
+    "primeira_liga|2026-12-05|C.D. Nacional|Benfica": {
+      "text": "Benfica's four wins in their last five games against Nacional's inconsistent form drive the forecast lean toward an away win.",
+      "generated_at": "2026-11-26T15:15:38.783Z"
     }
   },
   "storylines": {
