@@ -3011,6 +3011,70 @@
     "eredivisie|2026-12-05|Willem II|Feyenoord Rotterdam": {
       "text": "Feyenoord's far stronger overall form against Willem II's five-match winless run drives the away-win lean.",
       "generated_at": "2026-11-27T01:01:59.435Z"
+    },
+    "eredivisie|2026-12-05|Sparta Rotterdam|NEC Nijmegen": {
+      "text": "NEC's stronger overall form and Sparta's heavy recent home defeats drive the lean toward an away win.",
+      "generated_at": "2026-11-27T15:05:33.939Z"
+    },
+    "eredivisie|2026-12-05|AZ Alkmaar|PSV Eindhoven": {
+      "text": "PSV Eindhoven's strong recent form, including three straight wins, drives the forecast lean toward an away victory.",
+      "generated_at": "2026-11-27T15:05:34.613Z"
+    },
+    "eredivisie|2026-12-05|Fortuna Sittard|PEC Zwolle": {
+      "text": "Fortuna Sittard's unbeaten recent form, including two 1-0 wins, drives the lean toward a home victory.",
+      "generated_at": "2026-11-27T15:05:35.488Z"
+    },
+    "eredivisie|2026-12-06|Heerenveen|SC Cambuur": {
+      "text": "Heerenveen's perfect five-match winning run drives the lean toward a home win.",
+      "generated_at": "2026-11-27T15:05:36.349Z"
+    },
+    "eredivisie|2026-12-06|Ajax Amsterdam|FC Utrecht": {
+      "text": "Ajax's strong recent form and home advantage drive the forecast for an Ajax win.",
+      "generated_at": "2026-11-27T15:05:37.650Z"
+    },
+    "eredivisie|2026-12-06|Go Ahead Eagles|FC Twente": {
+      "text": "FC Twente's strong recent form, including four wins and a draw in their last five, drives the forecast lean against a Go Ahead Eagles side that has lost three of five.",
+      "generated_at": "2026-11-27T15:05:38.611Z"
+    },
+    "eredivisie|2026-12-06|ADO Den Haag|Excelsior": {
+      "text": "ADO Den Haag's strong home form and Excelsior's poor recent run drive the lean toward a home win.",
+      "generated_at": "2026-11-27T15:05:39.160Z"
+    },
+    "super_lig|2026-12-05|Konyaspor|Gaziantep FK": {
+      "text": "Konyaspor's home win over Genclerbirligi and Gaziantep FK's five straight losses drive the lean toward a narrow Konyaspor victory.",
+      "generated_at": "2026-11-27T15:05:39.878Z"
+    },
+    "super_lig|2026-12-05|Amed SFK|Alanyaspor": {
+      "text": "Amed SFK's strong recent home scoring and Alanyaspor's five straight losses drive the lean toward a home win.",
+      "generated_at": "2026-11-27T15:05:40.627Z"
+    },
+    "super_lig|2026-12-05|Istanbul Basaksehir|Fenerbahce": {
+      "text": "Fenerbahce's stronger overall record and higher model probability drive the away-win lean despite Basaksehir's recent home form.",
+      "generated_at": "2026-11-27T15:05:41.443Z"
+    },
+    "super_lig|2026-12-06|Erzurum BB|Kocaelispor": {
+      "text": "Kocaelispor's stronger recent form, including wins and draws against tough sides, drives the lean toward an away win.",
+      "generated_at": "2026-11-27T15:05:42.141Z"
+    },
+    "super_lig|2026-12-06|Besiktas|Samsunspor": {
+      "text": "Besiktas's strong recent home form and Samsunspor's poor away run drive the lean toward a Besiktas win.",
+      "generated_at": "2026-11-27T15:05:42.877Z"
+    },
+    "super_lig|2026-12-06|Genclerbirligi|Eyupspor": {
+      "text": "Genclerbirligi's strong home form, including two home wins, drives the lean against an Eyupspor side that has lost all five recent matches.",
+      "generated_at": "2026-11-27T15:05:43.695Z"
+    },
+    "super_lig|2026-12-06|Trabzonspor|Çorum FK": {
+      "text": "Trabzonspor's five-match winning streak against Çorum FK's three losses in their last five drives the lean toward a home win.",
+      "generated_at": "2026-11-27T15:05:44.506Z"
+    },
+    "super_lig|2026-12-07|Kasimpasa|Goztepe": {
+      "text": "Kasimpasa's strong recent form, including four wins in five, drives the lean toward a home victory.",
+      "generated_at": "2026-11-27T15:05:45.393Z"
+    },
+    "chance_liga|2026-12-05|SK Sigma Olomouc|SK Artis Brno": {
+      "text": "Sigma Olomouc's strong home scoring form against Brno's weak recent results drives the lean toward a home win.",
+      "generated_at": "2026-11-27T15:05:46.043Z"
     }
   },
   "storylines": {

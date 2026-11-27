@@ -3608,5 +3608,65 @@
     "text": "Stade Rennais FC 1901 host Stade Brestois 29 in Ligue 1 on 2026-12-05. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-12-05",
     "generated_at": "2026-11-27T01:01:54.186Z"
+  },
+  "ligue_1|2026-12-05|Toulouse FC|Paris Saint-Germain FC": {
+    "text": "Toulouse FC host Paris Saint-Germain FC in Ligue 1 on 2026-12-05. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:33.996Z"
+  },
+  "ligue_1|2026-12-05|RC Strasbourg Alsace|FC Lorient": {
+    "text": "RC Strasbourg Alsace host FC Lorient in Ligue 1 on 2026-12-05. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:34.933Z"
+  },
+  "ligue_1|2026-12-05|Paris FC|Le Mans FC": {
+    "text": "Ligue 1 fixture on 2026-12-05 sees Paris FC host Le Mans FC. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:35.777Z"
+  },
+  "ligue_1|2026-12-06|ES Troyes AC|Olympique Lyonnais": {
+    "text": "ES Troyes AC host Olympique Lyonnais in Ligue 1 on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:36.474Z"
+  },
+  "ligue_1|2026-12-06|Stade Rennais FC 1901|Stade Brestois 29": {
+    "text": "Ligue 1 fixture on 2026-12-06 sees Stade Rennais FC 1901 host Stade Brestois 29. The statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:37.190Z"
+  },
+  "ligue_1|2026-12-06|Olympique de Marseille|OGC Nice": {
+    "text": "Olympique de Marseille host OGC Nice in Ligue 1 on 2026-12-06. A statistical model forecasts a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:37.863Z"
+  },
+  "primeira_liga|2026-12-05|C.D. Nacional|Benfica": {
+    "text": "C.D. Nacional host Benfica in the Primeira Liga on 2026-12-05. The statistical model's forecast for this match is a 0-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:38.806Z"
+  },
+  "primeira_liga|2026-12-05|Santa Clara|FC Porto": {
+    "text": "Santa Clara host FC Porto in the Primeira Liga on 2026-12-05. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:39.599Z"
+  },
+  "primeira_liga|2026-12-05|Braga|Arouca": {
+    "text": "Braga host Arouca in the Primeira Liga on 2026-12-05. The statistical model's forecast for this match is a 1-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-27T15:05:40.367Z"
+  },
+  "primeira_liga|2026-12-06|Alverca|Moreirense": {
+    "text": "Alverca host Moreirense in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 1-0 scoreline, which is not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:41.315Z"
+  },
+  "primeira_liga|2026-12-06|Braga|Arouca": {
+    "text": "Braga host Arouca in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:41.948Z"
+  },
+  "primeira_liga|2026-12-06|C.D. Nacional|Benfica": {
+    "text": "C.D. Nacional host Benfica in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-2 scoreline, which is not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-27T15:05:42.639Z"
   }
 }
