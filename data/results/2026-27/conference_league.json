@@ -654,109 +654,217 @@
       "date": "2026-11-26",
       "team1": "Ajax Amsterdam",
       "team2": "FC Thun",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Borac Banja Luka",
       "team2": "Atalanta BC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Braga",
       "team2": "KuPS Kuopio",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Brighton & Hove Albion FC",
       "team2": "CSU Craiova",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          4,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "CSKA Sofia",
       "team2": "Trabzonspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Egnatia",
       "team2": "Lincoln Red Imps",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "FC Nordsjælland",
       "team2": "Panathinaikos",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Hajduk Split",
       "team2": "Sint-Truidense",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Heart of Midlothian",
       "team2": "AS Monaco FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          3
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Iberia 1999",
       "team2": "Getafe CF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Inter D'Escaldes",
       "team2": "F.C. København",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Jablonec",
       "team2": "FC Lugano",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "KAA Gent",
       "team2": "Red Star Belgrade",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Kairat Almaty",
       "team2": "Mjällby AIF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Kauno Zalgiris",
       "team2": "Riga FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "Pafos",
       "team2": "FC Midtjylland",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "SC Freiburg",
       "team2": "FC Twente",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          1
+        ]
+      }
     },
     {
       "date": "2026-11-26",
       "team1": "SK Brann",
       "team2": "AGF",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          4
+        ]
+      }
     },
     {
       "date": "2026-12-10",

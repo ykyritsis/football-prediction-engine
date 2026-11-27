@@ -1683,5 +1683,60 @@
     "text": "In the latest Süper Lig round, Istanbul Basaksehir's 4-2 win over Çorum FK was the biggest margin, while Kocaelispor and Fenerbahce played out a 2-2 draw. Other results included Galatasaray edging Samsunspor 2-1 and Besiktas winning 4-2 at Konyaspor.",
     "name": "Süper Lig",
     "generated_at": "2026-11-26T01:01:00.781Z"
+  },
+  "belgian_pro_league|2026-11-27": {
+    "text": "Club Brugge's 5-1 win at KV Mechelen was the biggest margin of the recent Belgian Pro League results. There were draws as Royal Charleroi SC and Sint-Truidense finished 2-2, and Zulte-Waregem and Antwerp also drew 2-2.",
+    "name": "Belgian Pro League",
+    "generated_at": "2026-11-27T01:01:43.918Z"
+  },
+  "bundesliga|2026-11-27": {
+    "text": "Bayer 04 Leverkusen and SV Werder Bremen each recorded 4-0 wins, the biggest margins of the recent Bundesliga results. FC Bayern München drew 1-1 with 1. FC Köln, and FC Schalke 04 played out a 0-0 draw with VfB Stuttgart.",
+    "name": "Bundesliga",
+    "generated_at": "2026-11-27T01:01:45.435Z"
+  },
+  "champions_league|2026-11-27": {
+    "text": "Real Madrid CF recorded the biggest margin of the recent Champions League results with a 5-1 win over PSV Eindhoven, while FC Barcelona won 4-1 at Sabah FK and Liverpool FC won 3-0 at Club Brugge. Draws included Arsenal FC 1-1 Borussia Dortmund, Manchester City FC 2-2 SSC Napoli, Paris Saint-Germain FC 2-2 AS Roma, and Sporting CP 2-2 Manchester United FC.",
+    "name": "Champions League",
+    "generated_at": "2026-11-27T01:01:46.404Z"
+  },
+  "conference_league|2026-11-27": {
+    "text": "Ajax Amsterdam, Braga and Brighton & Hove Albion FC each recorded 4-0 wins, the biggest margins of the recent Conference League results. KAA Gent and Red Star Belgrade played out a 1-1 draw.",
+    "name": "Conference League",
+    "generated_at": "2026-11-27T01:01:47.905Z"
+  },
+  "eredivisie|2026-11-27": {
+    "text": "AZ Alkmaar recorded the biggest margin of the round with a 5-1 win at Sparta Rotterdam, while PSV Eindhoven also won comfortably 4-1 at NEC Nijmegen. There were no draws across the nine matches, with FC Utrecht, Feyenoord Rotterdam, FC Groningen and Telstar all losing by a single goal.",
+    "name": "Eredivisie",
+    "generated_at": "2026-11-27T01:01:49.338Z"
+  },
+  "europa_league|2026-11-27": {
+    "text": "The biggest margin of the recent Europa League results was Viktoria Plzen's 4-0 win over Benfica. There were four draws: Ferencvaros 0-0 NK Celje, Olympique Lyonnais 0-0 Lillestrom, Sunderland AFC 1-1 Jagiellonia Bialystok, and Union St.-Gilloise 2-2 Lech Poznan.",
+    "name": "Europa League",
+    "generated_at": "2026-11-27T01:01:50.430Z"
+  },
+  "la_liga|2026-11-27": {
+    "text": "Getafe CF suffered the biggest margin of the recent La Liga results, losing 0-3 to Club Atlético de Madrid. Sevilla FC and Real Betis Balompié drew 1-1, as did Levante UD and Elche CF.",
+    "name": "La Liga",
+    "generated_at": "2026-11-27T01:01:51.806Z"
+  },
+  "ligue_1|2026-11-27": {
+    "text": "Paris FC's 4-0 win over Angers SCO was the biggest margin of the recent Ligue 1 results. There were draws between AS Monaco and AJ Auxerre, Lens and Toulouse, and Lorient and Rennes, all finishing 1-1.",
+    "name": "Ligue 1",
+    "generated_at": "2026-11-27T01:01:53.284Z"
+  },
+  "premier_league|2026-11-27": {
+    "text": "Liverpool FC and Brentford FC each recorded 4-0 wins, over Manchester United FC and Everton FC respectively, while Chelsea FC's 1-4 loss to Leeds United FC matched that margin. There were draws as Manchester City FC and Fulham FC finished 1-1, Aston Villa FC and Sunderland AFC played out 0-0, and Newcastle United FC drew 2-2 with Arsenal FC.",
+    "name": "Premier League",
+    "generated_at": "2026-11-27T01:01:54.501Z"
+  },
+  "serie_a|2026-11-27": {
+    "text": "The biggest margin of the recent Serie A results came from Parma Calcio 1913's 1-5 defeat to AS Roma, while AC Milan also won 5-1 against Frosinone Calcio. There were two draws: Bologna FC 1909 and Udinese Calcio finished 1-1, and Atalanta BC drew 4-4 with FC Internazionale Milano.",
+    "name": "Serie A",
+    "generated_at": "2026-11-27T01:01:55.863Z"
+  },
+  "super_lig|2026-11-27": {
+    "text": "Recent Süper Lig results saw Istanbul Basaksehir beat Çorum FK 4-2 for the biggest margin, while Kocaelispor and Fenerbahce played out a 2-2 draw. Other results included Galatasaray edging Samsunspor 2-1, Besiktas winning 4-2 at Konyaspor, and Trabzonspor beating Eyupspor 1-0.",
+    "name": "Süper Lig",
+    "generated_at": "2026-11-27T01:01:57.382Z"
   }
 }
