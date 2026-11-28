@@ -3728,5 +3728,65 @@
     "text": "Heerenveen host SC Cambuur in the Eredivisie on 2026-12-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
     "date": "2026-12-06",
     "generated_at": "2026-11-28T00:34:24.140Z"
+  },
+  "eredivisie|2026-12-06|Ajax Amsterdam|FC Utrecht": {
+    "text": "Ajax Amsterdam host FC Utrecht in the Eredivisie on 2026-12-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:03.717Z"
+  },
+  "eredivisie|2026-12-06|Go Ahead Eagles|FC Twente": {
+    "text": "Go Ahead Eagles host FC Twente in the Eredivisie on 2026-12-06. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:04.598Z"
+  },
+  "eredivisie|2026-12-06|ADO Den Haag|Excelsior": {
+    "text": "ADO Den Haag host Excelsior in the Eredivisie on 2026-12-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model output rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:05.408Z"
+  },
+  "super_lig|2026-12-05|Konyaspor|Gaziantep FK": {
+    "text": "Konyaspor host Gaziantep FK in the Süper Lig on 2026-12-05. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T14:13:06.064Z"
+  },
+  "super_lig|2026-12-05|Amed SFK|Alanyaspor": {
+    "text": "Amed SFK host Alanyaspor in the Süper Lig on 2026-12-05. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T14:13:06.819Z"
+  },
+  "super_lig|2026-12-05|Istanbul Basaksehir|Fenerbahce": {
+    "text": "Istanbul Basaksehir host Fenerbahce in the Süper Lig on 2026-12-05. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T14:13:07.555Z"
+  },
+  "super_lig|2026-12-06|Erzurum BB|Kocaelispor": {
+    "text": "Erzurum BB host Kocaelispor in the Süper Lig on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:08.432Z"
+  },
+  "super_lig|2026-12-06|Besiktas|Samsunspor": {
+    "text": "Besiktas host Samsunspor in the Süper Lig on 2026-12-06. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:09.172Z"
+  },
+  "super_lig|2026-12-06|Genclerbirligi|Eyupspor": {
+    "text": "Genclerbirligi host Eyupspor in the Süper Lig on 2026-12-06. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:09.842Z"
+  },
+  "super_lig|2026-12-06|Trabzonspor|Çorum FK": {
+    "text": "Trabzonspor host Çorum FK in the Süper Lig on 2026-12-06. The statistical model's forecast for this match is a 3-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T14:13:10.456Z"
+  },
+  "super_lig|2026-12-07|Kasimpasa|Goztepe": {
+    "text": "Kasimpasa host Goztepe in the Süper Lig on 2026-12-07. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-07",
+    "generated_at": "2026-11-28T14:13:11.309Z"
+  },
+  "chance_liga|2026-12-05|SK Sigma Olomouc|SK Artis Brno": {
+    "text": "Chance Liga fixture on 2026-12-05 sees SK Sigma Olomouc host SK Artis Brno. The statistical model's forecast for this match is a 2-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T14:13:11.955Z"
   }
 }
