@@ -1389,7 +1389,13 @@
       "date": "2026-11-27",
       "team1": "Nottingham Forest FC",
       "team2": "Chelsea FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-28",

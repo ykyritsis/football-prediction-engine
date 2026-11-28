@@ -1302,13 +1302,25 @@
       "date": "2026-11-27",
       "team1": "Alanyaspor",
       "team2": "Konyaspor",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-27",
       "team1": "Caykur Rizespor",
       "team2": "Kasimpasa",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          3,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-28",

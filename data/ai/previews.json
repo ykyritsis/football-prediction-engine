@@ -3668,5 +3668,65 @@
     "text": "C.D. Nacional host Benfica in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-2 scoreline, which is not a prediction of the result.",
     "date": "2026-12-06",
     "generated_at": "2026-11-27T15:05:42.639Z"
+  },
+  "primeira_liga|2026-12-06|Estoril|Vitória de Guimaraes": {
+    "text": "Estoril host Vitória de Guimaraes in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:15.970Z"
+  },
+  "primeira_liga|2026-12-06|Estrela|Gil Vicente": {
+    "text": "Estrela host Gil Vicente in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:16.707Z"
+  },
+  "primeira_liga|2026-12-06|FC Famalicao|Académico de Viseu": {
+    "text": "FC Famalicão host Académico de Viseu in the Primeira Liga on 2026-12-06. The statistical model forecasts a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:17.433Z"
+  },
+  "primeira_liga|2026-12-06|Rio Ave|Casa Pia": {
+    "text": "Rio Ave host Casa Pia in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:18.133Z"
+  },
+  "primeira_liga|2026-12-06|Santa Clara|FC Porto": {
+    "text": "Santa Clara host FC Porto in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 0-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:18.820Z"
+  },
+  "primeira_liga|2026-12-06|Sporting CP|Maritimo": {
+    "text": "Sporting CP host Maritimo in the Primeira Liga on 2026-12-06. The statistical model's forecast for this match is a 4-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:19.508Z"
+  },
+  "primeira_liga|2026-12-07|Alverca|Moreirense": {
+    "text": "Alverca host Moreirense in the Primeira Liga on 2026-12-07. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast and not a prediction of the result.",
+    "date": "2026-12-07",
+    "generated_at": "2026-11-28T00:34:20.286Z"
+  },
+  "eredivisie|2026-12-05|Willem II|Feyenoord Rotterdam": {
+    "text": "Willem II host Feyenoord Rotterdam in the Eredivisie on 2026-12-05. A statistical model forecasts a 0-3 scoreline for this match, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T00:34:21.009Z"
+  },
+  "eredivisie|2026-12-05|Sparta Rotterdam|NEC Nijmegen": {
+    "text": "Sparta Rotterdam host NEC Nijmegen in the Eredivisie on 2026-12-05. A statistical model forecasts a 1-2 scoreline for this match, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T00:34:21.674Z"
+  },
+  "eredivisie|2026-12-05|AZ Alkmaar|PSV Eindhoven": {
+    "text": "AZ Alkmaar host PSV Eindhoven in the Eredivisie on 2026-12-05. The statistical model's forecast for this match is a 1-2 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T00:34:22.640Z"
+  },
+  "eredivisie|2026-12-05|Fortuna Sittard|PEC Zwolle": {
+    "text": "Fortuna Sittard host PEC Zwolle in the Eredivisie on 2026-12-05. The statistical model's forecast for this match is a 1-0 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-05",
+    "generated_at": "2026-11-28T00:34:23.428Z"
+  },
+  "eredivisie|2026-12-06|Heerenveen|SC Cambuur": {
+    "text": "Heerenveen host SC Cambuur in the Eredivisie on 2026-12-06. The statistical model's forecast for this match is a 2-1 scoreline, which is a model forecast rather than a prediction of the result.",
+    "date": "2026-12-06",
+    "generated_at": "2026-11-28T00:34:24.140Z"
   }
 }

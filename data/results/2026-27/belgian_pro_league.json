@@ -1308,7 +1308,13 @@
       "date": "2026-11-27",
       "team1": "OH Leuven",
       "team2": "KV Kortrijk",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          2,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-28",

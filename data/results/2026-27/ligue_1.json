@@ -1229,7 +1229,13 @@
       "date": "2026-11-27",
       "team1": "Stade Brestois 29",
       "team2": "Paris FC",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-28",

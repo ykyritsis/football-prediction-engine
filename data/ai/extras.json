@@ -3075,6 +3075,66 @@
     "chance_liga|2026-12-05|SK Sigma Olomouc|SK Artis Brno": {
       "text": "Sigma Olomouc's strong home scoring form against Brno's weak recent results drives the lean toward a home win.",
       "generated_at": "2026-11-27T15:05:46.043Z"
+    },
+    "chance_liga|2026-12-05|1.FC Slovacko|Jablonec": {
+      "text": "Jablonec's stronger recent form, including a 3-0 win, and Slovacko's winless run drive the lean toward an away win.",
+      "generated_at": "2026-11-28T00:34:16.047Z"
+    },
+    "chance_liga|2026-12-05|FC Slovan Liberec|FC Zbrojovka Brno": {
+      "text": "Liberec's five-match unbeaten run and four straight wins before a draw drive the lean toward a home victory.",
+      "generated_at": "2026-11-28T00:34:16.847Z"
+    },
+    "chance_liga|2026-12-05|Sparta Prague|FK Mlada Boleslav": {
+      "text": "Sparta Prague's strong recent form, including three wins in their last five, drives the forecast lean toward a home win.",
+      "generated_at": "2026-11-28T00:34:17.481Z"
+    },
+    "chance_liga|2026-12-06|Bohemians Prague 1905|FC Zlin": {
+      "text": "Bohemians' home win over Slovacko and Zlin's five straight losses drive the lean toward a narrow home victory.",
+      "generated_at": "2026-11-28T00:34:18.222Z"
+    },
+    "chance_liga|2026-12-06|Viktoria Plzen|FK Teplice": {
+      "text": "Viktoria Plzen's home advantage and stronger overall form drive the lean toward a home win over FK Teplice.",
+      "generated_at": "2026-11-28T00:34:19.027Z"
+    },
+    "chance_liga|2026-12-06|FC Banik Ostrava|FC Hradec Kralove": {
+      "text": "Hradec Kralove's stronger recent form, including wins over Sparta Prague and FC Zlin, drives the lean toward an away win.",
+      "generated_at": "2026-11-28T00:34:19.708Z"
+    },
+    "champions_league|2026-12-08|AEK Athens|Galatasaray": {
+      "text": "Galatasaray's five-match winning run against AEK Athens's four straight losses drives the away-win lean.",
+      "generated_at": "2026-11-28T00:34:20.403Z"
+    },
+    "champions_league|2026-12-08|AS Roma|Sporting CP": {
+      "text": "Roma's strong recent scoring form, including five and three-goal wins, drives the lean toward a home victory.",
+      "generated_at": "2026-11-28T00:34:21.041Z"
+    },
+    "champions_league|2026-12-08|Aston Villa FC|Paris Saint-Germain FC": {
+      "text": "PSG's five-match unbeaten run with four wins drives the lean toward an away victory at Aston Villa.",
+      "generated_at": "2026-11-28T00:34:21.691Z"
+    },
+    "champions_league|2026-12-08|FC Barcelona|Manchester City FC": {
+      "text": "Barcelona's five-match winning run and home advantage drive the lean toward a home win.",
+      "generated_at": "2026-11-28T00:34:22.402Z"
+    },
+    "champions_league|2026-12-08|FC Bayern München|Slavia Prague": {
+      "text": "Bayern's strong home form and Slavia Prague's recent struggles drive the lean toward a home win.",
+      "generated_at": "2026-11-28T00:34:23.191Z"
+    },
+    "champions_league|2026-12-08|Manchester United FC|RB Leipzig": {
+      "text": "Manchester United's home advantage and stronger overall probability edge drive the forecast for a home win.",
+      "generated_at": "2026-11-28T00:34:23.881Z"
+    },
+    "champions_league|2026-12-08|SSC Napoli|Club Brugge": {
+      "text": "Napoli's home advantage and recent home wins drive the lean toward a Napoli victory despite Brugge's strong away form.",
+      "generated_at": "2026-11-28T00:34:24.551Z"
+    },
+    "champions_league|2026-12-08|Viking FK|Feyenoord Rotterdam": {
+      "text": "Feyenoord's five-match winless run and leaky defense drive the lean toward a Viking FK home win.",
+      "generated_at": "2026-11-28T00:34:25.239Z"
+    },
+    "champions_league|2026-12-08|Villarreal CF|Sabah FK": {
+      "text": "Villarreal's home win over Getafe and away win at Slavia Prague, combined with Sabah FK's four losses in five, drive the lean toward a Villarreal win.",
+      "generated_at": "2026-11-28T00:34:26.028Z"
     }
   },
   "storylines": {
@@ -5177,6 +5237,21 @@
       "text": "FC Porto have won each of their last five matches, most recently a 1-0 away victory over Feyenoord Rotterdam on 2026-11-24. In the Club World Cup, the team sits 15th of 32 with 0 points, a goal difference of +0, and a record of 0W 0D 0L.",
       "kind": "hot",
       "generated_at": "2026-11-27T01:02:05.300Z"
+    },
+    "serie_a|AS Roma|2026-11-23": {
+      "text": "AS Roma sit second in Serie A with 30 points from a 9W 3D 0L record and a goal difference of +25. Their last five results were a 3-3 draw at SSC Napoli followed by wins over Cagliari Calcio, Udinese Calcio, US Sassuolo Calcio, and Parma Calcio 1913, with AC Monza next on 2026-11-29.",
+      "kind": "hot",
+      "generated_at": "2026-11-28T00:34:26.908Z"
+    },
+    "eredivisie|Excelsior|2026-11-23": {
+      "text": "Excelsior sit 13th of 18 in the Eredivisie with 14 points and a goal difference of -12 from a 4W 2D 7L record. They have lost four of their last five matches, most recently a 3-2 win at Feyenoord Rotterdam, and next face Telstar on 2026-11-28.",
+      "kind": "cold",
+      "generated_at": "2026-11-28T00:34:27.769Z"
+    },
+    "belgian_pro_league|Club Brugge|2026-11-23": {
+      "text": "Club Brugge sit second of 18 in the Belgian Pro League with 31 points, a goal difference of +22 and a record of 10W 1D 1L. Their last five results were a 4-1 away win over RAAL La Louvière, a 3-2 home win over Sint-Truidense, a 4-2 away win over Zulte-Waregem, a 1-1 home draw with Anderlecht and a 5-1 away win over KV Mechelen, ahead of their next fixture at Standard Liege on 2026-11-29.",
+      "kind": "hot",
+      "generated_at": "2026-11-28T00:34:28.744Z"
     }
   }
 }

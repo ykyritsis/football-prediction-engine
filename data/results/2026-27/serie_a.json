@@ -1453,7 +1453,13 @@
       "date": "2026-11-27",
       "team1": "Venezia FC",
       "team2": "Bologna FC 1909",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          0,
+          0
+        ]
+      }
     },
     {
       "date": "2026-11-28",

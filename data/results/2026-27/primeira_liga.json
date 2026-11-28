@@ -1194,7 +1194,13 @@
       "date": "2026-11-27",
       "team1": "Maritimo",
       "team2": "C.D. Nacional",
-      "neutral": false
+      "neutral": false,
+      "score": {
+        "ft": [
+          1,
+          2
+        ]
+      }
     },
     {
       "date": "2026-11-28",
